@@ -79,7 +79,7 @@ header {
     padding: 25px;
 }
 
-header > div {
+header > .name {
     padding-top: 100px;
     max-width: 1280px;
     margin: 0 auto;
