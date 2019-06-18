@@ -9,7 +9,6 @@
     -webkit-box-sizing: border-box;
     color: #333;
 }
-/* ---------- */
 
 .fixedBar {
     position: fixed;
@@ -18,14 +17,17 @@
     width: 100%;
     background-color: #f1f1f1
 }
+
 .progress {
     width: 100%;
     height: 10px;
 }
+
 .progress-container {
     background: rgb(255, 161, 145);
     box-shadow: 0px 10px 30px -5px rgb(0,0,0,.5);
 }
+
 .progress-bar {
     background: linear-gradient(78deg, rgb(255, 187, 174) 59%, #C24631 93%);
 }
@@ -43,6 +45,7 @@
     letter-spacing: 0.5px;
     transition: 0.3s top ease-in;
 }
+
 #backBtn a {
     width: 250px;
     padding: 12px 20px;
@@ -54,6 +57,7 @@
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
     display: inline-block;
 }
+
 #backBtn a:hover {
     background: rgb(150, 40, 21);
     color: white;
@@ -61,6 +65,7 @@
     transition: 0.2s all ease;
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
 }
+
 #backBtn a i {
     color: white;
     margin-right: 10px;
@@ -68,7 +73,6 @@
 body {
     overflow-x: hidden;
 }
-/* ---------- */
 
 .container {
     width: 100%;
@@ -84,8 +88,6 @@ header > .name {
     max-width: 1280px;
     margin: 0 auto;
 }
-
-/* ---------- */
 
 .panel {
     position: relative;
@@ -127,7 +129,7 @@ header > .name {
     border-radius: 50px;
     transform-origin: center;
     transform: scale(1);
-  }
+}
 
 .prevProject:hover::before {
     transition: all 0.35s ease-in-out;
@@ -195,7 +197,7 @@ header > .name {
     border-radius: 50px;
     transform-origin: center;
     transform: scale(1);
-  }
+}
 
 .nextProject:hover::before {
     transition: all 0.35s ease-in-out;
@@ -233,12 +235,11 @@ header > .name {
     font-size: 30px;
 }
 
-/* ---------- */
-
 .link {
     margin-bottom: 100px;
     text-align: center;
 }
+
 .link a {
     display: inline-block;
     margin: 0 40px;
@@ -247,6 +248,7 @@ header > .name {
     font-size: 1.5em;
     transition: 0.3s all ease;
 }
+
 .link a:nth-child(1):before {
     content: '';
     position: absolute;
@@ -259,6 +261,7 @@ header > .name {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 .link a:nth-child(2):before {
     content: '';
     position: absolute;
@@ -271,6 +274,7 @@ header > .name {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 .link a:nth-child(3):before {
     content: '';
     position: absolute;
@@ -283,6 +287,7 @@ header > .name {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 .link a:nth-child(4):before {
     content: '';
     position: absolute;
@@ -295,19 +300,23 @@ header > .name {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 .link a:hover {
     opacity: 0.75;
     transform: translateY(3px);
     transition: 0.3s all ease;
 }
+
 .link :hover:nth-child(1) {
     color: #3ae0b4;
     transition: 0.3s all ease;
 }
+
 .link :hover:nth-child(2) {
     color: rgb(0,119,181);
     transition: 0.3s all ease;
 }
+
 .link :hover:nth-child(3) {
     color: #1769ff;
     transition: 0.3s all ease;
@@ -316,10 +325,12 @@ header > .name {
     color: #333;
     transition: 0.3s all ease;
 }
+
 .link a:hover::before {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
+
 .link::before {
     content: '';
     display: block;
@@ -330,15 +341,12 @@ header > .name {
     width: 70%;
 }
 
-
-/* --------- */
-
 @media (min-width: 1600px) {
     .mobile_footer, #mobile_backBtn, .mobile {
         display: none;
     }
-
 }
+
 @media (max-width: 1600px) {
     .mobile_footer, #mobile_backBtn, .mobile {
         display: none;
@@ -356,11 +364,10 @@ header > .name {
         font-size: 23px;
         margin: 0 30px;
     }
-    
 }
 
 @media (max-width: 768px) {
-    #backBtn, .desktop {
+    #backBtn {
         display: none;
     }
     .mobile {
@@ -566,7 +573,6 @@ header > .name {
     .panel {
         padding: 0 0 130px 0;
     }
-    
 }
 
 @media (max-width: 395px) {
