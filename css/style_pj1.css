@@ -84,9 +84,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
-}
-
-.header {
     margin-top: 180px;
     text-align: center;
 }
@@ -118,7 +115,7 @@ body {
 }
 
 .main {
-    
+
 }
 
 .panel {
