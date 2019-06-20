@@ -13,14 +13,15 @@ body {
     border-bottom: 10px #8ffcdf solid;
 }
 .container {
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     display: block;
     position: relative;
     
 }
 .introduction {
-    margin: 80px 0 120px 0;
+    max-width: 1100px;
+    margin: 0 auto;
     display: block;
     position: relative;
 }
@@ -28,7 +29,7 @@ body {
     width: 90%;
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 80px auto 120px auto;
 }
 .heading {
     display: table;
@@ -104,14 +105,21 @@ body {
 .intro p > a:nth-child(5) {
     color: #333;
 }
+#work {
+    background: rgb(248, 248, 248);
+    padding: 100px 0 0 0;
+}
+.work_sec {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 .row {
     width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin: 0 auto;
 }
 .project {
     background: rgb(247,247,247);
@@ -277,7 +285,7 @@ body {
     width: 30%;
 }
 .link {
-    margin-bottom: 80px;
+    margin: 80px auto;
     text-align: center;
 }
 .link a {
@@ -361,7 +369,7 @@ body {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
-.link::after {
+/* .link::after {
     content: '';
     display: block;
     left: 50%;
@@ -369,9 +377,8 @@ body {
     margin-top: 80px;
     border-bottom: 1px #eee solid;
     width: 75%;
-}
+} */
 
-/* ---------- */
 footer {
     padding-top: 30px;
     text-align: center;
@@ -504,8 +511,8 @@ footer p {
     }
     footer {
         height: 280px;
-        margin: 20px 0 !important;
         padding: 0;
+        margin: 80px 0 0 0;
     }
     footer p {
         font-size: 16px;

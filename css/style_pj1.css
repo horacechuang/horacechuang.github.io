@@ -79,7 +79,7 @@ body {
     width: 100%;
 }
 
-.header, .main {
+.header {
     padding: 25px;
     max-width: 1280px;
     margin: 0 auto;
@@ -88,9 +88,6 @@ body {
 
 .header {
     margin-top: 180px;
-}
-
-.name {
     text-align: center;
 }
 
@@ -99,9 +96,29 @@ body {
 }
 
 .name p {
-    margin-top: 35px;
+    margin-top: 25px;
     margin-right: 5px;
     font-size: 18px;
+}
+
+.category {
+    width: 150px;
+    padding: 15px;
+    border-radius: 50px;
+    background: #C24631;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.category p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    
 }
 
 .panel {
