@@ -80,12 +80,16 @@ body {
 }
 
 .header {
-    padding: 25px;
-    max-width: 1280px;
     margin: 0 auto;
     position: relative;
-    margin-top: 180px;
+    padding-top: 200px;
     text-align: center;
+    background: url('../img/project/p01/p01_header_circle.svg'), rgb(252, 252, 252);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+    top: 10px;
+    height: 550px;
 }
 
 .name img {
@@ -99,23 +103,18 @@ body {
 }
 
 .category {
-    width: 150px;
-    padding: 15px;
+    width: 120px;
+    padding: 10px;
     border-radius: 50px;
     background: #C24631;
     display: block;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .category p {
     font-size: 14px;
     color: white;
-    text-align: center;
-}
-
-.main {
-
 }
 
 .panel {
@@ -588,7 +587,7 @@ body {
         font-size: 20px;
     }
     .panel {
-        padding: 0 0 130px 0;
+        padding: 90px 0 130px 0;
     }
 }
 
