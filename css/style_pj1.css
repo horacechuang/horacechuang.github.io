@@ -128,20 +128,20 @@ p {
 
 .overview {
     background: white;
-    max-width: 780px;
+    max-width: 840px;
     margin: 0 auto;
     display: block;
     position: relative;
     padding: 30px;
-    border-radius: 25px;
-    transition: 0.3s all ease;
-    box-shadow: 0px 30px 35px -35px rgba(117, 117, 117, 0.3);
+    /* border-radius: 25px; */
+    /* transition: 0.3s all ease; */
+    /* box-shadow: 0px 30px 35px -35px rgba(117, 117, 117, 0.3); */
 }
 
 .overview:hover {
-    transform: translateY(3px);
-    transition: 0.3s all ease;
-    box-shadow: 0px 0px 55px -15px rgba(117, 117, 117, 0.2);
+    /* transform: translateY(3px);
+    transition: 0.3s all ease; */
+    /* box-shadow: 0px 30px 35px -35px rgba(117, 117, 117, 0.3); */
 }
 
 .overview h1 {
@@ -156,8 +156,8 @@ p {
     line-height: 28px;
     font-size: 15px;
     margin-bottom: 50px;
-    border-left: 1px solid rgb(139, 139, 139);
-    padding-left: 15px;
+    /* border-left: 1px solid rgb(139, 139, 139); */
+    padding-left: 10px;
 }
 
 .overview p:nth-child(3) {

@@ -488,8 +488,8 @@ footer p {
         font-size: 14px;
     }
     a.project {
-        width: 90%;
-        height: 500px;
+        width: 87%;
+        height: 520px;
         margin: 0 auto !important;
         margin-bottom: 60px !important;
     }
@@ -655,7 +655,7 @@ footer p {
 @media (max-width: 340px) {
     .project .category {
         top: 80%;
-        left: 14%;
+        left: 8%;
     }
     .work01, .work02, .work03, .worｚk04, .work05, .work06, .work07, .work08 {
         padding-top: 50%;
@@ -675,6 +675,6 @@ footer p {
 }
 @media (max-width: 320px) {
     .project .category {
-        left: 8%;
+        left: 5%;
     }
 }
