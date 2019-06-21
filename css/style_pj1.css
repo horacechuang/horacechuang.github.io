@@ -132,7 +132,6 @@ p {
     margin: 0 auto;
     display: block;
     position: relative;
-    margin-top: -60px;
     padding: 30px;
     border-radius: 25px;
     transition: 0.3s all ease;
@@ -159,6 +158,10 @@ p {
     margin-bottom: 50px;
     border-left: 1px solid rgb(139, 139, 139);
     padding-left: 15px;
+}
+
+.overview p:nth-child(3) {
+    margin-bottom: 0px !important;
 }
 
 .panel {
@@ -512,6 +515,15 @@ p {
         padding: 8px !important;
         font-size: 14px;
         width: 110px !important;
+    }
+
+    .overview h1 {
+        font-size: 16px;
+    }
+
+    .overview p {
+        font-size: 13px;
+        line-height: 26px;
     }
     .mobile_footer {
         display: block;
