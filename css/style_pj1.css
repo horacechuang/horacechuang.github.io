@@ -79,21 +79,25 @@ body {
     width: 100%;
 }
 
-.header {
+p {
+    font-weight: 300;
+}
+
+#header {
     margin: 0 auto;
     position: relative;
-    padding-top: 200px;
+    padding-top: 190px;
     text-align: center;
-    background: url('../img/project/p01/p01_header_circle.svg'), rgb(252, 252, 252);
+    background: url('../img/project/p01/p01_header_circle.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 500px;
-    top: 10px;
+    margin-top: 50px;
     height: 550px;
 }
 
 .name img {
-    max-width: 200px;
+    width: 200px;
 }
 
 .name p {
@@ -115,6 +119,46 @@ body {
 .category p {
     font-size: 14px;
     color: white;
+}
+
+#main {
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.overview {
+    background: white;
+    max-width: 780px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    margin-top: -20px;
+    padding: 30px;
+    /* border-radius: 55px; */
+    transition: 0.3s all ease;
+    box-shadow: 0px 30px 35px -35px rgba(117, 117, 117, 0.3);
+}
+
+.overview:hover {
+    transform: translateY(3px);
+    transition: 0.3s all ease;
+    box-shadow: 0px 0px 55px -15px rgba(117, 117, 117, 0.2);
+}
+
+.overview h1 {
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    color: rgb(212, 83, 83);
+    font-size: 20px;
+}
+
+.overview p {
+    text-align: justify;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    border-left: 1px solid rgb(139, 139, 139);
+    padding-left: 15px;
 }
 
 .panel {
@@ -438,65 +482,6 @@ body {
     .panel {
         max-width: 370px;
     }
-    .role, .year {
-        margin-bottom: 60px;
-    }
-    .overview, .other {
-        width: 100%;
-    }
-    .overview {
-        padding-right: 0;
-    }
-    .other {
-        margin-top: 60px;
-    }
-    .section {
-        padding-top: 20px;
-        padding-bottom: 100px;
-    }
-    .section1 {
-        padding-top: 10px;
-    }
-    .sec1_intro {
-        margin: 20px; 
-        padding: 0px !important;
-        /* padding: 50px; */
-    }
-    .sec1_intro p {
-        font-size: 15px;
-        line-height: 28px;
-        padding: 40px !important;
-    }
-    .sec1_intro p::before {
-        content: 'Before';
-        display: block;
-        width: 30px;
-        margin-bottom: 30px;
-        padding-top: 30px;
-        font-size: 20px;
-        border-top: 2px white solid;
-    }
-    .sec h3 {
-        font-size: 24px;
-        max-width: 90%;
-    }
-    .pics {
-        padding-bottom: 0;
-    }
-    .pics img {
-        margin-bottom: 50px;
-        width: 100%;
-    }
-    .sec p {
-        font-size: 15px;
-        line-height: 28px;
-        max-width: 90%;
-        padding: 40px 0;
-        margin-bottom: 0;
-    }
-    .sec {
-        padding: 100px 20px 0 20px;
-    }
 }
 
 
@@ -508,20 +493,25 @@ body {
 }
 
 @media (max-width: 580px) {
-    header {
-        background-position: center -130px,center;
-        background-size: 1300px, 100%;
-        height: 500px;
+    #header {
+        padding-top: 120px;
+        height: 400px;
+        background-size: 400px;
+        margin-top: 60px;
     }
-    .logotype {
-        padding-top: 190px;
+    .name img {
+        width: 150px !important;
     }
-    .logotype img {
-        max-width: 180px;
+    
+    .name p {
+        margin-top: 20px !important;
+        font-size: 16px !important;
     }
-    .logotype p {
-        font-size: 18px;
-        padding-top: 30px;
+
+    .category {
+        padding: 8px !important;
+        font-size: 14px;
+        width: 110px !important;
     }
     .mobile_footer {
         display: block;
