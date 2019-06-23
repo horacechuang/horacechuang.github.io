@@ -126,7 +126,7 @@ body {
     width: 46%;
     height: 600px;
     border-radius: 15px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     box-shadow: 0px 45px 20px -40px rgb(0,0,0,0.3);
     transition: 0.3s all ease;
     overflow: hidden;
@@ -622,18 +622,6 @@ footer p {
     img.mobile_pic {
         margin-bottom: 20px;
         width: 100%;
-    }
-    .heading h1, h2{
-        text-align: center;
-    }
-    .heading h2 {
-        font-size: 2em;
-    }
-    .heading h2::after {
-        content: '';
-        width: 30%;
-        margin: auto;
-        margin-top: 70px;
     }
 }
 @media (max-width: 390px) {
