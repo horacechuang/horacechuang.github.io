@@ -246,10 +246,9 @@ img.img25 {
 
 .panel {
     position: relative;
-    max-width: 400px;
+    max-width: 310px;
     margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding: 60px 0;
     transition: 0.3s all ease;
 }
 
@@ -297,7 +296,7 @@ img.img25 {
     float: left;
     color: white;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .Headingp {
@@ -306,7 +305,7 @@ img.img25 {
 }
 
 .Headingp h3 {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -316,8 +315,8 @@ img.img25 {
 }
 
 .Headingp p {
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 34px;
     font-weight: 300;
     color: white;
 }
@@ -370,7 +369,7 @@ img.img25 {
 }
 
 .pHeading h3 {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -380,15 +379,15 @@ img.img25 {
 }
 
 .pHeading p {
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 34px;
     font-weight: 300;
     color: white;
 }
 
 .nextProject i {
     float: right;
-    margin-top: -50px;
+    margin-top: -47px;
     color: white;
     font-size: 30px;
 }
@@ -485,12 +484,12 @@ img.img25 {
 .link::before {
     content: '';
     display: block;
-    left: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-bottom: 1px #eee solid;
+    /* left: 50%;
+    margin: 0 auto; */
+    margin-bottom: 30px;
+    /* border-bottom: 1px #eee solid;
     width: 40%;
-    opacity: 0.2;
+    opacity: 0.2; */
 }
 
 /* --------- */

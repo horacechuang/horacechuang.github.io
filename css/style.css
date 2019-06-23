@@ -150,11 +150,11 @@ body {
 .project .category {
     border-radius: 30px;
     letter-spacing: 0.5px;
-    max-width: 200px;
+    max-width: 190px;
     padding: 10px 0px;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 12px;
     background-color: rgb(252,252,252);
     color: rgb(140,140,140);
     box-shadow: 0px 15px 40px -13px rgb(0,0,0,0.3);
@@ -168,6 +168,7 @@ body {
     background: linear-gradient(68deg, #d64d2a 59%, #990d08 93%);
     color: white;
     transition: 0.3s all ease;
+    max-width: 140px;
 }
 .project2 > .category {
     background: linear-gradient(92deg, #ee83a0 59%, #ea5970 93%);
@@ -178,6 +179,7 @@ body {
     background: linear-gradient(68deg, #41a8b2 59%, #3a8f97 93%);
     color: white;
     transition: 0.3s all ease;
+    max-width: 140px;
 }
 .project4 > .category {
     background-color: rgb(99,45,133);
@@ -186,10 +188,12 @@ body {
 .project5 > .category {
     background: linear-gradient(-136deg, #FFA773 4%, #D9500D 93%);
     color: white;
+    max-width: 140px;
 }
 .project6 > .category {
     background: linear-gradient(to right, #E4007F, rgb(35, 178, 244));
     color: white;
+    max-width: 140px;
 }
 .project7 > .category {
     background-color: rgb(0,176,174);
@@ -198,6 +202,7 @@ body {
 .project8 > .category {
     background: linear-gradient(124deg, #d6421d 35%, #cc0606 93%);
     color: white;
+    max-width: 140px;
 }
 .category:hover {
     transform: translateY(3px);

@@ -216,7 +216,7 @@ header {
 /* ---------- */
 
 .panel {
-    max-width: 400px;
+    max-width: 320px;
     margin: 0 auto;
     padding-top: 70px;
     transition: 0.3s all ease;
@@ -266,7 +266,7 @@ header {
     float: left;
     color: white;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .Headingp {
@@ -275,7 +275,7 @@ header {
 }
 
 .Headingp h3 {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -285,8 +285,8 @@ header {
 }
 
 .Headingp p {
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 34px;
     font-weight: 300;
     color: white;
 }
@@ -339,7 +339,7 @@ header {
 }
 
 .pHeading h3 {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -349,15 +349,15 @@ header {
 }
 
 .pHeading p {
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 34px;
     font-weight: 300;
     color: white;
 }
 
 .nextProject i {
     float: right;
-    margin-top: -50px;
+    margin-top: -47px;
     color: white;
     font-size: 30px;
 }
@@ -452,11 +452,11 @@ header {
 .link::before {
     content: '';
     display: block;
-    left: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-bottom: 1px #eee solid;
-    width: 70%;
+    /* left: 50%;
+    margin: 0 auto; */
+    margin-bottom: 30px;
+    /* border-bottom: 1px #eee solid;
+    width: 70%; */
 }
 
 /* --------- */
