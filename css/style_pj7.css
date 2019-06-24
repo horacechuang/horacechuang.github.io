@@ -460,7 +460,6 @@ header {
     }
     .container {
         width: 100%;
-        margin-bottom: 50px;
     }
     .mobile_footer, #mobile_backBtn {
         display: none;
@@ -576,9 +575,6 @@ header {
     .link {
         display: none;
     }
-    .container {
-        margin-bottom: 100px;
-    }
     .prevProject, .nextProject {
         width: 300px;
     }
@@ -599,6 +595,9 @@ header {
         margin-top: -35px;
         font-size: 20px;
     }
+    .panel {
+        margin-bottom: 80px;
+    }
 }
 
 @media (max-width: 395px) {
@@ -609,14 +608,14 @@ header {
     }
     .mobile_footer a {
         margin: 0 5px;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
     }
     .mobile_footer a:hover {
-        font-size: 15px;
+        font-size: 14px;
     }
     .prevProject, .nextProject {
-        width: 270px;
+        width: 220px;
         padding: 10px 0;
     }
     .pHeading, .Headingp {
@@ -628,7 +627,7 @@ header {
         line-height: 25px;
     }
     .pHeading p, .Headingp p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 30px;
     }
     .prevProject i, .nextProject i {

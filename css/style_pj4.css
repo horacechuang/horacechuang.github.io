@@ -720,7 +720,7 @@ img.img25 {
         text-align: center;
     }
     .panel {
-        padding: 50px 0 150px 0;
+        padding: 50px 0 110px 0;
     }
     .bottomBanner {
         padding-top: 30px;
@@ -731,20 +731,20 @@ img.img25 {
 
 @media (max-width: 395px) {
     .mobile_footer {
-        height: 60px;
+        height: 50px;
         line-height: 50px;
         display: block;
     }
     .mobile_footer a {
         margin: 0 5px;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
     }
     .mobile_footer a:hover {
-        font-size: 15px;
+        font-size: 14px;
     }
     .prevProject, .nextProject {
-        width: 270px;
+        width: 220px;
         padding: 10px 0;
     }
     .pHeading, .Headingp {
@@ -756,7 +756,7 @@ img.img25 {
         line-height: 25px;
     }
     .pHeading p, .Headingp p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 30px;
     }
     .prevProject i, .nextProject i {
@@ -787,6 +787,6 @@ img.img25 {
         font-size: 10px;
     }
     .prevProject, .nextProject {
-        max-width: 255px;
+        max-width: 210px;
     }
 }
