@@ -50,7 +50,7 @@
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 50px;
-    background: rgb(150, 40, 21);
+    background: #C24631;
     color: white;
     transition: 0.2s all ease;
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
@@ -58,7 +58,7 @@
 }
 
 #backBtn a:hover {
-    background: #C24631;
+    background: rgb(150, 40, 21);
     color: white;
     transform: translateY(3px);
     transition: 0.2s all ease;
@@ -176,17 +176,6 @@ p {
     padding: 20px 0;
 }
 
-.persona img {
-    width: 100%;
-    display: block;
-    transition: 0.3s all ease;
-}
-
-.persona img:hover {
-    transform: scale(1.03);
-    transition: 0.3s all ease;
-}
-
 .challenge h1, .solution h1 {
     text-transform: uppercase;
     padding-left: 10px;
@@ -235,15 +224,16 @@ p {
     text-align: center;
 }
 
-.image img {
+.image img, .persona img {
     width: 100%;
     display: block;
     transition: 0.3s all ease;
 }
 
-.image :hover {
-    transform: scale(1.03);
+.image :hover, .persona img:hover {
+    transform: scale(1.01);
     transition: 0.3s all ease;
+    box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.2);
 }
 
 .image span {
@@ -640,6 +630,13 @@ p {
     .challenge ol {
         font-size: 14px;
         line-height: 28px;
+    }
+
+    .image span {
+        color: rgb(136, 136, 136);
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.5px;
     }
 
     .mobile_footer {
