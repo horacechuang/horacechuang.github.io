@@ -200,7 +200,7 @@ p {
 }
 
 .solution p {
-    margin: 20px 0;
+    margin: 45px 0 30px 0;
 }
 
 .challenge ol {
@@ -217,12 +217,23 @@ p {
     margin: 0 auto;
 }
 
+.column h3 {
+    font-size: 16px;
+    border-left: 7px rgb(83, 83, 83) solid;
+    line-height: 15px;
+    color: rgb(83,83,83);
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+    margin-bottom: -10px;
+}
+
 .column .image {
     max-width: 720px;
     padding: 50px 0 20px 12px;
     margin: 0 auto;
     text-align: center;
 }
+
 
 .image img, .persona img {
     width: 100%;
@@ -236,11 +247,19 @@ p {
     box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.2);
 }
 
-.image span {
+.mobile-img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
     padding: 20px 0;
+}
+
+.image span {
+    padding: 35px 0;
     display: inline-block;
     color: rgb(136, 136, 136);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.5px;
 }
@@ -634,9 +653,15 @@ p {
 
     .image span {
         color: rgb(136, 136, 136);
-        font-weight: 400;
         font-size: 12px;
         letter-spacing: 0.5px;
+    }
+
+    .column h3 {
+        font-size: 15px;
+        border-left: 5px rgb(83, 83, 83) solid;
+        line-height: 14px;
+        padding-left: 7px;
     }
 
     .mobile_footer {
