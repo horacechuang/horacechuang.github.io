@@ -172,6 +172,14 @@ p {
     max-width: 720px;
 }
 
+.persona {
+    padding: 20px 0;
+}
+
+.persona img {
+    width: 100%;
+}
+
 .challenge h1, .solution h1 {
     text-transform: uppercase;
     padding-left: 10px;
@@ -493,13 +501,13 @@ p {
 }
 
 @media (min-width: 1600px) {
-    .mobile_footer, #mobile_backBtn, .mobile {
+    .mobile_footer, #mobile_backBtn, .p-mobile, .mobile {
         display: none;
     }
 }
 
 @media (max-width: 1600px) {
-    .mobile_footer, #mobile_backBtn, .mobile {
+    .mobile_footer, #mobile_backBtn, .p-mobile, .mobile {
         display: none;
     }
 }
@@ -518,6 +526,12 @@ p {
 }
 
 @media (max-width: 768px) {
+    .p-desktop {
+        display: none;
+    }
+    .p-mobile {
+        display: block;
+    }
     #backBtn {
         display: none;
     }
