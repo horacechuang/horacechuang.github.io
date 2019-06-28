@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="40px" viewBox="0 0 260 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>droplist/selectProject/mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="droplist/selectProject/mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="selectProject">
+            <g id="droplist">
+                <rect id="Rectangle" stroke="#4A4A4A" fill="#FAFAFA" x="0" y="0" width="260" height="40" rx="4"></rect>
+                <text id="dropdown-text" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="1.714286" fill="#4A4A4A">
+                    <tspan x="23" y="25">選擇贊助專案</tspan>
+                </text>
+            </g>
+            <polyline id="Path-2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(236.463026, 20.531278) rotate(-90.000000) translate(-236.463026, -20.531278) " points="238.994305 16.068252 233.931748 20.5538053 238.994305 24.9943046"></polyline>
+        </g>
+    </g>
+</svg>

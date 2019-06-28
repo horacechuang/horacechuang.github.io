@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="533px" height="165px" viewBox="0 0 533 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>droplist/selectProject/result/desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.5%" y="-6.6%" width="103.0%" height="113.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="droplist/selectProject/result/desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="selectProject">
+            <g id="droplist">
+                <rect id="Rectangle" stroke="#4A4A4A" fill="#FAFAFA" x="0.5" y="0.5" width="532" height="39" rx="4"></rect>
+                <text id="dropdown-text" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="14" font-weight="bold" letter-spacing="2" fill="#4A4A4A">
+                    <tspan x="24" y="25">選擇贊助專</tspan>
+                    <tspan x="104" y="25">案</tspan>
+                </text>
+            </g>
+            <polyline id="Path-2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(501.463026, 20.531278) rotate(-90.000000) translate(-501.463026, -20.531278) " points="503.994305 16.068252 498.931748 20.5538053 503.994305 24.9943046"></polyline>
+            <g id="droplist-option" filter="url(#filter-1)" transform="translate(0.000000, 45.000000)">
+                <rect id="Rectangle" fill="#828282" x="0" y="0" width="533" height="120"></rect>
+                <text id="option1" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="14" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                    <tspan x="24" y="26">Purie 便攜式除菌奈米直飲壺</tspan>
+                </text>
+                <text id="option2" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="14" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                    <tspan x="24" y="64">台灣書畫，家｜網站募資計畫</tspan>
+                </text>
+                <rect id="Rectangle" fill="#4A4A4A" x="0" y="80" width="533" height="41"></rect>
+                <text id="option3" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="14" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                    <tspan x="24" y="104.74026">POIEMA 車用空氣淨化器｜大口呼吸，安心出行</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

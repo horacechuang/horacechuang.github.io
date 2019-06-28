@@ -120,7 +120,7 @@ p {
     color: white;
 }
 
-#main, .overview, .challenge {
+#main, .overview, .challenge, .userflow {
     margin: 0 auto;
     display: block;
     max-width: 860px;
@@ -138,7 +138,6 @@ p {
 
 .overview {
     background: white;
-    max-width: 860px;
     position: relative;
     padding: 30px;
 }
@@ -160,11 +159,11 @@ p {
 }
 
 
-.challenge {
-    padding: 0 30px;
+.challenge, .userflow {
+    padding: 20px 30px;
 }
 
-.challenge::before {
+.challenge::before, .userflow::before {
     content: '';
     display: block;
     margin: 0 auto;
@@ -173,7 +172,7 @@ p {
     max-width: 720px;
 }
 
-.challenge h1 {
+.challenge h1, .userflow h1 {
     text-transform: uppercase;
     padding-left: 10px;
     border-left: 8px #333 solid;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="40px" viewBox="0 0 260 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>input/search/inbox/proposer/mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="input/search/inbox/proposer/mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search">
+            <rect id="Rectangle" fill="#EAEAEA" x="0" y="0" width="260" height="40" rx="4"></rect>
+            <path d="M25.0057176,21.8050314 L24.3733562,21.8050314 L24.1492281,21.5889079 C24.9336764,20.6763865 25.4059463,19.4917095 25.4059463,18.2029731 C25.4059463,15.329331 23.0766152,13 20.2029731,13 C17.329331,13 15,15.329331 15,18.2029731 C15,21.0766152 17.329331,23.4059463 20.2029731,23.4059463 C21.4917095,23.4059463 22.6763865,22.9336764 23.5889079,22.1492281 L23.8050314,22.3733562 L23.8050314,23.0057176 L27.8073185,27 L29,25.8073185 L25.0057176,21.8050314 Z M20.2029731,21.8050314 C18.2098342,21.8050314 16.6009148,20.1961121 16.6009148,18.2029731 C16.6009148,16.2098342 18.2098342,14.6009148 20.2029731,14.6009148 C22.1961121,14.6009148 23.8050314,16.2098342 23.8050314,18.2029731 C23.8050314,20.1961121 22.1961121,21.8050314 20.2029731,21.8050314 Z" id="Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
+            <text id="input-text" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="2" fill="#4A4A4A">
+                <tspan x="45" y="24">搜尋贊助者姓名或E-mail⋯</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

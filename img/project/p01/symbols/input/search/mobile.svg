@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="30px" viewBox="0 0 250 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>input/search/mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="input/search/mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search">
+            <rect id="Rectangle" fill="#EAEAEA" x="0" y="0" width="250" height="30" rx="4"></rect>
+            <path d="M25.0057176,16.8050314 L24.3733562,16.8050314 L24.1492281,16.5889079 C24.9336764,15.6763865 25.4059463,14.4917095 25.4059463,13.2029731 C25.4059463,10.329331 23.0766152,8 20.2029731,8 C17.329331,8 15,10.329331 15,13.2029731 C15,16.0766152 17.329331,18.4059463 20.2029731,18.4059463 C21.4917095,18.4059463 22.6763865,17.9336764 23.5889079,17.1492281 L23.8050314,17.3733562 L23.8050314,18.0057176 L27.8073185,22 L29,20.8073185 L25.0057176,16.8050314 Z M20.2029731,16.8050314 C18.2098342,16.8050314 16.6009148,15.1961121 16.6009148,13.2029731 C16.6009148,11.2098342 18.2098342,9.60091481 20.2029731,9.60091481 C22.1961121,9.60091481 23.8050314,11.2098342 23.8050314,13.2029731 C23.8050314,15.1961121 22.1961121,16.8050314 20.2029731,16.8050314 Z" id="Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
+            <text id="input-text" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="1" fill="#4A4A4A">
+                <tspan x="45" y="20">搜尋</tspan>
+                <tspan x="71" y="20">⋯</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

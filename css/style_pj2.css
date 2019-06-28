@@ -286,6 +286,39 @@ section h2 {
     max-width: 700px;
 }
 
+.btn {
+    display: block;
+    background: rgb(182, 20, 88);
+    max-width: 180px;
+    line-height: 50px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    color: white !important;
+    padding: 5px;
+    font-weight: 400 !important;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: 0.3s all ease;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 580px) {
+    .btn {
+        font-size: 15px;
+        max-width: 150px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+a:hover {
+    transform: translateY(3px);
+    transition: 0.3s all ease;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
+}
+
 /* ---------- */
 
 .panel {

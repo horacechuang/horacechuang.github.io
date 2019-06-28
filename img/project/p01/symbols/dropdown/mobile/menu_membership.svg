@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="214px" height="404px" viewBox="0 0 214 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>dropdown/mobile/menu_membership</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M190.540882,1.40257944 L196,8 L182,8 L187.459118,1.40257944 C188.163293,0.551573634 189.424016,0.43254402 190.275022,1.13671936 C190.371794,1.21679438 190.460807,1.30580764 190.540882,1.40257944 Z M4,9 L210,9 C212.209139,9 214,10.790861 214,13 L214,400 C214,402.209139 212.209139,404 210,404 L4,404 C1.790861,404 2.705415e-16,402.209139 0,400 L-8.8817842e-16,13 C-1.15871992e-15,10.790861 1.790861,9 4,9 Z" id="path-1"></path>
+        <filter x="-3.3%" y="-1.7%" width="107.5%" height="104.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.653858418   0 0 0 0 0.653858418   0 0 0 0 0.653858418  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="dropdown/mobile/menu_membership" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="membership_dropdown_menu">
+            <g id="dialog_box">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#F1F1F1" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="item/title" transform="translate(20.000000, 23.000000)" fill="#25ADC3">
+                <rect id="Rectangle" fill-rule="evenodd" x="0" y="5" width="3" height="12"></rect>
+                <text id="我是標題" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="1">
+                    <tspan x="9" y="15">我的贊助</tspan>
+                </text>
+            </g>
+            <text id="金萱，新時代中文字型，⋯" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="13" font-weight="400" fill="#4A4A4A">
+                <tspan x="28" y="72">金萱，新時代中文字型，⋯</tspan>
+            </text>
+            <g id="item/title" transform="translate(20.000000, 140.000000)" fill="#25ADC3">
+                <rect id="Rectangle" fill-rule="evenodd" x="0" y="5" width="3" height="12"></rect>
+                <text id="我是標題" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="1">
+                    <tspan x="9" y="15">站內訊息</tspan>
+                </text>
+            </g>
+            <text id="你有-5-封新訊息！" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" letter-spacing="1.5" fill="#25ADC3">
+                <tspan x="39" y="189">你有 5 封新訊息</tspan>
+                <tspan x="122.7" y="189">！</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#25ADC3" x="28.5" y="173.5" width="112" height="24" rx="4"></rect>
+            <path d="M32.5,213.5 L185.5,213.5" id="Line-3-Copy" stroke="#CBCBCB" stroke-width="0.5" stroke-linecap="square"></path>
+            <g id="item/title" transform="translate(20.000000, 231.000000)" fill="#25ADC3">
+                <rect id="Rectangle" fill-rule="evenodd" x="0" y="5" width="3" height="12"></rect>
+                <text id="我是標題" font-family="SourceHanSansTW-Bold, Source Han Sans TW" font-size="12" font-weight="bold" letter-spacing="1">
+                    <tspan x="9" y="15">會員專區</tspan>
+                </text>
+            </g>
+            <text id="修改個人資料-帳戶／社群管理-通知設定" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="13" font-weight="400" line-spacing="32" fill="#4A4A4A">
+                <tspan x="28" y="275">修改個人資料</tspan>
+                <tspan x="28" y="307">帳戶／社群管理</tspan>
+                <tspan x="28" y="339">通知設定</tspan>
+                <tspan x="28" y="371">登出</tspan>
+            </text>
+            <g id="Group" transform="translate(28.000000, 92.000000)">
+                <rect id="Rectangle" stroke="#25ADC3" x="0" y="0" width="63" height="23" rx="3"></rect>
+                <text id="贊助紀錄" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" letter-spacing="1.5" fill="#25ADC3">
+                    <tspan x="10" y="15.204">贊助紀</tspan>
+                    <tspan x="44.5" y="15.204">錄</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
