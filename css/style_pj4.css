@@ -30,7 +30,7 @@ body {
     box-shadow: 0px 10px 30px -5px rgb(0,0,0,.5);
 }
 .progress-bar {
-    background: linear-gradient(92deg, rgb(55, 6, 78) 19%, rgb(245, 245, 245) 93%);
+    background: linear-gradient(92deg, rgb(79, 13, 109) 19%, rgb(204, 140, 233) 93%);
 }
 
 #backBtn {

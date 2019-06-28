@@ -50,7 +50,7 @@
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 50px;
-    background: #C24631;
+    background: rgb(150, 40, 21);
     color: white;
     transition: 0.2s all ease;
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
@@ -58,7 +58,7 @@
 }
 
 #backBtn a:hover {
-    background: rgb(150, 40, 21);
+    background: #C24631;
     color: white;
     transform: translateY(3px);
     transition: 0.2s all ease;
@@ -120,7 +120,7 @@ p {
     color: white;
 }
 
-#main, .overview, .challenge, .userflow {
+#main, .overview, .challenge, .solution {
     margin: 0 auto;
     display: block;
     max-width: 860px;
@@ -159,11 +159,11 @@ p {
 }
 
 
-.challenge, .userflow {
+.challenge, .solution {
     padding: 20px 30px;
 }
 
-.challenge::before, .userflow::before {
+.challenge::before, .solution::before {
     content: '';
     display: block;
     margin: 0 auto;
@@ -172,7 +172,7 @@ p {
     max-width: 720px;
 }
 
-.challenge h1, .userflow h1 {
+.challenge h1, .solution h1 {
     text-transform: uppercase;
     padding-left: 10px;
     border-left: 8px #333 solid;
@@ -180,19 +180,23 @@ p {
     font-size: 24px;
 }
 
-.challenge h2 {
+.challenge h2, .solution h2 {
     color: rgb(212, 83, 83);
-    margin-left: 10px;
+    margin-left: 18px;
     font-size: 18px;
     line-height: 24px;
 }
 
-.challenge p {
+.challenge p, .solution p {
     font-size: 16px;
-    padding-left: 12px;
+    padding-left: 18px;
     margin: 35px 0;
     line-height: 34px;
     text-align: justify;
+}
+
+.solution p {
+    margin: 20px 0;
 }
 
 .challenge ol {
@@ -589,7 +593,7 @@ p {
         width: 110px !important;
     }
 
-    .bg-title, .challenge h1 {
+    .bg-title, .challenge h1, .solution h1 {
         font-size: 18px !important;
         padding-left: 7px;
         border-left: 5px #333 solid;
@@ -600,14 +604,16 @@ p {
         font-size: 18px;
     }
 
-    .overview p, .challenge p {
+    .overview p, .challenge p, .solution p {
         font-size: 14px;
         line-height: 28px;
         margin-bottom: 30px;
+        padding-left: 12px;
     }
 
-    .challenge h2 {
+    .challenge h2, .solution h2 {
         font-size: 16px;
+        margin-left: 12px;
     }
 
     .challenge ol {
