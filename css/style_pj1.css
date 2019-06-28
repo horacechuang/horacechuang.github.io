@@ -178,6 +178,13 @@ p {
 
 .persona img {
     width: 100%;
+    display: block;
+    transition: 0.3s all ease;
+}
+
+.persona img:hover {
+    transform: scale(1.03);
+    transition: 0.3s all ease;
 }
 
 .challenge h1, .solution h1 {
