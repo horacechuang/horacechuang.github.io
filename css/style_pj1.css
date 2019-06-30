@@ -227,7 +227,7 @@ ul, ol {
 }
 
 .column .image {
-    max-width: 720px;
+    max-width: 768px;
     padding: 50px 0 20px 12px;
     margin: 0 auto;
     text-align: center;
