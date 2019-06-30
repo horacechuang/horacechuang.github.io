@@ -661,6 +661,7 @@ p {
         color: rgb(136, 136, 136);
         font-size: 12px;
         letter-spacing: 0.5px;
+        line-height: 25px;
     }
 
     .column h3 {
