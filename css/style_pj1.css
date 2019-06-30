@@ -203,7 +203,7 @@ p {
     margin: 45px 0 50px 0;
 }
 
-.challenge ul, .solution ul {
+ul, ol {
     padding-left: 50px;
     font-size: 16px;
     font-weight: 400;
@@ -652,7 +652,7 @@ p {
         margin-left: 12px;
     }
 
-    .challenge ol {
+    ul, ol {
         font-size: 14px;
         line-height: 28px;
     }
