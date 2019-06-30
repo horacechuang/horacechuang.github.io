@@ -123,7 +123,7 @@ p {
 #main, .overview, .challenge, .solution {
     margin: 0 auto;
     display: block;
-    max-width: 860px;
+    max-width: 960px;
 }
 
 .bg-title {
@@ -203,12 +203,11 @@ p {
     margin: 45px 0 50px 0;
 }
 
-.challenge ol {
+.challenge ul, .solution ul {
     padding-left: 50px;
     font-size: 16px;
     font-weight: 400;
-    list-style: disc;
-    margin: 20px;
+    margin: 10px;
     line-height: 34px;
 }
 
@@ -256,12 +255,13 @@ p {
 }
 
 .image span {
-    padding: 35px 0;
+    padding: 25px 0;
     display: inline-block;
-    color: rgb(136, 136, 136);
+    color: rgb(141, 141, 141);
     font-weight: 400;
     font-size: 15px;
-    letter-spacing: 0.5px;
+    line-height: 32px;
+    letter-spacing: 1px;
 }
 
 .flow-chart {
