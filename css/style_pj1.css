@@ -265,6 +265,12 @@ ul, ol {
     letter-spacing: 1px;
 }
 
+.special-img {
+    max-width: 590px;
+    display: block;
+    margin: 0 auto;
+}
+
 .flow-chart {
     max-width: 400px;
     display: block;
