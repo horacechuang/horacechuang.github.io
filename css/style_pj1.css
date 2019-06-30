@@ -200,7 +200,7 @@ p {
 }
 
 .solution p {
-    margin: 45px 0 30px 0;
+    margin: 45px 0 50px 0;
 }
 
 .challenge ol {
@@ -238,12 +238,12 @@ p {
 .image img, .persona img {
     width: 100%;
     display: block;
-    transition: 0.2s all ease;
+    transition: 0.5s all ease;
 }
 
 .image :hover, .persona img:hover {
-    transform: scale(1.01);
-    transition: 0.2s all ease;
+    transform: translateY(5px);
+    transition: 0.5s all ease;
     box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.2);
 }
 
@@ -263,6 +263,12 @@ p {
     font-size: 15px;
     letter-spacing: 0.5px;
 }
+
+.flow-chart {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+} 
 
 
 .panel {

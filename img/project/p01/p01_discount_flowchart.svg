@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="328px" viewBox="0 0 195 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="blue-version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 0.000000)">
+            <rect id="Rectangle" fill="#E4F3FF" x="7" y="0" width="87" height="30" rx="15"></rect>
+            <text id="優惠碼流程" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#1787E0">
+                <tspan x="26" y="19">優惠碼流程</tspan>
+            </text>
+            <g id="modal" transform="translate(11.000000, 51.000000)">
+                <rect id="Rectangle-8" stroke="#1787E0" fill="#E4F3FF" x="0.5" y="0.5" width="79" height="43" rx="2"></rect>
+                <path d="M72.5761073,5.35385941 L73.6810883,4.24887838 C74.0115933,3.91837337 74.5611828,3.91480647 74.8979593,4.25158294 C75.2370837,4.59070736 75.2359466,5.13317109 74.9006638,5.46845388 L73.7956828,6.5734349 L74.9006638,7.67841593 C75.2359466,8.01369872 75.2370837,8.55616245 74.8979593,8.89528687 C74.5611828,9.23206334 74.0115933,9.22849644 73.6810883,8.89799142 L72.5761073,7.7930104 L71.4711263,8.89799142 C71.1406212,9.22849644 70.5910318,9.23206334 70.2542553,8.89528687 C69.9151309,8.55616245 69.916268,8.01369872 70.2515508,7.67841593 L71.3565318,6.5734349 L70.2515508,5.46845388 C69.916268,5.13317109 69.9151309,4.59070736 70.2542553,4.25158294 C70.5910318,3.91480647 71.1406212,3.91837337 71.4711263,4.24887838 L72.5761073,5.35385941 Z" id="Combined-Shape-Copy" fill="#1787E0"></path>
+                <text id="Modal" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#1787E0">
+                    <tspan x="15" y="26">優惠碼區塊</tspan>
+                </text>
+            </g>
+            <g id="modal" transform="translate(11.000000, 284.000000)">
+                <rect id="Rectangle-8" stroke="#1787E0" fill="#E4F3FF" x="0.5" y="0.5" width="79" height="43" rx="2"></rect>
+                <path d="M72.5761073,5.35385941 L73.6810883,4.24887838 C74.0115933,3.91837337 74.5611828,3.91480647 74.8979593,4.25158294 C75.2370837,4.59070736 75.2359466,5.13317109 74.9006638,5.46845388 L73.7956828,6.5734349 L74.9006638,7.67841593 C75.2359466,8.01369872 75.2370837,8.55616245 74.8979593,8.89528687 C74.5611828,9.23206334 74.0115933,9.22849644 73.6810883,8.89799142 L72.5761073,7.7930104 L71.4711263,8.89799142 C71.1406212,9.22849644 70.5910318,9.23206334 70.2542553,8.89528687 C69.9151309,8.55616245 69.916268,8.01369872 70.2515508,7.67841593 L71.3565318,6.5734349 L70.2515508,5.46845388 C69.916268,5.13317109 69.9151309,4.59070736 70.2542553,4.25158294 C70.5910318,3.91480647 71.1406212,3.91837337 71.4711263,4.24887838 L72.5761073,5.35385941 Z" id="Combined-Shape-Copy" fill="#1787E0"></path>
+                <text id="金額折扣" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#1787E0">
+                    <tspan x="20" y="26">金額折扣</tspan>
+                </text>
+            </g>
+            <polygon id="Path-2" stroke="#BB4646" fill="#FFF5F5" points="10.5491367 116.032443 0.392578125 139.536701 91.1947613 139.536701 100.392578 116.032443"></polygon>
+            <text id="輸入優惠碼" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#B01111">
+                <tspan x="26" y="131">輸入優惠碼</tspan>
+            </text>
+            <g id="arrows/arrow-1.2" transform="translate(50.500000, 40.500000) rotate(-270.000000) translate(-50.500000, -40.500000) translate(40.500000, 37.500000)">
+                <g id="arrow-1.2">
+                    <path d="M0,3 L18.9520202,3" id="Line" stroke="#727272" stroke-width="0.5" stroke-linecap="square"></path>
+                    <polygon id="Triangle" fill="#727272" points="17 5.5 17 0.5 20 3"></polygon>
+                </g>
+            </g>
+            <g id="arrows/arrow-1.2" transform="translate(51.000000, 105.000000) rotate(-270.000000) translate(-51.000000, -105.000000) translate(41.000000, 102.000000)">
+                <g id="arrow-1.2">
+                    <path d="M0,3 L18.9520202,3" id="Line" stroke="#727272" stroke-width="0.5" stroke-linecap="square"></path>
+                    <polygon id="Triangle" fill="#727272" points="17 5.5 17 0.5 20 3"></polygon>
+                </g>
+            </g>
+            <g id="arrows/arrow-1.2" transform="translate(52.500000, 259.000000) rotate(-270.000000) translate(-52.500000, -259.000000) translate(26.500000, 255.500000)">
+                <g id="arrow-1.2" transform="translate(0.500000, 0.500000)">
+                    <path d="M0,3 L49.8737374,3" id="Line" stroke="#727272" stroke-width="0.5" stroke-linecap="square"></path>
+                    <polygon id="Triangle" fill="#727272" points="48 5.5 48 0.5 51 3"></polygon>
+                </g>
+            </g>
+            <path d="M51.3925781,140.536701 L51.3925781,153.5" id="Line" stroke="#727272" stroke-width="0.5" stroke-linecap="square"></path>
+            <g id="question" transform="translate(9.000000, 151.000000)">
+                <rect id="Rectangle-8" stroke="#1787E0" fill="#E4F3FF" transform="translate(43.000000, 43.000000) rotate(-45.000000) translate(-43.000000, -43.000000) " x="13.5" y="13.5" width="59" height="59" rx="5"></rect>
+                <text id="Success?" font-family="PingFangTC-Semibold, PingFang TC" font-size="10" font-weight="500" fill="#1787E0">
+                    <tspan x="19" y="47">是否有效？</tspan>
+                </text>
+            </g>
+            <g id="success" transform="translate(37.000000, 247.000000)">
+                <rect id="Rectangle" fill="#4CBA38" x="0" y="0" width="30" height="20" rx="10"></rect>
+                <text id="是" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#FFFFFF">
+                    <tspan x="10" y="14">是</tspan>
+                </text>
+            </g>
+            <g id="arrows/arrow-8.2" transform="translate(128.500000, 161.000000) rotate(-180.000000) translate(-128.500000, -161.000000) translate(92.000000, 128.000000)">
+                <g id="arrow-8.2">
+                    <path d="M73,0 L9.99727394,3.86337829e-13 C4.475932,4.20195145e-13 2.48689958e-13,4.48029969 2.48689958e-13,9.99993611 L2.48689958e-13,53.0000639 C2.48689958e-13,58.5228761 4.46805271,63 9.99714269,63 L68.5,63" id="Path-6" stroke="#727272" stroke-width="0.5"></path>
+                    <polygon id="Triangle-2-Copy-4" fill="#727272" points="67 66 67 60 70 63"></polygon>
+                </g>
+            </g>
+            <g id="success" transform="translate(106.000000, 184.000000)">
+                <rect id="Rectangle" fill="#FF6660" x="0" y="0" width="30" height="20" rx="10"></rect>
+                <text id="否" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="10" font-weight="400" fill="#FFFFFF">
+                    <tspan x="10" y="14">否</tspan>
+                </text>
+            </g>
+            <path d="M139.563885,141 L190.436115,141 C191.327634,141 191.65092,141.092826 191.976846,141.267133 C192.302772,141.44144 192.55856,141.697228 192.732867,142.023154 C192.907174,142.34908 193,142.672366 193,143.563885 L193,179.436115 C193,180.327634 192.907174,180.65092 192.732867,180.976846 C192.55856,181.302772 192.302772,181.55856 191.976846,181.732867 C191.65092,181.907174 191.327634,182 190.436115,182 L139.563885,182 C138.672366,182 138.34908,181.907174 138.023154,181.732867 C137.697228,181.55856 137.44144,181.302772 137.267133,180.976846 C137.092826,180.65092 137,180.327634 137,179.436115 L137,143.563885 C137,142.672366 137.092826,142.34908 137.267133,142.023154 C137.44144,141.697228 137.697228,141.44144 138.023154,141.267133 C138.34908,141.092826 138.672366,141 139.563885,141 Z" id="Rectangle" stroke="#FFDA64" fill="#FFF5C7"></path>
+            <text id="驗證失敗-重新輸入" font-family="SourceHanSansTW-Medium, Source Han Sans TW" font-size="9" font-weight="400" line-spacing="14" letter-spacing="0.5" fill="#000000" fill-opacity="0.85">
+                <tspan x="147" y="157">驗證失敗</tspan>
+                <tspan x="147" y="171">重新輸</tspan>
+                <tspan x="175.5" y="171">入</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
