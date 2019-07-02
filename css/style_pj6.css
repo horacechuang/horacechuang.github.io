@@ -216,7 +216,7 @@ header {
 /* ---------- */
 
 .panel {
-    max-width: 320px;
+    max-width: 350px;
     margin: 0 auto;
     padding-top: 70px;
     transition: 0.3s all ease;
@@ -226,7 +226,7 @@ header {
     display: block;
     position: relative;
     margin: 0 auto;
-    background: linear-gradient(-136deg, #FFC873 4%, #FF563F 93%);
+    background: linear-gradient(83deg, rgb(150, 33, 245) 23%, rgb(94, 4, 168) 83%);
     border-radius: 50px;
     padding: 15px 30px;
     transition: 0.3s all ease;
@@ -249,7 +249,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid #FFC873;
+    border: 1px solid rgb(150, 33, 245);
     border-radius: 50px;
     transform-origin: center;
     transform: scale(1);
@@ -644,7 +644,7 @@ header {
         display: none;
     }
     .panel {
-        width: 300px;
+        width: 320px;
         margin-bottom: 80px;
     }
     .pHeading h3, .Headingp h3 {
@@ -694,7 +694,7 @@ header {
         font-size: 14px;
     }
     .prevProject, .nextProject {
-        width: 220px;
+        width: 250px;
         padding: 10px 0;
     }
     .pHeading, .Headingp {
@@ -728,6 +728,6 @@ header {
         font-size: 10px;
     }
     .prevProject, .nextProject {
-        max-width: 210px;
+        max-width: 250px;
     }
 }
