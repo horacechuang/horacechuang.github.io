@@ -85,7 +85,7 @@ p {
 header {
     margin: 0 auto;
     position: relative;
-    padding-top: 190px;
+    padding-top: 155px;
     text-align: center;
     background: url('../img/project/p01/p01_header_circle.svg');
     background-repeat: no-repeat;
@@ -279,6 +279,12 @@ ul, ol {
 
 footer, footer img, .full-image, .full-image img {
     width: 100%;
+}
+
+.full-image {
+    position: relative;
+    margin-top: -230px;
+    z-index: -1;
 }
 
 .panel {
@@ -544,6 +550,12 @@ footer, footer img, .full-image, .full-image img {
     }
 }
 
+@media (max-width: 1280px) {
+    .full-image {
+        margin-top: -150px;
+    }
+}
+
 @media (max-width: 990px) {
     .sec1_intro img {
         width: 95%;
@@ -606,6 +618,9 @@ footer, footer img, .full-image, .full-image img {
     }
     .panel {
         max-width: 370px;
+    }
+    .full-image {
+        margin-top: -80px;
     }
 }
 
@@ -781,6 +796,9 @@ footer, footer img, .full-image, .full-image img {
     }
     .prevProject i, .nextProject i {
         display: none;
+    }
+    .full-image {
+        margin-top: -30px;
     }
 }
 
