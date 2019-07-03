@@ -9,10 +9,10 @@
     -webkit-box-sizing: border-box;
     color: #333;
 }
+
 a {
     outline: none;
 }
-/* ---------- */
 
 .fixedBar {
     position: fixed;
@@ -21,14 +21,17 @@ a {
     width: 100%;
     background-color: #f1f1f1
 }
+
 .progress {
     width: 100%;
     height: 10px;
 }
+
 .progress-container {
     background: rgb(255, 204, 229);
     box-shadow: 0px 10px 30px -5px rgb(0,0,0,.5);
 }
+
 .progress-bar {
     background: linear-gradient(92deg, rgb(255, 122, 204) 19%, rgb(142, 9, 160) 93%);
 }
@@ -46,6 +49,7 @@ a {
     letter-spacing: 0.5px;
     transition: 0.3s top ease-in;
 }
+
 #backBtn a {
     width: 250px;
     padding: 12px 20px;
@@ -57,6 +61,7 @@ a {
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
     display: inline-block;
 }
+
 #backBtn a:hover {
     background: rgb(223, 42, 153);
     color: white;
@@ -64,14 +69,15 @@ a {
     transition: 0.2s all ease;
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
 }
+
 #backBtn a i {
     color: white;
     margin-right: 10px;
 }
+
 body {
     overflow-x: hidden;
 }
-/* ---------- */
 
 .container {
     width: 100%;
@@ -82,86 +88,56 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 1080px) {
-    .train {
-        max-width: 450px;
-    }
-    .trainRight {
-        right: -80px !important;
-    }
-}
-
-@media (max-width: 580px) {
-    .train {
-        max-width: 350px;
-    }
-    .trainRight {
-        right: -50px !important;
-        top: 5px !important;
-    }
-}
-
-@media (max-width: 390px) {
-    .train {
-        max-width: 250px;
-    }
-    .trainLeft {
-        left: -30px !important;
-    }
-    .trainRight {
-        right: -30px !important;
-    }
-}
-
-@media (max-width: 340px) {
-    .train {
-        max-width: 200px;
-    }
-}
-
 .wrapper {
     position: relative;
     color: white;
     margin-top: 20px;
     overflow: hidden;
 }
+
 .main {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
     text-align: center;
     margin-top: 180px;
     /* margin-bottom: 50px; */
 }
+
 .logotype {
     max-width: 400px;
     transform: scale(1);
     transition: 0.2s all ease;
 }
+
 .logotype:hover {
     transform: scale(1.1);
     transition: 0.2s all ease;
 }
+
 .train {
     position: relative;
     display: block;
     margin: 0 auto;
     width: 750px;
 }
+
 .trainLeft {
     padding-top: 100px;
     left: -50px;
     top: 15px;
 }
+
 .trainRight {
     padding-bottom: 100px; 
     right: -100px;
     bottom: 15px;
 }
+
 .introduce {
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 50px 100px 0px 100px;
     text-align: justify;
 }
 
@@ -170,6 +146,7 @@ body {
     color: rgb(190, 34, 99);
     letter-spacing: 2px;
 }
+
 .introduce h2::after, .section h2::after {
     content: '';
     display: block;
@@ -178,13 +155,16 @@ body {
     border-bottom: 1px rgb(207, 207, 207) solid;
     width: 100px;
 }
+
 .introduce a {
     color: rgb(150, 27, 78);
     font-weight: 500;
 }
+
 .introduce a:hover {
     text-decoration: underline;
 }
+
 .introduce p {
     text-align: justify;
     line-height: 36px;
@@ -198,15 +178,12 @@ body {
     margin-bottom: 50px;
 }
 
-/*  */
-
 section {
     margin-bottom: 200px;
 }
 
 .section {
     max-width: 1280px;
-    box-shadow: 0px -60px 90px -30px rgba(87, 87, 87, 0.1);
     margin: 0 auto;
 }
 
@@ -216,12 +193,6 @@ section p {
     color: rgb(100, 14, 50);
     font-weight: 300;
     margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-    .section {
-        max-width: 100%;
-    }
 }
 
 .wrappers {
@@ -243,18 +214,6 @@ section h2 {
 .work {
     text-align: center;
     margin-bottom: 60px;
-}
-
-@media (max-width: 580px) {
-    .wrappers {
-        padding: 20px 30px;
-    }
-    .work {
-        margin-bottom: 60px;
-    }
-    .work video {
-        margin: 10px 0;
-    }
 }
 
 .work img {
@@ -286,6 +245,10 @@ section h2 {
     max-width: 700px;
 }
 
+.final {
+    margin-bottom: 0 !important;
+}
+
 .btn {
     display: block;
     background: rgb(182, 20, 88);
@@ -304,22 +267,11 @@ section h2 {
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
 }
 
-@media (max-width: 580px) {
-    .btn {
-        font-size: 15px;
-        max-width: 150px;
-        line-height: 40px;
-        margin-bottom: 30px;
-    }
-}
-
 a:hover {
     transform: translateY(3px);
     transition: 0.3s all ease;
     box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
 }
-
-/* ---------- */
 
 .panel {
     position: relative;
@@ -398,9 +350,6 @@ a:hover {
     color: white;
 }
 
-/*  */
-
-
 .nextProject {
     display: block;
     position: relative;
@@ -468,8 +417,6 @@ a:hover {
     color: white;
     font-size: 30px;
 }
-
-/* ---------- */
 
 .link {
     margin-bottom: 100px;
@@ -581,6 +528,14 @@ a:hover {
     }
 }
 
+@media (max-width: 1080px) {
+    .train {
+        max-width: 450px;
+    }
+    .trainRight {
+        right: -80px !important;
+    }
+}
 
 @media (max-width: 820px) {
     .link a {
@@ -594,6 +549,7 @@ a:hover {
     #backBtn {
         display: none;
     }
+    
     #mobile_backBtn {
         display: inline-block;
         position: fixed;
@@ -608,6 +564,7 @@ a:hover {
         transition: 0.3s top ease-in;
         
     }
+
     #mobile_backBtn a {
         width: 140px;
         padding: 10px 5px;
@@ -618,18 +575,25 @@ a:hover {
         box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.4);
         display: inline-block;
     }
+
     #mobile_backBtn a:hover {
         transform: translateY(5px);
         background: rgb(223, 42, 153);
         transition: 0.3s all ease;
         box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.2);
     }
+
     #mobile_backBtn a i {
         color: white;
         margin-right: 10px;
     }
+
     .prevProject, .nextProject {
         max-width: 380px;
+    }
+
+    .section {
+        max-width: 100%;
     }
 }
 
@@ -645,16 +609,20 @@ a:hover {
     .container {
         background-position: 0 10px;
     }
+
     .main {
         margin-top: 150px;
         margin-bottom: 20px;
     }
+
     .logotype {
         width: 270px;
     }
+
     .progress-container, .progress-bar {
         height: 10px;
     }
+
     .mobile_footer {
         display: block;
         background-color: white;
@@ -670,6 +638,7 @@ a:hover {
         border-top: 5px #42f4c5 solid;
         z-index: 1;
     }
+
     .mobile_footer a {
         margin: 0 5px;
         position: relative;
@@ -678,58 +647,92 @@ a:hover {
         transition: 0.2s all ease;
         opacity: 0.75;
     }
+
     .mobile_footer :nth-child(1) {
         color: #3ae0b4;
     }
+
     .mobile_footer :nth-child(2) {
         color: rgb(0,119,181);
     }
+
     .mobile_footer :nth-child(3) {
         color: #1769ff;
     }
+
     .mobile_footer a:nth-child(4) {
         color: #333;
     }
+
     .mobile_footer a:hover {
         opacity: 1;
         transition: 0.2s all ease;
         font-size: 16px;
     }
+
     .link {
         display: none;
     }
+
     .panel {
         width: 290px;
     }
+
     .pHeading h3, .Headingp h3 {
         font-size: 10px;
         letter-spacing: 0.25px;
         line-height: 25px;
     }
+
     .pHeading p, .Headingp p {
         font-size: 12px;
         line-height: 28px;
     }
+
     .prevProject i {
         margin-top: 18px;
         font-size: 20px;
     }
+
     .nextProject i {
         margin-top: -35px;
         font-size: 20px;
     }
+
     .panel {
         padding: 50px 0 150px 0;
     }
+
     .introduce h2, section h2 {
         font-size: 24px;
     }
+
     .introduce p, section p {
         font-size: 14px;
         line-height: 27px;
     }
-    .final {
-        margin-bottom: 0px !important;
+
+    .wrappers, .introduce {
+        padding: 20px 30px;
+    }
+    .work {
+        margin-bottom: 60px;
+    }
+    .work video {
+        margin: 10px 0;
+    }
+    .train {
+        max-width: 350px;
+    }
+    .trainRight {
+        right: -50px !important;
+        top: 5px !important;
+    }
+    .btn {
+        font-size: 15px;
+        max-width: 150px;
+        line-height: 40px;
+        margin-bottom: 30px;
     }
 }
 
@@ -772,6 +775,18 @@ a:hover {
     }
 }
 
+@media (max-width: 390px) {
+    .train {
+        max-width: 250px;
+    }
+    .trainLeft {
+        left: -30px !important;
+    }
+    .trainRight {
+        right: -30px !important;
+    }
+}
+
 @media (max-width: 340px) {
     .mobile_footer {
         height: 50px;
@@ -787,5 +802,8 @@ a:hover {
     }
     .prevProject, .nextProject {
         max-width: 220px;
+    }
+    .train {
+        max-width: 200px;
     }
 }
