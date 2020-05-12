@@ -4,11 +4,15 @@
   width: 50%;
   padding: 50px;
   display: block;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   background: white;
   box-shadow: 0px 0px 75px rgba(56, 56, 56, 0.2);
   border-radius: 10px;
+}
+
+.container h2 {
+  line-height: 36px;
 }
 
 .list {
@@ -18,11 +22,12 @@
   line-height: 25px;
 }
 
-a {
-  padding: 0 30px 0 0;
+li {
+  display: inline;
+  padding: 0 10px 0 0;
 }
 
 a:hover {
-  text-decoration: underline;
   color: rgb(94, 156, 243);
+  border-bottom: 1px solid;
 }
