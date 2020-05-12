@@ -1,7 +1,7 @@
 .container {
   position: relative;
   top: 100px;
-  width: 50%;
+  width: 60%;
   padding: 50px;
   display: block;
   text-align: center;
@@ -19,15 +19,24 @@
   position: relative;
   display: inline-block;
   margin-top: 30px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 li {
   display: inline;
-  padding: 0 10px 0 0;
+  padding: 0 30px;
 }
 
 a:hover {
   color: rgb(94, 156, 243);
+  padding-bottom: 3px;
   border-bottom: 1px solid;
+}
+
+.cake :hover {
+  color: rgb(37, 208, 131);
+}
+
+.linkedin :hover {
+  color: rgb(40,103,178);
 }
