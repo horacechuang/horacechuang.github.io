@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,50 +16,52 @@ body {
     font-size: 15px;
 }
 
+/* navigation */
+
 nav {
     width: 100%;
     padding: 5px 10px 0px 10px;
     display: inline-block;
-    position: relative;
+    position: fixed;
     background-color: white;
-    /* box-shadow: 0px 10px 50px rgb(219, 219, 219,0.5); */
-    border-bottom: 1px solid rgba(145, 145, 145, 0.3);
+    box-shadow: 0px 10px 50px rgb(219, 219, 219, 0.3);
+    border-bottom: 1px solid rgba(179, 179, 179, 0.3);
 }
 
-nav > .container {
+nav > .nav-container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
-.container > .logo{
+.nav-container > .logo{
     display: inline;
-    padding: 20px 0;
-    max-width: 200px;
+    padding: 20px 10px 0;
+    max-width: 300px;
     float: left;
 }
 
 .logo a {
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.35em;
+    font-weight: 600;
     text-align: left;
 }
 
-.container > .nav-menu {
+.nav-container > .nav-menu {
     padding: 25px 0;
     float: right;
 }
 
 .nav-menu ul {
     font-weight: 400;
-    font-size: 1.25em; 
+    font-size: 1.1em; 
     text-align: right;
     width: 100%;   
 }
 
 .nav-menu li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .nav-menu li:last-child {
@@ -65,14 +69,15 @@ nav > .container {
 }
 
 .btn_nav-contact > a {
-    color: white;
-    background-color: #1edcc9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    
+    color: #1edcc9;
+    padding: 8px 10px;
+    border-radius: 7px;
+    border: 1px solid #1edcc9;
+    transition: 0.25s all ease-in;
 }
 
 .btn_nav-contact > a:hover {
-
+    background: #1edcc9;
+    color: white;
+    transition: 0.25s all ease-out;
 }
-
