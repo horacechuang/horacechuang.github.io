@@ -20,11 +20,11 @@ body {
 
 nav {
     width: 100%;
-    padding: 5px 10px 0px 10px;
+    padding: 0 25px;
     display: inline-block;
     position: fixed;
     background-color: white;
-    box-shadow: 0px 10px 50px rgb(219, 219, 219, 0.3);
+    box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.4);
     border-bottom: 1px solid rgba(179, 179, 179, 0.3);
 }
 
@@ -36,7 +36,7 @@ nav > .nav-container {
 
 .nav-container > .logo{
     display: block;
-    padding: 20px 10px 0;
+    padding: 25px 0;
     max-width: 300px;
     float: left;
 }
@@ -48,8 +48,12 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    padding: 25px 0;
+    margin: 30px 0;
     float: right;
+}
+
+.nav-menu_mobileBtn {
+    display: none;
 }
 
 .nav-menu ul {
@@ -80,4 +84,26 @@ nav > .nav-container {
     background: #1edcc9;
     color: white;
     transition: 0.25s all ease-out;
+}
+
+/* menuBtn */
+
+@media (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu_mobileBtn {
+        display: block;
+        position: relative;
+        padding: 25px 0;
+        float: right;
+    }
+    
+    li.menuBtn {
+        width: 30px;
+        height: 4px;
+        margin: 4px 0;
+        background-color: rgb(110, 110, 110);
+    }
 }
