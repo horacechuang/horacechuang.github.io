@@ -96,14 +96,18 @@ nav > .nav-container {
     .nav-menu_mobileBtn {
         display: block;
         position: relative;
-        padding: 25px 0;
+        padding: 29px 0;
         float: right;
     }
     
     li.menuBtn {
         width: 30px;
         height: 4px;
-        margin: 4px 0;
+        margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
+    }
+
+    li.menuBtn:last-child {
+        margin-bottom: 0px;
     }
 }
