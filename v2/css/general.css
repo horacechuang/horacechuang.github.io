@@ -13,7 +13,7 @@
 }
 
 body {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 /* navigation */
@@ -25,30 +25,30 @@ nav {
     position: fixed;
     background-color: white;
     box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.4);
-    border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+    /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
 
 nav > .nav-container {
-    max-width: 1280px;
+    max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
 
 .nav-container > .logo{
     display: block;
-    padding: 25px 0;
+    padding: 20px 0;
     max-width: 300px;
     float: left;
 }
 
 .logo a {
-    font-size: 1.35em;
+    font-size: 1.5em;
     font-weight: 600;
     text-align: left;
 }
 
 .nav-container > .nav-menu {
-    margin: 30px 0;
+    margin: 25px 0;
     float: right;
 }
 
@@ -57,7 +57,7 @@ nav > .nav-container {
 }
 
 .nav-menu ul {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.1em; 
     text-align: right;
     width: 100%;   
@@ -73,22 +73,36 @@ nav > .nav-container {
 }
 
 .btn_nav-contact > a {
-    color: #1edcc9;
+    color: #4bb1f5;
     padding: 8px 10px;
     border-radius: 7px;
-    border: 1px solid #1edcc9;
+    border: 1px solid #4bb1f5;
     transition: 0.25s all ease-in;
 }
 
 .btn_nav-contact > a:hover {
-    background: #1edcc9;
+    background: #4bb1f5;
     color: white;
     transition: 0.25s all ease-out;
 }
 
-/* menuBtn */
+
 
 @media (max-width: 767px) {
+
+    /* logo */
+
+    .nav-container > .logo{
+        padding: 20px 0;
+        max-width: 200px;
+    }
+
+    .logo a {
+        font-size: 1.35em;
+    }
+
+    /* nav-Btn for mobile */
+
     .nav-menu {
         display: none;
     }
@@ -96,13 +110,13 @@ nav > .nav-container {
     .nav-menu_mobileBtn {
         display: block;
         position: relative;
-        padding: 29px 0;
+        padding: 23px 0;
         float: right;
     }
     
     li.menuBtn {
-        width: 30px;
-        height: 4px;
+        width: 25px;
+        height: 3px;
         margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
     }
@@ -110,4 +124,6 @@ nav > .nav-container {
     li.menuBtn:last-child {
         margin-bottom: 0px;
     }
+
+    
 }
