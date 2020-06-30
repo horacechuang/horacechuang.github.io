@@ -1,0 +1,16 @@
+/* header */
+
+header {
+    position: relative;
+    margin: 25px 25px 0;
+}
+
+header > .introduce {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+    
+}
