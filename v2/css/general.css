@@ -5,8 +5,6 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     text-decoration: none;
     font-family: 'Karla','Noto Sans TC',sans-serif;
     color: #666;
@@ -36,7 +34,7 @@ nav > .nav-container {
 
 .nav-container > .logo{
     display: block;
-    padding: 20px 0;
+    padding: 25px 0;
     max-width: 300px;
     float: left;
 }
@@ -48,18 +46,17 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    margin: 25px 0;
+    margin: 20px 0;
     float: right;
 }
 
 .nav-menu_mobileBtn {
-    display: none
+    display: none;
 }
 
 .nav-menu ul {
     font-weight: 400;
-    font-size: 1.15em; 
-    text-align: right;
+    font-size: 1.15em;
     width: 100%;   
 }
 
@@ -76,33 +73,38 @@ nav > .nav-container {
 
 .nav-menu li a {
     position: relative;
+    display: inline-block;
+    transition: 0.25s all ease;
+}
+
+.nav-menu li a:hover {
+    transform: translateY(1px);
 }
 
 .nav-menu li a::before {
     content: "";
     position: absolute;
-    width: 100%;
     height: 1px;
-    top: 20px;
+    top: 23px;
     left: 0;
-    background-color: #666;
-    visibility: hidden;
-    transition: 0.25s all ease-in;
+    right: 0;
+    background-color: rgb(139, 139, 139);
+    transition: 0.3s all ease;
+    transform-origin: bottom left;
     transform: scaleX(0);
 }
 
 .nav-menu li a:hover::before {
-    visibility: visible;
-    /* width: 100%; */
-    transition: 0.15s all ease-in-out;
+    transition: 0.3s all ease;
+    transform-origin: bottom right;
     transform: scaleX(1);
 }
 
-.nav-menu li:last-child a::before {
+.btn_nav-contact a::before {
     display: none;
 }
 
-.nav-menu li:last-child a:hover::before {
+.btn_nav-contact a:hover::before {
     display: none;
 }
 
@@ -116,7 +118,7 @@ nav > .nav-container {
 
 .btn_nav-contact a:hover {
     background: #78c4f7;
-    color: white;
+    color: white !important;
     transition: 0.25s all ease-out;
 }
 
@@ -143,11 +145,11 @@ nav > .nav-container {
     .nav-menu_mobileBtn {
         display: block;
         position: relative;
-        padding: 21px 0;
+        margin: 20px 0;
         float: right;
     }
     
-    li.menuBtn {
+    .menuBtn li {
         width: 20px;
         height: 3px;
         margin-bottom: 4px;
