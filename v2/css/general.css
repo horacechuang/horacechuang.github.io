@@ -147,6 +147,8 @@ nav > .nav-container {
         position: relative;
         margin: 20px 0;
         float: right;
+        cursor: pointer;
+        transition: 0.25s all ease;
     }
     
     .menuBtn li {
@@ -154,6 +156,11 @@ nav > .nav-container {
         height: 3px;
         margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
+    }
+
+    .menuBtn li .close {
+        transform: rotate(45deg);
+        top: 50%;
     }
 
     li.menuBtn:last-child {
