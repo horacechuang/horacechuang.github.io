@@ -56,8 +56,9 @@ nav > .nav-container {
 
 .nav-menu ul {
     font-weight: 400;
-    font-size: 1.15em;
+    font-size: 1.25em;
     width: 100%;   
+    letter-spacing: 0.5px;
 }
 
 .nav-menu li {
@@ -78,14 +79,14 @@ nav > .nav-container {
 }
 
 .nav-menu li a:hover {
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 
 .nav-menu li a::before {
     content: "";
     position: absolute;
     height: 1px;
-    top: 23px;
+    top: 25px;
     left: 0;
     right: 0;
     background-color: rgb(139, 139, 139);
@@ -128,7 +129,7 @@ nav > .nav-container {
     /* logo */
 
     .nav-container > .logo{
-        padding: 20px 0;
+        padding: 18px 0;
         max-width: 200px;
     }
 
@@ -148,22 +149,16 @@ nav > .nav-container {
         margin: 20px 0;
         float: right;
         cursor: pointer;
-        transition: 0.25s all ease;
     }
     
     .menuBtn li {
-        width: 20px;
+        width: 23px;
         height: 3px;
         margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
     }
 
-    .menuBtn li .close {
-        transform: rotate(45deg);
-        top: 50%;
-    }
-
-    li.menuBtn:last-child {
+    .menuBtn li:last-child {
         margin-bottom: 0px;
     }
 
