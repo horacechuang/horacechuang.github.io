@@ -55,7 +55,6 @@ nav > .nav-container {
 .nav-container > .nav-menu {
     margin: 20px 0;
     float: right;
-    transition: 0.25s all linear;
 }
 
 .nav-menu ul {
@@ -166,7 +165,7 @@ nav > .nav-container {
     /* nav deco-line */
 
     #decoration-line {
-        height: 1px;
+        height: 2px;
     }
 
     /* nav-menu disappear */
@@ -181,19 +180,19 @@ nav > .nav-container {
         display: block;
         position: relative;
         width: 23px;
-        margin: 20px 0;
+        margin: 21px 0;
         float: right;
         cursor: pointer;
-        z-index: 10000;
+        z-index: 10;
     }
     
     .menuBtn li {
         display: block; 
-        height: 4px;
+        height: 3px;
         margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
         border-radius: 30px;
-        transition: 0.25s all ease;
+        transition: 0.25s linear;
     }
 
     .menuBtn li:last-child {
@@ -201,7 +200,8 @@ nav > .nav-container {
     }
 
     .menuBtn.btnActive li:first-child {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
+        transition: 0.25s all ease;
     }
 
     .menuBtn.btnActive li:nth-child(2) {
@@ -209,7 +209,8 @@ nav > .nav-container {
     }
 
     .menuBtn.btnActive li:last-child {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
+        transition: 0.25s all ease;
     }
 
     /* .nav-menu open */
@@ -228,22 +229,21 @@ nav > .nav-container {
         position: relative;
         float: none;
         margin: 0;
-        transition: 0.25s all linear;
     }
 
     .nav-menu.navOpen ul {
-        margin-bottom: 50px;
-        text-align: center;
+        text-align: left;
         width: 100%;
+        margin-bottom: 50px;
     }
     
     .nav-menu.navOpen li {
         display: block;
-        margin: 25px 0;
+        margin: 20px 0;
     }
 
     .nav-menu.navOpen li:first-child {
-        margin-top: 25px;
+        margin-top: 10px;
     }
 
 }
