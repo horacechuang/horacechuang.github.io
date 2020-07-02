@@ -178,7 +178,7 @@ nav > .nav-container {
     .menuBtn {
         display: block;
         position: relative;
-        width: 25px;
+        width: 23px;
         margin: 20px 0;
         float: right;
         cursor: pointer;
@@ -186,7 +186,7 @@ nav > .nav-container {
     
     .menuBtn li {
         display: block; 
-        height: 3px;
+        height: 4px;
         margin-bottom: 4px;
         background-color: rgb(110, 110, 110);
         border-radius: 30px;
@@ -197,16 +197,16 @@ nav > .nav-container {
         margin-bottom: 0px;
     }
 
-    .btn.active li:first-child {
-        transform: translateY(7px) rotate(45deg);
+    .menuBtn.active li:first-child {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    .btn.active li:nth-child(2) {
+    .menuBtn.active li:nth-child(2) {
         opacity: 0;
     }
 
-    .btn.active li:last-child {
-        transform: translateY(-7px) rotate(-45deg);
+    .menuBtn.active li:last-child {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 
