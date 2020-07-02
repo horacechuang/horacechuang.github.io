@@ -1,5 +1,6 @@
 $(function() {
     $('.menuBtn').on('click', function() {
-      $(this).toggleClass('active');
+      $(this).toggleClass('btnActive');
+      $(this).toggleClass('navOpen')
     });
   });
