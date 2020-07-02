@@ -131,7 +131,7 @@ nav > .nav-container {
 
 #decoration-line {
     position: relative;
-    height: 3px;
+    height: 2px;
     background: linear-gradient(to bottom right,#c0ffea, #8cd5ff);
     border-radius: 50px;
     margin: 0 auto;
@@ -166,7 +166,7 @@ nav > .nav-container {
     /* nav deco-line */
 
     #decoration-line {
-        height: 2px;
+        height: 1px;
     }
 
     /* nav-menu disappear */
