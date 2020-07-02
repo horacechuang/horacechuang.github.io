@@ -55,8 +55,8 @@ nav > .nav-container {
 .nav-container > .nav-menu {
     margin: 20px 0;
     float: right;
+    transition: 0.25s all linear;
 }
-
 
 .nav-menu ul {
     font-weight: 400;
@@ -184,6 +184,7 @@ nav > .nav-container {
         margin: 20px 0;
         float: right;
         cursor: pointer;
+        z-index: 10000;
     }
     
     .menuBtn li {
@@ -211,7 +212,38 @@ nav > .nav-container {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* .nav-menu open */
 
+    .nav-menu.navOpen::before, .nav-menu.navOpen::after {
+        content: "";
+        display: table;
+    }
 
+    .nav-menu.navOpen::before {
+        clear: both;
+    }
+
+    .nav-menu.navOpen {
+        display: block;
+        position: relative;
+        float: none;
+        margin: 0;
+        transition: 0.25s all linear;
+    }
+
+    .nav-menu.navOpen ul {
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-menu.navOpen li {
+        display: block;
+        margin: 25px 0;
+    }
+
+    .nav-menu.navOpen li:first-child {
+        margin-top: 25px;
+    }
 
 }
