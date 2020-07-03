@@ -13,10 +13,11 @@
     <!-- Load JS File-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/navMenu_mobile.js"></script>
+    <script src="js/hideMenu.js"></script>
 </head>
 <body>
     <div id="wrapper">
-        <nav>
+        <nav id="stickyMenu">
             <div class="nav-container">
                 <div class="logo">
                     <a href="index.html">
@@ -31,16 +32,13 @@
                     </ul>
                 </div>
                 <div class="nav-menu">
+                    <div id="decoration-line_nav">
+                        <div class="line_nav"></div>
+                    </div>
                     <ul>
-                        <li>
-                            <a href="index.html">作品 | Works</a>
-                        </li>
-                        <li>
-                            <a href="https://www.cakeresume.com/horacechuang" target="_blank">履歷 | Resume</a>
-                        </li>
-                        <li class="btn_nav-contact"
-                            ><a href="mailto:tingfeng.chuang@gmail.com">Get in Touch</a>
-                        </li>
+                        <li><a href="index.html">作品 | Works</a></li>
+                        <li><a href="https://www.cakeresume.com/horacechuang" target="_blank">履歷 | Resume</a></li>
+                        <li class="btn_nav-contact"><a href="mailto:tingfeng.chuang@gmail.com">Get in Touch</a></li>
                     </ul>
                 </div>
             </div>

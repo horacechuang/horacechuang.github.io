@@ -4,7 +4,7 @@ header {
     position: relative;
     margin: 25px 25px 0;
     z-index: -1;
-    height: 100vh;
+    height: 1000px;
 }
 
 header > .introduce {
