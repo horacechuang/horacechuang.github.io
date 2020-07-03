@@ -24,8 +24,8 @@ nav {
     background-color: white;
     /* box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.3); */
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
-    top: 0;
     transition: 0.5s top ease;
+    margin-bottom: 75px;
 }
 
 nav > .nav-container {
@@ -132,6 +132,7 @@ nav > .nav-container {
 #decoration-line {
     padding-top: 75px;
     position: relative;
+    display: block;
     z-index: -1;
 }
 
