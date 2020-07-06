@@ -22,7 +22,7 @@ nav {
     display: inline-block;
     position: fixed;
     background-color: white;
-    transition: 0.5s transform ease;
+    transition: 0.25s transform linear;
     /* box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.3); */
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
