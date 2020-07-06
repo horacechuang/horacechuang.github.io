@@ -9,7 +9,7 @@ $(document).ready(function () {
        
         currentScrollTop = a;
        
-        if (c < currentScrollTop && a > b) {
+        if (c < currentScrollTop && a > b*2) {
           navigation.addClass("scrollUp");
         } else if (c > currentScrollTop && !(a <= b)) {
           navigation.removeClass("scrollUp");
