@@ -12,6 +12,7 @@
 
 body {
     font-size: 12px;
+    overflow-x: hidden;
 }
 
 /* navigation */
@@ -217,12 +218,9 @@ nav > .nav-container {
 
     /* .nav-menu open */
 
-    .nav-menu.collapse::before, .nav-menu.collapse::after {
+    .nav-menu.collapse::before{
         content: "";
         display: table;
-    }
-
-    .nav-menu.collapse::before {
         clear: both;
     }
 
@@ -232,21 +230,24 @@ nav > .nav-container {
         float: none;
         margin: 0 -25px; 
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 15px 50px rgba(235, 235, 235, 0.4);
+        box-shadow: 0px 15px 50px rgba(206, 206, 206, 0.3);
+        animation: fadeIn;
+        animation-duration: 2s;
     }
 
     .nav-menu.collapse ul {
         text-align: left;
-        width: 100%;
-        padding: 0 25px;
-        box-sizing: border-box;
+        /* width: 100vw; */
         height: 198px;
+        padding: 0 25px;
     }
     
     .nav-menu.collapse li {
         display: block;
         margin: 23px 0;
         font-size: 1em;
+        animation: fadeInDown;
+        animation-duration: 1s;
     }
 
     /* nav-menu open animate link */
