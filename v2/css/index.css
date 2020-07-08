@@ -4,15 +4,38 @@ header {
     position: relative;
     margin: 25px 25px 0;
     z-index: -1;
-    height: 1000px;
 }
 
-header > .introduce {
+header > .intro {
     max-width: 1080px;
     margin: 0 auto;
+    padding: 50px 0;
 }
 
+.paragraph {
+    width: 60%;
+}
+
+.paragraph h1 {
+    font-size: 5em;
+    animation: fadeInDown;
+    animation-duration: 1s;
+    margin-bottom: 50px;
+}
+
+.paragraph h3 {
+    font-size: 3em;
+    line-height: 1.5em;
+    animation: fadeInDown;
+    animation-duration: 1.5s;
+}
 
 @media (max-width: 767px) {
-    
+    .paragraph h1 {
+        font-size: 3em;
+    }
+    .paragraph h3 {
+        font-size: 2em;
+        line-height: 1.75em;
+    }
 }
