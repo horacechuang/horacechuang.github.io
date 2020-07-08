@@ -7,6 +7,7 @@ $(function() {
 
     $('.btn-nav').on('click', function() {
       $(".nav-menu").removeClass('collapse');
+      $(".menuBtn").removeClass('btnActive');
     })
 
   });
