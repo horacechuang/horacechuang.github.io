@@ -249,8 +249,9 @@ nav > .nav-container {
 
     .nav-menu.collapse ul {
         text-align: left;
-        height: 200px;
         padding: 0 25px;
+        overflow-y: auto;
+        height: 230px;
     }
     
     .nav-menu.collapse li {

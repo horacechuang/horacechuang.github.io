@@ -5,4 +5,8 @@ $(function() {
       $(".nav-menu").toggleClass('collapse');
     })
 
+    $('.btn-nav').on('click', function() {
+      $(".nav-menu").removeClass('collapse');
+    })
+
   });
