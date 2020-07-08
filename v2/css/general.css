@@ -12,7 +12,6 @@
 
 body {
     font-size: 12px;
-    overflow-x: hidden;
 }
 
 /* navigation */
@@ -51,12 +50,12 @@ nav > .nav-container {
     font-size: 1.6em;
     font-weight: 600;
     text-align: left;
-    color: rgb(151, 151, 151);
+    color: rgb(173, 173, 173);
     transition: 0.15s all linear;
 }
 
 .logo a:hover {
-    color: #666;
+    color: rgb(78, 78, 78);
 }
 
 /* nav-menu */
@@ -66,15 +65,15 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    margin: 21px 0;
+    margin: 20px 0;
     float: right;
 }
 
 .nav-menu ul {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.25em;
     width: 100%;   
-    letter-spacing: 0.3px;
+    /* letter-spacing: 0.3px; */
 }
 
 .nav-menu li {
@@ -87,16 +86,19 @@ nav > .nav-container {
 .nav-menu li:last-child {
     margin: 0 0 0 20px;
 }
+
 /* nav-menu li animate link */
 
 .nav-menu li a {
     position: relative;
     display: inline-block;
     transition: 0.25s all ease;
+    color: rgb(173, 173, 173);
 }
 
 .nav-menu li a:hover {
     transform: translateY(1px);
+    color: rgb(78, 78, 78);
 }
 
 .nav-menu li a::before {
@@ -136,7 +138,8 @@ nav > .nav-container {
 }
 
 .nav-menu li:last-child a:hover {
-    background: #86ceff;
+    background: #67c1fd;
+    border-color: #67c1fd;
     color: white !important;
     transition: 0.25s all ease-out;
 }
@@ -239,14 +242,14 @@ nav > .nav-container {
         float: none;
         margin: 0 -25px; 
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 15px 100px rgba(175, 175, 175, 0.5);
+        box-shadow: 0px 50px 100px rgba(223, 223, 223, 0.5);
         animation: fadeIn;
-        animation-duration: 1s;
+        animation-duration: .5s;
     }
 
     .nav-menu.collapse ul {
         text-align: left;
-        height: 198px;
+        height: 200px;
         padding: 0 25px;
     }
     
@@ -255,7 +258,7 @@ nav > .nav-container {
         margin: 23px 0;
         font-size: 1em;
         animation: fadeInDown;
-        animation-duration: 1s;
+        animation-duration: .5s;
     }
 
     /* nav-menu open animate link */
@@ -301,13 +304,15 @@ nav > .nav-container {
         float: right;
         cursor: pointer;
         z-index: 1;
+        animation: fadeIn;
+        animation-duration: 1.5s;
     }
     
     .menuBtn li {
         display: block; 
         height: 3px;
         margin-bottom: 4px;
-        background-color: rgb(151, 151, 151);
+        background-color: rgb(173, 173, 173);
         border-radius: 30px;
         transition: 0.25s linear;
     }
@@ -319,7 +324,7 @@ nav > .nav-container {
     .menuBtn.btnActive li:first-child {
         transform: translateY(7px) rotate(45deg);
         transition: 0.25s all ease;
-        background-color: #666;
+        background-color: rgb(78, 78, 78);
     }
 
     .menuBtn.btnActive li:nth-child(2) {
@@ -330,7 +335,7 @@ nav > .nav-container {
     .menuBtn.btnActive li:last-child {
         transform: translateY(-7px) rotate(-45deg);
         transition: 0.25s all ease;
-        background-color: #666;
+        background-color: rgb(78, 78, 78);
     }
 
 }
