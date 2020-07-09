@@ -3,7 +3,6 @@
 header {
     position: relative;
     margin: 25px 25px 0;
-    z-index: -1;
 }
 
 header > .intro {
@@ -29,7 +28,40 @@ header > .intro {
     line-height: 1.75em;
     animation: fadeInDown;
     animation-duration: 1.5s;
-    color: rgb(167, 167, 167);
+    color: rgb(139, 139, 139);
+}
+
+.paragraph p {
+    font-weight: 100;
+    font-size: 1.75em;
+    line-height: 1.9em;
+    display: inline-block;
+    margin: 40px 0;
+    color: rgb(139, 139, 139);
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.paragraph a {
+    color: rgb(150, 150, 150);
+    transition: 0.25s all ease;
+    opacity: .5;
+}
+
+.paragraph a:first-child {
+    color: #f36;
+}
+
+.paragraph a:nth-child(2) {
+    color: #C24631;
+}
+
+.paragraph a:last-child {
+    color: rgb(0, 0, 0);
+}
+
+.paragraph a:hover {
+    opacity: 1;
 }
 
 #container {
@@ -49,7 +81,12 @@ header > .intro {
 
     .intro > .paragraph h3 {
         font-size: 1.5em;
-        line-height: 1.75em;
+        line-height: 2em;
+    }
+    
+    .paragraph p {
+        font-size: 1.3em;
+        line-height: 2.2em;
     }
 
 }
