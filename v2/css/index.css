@@ -2,7 +2,7 @@
 
 header {
     position: relative;
-    margin: 25px 25px 0;
+    margin: 50px 0;
 }
 
 header > .intro {
@@ -18,7 +18,7 @@ header > .intro {
 .intro > .paragraph h1 {
     font-weight: 700;
     font-size: 5em;
-    animation: fadeInDown;
+    animation: fadeInUp;
     animation-duration: 1s;
     margin-bottom: 30px;
     margin-left: -4px;
@@ -28,7 +28,7 @@ header > .intro {
     font-size: 2.5em;
     font-weight: 400;
     line-height: 1.75em;
-    animation: fadeInDown;
+    animation: fadeInUp;
     animation-duration: 1.5s;
     color: rgb(139, 139, 139);
 }
@@ -37,28 +37,28 @@ header > .intro {
     font-weight: 100;
     font-size: 1.75em;
     line-height: 2.1em;
-    display: inline-block;
-    margin: 40px 0;
+    display: block;
+    margin: 30px 0;
     color: #666;
-    animation: fadeInDown;
+    animation: fadeInUp;
     animation-duration: 2s;
 }
 
 .paragraph a {
-    color: rgb(150, 150, 150);
+    color: rgb(99, 99, 99);
     transition: 0.25s all ease;
     opacity: .5;
 }
 
-.paragraph a:first-child {
+.paragraph a:hover:first-child {
     color: #f36;
 }
 
-.paragraph a:nth-child(2) {
+.paragraph a:hover:nth-child(2) {
     color: #C24631;
 }
 
-.paragraph a:last-child {
+.paragraph a:hover:last-child {
     color: rgb(0, 0, 0);
 }
 
@@ -66,8 +66,59 @@ header > .intro {
     opacity: 1;
 }
 
+/* line-intro list */
+
+.link-intro {
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    margin-top: 50px;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.link-intro li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.link-intro li:first-child {
+    margin-left: 0;
+}
+
+.linkedin {
+    color: rgb(0,119,181);
+}
+
+.behance {
+    color: #1769ff;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.link-intro a {
+    transition: .15s all linear;
+}
+
+/* work area */
+
 #container {
-    height: 2000px;
+}
+
+#work {
+}
+
+@media (max-width: 1129px) {
+    header {
+        margin: 25px 25px 0;
+    }
+
+    .intro > .paragraph {
+        width: 80%;
+        padding: 30px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -89,7 +140,16 @@ header > .intro {
     
     .paragraph p {
         font-size: 1.3em;
-        line-height: 2.2em;
+        line-height: 2em;
+    }
+
+    .link-intro {
+        font-size: 1.5em;
+        margin: 30px 0 0 2px ;
+    }
+    
+    .link-intro li {
+        margin: 0 10px;
     }
 
 }
@@ -98,6 +158,7 @@ header > .intro {
 
     .intro > .paragraph {
         padding-top: 15px;
+        margin-left: -2px;
     } 
 
     .intro > .paragraph h1 {

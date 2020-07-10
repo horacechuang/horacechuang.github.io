@@ -11,6 +11,7 @@ $(document).ready(function () {
        
         if (c < currentScrollTop && a > b*2) {
           navigation.addClass("scrollUp");
+
         } else if (c > currentScrollTop && !(a <= b)) {
           navigation.removeClass("scrollUp");
         }

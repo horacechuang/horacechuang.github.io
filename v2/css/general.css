@@ -29,7 +29,7 @@ nav {
 }
 
 nav.scrollUp {
-    transform: translateY(-70px);
+    transform: translateY(-75px);
 }
 
 nav > .nav-container {
@@ -79,7 +79,7 @@ nav > .nav-container {
 
 .nav-menu li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
     animation: fadeInDown;
     animation-duration: 2s;
 }
