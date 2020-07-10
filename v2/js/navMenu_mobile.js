@@ -5,7 +5,7 @@ $(function() {
       $(".nav-menu").toggleClass('collapse');
     })
 
-    $('.btn-nav').on('click', function() {
+    $('.btn-nav a').on('click', function() {
       $(".nav-menu").removeClass('collapse');
       $(".menuBtn").removeClass('btnActive');
     })

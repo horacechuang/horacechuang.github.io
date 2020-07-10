@@ -21,7 +21,7 @@ nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background-color: white;
+    background: hsla(0,0%,100%,.95);
     transition: 0.25s transform ease-in-out;
     z-index: 1;
     /* box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.3); */
@@ -240,8 +240,7 @@ nav > .nav-container {
         display: block;
         position: relative;
         float: none;
-        margin: 0 -25px; 
-        background-color: rgb(255, 255, 255);
+        margin: 0 -25px;
         box-shadow: 0px 50px 100px rgba(223, 223, 223, 0.5);
         animation: fadeIn;
         animation-duration: .5s;
