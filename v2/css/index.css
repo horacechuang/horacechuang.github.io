@@ -10,14 +10,55 @@ header > .intro {
     margin: 0 auto;
 }
 
+/* img */
+
+.img {
+    display: block;
+    position: relative;
+    float: right;
+}
+
+img.profile {
+    max-width: 250px;
+    display: block;
+    position: absolute;
+    margin-top: 150px;
+    animation: fadeIn 2s, move 2.5s infinite;
+    border-radius: 250px;
+    z-index: 0;
+    box-shadow: 0px 50px 60px rgba(157, 157, 157, 0.5);
+
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+} 
+
+img.pattern {
+    max-width: 300px;
+    z-index: -1;
+    animation: fadeIn 2.5s;
+    margin-top: 50px;
+}
+
+/* parapraph text */
+
 .intro > .paragraph {
-    width: 70%;
-    padding-top: 50px;
+    width: 65%;
+    padding: 50px 0;
 }
 
 .intro > .paragraph h1 {
     font-weight: 700;
-    font-size: 5em;
+    font-size: 4em;
     animation: fadeInUp;
     animation-duration: 1s;
     margin-bottom: 30px;
@@ -25,7 +66,7 @@ header > .intro {
 }
 
 .intro > .paragraph h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 400;
     line-height: 1.75em;
     animation: fadeInUp;
@@ -35,8 +76,8 @@ header > .intro {
 
 .paragraph p {
     font-weight: 100;
-    font-size: 1.75em;
-    line-height: 2.1em;
+    font-size: 1.5em;
+    line-height: 2em;
     display: block;
     margin: 30px 0;
     color: #666;
@@ -71,9 +112,9 @@ header > .intro {
 .link-intro {
     position: relative;
     display: block;
-    font-size: 2.5em;
-    margin-top: 50px;
-    animation: fadeIn;
+    font-size: 2em;
+    margin: 50px 0;
+    animation: fadeInUp;
     animation-duration: 2s;
 }
 
@@ -104,27 +145,74 @@ header > .intro {
 
 /* work area */
 
-#container {
-}
-
-#work {
-}
 
 @media (max-width: 1129px) {
+
+    /* header */
+
     header {
         margin: 25px 25px 0;
     }
 
+    /* parapraph text */
+
     .intro > .paragraph {
-        width: 80%;
-        padding: 30px 0;
+        width: 70%;
+    }
+
+    .intro > .paragraph h1 {
+        font-size: 3.5em;
+    }
+
+    /* img */
+
+    img.profile {
+        width: 70%;
+        margin-left: 30px;
+        margin-top: 130px;
+    }
+
+    img.pattern {
+        width: 85%;
+        float: right;
+
     }
 }
 
 @media (max-width: 767px) {
 
+    /* img */
+
+    .img::before, .img::after {
+        content: "";
+        display: table;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    img.profile {
+        position: relative;
+        max-width: 150px;
+        margin: 0 auto;
+        margin-top: 30px;
+        animation: fadeIn 2s;
+        box-shadow: none ;
+    }
+
+    img.pattern {
+        position: relative;
+        width: 230px;
+        transform: rotate(45deg);
+        margin-top: -300px;
+        margin-right: 80px;
+    }
+
+    /* parapraph text */
+
     .intro > .paragraph {
-        padding-top: 35px;
+        padding-top: 20px;
         width: 100%;
     }
 
@@ -143,6 +231,8 @@ header > .intro {
         line-height: 2em;
     }
 
+    /* line-intro list */
+
     .link-intro {
         font-size: 1.5em;
         margin: 30px 0 0 2px ;
@@ -156,13 +246,11 @@ header > .intro {
 
 @media (max-width: 500px) {
 
+    /* parapraph text */
+
     .intro > .paragraph {
         padding-top: 15px;
         margin-left: -2px;
-    } 
-
-    .intro > .paragraph h1 {
-        margin: 30px 0;
     }
 
 }
