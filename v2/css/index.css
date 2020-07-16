@@ -5,15 +5,11 @@
     margin: 0 auto;
 }
 
-main, footer {
-    margin: 25px 25px 0;
-}
-
 /* header */
 
 header {
     position: relative;
-    margin: 50px 0;
+    margin-top: 50px 0;
 }
 
 /* img */
@@ -54,7 +50,7 @@ img.pattern {
     max-width: 300px;
     margin-top: 40px;
     z-index: -1;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* parapraph text */
@@ -153,12 +149,17 @@ img.pattern {
 
 /* work area */
 
+/* container */
+
+#container {
+    height: 500px;
+}
 
 @media (max-width: 1129px) {
 
     /* header */
 
-    header {
+    header, main, footer {
         margin: 25px 25px 0;
     }
 
@@ -184,7 +185,6 @@ img.pattern {
         width: 90%;
         float: right;
         margin-top: 50px;
-
     }
 }
 

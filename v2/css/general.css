@@ -10,9 +10,15 @@
     color: #666;
 }
 
+html {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 12px;
-    overflow-x: hidden;
 }
 
 /* navigation */
@@ -25,7 +31,7 @@ nav {
     background: hsla(0,0%,100%,.95);
     transition: 0.25s transform ease-in-out;
     z-index: 1;
-    /* box-shadow: 0px 10px 50px rgba(219, 219, 219, 0.3); */
+    /* box-shadow: 0px 5px 50px rgba(216, 216, 216, 0.4); */
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
 
