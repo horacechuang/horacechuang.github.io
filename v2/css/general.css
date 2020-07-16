@@ -250,15 +250,16 @@ nav > .nav-container {
     .nav-menu.collapse ul {
         text-align: left;
         padding: 0 25px;
-        height: 210px;
+        height: 100vh;
         animation: none;
+        overflow-y: hidden;
     }
     
     .nav-menu.collapse li {
         display: block;
         margin: 23px 0;
         font-size: 1em;
-        animation: fadeInUp;
+        animation: fadeInDown;
         animation-duration: .5s;
     }
 

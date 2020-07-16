@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+main, footer {
+    margin: 25px 25px 0;
+}
+
 /* header */
 
 header {
@@ -50,6 +54,7 @@ img.pattern {
     max-width: 300px;
     margin-top: 40px;
     z-index: -1;
+    overflow-x: hidden;
 }
 
 /* parapraph text */
