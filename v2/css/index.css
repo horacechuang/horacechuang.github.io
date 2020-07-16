@@ -212,7 +212,7 @@ img.pattern {
         transform: rotate(45deg);
         margin-top: -350px;
         margin-left: 30%;
-        z-index: -2;
+        z-index: -1;
     }
 
     /* parapraph text */
