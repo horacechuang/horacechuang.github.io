@@ -18,6 +18,8 @@ body {
     font-size: 12px;
 }
 
+/* When mobile is landspace mode */
+
 @media (max-width: 700px) and
        (max-height: 500px) and 
        (orientation:landscape) {
