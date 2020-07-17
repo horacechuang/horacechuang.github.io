@@ -18,6 +18,59 @@ body {
     font-size: 12px;
 }
 
+@media (max-width: 700px) and
+       (max-height: 500px) and 
+       (orientation:landscape) {
+    #wrapper {
+        display: none;
+    }
+
+    #landscapeContent {
+        display: flex !important;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #landscapeContent::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;  
+        background: url(/img/index/index_pattern.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.75;
+    }
+
+    .notAllow {
+        text-align: left;
+        padding: 0 50px;
+    }
+
+    .notAllow p {
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .notAllow span {
+        color: red;
+    }
+}
+
+#landscapeContent {
+    display: none;
+}
+
 /* navigation */
 
 nav {
