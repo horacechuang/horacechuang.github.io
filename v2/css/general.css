@@ -46,7 +46,7 @@ body {
         left: 0;
         width: 100%; 
         height: 100%;  
-        background: url(/img/index/index_pattern.svg);
+        background: url(../img/index/index_pattern.svg);
         background-size: cover;
         z-index: -1;
         opacity: 0.75;
