@@ -20,8 +20,8 @@ body {
 
 /* When mobile is landspace mode */
 
-@media (max-width: 850px) and
-       (max-height: 550px) and 
+@media (max-width: 900px) and
+       (max-height: 500px) and 
        (orientation:landscape) {
     #wrapper {
         display: none;
