@@ -10,11 +10,8 @@
     color: #666;
 }
 
-html {
-    overflow-x: hidden;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html, body {
+    overflow-x: hidden !important;
 }
 
 body {
@@ -258,7 +255,8 @@ nav > .nav-container {
         padding: 0 25px;
         height: 100vh;
         animation: none;
-        overflow-y: hidden;
+        overflow: hidden;
+        z-index: 1;
     }
     
     .nav-menu.collapse li {
