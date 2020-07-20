@@ -85,10 +85,11 @@ nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,.65);
+    background: hsla(0,0%,100%,.85);
     transition: 0.25s transform ease-in-out;
     z-index: 2;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     /* box-shadow: 0px 5px 50px rgba(235, 235, 235, 0.3); */
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
