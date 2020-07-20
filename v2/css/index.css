@@ -114,6 +114,9 @@ img.pattern {
 
 .paragraph a {
     color: rgb(99, 99, 99);
+    font-family: Karla, ar-udjingxiheib5 ,sans-serif;
+    font-weight: 500;
+    font-style: normal;
     transition: 0.25s all ease;
     opacity: .5;
 }
