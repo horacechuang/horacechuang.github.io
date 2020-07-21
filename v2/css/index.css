@@ -18,6 +18,7 @@ header {
     display: block;
     position: relative;
     float: right;
+    margin: -20px 25px 0 0;
     animation: fadeIn 1.5s;
 }
 
@@ -75,7 +76,7 @@ img.pattern {
 /* parapraph text */
 
 .intro > .paragraph {
-    width: 65%;
+    width: 70%;
     padding: 50px 0;
 }
 
@@ -229,7 +230,7 @@ main {
     /* parapraph text */
 
     .intro > .paragraph {
-        width: 70%;
+        width: 75%;
     }
 
     .intro > .paragraph h1 {
@@ -238,14 +239,18 @@ main {
 
     /* img */
 
+    .img {
+        margin: 10px 0 0 0;
+    }
+
     img.profile {
-        width: 60%;
-        margin-left: 65px;
+        width: 57.5%;
+        margin-left: 70px;
         margin-top: 150px;
     }
 
     img.pattern {
-        width: 90%;
+        width: 85%;
         float: right;
         margin-top: 50px;
     }
@@ -283,6 +288,7 @@ main {
 
     .img {
         width: 100%;
+        margin: 0;
     }
 
     img.profile {
