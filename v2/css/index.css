@@ -100,7 +100,7 @@ img.pattern {
 }
 
 .paragraph p {
-    font-family: Karla, ar-udjingxiheib5 ,sans-serif;
+    font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5em;
@@ -115,7 +115,7 @@ img.pattern {
 
 .paragraph a {
     color: rgb(99, 99, 99);
-    font-family: Karla, ar-udjingxiheib5 ,sans-serif;
+    font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-weight: 500;
     font-style: normal;
     transition: 0.25s all ease;
@@ -184,6 +184,8 @@ main {
     padding: 50px 0;
 }
 
+/* project */
+
 #project {
     max-width: 1280px;
     margin: 0 auto;
@@ -192,26 +194,76 @@ main {
 .intro-project {
     position: relative;
     display: block;
-    margin: -80px 0 50px 0;
-    height: 1000px;
+    margin: -80px 0 60px 0;
+    animation: fadeInUp 2s;
 }
 
 .intro-project h2 {
     font-size: 3.5em;
     display: block;
     position: relative;
-    background: linear-gradient(to bottom right,#b5ffe6, #3db8ff);
+    background: linear-gradient(to bottom right,#b6ffe7, #90d6ff);
     color: white;
     padding: 15px 20px;
     max-width: 230px;
     border-left: 10px solid #cbffee;
+    border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(206, 206, 206, 0.3);
     /* text-shadow: 0px 5px 10px rgba(124, 124, 124, 0.3); */
 }
 
-.intro-project h2::after {
-
+.project-grid {
+    margin: 0 auto;
+    position: relative;
 }
+
+.project-grid ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li.grid {
+    max-width: 550px;
+    margin-bottom: 150px;
+    animation: fadeInUp 2s;
+}
+
+li.grid:nth-child(odd) {
+    padding-left: 30px;
+}
+
+li.grid:nth-child(even) {
+    padding-right: 30px;
+}
+
+.grid > h3,p {
+    font-family: Karla, ar-udjingxiheib5, sans-serif;
+    font-style: normal;
+}
+
+
+.grid h3  {
+    font-size: 2em;
+    line-height: 2.5em;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.grid p {
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 
 @media (max-width: 1329px) {
 
@@ -268,6 +320,19 @@ main {
         max-width: 200px;
         padding: 15px;
     }
+
+    /* project */
+
+    li.grid {
+        width: 45%;
+        margin-bottom: 100px;
+    }
+
+    .grid h3 {
+        line-height: 1.75em;
+        margin: 35px 0 15px 0;
+    }
+
 
 }
 
