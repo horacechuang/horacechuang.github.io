@@ -225,17 +225,17 @@ main {
 }
 
 li.grid {
-    max-width: 550px;
+    max-width: 580px;
     margin-bottom: 150px;
     animation: fadeInUp 2s;
 }
 
 li.grid:nth-child(odd) {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 li.grid:nth-child(even) {
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .grid > h3,p {
