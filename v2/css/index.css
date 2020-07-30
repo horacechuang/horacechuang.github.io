@@ -181,16 +181,16 @@ img.pattern {
 main {
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(232, 232, 232, 0.2);
+    background-color: rgba(244, 244, 244, .2);
     padding: 50px 0;
 }
 
-/* project */
-
-#project {
+#project, #about {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+/* project */
 
 .intro-project {
     position: relative;
@@ -279,7 +279,7 @@ li.grid:nth-child(even) {
     position: absolute;
     width: 0;
     height: .5px;
-    top: 32.5px;
+    top: 35px;
     left: 0;
     right: 0;
     transition: .2s all ease;
@@ -287,14 +287,17 @@ li.grid:nth-child(even) {
 }
 
 .grid a:hover {
-    color: rgb(78, 78, 78);
+    color: #67c1fd;
+    transform: translateY(1px);
 }
 
 .grid a:hover::before {
     visibility: visible;
     width: 100%;
-    background-color: rgb(78, 78, 78);
+    background-color: #67c1fd;
 }
+
+
 
 @media (max-width: 1329px) {
 
