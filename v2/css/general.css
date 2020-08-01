@@ -16,7 +16,7 @@ body {
     font-size: 12px;
 }
 
-body.scrollHidden {
+html.scrollHidden {
     overflow: hidden !important;
 }
 
