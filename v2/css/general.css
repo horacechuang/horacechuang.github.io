@@ -10,7 +10,7 @@
     color: #666;
 }
 
-html,body {
+html {
     overflow-x: hidden !important;
 }
 
@@ -19,7 +19,7 @@ body {
     scroll-behavior: smooth;
 }
 
-body.scrollHidden, html.scrollHidden {
+html.scrollHidden {
     overflow: hidden !important;
 }
 
