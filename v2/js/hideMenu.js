@@ -1,21 +1,21 @@
-$(document).ready(function () {
+// $(document).ready(function () {
     
-     var c, currentScrollTop = 0,
-         navigation = $('nav');
+//      var navBar, currentScrollTop = 0,
+//          navigation = $('nav');
   
-     $(window).scroll(function () {
-        var a = $(window).scrollTop();
-        var b = navigation.height();
+//      $(window).scroll(function () {
+//         var topTomaxHeightDistance = $(window).scrollTop();
+//         var navBarHeight = navigation.height();
+//         currentScrollTop = topTomaxHeightDistance;
        
-        currentScrollTop = a;
-       
-        if (c < currentScrollTop && a > b*2) {
-          navigation.addClass("scrollUp");
+//         if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight*2) {
+//           navigation.addClass("invisibleNav");
 
-        } else if (c > currentScrollTop && !(a <= b)) {
-          navigation.removeClass("scrollUp");
-        }
-        c = currentScrollTop;
-    });
+//         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
+//           navigation.removeClass("invisibleNav");
+//         }
+
+//         navBar = currentScrollTop;
+//     });
     
-  });
+//   });

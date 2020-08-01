@@ -277,13 +277,12 @@ li.grid:nth-child(even) {
 .grid a::before {
     content: "";
     position: absolute;
-    width: 0;
-    height: .5px;
+    height: 1px;
     top: 35px;
     left: 0;
     right: 0;
     transition: .2s all ease;
-    visibility: hidden;
+    transform: scaleX(0);
 }
 
 .grid a:hover {
@@ -292,8 +291,7 @@ li.grid:nth-child(even) {
 }
 
 .grid a:hover::before {
-    visibility: visible;
-    width: 100%;
+    transform: scaleX(1);
     background-color: #67c1fd;
 }
 
@@ -390,6 +388,10 @@ li.grid:nth-child(even) {
 
     .grid a {
         font-size: 1.5em;
+    }
+
+    .grid a::before {
+        top: 30px;
     }
 }
 

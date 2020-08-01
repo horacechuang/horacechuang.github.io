@@ -10,15 +10,17 @@
     color: #666;
 }
 
+html {
+    overflow-x: hidden !important;
+}
 
 html, body {
-    overflow-x: hidden !important;
     scroll-behavior: smooth;
     font-size: 12px;
 }
 
 html.scrollHidden {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 /* When mobile is landspace mode */
@@ -95,8 +97,8 @@ nav {
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
 
-nav.scrollUp {
-    transform: translateY(-100px);
+nav.invisibleNav {
+    transform: translateY(-65px);
 }
 
 nav > .nav-container {

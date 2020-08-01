@@ -4,9 +4,10 @@ $(function() {
       $(".nav-menu").toggleClass('collapse');
       $('html').toggleClass('scrollHidden');
     })
+
     $('.btn-nav a').on('click', function() {
-      $(".nav-menu").removeClass('collapse');
       $(".menuBtn").removeClass('btnActive');
+      $(".nav-menu").removeClass('collapse');
       $('html').removeClass('scrollHidden');
     })
   });
