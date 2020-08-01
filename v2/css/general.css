@@ -10,9 +10,12 @@
     color: #666;
 }
 
-body {
+html {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
+}
+
+body {
     font-size: 12px;
 }
 
