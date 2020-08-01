@@ -10,13 +10,13 @@
     color: #666;
 }
 
-html {
+html,body {
     overflow-x: hidden !important;
-    scroll-behavior: smooth;
 }
 
 body {
     font-size: 12px;
+    scroll-behavior: smooth;
 }
 
 body.scrollHidden, html.scrollHidden {
