@@ -227,7 +227,7 @@ main {
 }
 
 li.grid {
-    max-width: 580px;
+    max-width: 600px;
     margin-bottom: 100px;
 }
 
@@ -259,9 +259,27 @@ li.grid:nth-child(even) {
     letter-spacing: .25px;
 }
 
+.hiddenImg {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 0.5px solid rgba(238, 238, 238, 0.2);
+    transition: .25s all linear;
+    /* box-shadow: 0px 5px 38px rgba(189, 189, 189, .2); */
+}
+
+.hiddenImg:hover {
+    box-shadow: 0px 1px 17px rgba(192, 192, 192, .25);
+}
+
 .grid img {
     width: 100%;
-    border-radius: 10px;
+    transform: scale(1.02);
+    transition: .25s all ease-in-out;
+}
+
+.grid img:hover {
+    transform: scale(1);
+    transition: .25s all ease-in-out;
 }
 
 .grid a {
@@ -432,7 +450,7 @@ li.grid:nth-child(even) {
         position: absolute;
         width: 250px;
         transform: rotate(45deg);
-        margin-top: -300px;
+        margin-top: -350px;
         margin-left: 22.5%;
         z-index: -2;
     }
@@ -440,7 +458,7 @@ li.grid:nth-child(even) {
     /* parapraph text */
 
     .intro > .paragraph {
-        padding-top: 20px;
+        padding-top: 50px;
         width: 100%;
     }
 
@@ -506,26 +524,22 @@ li.grid:nth-child(even) {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     /* parapraph text */
 
     .intro > .paragraph {
-        padding-top: 15px;
+        padding: 235px 0 25px 0;
     }
 
     /* project */
 
     .grid h3 {
-        font-size: 1.25em;
+        font-size: 1.45em;
         margin: 30px 0 10px 0;
     }
 
-    .grid p {
-        font-size: 1em;
-    }
-
-    .grid a {
+    .grid p, .grid a {
         font-size: 1.25em;
     }
 
