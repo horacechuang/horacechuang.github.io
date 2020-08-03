@@ -229,7 +229,6 @@ main {
 li.grid {
     max-width: 580px;
     margin-bottom: 150px;
-    animation: fadeInUp 1.5s;
 }
 
 li.grid:nth-child(odd) {
@@ -429,8 +428,8 @@ li.grid:nth-child(even) {
         position: absolute;
         width: 250px;
         transform: rotate(45deg);
-        margin-top: -350px;
-        margin-left: 30%;
+        margin-top: -300px;
+        margin-left: 22.5%;
         z-index: -2;
     }
 

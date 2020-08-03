@@ -10,13 +10,10 @@
     color: #666;
 }
 
-html {
-    overflow-x: hidden !important;
-}
-
-body {
+html, body {
     font-size: 12px;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 html.scrollHidden {
@@ -89,7 +86,7 @@ nav {
     display: inline-block;
     position: fixed;
     background: hsla(0,0%,100%,.9);
-    transition: 0.25s transform linear;
+    transition: .5s transform ease;
     z-index: 2;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -97,6 +94,10 @@ nav {
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
 
+nav.invisibleNav {
+    transform: translateY(-80px);
+
+}
 
 nav > .nav-container {
     max-width: 1280px;
@@ -374,8 +375,8 @@ nav > .nav-container {
         float: right;
         cursor: pointer;
         z-index: 1;
-        animation: fadeIn;
-        animation-duration: 1.5s;
+        animation: fadeInDown;
+        animation-duration: 1s;
     }
     
     .menuBtn li {
