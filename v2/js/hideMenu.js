@@ -9,12 +9,10 @@ $(document).ready(function () {
         currentScrollTop = topTomaxHeightDistance;
        
         if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight*2) {
-        //   navigation.addClass("invisibleNav");
-        navigation.addClass("invisibleNav");
+        navigation.fadeOut();
 
         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
-        //   navigation.removeClass("invisibleNav");
-            navigation.removeClass("invisibleNav");
+            navigation.fadeIn();
         }
 
         navBar = currentScrollTop;
