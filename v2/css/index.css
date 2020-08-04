@@ -240,10 +240,6 @@ li.grid:hover{
     background-color: rgb(255,255,255);
 }
 
-li.grid:hover .hiddenImg {
-    overflow: hidden;
-}
-
 li.grid:nth-child(odd) {
     margin-left: 10px;
 }
@@ -273,12 +269,14 @@ li.grid:nth-child(even) {
 
 .grid img {
     width: 100%;
-    transform: scale(1);
-    transition: .5s all ease-in-out;
+    transition: .5s all ease;
+    box-shadow: 0px 7px 35px rgba(221, 221, 221, .3);
+    border-radius: 15px;
 }
 
 li.grid:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
+    box-shadow: none;
 }
 
 .grid a {
@@ -508,6 +506,8 @@ li.grid:hover img {
         margin: 0 auto;
         padding: 30px 25px 50px !important;
         margin-bottom: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .grid h3 {
@@ -518,6 +518,10 @@ li.grid:hover img {
     .grid p {
         font-size: 1.25em;
         line-height: 2em;
+    }
+
+    .grid a::before {
+        top: 25px;
     }
 
 
