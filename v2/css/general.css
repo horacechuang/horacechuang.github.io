@@ -86,7 +86,7 @@ nav {
     display: inline-block;
     position: fixed;
     background: hsla(0,0%,100%,.85);
-    transition: .5s transform ease;
+    transition: .25s transform ease-in-out;
     z-index: 2;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);

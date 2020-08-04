@@ -181,7 +181,7 @@ img.pattern {
 main {
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(244, 244, 244, .35);
+    background-color: rgba(218, 218, 218, .2);
     padding: 50px 0;
 }
 
@@ -195,7 +195,7 @@ main {
 .intro-project {
     position: relative;
     display: block;
-    margin: -80px 0 80px 0;
+    margin: -80px 0 40px 0;
     animation: fadeInUp 2s;
 }
 
@@ -224,53 +224,54 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-li.grid {
-    max-width: 600px;
+.project-grid a {
+    max-width: 580px;
     margin-bottom: 50px;
-    transition: .5s all ease-in-out;
+    transition: .35s all ease;
     padding: 35px 30px 60px;
     border-radius: 15px;
 }
 
-li.grid:hover{
+.project-grid a:hover{
     box-shadow: 0px 27px 47px rgba(223, 223, 223, .3);
     transform: translateY(3px);
     background-color: rgb(255,255,255);
 }
 
-li.grid:nth-child(odd) {
+.project-grid a:nth-child(odd) {
     margin-left: 10px;
 }
 
-li.grid:nth-child(even) {
+.project-grid a:nth-child(even) {
     margin-right: 10px;
 }
 
-.grid > h3,p {
+li.grid > h3,p {
     font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-style: normal;
 }
 
-.grid h3  {
+li.grid h3 {
     font-size: 2em;
     line-height: 2.5em;
     font-weight: 600;
     margin: 40px 0 10px 0;
 }
 
-.grid p {
+li.grid p {
     font-size: 1.5em;
     line-height: 2em;
     font-weight: 400;
     letter-spacing: .25px;
 }
 
-.grid img {
+li.grid img {
     width: 100%;
-    transition: .5s all ease;
-    box-shadow: 0px 7px 35px rgba(221, 221, 221, .3);
+    transition: .35s all ease;
+    /* box-shadow: 0px 7px 35px -20px rgba(161, 161, 161, 0.3); */
     border-radius: 15px;
 }
 
@@ -279,7 +280,7 @@ li.grid:hover img {
     box-shadow: none;
 }
 
-.grid a {
+li.grid span {
     display: inline-block;
     position: relative;
     margin-top: 20px;
@@ -288,7 +289,7 @@ li.grid:hover img {
     transition: 0.15s all linear;
 }
 
-.grid a::before {
+li.grid span::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -299,12 +300,12 @@ li.grid:hover img {
     transform: scaleX(0);
 }
 
-.grid a:hover {
+li.grid:hover > span {
     color: #67c1fd;
     transform: translateY(1px);
 }
 
-.grid a:hover::before {
+li.grid:hover > span::before {
     transform: scaleX(1);
     background-color: #67c1fd;
 }
@@ -377,13 +378,13 @@ li.grid:hover img {
         justify-content: space-around;
     }
 
-    li.grid {
+    .project-grid a {
         width: 46.5%;
         margin-bottom: 55px;
         padding: 35px 30px 50px;
     }
 
-    .grid h3 {
+    li.grid h3 {
         line-height: 1.75em;
         margin: 35px 0 15px 0;
     }
@@ -395,20 +396,20 @@ li.grid:hover img {
 
     /* project */
 
-    .grid h3 {
+    li.grid h3 {
         font-size: 1.65em;
     }
 
-    .grid p {
+    li.grid p {
         font-size: 1.35em;
         line-height: 1.9em;
     }
 
-    .grid a {
+    li.grid span {
         font-size: 1.5em;
     }
 
-    .grid a::before {
+    li.grid span::before {
         top: 30px;
     }
 }
@@ -501,29 +502,28 @@ li.grid:hover img {
 
     /* project */
 
-    li.grid {
+    .project-grid a {
         width: 95%;
         margin: 0 auto;
         padding: 30px 25px 50px !important;
-        margin-bottom: 30px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-bottom: 30px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
     }
 
-    .grid h3 {
+    li.grid h3 {
         font-size: 1.65em;
         margin: 40px 0 20px 0;
     }
 
-    .grid p {
+    li.grid p {
         font-size: 1.25em;
         line-height: 2em;
     }
 
-    .grid a::before {
-        top: 25px;
+    li.grid span::before {
+        top: 30px;
     }
-
 
 }
 
@@ -538,13 +538,17 @@ li.grid:hover img {
 
     /* project */
 
-    .grid h3 {
+    li.grid h3 {
         font-size: 1.45em;
         margin: 30px 0 10px 0;
     }
 
-    .grid p, .grid a {
+    li.grid p, li.grid span {
         font-size: 1.25em;
+    }
+
+    li.grid span::before {
+        top: 25px;
     }
 
 }

@@ -8,7 +8,7 @@ $(document).ready(function () {
         var navBarHeight = navigation.height();
         currentScrollTop = topTomaxHeightDistance;
        
-        if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight*2) {
+        if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight) {
         navigation.fadeOut();
 
         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
