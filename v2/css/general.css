@@ -94,9 +94,9 @@ nav {
     /* border-bottom: 1px solid rgba(179, 179, 179, 0.3); */
 }
 
-/* nav.invisibleNav {
-    transform: translateY(-80px);
-} */
+nav.invisibleNav {
+    transform: translateY(-90px);
+}
 
 nav > .nav-container {
     max-width: 1280px;
