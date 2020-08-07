@@ -1,7 +1,7 @@
 /* general set */
 
 #header > .intro, footer {
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ img.pattern {
 /* parapraph text */
 
 .intro > .paragraph {
-    width: 70%;
+    width: 65%;
     padding: 50px 0;
 }
 
@@ -181,12 +181,12 @@ img.pattern {
 main {
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(218, 218, 218, .2);
+    background-color: rgba(231, 231, 231, 0.2);
     padding: 50px 0;
 }
 
 #project, #about {
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -216,6 +216,7 @@ main {
 .project-grid {
     margin: 0 auto;
     position: relative;
+    padding-bottom: 30px;
 }
 
 .project-grid ul {
@@ -223,12 +224,10 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .project-grid a {
-    max-width: 580px;
+    max-width: 550px;
     margin-bottom: 50px;
     transition: .35s all ease;
     padding: 35px 30px 60px;
