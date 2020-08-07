@@ -178,28 +178,31 @@ img.pattern {
 
 /* container */
 
-main {
+main#container {
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(231, 231, 231, 0.2);
-    padding: 50px 0;
 }
 
-#project, #about {
+.project-container, .about-container {
     max-width: 1180px;
     margin: 0 auto;
 }
 
 /* project */
 
-.intro-project {
+#project {
+    background-color: rgba(240, 240, 240, 0.35);
+    padding-top: 50px;
+}
+
+.project-intro {
     position: relative;
     display: block;
     margin: -80px 0 40px 0;
     animation: fadeInUp 2s;
 }
 
-.intro-project h2 {
+.project-intro h2 {
     font-size: 3em;
     display: block;
     position: relative;
@@ -216,7 +219,7 @@ main {
 .project-grid {
     margin: 0 auto;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .project-grid ul {
@@ -226,18 +229,18 @@ main {
     flex-direction: row;
 }
 
-.project-grid a {
+.project-grid a {s
     max-width: 550px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     transition: .35s all ease;
-    padding: 35px 30px 60px;
+    padding: 35px 30px 40px;
     border-radius: 15px;
 }
 
 .project-grid a:hover{
     box-shadow: 0px 27px 47px rgba(223, 223, 223, .3);
-    transform: translateY(3px);
     background-color: rgb(255,255,255);
+    transform: translateY(5px);
 }
 
 .project-grid a:nth-child(odd) {
@@ -248,9 +251,10 @@ main {
     margin-right: 10px;
 }
 
-li.grid > h3,p {
+li.grid > h3, li.grid > p {
     font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-style: normal;
+    text-align: justify;
 }
 
 li.grid h3 {
@@ -258,6 +262,7 @@ li.grid h3 {
     line-height: 2.5em;
     font-weight: 600;
     margin: 40px 0 10px 0;
+    transition: 0.15s all linear;
 }
 
 li.grid p {
@@ -275,7 +280,7 @@ li.grid img {
 }
 
 li.grid:hover img {
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: none;
 }
 
@@ -357,15 +362,15 @@ li.grid:hover > span::before {
 
     /* container */
 
-    #project, #about {
-        padding: 0 25px;
+    #project {
+        padding: 50px 25px;
     }
 
-    .intro-project {
-        margin: -90px 0 50px 0;   
+    .project-intro {
+        margin: -90px 0 20px 0;   
     }
 
-    .intro-project h2 {
+    .project-intro h2 {
         font-size: 2.5em;
         max-width: 250px;
         padding: 15px;
@@ -379,7 +384,7 @@ li.grid:hover > span::before {
 
     .project-grid a {
         width: 46.5%;
-        margin-bottom: 55px;
+        margin-bottom: 20px;
         padding: 35px 30px 50px;
     }
 
@@ -418,7 +423,7 @@ li.grid:hover > span::before {
     /* general */
     
     header {
-        margin: 0 25px 50px 25px;
+        margin: 25px;
     }
 
     /* img */
@@ -489,11 +494,11 @@ li.grid:hover > span::before {
 
     /* container */
 
-    .intro-project {
+    .project-intro {
         margin: -70px 0 40px 0;
     }
 
-    .intro-project h2 {
+    .project-intro h2 {
         font-size: 1.85em;
         max-width: 185px;
         padding: 10px;
@@ -502,10 +507,9 @@ li.grid:hover > span::before {
     /* project */
 
     .project-grid a {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
-        padding: 30px 25px 50px !important;
-        margin-bottom: 30px !important;
+        padding: 30px 25px !important;
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
@@ -535,7 +539,17 @@ li.grid:hover > span::before {
         padding: 235px 0 25px 0;
     }
 
+    /* container */
+
+    .project-intro {
+        margin: -70px 0 20px 0;
+    }
+
     /* project */
+
+    .project-grid a {
+        padding: 35px 25px !important;
+    }
 
     li.grid h3 {
         font-size: 1.45em;
