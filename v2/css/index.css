@@ -229,7 +229,7 @@ main#container {
     flex-direction: row;
 }
 
-.project-grid a {s
+.project-grid a {
     max-width: 550px;
     margin-bottom: 35px;
     transition: .35s all ease;
@@ -366,6 +366,12 @@ li.grid:hover > span::before {
         padding: 50px 25px;
     }
 
+    #about {
+        padding: 0 25px;
+    }
+
+    /* project */
+
     .project-intro {
         margin: -90px 0 20px 0;   
     }
@@ -375,8 +381,6 @@ li.grid:hover > span::before {
         max-width: 250px;
         padding: 15px;
     }
-
-    /* project */
 
     .project-grid ul {
         justify-content: space-around;
@@ -507,7 +511,7 @@ li.grid:hover > span::before {
     /* project */
 
     .project-grid a {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         padding: 30px 25px !important;
         margin-left: 0px !important;
