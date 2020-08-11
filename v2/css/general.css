@@ -95,7 +95,7 @@ nav {
 }
 
 nav.invisibleNav {
-    transform: translateY(-90px);
+    transform: translateY(-100px);
 }
 
 nav > .nav-container {
