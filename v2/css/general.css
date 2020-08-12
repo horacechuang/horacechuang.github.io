@@ -14,6 +14,7 @@ html, body {
     font-size: 12px;
     scroll-behavior: smooth;
     overflow-x: hidden !important;
+    user-select: none;
 }
 
 html.scrollHidden {
@@ -99,7 +100,7 @@ nav.invisibleNav {
 }
 
 nav > .nav-container {
-    max-width: 1180px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
@@ -109,8 +110,6 @@ nav > .nav-container {
     padding: 24px 0;
     max-width: 300px;
     float: left;
-    animation: fadeInDown;
-    animation-duration: 1s;
 }
 
 .logo a {
@@ -140,8 +139,6 @@ nav > .nav-container {
     font-size: 1.25em;
     width: 100%;   
     letter-spacing: 0.3px;
-    animation: fadeInDown;
-    animation-duration: 1s;
 }
 
 .nav-menu li {
@@ -374,8 +371,6 @@ nav > .nav-container {
         float: right;
         cursor: pointer;
         z-index: 1;
-        animation: fadeInDown;
-        animation-duration: 1s;
     }
     
     .menuBtn li {

@@ -1,13 +1,13 @@
 /* general set */
 
-#header > .intro, footer {
-    max-width: 1180px;
+header#header > .intro, footer {
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 /* header */
 
-#header {
+header#header {
     position: relative;
     padding: 50px 0;
 }
@@ -183,15 +183,15 @@ main#container {
     margin: 0 auto;
 }
 
-.project-container, .about-container {
-    max-width: 1180px;
+.project-container {
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 /* project */
 
 #project {
-    background-color: rgba(240, 240, 240, 0.35);
+    background-color: rgba(240, 240, 240, .3);
     padding-top: 50px;
 }
 
@@ -320,30 +320,83 @@ li.grid:hover > span::before {
 /* about */
 
 .about-container  {
-    display: flex;
-    padding: 150px 0 100px 0;
-    height: 1000px;
-}
-
-.about-container h2 {
     display: block;
     position: relative;
-    
+    width: 100%;
+    height: 100vh;
 }
 
+header.about-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 125px 0 50px;
+}
 
+.about-header::before, .about-header::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: rgba(124, 124, 124, 0.25);
+    left: 0;
+}
+
+.about-header::before {
+    top: -30px;
+}
+
+.about-header::after {
+    top: 30px;
+}
+
+.about-header > .column {
+    display: block;
+    position: relative;
+}
+
+.about-header > .zh {
+    width: 45%;
+}
+
+.about-header > .en {
+    width: 55%;
+}
+
+.about-header > .column h2 {
+    display: block;
+    position: relative;
+    line-height: 2em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.about-header > .zh h2 {
+    font-size: 2em;
+}
+
+.about-header > .en h2 {
+    font-size: 1.65em;
+    text-align: right;
+    color: rgb(139, 139, 139, .5);
+    font-weight: 200;
+}
 
 @media (max-width: 1329px) {
 
     /* general */
 
-    #header, #footer {
+    header#header, #footer {
         margin: 0 25px;
     }
 
     /* header */
 
-    #header {
+    header#header {
         padding: 25px 0;
     }
 
@@ -415,6 +468,15 @@ li.grid:hover > span::before {
         margin: 35px 0 15px 0;
     }
 
+    /* about */
+
+    .about-header > .zh h2 {
+        font-size: 1.75em;
+    }
+
+    .about-header > .en h2 {
+        font-size: 1.5em;
+    }
 
 }
 
@@ -442,13 +504,32 @@ li.grid:hover > span::before {
     li.grid span::before {
         top: 30px;
     }
+
+    /* about */
+
+    .about-header > .zh {
+        width: 40%;
+    }
+
+    .about-header > .en {
+        width: 60%;
+    }
+
+    .about-header > .zh h2 {
+        font-size: 1.65em;
+    }
+
+    .about-header > .en h2 {
+        font-size: 1.35em;
+    }
+
 }
 
 @media (max-width: 767px) {
 
     /* general */
     
-    header {
+    header#header {
         margin: 25px;
     }
 
@@ -560,6 +641,34 @@ li.grid:hover > span::before {
 
     li.grid span::before {
         top: 30px;
+    }
+
+    /* about */
+
+    header.about-header {
+        padding: 100px 0 50px;
+    }
+
+    .about-header::before {
+        top: -20px;
+    }
+    
+    .about-header::after {
+        top: 20px;
+    }
+
+    .about-header > .column {
+        width: 100% !important;
+        padding: 15px 0 ;
+    }
+
+    .about-header > .zh h2 {
+        font-size: 1.5em;
+    }
+
+    .about-header > .en h2 {
+        font-size: 1.25em;
+        text-align: left;
     }
 
 }
