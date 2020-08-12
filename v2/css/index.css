@@ -1,6 +1,6 @@
 /* general set */
 
-header#header > .intro, footer {
+.header-container, .project-container, .about-header, .footer-container {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -19,7 +19,6 @@ header#header {
     position: relative;
     float: right;
     margin: -20px 25px 0 0;
-    animation: fadeIn 1.5s;
 }
 
 img.profile {
@@ -75,27 +74,24 @@ img.pattern {
 
 /* parapraph text */
 
-.intro > .paragraph {
+
+.header-container > .paragraph {
     width: 65%;
     padding: 50px 0;
 }
 
-.intro > .paragraph h1 {
+.header-container > .paragraph h1 {
     font-weight: 700;
     font-size: 4em;
-    animation: fadeInUp;
-    animation-duration: 1s;
     margin-bottom: 30px;
     margin-left: -4px;
     color: rgb(32, 204, 216);
 }
 
-.intro > .paragraph h3 {
+.header-container > .paragraph h3 {
     font-size: 2em;
     font-weight: 400;
     line-height: 1.75em;
-    animation: fadeInUp;
-    animation-duration: 1.5s;
     color: rgb(139, 139, 139);
 }
 
@@ -109,8 +105,6 @@ img.pattern {
     display: block;
     margin: 30px 0;
     color: #666;
-    animation: fadeInUp;
-    animation-duration: 2s;
 }
 
 .paragraph a {
@@ -145,8 +139,6 @@ img.pattern {
     display: block;
     font-size: 2em;
     margin: 50px 0;
-    animation: fadeInUp;
-    animation-duration: 2s;
 }
 
 .link-intro li {
@@ -183,11 +175,6 @@ main#container {
     margin: 0 auto;
 }
 
-.project-container {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 /* project */
 
 #project {
@@ -199,7 +186,6 @@ main#container {
     position: relative;
     display: block;
     margin: -80px 0 40px 0;
-    animation: fadeInUp 2s;
 }
 
 .project-intro h2 {
@@ -326,14 +312,14 @@ li.grid:hover > span::before {
     height: 100vh;
 }
 
+/* about-header */
+
 header.about-header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
     padding: 125px 0 50px;
 }
 
@@ -386,27 +372,34 @@ header.about-header {
     font-weight: 200;
 }
 
+/* footer */
+
+footer#footer {
+    height: 10vh;
+}
+
+
 @media (max-width: 1329px) {
 
     /* general */
 
-    header#header, #footer {
-        margin: 0 25px;
+    .about-container, .footer-container {
+        padding: 0 25px;
     }
 
     /* header */
 
     header#header {
-        padding: 25px 0;
+        padding: 25px;
     }
 
     /* parapraph text */
 
-    .intro > .paragraph {
+    .header-container > .paragraph {
         width: 75%;
     }
 
-    .intro > .paragraph h1 {
+    .header-container > .paragraph h1 {
         font-size: 3.5em;
     }
 
@@ -434,10 +427,6 @@ header.about-header {
 
     #project {
         padding: 50px 25px;
-    }
-
-    #about {
-        padding: 0 25px;
     }
 
     /* project */
@@ -469,6 +458,8 @@ header.about-header {
     }
 
     /* about */
+
+    /* about-header */
 
     .about-header > .zh h2 {
         font-size: 1.75em;
@@ -506,6 +497,8 @@ header.about-header {
     }
 
     /* about */
+
+    /* about-header */
 
     .about-header > .zh {
         width: 40%;
@@ -566,17 +559,17 @@ header.about-header {
 
     /* parapraph text */
 
-    .intro > .paragraph {
+    .header-container > .paragraph {
         padding-top: 50px;
         width: 100%;
     }
 
-    .intro > .paragraph h1 {
+    .header-container > .paragraph h1 {
         font-size: 2.5em;
         margin-left: -3px;
     }
 
-    .intro > .paragraph h3 {
+    .header-container > .paragraph h3 {
         font-size: 1.5em;
         line-height: 2em;
     }
@@ -645,6 +638,8 @@ header.about-header {
 
     /* about */
 
+    /* about-header */
+
     header.about-header {
         padding: 100px 0 50px;
     }
@@ -678,7 +673,7 @@ header.about-header {
 
     /* parapraph text */
 
-    .intro > .paragraph {
+    .header-container > .paragraph {
         padding: 235px 0 25px 0;
     }
 
