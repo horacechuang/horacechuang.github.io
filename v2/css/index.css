@@ -315,7 +315,6 @@ li.grid:hover > span::before {
     display: block;
     position: relative;
     width: 100%;
-    height: 100vh;
 }
 
 /* about-header */
