@@ -1,6 +1,8 @@
 /* general set */
 
-.header-container, .project-container, .about-header, .footer-container {
+.header-container, 
+.project-container,
+.footer-container {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -305,6 +307,10 @@ li.grid:hover > span::before {
 
 /* about */
 
+#about {
+    padding: 50px 0;
+}
+
 .about-container  {
     display: block;
     position: relative;
@@ -315,45 +321,53 @@ li.grid:hover > span::before {
 /* about-header */
 
 header.about-header {
+    display: block;
+    position: relative;
+    margin: 100px 0 50px;
+}
+
+.about-header-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 125px 0 50px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.about-header::before, .about-header::after {
+.about-header-container::before, .about-header-container::after {
     content: "";
     position: relative;
     width: 100%;
     height: 1px;
     background: rgba(124, 124, 124, 0.25);
+}
+
+.about-header-container::before {
     left: 0;
+    top: -50px;
 }
 
-.about-header::before {
-    top: -30px;
+.about-header-container::after {
+    right: 0;
+    bottom: -50px;
 }
 
-.about-header::after {
-    top: 30px;
-}
-
-.about-header > .column {
+.about-header-container > .column {
     display: block;
     position: relative;
 }
 
-.about-header > .zh {
+.about-header-container > .zh {
     width: 45%;
 }
 
-.about-header > .en {
+.about-header-container > .en {
     width: 55%;
 }
 
-.about-header > .column h2 {
+.about-header-container > .column h2 {
     display: block;
     position: relative;
     line-height: 2em;
@@ -361,11 +375,11 @@ header.about-header {
     letter-spacing: 0.5px;
 }
 
-.about-header > .zh h2 {
+.about-header-container > .zh h2 {
     font-size: 2em;
 }
 
-.about-header > .en h2 {
+.about-header-container > .en h2 {
     font-size: 1.65em;
     text-align: right;
     color: rgb(139, 139, 139, .5);
@@ -395,11 +409,11 @@ footer#footer {
 
     /* parapraph text */
 
-    .header-container > .paragraph {
+    .about-header-container > .paragraph {
         width: 75%;
     }
 
-    .header-container > .paragraph h1 {
+    .about-header-container > .paragraph h1 {
         font-size: 3.5em;
     }
 
@@ -461,11 +475,11 @@ footer#footer {
 
     /* about-header */
 
-    .about-header > .zh h2 {
+    .about-header-container > .zh h2 {
         font-size: 1.75em;
     }
 
-    .about-header > .en h2 {
+    .about-header-container > .en h2 {
         font-size: 1.5em;
     }
 
@@ -500,19 +514,19 @@ footer#footer {
 
     /* about-header */
 
-    .about-header > .zh {
+    .about-header-container > .zh {
         width: 40%;
     }
 
-    .about-header > .en {
+    .about-header-container > .en {
         width: 60%;
     }
 
-    .about-header > .zh h2 {
+    .about-header-container> .zh h2 {
         font-size: 1.65em;
     }
 
-    .about-header > .en h2 {
+    .about-header-container > .en h2 {
         font-size: 1.35em;
     }
 
@@ -634,28 +648,28 @@ footer#footer {
 
     /* about-header */
 
-    header.about-header {
-        padding: 85px 0 50px;
+    .about-header {
+        margin-top: 50px !important;
     }
 
-    .about-header::before {
-        top: -20px;
+    .about-header-container::before {
+        top: -25px;
     }
     
-    .about-header::after {
-        top: 20px;
+    .about-header-container::after {
+        bottom: -25px;
     }
 
-    .about-header > .column {
+    .about-header-container > .column {
         width: 100% !important;
-        padding: 15px 0 ;
+        padding: 15px 0;
     }
 
-    .about-header > .zh h2 {
+    .about-header-container > .zh h2 {
         font-size: 1.5em;
     }
 
-    .about-header > .en h2 {
+    .about-header-container > .en h2 {
         font-size: 1.25em;
         text-align: left;
     }
