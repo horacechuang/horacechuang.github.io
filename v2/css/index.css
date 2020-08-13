@@ -93,7 +93,7 @@ img.pattern {
 .header-container > .paragraph h3 {
     font-size: 2em;
     font-weight: 400;
-    line-height: 1.75em;
+    line-height: 1.85em;
     color: rgb(139, 139, 139);
 }
 
@@ -101,11 +101,11 @@ img.pattern {
     font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 2em;
     letter-spacing: 0.25px;
     display: block;
-    margin: 30px 0;
+    margin: 40px 0;
     color: #666;
 }
 
@@ -386,6 +386,28 @@ header.about-header {
     font-weight: 200;
 }
 
+main.about-main {
+    margin: 150px 0 65px;
+}
+
+.about-main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.about-main-container p {
+    font-size: 2em;
+    line-height: 2.2em;
+    margin: 50px 0;
+    font-family: Karla, ar-udjingxiheib5, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.p-about-eng {
+    color: rgba(116, 116, 116, 0.5);
+}
+
 /* footer */
 
 footer#footer {
@@ -405,6 +427,15 @@ footer#footer {
 
     header#header {
         padding: 30px 40px;
+    }
+
+    .header-container > .paragraph h3 {
+        font-size: 1.85em;
+        line-height: 2em;
+    }
+
+    .header-container > .paragraph p {
+        font-size: 1.55em;
     }
 
     /* parapraph text */
@@ -483,9 +514,27 @@ footer#footer {
         font-size: 1.5em;
     }
 
+    main.about-main {
+        margin: 125px 0 50px;
+    }
+
+    .about-main-container p {
+        font-size: 1.75em;
+        line-height: 2.25em;
+    }
+
 }
 
 @media (max-width: 980px) {
+
+    .header-container > .paragraph h3 {
+        font-size: 1.75em;
+        line-height: 1.9em;
+    }
+
+    .header-container > .paragraph p {
+        font-size: 1.5em;
+    }
 
     /* project */
 
@@ -528,6 +577,11 @@ footer#footer {
 
     .about-header-container > .en h2 {
         font-size: 1.35em;
+    }
+
+    .about-main-container p {
+        font-size: 1.65em;
+        line-height: 2.2em;
     }
 
 }
@@ -674,6 +728,15 @@ footer#footer {
         text-align: left;
     }
 
+    main.about-main {
+        margin: 85px 0 40px;
+    }
+
+    .about-main-container p {
+        font-size: 1.5em;
+        line-height: 2.1em;
+    }
+
 }
 
 
@@ -708,6 +771,15 @@ footer#footer {
 
     li.grid span::before {
         top: 25px;
+    }
+
+    main.about-main {
+        margin: 80px 0 40px;
+    }
+
+    .about-main-container p {
+        font-size: 1.4em;
+        line-height: 2em;
     }
 
 }
