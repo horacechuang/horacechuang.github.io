@@ -384,13 +384,13 @@ footer#footer {
     /* general */
 
     .about-container, .footer-container {
-        padding: 0 25px;
+        padding: 0 40px;
     }
 
     /* header */
 
     header#header {
-        padding: 25px;
+        padding: 30px 40px;
     }
 
     /* parapraph text */
@@ -520,12 +520,6 @@ footer#footer {
 
 @media (max-width: 767px) {
 
-    /* general */
-    
-    header#header {
-        margin: 25px;
-    }
-
     /* img */
 
     .img::before, .img::after {
@@ -553,7 +547,7 @@ footer#footer {
         width: 250px;
         transform: rotate(45deg);
         margin-top: -350px;
-        margin-left: 22.5%;
+        margin-left: 26.5%;
         z-index: -2;
     }
 
@@ -641,7 +635,7 @@ footer#footer {
     /* about-header */
 
     header.about-header {
-        padding: 100px 0 50px;
+        padding: 85px 0 50px;
     }
 
     .about-header::before {
@@ -674,7 +668,7 @@ footer#footer {
     /* parapraph text */
 
     .header-container > .paragraph {
-        padding: 235px 0 25px 0;
+        padding: 235px 0 75px 0;
     }
 
     /* container */
