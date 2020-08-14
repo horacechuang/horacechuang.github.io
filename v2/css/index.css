@@ -266,12 +266,12 @@ li.grid > p.eng-grid-p {
 li.grid img {
     width: 100%;
     transition: .35s all ease;
-    box-shadow: 0px 7px 35px -20px rgba(161, 161, 161, 0.3);
+    box-shadow: 0px 20px 55px -45px rgba(54, 54, 54, .75);
     border-radius: 15px;
 }
 
 li.grid:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: none;
 }
 
@@ -410,7 +410,36 @@ main.about-main {
 /* footer */
 
 footer#footer {
-    height: 10vh;
+    display: block;
+    position: relative;
+    min-height: 250px;
+    padding: 25px 0;
+}
+
+footer#footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(40deg,#fff 0, #c0ffea 12%, #8cd5ff 58%, #92efff 79%, #fff);
+    background-size: 200% 100%;
+    animation: light-border 5s ease infinite;
+}
+
+@keyframes light-border {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+} 
+
+
+.footer-container {
+    
 }
 
 
@@ -519,7 +548,7 @@ footer#footer {
 
     .about-main-container p {
         font-size: 1.75em;
-        line-height: 2.25em;
+        line-height: 2.15em;
     }
 
 }
@@ -580,7 +609,7 @@ footer#footer {
 
     .about-main-container p {
         font-size: 1.65em;
-        line-height: 2.2em;
+        line-height: 2.1em;
     }
 
 }
@@ -733,7 +762,7 @@ footer#footer {
 
     .about-main-container p {
         font-size: 1.5em;
-        line-height: 2.1em;
+        line-height: 2.05em;
     }
 
 }
