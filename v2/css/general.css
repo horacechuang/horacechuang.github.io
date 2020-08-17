@@ -86,7 +86,7 @@ nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,.85);
+    background: hsla(0,0%,100%,.9);
     transition: .25s transform ease-in-out;
     z-index: 2;
     backdrop-filter: blur(12px);
@@ -220,11 +220,22 @@ nav > .nav-container {
 
 .line {
     height: 1px;
-    background: linear-gradient(to bottom right,#c0ffea, #8cd5ff);
-    border-radius: 50px;
+    background: linear-gradient(270deg,#d4ffff 0, #c0ffea 12%, #8cd5ff 58%, #92efff 79%, #d4ffff);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    border-radius: 10px;
     margin: 0 auto;
     max-width: 1280px;
-    opacity: .75;
+    animation: light-line 3.5s linear infinite;
+}
+
+@keyframes light-line {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
 }
 
 /* deco-line nav-inner */
@@ -281,10 +292,11 @@ nav > .nav-container {
 
     .line_nav {
         height: 1px;
-        background: linear-gradient(to bottom right,#c0ffea, #8cd5ff);
+        background: linear-gradient(270deg,#d4ffff 0, #c0ffea 12%, #8cd5ff 58%, #92efff 79%, #d4ffff);
+        background-size: 200% 100%;
+        background-position: 0 0;
         margin: 0 auto;
-        max-width: 1280px;
-        opacity: .75;
+        animation: light-line 5s linear infinite;
     }
 
     /* nav-menu disappear */

@@ -1,8 +1,7 @@
 /* general set */
 
 .header-container, 
-.project-container,
-.footer-container {
+.project-container {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -153,7 +152,7 @@ img.pattern {
 }
 
 .linkedin {
-    color: rgb(0,119,181);
+    color: #0077b5;
 }
 
 .behance {
@@ -180,7 +179,7 @@ main#container {
 /* project */
 
 #project {
-    background-color: rgba(240, 240, 240, .3);
+    background: rgba(240, 240, 240, .3);
     padding-top: 50px;
 }
 
@@ -381,7 +380,7 @@ header.about-header {
 .about-header-container > .en h2 {
     font-size: 1.65em;
     text-align: right;
-    color: rgb(139, 139, 139, .5);
+    color: rgba(139, 139, 139, .5);
     font-weight: 200;
 }
 
@@ -395,7 +394,7 @@ main.about-main {
 }
 
 .about-main-container p {
-    font-size: 2em;
+    font-size: 1.75em;
     line-height: 2.2em;
     margin: 50px 0;
     font-family: Karla, ar-udjingxiheib5, sans-serif;
@@ -412,8 +411,7 @@ main.about-main {
 footer#footer {
     display: block;
     position: relative;
-    min-height: 250px;
-    padding: 25px 0;
+    margin-top: 25px;
 }
 
 footer#footer::before {
@@ -423,7 +421,7 @@ footer#footer::before {
     left: 0;
     width: 100%;
     height: 10px;
-    background: linear-gradient(40deg,#fff 0, #c0ffea 12%, #8cd5ff 58%, #92efff 79%, #fff);
+    background: linear-gradient(40deg,#d4ffff 0, #c0ffea 12%, #8cd5ff 58%, #92efff 79%, #d4ffff);
     background-size: 200% 100%;
     animation: light-border 5s ease infinite;
 }
@@ -439,15 +437,73 @@ footer#footer::before {
 
 
 .footer-container {
-    
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.footer-cta, .footer-link {
+    width: 50%;
+}
+
+.footer-cta h3 {
+    font-family: Karla, Noto Sans TC, sans-serif;
+    letter-spacing: 1px;
+    line-height: 32px;
+    background: linear-gradient(90deg,#52f1bc, #4db9f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-cta h3:first-child {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h3.h3-footer-eng {
+    letter-spacing: 0px;
+    font-size: 1.35em;
+}
+
+.footer-link {
+    text-align: right;
+}
+
+.footer-link li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.footer-link i {
+    font-size: 2.5em;
+    color: rgba(177, 177, 177, .5);
+    transition: 0.25s all linear;
+}
+
+.footer-link i.fa-paper-plane:hover {
+    color: rgb(139, 139, 139);
+}
+
+.footer-link i.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+
+.footer-link i.fa-behance:hover {
+    color: #1769ff;
+}
+
+.footer-link i.fa-dribbble:hover {
+    color: #ea4c89;
+}
 
 @media (max-width: 1329px) {
 
     /* general */
 
-    .about-container, .footer-container {
+    .about-container {
         padding: 0 40px;
     }
 
@@ -468,11 +524,11 @@ footer#footer::before {
 
     /* parapraph text */
 
-    .about-header-container > .paragraph {
+    .header-container > .paragraph {
         width: 75%;
     }
 
-    .about-header-container > .paragraph h1 {
+    .header-container > .paragraph h1 {
         font-size: 3.5em;
     }
 
@@ -535,7 +591,7 @@ footer#footer::before {
     /* about-header */
 
     .about-header-container > .zh h2 {
-        font-size: 1.75em;
+        font-size: 1.7em;
     }
 
     .about-header-container > .en h2 {
@@ -547,8 +603,12 @@ footer#footer::before {
     }
 
     .about-main-container p {
-        font-size: 1.75em;
-        line-height: 2.15em;
+        font-size: 1.7em;
+        line-height: 2.1em;
+    }
+
+    .footer-container {
+        padding: 40px 25px;
     }
 
 }
@@ -609,7 +669,15 @@ footer#footer::before {
 
     .about-main-container p {
         font-size: 1.65em;
-        line-height: 2.1em;
+        line-height: 2em;
+    }
+
+    .footer-link li {
+        margin-left: 20px !important;
+    }
+
+    .footer-link i {
+        font-size: 2em;
     }
 
 }
@@ -762,7 +830,21 @@ footer#footer::before {
 
     .about-main-container p {
         font-size: 1.5em;
-        line-height: 2.05em;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cta, .footer-link {
+        width: 100%;
+    }
+
+    .footer-link {
+        margin-top: 30px;
+        text-align: center;
     }
 
 }
@@ -806,8 +888,7 @@ footer#footer::before {
     }
 
     .about-main-container p {
-        font-size: 1.4em;
-        line-height: 2em;
+        font-size: 1.35em;
     }
 
 }
