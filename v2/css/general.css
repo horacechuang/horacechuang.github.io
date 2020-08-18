@@ -339,7 +339,7 @@ ul.footer-link-btn {
 
 .footer-link i {
     font-size: 2.75em;
-    color: rgba(177, 177, 177, .5);
+    color: rgb(177, 177, 177);
     transition: 0.25s all linear;
 }
 
@@ -360,7 +360,7 @@ ul.footer-link-btn {
 }
 
 .footer-link p {
-    color: rgb(179, 179, 179);
+    color: rgb(214, 214, 214);
 }
 
 /* 1280+margin left 25+right 25 */
@@ -377,6 +377,7 @@ ul.footer-link-btn {
 
     .footer-container {
         padding: 40px 25px;
+        align-items: flex-end;
     }
     
 }
@@ -386,15 +387,19 @@ ul.footer-link-btn {
     /* footer */
 
     .footer-cta .column > span {
-        font-size: 4em;
+        font-size: 3.75em;
+    }
+
+    ul.footer-link-btn {
+        margin-bottom: 15px;
     }
 
     .footer-link li {
-        margin-left: 65px !important;
+        margin-left: 50px !important;
     }
 
     .footer-link i {
-        font-size: 2em;
+        font-size: 2.25em;
     }
 
 }
