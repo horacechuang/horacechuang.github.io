@@ -107,7 +107,7 @@ nav.addShadow {
 }
 
 nav > .nav-container {
-    max-width: 1280px;
+    max-width: 1180px;
     width: 100%;
     margin: 0 auto;
 }
@@ -232,7 +232,7 @@ nav > .nav-container {
     background-position: 0 0;
     border-radius: 10px;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1180px;
     animation: light-line 2s linear infinite;
 }
 
@@ -282,7 +282,7 @@ footer#footer::before {
 
 .footer-container {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1180px;
     padding: 50px 0px;
     display: flex;
     flex-direction: row;
@@ -368,9 +368,9 @@ ul.footer-link-btn {
     color: rgb(214, 214, 214);
 }
 
-/* 1280+margin left 25+right 25 */
+/* 1180+margin left 25+right 25 */
 
-@media (max-width: 1329px) {
+@media (max-width: 1229px) {
 
     /* nav deco-line */
 
