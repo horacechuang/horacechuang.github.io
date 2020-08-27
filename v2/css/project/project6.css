@@ -2,7 +2,7 @@
     z-index: 1;
 }
 
------------------------------
+
 
 /* header */
 
@@ -32,7 +32,15 @@ header.header-header {
 }
 
 header.header-header > img {
-    width: 80%;
+    width: 70%;
+    margin-top: 250px;
+}
+
+header.header-header > img.lemuria-logo {
+    max-width: 350px;
+    position: absolute;
+    margin-top: 80px;
+    top: 70px;
 }
 
 /* footer */
