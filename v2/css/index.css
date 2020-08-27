@@ -187,19 +187,19 @@ span.liho {
 
 /* line-intro list */
 
-.link-intro {
+.link {
     position: relative;
     display: block;
     font-size: 2em;
     margin: 50px 0;
 }
 
-.link-intro li {
+.link li {
     display: inline;
     margin: 0 15px;
 }
 
-.link-intro li:first-child {
+.link li:first-child {
     margin-left: 0;
 }
 
@@ -215,12 +215,8 @@ span.liho {
     color: #ea4c89;
 }
 
-.link-intro a {
+.link a {
     transition: .15s all linear;
-}
-
-.link-intro a:hover {
-    font-size: 2.1em;
 }
 
 /* work area */
@@ -824,12 +820,12 @@ ul.expertise-content p {
 
     /* line-intro list */
 
-    .link-intro {
+    .link {
         font-size: 1.5em;
         margin: 30px 0 0 2px ;
     }
     
-    .link-intro li {
+    .link li {
         margin: 0 10px;
     }
 
