@@ -12,7 +12,7 @@
 
 html, body {
     font-size: 12px;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow-x: hidden !important;
     user-select: none;
     -webkit-user-select: none;
@@ -23,7 +23,30 @@ html.scrollHidden {
     overflow: hidden !important;
 }
 
+/* switch page by pace */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .pace-inactive {
+    display: none;
+  }
+  
+  .pace .pace-progress {
+    background: linear-gradient(90deg,#52f1bc, #4db9f8);
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+  }  
 
 /* When mobile is landspace mode */
 
@@ -65,7 +88,7 @@ html.scrollHidden {
     }
 
     .notAllow p {
-        font-family: ar-udjingxiheib5, sans-serif;
+        font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
         font-weight: 600;
         font-style: normal;
         font-size: 1.5em;
@@ -102,7 +125,7 @@ nav.invisibleNav {
 }
 
 nav.addShadow {
-    box-shadow: 0px 10px 60px rgba(194, 194, 194, .25);
+    box-shadow: 0px 5px 25px rgba(194, 194, 194, .25);
     transition: .5s all ease;
 }
 
@@ -160,12 +183,12 @@ nav > .nav-container {
 /* nav-menu li animate link */
 
 .nav-menu li a {
-    font-family: Karla, Noto Sans TC,sans-serif;
-    font-weight: 400;
+    font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
+    font-weight: 500;
     position: relative;
     display: inline-block;
     transition: 0.25s all ease;
-    color: rgb(173, 173, 173);
+    color: rgb(138, 138, 138);
 }
 
 .nav-menu li a:hover {
@@ -177,11 +200,11 @@ nav > .nav-container {
     content: "";
     position: absolute;
     height: 1px;
-    top: 30px;
+    top: 25px;
     left: 0;
     right: 0;
     background-color: rgb(139, 139, 139);
-    opacity: 0.25;
+    opacity: 0.5;
     transition: .2s all ease;
     /* transform-origin: bottom left; */
     transform: scaleX(0);
@@ -202,24 +225,30 @@ nav > .nav-container {
 }
 
 .nav-menu li:last-child a {
-    color: #86ceff;
-    padding: 7px 9px;
-    border-radius: 7px;
-    border: 1px solid #86ceff;
+    color: white;
+    background: linear-gradient(270deg,#65ffcc, #63c6ff);
+    text-shadow: 0px 5px 15px rgba(53, 53, 53, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 1;
     transition: 0.15s all ease-in;
 }
 
 .nav-menu li:last-child a:hover {
-    background: #67c1fd !important;
-    border-color: #67c1fd !important;
     color: white !important;
-    transition: 0.25s all ease-out;
+    opacity: .8;
+    transition: 0.15s all ease-out;
+}
+
+.nav-menu li:last-child i {
+    color: white;
+    text-shadow: 0px 5px 15px rgba(53, 53, 53, 0.5);
 }
 
 /* deco-line */
 
 #decoration-line {
-    padding-top: 75px;
+    padding-top: 79px;
     position: relative;
     display: block
 }
@@ -307,7 +336,7 @@ footer#footer::before {
 }
 
 .footer-cta h3 {
-    font-family: Karla, Noto Sans TC, sans-serif;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
     letter-spacing: 1px;
     line-height: 32px;
     background: linear-gradient(240deg,#52f1bc, #4db9f8);
@@ -348,7 +377,7 @@ ul.footer-link-btn {
 }
 
 .footer-link i.fa-paper-plane:hover {
-    color: rgb(139, 139, 139);
+    color: rgb(209, 66, 66);
 }
 
 .footer-link i.fa-linkedin-in:hover {
@@ -369,7 +398,7 @@ ul.footer-link-btn {
 
 /* 1180+margin left 25+right 25 */
 
-@media (max-width: 1229px) {
+@media all and (max-width: 1229px) {
 
     /* nav deco-line */
 
@@ -386,7 +415,7 @@ ul.footer-link-btn {
     
 }
 
-@media (max-width: 980px) {
+@media all and (max-width: 980px) {
 
     /* footer */
 
@@ -408,7 +437,7 @@ ul.footer-link-btn {
 
 }
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
 
     /* logo */
 
@@ -440,6 +469,7 @@ ul.footer-link-btn {
         position: relative;
         margin: 0 25px;
         z-index: 1;
+        top: 1px;
     }
 
     .line_nav {
@@ -523,6 +553,7 @@ ul.footer-link-btn {
 
     .nav-menu li:last-child a {
         transform: none;
+        margin-top: 15px;
     }
 
     /* nav-Btn for mobile */

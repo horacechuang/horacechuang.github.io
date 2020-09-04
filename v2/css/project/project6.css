@@ -2,8 +2,6 @@
     z-index: 1;
 }
 
-
-
 /* header */
 
 header#header, main#container {
@@ -14,33 +12,32 @@ header#header, main#container {
 }
 
 header#header {
-    margin-top: -80px;
     background: rgb(0,0,0);
+    margin-top: -80px;
 }
 
-section.header-container {
+section.project-header-container {
     margin: 0 auto;
 }
 
-header.header-header {
+header.project-header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     padding-top: 80px;
 }
 
-header.header-header > img {
-    width: 70%;
-    margin-top: 250px;
+header.project-header > img.lemuria-logo {
+    max-width: 350px;
+    margin-top: 80px;
+    z-index: 1;
 }
 
-header.header-header > img.lemuria-logo {
-    max-width: 350px;
-    position: absolute;
-    margin-top: 80px;
-    top: 70px;
+header.project-header > img.lemuria-banner {
+    position: relative;
+    margin-top: -200px;
+    width: 85%;
 }
 
 /* footer */
@@ -50,18 +47,50 @@ footer#footer {
     margin-top: 0;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 1229px) {
 
-    #header {
-        margin-top: -60px;
+    header.project-header > img.lemuria-logo {
+        max-width: 300px;
+        margin-top: 60px;
     }
 
-    header.header-header {
-        padding-top: 60px !important;
+    header.project-header > img.lemuria-banner {
+        margin-top: -150px;
+        width: 100%;    
     }
 
-    header.header-header > img {
-        width: 100%;
+}
+
+@media all and (max-width: 980px) {
+
+    header.project-header > img.lemuria-logo {
+        max-width: 275px;
+        margin-top: 50px;
+    }
+
+    header.project-header > img.lemuria-banner {
+        margin-top: -100px;  
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    header#header {
+        margin-top: -61px;
+    }
+
+    header.project-header {
+        padding-top: 61px !important;
+    }
+
+    header.project-header > img.lemuria-logo {
+        max-width: 225px !important;
+        min-height: 200px;
+    }
+
+    header.project-header > img.lemuria-banner {
+        margin-top: -50px;
     }
 
 }

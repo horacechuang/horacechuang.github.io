@@ -89,13 +89,13 @@ img.pattern {
     color: rgb(32, 204, 216);
 }
 
-span.liho {
-    animation: liho-animation 2s ease infinite;
+span.wave {
+    animation: wave-animation 2s ease infinite;
     display: inline-block;
     margin-left: 10px;
 }
 
-@keyframes liho-animation {
+@keyframes wave-animation {
     0% {
         transform: rotate(0deg);
     }
@@ -122,29 +122,10 @@ span.liho {
     }
 }
 
-/* span.liho {
-    animation-name: liho-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-}
-
-@keyframes liho-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
-} */
-
 .header-container > .paragraph h3 {
     font-size: 2em;
     font-weight: 400;
-    line-height: 1.85em;
+    line-height: 1.95em;
     color: rgb(139, 139, 139);
 }
 
@@ -152,8 +133,8 @@ span.liho {
     font-family: Karla, ar-udjingxiheib5, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.7em;
-    line-height: 2em;
+    font-size: 1.75em;
+    line-height: 2.1em;
     letter-spacing: 0.25px;
     display: block;
     margin: 40px 0;
@@ -449,16 +430,16 @@ main.about-main {
     margin: 0 auto;
 }
 
-.parallax-image {
+.about-image {
     display: block;
     position: relative;
-    padding: 50px 0;
+    padding: 25px 0 40px;
     text-align: center;
 }
 
-.parallax-image img.about-img {
-    width: 85%;
-    border-radius: 15px;
+.about-image img.about-img {
+    width: 90%;
+    border-radius: 10px;
     box-shadow: 0px 15px 50px -30px rgba(80, 80, 80, 0.5);
 }
 
@@ -546,7 +527,7 @@ ul.expertise-content p {
     margin: 15px 0 25px 0;
 }
 
-@media (max-width: 1229px) {
+@media all and (max-width: 1229px) {
 
     /* general */
 
@@ -695,7 +676,7 @@ ul.expertise-content p {
 
 }
 
-@media (max-width: 980px) {
+@media all and (max-width: 980px) {
 
     .header-container > .paragraph h3 {
         font-size: 1.75em;
@@ -763,7 +744,7 @@ ul.expertise-content p {
 
 }
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
 
     /* img */
 
@@ -913,11 +894,11 @@ ul.expertise-content p {
         font-size: 1.5em;
     }   
 
-    .parallax-image {
+    .about-image {
         padding: 30px 0;
     }
 
-    .parallax-image img.about-img {
+    .about-image img.about-img {
         width: 95%;
     }
 
@@ -963,7 +944,7 @@ ul.expertise-content p {
 }
 
 
-@media (max-width: 550px) {
+@media all and (max-width: 550px) {
 
     /* parapraph text */
 
@@ -1006,7 +987,7 @@ ul.expertise-content p {
 
     /* about */
 
-    .parallax-image {
+    .about-image {
         padding: 25px 0;
     }
 
