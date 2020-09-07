@@ -1,21 +1,21 @@
-$(document).ready(function () {
+// $(document).ready(function () {
     
-     var navBar, currentScrollTop = 0,
-         navigation = $("nav");
+//      var navBar, currentScrollTop = 0,
+//          navigation = $("nav");
   
-     $(window).scroll(function () {
-        var topTomaxHeightDistance = $(window).scrollTop();
-        var navBarHeight = navigation.height();
-        currentScrollTop = topTomaxHeightDistance;
+//      $(window).scroll(function () {
+//         var topTomaxHeightDistance = $(window).scrollTop();
+//         var navBarHeight = navigation.height();
+//         currentScrollTop = topTomaxHeightDistance;
        
-        if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight) {
-        navigation.addClass("invisibleNav");
+//         if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight) {
+//         navigation.addClass("invisibleNav");
 
-        } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
-            navigation.removeClass("invisibleNav");
-        }
+//         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
+//             navigation.removeClass("invisibleNav");
+//         }
 
-        navBar = currentScrollTop;
-    });
+//         navBar = currentScrollTop;
+//     });
     
-  });
+//   });
