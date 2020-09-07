@@ -121,7 +121,7 @@ nav {
 }
 
 nav.invisibleNav {
-    transform: translateY(-150px);
+    transform: translateY(-100px);
 }
 
 nav.addShadow {
@@ -438,6 +438,10 @@ ul.footer-link-btn {
 }
 
 @media all and (max-width: 767px) {
+
+    nav {
+        background: hsla(0,0%,100%,0.925);
+    }
 
     /* logo */
 
