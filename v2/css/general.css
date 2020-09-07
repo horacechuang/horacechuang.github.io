@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     text-decoration: none;
     font-family: 'Karla','Noto Sans TC',sans-serif;
     color: #666;
@@ -54,6 +54,7 @@ html.scrollHidden {
        (max-width: 900px) and
        (max-height: 650px) and
        (orientation: landscape) {
+
     #wrapper {
         display: none;
     }
@@ -79,26 +80,29 @@ html.scrollHidden {
         background: url(../img/index/index_pattern.svg);
         background-size: cover;
         z-index: -1;
-        opacity: 0.75;
+        opacity: 0.5;
     }
 
     .notAllow {
-        text-align: left;
-        padding: 0 50px;
+        padding: 0 75px;
     }
 
     .notAllow p {
-        font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
-        font-weight: 600;
+        font-family: 'Karla', 'Noto Sans TC', sans-serif;
+        font-weight: 400;
         font-style: normal;
-        font-size: 1.5em;
-        line-height: 2em;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
+        font-size: 1.4em;
+        line-height: 2.2em;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+        text-align: left;
     }
 
     .notAllow span {
-        color: red;
+        color: #3a3a3a;
+        font-weight: 700;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #3a3a3a;
     }
 }
 
