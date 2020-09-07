@@ -12,7 +12,7 @@
 
 html, body {
     font-size: 12px;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth !important;
     overflow-x: hidden !important;
     user-select: none;
     -webkit-user-select: none;
@@ -188,7 +188,7 @@ nav > .nav-container {
     position: relative;
     display: inline-block;
     transition: 0.25s all ease;
-    color: rgb(138, 138, 138);
+    color: rgb(173, 173, 173);
 }
 
 .nav-menu li a:hover {
@@ -516,8 +516,8 @@ ul.footer-link-btn {
     
     .nav-menu.collapse li {
         display: block;
-        margin: 23px 0;
-        font-size: 1em;
+        margin: 30px 0;
+        font-size: 1.05em;
         animation: fadeInDown;
         animation-duration: .5s;
     }

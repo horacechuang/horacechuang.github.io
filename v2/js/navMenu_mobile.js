@@ -5,7 +5,7 @@ $(function() {
       $('html').toggleClass('scrollHidden');
     })
 
-    $('.btn-nav a').on('click', function() {
+    $('.nav-btn a').on('click', function() {
       $(".menuBtn").removeClass('btnActive');
       $(".nav-menu").removeClass('collapse');
       $('html').removeClass('scrollHidden');
