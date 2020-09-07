@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    
      var navBar, currentScrollTop = 0,
          navigation = $("nav");
   

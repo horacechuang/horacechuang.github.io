@@ -1,4 +1,4 @@
-$(function() {
+  $(function() {
     $('.menuBtn').on('click', function() {
       $(this).toggleClass('btnActive');
       $(".nav-menu").toggleClass('collapse');
@@ -10,4 +10,5 @@ $(function() {
       $(".nav-menu").removeClass('collapse');
       $('html').removeClass('scrollHidden');
     })
+
   });

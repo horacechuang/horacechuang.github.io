@@ -124,6 +124,7 @@ nav {
     -webkit-backdrop-filter: blur(5px);
 }
 
+
 nav.invisibleNav {
     transform: translateY(-100px);
 }
@@ -165,14 +166,14 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    margin: 20px 0;
+    margin: 22px 0;
     float: right;
 }
 
 .nav-menu ul {
     font-size: 1.35em;
     width: 100%;   
-    letter-spacing: 0.15px;
+    letter-spacing: .25px;
 }
 
 .nav-menu li {
@@ -197,7 +198,15 @@ nav > .nav-container {
 
 .nav-menu li a:hover {
     transform: translateY(1px);
-    color: rgb(78, 78, 78);
+    color: rgb(54, 54, 54);
+}
+
+.nav-menu:hover > ul.nav-btn:hover a:hover {
+    opacity: 1;
+}
+
+.nav-menu:hover > ul.nav-btn:hover a{
+    opacity: 0.5;
 }
 
 .nav-menu li a::before {
@@ -209,13 +218,13 @@ nav > .nav-container {
     right: 0;
     background-color: rgb(139, 139, 139);
     opacity: 0.5;
-    transition: .2s all ease;
+    transition: .25s all ease;
     /* transform-origin: bottom left; */
     transform: scaleX(0);
 }
 
 .nav-menu li a:hover::before {
-    transition: .2s all ease;
+    transition: .25s all ease;
     /* transform-origin: bottom right; */
     transform: scaleX(1);
 }
@@ -230,18 +239,18 @@ nav > .nav-container {
 
 .nav-menu li:last-child a {
     color: white;
-    background: linear-gradient(270deg,#65ffcc, #63c6ff);
+    background: linear-gradient(270deg,#46f3b9, #2eb0fc);
     text-shadow: 0px 5px 15px rgba(53, 53, 53, 0.5);
     padding: 10px;
     border-radius: 10px;
-    opacity: 1;
-    transition: 0.15s all ease-in;
+    opacity: .65;
+    transition: .25s all ease-in;
 }
 
 .nav-menu li:last-child a:hover {
     color: white !important;
-    opacity: .8;
-    transition: 0.15s all ease-out;
+    opacity: 1;
+    transition: .25s all ease-out;
 }
 
 .nav-menu li:last-child i {
@@ -252,7 +261,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 79px;
+    padding-top: 83px;
     position: relative;
     display: block
 }
@@ -439,6 +448,25 @@ ul.footer-link-btn {
         font-size: 2.25em;
     }
 
+}
+
+@media all and (max-width: 800px) {
+
+    .logo a {
+        font-size: 1.5em;
+    }
+
+    .nav-menu ul {
+        font-size: 1.3em;
+    }
+    
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .nav-menu li:last-child {
+        margin: 0 0 0 15px;
+    }
 }
 
 @media all and (max-width: 767px) {
