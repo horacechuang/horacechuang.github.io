@@ -21,7 +21,7 @@ section.project-header-container {
 }
 
 header.project-header {
-    padding-top: 82px;
+    padding: 82px 0;
     position: relative;
 }
 
@@ -30,7 +30,7 @@ header.project-header > img.lemuria-logo {
     display: block;
     position: relative;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 82px;
     z-index: 1;
 }
 
@@ -39,9 +39,38 @@ header.project-header > img.lemuria-banner {
     margin: 0 auto;
     display: block;
     position: relative;
-    top: -200px;
+    margin-top: -200px;
    
 }
+
+header.project-header > .header-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin-top: -150px;
+}
+
+header.project-header > .header-title h2 {
+    color: rgb(255,255,255);
+    text-align: center;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.header-title h2:after {
+    content: '';
+    width: 75px;
+    height: 1px;
+    background: rgb(255,255,255);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
 
 /* footer */
 
@@ -52,6 +81,10 @@ footer#footer {
 
 @media all and (max-width: 1229px) {
 
+    header#header, main#container {
+        padding: 0 25px;
+    }
+
     header.project-header > img.lemuria-logo {
        max-width: 350px;
        padding-top: 75px;
@@ -59,7 +92,15 @@ footer#footer {
 
     header.project-header > img.lemuria-banner {
         width: 100%;
-        top: -100px;
+        margin-top: -150px;
+    }
+
+    header.project-header > .header-title {
+        margin-top: -125px;
+    }
+
+    header.project-header > .header-title h2 {
+        font-size: 3em;
     }
 
 }
@@ -71,7 +112,19 @@ footer#footer {
     }
 
     header.project-header > img.lemuria-banner {
-        top: -75px;
+        margin-top: -100px;
+    }
+
+    header.project-header > .header-title {
+        margin-top: -125px;
+    }
+
+    header.project-header > .header-title h2 {
+        font-size: 2.5em;
+    }
+
+    .header-title h2:after {
+        margin-top: 40px;
     }
 
 }
@@ -83,7 +136,7 @@ footer#footer {
     }
 
     header.project-header {
-        padding-top: 61px !important;
+        padding: 61px 0 !important;
     }
 
     header.project-header > img.lemuria-logo {
@@ -91,7 +144,31 @@ footer#footer {
     }
 
     header.project-header > img.lemuria-banner {
-       top: -50px;
+       margin-top: -75px;
+    }
+
+    header.project-header > .header-title {
+        margin-top: -75px;
+    }
+
+    header.project-header > .header-title h2 {
+        font-size: 2.25em;
+    }
+
+    .header-title h2:after {
+        margin-top: 30px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    header.project-header > img.lemuria-logo {
+        max-width: 200px;
+    }
+
+    header.project-header > img.lemuria-banner {
+        margin-top: -60px;
     }
 
 }
