@@ -7,15 +7,20 @@
     <meta name="description" content="The Selected Work of Horace Chuang.">
     <title>Project 5 - Horace Chuang | Selected Work </title>
     <!-- Load CSS -->
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/project/project5.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/project/project5.css">
+    <link rel="stylesheet" href="../css/animsition.min.css">
     <!-- Load JS File-->
     <script src="https://kit.fontawesome.com/2518fecbd4.js" crossorigin="anonymous"></script>
+    <script src="../js/callTypekit.js"></script>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/pace.min.js"></script>
     <script src="../js/smooth-scroll.polyfills.min.js"></script>
+    <script src="../js/callSmoothScroll.js"></script>
+    <script src="../js/animsition.min.js"></script>
+    <script src="../js/callAnimsition.js"></script>
     <script src="../js/navMenu_mobile.js"></script>
     <script src="../js/hideMenu.js"></script>
     <script src="../js/scrollPosition.js"></script>
@@ -24,12 +29,12 @@
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <meta http-equiv="expires" content="0">
 </head>
-<body class>
+<body class="animsition">
     <div id="wrapper">
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <a href="../">
+                    <a href="../" class="animsition-link">
                         Horace Chuang
                     </a>
                 </div>
@@ -45,8 +50,8 @@
                         <div class="line_nav"></div>
                     </div>
                     <ul class="nav-btn">
-                        <li><a href="../#project">作品 | Project</a></li>
-                        <li><a href="../#about">關於 | About</a></li>
+                        <li><a href="../#project" class="animsition-link">作品 | Project</a></li>
+                        <li><a href="../#about" class="animsition-link">關於 | About</a></li>
                         <li><a href="https://www.cakeresume.com/horacechuang" target="_blank">履歷 | Resume</a></li>
                         <li class="btn_nav-contact"><a href="mailto:tingfeng.chuang@gmail.com">Get in Touch <i class="fas fa-paper-plane"></i></a></li>
                     </ul>
@@ -110,20 +115,5 @@
             </p>
         </div>
     </section>
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'mki4fnx',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-
-        var scroll = new SmoothScroll('a[href*="#"]',{
-            speed: 250,
-            speedAsDuration: true
-        });
-    </script>
 </body>
 </html>

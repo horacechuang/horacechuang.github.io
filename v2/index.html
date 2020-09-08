@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class lang="zh-TW">
+<html class="animsition" lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,15 +7,20 @@
     <meta name="description" content="The Selected Work of Horace Chuang.">
     <title>Horace Chuang | Selected Work </title>
     <!-- Load CSS -->
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
     <!-- Load JS File-->
     <script src="https://kit.fontawesome.com/2518fecbd4.js" crossorigin="anonymous"></script>
+    <script src="js/callTypekit.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/pace.min.js"></script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/callSmoothScroll.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/callAnimsition.js"></script>
     <script src="js/navMenu_mobile.js"></script>
     <script src="js/hideMenu.js"></script>
     <script src="js/scrollPosition.js"></script>
@@ -29,7 +34,7 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <a href="">
+                    <a href="" class="animsition-link">
                         Horace Chuang
                     </a>
                 </div>
@@ -84,7 +89,7 @@
                     </div>
                     <div class="project-grid">
                         <ul class="grid-box">
-                            <a href="project1">
+                            <a href="project1" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_1.png" alt="BotBonnie">
@@ -95,7 +100,7 @@
                                     <span>See More  &#8250;</span>
                                 </li>
                             </a>
-                            <a href="project2">
+                            <a href="project2" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_2.png" alt="BotBonnie-website">
@@ -106,7 +111,7 @@
                                     <span>See More  &#8250;</span>
                                  </li>
                             </a>
-                            <a href="project3">
+                            <a href="project3" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_3.png" alt="flyingV">
@@ -117,7 +122,7 @@
                                     <span>See More  &#8250;</span>
                                 </li>                       
                             </a>
-                            <a href="project4">
+                            <a href="project4" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_4.png" alt="台日特快車">
@@ -128,7 +133,7 @@
                                     <span>See More  &#8250;</span>
                                 </li>
                             </a>
-                            <a href="project5">
+                            <a href="project5" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_5.png" alt="Rolla">
@@ -139,7 +144,7 @@
                                     <span>See More  &#8250;</span>
                                 </li>
                             </a>
-                            <a href="project6">
+                            <a href="project6" class="animsition-link">
                                 <li class="grid">
                                     <div class="hiddenImg">
                                         <img src="img/index/index_6.png" alt="Lemuria">
@@ -263,20 +268,5 @@
             </p>
         </div>
     </section>
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'mki4fnx',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-
-        var scroll = new SmoothScroll('a[href*="#"]',{
-            speed: 250,
-            speedAsDuration: true
-        });
-    </script>
 </body>
 </html>

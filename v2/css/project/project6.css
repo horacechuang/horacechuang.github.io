@@ -13,7 +13,7 @@ header#header, main#container {
 
 header#header {
     background: rgb(0,0,0);
-    margin-top: -82px;
+    margin-top: -85px;
 }
 
 section.project-header-container {
@@ -21,7 +21,7 @@ section.project-header-container {
 }
 
 header.project-header {
-    padding: 82px 0;
+    padding: 85px 0;
     position: relative;
 }
 
@@ -45,7 +45,6 @@ header.project-header > img.lemuria-banner {
 
 header.project-header > .header-title {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     position: relative;
     margin-top: -150px;
@@ -55,7 +54,7 @@ header.project-header > .header-title h2 {
     color: rgb(255,255,255);
     text-align: center;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-size: 3.75em;
+    font-size: 3em;
     font-weight: 500;
     letter-spacing: 4px;
 }
@@ -100,7 +99,7 @@ footer#footer {
     }
 
     header.project-header > .header-title h2 {
-        font-size: 3em;
+        font-size: 2.75em;
     }
 
 }
@@ -157,7 +156,7 @@ footer#footer {
     }
 
     .header-title h2:after {
-        margin-top: 30px;
+        margin-top: -35px;
     }
 
 }
@@ -170,6 +169,18 @@ footer#footer {
 
     header.project-header > img.lemuria-banner {
         margin-top: -60px;
+    }
+
+    header.project-header > .header-title {
+        margin-top: -40px;
+    }
+
+    header.project-header > .header-title h2 {
+        font-size: 1.85em;
+    }
+
+    .header-title h2:after {
+        margin-top: 25px;
     }
 
 }
