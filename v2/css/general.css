@@ -126,7 +126,7 @@ nav {
 
 
 nav.invisibleNav {
-    transform: translateY(-100px);
+    transform: translateY(-120px);
 }
 
 nav.addShadow {
@@ -261,7 +261,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 83px;
+    padding-top: 84px;
     position: relative;
     display: block
 }
