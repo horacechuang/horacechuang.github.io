@@ -13,7 +13,7 @@ header#header, main#container {
 
 header#header {
     background: rgb(0,0,0);
-    margin-top: -80px;
+    margin-top: -82px;
 }
 
 section.project-header-container {
@@ -21,23 +21,26 @@ section.project-header-container {
 }
 
 header.project-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding-top: 80px;
+    padding-top: 82px;
+    position: relative;
 }
 
 header.project-header > img.lemuria-logo {
-    max-width: 350px;
-    margin-top: 80px;
+    max-width: 390px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
     z-index: 1;
 }
 
 header.project-header > img.lemuria-banner {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
     position: relative;
-    margin-top: -200px;
-    width: 85%;
+    top: -200px;
+   
 }
 
 /* footer */
@@ -50,13 +53,13 @@ footer#footer {
 @media all and (max-width: 1229px) {
 
     header.project-header > img.lemuria-logo {
-        max-width: 300px;
-        margin-top: 60px;
+       max-width: 350px;
+       padding-top: 75px;
     }
 
     header.project-header > img.lemuria-banner {
-        margin-top: -150px;
-        width: 100%;    
+        width: 100%;
+        top: -100px;
     }
 
 }
@@ -64,12 +67,11 @@ footer#footer {
 @media all and (max-width: 980px) {
 
     header.project-header > img.lemuria-logo {
-        max-width: 275px;
-        margin-top: 50px;
+       max-width: 300px;
     }
 
     header.project-header > img.lemuria-banner {
-        margin-top: -100px;  
+        top: -75px;
     }
 
 }
@@ -85,12 +87,11 @@ footer#footer {
     }
 
     header.project-header > img.lemuria-logo {
-        max-width: 225px !important;
-        min-height: 200px;
+        max-width: 250px;
     }
 
     header.project-header > img.lemuria-banner {
-        margin-top: -50px;
+       top: -50px;
     }
 
 }
