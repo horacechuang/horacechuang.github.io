@@ -56,7 +56,7 @@ header.project-header > .header-title h2 {
     text-align: center;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-size: 3.75em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 4px;
 }
 
@@ -148,11 +148,12 @@ footer#footer {
     }
 
     header.project-header > .header-title {
-        margin-top: -75px;
+        margin-top: -50px;
     }
 
     header.project-header > .header-title h2 {
-        font-size: 2.25em;
+        font-size: 2em;
+        letter-spacing: 2.5px;
     }
 
     .header-title h2:after {
