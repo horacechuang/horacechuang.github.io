@@ -2,8 +2,8 @@ $(document).ready(function() {
     $(".animsition").animsition({
         inClass: 'fade-in-up-sm',
         outClass: 'fade-out-down-sm',
-        inDuration: 750,
-        outDuration: 500,
+        inDuration: 1200,
+        outDuration: 800,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
         loading: false,

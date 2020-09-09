@@ -153,7 +153,6 @@ nav > .nav-container {
     text-align: left;
     color: rgb(173, 173, 173);
     transition: 0.15s all linear;
-    padding: 5px;
 }
 
 .logo a:hover {
@@ -262,7 +261,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 83px;
+    padding-top: 84px;
     position: relative;
     display: block
 }
