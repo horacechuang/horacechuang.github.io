@@ -824,6 +824,10 @@ ul.expertise-content p {
 
     /* container */
 
+    main#container {
+        margin-bottom: 225px;
+    }
+
     .project-intro {
         margin: -70px 0 40px 0;
     }
