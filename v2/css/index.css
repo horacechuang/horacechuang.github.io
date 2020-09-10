@@ -636,10 +636,6 @@ ul.expertise-content p {
         font-size: 1.5em;
     }
 
-    main.about-main {
-        margin: 125px 0 50px;
-    }
-
     blockquote.about-main-header p {
         font-size: 1.7em;
         line-height: 2.1em;
@@ -825,7 +821,7 @@ ul.expertise-content p {
     /* container */
 
     main#container {
-        margin-bottom: 125px;
+        margin-bottom: 100px;
     }
 
     .project-intro {

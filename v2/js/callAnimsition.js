@@ -6,10 +6,10 @@ $(document).ready(function() {
         outDuration: 800,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-        loading: false,
-        loadingParentElement: 'body', //animsition wrapper element
+        loading: true,
+        loadingParentElement: 'html', //animsition wrapper element
         loadingClass: 'animsition-loading',
-        loadingInner: '', // e.g '<img src="loading.svg" />'
+        loadingInner: '<img src="img/loading.svg" />', // e.g '<img src="loading.svg" />'
         timeout: false,
         timeoutCountdown: 5000,
         onLoadEvent: true,

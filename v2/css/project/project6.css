@@ -2,17 +2,19 @@
     z-index: 1;
 }
 
+body {
+    background: rgb(0,0,0);
+}
+
 /* header */
 
 header#header, main#container {
     width: 100%;
     position: relative;
     display: block;
-    background: rgb(0,0,0);
 }
 
 header#header {
-    background: rgb(0,0,0);
     margin-top: -85px;
 }
 
@@ -70,13 +72,11 @@ header.project-header > .header-title h2 {
     margin-top: 45px;
 }
 
+main#container {
+    margin-bottom: 80px;
+}
 
 /* footer */
-
-footer#footer {
-    background: hsla(0, 0%, 0%, 0.95);
-    margin-top: 0;
-}
 
 @media all and (max-width: 1229px) {
 
