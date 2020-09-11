@@ -1,6 +1,6 @@
 $(document).ready(function () {
      var navBar, currentScrollTop = 0,
-         navigation = $("nav");
+         navigation = $("nav"),
          footer = $("footer");
   
      $(window).scroll(function () {
