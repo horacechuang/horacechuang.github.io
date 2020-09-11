@@ -41,7 +41,6 @@ nav {
     -webkit-backdrop-filter: blur(5px);
 }
 
-
 nav.invisibleNav {
     transform: translateY(-120px);
 }
@@ -213,7 +212,21 @@ nav > .nav-container {
 
 footer#footer {
     display: block;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 120px;
+    background: hsla(0, 0%, 100%, .925);
+    transition: .5s all ease-in-out;
+}
+
+footer.invisibleFooter {
+    transform: translateY(150px);
+}
+
+footer.addShadow {
+    box-shadow: 0px -5px 25px rgba(194, 194, 194, .25);
+    transition: .5s all ease;
 }
 
 footer#footer::before {
@@ -240,7 +253,7 @@ footer#footer::before {
 .footer-container {
     margin: 0 auto;
     max-width: 1180px;
-    padding: 50px 0px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,12 +308,16 @@ h3.h3-footer-eng {
 }
 
 ul.footer-link-btn {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-link li {
     display: inline;
     margin-left: 65px;
+}
+
+.footer-link li:first-child {
+    margin-left: 0;
 }
 
 .footer-link i {
@@ -310,7 +327,7 @@ ul.footer-link-btn {
 }
 
 .footer-link i.fa-paper-plane:hover {
-    color: rgb(209, 66, 66);
+    color: #34b5ff;
 }
 
 .footer-link i.fa-linkedin-in:hover {
@@ -444,6 +461,10 @@ ul.footer-link-btn {
 
 @media all and (max-width: 767px) {
 
+    nav.invisibleNav {
+        transform: translateY(-90px);
+    }
+
     /* logo */
 
     .nav-container > .logo{
@@ -460,7 +481,7 @@ ul.footer-link-btn {
     /* deco-line */
 
     #decoration-line {
-        padding-top: 61px;
+        padding-top: 62px;
     }
 
     .line {
@@ -610,10 +631,12 @@ ul.footer-link-btn {
     /* footer */
 
     footer#footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        min-height: 75px;
         background: hsla(0,0%,100%,0.925);
+    }
+
+    footer.invisibleFooter {
+        transform: translateY(95px);
     }
 
     .footer-container {
@@ -681,7 +704,7 @@ ul.footer-link-btn {
     }
     
     .footer-link i.fa-paper-plane {
-        color: rgb(209, 66, 66);
+        color: #34b5ff;
     }
     
     .footer-link i.fa-linkedin-in {

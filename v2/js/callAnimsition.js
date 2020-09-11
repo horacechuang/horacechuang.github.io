@@ -1,15 +1,15 @@
 $(document).ready(function() {
     $(".animsition").animsition({
-        inClass: 'fade-in-up-sm',
+        inClass: 'fade-in',
         outClass: 'fade-out-down-sm',
-        inDuration: 1200,
-        outDuration: 800,
+        inDuration: 1500,
+        outDuration: 1000,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-        loading: true,
+        loading: flase,
         loadingParentElement: 'html', //animsition wrapper element
         loadingClass: 'animsition-loading',
-        loadingInner: '<img src="img/loading.svg" />', // e.g '<img src="loading.svg" />'
+        loadingInner: '', // e.g '<img src="loading.svg" />'
         timeout: false,
         timeoutCountdown: 5000,
         onLoadEvent: true,

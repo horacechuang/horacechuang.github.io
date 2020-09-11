@@ -207,6 +207,7 @@ span.wave {
 main#container {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 
 /* project */
@@ -821,7 +822,7 @@ ul.expertise-content p {
     /* container */
 
     main#container {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
     }
 
     .project-intro {

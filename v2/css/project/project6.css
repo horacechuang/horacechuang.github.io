@@ -56,7 +56,7 @@ header.project-header > .header-title h2 {
     color: rgb(255,255,255);
     text-align: center;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 500;
     letter-spacing: 4px;
 }
@@ -73,7 +73,7 @@ header.project-header > .header-title h2 {
 }
 
 main#container {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 }
 
 /* footer */
@@ -99,7 +99,7 @@ main#container {
     }
 
     header.project-header > .header-title h2 {
-        font-size: 2.75em;
+        font-size: 3em;
     }
 
 }
@@ -147,7 +147,7 @@ main#container {
     }
 
     header.project-header > .header-title {
-        margin-top: -50px;
+        margin-top: -75px;
     }
 
     header.project-header > .header-title h2 {
@@ -157,6 +157,10 @@ main#container {
 
     .header-title h2:after {
         margin-top: 30px;
+    }
+
+    main#container {
+        margin-bottom: 75px;
     }
 
 }
@@ -172,7 +176,7 @@ main#container {
     }
 
     header.project-header > .header-title {
-        margin-top: -40px;
+        margin-top: -55px;
     }
 
     header.project-header > .header-title h2 {
