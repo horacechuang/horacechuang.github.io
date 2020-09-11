@@ -358,6 +358,10 @@ ul.footer-link-btn {
 
     /* footer */
 
+    footer#footer {
+        padding: 0 25px;
+    }
+
     .footer-container {
         align-items: flex-end;
     }
@@ -368,12 +372,12 @@ ul.footer-link-btn {
 
     /* footer */
 
-    .footer-cta .column > span {
-        font-size: 3.75em;
+    footer#footer {
+        min-height: 105px;
     }
 
-    ul.footer-link-btn {
-        margin-bottom: 15px;
+    .footer-cta .column > span {
+        font-size: 3.75em;
     }
 
     .footer-link li {
@@ -401,6 +405,7 @@ ul.footer-link-btn {
         justify-content: center;
         align-items: center;
         user-select: none;
+        background: white;
     }
 
     #landscapeContent::before {
