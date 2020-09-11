@@ -6,7 +6,7 @@ $(document).ready(function() {
         outDuration: 1000,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-        loading: flase,
+        loading: false,
         loadingParentElement: 'html', //animsition wrapper element
         loadingClass: 'animsition-loading',
         loadingInner: '', // e.g '<img src="loading.svg" />'
