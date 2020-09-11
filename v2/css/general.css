@@ -631,17 +631,17 @@ ul.footer-link-btn {
     /* footer */
 
     footer#footer {
-        min-height: 75px;
+        min-height: 65px;
         background: hsla(0,0%,100%,0.925);
     }
 
     footer.invisibleFooter {
-        transform: translateY(95px);
+        transform: translateY(85px);
     }
 
     .footer-container {
         flex-direction: column;
-        padding: 25px 0;
+        padding: 20px 0;
     }
 
     .footer-cta, .footer-link {

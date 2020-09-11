@@ -2,8 +2,8 @@
     z-index: 1;
 }
 
-body {
-    background: rgb(0,0,0);
+html {
+    background: rgb(0,0,0) !important;
 }
 
 /* header */
@@ -12,6 +12,7 @@ header#header, main#container {
     width: 100%;
     position: relative;
     display: block;
+    background: rgb(0,0,0);
 }
 
 header#header {
@@ -75,6 +76,7 @@ header.project-header > .header-title h2 {
 main#container {
     margin-bottom: 150px;
 }
+
 
 /* footer */
 
