@@ -274,14 +274,13 @@ main#container {
     margin-right: 10px;
 }
 
-
-.project-grid > ul.grid-box:hover a:hover {
-    opacity: 1;
-}
-
 .project-grid > ul.grid-box:hover a {
     opacity: .35;
     transition: 0.15s all linear;
+}
+
+.project-grid > ul.grid-box:hover a:hover {
+    opacity: 1;
 }
 
 li.grid h3 {
