@@ -215,13 +215,13 @@ footer#footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-height: 120px;
+    min-height: 110px;
     background: hsla(0, 0%, 100%, .925);
     transition: .5s all ease-in-out;
 }
 
 footer.invisibleFooter {
-    transform: translateY(150px);
+    transform: translateY(130px);
 }
 
 footer.addShadow {
@@ -253,7 +253,7 @@ footer#footer::before {
 .footer-container {
     margin: 0 auto;
     max-width: 1180px;
-    padding: 20px 0px;
+    padding: 15px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
