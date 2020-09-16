@@ -1,6 +1,4 @@
-#decoration-line {
-    z-index: 1;
-}
+/* general */
 
 html, body {
     background: rgb(0,0,0) !important;
@@ -25,6 +23,10 @@ nav.addShadow, footer.addShadow {
 .nav-menu li a::before {
     background-color: rgb(208, 208, 208);
     opacity: .75;
+}
+
+#decoration-line {
+    z-index: 1;
 }
 
 /* header */
@@ -151,7 +153,15 @@ main#container {
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
+
+    .menuBtn li {
+        background: rgb(203, 203, 203) !important;
+    }
+
+    .menuBtn.btnActive li {
+        background:white !important;
+    }
 
     header#header {
         margin-top: -61px;
