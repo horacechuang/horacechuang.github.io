@@ -5,7 +5,7 @@ html, body {
 }
 
 nav, footer#footer{
-    background: hsla(0, 0%, 0%, .35) !important;
+    background: hsla(0, 0%, 0%, .5) !important;
 }
 
 nav.addShadow, footer.addShadow {
@@ -39,7 +39,7 @@ header#header, main#container {
 }
 
 header#header {
-    margin: -85px 0 85px;
+    margin: -85px 0 25px;
 }
 
 section.project-header-container {
@@ -65,7 +65,7 @@ header.project-header > img.lemuria-banner {
     margin: 0 auto;
     display: block;
     position: relative;
-    margin-top: -200px;
+    margin-top: -250px;
    
 }
 
@@ -83,6 +83,7 @@ header.project-header > .header-title h2 {
     font-size: 4em;
     font-weight: 500;
     letter-spacing: 4px;
+    text-shadow: 0px 0px 25px rgb(255,255,255);
 }
 
 .header-title h2:after {
@@ -97,7 +98,7 @@ header.project-header > .header-title h2 {
 }
 
 .project-header-container > main.project-main-container {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -121,15 +122,79 @@ main.project-main-container h2 > a:hover {
 }
 
 main.project-main-container h2:first-child {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
+
+main.project-main-container figure {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main.project-main-container i.move-arrow {
+    position: relative;
+    color: rgb(129, 129, 129);
+    font-size: 5em;
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    to {
+        top: 0;
+    }
+} 
+
+/* main */
 
 main#container {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
+section.main-design-goal {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
 
-/* footer */
+section.main-design-goal h3 {
+    font-size: 3em;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgb(255,255,255);
+    font-weight: 400;
+}
+
+section.main-design-goal h3:after {
+    content: '';
+    position: relative;
+    display: block;
+    max-width: 75px;
+    height: 1px;
+    margin: 35px 0;
+    left: 1px;
+    background: rgb(94, 94, 94);
+}
+
+section.main-design-goal p {
+    color: rgb(212, 212, 212);
+    font-size: 2em;
+    line-height: 2em;
+    margin-bottom: 35px;
+    font-weight: 100;
+}
+
+.footer-link i {
+    color: rgb(228, 228, 228);
+    opacity: .75;
+}
+
 
 @media all and (max-width: 1229px) {
 
@@ -164,6 +229,10 @@ main#container {
         line-height: 2em;
     }
 
+    section.main-design-goal {
+        padding: 100px 25px 0;
+    }
+
 
 
 }
@@ -188,6 +257,22 @@ main#container {
 
     .header-title h2:after {
         margin-top: 40px;
+    }
+
+    main.project-main-container img.move-arrow {
+        width: 25px;
+    }
+
+    section.main-design-goal {
+        padding: 75px 25px 0;
+    }
+
+    section.main-design-goal h3 {
+        font-size: 2.25em;
+    }
+
+    section.main-design-goal p {
+        font-size: 1.75em;
     }
 
 }
@@ -236,12 +321,36 @@ main#container {
     }
 
     main#container {
-        margin-bottom: 75px;
+        padding-bottom: 75px;
+    }
+
+    main.project-main-container figure {
+        margin-top: 35px;
+    }
+
+    main.project-main-container i.move-arrow {
+        font-size: 3em;
+    }
+
+    section.main-design-goal {
+        padding-top: 75px;
+    }
+
+    section.main-design-goal h3 {
+        font-size: 2em;
+    }
+
+    section.main-design-goal h3:after {
+        margin: 25px 0;
+        width: 50px;
+    }
+
+    section.main-design-goal p {
+        font-size: 1.5em;
     }
 
     .footer-link i {
-        color: rgb(222, 222, 222) !important;
-        opacity: .75;
+        color: rgb(255, 255, 255) !important;
     }
 
 }
