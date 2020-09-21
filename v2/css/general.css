@@ -34,7 +34,7 @@ nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,0.925);
+    background: hsla(0,0%,100%,.9);
     transition: .5s all ease-in-out;
     z-index: 2;
     backdrop-filter: blur(5px);
@@ -222,7 +222,7 @@ footer#footer {
     bottom: 0;
     width: 100%;
     min-height: 103px;
-    background: hsla(0, 0%, 100%, .925);
+    background: hsla(0, 0%, 100%, .9);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     transition: .5s all ease-in-out;

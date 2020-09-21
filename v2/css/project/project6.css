@@ -5,7 +5,7 @@ html, body {
 }
 
 nav, footer#footer{
-    background: hsla(0, 0%, 0%, .65) !important;
+    background: hsla(0, 0%, 0%, .35) !important;
 }
 
 nav.addShadow, footer.addShadow {
@@ -39,7 +39,7 @@ header#header, main#container {
 }
 
 header#header {
-    margin-top: -85px;
+    margin: -85px 0 85px;
 }
 
 section.project-header-container {
@@ -61,7 +61,7 @@ header.project-header > img.lemuria-logo {
 }
 
 header.project-header > img.lemuria-banner {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -96,6 +96,34 @@ header.project-header > .header-title h2 {
     margin-top: 45px;
 }
 
+.project-header-container > main.project-main-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+main.project-main-container h2 {
+    font-size: 2.5em;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    line-height: 2em;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+}
+
+main.project-main-container h2 > a {
+    font-size: 1em;
+    color: rgb(160, 160, 160);
+    transition: .25s all ease;
+    /* inherit */
+}
+
+main.project-main-container h2 > a:hover {
+    opacity: .75;
+}
+
+main.project-main-container h2:first-child {
+    margin-bottom: 35px;
+}
+
 main#container {
     margin-bottom: 150px;
 }
@@ -126,6 +154,17 @@ main#container {
     header.project-header > .header-title h2 {
         font-size: 3em;
     }
+
+    main.project-main-container {
+        padding: 0 25px;
+    }
+
+    main.project-main-container h2 {
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+
 
 }
 
@@ -190,6 +229,10 @@ main#container {
 
     .header-title h2:after {
         margin-top: 30px;
+    }
+
+    main.project-main-container h2 {
+        font-size: 1.5em;
     }
 
     main#container {
