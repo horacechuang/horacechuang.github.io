@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="../css/project/project6.css">
     <link rel="stylesheet" href="../css/animsition.min.css">
     <!-- Load JS File-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/2518fecbd4.js" crossorigin="anonymous"></script>
     <script src="../js/callTypekit.js"></script>
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/smooth-scroll.polyfills.min.js"></script>
-    <script src="../js/callSmoothScroll.js"></script>
     <script src="../js/animsition.min.js"></script>
     <script src="../js/callAnimsition.js"></script>
     <script src="../js/navMenu_mobile.js"></script>
@@ -74,7 +72,7 @@
                         華語歌手蔡健雅 2016 的世界巡迴演唱會主題是「列穆尼亞 LEMURIA」。這是一個古文明神話，描述當時的地球豐盛美麗，沒有疾病和暴力。直到災難來襲，列穆尼亞人才進入地心守護地球。而在這演唱會中，歌手蔡健雅可能就是地心使者，用音樂撫慰人心，引導如何去愛。
                     </h2>
                     <h2>
-                        而 <a href="https://ultracombos.com/3035952" target="_blank">蔡健雅 列穆尼亞 2016 台北演唱會 [Tanya Chua - LEMURIA Tour 2016]</a> 則是我在 <a href="https://ultracombos.com/" target="_blank">叁式</a> 實習時參與製作的正式專案。
+                        而 <a href="https://ultracombos.com/3035952" target="_blank">此項專案</a> 則是我在 <a href="https://ultracombos.com/" target="_blank">叁式</a> 實習時參與製作的正式專案。
                     </h2>
                     <figure>
                         <i class="fas fa-angle-down move-arrow"></i>
@@ -87,30 +85,114 @@
                 <section class="main-design-goal">
                     <h3>Design Goal</h3>
                     <p>
-                        我參與的專案為「異類的同類」這首歌的影像視覺，我與另一名夥伴利用空拍機蒐集空拍機拍攝的實景素材，透過攝影測量術 (Photogrammetry) 從而建立 3D 虛擬場景至演唱會互動視覺中。
+                        我參與的專案為「異類的同類」這首歌的影像視覺，我與另一名夥伴利用空拍機蒐集空拍機拍攝的實景素材，透過 Photogrammetry 攝影測量技術的軟體，建立龐大的場景，從而透過 Point Cloud 點雲系統合成至演唱會的互動視覺中。
                     </p>
                     <p>
-                        歌手表演時，透過場景的相互變換與舞台前的 Kinect 裝置捕捉歌手全身至虛擬場景中，營造撫慰人心的音樂使者形象。
+                        歌手表演時，透過場景的相互變換與舞台前的多個 Kinect 裝置去捕捉歌手全身的型態至虛擬場景中，營造撫慰人心的音樂使者形象。
                     </p>
+                    <figure>
+                        <img src="../img/project6/design-goal.jpg" alt="design-goal">
+                    </figure>
                 </section>
                 <section class="main-design-process">
-                    <h3>Design Process</h3>
-                    <p>
-                        為了完成這項任務，我們分成三個階段進行，分別是：收集素材、
-                    </p>
-                    <article class="collect">
-                        <h3>Collect</h3>
+                    <article class="process-overview">
+                        <h3 class="title">Design Process</h3>
                         <p>
-                            得知我們要一起參與這個專案，感到十分興奮卻也感到時間緊迫，因為實際上工作期程只有兩個月不到的時間可以實作。首先就是著手收集素材，因此我們到了陽明山的小油坑、擎天崗，新北市金山的不知名工廠廢墟、九份的陰陽海和電廠，甚至遠至離島澎湖，從知名的石滬、七美嶼、西嶼⋯⋯大大小小的島嶼，跋山涉水只為找到適合的場景，能呈現團隊一開始的設定。
+                            為了完成這項任務，我們分成三個階段進行，分別是：收集素材、場景轉換與嵌入至粒子系統。
                         </p>
                         <figure>
-                            <img src="../img/project6/collect_1.jpg" alt="collect1">
-                            <img src="../img/project6/collect_2.jpg" alt="collect2">
-                            <img src="../img/project6/collect_3.jpg" alt="collect3">
-                            <figcaption>
-                                在台北市陽明山與新北市金山山區一處工廠廢墟拍攝場景素材，並現場算圖。
-                            </figcaption>
+                            <img src="../img/project6/process-overview.svg" alt="design-process">
+                            <figcaption>專案設計流程</figcaption>
                         </figure>
+                    </article>
+                    <article class="collect">
+                        <h3 class="title">Collect｜收集素材</h3>
+                        <p>
+                            得知我們要一起參與這個專案，感到十分興奮卻也能感受到時程上的壓力，實際上的工作期程只有兩個月不到的時間可以實作。首先就是著手收集素材，因此我們到了陽明山的小油坑、擎天崗，新北市金山的不知名工廠廢墟、九份的陰陽海和電廠，甚至遠至離島澎湖，從知名的石滬、七美嶼、西嶼⋯⋯大大小小的島嶼，跋山涉水只為找到適合的場景，能呈現團隊一開始的設定。
+                        </p>
+                        <figure class="media-collect">
+                            <picture>
+                                <img src="../img/project6/collect_1.jpg" alt="collect1">
+                                <img src="../img/project6/collect_2.jpg" alt="collect2"> 
+                                <img src="../img/project6/collect_3.jpg" alt="collect3">
+                                <figcaption>
+                                    在台北市陽明山與新北市金山山區一處工廠廢墟拍攝場景素材，並現場算圖。
+                                </figcaption>
+                            </picture>
+                        </figure>
+                        <p></p>
+                    </article>
+                    <article class="transform">
+                        <h3 class="title">Transform｜場景轉換</h3>
+                        <p>
+                            「異類的同類」的腳本場景設計，一開始是從荒原一步步發現人類曾經存在過的痕跡。為了呈現這樣的場景和視覺效果，團隊利用 Photogrammetry 攝影測量術，使用空拍機拍攝素材後，再透過所述之攝影測量技術，輔以軟體建構為 3D 的地景。
+                        </p>
+                        <p>
+                            由於素材皆是影音檔，我們必須將素材影片中，場景的形狀較為完整、突出的畫面，一格一格截圖下來，再進入利用攝影測量術呈現的 Point Cloud 點雲視覺效果的即時建模程式，Render 算圖出來看看效果是否勻稱、完美。所以光是拍攝期就花了非常多的時間與心力，拍完現場就馬上利用電腦測試。而這份工作困難的是：素材合成後，每一張照片素材還需經過修補與合成，如果沒有一張張的仔細確認，合成之後就可能會有破綻，這樣就無法正常匯出至虛擬場景。
+                        </p>
+                        <figure class="media-transform">
+                            <figure class="video">
+                                <video loop autoplay="autoplay" oncontextmenu="return false;">
+                                    <source src="../img/project6/prototype.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>
+                                    此為算圖軟體根據場景素材影格多寡決定算圖時間與場景品質。
+                                </figcaption>
+                            </figure>
+                            <picture class="grid-transform">
+                                <img src="../img/project6/transform_1.jpg" alt="transform1">
+                                <img src="../img/project6/transform_2.jpg" alt="transform2">
+                                <picture class="row">
+                                    <img src="../img/project6/transform_3.jpg" alt="transform3">
+                                    <img src="../img/project6/transform_4.jpg" alt="transform4">
+                                </picture>
+                                <picture class="row">
+                                    <img src="../img/project6/transform_5.jpg" alt="transform5">
+                                    <img src="../img/project6/transform_6.jpg" alt="transform6">
+                                </picture>
+                            </picture>
+                        </figure>
+                    </article>
+                    <article class="particle-system">
+                        <h3 class="title">Particle System｜粒子系統</h3>
+                        <p>
+                            粒子系統 Particle System 由叁式的工程師團隊製作開發，透過上述建立的 3D Point Cloud 點雲視覺化場景匯入至可即時運算的粒子系統，此系統可模擬風速、煙霧和碎形⋯⋯等特效，營造出具動感、神祕感十足的舞台效果。透過舞台前的 Kinect 裝置，系統能夠立刻取得歌手全身的型態，並進行點雲資訊的視覺化，體現出表演者的動作，將其合成至演唱現場的螢幕。
+                        </p>
+                        <p>
+                            關於粒子系統的詳細介紹，可<a href="https://ultracombos.com/3035952" target="_blank">按我至叁式官網作品專頁</a>查詢。
+                        </p>
+                        <figure class="media-particle">
+                            <figure class="video-particle">
+                                <video loop autoplay="autoplay" oncontextmenu="return false;">
+                                    <source src="../img/project6/particle_prototype.mp4" type="video/mp4">
+                                </video>
+                                <figcaption>透過 Particle System 合成至點雲虛擬場景中</figcaption>
+                            </figure>
+                            <picture class="grid-particle">
+                                <img src="../img/project6/particle_sample.gif" alt="particle-sample">
+                            </picture>
+                        </figure>
+                    </article>
+                </section>
+                <section class="project-main-footer">
+                    <figure class="main-footer-image">
+                        <img src="../img/project6/footer-hero.jpg" alt="footer-hero-img">
+                    </figure>
+                    <article class="thanks">
+                        <div class="column eng">
+                            <h2>Tanya Chua LEMURIA Tour 2016 in Taipei</h2>
+                            <div class="paragraph">
+                                <p>Concert Promoter: <strong>TERRA BREEZE</strong></p>
+                                <p>Artist Management: <strong>CRYSTAL RESONANCE</strong></p>
+                                <p>Concert Produced by <strong>BLUE SKY PRODUCTION</strong></p>
+                                <p>Director: <strong>Chang, Wen-Ling</strong></p>
+                                <p>Artist: <strong>Tanya Chua</strong></p>
+                            </div>
+                            .
+                        </div>
+                        <div class="column chi">
+
+                        </div>
                     </article>
                 </section>
             </section>

@@ -42,7 +42,7 @@ nav {
 }
 
 nav.invisibleNav {
-    transform: translateY(-120px);
+    transform: translateY(-130px);
 }
 
 nav.addShadow {
@@ -67,7 +67,7 @@ nav > .nav-container {
     font-size: 1.6em;
     font-weight: 600;
     text-align: left;
-    color: rgb(173, 173, 173);
+    color: rgb(133, 133, 133);
     transition: 0.15s all linear;
 }
 
@@ -89,7 +89,7 @@ nav > .nav-container {
 .nav-menu ul {
     font-size: 1.35em;
     width: 100%;   
-    letter-spacing: .25px;
+    letter-spacing: .1px;
 }
 
 .nav-menu li {
@@ -104,12 +104,12 @@ nav > .nav-container {
 /* nav-menu li animate link */
 
 .nav-menu li a {
-    font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-weight: 500;
     position: relative;
     display: inline-block;
     transition: 0.25s all ease;
-    color: rgb(173, 173, 173);
+    color: rgb(133, 133, 133);
 }
 
 .nav-menu li a:hover {
@@ -129,7 +129,7 @@ nav > .nav-container {
     content: "";
     position: absolute;
     height: 1px;
-    top: 25px;
+    top: 30px;
     left: 0;
     right: 0;
     background-color: rgb(139, 139, 139);
@@ -409,7 +409,7 @@ ul.footer-link-btn {
     }
 
     .footer-link li {
-        margin-left: 50px !important;
+        margin-left: 70px;
     }
 
     .footer-link i {
@@ -735,8 +735,12 @@ ul.footer-link-btn {
         opacity: 1;
     }
 
+    .footer-link li {
+        margin-left: 60px;
+    }
+
     .footer-link li:first-child {
-        margin-left: 0px !important;
+        margin-left: 0 !important;
     }
     
     .footer-link i.fa-paper-plane {
