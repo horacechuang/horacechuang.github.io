@@ -164,10 +164,14 @@ main#container {
 }
 
 /* main-design-goal, 
-   process-overview */
+   process-overview
+   main-design-process */
 
-section.main-design-goal, section.main-process-overview {
+section.main-design-goal, 
+section.main-process-overview,
+section.main-design-process {
     padding-top: 100px;
+    box-sizing: border-box;
 }
 
 section.main-design-goal article,
@@ -244,11 +248,31 @@ section.main-process-overview img.mobile {
     display: none;
 }
 
-/* main-design-process */
+/* article.collect */
 
-section.main-design-process {
-    box-sizing: border-box;
-    padding: 100px 0;
+section.main-design-process article.collect {
+    max-width: 980px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+article.collect h3 {
+    font-size: 3em;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-weight: 400;
+}
+
+article.collect p {
+    display: block;
+    max-width: 650px;
+    color: rgb(212, 212, 212);
+    font-size: 2em;
+    line-height: 2em;
+    margin: 50px 0;
+    font-weight: 100;
+    padding-left: 15px;
 }
 
 .footer-link i {
