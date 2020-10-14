@@ -29,6 +29,12 @@ nav.addShadow, footer.addShadow {
     z-index: 1;
 }
 
+figcaption {
+    font-size: 1.35em;
+    margin-top: 20px;
+    color: rgb(199, 199, 199);
+}
+
 /* header */
 
 header#header, main#container {
@@ -97,40 +103,40 @@ header.project-header > .header-title h2 {
     margin-top: 45px;
 }
 
-.project-header-container > main.project-main-container {
+.project-header-container > main.project-header-main {
     max-width: 1080px;
     margin: 0 auto;
 }
 
-main.project-main-container h2 {
-    font-size: 2.5em;
+main.project-header-main h2 {
+    font-size: 2.25em;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     line-height: 2em;
     font-weight: 400;
     color: rgb(160, 160, 160);
 }
 
-main.project-main-container h2 > a {
+main.project-header-main h2 > a {
     font-size: 1em;
     color: rgb(160, 160, 160);
     transition: .25s all ease;
     /* inherit */
 }
 
-main.project-main-container h2 > a:hover {
+main.project-header-main h2 > a:hover {
     opacity: .75;
 }
 
-main.project-main-container h2:first-child {
+main.project-header-main h2:first-child {
     margin-bottom: 50px;
 }
 
-main.project-main-container figure {
+main.project-header-main figure {
     text-align: center;
     margin-top: 50px;
 }
 
-main.project-main-container i.move-arrow {
+main.project-header-main i.move-arrow {
     position: relative;
     color: rgb(129, 129, 129);
     font-size: 5em;
@@ -157,13 +163,22 @@ main#container {
     padding-bottom: 150px;
 }
 
-section.main-design-goal {
-    max-width: 980px;
-    margin: 0 auto;
+/* main-design-goal, 
+   process-overview */
+
+section.main-design-goal, section.main-process-overview {
     padding-top: 100px;
 }
 
-section.main-design-goal h3 {
+section.main-design-goal article,
+section.main-process-overview article {
+    max-width: 768px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+section.main-design-goal h3,
+section.main-process-overview h3 {
     font-size: 3em;
     display: block;
     color: rgb(255, 255, 255);
@@ -171,23 +186,63 @@ section.main-design-goal h3 {
     font-weight: 400;
 }
 
-section.main-design-goal h3:after {
+section.main-design-goal h3 {
+    text-align: center;
+}
+
+section.main-process-overview h3 {
+    text-align: left;
+}
+
+section.main-design-goal h3:after,
+section.main-process-overview h3:after {
     content: '';
     position: relative;
     display: block;
-    max-width: 75px;
+    max-width: 55px;
     height: 1px;
-    margin: 35px 0;
-    left: 1px;
     background: rgb(94, 94, 94);
 }
 
-section.main-design-goal p {
+section.main-design-goal h3:after {
+    margin: 50px auto;
+}
+
+section.main-process-overview h3:after {
+    margin: 50px 3px;
+}
+
+section.main-design-goal p,
+section.main-process-overview p {
     color: rgb(212, 212, 212);
     font-size: 2em;
     line-height: 2em;
     margin-bottom: 35px;
     font-weight: 100;
+}
+
+section.main-design-goal p:nth-of-type(2) {
+    margin-bottom: 0 !important;
+}
+
+section.main-design-goal figure,
+section.main-process-overview figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+section.main-design-goal img,
+section.main-process-overview img {
+    max-width: 1080px;
+}
+
+/* main-design-process */
+
+section.main-design-process {
+    box-sizing: border-box;
 }
 
 .footer-link i {
@@ -200,6 +255,10 @@ section.main-design-goal p {
 
     header#header, main#container {
         padding: 0 25px;
+    }
+
+    main#container {
+        padding-bottom: 105px;
     }
 
     header.project-header > img.lemuria-logo {
@@ -220,20 +279,23 @@ section.main-design-goal p {
         font-size: 3em;
     }
 
-    main.project-main-container {
-        padding: 0 25px;
-    }
-
-    main.project-main-container h2 {
+    main.project-header-main h2 {
         font-size: 2em;
         line-height: 2em;
     }
 
-    section.main-design-goal {
-        padding: 100px 25px 0;
+    /* main-design-goal, 
+       process-overview */
+
+    section.main-design-goal figure,
+    section.main-process-overview figure {
+        padding: 35px 0;
     }
 
-
+    section.main-design-goal img,
+    section.main-process-overview img {
+        width: 90%;
+    }
 
 }
 
@@ -259,19 +321,47 @@ section.main-design-goal p {
         margin-top: 40px;
     }
 
-    main.project-main-container img.move-arrow {
+    main.project-header-main {
+        padding: 0 25px;
+    }
+
+    main.project-header-main img.move-arrow {
         width: 25px;
     }
 
-    section.main-design-goal {
-        padding: 75px 25px 0;
+    /* main-design-goal, 
+       process-overview */
+
+    section.main-design-goal,
+    section.process-overview {
+        padding-top: 75px;
     }
 
-    section.main-design-goal h3 {
+    section.main-design-goal article,
+    section.main-process-overview article {
+        padding: 0 25px;
+    }
+
+    section.main-design-goal h3,
+    section.main-process-overview h3 {
         font-size: 2.25em;
     }
 
-    section.main-design-goal p {
+    section.main-design-goal h3:after,
+    section.main-process-overview h3:after {
+        max-width: 35px;
+    }
+
+    section.main-design-goal h3:after {
+        margin: 45px auto;
+    }
+
+    section.main-process-overview h3:after {
+        margin: 45px 3px;
+    }
+
+    section.main-design-goal p,
+    section.main-process-overview p {
         font-size: 1.75em;
     }
 
@@ -285,6 +375,11 @@ section.main-design-goal p {
 
     .menuBtn.btnActive li {
         background:white !important;
+    }
+
+    figcaption {
+        font-size: 1.15em;
+        margin-top: 20px;
     }
 
     header#header {
@@ -316,7 +411,7 @@ section.main-design-goal p {
         margin-top: 30px;
     }
 
-    main.project-main-container h2 {
+    main.project-header-main h2 {
         font-size: 1.5em;
     }
 
@@ -324,29 +419,48 @@ section.main-design-goal p {
         padding-bottom: 75px;
     }
 
-    main.project-main-container figure {
+    main.project-header-main figure {
         margin-top: 35px;
     }
 
-    main.project-main-container i.move-arrow {
+    main.project-header-main i.move-arrow {
         font-size: 3em;
     }
 
-    section.main-design-goal {
-        padding-top: 75px;
+    /* main-design-goal, 
+       process-overview */
+
+    section.main-design-goal,
+    section.main-process-overview {
+        padding-top: 50px;
     }
 
-    section.main-design-goal h3 {
+    section.main-design-goal h3,
+    section.main-process-overview h3 {
         font-size: 2em;
     }
 
-    section.main-design-goal h3:after {
-        margin: 25px 0;
-        width: 50px;
+    section.main-design-goal h3:after,
+    section.main-process-overview h3:after {
+        max-width: 35px;
     }
 
-    section.main-design-goal p {
-        font-size: 1.5em;
+    section.main-design-goal h3:after {
+        margin: 40px auto;
+    }
+
+    section.main-process-overview h3:after {
+        margin: 40px 3px;
+    }
+
+    section.main-design-goal p,
+    section.main-process-overview p {
+        font-size: 1.35em;
+    }
+
+    section.main-design-goal img,
+    section.main-process-overview img {
+        width: 100%;
     }
 
     .footer-link i {
