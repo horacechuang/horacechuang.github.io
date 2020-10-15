@@ -167,22 +167,29 @@ main#container {
    process-overview
    main-design-process */
 
+/* general */
+
 section.main-design-goal, 
 section.main-process-overview,
-section.main-design-process {
+section.main-design-process .collect-container {
     padding-top: 100px;
-    box-sizing: border-box;
+}
+
+section.main-design-goal article,
+section.main-process-overview article,
+section.main-design-process article.collect {
+    margin: 0 auto;
+    z-index: 1;
 }
 
 section.main-design-goal article,
 section.main-process-overview article {
     max-width: 768px;
-    margin: 0 auto;
-    z-index: 1;
 }
 
 section.main-design-goal h3,
-section.main-process-overview h3 {
+section.main-process-overview h3,
+article.collect h3{
     font-size: 3em;
     display: block;
     color: rgb(255, 255, 255);
@@ -217,7 +224,8 @@ section.main-process-overview h3:after {
 }
 
 section.main-design-goal p,
-section.main-process-overview p {
+section.main-process-overview p,
+section.main-design-process article.collect p {
     color: rgb(212, 212, 212);
     font-size: 2em;
     line-height: 2em;
@@ -252,33 +260,56 @@ section.main-process-overview img.mobile {
 
 section.main-design-process article.collect {
     max-width: 980px;
-    margin: 0 auto;
-    z-index: 1;
 }
 
 article.collect h3 {
-    font-size: 3em;
-    display: block;
-    color: rgb(255, 255, 255);
     text-align: left;
-    font-weight: 400;
 }
 
 article.collect p {
-    display: block;
-    max-width: 650px;
-    color: rgb(212, 212, 212);
-    font-size: 2em;
-    line-height: 2em;
+    max-width: 768px;
     margin: 50px 0;
     font-weight: 100;
     padding-left: 15px;
 }
 
+section.main-design-process figure.media-collect {
+    max-width: 1080px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+figure.media-collect picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure.media-collect img {
+    max-width: 520px;
+    padding-bottom: 4%;
+}
+
+figure.media-collect figcaption {
+    max-width: 450px;
+    margin: auto 0;
+    line-height: 2em;
+}
+
+figure.media-collect figcaption i {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(227, 227, 227);
+}
+
+/* article.transform */
+
 .footer-link i {
     color: rgb(228, 228, 228);
     opacity: .75;
 }
+
 
 
 @media all and (max-width: 1229px) {
@@ -315,10 +346,12 @@ article.collect p {
     }
 
     /* main-design-goal, 
-       process-overview */
+       process-overview
+       main-design-process */
 
     section.main-design-goal figure,
-    section.main-process-overview figure {
+    section.main-process-overview figure,
+    section.main-design-process figure.media-collect {
         padding: 35px 0;
     }
 
@@ -326,6 +359,29 @@ article.collect p {
     section.main-process-overview img {
         width: 90%;
         margin-bottom: 35px;
+    }
+
+    section.main-design-process figure.media-collect {
+        max-width: 95%;
+    }
+
+    figure.media-collect picture {
+        align-items: center;
+    }
+    
+    figure.media-collect img {
+        max-width: 47.5%;
+        padding-bottom: 5%;
+    }
+
+    figure.media-collect figcaption {
+        max-width: 47.5%;
+    }
+    
+    figure.media-collect figcaption i {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: rgb(227, 227, 227);
     }
 
 }
@@ -361,20 +417,24 @@ article.collect p {
     }
 
     /* main-design-goal, 
-       process-overview */
+       process-overview
+       main-design-process */
 
     section.main-design-goal,
-    section.process-overview {
+    section.process-overview,
+    section.main-design-process .collect-container {
         padding-top: 75px;
     }
 
     section.main-design-goal article,
-    section.main-process-overview article {
+    section.main-process-overview article,
+    section.main-design-process article {
         padding: 0 25px;
     }
 
     section.main-design-goal h3,
-    section.main-process-overview h3 {
+    section.main-process-overview h3,
+    article.collect h3 {
         font-size: 2.25em;
     }
 
@@ -392,8 +452,9 @@ article.collect p {
     }
 
     section.main-design-goal p,
-    section.main-process-overview p {
-        font-size: 1.75em;
+    section.main-process-overview p,
+    section.main-design-process article.collect p {
+        font-size: 1.65em;
     }
 
 }
@@ -459,15 +520,18 @@ article.collect p {
     }
 
     /* main-design-goal, 
-       process-overview */
+       process-overview
+       main-design-process */
 
     section.main-design-goal,
-    section.main-process-overview {
+    section.main-process-overview,
+    section.main-design-process .collect-container {
         padding-top: 50px;
     }
 
     section.main-design-goal h3,
-    section.main-process-overview h3 {
+    section.main-process-overview h3,
+    section.main-design-process article.collect h3 {
         font-size: 2em;
     }
 
@@ -485,8 +549,14 @@ article.collect p {
     }
 
     section.main-design-goal p,
-    section.main-process-overview p {
-        font-size: 1.35em;
+    section.main-process-overview p,
+    section.main-design-process article.collect p {
+        font-size: 1.5em;
+    }
+
+    figure.media-collect picture {
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     section.main-design-goal img,
@@ -501,6 +571,17 @@ article.collect p {
     section.main-process-overview img.mobile {
         display: flex;
         max-width: 200px;
+    }
+
+    figure.media-collect img {
+        max-width: 100%;
+    }
+
+    figure.media-collect figcaption {
+        max-width: 100%;
+        margin-top: 15px;
+        text-align: justify;
+
     }
 
     .footer-link i {
