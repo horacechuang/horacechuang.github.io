@@ -303,6 +303,7 @@ figure.media-collect figcaption i {
     color: rgb(227, 227, 227);
 }
 
+
 /* article.transform */
 
 .footer-link i {
@@ -551,7 +552,8 @@ figure.media-collect figcaption i {
     section.main-design-goal p,
     section.main-process-overview p,
     section.main-design-process article.collect p {
-        font-size: 1.5em;
+        font-size: 1.35em;
+        padding-left: 0;
     }
 
     figure.media-collect picture {
@@ -581,7 +583,6 @@ figure.media-collect figcaption i {
         max-width: 100%;
         margin-top: 15px;
         text-align: justify;
-
     }
 
     .footer-link i {
