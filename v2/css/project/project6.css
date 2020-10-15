@@ -195,13 +195,10 @@ section.main-design-process .particle-container
 section.main-design-goal article,
 section.main-process-overview article,
 section.main-design-process article.collect,
-section.main-design-process article.transform {
+section.main-design-process article.transform,
+section.main-design-process article.particle-system {
     margin: 0 auto;
     z-index: 1;
-}
-
-section.main-design-process article.transform {
-    max-width: 980px;
 }
 
 section.main-design-goal article,
@@ -209,11 +206,18 @@ section.main-process-overview article {
     max-width: 768px;
 }
 
+section.main-design-process article.collect,
+section.main-design-process article.transform,
+section.main-design-process article.particle-system {
+    max-width: 980px;
+}
+
 section.main-design-goal h3,
 section.main-process-overview h3,
 article.collect h3,
-article.transform h3 {
-    font-size: 3em;
+article.transform h3,
+article.particle-system h3 {
+    font-size: 2.75em;
     display: block;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 15px rgb(255,255,255);
@@ -249,9 +253,10 @@ section.main-process-overview h3:after {
 section.main-design-goal p,
 section.main-process-overview p,
 section.main-design-process article.collect p,
-section.main-design-process article.transform p {
+section.main-design-process article.transform p,
+section.main-design-process article.particle-system p {
     color: rgb(212, 212, 212);
-    font-size: 2em;
+    font-size: 1.85em;
     line-height: 2em;
     margin-bottom: 35px;
     font-weight: 100;
@@ -282,11 +287,6 @@ section.main-process-overview img.mobile {
 
 /* article.collect */
 
-section.main-design-process article.collect,
-section.main-design-process article.transform {
-    max-width: 980px;
-}
-
 article.collect h3 {
     text-align: left;
 }
@@ -299,7 +299,8 @@ article.collect p {
 }
 
 section.main-design-process figure.media-collect,
-section.main-design-process figure.media-transform {
+section.main-design-process figure.media-transform,
+section.main-design-process figure.media-particle {
     padding: 50px 0;
     margin: 0 auto;
 }
@@ -352,7 +353,8 @@ article.transform p {
     padding-right: 30px;
 }
 
-section.main-design-process figure.media-transform {
+section.main-design-process figure.media-transform,
+section.main-design-process figure.media-particle {
     width: 100%;
 }
 
@@ -364,16 +366,18 @@ section.main-design-process figure.video {
     padding-bottom: 75px;
 }
 
-figure.video video,
-section.main-design-process picture.grid {
-    max-width: 1080px;
-}
-
-section.main-design-process picture.grid {
+section.main-design-process picture.grid,
+section.main-design-process picture.particle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
+}
+
+figure.video video,
+section.main-design-process picture.grid {
+    max-width: 1080px;
 }
 
 picture.grid img {
@@ -384,6 +388,25 @@ figure.video figcaption {
     line-height: 2em;
     margin: 25px 0;
 }
+
+/* article.particle-system */
+
+article.particle-system h3 {
+    text-align: center;
+}
+
+article.particle-system p{
+    max-width: 768px;
+    margin: 50px auto;
+    font-weight: 100;
+}
+
+section.main-design-process picture.particle,
+picture.particle img {
+    max-width: 1280px !important;
+    padding-bottom: 75px;
+}
+
 
 .footer-link i {
     color: rgb(228, 228, 228);
@@ -462,6 +485,12 @@ figure.video figcaption {
 
     figure.video video {
         max-width: 100%;
+    }
+
+    section.main-design-process picture.particle,
+    picture.particle img {
+        max-width: 100% !important;
+        padding: 0;
     }
 
 }
