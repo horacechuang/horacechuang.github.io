@@ -35,6 +35,34 @@ figcaption {
     color: rgb(199, 199, 199);
 }
 
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    to {
+        top: 0;
+    }
+} 
+
+@keyframes move-slow {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    to {
+        top: 0;
+    }
+} 
+
 /* header */
 
 header#header, main#container {
@@ -136,26 +164,12 @@ main.project-header-main figure {
     margin-top: 50px;
 }
 
-main.project-header-main i.move-arrow {
+main.project-header-main i {
     position: relative;
     color: rgb(129, 129, 129);
     font-size: 5em;
     animation: move 2s infinite;
 }
-
-@keyframes move {
-    0% {
-        top: 0;
-    }
-
-    50% {
-        top: 30px;
-    }
-
-    to {
-        top: 0;
-    }
-} 
 
 /* main */
 
@@ -171,15 +185,23 @@ main#container {
 
 section.main-design-goal, 
 section.main-process-overview,
-section.main-design-process .collect-container {
+section.main-design-process .collect-container,
+section.main-design-process .transform-container,
+section.main-design-process .particle-container
+{
     padding-top: 100px;
 }
 
 section.main-design-goal article,
 section.main-process-overview article,
-section.main-design-process article.collect {
+section.main-design-process article.collect,
+section.main-design-process article.transform {
     margin: 0 auto;
     z-index: 1;
+}
+
+section.main-design-process article.transform {
+    max-width: 980px;
 }
 
 section.main-design-goal article,
@@ -189,7 +211,8 @@ section.main-process-overview article {
 
 section.main-design-goal h3,
 section.main-process-overview h3,
-article.collect h3{
+article.collect h3,
+article.transform h3 {
     font-size: 3em;
     display: block;
     color: rgb(255, 255, 255);
@@ -225,7 +248,8 @@ section.main-process-overview h3:after {
 
 section.main-design-goal p,
 section.main-process-overview p,
-section.main-design-process article.collect p {
+section.main-design-process article.collect p,
+section.main-design-process article.transform p {
     color: rgb(212, 212, 212);
     font-size: 2em;
     line-height: 2em;
@@ -258,7 +282,8 @@ section.main-process-overview img.mobile {
 
 /* article.collect */
 
-section.main-design-process article.collect {
+section.main-design-process article.collect,
+section.main-design-process article.transform {
     max-width: 980px;
 }
 
@@ -273,10 +298,14 @@ article.collect p {
     padding-left: 15px;
 }
 
-section.main-design-process figure.media-collect {
-    max-width: 1080px;
+section.main-design-process figure.media-collect,
+section.main-design-process figure.media-transform {
     padding: 50px 0;
     margin: 0 auto;
+}
+
+section.main-design-process figure.media-collect {
+    max-width: 1080px;
 }
 
 figure.media-collect picture {
@@ -298,13 +327,63 @@ figure.media-collect figcaption {
 }
 
 figure.media-collect figcaption i {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: rgb(227, 227, 227);
+    position: relative;
+    font-size: 1.5em;
+    animation: move-slow 1.5s infinite;
+    color: rgb(199, 199, 199);
+}
+
+figure.media-collect figcaption p {
+    padding-top: 25px;
+    color: rgb(199, 199, 199);
 }
 
 
 /* article.transform */
+
+article.transform h3 {
+    text-align: right;
+}
+
+article.transform p {
+    max-width: 768px;
+    margin: 50px 0 50px auto;
+    font-weight: 100;
+    padding-right: 30px;
+}
+
+section.main-design-process figure.media-transform {
+    width: 100%;
+}
+
+section.main-design-process figure.video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+figure.video video,
+section.main-design-process picture.grid {
+    max-width: 1080px;
+}
+
+section.main-design-process picture.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+picture.grid img {
+    width: 50%;
+}
+
+figure.video figcaption {
+    line-height: 2em;
+    margin: 25px 0;
+}
 
 .footer-link i {
     color: rgb(228, 228, 228);
@@ -346,13 +425,10 @@ figure.media-collect figcaption i {
         line-height: 2em;
     }
 
-    /* main-design-goal, 
-       process-overview
-       main-design-process */
-
     section.main-design-goal figure,
     section.main-process-overview figure,
-    section.main-design-process figure.media-collect {
+    section.main-design-process figure.media-collect,
+    section.main-design.process figure.media-transform {
         padding: 35px 0;
     }
 
@@ -381,8 +457,11 @@ figure.media-collect figcaption i {
     
     figure.media-collect figcaption i {
         font-size: 2em;
-        margin-bottom: 20px;
         color: rgb(227, 227, 227);
+    }
+
+    figure.video video {
+        max-width: 100%;
     }
 
 }
@@ -413,29 +492,27 @@ figure.media-collect figcaption i {
         padding: 0 25px;
     }
 
-    main.project-header-main img.move-arrow {
-        width: 25px;
-    }
-
-    /* main-design-goal, 
-       process-overview
-       main-design-process */
-
     section.main-design-goal,
     section.process-overview,
-    section.main-design-process .collect-container {
+    section.main-design-process .collect-container,
+    section.main-design-process .transform-container,
+    section.main-design-process .particle-container {
         padding-top: 75px;
     }
 
     section.main-design-goal article,
     section.main-process-overview article,
-    section.main-design-process article {
+    section.main-design-process article,
+    section.main-design-process figure,
+    section.main-design-process picture {
         padding: 0 25px;
     }
 
     section.main-design-goal h3,
     section.main-process-overview h3,
-    article.collect h3 {
+    article.collect h3,
+    article.transform h3,
+    article.particle-system h3 {
         font-size: 2.25em;
     }
 
@@ -454,8 +531,14 @@ figure.media-collect figcaption i {
 
     section.main-design-goal p,
     section.main-process-overview p,
-    section.main-design-process article.collect p {
+    section.main-design-process article.collect p,
+    section.main-design-process article.transform p,
+    section.main-design-process article.particle-system p {
         font-size: 1.65em;
+    }
+
+    section.main-design-process picture.grid {
+        width: 100%;
     }
 
 }
@@ -516,23 +599,23 @@ figure.media-collect figcaption i {
         margin-top: 35px;
     }
 
-    main.project-header-main i.move-arrow {
+    main.project-header-main i {
         font-size: 3em;
     }
 
-    /* main-design-goal, 
-       process-overview
-       main-design-process */
-
     section.main-design-goal,
     section.main-process-overview,
-    section.main-design-process .collect-container {
-        padding-top: 50px;
+    section.main-design-process .collect-container,
+    section.main-design-process .transform-container,
+    section.main-design-process .particle-container {
+        padding-top: 65px;
     }
 
     section.main-design-goal h3,
     section.main-process-overview h3,
-    section.main-design-process article.collect h3 {
+    section.main-design-process article.collect h3,
+    section.main-design-process article.transform h3,
+    section.main-design-process article.particle-system h3 {
         font-size: 2em;
     }
 
@@ -551,9 +634,15 @@ figure.media-collect figcaption i {
 
     section.main-design-goal p,
     section.main-process-overview p,
-    section.main-design-process article.collect p {
+    section.main-design-process article.collect p,
+    section.main-design-process article.transform p,
+    section.main-design-process article.particle-system p {
         font-size: 1.35em;
         padding-left: 0;
+    }
+
+    section.main-design-process article.transform p {
+        padding: 0;
     }
 
     figure.media-collect picture {
