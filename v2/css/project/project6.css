@@ -63,13 +63,18 @@ figcaption {
     }
 } 
 
-/* header */
+/* header#header */
 
-header#header, main#container {
+header#header, 
+main#container {
     width: 100%;
     position: relative;
     display: block;
     background: rgb(0,0,0);
+}
+
+main#container {
+    padding-bottom: 0;
 }
 
 header#header {
@@ -171,32 +176,23 @@ main.project-header-main i {
     animation: move 2s infinite;
 }
 
-/* main */
-
-main#container {
-    padding-bottom: 150px;
-}
-
-/* main-design-goal, 
-   process-overview
-   main-design-process */
-
-/* general */
+/* main-general */
 
 section.main-design-goal, 
 section.main-process-overview,
 section.main-design-process .collect-container,
 section.main-design-process .transform-container,
-section.main-design-process .particle-container
-{
+section.main-design-process .particle-container{
     padding-top: 100px;
 }
 
+/* main-article */
+
 section.main-design-goal article,
 section.main-process-overview article,
-section.main-design-process article.collect,
-section.main-design-process article.transform,
-section.main-design-process article.particle-system {
+article.collect,
+article.transform,
+article.particle-system {
     margin: 0 auto;
     z-index: 1;
 }
@@ -206,11 +202,13 @@ section.main-process-overview article {
     max-width: 768px;
 }
 
-section.main-design-process article.collect,
-section.main-design-process article.transform,
-section.main-design-process article.particle-system {
+article.collect,
+article.transform,
+article.particle-system {
     max-width: 980px;
 }
+
+/* article-title */
 
 section.main-design-goal h3,
 section.main-process-overview h3,
@@ -222,14 +220,6 @@ article.particle-system h3 {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 15px rgb(255,255,255);
     font-weight: 400;
-}
-
-section.main-design-goal h3 {
-    text-align: center;
-}
-
-section.main-process-overview h3 {
-    text-align: left;
 }
 
 section.main-design-goal h3:after,
@@ -250,11 +240,28 @@ section.main-process-overview h3:after {
     margin: 50px 3px;
 }
 
+section.main-design-goal h3,
+article.particle-system h3 {
+    text-align: center;
+}
+
+section.main-process-overview h3,
+article.collect h3 {
+    text-align: left;
+}
+
+article.transform h3 {
+    text-align: right;
+}
+
+/* article-parapraph */
+
 section.main-design-goal p,
 section.main-process-overview p,
-section.main-design-process article.collect p,
-section.main-design-process article.transform p,
-section.main-design-process article.particle-system p {
+article.collect p,
+article.transform p,
+article.particle-system p {
+    max-width: 768px;
     color: rgb(212, 212, 212);
     font-size: 1.85em;
     line-height: 2em;
@@ -266,6 +273,22 @@ section.main-design-goal p:nth-of-type(2) {
     margin-bottom: 0 !important;
 }
 
+article.collect p {
+    margin: 50px 0;
+    padding-left: 15px;
+}
+
+article.transform p {
+    margin: 50px 0 50px auto;
+    padding-right: 30px;
+}
+
+article.particle-system p{
+    margin: 50px auto;
+}
+
+/* article-figure */
+
 section.main-design-goal figure,
 section.main-process-overview figure {
     display: flex;
@@ -274,6 +297,19 @@ section.main-process-overview figure {
     align-items: center;
     padding: 50px 0;
 }
+
+figure.media-collect,
+figure.media-transform,
+figure.media-particle {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+figure.media-collect {
+    max-width: 1080px;
+}
+
+/* article-img */
 
 section.main-design-goal img,
 section.main-process-overview img {
@@ -285,29 +321,9 @@ section.main-process-overview img.mobile {
     display: none;
 }
 
-/* article.collect */
+/* ----- */
 
-article.collect h3 {
-    text-align: left;
-}
-
-article.collect p {
-    max-width: 768px;
-    margin: 50px 0;
-    font-weight: 100;
-    padding-left: 15px;
-}
-
-section.main-design-process figure.media-collect,
-section.main-design-process figure.media-transform,
-section.main-design-process figure.media-particle {
-    padding: 50px 0;
-    margin: 0 auto;
-}
-
-section.main-design-process figure.media-collect {
-    max-width: 1080px;
-}
+/* figure.media-collect */
 
 figure.media-collect picture {
     display: flex;
@@ -339,49 +355,35 @@ figure.media-collect figcaption p {
     color: rgb(199, 199, 199);
 }
 
+/* figure.media-particle & media-transform */
 
-/* article.transform */
-
-article.transform h3 {
-    text-align: right;
-}
-
-article.transform p {
-    max-width: 768px;
-    margin: 50px 0 50px auto;
-    font-weight: 100;
-    padding-right: 30px;
-}
-
-section.main-design-process figure.media-transform,
-section.main-design-process figure.media-particle {
-    width: 100%;
-}
-
-section.main-design-process figure.video {
+figure.media-transform figure.video,
+figure.media-particle figure.video,
+figure.media-transform picture.grid,
+figure.media-particle picture.grid {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 75px;
-}
-
-section.main-design-process picture.grid,
-section.main-design-process picture.particle {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0 auto;
 }
 
-figure.video video,
-section.main-design-process picture.grid {
-    max-width: 1080px;
+figure.media-transform figure.video,
+figure.media-particle figure.video {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+    width: 100%;
 }
 
-picture.grid img {
-    width: 50%;
+figure.media-transform figure.video video,
+figure.media-particle figure.video video {
+    width: 1080px;
+}
+
+figure.media-transform picture.grid,
+figure.media-particle picture.grid {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1080px;
 }
 
 figure.video figcaption {
@@ -389,24 +391,23 @@ figure.video figcaption {
     margin: 25px 0;
 }
 
-/* article.particle-system */
+/* figure.media-transform */
 
-article.particle-system h3 {
-    text-align: center;
+figure.media-transform picture.grid img {
+    width: 50%;
 }
 
-article.particle-system p{
-    max-width: 768px;
-    margin: 50px auto;
-    font-weight: 100;
+/* project-main-footer */
+
+section.project-main-footer,
+figure.main-footer-image,
+figure.main-footer-image img {
+    width: 100%;
 }
 
-section.main-design-process picture.particle,
-picture.particle img {
-    max-width: 1280px !important;
-    padding-bottom: 75px;
+section.project-main-footer {
+    padding-bottom: 125px;
 }
-
 
 .footer-link i {
     color: rgb(228, 228, 228);
@@ -417,12 +418,10 @@ picture.particle img {
 
 @media all and (max-width: 1229px) {
 
+    /* header#header */
+
     header#header, main#container {
         padding: 0 25px;
-    }
-
-    main#container {
-        padding-bottom: 105px;
     }
 
     header.project-header > img.lemuria-logo {
@@ -448,12 +447,16 @@ picture.particle img {
         line-height: 2em;
     }
 
+    /* article-figure */
+
     section.main-design-goal figure,
     section.main-process-overview figure,
-    section.main-design-process figure.media-collect,
-    section.main-design.process figure.media-transform {
+    figure.media-collect,
+    figure.media-transform {
         padding: 35px 0;
     }
+
+    /* article-img */
 
     section.main-design-goal img,
     section.main-process-overview img {
@@ -461,21 +464,16 @@ picture.particle img {
         margin-bottom: 35px;
     }
 
-    section.main-design-process figure.media-collect {
+    /* figure.media-collect */
+
+    figure.media-collect {
         max-width: 95%;
     }
-
-    figure.media-collect picture {
-        align-items: center;
-    }
     
-    figure.media-collect img {
-        max-width: 47.5%;
-        padding-bottom: 5%;
-    }
-
+    figure.media-collect img,
     figure.media-collect figcaption {
         max-width: 47.5%;
+        padding-bottom: 5%;
     }
     
     figure.media-collect figcaption i {
@@ -483,19 +481,22 @@ picture.particle img {
         color: rgb(227, 227, 227);
     }
 
-    figure.video video {
-        max-width: 100%;
+    /* figure.media-transform & media-particle */
+
+    figure.media-transform figure.video video,
+    figure.media-particle figure.video video {
+        width: 100%;
     }
 
-    section.main-design-process picture.particle,
-    picture.particle img {
-        max-width: 100% !important;
-        padding: 0;
+    section.project-main-footer {
+        padding-bottom: 105px;
     }
 
 }
 
 @media all and (max-width: 980px) {
+
+    /* header#header */
 
     header.project-header > img.lemuria-logo {
        max-width: 300px;
@@ -521,28 +522,37 @@ picture.particle img {
         padding: 0 25px;
     }
 
+    /* main-general */
+
     section.main-design-goal,
     section.process-overview,
     section.main-design-process .collect-container,
     section.main-design-process .transform-container,
     section.main-design-process .particle-container {
-        padding-top: 75px;
+        padding-top: 125px;
     }
+
+    /* main-article */
 
     section.main-design-goal article,
     section.main-process-overview article,
-    section.main-design-process article,
-    section.main-design-process figure,
-    section.main-design-process picture {
+    section.main-design-process article {
         padding: 0 25px;
     }
+
+    section.main-design-process figure,
+    section.main-design-process picture {
+        padding: 0;
+    }
+
+    /* main-title */
 
     section.main-design-goal h3,
     section.main-process-overview h3,
     article.collect h3,
     article.transform h3,
     article.particle-system h3 {
-        font-size: 2.25em;
+        font-size: 2.15em;
     }
 
     section.main-design-goal h3:after,
@@ -558,21 +568,21 @@ picture.particle img {
         margin: 45px 3px;
     }
 
+    /* main-parapraph */
+
     section.main-design-goal p,
     section.main-process-overview p,
-    section.main-design-process article.collect p,
-    section.main-design-process article.transform p,
-    section.main-design-process article.particle-system p {
-        font-size: 1.65em;
-    }
-
-    section.main-design-process picture.grid {
-        width: 100%;
+    article.collect p,
+    article.transform p,
+    article.particle-system p {
+        font-size: 1.5em;
     }
 
 }
 
 @media all and (max-width: 767px) {
+
+    /* general */
 
     .menuBtn li {
         background: rgb(203, 203, 203) !important;
@@ -586,6 +596,8 @@ picture.particle img {
         font-size: 1.15em;
         margin-top: 20px;
     }
+
+    /* header#header */
 
     header#header {
         margin-top: -61px;
@@ -620,9 +632,7 @@ picture.particle img {
         font-size: 1.5em;
     }
 
-    main#container {
-        padding-bottom: 75px;
-    }
+    /* main#container */
 
     main.project-header-main figure {
         margin-top: 35px;
@@ -632,25 +642,29 @@ picture.particle img {
         font-size: 3em;
     }
 
+    /* main-general */
+
     section.main-design-goal,
     section.main-process-overview,
     section.main-design-process .collect-container,
     section.main-design-process .transform-container,
     section.main-design-process .particle-container {
-        padding-top: 65px;
+        padding: 75px 0 50px;
     }
+
+    /* main-title */
 
     section.main-design-goal h3,
     section.main-process-overview h3,
-    section.main-design-process article.collect h3,
-    section.main-design-process article.transform h3,
-    section.main-design-process article.particle-system h3 {
+    article.collect h3,
+    article.transform h3,
+    article.particle-system h3 {
         font-size: 2em;
     }
 
     section.main-design-goal h3:after,
     section.main-process-overview h3:after {
-        max-width: 35px;
+        max-width: 30px;
     }
 
     section.main-design-goal h3:after {
@@ -658,30 +672,29 @@ picture.particle img {
     }
 
     section.main-process-overview h3:after {
-        margin: 40px 3px;
+        margin: 40px 2px;
     }
+
+    /* main-paragraph */
 
     section.main-design-goal p,
     section.main-process-overview p,
-    section.main-design-process article.collect p,
-    section.main-design-process article.transform p,
-    section.main-design-process article.particle-system p {
+    article.collect p,
+    article.transform p,
+    article.particle-system p {
         font-size: 1.35em;
         padding-left: 0;
     }
 
-    section.main-design-process article.transform p {
+    article.transform p {
         padding: 0;
     }
 
-    figure.media-collect picture {
-        flex-direction: column;
-        align-items: flex-end;
-    }
+    /* article-img */
 
     section.main-design-goal img,
     section.main-process-overview img {
-        width: 100%;
+        width: 90%;
     }
 
     section.main-process-overview img.desktop {
@@ -690,7 +703,18 @@ picture.particle img {
 
     section.main-process-overview img.mobile {
         display: flex;
-        max-width: 200px;
+        max-width: 250px;
+    }
+
+    /* figure.media-collect */
+
+    figure.media-collect {
+        max-width: 90%;
+    }
+
+    figure.media-collect picture {
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     figure.media-collect img {
@@ -703,8 +727,23 @@ picture.particle img {
         text-align: justify;
     }
 
+    /* figure.media-transform */
+
+    figure.media-transform picture.grid img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    figure.media-transform picture.grid img:first-child {
+        margin: 0;
+    }
+
     .footer-link i {
         color: rgb(255, 255, 255) !important;
+    }
+
+    section.project-main-footer {
+        padding-bottom: 75px;
     }
 
 }
