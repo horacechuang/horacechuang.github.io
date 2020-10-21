@@ -73,10 +73,6 @@ main#container {
     background: rgb(0,0,0);
 }
 
-main#container {
-    padding-bottom: 0;
-}
-
 header#header {
     margin: -85px 0 25px;
 }
@@ -125,15 +121,14 @@ header.project-header > .header-title h2 {
     text-shadow: 0px 0px 25px rgb(255,255,255);
 }
 
-.header-title h2:after {
+.header-title h2::after {
     content: '';
     width: 75px;
     height: 1px;
     background: rgb(255,255,255);
     display: block;
     position: relative;
-    margin: 0 auto;
-    margin-top: 45px;
+    margin: 45px 0 auto;
 }
 
 .project-header-container > main.project-header-main {
@@ -174,6 +169,12 @@ main.project-header-main i {
     color: rgb(129, 129, 129);
     font-size: 5em;
     animation: move 2s infinite;
+}
+
+/* main#container */
+
+main#container {
+    padding-bottom: 0;
 }
 
 /* main-general */
@@ -222,8 +223,8 @@ article.particle-system h3 {
     font-weight: 400;
 }
 
-section.main-design-goal h3:after,
-section.main-process-overview h3:after {
+section.main-design-goal h3::after,
+section.main-process-overview h3::after {
     content: '';
     position: relative;
     display: block;
@@ -232,11 +233,11 @@ section.main-process-overview h3:after {
     background: rgb(94, 94, 94);
 }
 
-section.main-design-goal h3:after {
+section.main-design-goal h3::after {
     margin: 50px auto;
 }
 
-section.main-process-overview h3:after {
+section.main-process-overview h3::after {
     margin: 50px 3px;
 }
 
@@ -402,12 +403,60 @@ figure.media-transform picture.grid img {
 section.project-main-footer,
 figure.main-footer-image,
 figure.main-footer-image img {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
 }
 
 section.project-main-footer {
-    padding-bottom: 125px;
+    padding-bottom: 100px;
 }
+
+article.thanks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1080px;
+    margin: -100px auto 0;
+    padding: 50px 75px;
+    background: hsla(0, 0%, 0%, .25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+article.thanks .column {
+    width: 47.5%;
+}
+
+article.thanks h2 {
+    font-size: 1.75em;
+    line-height: 1.75em;
+    margin-bottom: 15px;
+    color: rgb(227, 227, 227);
+    text-shadow: 0px 0px 15px rgb(255,255,255);
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+article.thanks h2::after {
+    display: block;
+    position: relative;
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: rgb(187, 187, 187);
+    margin: 30px 0;
+}
+
+article.thanks .paragraph p,
+article.thanks .paragraph strong {
+    font-size: 15px;
+    line-height: 32px;
+    color: rgb(213, 213, 213);
+    font-weight: 100;
+}
+
+/* footer */
 
 .footer-link i {
     color: rgb(228, 228, 228);
@@ -488,8 +537,16 @@ section.project-main-footer {
         width: 100%;
     }
 
-    section.project-main-footer {
-        padding-bottom: 105px;
+    /* project-main-footer */
+
+    article.thanks {
+        margin: -75px auto 0;
+        padding: 35px;
+        max-width: 980px;
+    }
+
+    article.thanks .column {
+        width: 45%;
     }
 
 }
@@ -514,7 +571,7 @@ section.project-main-footer {
         font-size: 2.5em;
     }
 
-    .header-title h2:after {
+    .header-title h2::after {
         margin-top: 40px;
     }
 
@@ -555,16 +612,16 @@ section.project-main-footer {
         font-size: 2.15em;
     }
 
-    section.main-design-goal h3:after,
-    section.main-process-overview h3:after {
+    section.main-design-goal h3::after,
+    section.main-process-overview h3::after {
         max-width: 35px;
     }
 
-    section.main-design-goal h3:after {
+    section.main-design-goal h3::after {
         margin: 45px auto;
     }
 
-    section.main-process-overview h3:after {
+    section.main-process-overview h3::after {
         margin: 45px 3px;
     }
 
@@ -576,6 +633,22 @@ section.project-main-footer {
     article.transform p,
     article.particle-system p {
         font-size: 1.5em;
+    }
+
+    /* project-main-footer */
+
+    article.thanks {
+        max-width: 500px;
+        margin: -65px auto 0;
+        flex-direction: column;
+    }
+
+    article.thanks .column {
+        width: 100%;
+    }
+
+    article.thanks .column:last-child {
+        margin-top: 50px;
     }
 
 }
@@ -624,7 +697,7 @@ section.project-main-footer {
         letter-spacing: 2.5px;
     }
 
-    .header-title h2:after {
+    .header-title h2::after {
         margin-top: 30px;
     }
 
@@ -662,16 +735,16 @@ section.project-main-footer {
         font-size: 2em;
     }
 
-    section.main-design-goal h3:after,
-    section.main-process-overview h3:after {
+    section.main-design-goal h3::after,
+    section.main-process-overview h3::after {
         max-width: 30px;
     }
 
-    section.main-design-goal h3:after {
+    section.main-design-goal h3::after {
         margin: 40px auto;
     }
 
-    section.main-process-overview h3:after {
+    section.main-process-overview h3::after {
         margin: 40px 2px;
     }
 
@@ -742,8 +815,41 @@ section.project-main-footer {
         color: rgb(255, 255, 255) !important;
     }
 
+    /* project-main-footer */
+
     section.project-main-footer {
-        padding-bottom: 75px;
+        padding-bottom: 50px;
+    }
+
+    article.thanks {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 35px 25px;
+    }
+
+    article.thanks .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    article.thanks .column:last-child {
+        margin-top: 35px;
+    }
+
+    article.thanks h2 {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    article.thanks h2::after {
+        margin: 25px auto;
+        width: 20px;
+    }
+
+    article.thanks .paragraph p, 
+    article.thanks .paragraph strong {
+        font-size: 14px;
+        line-height: 30px;
     }
 
 }
@@ -766,8 +872,12 @@ section.project-main-footer {
         font-size: 1.85em;
     }
 
-    .header-title h2:after {
+    .header-title h2:::after {
         margin-top: 25px;
+    }
+
+    section.main-process-overview img.mobile {
+        max-width: 75%;
     }
 
 }

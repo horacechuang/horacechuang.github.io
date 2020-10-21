@@ -214,6 +214,58 @@ main#container {
     padding-bottom: 100px;
 }
 
+/* project-main-navigator */
+
+section.project-main-navigator {
+    width: 100%;
+    margin-bottom: 110px;
+}
+
+section.project-main-navigator .container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container ul.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul.nav li.navi-btn {
+    text-align: center;
+    width: 45%;
+    text-shadow: 0px 0px 25px rgba(43, 43, 43, .85);
+}
+
+ul.nav li.navi-btn h4,
+ul.nav li.navi-btn p {
+    color: white;
+    font-size: 2em;
+}
+
+li.navi-btn a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+li.navi-btn a.prev-img {
+    background: url('../img/index/index_5.png') center center;
+    
+}
+
+li.navi-btn a.next-img {
+    background: url('../img/index/index_1.png');
+}
+
+
 /* footer */
 
 footer#footer {
