@@ -1,0 +1,9 @@
+/* project-main-navigator */
+
+li.navi-btn a.prev-img {
+    background: url('../../img/index/index_2.png') center center;   
+}
+
+li.navi-btn a.next-img {
+    background: url('../../img/index/index_4.png') center center;
+}

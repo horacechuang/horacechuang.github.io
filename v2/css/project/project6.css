@@ -125,10 +125,10 @@ header.project-header > .header-title h2 {
     content: '';
     width: 75px;
     height: 1px;
-    background: rgb(255,255,255);
+    background: rgb(113,113,113);
     display: block;
     position: relative;
-    margin: 45px 0 auto;
+    margin: 45px auto 0;
 }
 
 .project-header-container > main.project-header-main {
@@ -334,7 +334,8 @@ figure.media-collect picture {
 }
 
 figure.media-collect img {
-    max-width: 520px;
+    width: 47.5%;
+    height: 100%;
     padding-bottom: 4%;
 }
 
@@ -395,7 +396,8 @@ figure.video figcaption {
 /* figure.media-transform */
 
 figure.media-transform picture.grid img {
-    width: 50%;
+    width: 50% !important;
+    height: 100%;
 }
 
 /* project-main-footer */
@@ -403,8 +405,7 @@ figure.media-transform picture.grid img {
 section.project-main-footer,
 figure.main-footer-image,
 figure.main-footer-image img {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
 }
 
 section.project-main-footer {
@@ -450,10 +451,27 @@ article.thanks h2::after {
 
 article.thanks .paragraph p,
 article.thanks .paragraph strong {
-    font-size: 15px;
-    line-height: 32px;
     color: rgb(213, 213, 213);
     font-weight: 100;
+}
+
+article.thanks .paragraph p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+article.thanks .paragraph strong {
+    font-size: 1em;
+}
+
+/* project-main-navigator */
+
+li.navi-btn a.prev-img {
+    background: url('../../img/index/index_5.png') center center;   
+}
+
+li.navi-btn a.next-img {
+    background: url('../../img/index/index_1.png') center center;
 }
 
 /* footer */
@@ -521,7 +539,7 @@ article.thanks .paragraph strong {
     
     figure.media-collect img,
     figure.media-collect figcaption {
-        max-width: 47.5%;
+        width: 47.5%;
         padding-bottom: 5%;
     }
     
@@ -791,11 +809,11 @@ article.thanks .paragraph strong {
     }
 
     figure.media-collect img {
-        max-width: 100%;
+        width: 100%;
     }
 
     figure.media-collect figcaption {
-        max-width: 100%;
+        width: 100%;
         margin-top: 15px;
         text-align: justify;
     }
@@ -816,10 +834,6 @@ article.thanks .paragraph strong {
     }
 
     /* project-main-footer */
-
-    section.project-main-footer {
-        padding-bottom: 50px;
-    }
 
     article.thanks {
         max-width: 100%;
@@ -848,8 +862,12 @@ article.thanks .paragraph strong {
 
     article.thanks .paragraph p, 
     article.thanks .paragraph strong {
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 1.25em;
+        line-height: 2em;
+    }
+
+    article.thanks .paragraph strong {
+        font-size: 1em;
     }
 
 }
@@ -877,7 +895,7 @@ article.thanks .paragraph strong {
     }
 
     section.main-process-overview img.mobile {
-        max-width: 75%;
+        max-width: 65%;
     }
 
 }
