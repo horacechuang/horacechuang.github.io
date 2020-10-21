@@ -144,15 +144,16 @@ main.project-header-main h2 {
     color: rgb(160, 160, 160);
 }
 
-main.project-header-main h2 > a {
+main.project-header-main h2 a {
     font-size: 1em;
     color: rgb(160, 160, 160);
     transition: .25s all ease;
-    /* inherit */
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(155, 155, 155);
 }
 
-main.project-header-main h2 > a:hover {
-    opacity: .75;
+main.project-header-main h2 a:hover {
+    opacity: .5;
 }
 
 main.project-header-main h2:first-child {
@@ -288,6 +289,17 @@ article.particle-system p{
     margin: 50px auto;
 }
 
+article.particle-system a{
+    color: rgb(212, 212, 212);
+    transition: .25s all ease;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+article.particle-system a:hover {
+    opacity: .5;
+}
+
 /* article-figure */
 
 section.main-design-goal figure,
@@ -396,7 +408,7 @@ figure.video figcaption {
 /* figure.media-transform */
 
 figure.media-transform picture.grid img {
-    width: 50% !important;
+    width: 50%;
     height: 100%;
 }
 
@@ -822,7 +834,7 @@ li.navi-btn a.next-img {
 
     figure.media-transform picture.grid img {
         width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     figure.media-transform picture.grid img:first-child {
@@ -872,7 +884,7 @@ li.navi-btn a.next-img {
 
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 580px) {
 
     header.project-header > img.lemuria-logo {
         max-width: 200px;

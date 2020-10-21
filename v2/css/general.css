@@ -886,3 +886,18 @@ ul.footer-link-btn {
     }
 
 }
+
+@media all and (max-width: 580px) {
+
+    /* project-main-navigator */
+
+    ul.nav li.navi-btn {
+        width: 65%;
+    }
+
+    li.navi-btn a {
+        height: 225px;
+    }
+
+}
+
