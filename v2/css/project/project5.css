@@ -1,6 +1,7 @@
 /* general */
-
-
+header, main {
+    padding: 0 25px;
+}
 
 /* project-main-navigator */
 
