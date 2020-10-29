@@ -218,7 +218,7 @@ main#container {
 
 section.project-main-navigator {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 section.project-main-navigator .container {
@@ -227,19 +227,41 @@ section.project-main-navigator .container {
 }
 
 .container .title {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 65px;
+    position: relative;
+    display: block;
+    max-width: 1110px;
+    margin: 0 6.75% 100px;
+    text-align: left;
+}
+
+.container .title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(177, 177, 177, .25);
+    top: 85px;
 }
 
 .container .title > h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 400;
     letter-spacing: .5px;
-    color: rgba(194, 194, 194, .5);
-
+    color: rgb(133,133,133);
+    position: relative;
+    display: block;
 }
+
+.container .title > h3::after {
+    content: "";
+    position: absolute;
+    min-width: 100px;
+    height: 2px;
+    top: 83px;
+    left: 0;
+    background: rgb(133, 133, 133);
+}
+
 .container ul.nav {
     display: flex;
     flex-direction: row;
@@ -274,7 +296,7 @@ li.navi-btn a {
     justify-content: center;
     align-items: center;
     background-size: cover !important;
-    height: 300px;
+    height: 350px;
     border-radius: 0px;
     transition: .35s all ease;
     box-shadow: 0px 15px 35px -15px rgba(0, 0, 0, .25);
@@ -481,7 +503,12 @@ ul.footer-link-btn {
     main#container {
         padding-bottom: 75px;
     }
-    
+
+    /* project-main-navigator */
+
+    li.navi-btn a {
+        height: 275px;
+    }
 
     /* footer */
 
@@ -522,8 +549,21 @@ ul.footer-link-btn {
     /* project-main-navigator */
 
     section.project-main-navigator {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
+
+    .container .title::after {
+        top: 75px;
+    }
+
+    .container .title > h3 {
+        font-size: 2.25em;
+    }
+
+    .container .title > h3::after {
+        top: 73px;
+    }
+
 
     li.navi-btn h4 {
         font-size: 1.5em;
@@ -780,6 +820,49 @@ ul.footer-link-btn {
     main#container {
         padding-bottom: 50px;
     }
+
+    /* project-main-navigator */
+
+    section.project-main-navigator {
+        margin-bottom: 100px;
+    }
+
+    .container ul.nav {
+        flex-direction: column;
+        padding: 0 6.75%;
+    }
+
+    .container .title::after {
+        top: 70px;
+    }
+
+    .container .title > h3 {
+        font-size: 1.85em;
+    }
+
+    .container .title > h3::after {
+        top: 68px;
+    }
+
+    ul.nav li.navi-btn {
+        width: 100%;
+    }
+
+    ul.nav li.prev-btn {
+        padding-bottom: 50px;
+    }
+
+    li.navi-btn a {
+        height: 350px;
+    }
+
+    li.navi-btn h4 {
+        font-size: 1.25em;
+    }
+
+    li.navi-btn p {
+        font-size: 1.5em;
+    }
     
 
     /* footer */
@@ -876,41 +959,11 @@ ul.footer-link-btn {
         color: #ea4c89;
     }
 
-    /* project-main-navigator */
-
-    .container ul.nav {
-        flex-direction: column;
-    }
-
-    ul.nav li.navi-btn {
-        width: 70%;
-    }
-
-    ul.nav li.prev-btn {
-        padding-bottom: 50px;
-    }
-
-    li.navi-btn a {
-        height: 300px;
-    }
-
-    li.navi-btn h4 {
-        font-size: 1.25em;
-    }
-
-    li.navi-btn p {
-        font-size: 1.5em;
-    }
-
 }
 
 @media all and (max-width: 580px) {
 
     /* project-main-navigator */
-
-    ul.nav li.navi-btn {
-        width: 65%;
-    }
 
     li.navi-btn a {
         height: 225px;

@@ -482,6 +482,18 @@ article.thanks .paragraph strong {
 
 /* project-main-navigator */
 
+.container .title::after {
+    background: rgba(177, 177, 177, .25);
+}
+
+.container .title > h3 {
+    color: rgba(255, 255, 255, .75);
+}
+
+.container .title > h3::after {
+    background: rgba(255, 255, 255, .75)
+}
+
 li.navi-btn a.prev-img {
     background: url('../../img/index/index_5.png') center center;   
 }
