@@ -61,7 +61,7 @@ figcaption {
     to {
         top: 0;
     }
-} 
+}
 
 /* header#header */
 
@@ -96,12 +96,11 @@ header.project-header > img.lemuria-logo {
 }
 
 header.project-header > img.lemuria-banner {
-    width: 95%;
+    width: 100vw;
     margin: 0 auto;
     display: block;
     position: relative;
-    margin-top: -250px;
-   
+    margin-top: -300px;
 }
 
 header.project-header > .header-title {
@@ -153,7 +152,9 @@ main.project-header-main h2 a {
 }
 
 main.project-header-main h2 a:hover {
-    opacity: .5;
+    opacity: .9;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 main.project-header-main h2:first-child {
@@ -290,15 +291,18 @@ article.particle-system p{
 }
 
 article.particle-system a{
-    color: rgb(212, 212, 212);
+    color: rgb(160,160,160);
     transition: .25s all ease;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(155, 155, 155);
 }
 
 article.particle-system a:hover {
-    opacity: .5;
+    opacity: .9;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
+
 
 /* article-figure */
 
@@ -429,7 +433,7 @@ article.thanks {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1080px;
+    max-width: 1180px;
     margin: -100px auto 0;
     padding: 50px 75px;
     background: hsla(0, 0%, 0%, .25);
