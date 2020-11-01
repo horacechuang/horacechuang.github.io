@@ -1,6 +1,7 @@
 /* general */
 header, main {
-    padding: 0 25px;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 /* project-main-navigator */
@@ -11,4 +12,10 @@ li.navi-btn a.prev-img {
 
 li.navi-btn a.next-img {
     background: url('../../img/index/index_5.png') center center;
+}
+
+@media all and (max-width: 1229px) {
+    header, main {
+        padding: 0 25px;
+    }
 }
