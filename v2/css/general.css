@@ -87,9 +87,9 @@ nav > .nav-container {
 }
 
 .nav-menu ul {
-    font-size: 1.25em;
+    font-size: 1.3em;
     width: 100%;   
-    letter-spacing: .1px;
+    letter-spacing: .15px;
 }
 
 .nav-menu li {
