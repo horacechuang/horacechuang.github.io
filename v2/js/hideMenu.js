@@ -1,5 +1,6 @@
 $(document).ready(function () {
-     var navBar, currentScrollTop = 0,
+     var navBar, 
+         currentScrollTop = 0,
          navigation = $("nav"),
          footer = $("footer");
   
@@ -18,6 +19,7 @@ $(document).ready(function () {
         }
 
         navBar = currentScrollTop;
+
     });
     
   });

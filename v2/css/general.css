@@ -34,8 +34,8 @@ nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,.9);
-    transition: .5s all ease-in-out;
+    background: hsla(0,0%,100%,.75);
+    transition: 1s all ease;
     z-index: 2;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -47,7 +47,7 @@ nav.invisibleNav {
 
 nav.addShadow {
     box-shadow: 0px 5px 25px rgba(194, 194, 194, .25);
-    transition: .5s all ease;
+    transition: 1s all ease;
 }
 
 nav > .nav-container {
@@ -58,7 +58,7 @@ nav > .nav-container {
 
 .nav-container > .logo{
     display: block;
-    padding: 28px 0;
+    padding: 30px 0;
     max-width: 300px;
     float: left;
 }
@@ -177,7 +177,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 84px;
+    padding-top: 82px;
     position: relative;
     display: block
 }
@@ -346,10 +346,10 @@ footer#footer {
     bottom: 0;
     width: 100%;
     min-height: 103px;
-    background: hsla(0, 0%, 100%, .9);
+    background: hsla(0, 0%, 100%, .75);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    transition: .5s all ease-in-out;
+    transition: 1s all ease;
     z-index: 1;
 }
 
@@ -359,7 +359,7 @@ footer.invisibleFooter {
 
 footer.addShadow {
     box-shadow: 0px -5px 25px rgba(194, 194, 194, .25);
-    transition: .5s all ease;
+    transition: 1s all ease;
 }
 
 footer#footer::before {
@@ -657,7 +657,7 @@ ul.footer-link-btn {
     /* logo */
 
     .nav-container > .logo{
-        padding: 20px 0;
+        padding: 21px 0;
         max-width: 200px;
         position: relative;
         z-index: 1;
@@ -869,7 +869,6 @@ ul.footer-link-btn {
 
     footer#footer {
         min-height: 64px;
-        background: hsla(0,0%,100%,0.925);
     }
 
     footer.invisibleFooter {
