@@ -108,7 +108,7 @@ section.preface-container h2 {
     line-height: 1em;
     padding-left: 15px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 section.preface-container p {
@@ -200,7 +200,6 @@ li.navi-btn a.next-img {
 
     section.preface-container h2 {
         font-size: 1.75em;
-        margin-bottom: 20px;
         padding-left: 10px;
     }
 
