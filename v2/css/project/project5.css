@@ -3,7 +3,7 @@
 }
 
 .line {
-    height: 10px;
+    height: 15px;
     border-radius: 0;
     max-width: 100%;
 }
@@ -14,7 +14,7 @@ nav {
 
 header {
     width: 100%;
-    min-height: 650px;
+    min-height: 700px;
     background-image: 
     url(../../img/project5/header-circle.svg),
     linear-gradient(122deg, #1cb896 36%, #2781e9 92%);
@@ -35,9 +35,8 @@ header > .header-container {
 }
 
 .header-container img {
-    margin-top: 125px;
+    margin-top: 150px;
     max-width: 275px;
-    
 }
 
 .header-container p {
@@ -74,7 +73,7 @@ header > .header-container {
 main#container {
     display: block;
     position: relative;
-    margin-top: 50px;
+    padding: 0;
 }
 
 section.preface-container {
@@ -83,8 +82,12 @@ section.preface-container {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 1180px;
-    margin: 0 auto;
+    max-width: 1280px;
+    margin: -35px auto 50px;
+    padding: 75px 50px 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -30px 40px -30px rgba(0,0,0,.25);
+    border-radius: 5px;
 }
 
 section.preface-container .column:last-child {
@@ -137,18 +140,22 @@ li.navi-btn a.next-img {
     background: url('../../img/index/index_6.png') center center;
 }
 
-@media all and (max-width: 1229px) {
+@media all and (max-width: 1350px) {
 
     #decoration-line {
         margin: 0;
     }
 
     header, main {
-        padding: 0 25px;
+        padding: 0 25px !important;
     }
 }
 
 @media all and (max-width: 767px) {
+
+    .line {
+        height: 10px;
+    }
 
     nav {
         margin-top: -62px;
@@ -182,6 +189,9 @@ li.navi-btn a.next-img {
 
     section.preface-container {
         flex-direction: column;
+        margin: 50px auto;
+        padding: 0;
+        box-shadow: none;
     }
 
     section.preface-container .column {
