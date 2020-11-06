@@ -293,6 +293,21 @@ li.navi-btn a.next-img {
         margin: 0;
     }
 
+    picture.before-img::before {
+        width: 150px;
+        height: 150px;
+        top: -45px;
+        right: -65px;
+    }
+
+    picture.before-img::after {
+        width: 100px;
+        height: 100px;
+        bottom: -25px;
+        left: -75px;
+        opacity: 0.9;
+    }
+
     section.preface-container h2,
     section.before-container h2 {
         font-size: 1.65em;
