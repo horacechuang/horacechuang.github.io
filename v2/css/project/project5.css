@@ -294,17 +294,17 @@ li.navi-btn a.next-img {
     }
 
     picture.before-img::before {
-        width: 150px;
-        height: 150px;
-        top: -45px;
+        width: 125px;
+        height: 125px;
+        top: -35px;
         right: -65px;
     }
 
     picture.before-img::after {
-        width: 100px;
-        height: 100px;
-        bottom: -25px;
-        left: -75px;
+        width: 90px;
+        height: 90px;
+        bottom: -15px;
+        left: -65px;
         opacity: 0.9;
     }
 
