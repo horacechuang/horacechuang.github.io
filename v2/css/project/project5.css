@@ -10,6 +10,7 @@
 
 nav {
     margin-top: -82px;
+    box-shadow: 0px 3px 55px rgba(73, 73, 73, .25);
 }
 
 header {
@@ -108,15 +109,15 @@ section.preface-container h2 {
     font-size: 2em;
     color: rgb(131, 224, 201);
     border-left: 3px #83e0c9 solid;
-    line-height: 1em;
     padding-left: 15px;
+    line-height: 1em;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 section.preface-container p {
     font-size: 1.5em;
-    line-height: 35px;
+    line-height: 2em;
     padding-left: 20px;
     font-weight: 100;
     margin-bottom: 25px;
@@ -130,6 +131,89 @@ section.right .role {
     padding-bottom: 25px;
 }
 
+section.before-container {
+    position: relative;
+    display: block;
+    margin: 50px auto 100px;
+}
+
+picture.before-img,
+article.before-content {
+    max-width: 768px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+picture.before-img::before, 
+picture.before-img::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
+
+picture.before-img::before {
+    width: 250px;
+    height: 250px;
+    top: -25px;
+    right: -50px;
+    border-radius: 250px;
+    background-image: linear-gradient(45deg, rgb(227, 255, 242) 50%, rgb(197, 245, 255) 100%);
+    animation: 1.5s color-rotate linear infinite;
+}
+
+picture.before-img::after {
+    width: 150px;
+    height: 150px;
+    bottom: -20px;
+    left: -50px;
+    border-radius: 150px;
+    background-image: linear-gradient(45deg, rgb(185, 255, 223) 30%, rgb(210, 247, 255) 90%);
+    animation: 2s color-rotate linear infinite;
+}
+
+article.before-content {
+    padding-top: 50px;
+}
+
+article.before-content h2 {
+    font-size: 2.5em;
+    line-height: 0.75em;
+    border-left: 3px #83e0c9 solid;
+    padding-left: 15px;
+    font-weight: 400;
+    color: rgb(131, 224, 201);
+} 
+
+article.before-content p {
+    font-size: 1.5em;
+    line-height: 2em;   
+    font-weight: 100;
+    text-align: justify;
+    padding-left: 20px;
+    margin: 25px 0;
+}
+
+
+@keyframes color-rotate {
+    0% {
+        transform: scale(0.98) rotate(0deg);
+    }
+    
+    50% {
+        transform: scale(1.05) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(0.98) rotate(360deg);
+    }
+}
+
+picture.before-img img {
+    width: 100%;
+}
+
 /* project-main-navigator */
 
 li.navi-btn a.prev-img {
@@ -139,6 +223,7 @@ li.navi-btn a.prev-img {
 li.navi-btn a.next-img {
     background: url('../../img/index/index_6.png') center center;
 }
+
 
 @media all and (max-width: 1350px) {
 
@@ -208,14 +293,15 @@ li.navi-btn a.next-img {
         margin: 0;
     }
 
-    section.preface-container h2 {
-        font-size: 1.75em;
+    section.preface-container h2,
+    section.before-container h2 {
+        font-size: 1.65em;
         padding-left: 10px;
     }
 
-    section.preface-container p {
-        font-size: 1.35em;
-        line-height: 30px;
+    section.preface-container p,
+    section.before-container p {
+        font-size: 1.25em;
         padding-left: 15px;
     }
 
