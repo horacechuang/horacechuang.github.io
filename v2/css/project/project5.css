@@ -219,6 +219,7 @@ section.main-container {
     margin: 100px auto;
 }
 
+
 section.main-container > section.process-overview {
     display: flex;
     position: relative;
@@ -275,6 +276,7 @@ li.navi-btn a.next-img {
 @media all and (max-width: 1229px) {
     section.main-container > section.process-overview {
         padding: 40px;
+        border-radius: 15px;
     }
     
     section.process-overview h2 {
