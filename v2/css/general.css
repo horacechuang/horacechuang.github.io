@@ -1,10 +1,12 @@
 /* General */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box !important;
     text-decoration: none;
     font-family: 'Karla','Noto Sans TC',sans-serif;
     color: #666;
