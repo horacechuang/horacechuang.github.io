@@ -88,7 +88,7 @@ section.preface-container {
     padding: 75px 50px 25px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px -30px 50px -35px rgba(0,0,0,.25);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 section.preface-container .column:last-child {
@@ -219,7 +219,6 @@ section.main-container {
     margin: 100px auto;
 }
 
-
 section.main-container > section.process-overview {
     display: flex;
     position: relative;
@@ -230,12 +229,25 @@ section.main-container > section.process-overview {
     align-items: flex-start;
     box-shadow: 0px 25px 35px -30px rgba(0,0,0,.2);
     border-radius: 10px;
-    background: linear-gradient(135deg, rgb(67, 235, 170), rgb(31, 200, 238));
+    background: linear-gradient(270deg, rgb(49, 225, 158) 0%, rgb(31, 200, 238) 50%,  rgb(49, 225, 158));
+    background-size: 200% 100%;
+    background-position: 0 0;
+    animation: marquee 3.5s linear infinite;
     padding: 50px;
 }
 
-section.process-overview h2, section.process-overview p {
-    color: white;
+@keyframes marquee {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+}
+
+section.process-overview h2, 
+section.process-overview p {
+    color: rgb(255,255,255);
 }
 
 section.process-overview h2 {
@@ -250,6 +262,81 @@ section.process-overview p {
     line-height: 2em;
     font-weight: 100;
 }
+
+section.main-container > section.process-logo,
+section.main-container > section.process-typo,
+section.main-container > section.process-color {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1180px;
+    margin: 50px auto;
+}
+
+section.process-logo .article,
+section.process-typo .article,
+section.process-color .article {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-width: 768px;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+section.process-logo .article h2,
+section.process-typo .article h2,
+section.process-color .article h2 {
+    font-size: 2.5em;
+    margin-bottom: 35px;
+    color: #88e8d3;
+}
+
+section.process-logo .article p,
+section.process-typo .article p,
+section.process-color .article p {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 2em;
+}
+
+section.process-logo .img,
+section.process-typo .img,
+section.process-color .img {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    max-width: 980px;
+}
+
+section.process-logo picture,
+section.process-typo picture,
+section.process-color picture.desktop {
+    display: flex;
+}
+
+section.process-logo picture.row1 img,
+section.process-typo picture.row1 img,
+section.process-color picture.row img {
+    width: 100%;
+}
+
+section.process-logo picture.row2,
+section.process-typo picture.row2 {
+    flex-direction: row;
+}
+
+section.process-logo picture.row2 img,
+section.process-typo picture.row2 img {
+    width: 50%;
+}
+
+section.process-color picture.mobile {
+    display: none;
+}
+
 
 /* project-main-navigator */
 
@@ -274,6 +361,11 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 1229px) {
+
+    section.preface-container {
+        border-radius: 15px;
+    }
+
     section.main-container > section.process-overview {
         padding: 40px;
         border-radius: 15px;
@@ -327,9 +419,10 @@ li.navi-btn a.next-img {
 
     section.preface-container {
         flex-direction: column;
-        margin: 50px auto;
+        margin: 50px auto 25px;
         padding: 0;
         box-shadow: none;
+        border-radius: 0;
     }
 
     section.preface-container .column {
@@ -346,19 +439,29 @@ li.navi-btn a.next-img {
         margin: 0;
     }
 
+    section.before-container {
+        margin: 0px auto 75px;
+    }
+
     picture.before-img::before {
-        width: 125px;
-        height: 125px;
-        top: -35px;
+        width: 145px;
+        height: 145px;
+        top: -25px;
         right: -65px;
     }
 
     picture.before-img::after {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         bottom: -15px;
         left: -65px;
         opacity: 0.9;
+    }
+
+    picture.before-img img {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
     }
 
     section.preface-container h2,
@@ -378,10 +481,10 @@ li.navi-btn a.next-img {
     }
 
     section.main-container > section.process-overview {
-        padding: 35px;
+        padding: 30px;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0px 15px 35px -25px rgba(0,0,0,.35);
+        box-shadow: 0px 15px 40px -25px rgba(0,0,0,.35);
     }
     
     section.process-overview h2 {
@@ -396,6 +499,47 @@ li.navi-btn a.next-img {
         margin-top: 20px;
     }
 
+    section.main-container > section.process-logo,
+    section.main-container > section.process-typo,
+    section.main-container > section.process-color {
+        padding-bottom: 50px;
+    }
+
+    section.process-logo .article,
+    section.process-typo .article,
+    section.process-color .article {
+        padding: 50px 15px;
+    }
+
+    section.process-logo .article h2,
+    section.process-typo .article h2,
+    section.process-color .article h2 {
+        font-size: 1.65em;
+    }
+
+    section.process-logo .article p,
+    section.process-typo .article p,
+    section.process-color .article p {
+        font-size: 1.25em;
+    }
+
+    section.process-logo picture.row2,
+    section.process-typo picture.row2 {
+        flex-direction: column;
+    }
+
+    section.process-logo picture.row2 img,
+    section.process-typo picture.row2 img {
+        width: 100%;
+    }
+
+    section.process-color picture.desktop {
+        display: none;
+    }
+
+    section.process-color picture.mobile {
+        display: flex;
+    }
 
    
 }
