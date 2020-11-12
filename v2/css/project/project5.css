@@ -216,7 +216,7 @@ picture.before-img img {
 section.main-container {
     display: block;
     position: relative;
-    margin: 100px auto;
+    margin: 100px auto 150px;
 }
 
 section.main-container::before {
@@ -279,7 +279,8 @@ section.process-overview p {
 
 section.main-container > section.process-logo,
 section.main-container > section.process-typo,
-section.main-container > section.process-color {
+section.main-container > section.process-color,
+section.main-container > section.process-page-element {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -288,27 +289,37 @@ section.main-container > section.process-color {
 
 section.process-logo .article,
 section.process-typo .article,
-section.process-color .article {
+section.process-color .article,
+section.process-page-element .article {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    max-width: 768px;
+    max-width: 980px;
     padding: 100px;
     margin: 0 auto;
 }
 
 section.process-logo .article h2,
 section.process-typo .article h2,
-section.process-color .article h2 {
-    font-size: 2.5em;
+section.process-color .article h2,
+section.process-page-element .article h2 {
+    font-size: 2.65em;
     margin-bottom: 35px;
-    color: #88e8d3;
+    color: rgb(135, 232, 211);
+}
+
+section.process-page-element .article h3 {
+    font-size: 1.85em;
+    margin-bottom: 25px;
+    align-self: flex-start;
+    color: rgb(65, 168, 178);
 }
 
 section.process-logo .article p,
 section.process-typo .article p,
-section.process-color .article p {
+section.process-color .article p,
+section.process-page-element .article p {
     font-size: 1.5em;
     font-weight: 100;
     line-height: 2em;
@@ -316,33 +327,41 @@ section.process-color .article p {
 
 section.process-logo .img,
 section.process-typo .img,
-section.process-color .img {
+section.process-color .img,
+section.process-page-element .img,
+section.process-page-element .video {
     display: flex;
     flex-direction: column;
     align-self: center;
     position: relative;
-    max-width: 980px;
+    max-width: 1080px;
 }
 
 section.process-logo picture,
 section.process-typo picture,
-section.process-color picture.desktop {
+section.process-color picture.desktop,
+section.process-page-element picture,
+section.process-page-element figure {
     display: flex;
 }
 
 section.process-logo picture.row1 img,
 section.process-typo picture.row1 img,
-section.process-color picture.row img {
+section.process-color picture.row img,
+section.process-page-element picture.row1 img,
+section.process-page-element figure.row1 video {
     width: 100%;
 }
 
 section.process-logo picture.row2,
-section.process-typo picture.row2 {
+section.process-typo picture.row2,
+section.process-page-element picture.row2 {
     flex-direction: row;
 }
 
 section.process-logo picture.row2 img,
-section.process-typo picture.row2 img {
+section.process-typo picture.row2 img,
+section.process-page-element picture.row2 img {
     width: 50%;
 }
 
@@ -350,7 +369,8 @@ section.process-color picture.mobile {
     display: none;
 }
 
-section.process-page-element
+
+
 
 /* project-main-navigator */
 
@@ -397,6 +417,21 @@ li.navi-btn a.next-img {
     section.process-overview p {
         width: 70%;
         padding-left: 15px;
+    }
+
+    section.process-logo .img,
+    section.process-typo .img,
+    section.process-color .img,
+    section.process-page-element .img,
+    section.process-page-element .video {
+        max-width: 980px;
+    }
+
+    section.process-logo .article,
+    section.process-typo .article,
+    section.process-color .article,
+    section.process-page-element .article {
+        padding: 100px 100px 50px;
     }
 }
 
@@ -525,26 +560,35 @@ li.navi-btn a.next-img {
 
     section.main-container > section.process-logo,
     section.main-container > section.process-typo,
-    section.main-container > section.process-color {
-        padding-bottom: 50px;
+    section.main-container > section.process-color,
+    section.main-container > section.process-page-element {
+        padding-bottom: 25px;
     }
 
     section.process-logo .article,
     section.process-typo .article,
-    section.process-color .article {
+    section.process-color .article,
+    section.process-page-element .article {
         padding: 50px 15px;
     }
 
     section.process-logo .article h2,
     section.process-typo .article h2,
-    section.process-color .article h2 {
+    section.process-color .article h2,
+    section.process-page-element .article h2 {
         font-size: 1.65em;
+    }
+
+    section.process-page-element .article h3 {
+        font-size: 1.5em;
     }
 
     section.process-logo .article p,
     section.process-typo .article p,
-    section.process-color .article p {
+    section.process-color .article p,
+    section.process-page-element .article p {
         font-size: 1.25em;
+        margin-bottom: 15px;
     }
 
     section.process-logo picture.row2,
@@ -565,5 +609,4 @@ li.navi-btn a.next-img {
         display: flex;
     }
 
-   
 }
