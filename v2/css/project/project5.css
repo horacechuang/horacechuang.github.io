@@ -425,6 +425,7 @@ li.navi-btn a.next-img {
     section.process-page-element .img,
     section.process-page-element .video {
         max-width: 980px;
+        padding: 0 100px;
     }
 
     section.process-logo .article,
@@ -590,6 +591,14 @@ li.navi-btn a.next-img {
     section.process-page-element .article p {
         font-size: 1.25em;
         margin-bottom: 15px;
+    }
+
+    section.process-logo .img,
+    section.process-typo .img,
+    section.process-color .img,
+    section.process-page-element .img,
+    section.process-page-element .video {
+        padding: 0;
     }
 
     section.process-logo picture.row2,
