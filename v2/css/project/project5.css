@@ -570,13 +570,14 @@ li.navi-btn a.next-img {
     section.process-color .article,
     section.process-page-element .article {
         padding: 50px 15px;
+        align-items: flex-start;
     }
 
     section.process-logo .article h2,
     section.process-typo .article h2,
     section.process-color .article h2,
     section.process-page-element .article h2 {
-        font-size: 1.65em;
+        font-size: 1.75em;
     }
 
     section.process-page-element .article h3 {
