@@ -593,12 +593,14 @@ li.navi-btn a.next-img {
     }
 
     section.process-logo picture.row2,
-    section.process-typo picture.row2 {
+    section.process-typo picture.row2,
+    section.process-page-element picture.row2 {
         flex-direction: column;
     }
 
     section.process-logo picture.row2 img,
-    section.process-typo picture.row2 img {
+    section.process-typo picture.row2 img,
+    section.process-page-element picture.row2 img {
         width: 100%;
     }
 
