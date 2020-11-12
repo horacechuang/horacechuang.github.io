@@ -36,14 +36,14 @@ header > .header-container {
 }
 
 .header-container img {
-    margin-top: 150px;
-    max-width: 275px;
+    margin-top: 160px;
+    max-width: 240px;
 }
 
 .header-container p {
     margin-top: 40px;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.85em;
     color: rgb(255, 255, 255);
     text-shadow: 0px 3px 10px rgba(0,0,0,.25);
     animation: 1.5s scale ease infinite;
@@ -224,21 +224,22 @@ section.main-container::before {
     position: absolute;
     display: block;
     z-index: -1;
-    top: 25px;
+    top: 50px;
     left: 0px;
     width: 100vw;
     height: 350px;
-    background: linear-gradient(180deg,rgb(197, 255, 251), rgb(255, 255, 255));
+    margin: 0 auto;
+    background: linear-gradient(180deg,rgb(197, 255, 251), rgb(219, 255, 248) 25%, rgb(255, 255, 255) 100%);
 }
 
 section.main-container > section.process-overview {
     display: flex;
     position: relative;
     max-width: 980px;
-    margin: 0 auto;
+    margin: 150px auto 0;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
     box-shadow: 0px 25px 35px -30px rgba(0,0,0,.35);
     border-radius: 10px;
     background: linear-gradient(270deg, rgb(49, 225, 158) 0%, rgb(31, 200, 238) 50%,  rgb(49, 225, 158));
@@ -246,6 +247,7 @@ section.main-container > section.process-overview {
     background-position: 0 0;
     animation: marquee 3s linear infinite;
     padding: 50px;
+    transition: .5s all ease;
 }
 
 @keyframes marquee {
@@ -348,6 +350,7 @@ section.process-color picture.mobile {
     display: none;
 }
 
+section.process-page-element
 
 /* project-main-navigator */
 
@@ -369,6 +372,10 @@ li.navi-btn a.next-img {
     header, main {
         padding: 0 25px !important;
     }
+
+    section.main-container::before {
+        margin-left: -25px;
+    }
 }
 
 @media all and (max-width: 1229px) {
@@ -380,6 +387,7 @@ li.navi-btn a.next-img {
     section.main-container > section.process-overview {
         padding: 40px;
         border-radius: 15px;
+        margin: 75px 35px 0 35px;
     }
     
     section.process-overview h2 {
@@ -492,10 +500,11 @@ li.navi-btn a.next-img {
     }
 
     section.main-container::before {
-        left: -25px;
+        height: 300px;
     }
 
     section.main-container > section.process-overview {
+        margin: 50px 0;
         padding: 30px;
         flex-direction: column;
         align-items: center;
