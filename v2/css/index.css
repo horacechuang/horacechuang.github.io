@@ -10,7 +10,7 @@
 
 header#header {
     position: relative;
-    padding-top: 50px;
+    padding: 75px 0 85px;
 }
 
 /* img */
@@ -27,7 +27,7 @@ img.profile {
     display: block;
     position: absolute;
     margin-top: 150px;
-    animation: move 2s infinite;
+    animation: 2s move infinite;
     border-radius: 250px;
     z-index: 1;
     box-shadow: 0px 20px 50px rgba(124, 124, 124, 0.3);
@@ -52,20 +52,14 @@ img.pattern {
     margin-top: 40px;
     z-index: -1;
     overflow: hidden;
-    animation: opacity-pattern 3s infinite;
+    animation: 2s opacity-pattern infinite;
 }
 
 @keyframes opacity-pattern {
     0% {
         opacity: 1;
     }
-    25% {
-        opacity: 0.5;
-    }
     50% {
-        opacity: 0.75;
-    }
-    75% {
         opacity: 0.5;
     }
     100% {
@@ -82,10 +76,11 @@ img.pattern {
 }
 
 .header-container > .paragraph h1 {
-    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
     font-size: 4.5em;
     margin-bottom: 40px;
-    margin-left: -4px;
+    margin-left: -2px;
     color: rgb(32, 204, 216);
 }
 
@@ -142,23 +137,26 @@ span.wave {
 }
 
 .paragraph a {
-    color: rgb(99, 99, 99);
     font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
     font-weight: 500;
     font-style: normal;
     transition: 0.25s all ease;
-    opacity: .5;
+    opacity: .45;
+}
+
+.paragraph a:first-child {
+    color: #ff3366;
 }
 
 .paragraph a:hover:first-child {
-    color: #f36;
+    opacity: 1;
 }
 
-.paragraph a:hover:nth-child(2) {
+.paragraph a:nth-child(2) {
     color: #C24631;
 }
 
-.paragraph a:hover:last-child {
+.paragraph a:last-child {
     color: rgb(0, 0, 0);
 }
 
@@ -168,7 +166,7 @@ span.wave {
 
 /* line-intro list */
 
-.link {
+/* .link {
     position: relative;
     display: block;
     font-size: 2em;
@@ -198,7 +196,7 @@ span.wave {
 
 .link a {
     transition: .15s all linear;
-}
+} */
 
 /* work area */
 
@@ -233,26 +231,61 @@ section#project {
     height: 65px;
 }
 
+.project-intro::after {
+    content: "\f063";
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 65px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 3em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: rgb(201, 201, 201);
+    margin: 40px auto -150px;
+    animation: 1s scroll ease infinite; 
+}
+
+@keyframes scroll {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    to {
+        top: 0;
+    }
+} 
+
 .project-intro h2 {
-    max-width: 265px;
+    max-width: 300px;
     font-size: 2.75em;
     text-align: center;
-    background: linear-gradient(to bottom right,#b6ffe7, #90d6ff);
+    background: linear-gradient(to bottom right,rgb(52, 247, 182) 25%, rgb(74, 188, 254));
     color: white;
-    padding: 15px;
+    padding: 20px 25px;
     margin: 0 auto;
-    border-left: 10px solid #cbffee;
+    /* border-left: 10px solid rgb(203, 255, 238); */
     border-radius: 10px;
     box-shadow: 0px 10px 40px -10px rgba(116, 116, 116, 0.3);
     text-shadow: 0px 5px 14px rgba(124, 124, 124, .2);
 }
 
 section#project .project-main-container {
-    width: 100%;
+    max-width: 1440px;
     display: block;
     position: relative;
-    background: linear-gradient(180deg, rgba(249, 249, 249, 0.75), rgb(255,255,255) 70%,rgba(249, 249, 249, 0.75));
-    padding: 100px 0 0;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(240, 240, 240, 0.35), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
+    padding: 200px 0 0;
 }
 
 .project-grid {
@@ -547,6 +580,12 @@ ul.expertise-content p {
     margin: 15px 0 25px 0;
 }
 
+@media all and (max-width: 1490px) {
+    section#project .project-main-container {
+        margin: 0 25px;
+    }
+}
+
 @media all and (max-width: 1229px) {
 
     /* general */
@@ -571,7 +610,6 @@ ul.expertise-content p {
     .header-container > .paragraph h1 {
         font-size: 3.5em;
     }
-
 
     .header-container > .paragraph h3 {
         font-size: 1.85em;
@@ -610,7 +648,8 @@ ul.expertise-content p {
 
     section#project .project-main-container {
         border-radius: 15px;
-        padding-top: 75px;
+        padding-top: 175px;
+        margin: 0;
     }
     
 
@@ -701,6 +740,10 @@ ul.expertise-content p {
 }
 
 @media all and (max-width: 980px) {
+
+    .header-container > .paragraph {
+        padding-top: 50px;
+    }
 
     .header-container > .paragraph h3 {
         font-size: 1.75em;
@@ -829,14 +872,14 @@ ul.expertise-content p {
 
     /* line-intro list */
 
-    .link {
+    /* .link {
         font-size: 1.5em;
         margin: 30px 0 0 2px ;
     }
     
     .link li {
         margin: 0 10px;
-    }
+    } */
 
     /* work area */
 
@@ -844,16 +887,20 @@ ul.expertise-content p {
 
     
     section#project {
-        padding: 0 15px;
+        padding: 0 25px;
     }
 
     section#project .project-main-container {
-        padding-top: 65px;
+        padding-top: 135px;
         border-radius: 10px;
     }
 
     .project-intro {
         margin-bottom: -35px;   
+    }
+
+    .project-intro::after {
+        margin: 30px auto -120px;
     }
 
     .project-intro h2 {
