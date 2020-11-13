@@ -268,7 +268,9 @@ section#project {
     max-width: 300px;
     font-size: 2.75em;
     text-align: center;
-    background: linear-gradient(to bottom right,rgb(52, 247, 182) 25%, rgb(74, 188, 254));
+    background: linear-gradient(90deg ,rgb(22, 230, 181), rgb(74, 206, 254) 60%, rgb(22, 230, 181));
+    background-size: 200% 100%;
+    background-position: 0 0;
     color: white;
     padding: 20px 25px;
     margin: 0 auto;
@@ -276,6 +278,16 @@ section#project {
     border-radius: 10px;
     box-shadow: 0px 10px 40px -10px rgba(116, 116, 116, 0.3);
     text-shadow: 0px 5px 14px rgba(124, 124, 124, .2);
+    animation: 2s title-scroll-line linear infinite;
+}
+
+@keyframes title-scroll-line {
+    0% {
+        background-position: 200% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
 section#project .project-main-container {
@@ -375,7 +387,7 @@ li.grid span::before {
     content: "";
     position: absolute;
     height: 1px;
-    top: 35px;
+    top: 30px;
     left: 0;
     right: 0;
     transition: .2s all ease;
@@ -384,7 +396,7 @@ li.grid span::before {
 
 li.grid:hover > span {
     color: #67c1fd;
-    transform: translateY(1px);
+    transform: translateY(3px);
 }
 
 li.grid:hover > span::before {
