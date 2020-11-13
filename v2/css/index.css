@@ -869,7 +869,7 @@ ul.expertise-content p {
 
     .header-container > .paragraph h1 {
         font-size: 2.5em;
-        margin-left: -3px;
+        margin-bottom: 25px;
     }
 
     .header-container > .paragraph h3 {
@@ -878,8 +878,9 @@ ul.expertise-content p {
     }
     
     .paragraph p {
-        font-size: 1.25em !important;
-        line-height: 2em;
+        font-size: 1.35em !important;
+        line-height: 2.25em;
+        margin: 25px 0;
     }
 
     /* line-intro list */
