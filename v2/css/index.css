@@ -427,7 +427,7 @@ li.grid .tag {
     font-family: 'Roboto Slab', sans-serif;
     transition: .5s all ease;
     animation: 3.5s morphing linear infinite;
-    font-size: 1.5em;
+    font-size: 1.35em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 2;
