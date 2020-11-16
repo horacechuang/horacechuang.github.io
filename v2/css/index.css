@@ -10,7 +10,7 @@
 
 header#header {
     position: relative;
-    padding: 75px 0 85px;
+    padding: 65px 0;
 }
 
 /* img */
@@ -71,7 +71,7 @@ img.pattern {
 
 .header-container > .paragraph {
     width: 65%;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .header-container > .paragraph h1 {
@@ -418,8 +418,8 @@ li.grid:hover > span::before {
 li.grid .tag {
     display: flex;
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
     flex-direction: row;
     align-items: center;
@@ -459,7 +459,7 @@ li.grid .t02, li.grid .t04, li.grid .t06 {
 }
 
 li.grid:hover .tag {
-    transform: scale(1.15);
+    transform: scale(1.25);
     box-shadow: 0px 15px 45px -15px rgba(0, 0, 0, 0.5);
 }
 
@@ -1025,9 +1025,9 @@ ul.expertise-content p {
     }
 
     li.grid .tag {
-        width: 55px;
-        height: 55px;
-        animation: 3s morphing linear infinite;
+        width: 60px;
+        height: 60px;
+        animation: 2.5s morphing linear infinite;
         font-size: 1.2em;
         font-weight: 400;
     }
