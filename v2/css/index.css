@@ -26,7 +26,7 @@ img.profile {
     max-width: 250px;
     display: block;
     position: absolute;
-    margin-top: 150px;
+    margin-top: 100px;
     animation: 2s move infinite;
     border-radius: 250px;
     z-index: 1;
@@ -49,7 +49,6 @@ img.profile {
 
 img.pattern {
     max-width: 300px;
-    margin-top: 40px;
     z-index: -1;
     overflow: hidden;
     animation: 2s opacity-pattern infinite;
@@ -72,7 +71,7 @@ img.pattern {
 
 .header-container > .paragraph {
     width: 65%;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .header-container > .paragraph h1 {
@@ -295,7 +294,7 @@ section#project .project-main-container {
     display: block;
     position: relative;
     margin: 0 auto;
-    border-radius: 25px;
+    border-radius: 0 0 25px 25px;
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.35), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
     padding: 200px 0 0;
 }
@@ -616,7 +615,7 @@ ul.expertise-content p {
 
     .header-container > .paragraph {
         width: 75%;
-        padding-top: 70px;
+        padding-top: 25px;
     }
 
     .header-container > .paragraph h1 {
@@ -640,14 +639,14 @@ ul.expertise-content p {
 
     img.profile {
         max-width: 200px;
-        margin-left: 50px;
-        margin-top: 150px;
+        margin-left: 65px;
+        margin-top: 100px;
     }
 
     img.pattern {
         width: 85%;
         float: right;
-        margin-top: 50px;
+        margin-top: 15px;
     }
 
     /* work area */
@@ -663,7 +662,6 @@ ul.expertise-content p {
         padding-top: 175px;
         margin: 0;
     }
-    
 
     /* project */
 
@@ -754,7 +752,7 @@ ul.expertise-content p {
 @media all and (max-width: 980px) {
 
     .header-container > .paragraph {
-        padding-top: 50px;
+        padding-top: 35px;
     }
 
     .header-container > .paragraph h3 {
@@ -854,7 +852,7 @@ ul.expertise-content p {
     img.pattern {
         position: absolute;
         width: 250px;
-        transform: rotate(45deg);
+        transform: rotate(45deg) !important;
         margin-top: -350px;
         margin-left: 26.5%;
         z-index: -2;
@@ -904,8 +902,8 @@ ul.expertise-content p {
     }
 
     section#project .project-main-container {
-        padding-top: 135px;
-        border-radius: 10px;
+        padding-top: 140px;
+        border-radius: 0 0 15px 15px;
     }
 
     .project-intro {
