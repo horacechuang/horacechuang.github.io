@@ -418,25 +418,49 @@ li.grid:hover > span::before {
 li.grid .tag {
     display: flex;
     position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Karla', sans-serif;
-    transition: .25s all ease;
-    top: -25px;
-    right: -15px;
-    font-size: 1.35em;
-    font-weight: 400;
+    font-family: 'Roboto Slab', sans-serif;
+    transition: .5s all ease;
+    animation: 3.5s morphing linear infinite;
+    font-size: 1.5em;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 2;
-    transform: rotate(-10deg);
+}
+
+@keyframes morphing {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
+      }
+      25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+      }
+      50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+      }
+      75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+      }
+}
+
+li.grid .t01, li.grid .t03, li.grid .t05 {
+    top: -25px;
+    left: -15px;
+}
+
+li.grid .t02, li.grid .t04, li.grid .t06 {
+    top: -25px;
+    right: -15px;
 }
 
 li.grid:hover .tag {
-    transform: rotate(5deg) scale(1.25);
+    transform: scale(1.15);
+    box-shadow: 0px 15px 45px -15px rgba(0, 0, 0, 0.5);
 }
 
 li.grid .tag-ui-ux {
@@ -998,6 +1022,18 @@ ul.expertise-content p {
 
     li.grid span::before {
         top: 30px;
+    }
+
+    li.grid .tag {
+        width: 55px;
+        height: 55px;
+        animation: 3s morphing linear infinite;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    
+    li.grid:hover .tag {
+        transform: scale(1.25);
     }
 
     /* about */
