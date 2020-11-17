@@ -377,12 +377,13 @@ li.grid img {
     width: 100%;
     transition: .35s all ease;
     box-shadow: 0px 20px 55px -45px rgba(54, 54, 54, .75);
-    border-radius: 15px;
+    border-radius: 50px 0;
 }
 
 li.grid:hover img {
     transform: scale(1.02);
     box-shadow: none;
+    border-radius: 25px;
 }
 
 li.grid span {
@@ -650,7 +651,7 @@ main.about-main {
 
 .about-image img.about-img {
     width: 97.5%;
-    border-radius: 10px;
+    border-radius: 0px 25px;
     margin: 0 auto;
     display: block;
     box-shadow: 0px 25px 55px -36px rgba(0, 0, 0, .5);
