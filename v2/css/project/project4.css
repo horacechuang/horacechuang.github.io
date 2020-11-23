@@ -60,7 +60,7 @@ picture.bubble-top img.bubble-2 {
 }
 
 picture.header-main img.logo {
-    max-width: 525px;
+    max-width: 500px;
 }
 
 picture.bubble-bottom img.bubble-3 {
@@ -91,7 +91,7 @@ picture.bubble img.train-right {
 
 picture.bubble img.train-left {
     left: 105px;
-    top: 710px;
+    top: 720px;
 }
 
 main {
@@ -125,7 +125,7 @@ li.navi-btn a.next-img {
     }
 
     picture.header-main img.logo {
-        max-width: 450px;
+        max-width: 400px;
     }
 
     picture.bubble-top img.bubble-1 {
