@@ -1,12 +1,98 @@
-header {
+nav,
+footer#footer {
+    z-index: 5;
+}
+
+#decoration-line {
+    z-index: 4;
+}
+
+header#header {
     width: 100%;
     position: relative;
     display: block;
-    background: ;
+    overflow: hidden;
+    background: url(    '../../img/project4/bg-gradient-top.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -82px;
 }
 
+header#header .header-container {
+    background: url('../../img/project4/bg-gradient-bottom.png');
+    background-position: left 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+}
 
+.header-container picture.bubble {
+    position: relative;
+    display: block;
+}
 
+.header-container picture.bubble img,
+.header-container picture.header-main {
+    position: absolute;
+}
+
+picture.bubble-top img.bubble-1 {
+    top: -125px;
+    right: -100px;
+    transform: rotate(5deg);
+    width: 760px;
+    z-index: 1;
+}
+
+picture.bubble-top img.bubble-2 {
+    top: -175px;
+    right: 600px;
+    transform: rotate(-20deg);
+    width: 600px;
+    z-index: 2;
+}
+
+.header-container picture.header-main {
+    display: block;
+    left: calc(50% - 275px);
+    top: 280px;
+}
+
+picture.header-main img.logo {
+    max-width: 525px;
+}
+
+picture.bubble-bottom img.bubble-3 {
+    left: -65px;
+    top: 645px;
+    width: 590px;
+    transform: rotate(-180deg);
+    z-index: 1;
+}
+
+picture.bubble-bottom img.bubble-4 {
+    left: 445px;
+    top: 740px;
+    width: 700px;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+picture.bubble img.train {
+    max-width: 625px;
+    z-index: 3;
+}
+
+picture.bubble img.train-right {
+    right: 105px;
+    top: 125px;
+}
+
+picture.bubble img.train-left {
+    left: 105px;
+    top: 710px;
+}
 
 main {
     max-width: 1180px;
@@ -24,7 +110,159 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 1229px) {
-    header, main {
+    /* header, main {
         padding: 0 25px;
+    } */
+
+    header#header .header-container {
+        height: 700px;
+        background-position: left 350px;
     }
+
+    .header-container picture.header-main {
+        top: 260px;
+        left: calc(50% - 225px);
+    }
+
+    picture.header-main img.logo {
+        max-width: 450px;
+    }
+
+    picture.bubble-top img.bubble-1 {
+        top: -175px;
+        right: -100px;
+        width: 780px;
+        transform: rotate(15deg);
+    }
+
+    picture.bubble-top img.bubble-2 {
+        top: -125px;
+        right: 450px;
+        transform: rotate(-15deg);
+        width: 500px;
+    }
+
+    picture.bubble-bottom img.bubble-3 {
+        top: 530px;
+        left: -50px;
+        width: 550px;
+        transform: rotate(-185deg);
+    }
+
+    picture.bubble-bottom img.bubble-4 {
+        top: 610px;
+        left: 420px;
+        width: 600px;
+    }
+
+    picture.bubble img.train {
+        max-width: 500px;
+    }
+
+    picture.bubble img.train-left {
+        left: 165px;
+        top: 600px;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    header#header {
+        margin-top: -61px;
+    }
+
+    header#header .header-container {
+        height: 600px;
+        background-position: left 350px;
+    }
+
+    .header-container picture.header-main {
+        top: 230px;
+        left: calc(50% - 175px);
+    }
+
+    picture.header-main img.logo {
+        max-width: 350px;
+    }
+
+    picture.bubble-top img.bubble-1 {
+        top: -105px;
+        right: -250px;
+        width: 600px;
+        transform: rotate(5deg);
+    }
+
+    picture.bubble-top img.bubble-2 {
+        top: -90px;
+        right: 250px;
+        width: 375px;
+    }
+
+    picture.bubble-bottom img.bubble-3 {
+        top: 470px;
+        left: -50px;
+        width: 420px;
+        transform: rotate(-187deg);
+    }
+
+    picture.bubble-bottom img.bubble-4 {
+        top: 520px;
+        left: 200px;
+        width: 420px;
+    }
+
+    picture.bubble img.train {
+        max-width: 400px;
+    }
+
+    picture.bubble img.train-right {
+        right: -10px;
+        top: 95px;
+    }
+
+    picture.bubble img.train-left {
+        left: 55px;
+        top: 520px;
+    }
+    
+}
+
+@media all and (max-width: 550px) {
+
+    header#header .header-container {
+        height: 550px;
+        background-position: left 300px;
+    }
+
+    .header-container picture.header-main {
+        top: 235px;
+        left: calc(50% - 125px);
+    }
+
+    picture.header-main img.logo {
+        max-width: 250px;
+    }
+
+    picture.bubble-bottom img.bubble-3 {
+        top: 440px;
+    }
+
+    picture.bubble-bottom img.bubble-4 {
+        top: 490px;
+    }
+
+    picture.bubble img.train {
+        max-width: 320px;
+    }
+
+    picture.bubble img.train-right {
+        right: -30px;
+        top: 95px;
+    }
+
+    picture.bubble img.train-left {
+        left: -15px;
+        top: 480px;
+    }
+
 }
