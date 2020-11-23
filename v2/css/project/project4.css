@@ -178,11 +178,11 @@ li.navi-btn a.next-img {
 
     .header-container picture.header-main {
         top: 230px;
-        left: calc(50% - 175px);
+        left: calc(50% - 190px);
     }
 
     picture.header-main img.logo {
-        max-width: 350px;
+        max-width: 375px;
     }
 
     picture.bubble-top img.bubble-1 {
@@ -227,7 +227,7 @@ li.navi-btn a.next-img {
     
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 450px) {
 
     header#header .header-container {
         height: 550px;
