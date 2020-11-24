@@ -110,7 +110,7 @@ picture.bubble-top img.bubble-2 {
 
 picture.header-main img.logo {
     max-width: 500px;
-    animation: 1.5s pop ease-in-out infinite;
+    animation: 1.5s pop ease infinite;
 }
 
 @keyframes pop {
@@ -118,7 +118,7 @@ picture.header-main img.logo {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.025);
+        transform: scale(1.05);
     }
     100% {
         transform: scale(1)
@@ -182,16 +182,20 @@ picture.bubble-bottom img.bubble-4 {
 picture.bubble img.train {
     max-width: 625px;
     z-index: 3;
+    animation-duration: .5s;
+    animation-timing-function: ease;
 }
 
 picture.bubble img.train-right {
     right: 105px;
     top: 125px;
+    animation-delay: 1s;
 }
 
 picture.bubble img.train-left {
     left: 105px;
     top: 670px;
+    animation-delay: 1.25s;
 }
 
 main {
@@ -221,7 +225,7 @@ li.navi-btn a.next-img {
 
     .header-container picture.header-main {
         top: 275px;
-        left: calc(50% - 225px);
+        left: calc(50% - 205px);
     }
 
     picture.header-main img.logo {
@@ -279,7 +283,7 @@ li.navi-btn a.next-img {
 
     .header-container picture.header-main {
         top: 235px;
-        left: calc(50% - 165px);
+        left: calc(50% - 160px);
     }
 
     picture.header-main img.logo {
@@ -337,7 +341,7 @@ li.navi-btn a.next-img {
 
     .header-container picture.header-main {
         top: 245px;
-        left: calc(50% - 125px);
+        left: calc(50% - 135px);
     }
 
     picture.header-main img.logo {
@@ -358,12 +362,12 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble img.train-right {
-        right: 25px;
+        right: -50px;
         top: 100px;
     }
 
     picture.bubble img.train-left {
-        left: 50px;
+        left: -50px;
         top: 480px;
     }
 
