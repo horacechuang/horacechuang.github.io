@@ -1,3 +1,5 @@
+/* general */
+
 nav,
 footer#footer {
     z-index: 5;
@@ -7,24 +9,24 @@ footer#footer {
     z-index: 4;
 }
 
+/* ---------------------- */
+
 header#header {
     width: 100%;
     position: relative;
     display: block;
     overflow: hidden;
-    background: url(    '../../img/project4/bg-gradient-top.png');
-    background-position: right top;
+    background: url('../../img/project4/bg-gradient-top.png') center top;
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: -82px;
 }
 
 header#header .header-container {
-    background: url('../../img/project4/bg-gradient-bottom.png');
-    background-position: left 450px;
+    background: url('../../img/project4/bg-gradient-bottom.png')left 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 850px;
+    height: 800px;
 }
 
 .header-container picture.bubble {
@@ -43,6 +45,28 @@ picture.bubble-top img.bubble-1 {
     transform: rotate(5deg);
     width: 760px;
     z-index: 1;
+    animation: 5s moving-1 linear infinite;
+}
+
+@keyframes moving-1 {
+    0% {
+        transform: translateX(15px) rotate(2deg);
+        opacity: .75;
+    }
+    25% {
+        transform: translate(9px, 5px) rotate(1deg);
+    }
+    50% {
+        transform: translateX(-2px) rotate(-1deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translate(5px, -2px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(15px) rotate(2deg);
+        opacity: .75;
+    }
 }
 
 picture.bubble-top img.bubble-2 {
@@ -51,32 +75,108 @@ picture.bubble-top img.bubble-2 {
     transform: rotate(-20deg);
     width: 600px;
     z-index: 2;
+    animation: 6.5s moving-2 linear infinite;
+}
+
+@keyframes moving-2 {
+    0% {
+        transform: translateX(-5px) rotate(-20deg);
+        opacity: 1;
+    }
+    20% {
+        transform: translate(1px, -2px) rotate(-19deg);
+    }
+    40% {
+        transform: translate(3px, -5px) rotate(-22deg);
+        opacity: .75;
+    }
+    60% {
+        transform: translate(1px, 3px) rotate(-18deg);
+    }
+    80% {
+        transform: translate(2px, 5px) rotate(-15deg);
+    }
+    100% {
+        transform: translateX(-5px) rotate(-20deg);
+        opacity: 1;
+    }
 }
 
 .header-container picture.header-main {
     display: block;
     left: calc(50% - 275px);
-    top: 280px;
+    top: 285px;
 }
 
 picture.header-main img.logo {
     max-width: 500px;
+    animation: 1.5s pop ease-in-out infinite;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 picture.bubble-bottom img.bubble-3 {
     left: -65px;
-    top: 645px;
-    width: 590px;
+    top: 585px;
+    width: 650px;
     transform: rotate(-180deg);
     z-index: 1;
+    animation: 5.5s moving-3 linear infinite;
+}
+
+@keyframes moving-3 {
+    0% {
+        transform: translate(2px,-1px) rotate(-180deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-1px,2px) rotate(-185deg);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translate(2px,-1px) rotate(-180deg);
+        opacity: 1;
+    }
 }
 
 picture.bubble-bottom img.bubble-4 {
     left: 445px;
-    top: 740px;
+    top: 690px;
     width: 700px;
     transform: rotate(180deg);
     z-index: 2;
+    animation: 4.5s moving-4 linear infinite;
+}
+
+@keyframes moving-4 {
+    0% {
+        transform: translate(3px,-1px) rotate(180deg);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(-1px,2px) rotate(177deg);
+    }
+    50% {
+        transform: translate(5px,0px) rotate(175deg);
+        opacity: 0.75;
+    }
+    75% {
+        transform: translate(1px,3px) rotate(182deg);
+    }
+    100% {
+        transform: translate(2px,-1px) rotate(180deg);
+        opacity: 1;
+    }
 }
 
 picture.bubble img.train {
@@ -91,7 +191,7 @@ picture.bubble img.train-right {
 
 picture.bubble img.train-left {
     left: 105px;
-    top: 720px;
+    top: 670px;
 }
 
 main {
@@ -116,11 +216,11 @@ li.navi-btn a.next-img {
 
     header#header .header-container {
         height: 700px;
-        background-position: left 350px;
+        background-position: left 450px;
     }
 
     .header-container picture.header-main {
-        top: 260px;
+        top: 275px;
         left: calc(50% - 225px);
     }
 
@@ -129,47 +229,48 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble-top img.bubble-1 {
-        top: -175px;
+        top: -135px;
         right: -100px;
-        width: 780px;
+        width: 700px;
         transform: rotate(15deg);
     }
 
     picture.bubble-top img.bubble-2 {
-        top: -125px;
-        right: 450px;
+        top: -105px;
+        right: 400px;
         transform: rotate(-15deg);
-        width: 500px;
+        width: 450px;
     }
 
     picture.bubble-bottom img.bubble-3 {
-        top: 530px;
-        left: -50px;
+        top: 500px;
+        left: -90px;
         width: 550px;
-        transform: rotate(-185deg);
+        transform: rotate(-180deg);
     }
 
     picture.bubble-bottom img.bubble-4 {
-        top: 610px;
-        left: 420px;
-        width: 600px;
+        top: 620px;
+        left: 300px;
+        width: 500px;
     }
 
     picture.bubble img.train {
-        max-width: 500px;
+        max-width: 475px;
+    }
+
+    picture.bubble img.train-right {
+        right: 35px;
+        top: 110px;
     }
 
     picture.bubble img.train-left {
-        left: 165px;
-        top: 600px;
+        left: 75px;
+        top: 610px;
     }
 }
 
 @media all and (max-width: 767px) {
-
-    header#header {
-        margin-top: -61px;
-    }
 
     header#header .header-container {
         height: 600px;
@@ -177,12 +278,12 @@ li.navi-btn a.next-img {
     }
 
     .header-container picture.header-main {
-        top: 230px;
-        left: calc(50% - 190px);
+        top: 235px;
+        left: calc(50% - 165px);
     }
 
     picture.header-main img.logo {
-        max-width: 375px;
+        max-width: 325px;
     }
 
     picture.bubble-top img.bubble-1 {
@@ -207,16 +308,16 @@ li.navi-btn a.next-img {
 
     picture.bubble-bottom img.bubble-4 {
         top: 520px;
-        left: 200px;
+        left: 220px;
         width: 420px;
     }
 
     picture.bubble img.train {
-        max-width: 400px;
+        max-width: 365px;
     }
 
     picture.bubble img.train-right {
-        right: -10px;
+        right: 15px;
         top: 95px;
     }
 
@@ -227,11 +328,11 @@ li.navi-btn a.next-img {
     
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 500px) {
 
     header#header .header-container {
         height: 550px;
-        background-position: left 300px;
+        background-position: left 350px;
     }
 
     .header-container picture.header-main {
@@ -249,19 +350,20 @@ li.navi-btn a.next-img {
 
     picture.bubble-bottom img.bubble-4 {
         top: 490px;
+        left: 175px;
     }
 
     picture.bubble img.train {
-        max-width: 320px;
+        max-width: 300px;
     }
 
     picture.bubble img.train-right {
-        right: -30px;
-        top: 95px;
+        right: 25px;
+        top: 100px;
     }
 
     picture.bubble img.train-left {
-        left: -15px;
+        left: 50px;
         top: 480px;
     }
 

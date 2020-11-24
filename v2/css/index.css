@@ -391,8 +391,7 @@ li.grid span {
     margin-top: 25px;
     font-size: 1.75em;
     color: rgb(173, 173, 173);
-    transition: 0.15s all linear;
-    text-align: center;
+    transition: .25s all linear;
 }
 
 li.grid span::before {
@@ -402,7 +401,7 @@ li.grid span::before {
     top: 30px;
     left: 0;
     right: 0;
-    transition: .2s all ease;
+    transition: .25s all ease;
     transform: scaleX(0);
 }
 
@@ -427,7 +426,7 @@ li.grid .tag {
     justify-content: center;
     font-family: 'Roboto Slab', sans-serif;
     transition: .5s all ease;
-    animation: 3.5s morphing linear infinite;
+    animation: 3.5s morphing ease-in-out infinite;
     font-size: 1.35em;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -436,7 +435,7 @@ li.grid .tag {
 
 @keyframes morphing {
       0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
       25% {
         border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
