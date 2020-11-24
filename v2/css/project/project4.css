@@ -118,7 +118,7 @@ picture.header-main img.logo {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
     100% {
         transform: scale(1)
@@ -336,12 +336,12 @@ li.navi-btn a.next-img {
     }
 
     .header-container picture.header-main {
-        top: 235px;
+        top: 245px;
         left: calc(50% - 125px);
     }
 
     picture.header-main img.logo {
-        max-width: 250px;
+        max-width: 265px;
     }
 
     picture.bubble-bottom img.bubble-3 {
@@ -354,7 +354,7 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble img.train {
-        max-width: 300px;
+        max-width: 315px;
     }
 
     picture.bubble img.train-right {
