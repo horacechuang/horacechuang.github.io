@@ -26,7 +26,7 @@ header#header .header-container {
     background: url('../../img/project4/bg-gradient-bottom.png')left 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 750px;
 }
 
 .header-container picture.bubble {
@@ -104,13 +104,13 @@ picture.bubble-top img.bubble-2 {
 
 .header-container picture.header-main {
     display: block;
-    left: calc(50% - 275px);
-    top: 285px;
+    left: calc(50% - 265px);
+    top: 240px;
 }
 
 picture.header-main img.logo {
     max-width: 500px;
-    animation: 1.5s pop ease infinite;
+    animation: 1.5s pop ease-in-out infinite;
 }
 
 @keyframes pop {
@@ -118,7 +118,7 @@ picture.header-main img.logo {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(.95);
     }
     100% {
         transform: scale(1)
@@ -127,7 +127,7 @@ picture.header-main img.logo {
 
 picture.bubble-bottom img.bubble-3 {
     left: -65px;
-    top: 585px;
+    top: 535px;
     width: 650px;
     transform: rotate(-180deg);
     z-index: 1;
@@ -151,7 +151,7 @@ picture.bubble-bottom img.bubble-3 {
 
 picture.bubble-bottom img.bubble-4 {
     left: 445px;
-    top: 690px;
+    top: 640px;
     width: 700px;
     transform: rotate(180deg);
     z-index: 2;
@@ -188,19 +188,51 @@ picture.bubble img.train {
 
 picture.bubble img.train-right {
     right: 105px;
-    top: 125px;
+    top: 105px;
     animation-delay: 1s;
 }
 
 picture.bubble img.train-left {
-    left: 105px;
-    top: 670px;
+    left: 65px;
+    top: 620px;
     animation-delay: 1.25s;
 }
 
+.arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: -150px auto 0; */
+    top: 600px;
+    left: calc(50% - 25px);
+    border-radius: 100px;
+    background: rgb(255,255,255);
+    box-shadow: 0px 17px 55px -5px rgba(94, 94, 94, .3);
+    height: 85px;
+    min-width: 50px;
+    z-index: 3;
+}
+
+.arrow i.fa-chevron-down {
+    font-size: 2.5em;
+    color: rgb(255, 80, 127);
+    animation: 1.5s arrow-move ease infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
 main {
-    max-width: 1180px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 100px auto;
 }
 
 /* project-main-navigator */
@@ -219,7 +251,7 @@ li.navi-btn a.next-img {
     } */
 
     header#header .header-container {
-        height: 700px;
+        height: 685px;
         background-position: left 450px;
     }
 
@@ -247,14 +279,14 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble-bottom img.bubble-3 {
-        top: 500px;
+        top: 525px;
         left: -90px;
         width: 550px;
         transform: rotate(-180deg);
     }
 
     picture.bubble-bottom img.bubble-4 {
-        top: 620px;
+        top: 605px;
         left: 300px;
         width: 500px;
     }
@@ -270,7 +302,24 @@ li.navi-btn a.next-img {
 
     picture.bubble img.train-left {
         left: 75px;
-        top: 610px;
+        top: 595px;
+    }
+
+    .arrow {
+        top: 650px;
+        min-width: 40px;
+        height: 85px;
+    }
+    
+    .arrow i.fa-chevron-down {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    @keyframes arrow-move {
+        50% {
+            transform: translateY(20px);
+        }
     }
 }
 
@@ -311,7 +360,7 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble-bottom img.bubble-4 {
-        top: 520px;
+        top: 510px;
         left: 220px;
         width: 420px;
     }
@@ -321,13 +370,24 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble img.train-right {
-        right: 15px;
-        top: 95px;
+        right: 5px;
+        top: 115px;
     }
 
     picture.bubble img.train-left {
-        left: 55px;
-        top: 520px;
+        left: 5px;
+        top: 505px;
+    }
+
+    .arrow {
+        top: 550px;
+        left: calc(50% - 20px);
+        min-width: 35px;
+        height: 75px;
+    }
+    
+    .arrow i.fa-chevron-down {
+        font-size: 1.75em;
     }
     
 }
@@ -367,8 +427,19 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble img.train-left {
-        left: -50px;
+        left: -60px;
         top: 480px;
+    }
+
+    .arrow {
+        top: 510px;
+        left: calc(50% - 20px);
+        min-width: 35px;
+        height: 65px;
+    }
+    
+    .arrow i.fa-chevron-down {
+        font-size: 1.5em;
     }
 
 }
