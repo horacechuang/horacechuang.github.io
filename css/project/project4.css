@@ -204,7 +204,7 @@ picture.bubble img.train-left {
     justify-content: center;
     align-items: center;
     /* margin: -150px auto 0; */
-    top: 600px;
+    top: 575px;
     left: calc(50% - 25px);
     border-radius: 100px;
     background: rgba(255,255,255,.5);
