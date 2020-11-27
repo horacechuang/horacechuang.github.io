@@ -242,7 +242,7 @@ section.preface {
 }
 
 section.preface aside.container {
-    max-width: 1080px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -370,6 +370,15 @@ li.navi-btn a.next-img {
     section.preface {
         padding: 0 25px;
     }
+
+    section.preface .row h3 {
+        font-size: 1.65em;
+    }
+
+    section.preface .row p {
+        font-size: 1.55em;
+    }
+
 }
 
 @media all and (max-width: 767px) {
@@ -463,6 +472,11 @@ li.navi-btn a.next-img {
         border-left: none;
         margin-left: 0px;
         padding-left: 0px;
+        font-size: 1.5em;
+    }
+
+    section.preface .row p {
+        font-size: 1.35em;
     }
 }
 
@@ -526,7 +540,7 @@ li.navi-btn a.next-img {
     }
 
     section.preface .row h3 {
-        font-size: 1.5em;
+        font-size: 1.45em;
     }
 
     section.preface .row p {
