@@ -246,11 +246,11 @@ section.preface .container {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background: rgb(255, 255, 255);
     box-shadow: 0px 35px 85px -25px rgba(109, 109, 109, 0.25);
-    padding: 35px 45px;
+    padding: 35px 55px 35px 75px;
     border-radius: 15px;
 }
 
@@ -260,13 +260,12 @@ section.preface .row {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    padding-left: 20px;
 }
 
 section.preface .row h3 {
     font-size: 1.75em;
     font-weight: 400;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
     line-height: 1em;
     color: rgb(162, 162, 162);
     border-left: 5px solid rgb(201, 201, 201);
@@ -367,6 +366,10 @@ li.navi-btn a.next-img {
             transform: translateY(20px);
         }
     }
+
+    section.preface {
+        padding: 0 25px;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -435,10 +438,37 @@ li.navi-btn a.next-img {
     .arrow i.fa-chevron-down {
         font-size: 1.65em;
     }
-    
+
+    section.preface {
+        padding: 0 25px;
+    }
+
+    section.preface .container {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 35px 45px -15px rgba(147, 147, 147, 0.25);
+        padding: 35px 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    section.preface .row {
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    section.preface .row:last-child {
+        margin-bottom: 0;
+    }
+
+    section.preface .row h3 {
+        border-left: none;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 550px) {
 
     header#header .header-container {
         height: 575px;
@@ -486,6 +516,22 @@ li.navi-btn a.next-img {
     
     .arrow i.fa-chevron-down {
         font-size: 1.35em;
+    }
+
+    section.preface {
+        padding: 0 50px;
+    }
+
+    section.preface .row {
+        margin-bottom: 35px;
+    }
+
+    section.preface .row h3 {
+        font-size: 1.5em;
+    }
+
+    section.preface .row p {
+        font-size: 1.25em;
     }
 
 }
