@@ -26,7 +26,7 @@ header#header .header-container {
     background: url('../../img/project4/bg-gradient-bottom.png')left 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 750px;
+    height: 800px;
 }
 
 .header-container picture.bubble {
@@ -127,7 +127,7 @@ picture.header-main img.logo {
 
 picture.bubble-bottom img.bubble-3 {
     left: -65px;
-    top: 535px;
+    top: 585px;
     width: 650px;
     transform: rotate(-180deg);
     z-index: 1;
@@ -151,7 +151,7 @@ picture.bubble-bottom img.bubble-3 {
 
 picture.bubble-bottom img.bubble-4 {
     left: 445px;
-    top: 640px;
+    top: 690px;
     width: 700px;
     transform: rotate(180deg);
     z-index: 2;
@@ -194,7 +194,7 @@ picture.bubble img.train-right {
 
 picture.bubble img.train-left {
     left: 65px;
-    top: 620px;
+    top: 670px;
     animation-delay: 1.25s;
 }
 
@@ -207,18 +207,18 @@ picture.bubble img.train-left {
     top: 600px;
     left: calc(50% - 25px);
     border-radius: 100px;
-    background: rgb(255,255,255);
-    box-shadow: 0px 17px 55px -5px rgba(94, 94, 94, .3);
+    background: rgba(255,255,255,.5);
+    box-shadow: 0px 30px 45px -15px rgba(111, 111, 111, .5);
     height: 85px;
-    min-width: 50px;
-    z-index: 3;
+    min-width: 45px;
+    z-index: 4;
 }
 
 .arrow i.fa-chevron-down {
-    font-size: 2.5em;
+    font-size: 2.25em;
     color: rgb(255, 80, 127);
-    animation: 1.5s arrow-move ease infinite;
-    margin-bottom: 15px;
+    animation: 1.5s arrow-move ease-in-out infinite;
+    margin-bottom: 25px;
 }
 
 @keyframes arrow-move {
@@ -226,14 +226,59 @@ picture.bubble img.train-left {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(15px);
+        transform: translateY(25px);
     }
 }
 
-main {
+main#container {
     width: 100%;
-    margin: 100px auto;
+    margin: 0 auto;
 }
+
+section.preface {
+    position: relative;
+    margin-top: -20px;
+    z-index: 3;
+}
+
+section.preface .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 35px 85px -25px rgba(109, 109, 109, 0.25);
+    padding: 35px 45px;
+    border-radius: 15px;
+}
+
+section.preface .row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding-left: 20px;
+}
+
+section.preface .row h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-bottom: 1em;
+    line-height: 1em;
+    color: rgb(162, 162, 162);
+    border-left: 5px solid rgb(201, 201, 201);
+    margin-left: -20px;
+    padding-left: 15px;
+}
+
+
+section.preface .row p {
+    font-size: 1.5em;
+}
+
 
 /* project-main-navigator */
 
@@ -251,12 +296,12 @@ li.navi-btn a.next-img {
     } */
 
     header#header .header-container {
-        height: 685px;
+        height: 700px;
         background-position: left 450px;
     }
 
     .header-container picture.header-main {
-        top: 275px;
+        top: 235px;
         left: calc(50% - 205px);
     }
 
@@ -279,14 +324,14 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble-bottom img.bubble-3 {
-        top: 525px;
+        top: 535px;
         left: -90px;
         width: 550px;
         transform: rotate(-180deg);
     }
 
     picture.bubble-bottom img.bubble-4 {
-        top: 605px;
+        top: 615px;
         left: 300px;
         width: 500px;
     }
@@ -302,13 +347,14 @@ li.navi-btn a.next-img {
 
     picture.bubble img.train-left {
         left: 75px;
-        top: 595px;
+        top: 605px;
     }
 
     .arrow {
-        top: 650px;
-        min-width: 40px;
-        height: 85px;
+        top: 500px;
+        left: calc(50% - 20px);
+        min-width: 35px;
+        height: 75px;
     }
     
     .arrow i.fa-chevron-down {
@@ -326,12 +372,12 @@ li.navi-btn a.next-img {
 @media all and (max-width: 767px) {
 
     header#header .header-container {
-        height: 600px;
+        height: 650px;
         background-position: left 350px;
     }
 
     .header-container picture.header-main {
-        top: 235px;
+        top: 230px;
         left: calc(50% - 160px);
     }
 
@@ -353,14 +399,14 @@ li.navi-btn a.next-img {
     }
 
     picture.bubble-bottom img.bubble-3 {
-        top: 470px;
+        top: 520px;
         left: -50px;
         width: 420px;
         transform: rotate(-187deg);
     }
 
     picture.bubble-bottom img.bubble-4 {
-        top: 510px;
+        top: 560px;
         left: 220px;
         width: 420px;
     }
@@ -376,18 +422,18 @@ li.navi-btn a.next-img {
 
     picture.bubble img.train-left {
         left: 5px;
-        top: 505px;
+        top: 555px;
     }
 
     .arrow {
-        top: 550px;
-        left: calc(50% - 20px);
+        top: 440px;
+        left: calc(50% - 10px);
         min-width: 35px;
-        height: 75px;
+        height: 65px;
     }
     
     .arrow i.fa-chevron-down {
-        font-size: 1.75em;
+        font-size: 1.65em;
     }
     
 }
@@ -395,17 +441,17 @@ li.navi-btn a.next-img {
 @media all and (max-width: 500px) {
 
     header#header .header-container {
-        height: 550px;
+        height: 575px;
         background-position: left 350px;
     }
 
     .header-container picture.header-main {
-        top: 245px;
+        top: 230px;
         left: calc(50% - 135px);
     }
 
     picture.header-main img.logo {
-        max-width: 265px;
+        max-width: 260px;
     }
 
     picture.bubble-bottom img.bubble-3 {
@@ -428,18 +474,18 @@ li.navi-btn a.next-img {
 
     picture.bubble img.train-left {
         left: -60px;
-        top: 480px;
+        top: 485px;
     }
 
     .arrow {
-        top: 510px;
-        left: calc(50% - 20px);
-        min-width: 35px;
-        height: 65px;
+        top: 390px;
+        left: calc(50% - 15px);
+        min-width: 25px;
+        height: 50px;
     }
     
     .arrow i.fa-chevron-down {
-        font-size: 1.5em;
+        font-size: 1.35em;
     }
 
 }
