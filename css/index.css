@@ -824,7 +824,7 @@ ul.expertise-content p {
     }
 
     .project-intro h2 {
-        font-size: 2.5em;
+        font-size: 2.3em;
         max-width: 250px;
         padding: 15px;
     }
@@ -919,6 +919,11 @@ ul.expertise-content p {
     }
 
     /* project */
+
+    .project-intro h2 {
+        font-size: 2.15em;
+        max-width: 235px;
+    }
 
     li.grid h3 {
         font-size: 1.75em;

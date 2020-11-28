@@ -235,11 +235,16 @@ main#container {
     margin: 0 auto;
 }
 
-section.preface {
+section.preface,
+section.overview {
     position: relative;
+}
+
+section.preface {
     margin-top: -20px;
     z-index: 3;
 }
+
 
 section.preface aside.container {
     max-width: 980px;
@@ -273,9 +278,13 @@ section.preface .row h3 {
     padding-left: 15px;
 }
 
-
 section.preface .row p {
     font-size: 1.5em;
+}
+
+section.overview .container {
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 
