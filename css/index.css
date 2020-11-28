@@ -1254,6 +1254,14 @@ ul.expertise-content p {
 
     /* project */
 
+    .project-intro::before {
+        height: 20px;
+    }
+
+    .project-intro::after {
+        margin: 20px auto -120px;
+    }
+
     .project-grid a {
         padding: 35px 25px !important;
     }
