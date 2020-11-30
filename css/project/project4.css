@@ -282,17 +282,23 @@ section.preface .row p {
 
 section.overview {
     margin: 100px 0;
+    display: block;
 }
 
 section.overview article.container {
     max-width: 1180px;
     margin: 0 auto 50px;
-    padding: 0 35px 15px 0;
-    box-shadow: 120px 160px 75px -120px rgba(205, 205, 205, 0.35); 
-    border-radius: 0 0 15px 0;
+    padding: 50px;
+    box-shadow: 
+    -200px -150px 125px -150px rgba(255, 158, 211, 0.25),
+    150px 160px 95px -140px rgba(237, 174, 255, 0.25); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 section.overview article.container a {
+    position: relative;
+    display: inline;
     color: rgb(154, 24, 78);
     transition: .25s all ease;
     padding-bottom: 5px;
@@ -321,6 +327,10 @@ section.overview article.container p {
     margin-bottom: 50px;
     letter-spacing: .5px;
     padding-left: 15px;
+}
+
+section.overview article.container p:last-child {
+    margin: 0;
 }
 
 
@@ -426,12 +436,12 @@ li.navi-btn a.next-img {
     }
 
     section.overview article.container h2 {
-        font-size: 2.25em;
+        font-size: 2.15em;
         line-height: 2.75em;
     }
     
     section.overview article.container p {
-        font-size: 1.6em;
+        font-size: 1.5em;
         line-height: 2.1em;
     }
 
@@ -539,18 +549,22 @@ li.navi-btn a.next-img {
     }
 
     section.overview article.container {
-        padding: 0;
-        box-shadow: none; 
+        padding: 35px 25px;
         border-radius: 0;
+        box-shadow: 
+        -200px -150px 125px -150px rgba(255, 158, 211, 0.5),
+        150px 160px 95px -140px rgba(237, 174, 255, 0.5); 
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     section.overview article.container h2 {
-        font-size: 2em;
+        font-size: 1.85em;
         line-height: 2.5em;
     }
     
     section.overview article.container p {
-        font-size: 1.5em;
+        font-size: 1.35em;
         line-height: 2em;
         padding-left: 10px;
     }
@@ -627,7 +641,9 @@ li.navi-btn a.next-img {
     }
     
     section.overview article.container p {
-        font-size: 1.35em;
+        font-size: 1.25em;
+        line-height: 2.15em;
+        padding-left: 0;
     }
 
 }
