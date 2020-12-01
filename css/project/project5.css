@@ -77,7 +77,7 @@ main#container {
     padding: 0;
 }
 
-section.preface-container {
+section#preface-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -91,21 +91,21 @@ section.preface-container {
     border-radius: 10px;
 }
 
-section.preface-container .column:last-child {
+section#preface-container .column:last-child {
     padding-left: 50px;
 }
 
-section.preface-container .left {
+section#preface-container .left {
     width: 65%;
 }
 
-section.preface-container .right {
+section#preface-container .right {
     width: 35%;
     display: flex;
     flex-direction: column;
 }
 
-section.preface-container h2 {
+section#preface-container h2 {
     font-size: 2em;
     color: rgb(131, 224, 201);
     border-left: 3px #83e0c9 solid;
@@ -115,7 +115,7 @@ section.preface-container h2 {
     margin-bottom: 20px;
 }
 
-section.preface-container p {
+section#preface-container p {
     font-size: 1.5em;
     line-height: 2em;
     padding-left: 20px;
@@ -127,11 +127,11 @@ section.preface-container p {
     margin-top: 25px;
 }
 
-section.right .role {
+section#right .role {
     padding-bottom: 25px;
 }
 
-section.before-container {
+section#before-container {
     position: relative;
     display: block;
     margin: 50px auto 100px;
@@ -213,13 +213,13 @@ picture.before-img img {
     width: 100%;
 }
 
-section.main-container {
+section#main-container {
     display: block;
     position: relative;
     margin: 100px auto 150px;
 }
 
-section.main-container::before {
+section#main-container::before {
     content: "";
     position: absolute;
     display: block;
@@ -232,7 +232,7 @@ section.main-container::before {
     background: linear-gradient(180deg,rgb(197, 255, 251), rgb(219, 255, 248) 25%, rgb(255, 255, 255) 100%);
 }
 
-section.main-container > section.process-overview {
+section#main-container > section#process-overview {
     display: flex;
     position: relative;
     max-width: 980px;
@@ -259,38 +259,38 @@ section.main-container > section.process-overview {
     }
 }
 
-section.process-overview h2, 
-section.process-overview p {
+section#process-overview h2, 
+section#process-overview p {
     color: rgb(255,255,255);
 }
 
-section.process-overview h2 {
+section#process-overview h2 {
     width: 35%;
     font-size: 2.5em;
     font-weight: 400;
 }
 
-section.process-overview p {
+section#process-overview p {
     width: 65%;
     font-size: 1.5em;
     line-height: 2em;
     font-weight: 100;
 }
 
-section.main-container > section.process-logo,
-section.main-container > section.process-typo,
-section.main-container > section.process-color,
-section.main-container > section.process-page-element {
+section#main-container > section#process-logo,
+section#main-container > section#process-typo,
+section#main-container > section#process-color,
+section#main-container > section#process-page-element {
     display: flex;
     flex-direction: column;
     position: relative;
     margin: 50px auto;
 }
 
-section.process-logo .article,
-section.process-typo .article,
-section.process-color .article,
-section.process-page-element .article {
+section#process-logo .article,
+section#process-typo .article,
+section#process-color .article,
+section#process-page-element .article {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -300,36 +300,36 @@ section.process-page-element .article {
     margin: 0 auto;
 }
 
-section.process-logo .article h2,
-section.process-typo .article h2,
-section.process-color .article h2,
-section.process-page-element .article h2 {
+section#process-logo .article h2,
+section#process-typo .article h2,
+section#process-color .article h2,
+section#process-page-element .article h2 {
     font-size: 2.65em;
     margin-bottom: 35px;
     color: rgb(135, 232, 211);
 }
 
-section.process-page-element .article h3 {
+section#process-page-element .article h3 {
     font-size: 1.85em;
     margin-bottom: 25px;
     align-self: flex-start;
     color: rgb(65, 168, 178);
 }
 
-section.process-logo .article p,
-section.process-typo .article p,
-section.process-color .article p,
-section.process-page-element .article p {
+section#process-logo .article p,
+section#process-typo .article p,
+section#process-color .article p,
+section#process-page-element .article p {
     font-size: 1.5em;
     font-weight: 100;
     line-height: 2em;
 }
 
-section.process-logo .img,
-section.process-typo .img,
-section.process-color .img,
-section.process-page-element .img,
-section.process-page-element .video {
+section#process-logo .img,
+section#process-typo .img,
+section#process-color .img,
+section#process-page-element .img,
+section#process-page-element .video {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -337,35 +337,35 @@ section.process-page-element .video {
     max-width: 1080px;
 }
 
-section.process-logo picture,
-section.process-typo picture,
-section.process-color picture.desktop,
-section.process-page-element picture,
-section.process-page-element figure {
+section#process-logo picture,
+section#process-typo picture,
+section#process-color picture.desktop,
+section#process-page-element picture,
+section#process-page-element figure {
     display: flex;
 }
 
-section.process-logo picture.row1 img,
-section.process-typo picture.row1 img,
-section.process-color picture.row img,
-section.process-page-element picture.row1 img,
-section.process-page-element figure.row1 video {
+section#process-logo picture.row1 img,
+section#process-typo picture.row1 img,
+section#process-color picture.row img,
+section#process-page-element picture.row1 img,
+section#process-page-element figure.row1 video {
     width: 100%;
 }
 
-section.process-logo picture.row2,
-section.process-typo picture.row2,
-section.process-page-element picture.row2 {
+section#process-logo picture.row2,
+section#process-typo picture.row2,
+section#process-page-element picture.row2 {
     flex-direction: row;
 }
 
-section.process-logo picture.row2 img,
-section.process-typo picture.row2 img,
-section.process-page-element picture.row2 img {
+section#process-logo picture.row2 img,
+section#process-typo picture.row2 img,
+section#process-page-element picture.row2 img {
     width: 50%;
 }
 
-section.process-color picture.mobile {
+section#process-color picture.mobile {
     display: none;
 }
 
@@ -393,45 +393,45 @@ li.navi-btn a.next-img {
         padding: 0 25px !important;
     }
 
-    section.main-container::before {
+    section#main-container::before {
         margin-left: -25px;
     }
 }
 
 @media all and (max-width: 1229px) {
 
-    section.preface-container {
+    section#preface-container {
         border-radius: 15px;
     }
 
-    section.main-container > section.process-overview {
+    section#main-container > section#process-overview {
         padding: 40px;
         border-radius: 15px;
         margin: 75px 35px 0 35px;
     }
     
-    section.process-overview h2 {
+    section#process-overview h2 {
         width: 30%;
     }
     
-    section.process-overview p {
+    section#process-overview p {
         width: 70%;
         padding-left: 15px;
     }
 
-    section.process-logo .img,
-    section.process-typo .img,
-    section.process-color .img,
-    section.process-page-element .img,
-    section.process-page-element .video {
+    section#process-logo .img,
+    section#process-typo .img,
+    section#process-color .img,
+    section#process-page-element .img,
+    section#process-page-element .video {
         max-width: 980px;
         padding: 0 100px;
     }
 
-    section.process-logo .article,
-    section.process-typo .article,
-    section.process-color .article,
-    section.process-page-element .article {
+    section#process-logo .article,
+    section#process-typo .article,
+    section#process-color .article,
+    section#process-page-element .article {
         padding: 100px 100px 50px;
     }
 }
@@ -472,7 +472,7 @@ li.navi-btn a.next-img {
         width: 20px;
     }
 
-    section.preface-container {
+    section#preface-container {
         flex-direction: column;
         margin: 50px auto 25px;
         padding: 0;
@@ -480,21 +480,21 @@ li.navi-btn a.next-img {
         border-radius: 0;
     }
 
-    section.preface-container .column {
+    section#preface-container .column {
         width: 100%;
     }
 
-    section.preface-container article {
+    section#preface-container article {
         padding-bottom: 15px !important;
     }
 
-    section.preface-container .column:last-child,
-    section.right .role {
+    section#preface-container .column:last-child,
+    section#right .role {
         padding: 0;
         margin: 0;
     }
 
-    section.before-container {
+    section#before-container {
         margin: 0px auto 75px;
     }
 
@@ -519,27 +519,27 @@ li.navi-btn a.next-img {
         margin: 0 auto;
     }
 
-    section.preface-container h2,
-    section.before-container h2 {
+    section#preface-container h2,
+    section#before-container h2 {
         font-size: 1.65em;
         padding-left: 10px;
     }
 
-    section.preface-container p,
-    section.before-container p {
+    section#preface-container p,
+    section#before-container p {
         font-size: 1.25em;
         padding-left: 15px;
     }
 
-    section.main-container {
+    section#main-container {
         margin: 0px auto 100px;
     }
 
-    section.main-container::before {
+    section#main-container::before {
         height: 300px;
     }
 
-    section.main-container > section.process-overview {
+    section#main-container > section#process-overview {
         margin: 50px 0;
         padding: 30px;
         flex-direction: column;
@@ -547,77 +547,77 @@ li.navi-btn a.next-img {
         box-shadow: 0px 15px 40px -25px rgba(0,0,0,.35);
     }
     
-    section.process-overview h2 {
+    section#process-overview h2 {
         width: 100%;
         font-size: 1.65em;
     }
     
-    section.process-overview p {
+    section#process-overview p {
         width: 100%;
         font-size: 1.25em;
         padding-left: 0;
         margin-top: 20px;
     }
 
-    section.main-container > section.process-logo,
-    section.main-container > section.process-typo,
-    section.main-container > section.process-color,
-    section.main-container > section.process-page-element {
+    section#main-container > section#process-logo,
+    section#main-container > section#process-typo,
+    section#main-container > section#process-color,
+    section#main-container > section#process-page-element {
         padding-bottom: 25px;
     }
 
-    section.process-logo .article,
-    section.process-typo .article,
-    section.process-color .article,
-    section.process-page-element .article {
+    section#process-logo .article,
+    section#process-typo .article,
+    section#process-color .article,
+    section#process-page-element .article {
         padding: 50px 15px;
         align-items: flex-start;
     }
 
-    section.process-logo .article h2,
-    section.process-typo .article h2,
-    section.process-color .article h2,
-    section.process-page-element .article h2 {
+    section#process-logo .article h2,
+    section#process-typo .article h2,
+    section#process-color .article h2,
+    section#process-page-element .article h2 {
         font-size: 1.75em;
     }
 
-    section.process-page-element .article h3 {
+    section#process-page-element .article h3 {
         font-size: 1.5em;
     }
 
-    section.process-logo .article p,
-    section.process-typo .article p,
-    section.process-color .article p,
-    section.process-page-element .article p {
+    section#process-logo .article p,
+    section#process-typo .article p,
+    section#process-color .article p,
+    section#process-page-element .article p {
         font-size: 1.25em;
         margin-bottom: 15px;
     }
 
-    section.process-logo .img,
-    section.process-typo .img,
-    section.process-color .img,
-    section.process-page-element .img,
-    section.process-page-element .video {
+    section#process-logo .img,
+    section#process-typo .img,
+    section#process-color .img,
+    section#process-page-element .img,
+    section#process-page-element .video {
         padding: 0;
     }
 
-    section.process-logo picture.row2,
-    section.process-typo picture.row2,
-    section.process-page-element picture.row2 {
+    section#process-logo picture.row2,
+    section#process-typo picture.row2,
+    section#process-page-element picture.row2 {
         flex-direction: column;
     }
 
-    section.process-logo picture.row2 img,
-    section.process-typo picture.row2 img,
-    section.process-page-element picture.row2 img {
+    section#process-logo picture.row2 img,
+    section#process-typo picture.row2 img,
+    section#process-page-element picture.row2 img {
         width: 100%;
     }
 
-    section.process-color picture.desktop {
+    section#process-color picture.desktop {
         display: none;
     }
 
-    section.process-color picture.mobile {
+    section#process-color picture.mobile {
         display: flex;
     }
 

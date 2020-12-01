@@ -219,17 +219,17 @@ main#container {
 
 /* project-main-navigator */
 
-section.project-main-navigator {
+section#project-main-navigator {
     width: 100%;
     margin-bottom: 200px;
 }
 
-section.project-main-navigator .container {
+section#project-main-navigator .container {
     margin: 0 auto;
     max-width: 1280px;
 }
 
-section.project-main-navigator .container .title {
+section#project-main-navigator .container .title {
     position: relative;
     display: block;
     max-width: 1110px;
@@ -237,7 +237,7 @@ section.project-main-navigator .container .title {
     text-align: left;
 }
 
-section.project-main-navigator .container .title::after {
+section#project-main-navigator .container .title::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -246,7 +246,7 @@ section.project-main-navigator .container .title::after {
     top: 85px;
 }
 
-section.project-main-navigator .container .title > h3 {
+section#project-main-navigator .container .title > h3 {
     font-size: 2.5em;
     font-weight: 400;
     letter-spacing: .5px;
@@ -255,7 +255,7 @@ section.project-main-navigator .container .title > h3 {
     display: block;
 }
 
-section.project-main-navigator .container .title > h3::after {
+section#project-main-navigator .container .title > h3::after {
     content: "";
     position: absolute;
     min-width: 100px;
@@ -551,19 +551,19 @@ ul.footer-link-btn {
 
     /* project-main-navigator */
 
-    section.project-main-navigator {
+    section#project-main-navigator {
         margin-bottom: 150px;
     }
 
-    section.project-main-navigator .container .title::after {
+    section#project-main-navigator .container .title::after {
         top: 75px;
     }
 
-    section.project-main-navigator .container .title > h3 {
+    section#project-main-navigator .container .title > h3 {
         font-size: 2.25em;
     }
 
-    section.project-main-navigator .container .title > h3::after {
+    section#project-main-navigator .container .title > h3::after {
         top: 73px;
     }
 
@@ -826,19 +826,19 @@ ul.footer-link-btn {
 
     /* project-main-navigator */
 
-    section.project-main-navigator {
+    section#project-main-navigator {
         margin-bottom: 100px;
     }
 
-    section.project-main-navigator .container .title::after {
+    section#project-main-navigator .container .title::after {
         top: 70px;
     }
 
-    section.project-main-navigator .container .title > h3 {
+    section#project-main-navigator .container .title > h3 {
         font-size: 1.85em;
     }
 
-    section.project-main-navigator .container .title > h3::after {
+    section#project-main-navigator .container .title > h3::after {
         top: 68px;
     }
 
