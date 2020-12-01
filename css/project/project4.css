@@ -189,13 +189,11 @@ picture.bubble img.train {
 picture.bubble img.train-right {
     right: 105px;
     top: 105px;
-    animation-delay: .25s;
 }
 
 picture.bubble img.train-left {
     left: 65px;
     top: 670px;
-    animation-delay: .35s;
 }
 
 .arrow {
