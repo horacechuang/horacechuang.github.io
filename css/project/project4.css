@@ -233,17 +233,18 @@ main#container {
     margin: 0 auto;
 }
 
-section.preface,
-section.overview {
+section#preface,
+section#overview,
+section#visual {
     position: relative;
 }
 
-section.preface {
+section#preface {
     margin-top: -35px;
     z-index: 3;
 }
 
-section.preface article.container {
+section#preface article.container {
     max-width: 980px;
     margin: 0 auto;
     display: flex;
@@ -253,9 +254,10 @@ section.preface article.container {
     background: rgb(255, 255, 255);
     padding: 35px 55px 35px 75px;
     border-bottom: 5px solid rgb(254, 190, 207);
+    border-radius: 15px;
 }
 
-section.preface .row {
+section#preface .row {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -263,7 +265,7 @@ section.preface .row {
     flex-basis: auto;
 }
 
-section.preface .row h3 {
+section#preface .row h3 {
     font-size: 1.75em;
     font-weight: 400;
     margin-bottom: .75em;
@@ -274,16 +276,17 @@ section.preface .row h3 {
     padding-left: 15px;
 }
 
-section.preface .row p {
+section#preface .row p {
     font-size: 1.5em;
 }
 
-section.overview {
+section#overview,
+section#visual {
     margin: 100px 0;
     display: block;
 }
 
-section.overview article.container {
+section#overview article.container {
     max-width: 1180px;
     margin: 0 auto 50px;
     padding: 50px;
@@ -292,9 +295,10 @@ section.overview article.container {
     150px 160px 95px -140px rgba(237, 174, 255, 0.25); 
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
 }
 
-section.overview article.container a {
+section#overview article.container a {
     position: relative;
     display: inline;
     color: rgb(154, 24, 78);
@@ -303,12 +307,12 @@ section.overview article.container a {
     border-bottom: 1px solid rgba(190, 34, 99, 0);
 }
 
-section.overview article.container a:hover {
+section#overview article.container a:hover {
     color: rgb(190, 34, 99);
     border-bottom: 1px solid rgb(190, 34, 99);
 }
 
-section.overview article.container h2 {
+section#overview article.container h2 {
     font-size: 2.5em;
     line-height: 3em;
     font-weight: 100;
@@ -319,16 +323,108 @@ section.overview article.container h2 {
     margin-bottom: 25px;
 }
 
-section.overview article.container p {
+section#overview article.container p {
     font-size: 1.65em;
+    font-weight: 100;
     line-height: 2.15em;
     margin-bottom: 50px;
     letter-spacing: .5px;
     padding-left: 15px;
 }
 
-section.overview article.container p:last-child {
+section#overview article.container p:last-child {
     margin: 0;
+}
+
+section#visual h2.title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2.5em;
+    line-height: 3em;
+    font-weight: 100;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: rgb(186, 186, 186);
+    margin-bottom: 75px;
+}
+
+section#visual h2.title::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background-color: rgb(186, 186, 186);
+    top: 115px;
+}
+
+article.color,
+article.element {
+    position: relative;
+}
+
+article.color .paragraph,
+article.element .paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 728px;
+    margin: 50px auto;
+}
+
+.paragraph h3 {
+    font-size: 2.25em;
+    line-height: 2.35em;
+    margin-bottom: 25px;
+    background: linear-gradient(220deg,rgb(190, 34, 99), rgb(250, 148, 191));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.paragraph p {
+    font-size: 1.65em;
+    font-weight: 100;
+    line-height: 2.1em;
+    letter-spacing: .5px;
+}
+
+picture.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+picture.work-element {
+    margin: 100px auto 50px;
+}
+
+picture.work-full {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../img/project4/visual-elements-full.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 50px auto 100px;
+}
+
+picture.work img {
+    max-width: 980px;
+    margin: 30px 0;
+    transition: .25s all ease;
+}
+
+picture.work img:hover {
+    transform: scale(.975);
+}
+
+picture.work-element img:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -420,27 +516,63 @@ li.navi-btn a.next-img {
         }
     }
 
-    section.preface,
-    section.overview {
+    section#preface,
+    section#overview,
+    article.color,
+    article.element .paragraph,
+    article.element picture.work-element {
         padding: 0 25px;
     }
 
-    section.preface .row h3 {
+    section#preface .row h3 {
         font-size: 1.65em;
     }
 
-    section.preface .row p {
+    section#preface .row p {
         font-size: 1.55em;
     }
 
-    section.overview article.container h2 {
+    section#overview article.container h2,
+    section#visual h2.title,
+    .paragraph h3 {
         font-size: 2.15em;
-        line-height: 2.75em;
+        line-height: 2.5em;
+        margin-bottom: 15px;
     }
     
-    section.overview article.container p {
+    section#overview article.container p,
+    .paragraph p {
         font-size: 1.5em;
-        line-height: 2.1em;
+        line-height: 2em;
+    }
+
+    section#visual h2.title {
+        margin-bottom: 75px;
+    }
+    
+    section#visual h2.title::after {
+        width: 40px;
+        top: 90px;
+    }
+
+    article.color .paragraph, 
+    article.element .paragraph {
+        margin: 35px auto;
+    }
+
+    picture.work img {
+        width: 100%;
+        padding: 30px 100px;
+        max-width: none;
+        margin: 0;
+    }
+
+}
+
+@media all and (max-width: 980px) {
+
+    picture.work img {
+        padding: 15px 35px;
     }
 
 }
@@ -512,43 +644,42 @@ li.navi-btn a.next-img {
         font-size: 1.65em;
     }
 
-    section.preface {
+    section#preface {
         padding: 0 25px;
     }
 
-    section.preface article.container {
+    section#preface article.container {
         flex-direction: column;
         align-items: center;
         padding: 35px 50px;
     }
 
-    section.preface .row {
+    section#preface .row {
         margin-bottom: 50px;
         align-items: center;
     }
 
-    section.preface .row:last-child {
+    section#preface .row:last-child {
         margin-bottom: 0;
     }
 
-    section.preface .row h3 {
+    section#preface .row h3 {
         border-left: none;
         margin-left: 0px;
         padding-left: 0px;
         font-size: 1.5em;
     }
 
-    section.preface .row p {
+    section#preface .row p {
         font-size: 1.35em;
     }
 
-    section.overview {
+    section#overview {
         margin: 75px 0;
     }
 
-    section.overview article.container {
+    section#overview article.container {
         padding: 35px 25px;
-        border-radius: 0;
         box-shadow: 
         -200px -150px 125px -150px rgba(255, 158, 211, 0.5),
         150px 160px 95px -140px rgba(237, 174, 255, 0.5); 
@@ -556,15 +687,38 @@ li.navi-btn a.next-img {
         -webkit-backdrop-filter: blur(5px);
     }
 
-    section.overview article.container h2 {
+    article.color .paragraph, 
+    article.element .paragraph {
+        margin: 25px 15px;
+    }
+
+    section#overview article.container h2,
+    section#visual h2.title,
+    .paragraph h3 {
         font-size: 1.85em;
         line-height: 2.5em;
     }
     
-    section.overview article.container p {
+    section#overview article.container p,
+    .paragraph p {
         font-size: 1.35em;
-        line-height: 2em;
-        padding-left: 10px;
+    }
+
+    section#visual h2.title {
+        margin-bottom: 75px;
+    }
+
+    section#visual h2.title::after {
+        top: 65px;
+        width: 25px;
+    }
+
+    picture.work {
+        margin: 50px 0 75px;
+    }
+
+    picture.work img {
+        padding: 35px 0;
     }
 }
 
@@ -617,31 +771,39 @@ li.navi-btn a.next-img {
         font-size: 1.35em;
     }
 
-    section.preface {
+    section#preface {
         padding: 0 35px;
         margin-top: -25px;
     }
 
-    section.preface .row {
+    section#preface .row {
         margin-bottom: 35px;
     }
 
-    section.preface .row h3 {
+    section#preface .row h3 {
         font-size: 1.45em;
     }
 
-    section.preface .row p {
+    section#preface .row p {
         font-size: 1.25em;
     }
 
-    section.overview article.container h2 {
+    section#overview article.container h2,
+    section#visual h2.title,
+    .paragraph h3 {
         font-size: 1.75em;
     }
     
-    section.overview article.container p {
+    section#overview article.container p,
+    .paragraph p {
         font-size: 1.25em;
-        line-height: 2.15em;
         padding-left: 0;
+    }
+
+    picture.work-full {
+        width: 100vw;
+        height: 85vh;
+        margin: 25px auto 50px;
     }
 
 }
