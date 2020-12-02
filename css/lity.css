@@ -10,7 +10,7 @@
   left: 0;
   white-space: nowrap;
   background: #f0f0f0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.875);
   outline: none !important;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease;
@@ -133,6 +133,7 @@
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  transition: 0.25s all ease;
 }
 .lity-close::-moz-focus-inner {
   border: 0;
@@ -206,8 +207,8 @@
   .lity-close {
     width: 45px;
     height: 45px;
-    right: 15px;
-    top: 15px;
+    right: 12.5px;
+    top: 10px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -221,7 +222,7 @@
   }
 
   .lity-close:active {
-    top: 15px;
+    top: 10px;
   }
 
 }

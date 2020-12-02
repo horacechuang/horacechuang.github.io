@@ -236,7 +236,8 @@ main#container {
 
 section#preface,
 section#overview,
-section#visual {
+section#visual,
+section#web {
     position: relative;
 }
 
@@ -805,7 +806,6 @@ li.navi-btn a.next-img {
     }
 
     picture.work-full {
-        width: 100vw;
         height: 85vh;
         margin: 25px auto 50px;
         background-attachment: scroll;

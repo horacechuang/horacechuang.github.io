@@ -362,15 +362,17 @@ section.process-page-element picture.row2 {
 section.process-logo picture.row2 img,
 section.process-typo picture.row2 img,
 section.process-page-element picture.row2 img {
-    width: 50%;
+    width: 100%;
+    min-width: 50%;
 }
 
 section.process-color picture.mobile {
     display: none;
 }
 
-
-
+.img picture a {
+    margin-bottom: -3px;
+}
 
 /* project-main-navigator */
 
