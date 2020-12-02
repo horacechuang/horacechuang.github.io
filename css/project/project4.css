@@ -471,6 +471,7 @@ picture.parallax-visual {
 
 picture.parallax-web {
     background-image: url("../../img/project4/website-1.png");
+    background-size: contain;
 }
 
 picture.work-web,
@@ -657,14 +658,13 @@ li.navi-btn a.next-img {
         padding: 0 100px;
     }
 
+    picture.parallax-web {
+        background-size: 125%;
+    }
+
 }
 
 @media all and (max-width: 980px) {
-
-    picture.work img,
-    picture.work video {
-        padding: 15px 35px;
-    }
 
     section#web header.container {
         box-shadow: 0px -80px 150px -40px rgba(255, 94, 137, 0.85) !important;
@@ -672,6 +672,15 @@ li.navi-btn a.next-img {
 
     section#exhibit header.container {
         box-shadow: 0px -80px 150px -40px rgba(210, 148, 255, 0.85);
+    }
+
+    picture.work img,
+    picture.work video {
+        padding: 15px 35px;
+    }
+
+    picture.parallax-web {
+        background-size: 120%;
     }
 
 }
@@ -847,10 +856,15 @@ li.navi-btn a.next-img {
         margin: 50px 0 75px;
     }
 
+    picture.work-full {
+        height: 80vh;
+    }
+
     picture.work img,
     picture.work video {
         padding: 25px 0;
     }
+
 }
 
 @media all and (max-width: 550px) {
@@ -945,6 +959,14 @@ li.navi-btn a.next-img {
         height: 85vh;
         margin: 25px auto 50px;
         background-attachment: scroll !important;
+    }
+    
+    picture.work-web {
+        margin: 0 !important;
+    }
+
+    picture.parallax-web {
+        background-size: cover;
     }
 
 }
