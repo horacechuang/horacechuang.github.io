@@ -284,9 +284,14 @@ section#preface .row p {
 }
 
 section#overview,
-section#visual {
+section#visual,
+section#web {
     margin: 100px 0;
     display: block;
+}
+
+section#web {
+    margin: -200px 0 0;
 }
 
 section#overview article.container {
@@ -294,11 +299,20 @@ section#overview article.container {
     margin: 0 auto 50px;
     padding: 50px;
     box-shadow: 
-    -200px -150px 125px -150px rgba(255, 158, 211, 0.25),
-    150px 160px 95px -140px rgba(237, 174, 255, 0.25); 
+    -200px -120px 155px -170px rgba(255, 122, 195, 0.25),
+    200px 160px 95px -160px rgba(238, 176, 255, 0.25); 
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 15px;
+}
+
+section#web .container {
+    max-width: 1180px;
+    background: rgb(255,255,255);
+    margin: 0 auto;
+    padding: 50px 0;
+    border-top: 5px solid rgb(255, 209, 221);
+    box-shadow: 0px -120px 155px -95px rgba(255, 94, 137, 0.25);
 }
 
 section#overview article.container a {
@@ -339,7 +353,8 @@ section#overview article.container p:last-child {
     margin: 0;
 }
 
-section#visual h2.title{
+section#visual h2.title,
+section#web h2.title{
     display: flex;
     justify-content: center;
     position: relative;
@@ -352,7 +367,8 @@ section#visual h2.title{
     margin-bottom: 75px;
 }
 
-section#visual h2.title::after {
+section#visual h2.title::after,
+section#web h2.title::after {
     content: "";
     position: absolute;
     width: 45px;
@@ -362,12 +378,14 @@ section#visual h2.title::after {
 }
 
 article.color,
-article.element {
+article.element,
+article.website {
     position: relative;
 }
 
 article.color .paragraph,
-article.element .paragraph {
+article.element .paragraph,
+article.website .paragraph {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -392,6 +410,10 @@ article.element .paragraph {
     font-weight: 100;
     line-height: 2.1em;
     letter-spacing: .5px;
+}
+
+.multi-line p{
+    margin-bottom: 50px;
 }
 
 picture.work {
@@ -432,6 +454,9 @@ picture.work-element img:last-child {
     margin-bottom: 0;
 }
 
+picture.work a {
+    width: 100%;
+}
 
 /* project-main-navigator */
 
@@ -525,8 +550,17 @@ li.navi-btn a.next-img {
     section#overview,
     article.color,
     article.element .paragraph,
-    article.element picture.work-element {
+    article.element picture.work-element,
+    article.website .paragraph{
         padding: 0 25px;
+    }
+
+    section#web {
+        margin: -250px 0 0;
+    }
+    
+    section#web .container {
+        margin: 0 50px;
     }
 
     section#preface .row h3 {
@@ -539,6 +573,7 @@ li.navi-btn a.next-img {
 
     section#overview article.container h2,
     section#visual h2.title,
+    section#web h2.title
     .paragraph h3 {
         font-size: 2.15em;
         line-height: 2.5em;
@@ -551,17 +586,20 @@ li.navi-btn a.next-img {
         line-height: 2em;
     }
 
-    section#visual h2.title {
+    section#visual h2.title,
+    section#web h2.title {
         margin-bottom: 75px;
     }
     
-    section#visual h2.title::after {
+    section#visual h2.title::after,
+    section#web h2.title::after {
         width: 40px;
         top: 90px;
     }
 
     article.color .paragraph, 
-    article.element .paragraph {
+    article.element .paragraph,
+    article.website .paragraph {
         margin: 35px auto;
     }
 
@@ -693,12 +731,26 @@ li.navi-btn a.next-img {
     }
 
     article.color .paragraph, 
-    article.element .paragraph {
+    article.element .paragraph,
+    article.website .paragraph {
         margin: 25px 15px;
+    }
+
+    section#visual {
+        margin: 100px 0 25px;
+    }
+
+    section#web {
+        margin: -300px 0 0;
+    }
+    
+    section#web .container {
+        margin: 0 35px;
     }
 
     section#overview article.container h2,
     section#visual h2.title,
+    section#web h2.title,
     .paragraph h3 {
         font-size: 1.85em;
         line-height: 2.5em;
@@ -709,11 +761,20 @@ li.navi-btn a.next-img {
         font-size: 1.35em;
     }
 
+    .multi-line p{
+        margin-bottom: 25px;
+    }
+
     section#visual h2.title {
         margin-bottom: 75px;
     }
 
-    section#visual h2.title::after {
+    section#web h2.title {
+        margin-bottom: 50px;
+    }
+
+    section#visual h2.title::after,
+    section#web h2.title::after {
         top: 65px;
         width: 25px;
     }
@@ -793,8 +854,17 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
+    section#web {
+        margin: -175px 0 0;
+    }
+    
+    section#web .container {
+        margin: 0 25px;
+    }
+
     section#overview article.container h2,
     section#visual h2.title,
+    section#web h2.title,
     .paragraph h3 {
         font-size: 1.75em;
     }
