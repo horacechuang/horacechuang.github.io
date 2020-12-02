@@ -285,12 +285,14 @@ section#preface .row p {
 
 section#overview,
 section#visual,
-section#web {
+section#web,
+section#exhibit {
     margin: 100px 0;
     display: block;
 }
 
-section#web {
+section#web,
+section#exhibit {
     margin: -200px 0 0;
 }
 
@@ -306,16 +308,24 @@ section#overview article.container {
     border-radius: 15px;
 }
 
-section#web .container {
+section#web header.container,
+section#exhibit header.container {
     max-width: 1180px;
-    background: rgb(255,255,255);
     margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 50px;
     border-top: 5px solid rgb(255, 209, 221);
-    box-shadow: 0px -120px 155px -95px rgba(255, 94, 137, 0.25);
+    box-shadow: 0px -100px 150px -52px rgba(255, 94, 137, .65);
 }
 
-section#overview article.container a {
+section#web header.container,
+section#web .container,
+section#exhibit header.container,
+section#exhibit .container {
+    background: rgb(255,255,255);
+}
+
+section#overview article.container a,
+section#exhibit article.exhibition p a {
     position: relative;
     display: inline;
     color: rgb(154, 24, 78);
@@ -324,7 +334,8 @@ section#overview article.container a {
     border-bottom: 1px solid rgba(190, 34, 99, 0);
 }
 
-section#overview article.container a:hover {
+section#overview article.container a:hover,
+section#exhibit article.exhibition p a:hover {
     color: rgb(190, 34, 99);
     border-bottom: 1px solid rgb(190, 34, 99);
 }
@@ -354,7 +365,8 @@ section#overview article.container p:last-child {
 }
 
 section#visual h2.title,
-section#web h2.title{
+section#web h2.title,
+section#exhibit h2.title {
     display: flex;
     justify-content: center;
     position: relative;
@@ -368,7 +380,8 @@ section#web h2.title{
 }
 
 section#visual h2.title::after,
-section#web h2.title::after {
+section#web h2.title::after,
+section#exhibit h2.title::after {
     content: "";
     position: absolute;
     width: 45px;
@@ -379,13 +392,15 @@ section#web h2.title::after {
 
 article.color,
 article.element,
-article.website {
+article.website,
+article.exhibition {
     position: relative;
 }
 
 article.color .paragraph,
 article.element .paragraph,
-article.website .paragraph {
+article.website .paragraph,
+article.exhibition .paragraph {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -412,11 +427,19 @@ article.website .paragraph {
     letter-spacing: .5px;
 }
 
-.multi-line p{
+.multi-line p {
     margin-bottom: 50px;
 }
 
-picture.work {
+article.website .paragraph span,
+article.exhibition .paragraph span {
+    font-weight: 400;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+picture.work,
+figure.work {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,17 +451,30 @@ picture.work-element {
 }
 
 picture.work-full {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: url("../../img/project4/visual-elements-full.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 50px auto 100px;
+    margin: -50px auto 100px;
 }
 
-picture.work img {
+picture.parallax-visual {
+    background-image: url("../../img/project4/visual-elements-full.png");
+}
+
+picture.parallax-web {
+    background-image: url("../../img/project4/website-1.png");
+}
+
+picture.work-web,
+picture.work-exhibit {
+    margin: 0px 0 100px;
+}
+
+picture.work img,
+picture.work video {
     width: 100%;
     margin: 30px 0;
     padding: 0 calc(50vw - 550px);
@@ -446,7 +482,8 @@ picture.work img {
     transition: 0.25s all ease;
 }
 
-picture.work img:hover {
+picture.work img:hover,
+picture.work video:hover {
     transform: scale(0.975);
 }
 
@@ -469,9 +506,6 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 1229px) {
-    /* header, main {
-        padding: 0 25px;
-    } */
 
     header#header .header-container {
         height: 700px;
@@ -551,15 +585,15 @@ li.navi-btn a.next-img {
     article.color,
     article.element .paragraph,
     article.element picture.work-element,
-    article.website .paragraph{
+    article.website .paragraph,
+    article.exhibition .paragraph {
         padding: 0 25px;
     }
-
-    section#web {
-        margin: -250px 0 0;
-    }
     
-    section#web .container {
+    section#web header.container,
+    section#web .container,
+    section#exhibit header.container,
+    section#exhibit .container {
         margin: 0 50px;
     }
 
@@ -573,7 +607,8 @@ li.navi-btn a.next-img {
 
     section#overview article.container h2,
     section#visual h2.title,
-    section#web h2.title
+    section#web h2.title,
+    section#exhibit h2.title,
     .paragraph h3 {
         font-size: 2.15em;
         line-height: 2.5em;
@@ -587,19 +622,22 @@ li.navi-btn a.next-img {
     }
 
     section#visual h2.title,
-    section#web h2.title {
+    section#web h2.title,
+    section#exhibit h2.title {
         margin-bottom: 75px;
     }
     
     section#visual h2.title::after,
-    section#web h2.title::after {
+    section#web h2.title::after,
+    section#exhibit h2.title::after {
         width: 40px;
         top: 90px;
     }
 
     article.color .paragraph, 
     article.element .paragraph,
-    article.website .paragraph {
+    article.website .paragraph,
+    article.exhibition .paragraph {
         margin: 35px auto;
     }
 
@@ -610,12 +648,22 @@ li.navi-btn a.next-img {
         margin: 0;
     }
 
+    picture.work video {
+        padding: 0 100px;
+    }
+
 }
 
 @media all and (max-width: 980px) {
 
-    picture.work img {
+    picture.work img,
+    picture.work video {
         padding: 15px 35px;
+    }
+
+    section#web header.container,
+    section#exhibit header.container {
+        box-shadow: 0px -80px 150px -40px rgba(255, 94, 137, 0.85) !important;
     }
 
 }
@@ -732,25 +780,31 @@ li.navi-btn a.next-img {
 
     article.color .paragraph, 
     article.element .paragraph,
-    article.website .paragraph {
-        margin: 25px 15px;
+    article.website .paragraph,
+    article.exhibition .paragraph {
+        margin: 25px auto;
     }
 
     section#visual {
         margin: 100px 0 25px;
     }
 
-    section#web {
-        margin: -300px 0 0;
+    section#web,
+    section#exhibit {
+        margin: -150px 0 0;
     }
     
-    section#web .container {
+    section#web header.container,
+    section#web .container,
+    section#exhibit header.container,
+    section#exhibit .container {
         margin: 0 35px;
     }
 
     section#overview article.container h2,
     section#visual h2.title,
     section#web h2.title,
+    section#exhibit h2.title,
     .paragraph h3 {
         font-size: 1.85em;
         line-height: 2.5em;
@@ -769,12 +823,14 @@ li.navi-btn a.next-img {
         margin-bottom: 75px;
     }
 
-    section#web h2.title {
+    section#web h2.title,
+    section#exhibit h2.title {
         margin-bottom: 50px;
     }
 
     section#visual h2.title::after,
-    section#web h2.title::after {
+    section#web h2.title::after,
+    section#exhibit h2.title::after {
         top: 65px;
         width: 25px;
     }
@@ -783,8 +839,9 @@ li.navi-btn a.next-img {
         margin: 50px 0 75px;
     }
 
-    picture.work img {
-        padding: 35px 0;
+    picture.work img,
+    picture.work video {
+        padding: 25px 0;
     }
 }
 
@@ -799,6 +856,7 @@ li.navi-btn a.next-img {
         top: 220px;
         left: calc(50% - 135px);
     }
+
     picture.header-main img.logo {
         max-width: 260px;
     }
@@ -853,18 +911,18 @@ li.navi-btn a.next-img {
     section#preface .row p {
         font-size: 1.25em;
     }
-
-    section#web {
-        margin: -175px 0 0;
-    }
     
-    section#web .container {
+    section#web header.container,
+    section#web .container,
+    section#exhibit header.container,
+    section#exhibit .container {
         margin: 0 25px;
     }
 
     section#overview article.container h2,
     section#visual h2.title,
     section#web h2.title,
+    section#exhibit h2.title,
     .paragraph h3 {
         font-size: 1.75em;
     }
@@ -878,7 +936,7 @@ li.navi-btn a.next-img {
     picture.work-full {
         height: 85vh;
         margin: 25px auto 50px;
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
 
 }
