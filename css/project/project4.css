@@ -317,6 +317,11 @@ section#exhibit header.container {
     box-shadow: 0px -100px 150px -52px rgba(255, 94, 137, .65);
 }
 
+section#exhibit header.container {
+    border-top: 5px solid rgb(236, 209, 255);
+    box-shadow: 0px -100px 150px -52px rgba(210, 148, 255, 0.65);
+}
+
 section#web header.container,
 section#web .container,
 section#exhibit header.container,
@@ -661,9 +666,12 @@ li.navi-btn a.next-img {
         padding: 15px 35px;
     }
 
-    section#web header.container,
-    section#exhibit header.container {
+    section#web header.container {
         box-shadow: 0px -80px 150px -40px rgba(255, 94, 137, 0.85) !important;
+    }
+
+    section#exhibit header.container {
+        box-shadow: 0px -80px 150px -40px rgba(210, 148, 255, 0.85);
     }
 
 }
