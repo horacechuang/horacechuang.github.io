@@ -582,6 +582,10 @@ li.navi-btn a.next-img {
         }
     }
 
+    section#overview {
+        margin: 0;
+    }
+
     section#preface,
     section#overview,
     article.color,
@@ -589,7 +593,7 @@ li.navi-btn a.next-img {
     article.element picture.work-element,
     article.website .paragraph,
     article.exhibition .paragraph {
-        padding: 35px 0;
+        padding: 35px 25px;
     }
     
     section#web header.container,
@@ -671,6 +675,16 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 980px) {
 
+    section#preface, 
+    section#overview, 
+    article.color, 
+    article.element .paragraph, 
+    article.element picture.work-element, 
+    article.website .paragraph, 
+    article.exhibition .paragraph {
+        padding: 35px;
+    }
+
     picture.work img,
     picture.work video {
         padding: 25px 100px;
@@ -686,16 +700,6 @@ li.navi-btn a.next-img {
 
     picture.parallax-web {
         background-size: 115%;
-    }
-
-    section#preface, 
-    section#overview, 
-    article.color, 
-    article.element .paragraph, 
-    article.element picture.work-element, 
-    article.website .paragraph, 
-    article.exhibition .paragraph {
-        padding: 35px;
     }
 
 }
