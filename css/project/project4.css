@@ -234,19 +234,12 @@ main#container {
     padding: 0;
 }
 
-section#preface,
-section#overview,
-section#visual,
-section#web {
-    position: relative;
-}
-
 section#preface {
-    margin-top: -35px;
+    margin: -35px 0 0 !important;
     z-index: 3;
 }
 
-section#preface article.container {
+section#preface main.container {
     max-width: 980px;
     margin: 0 auto;
     display: flex;
@@ -283,90 +276,33 @@ section#preface .row p {
     font-size: 1.5em;
 }
 
+section#preface,
 section#overview,
 section#visual,
 section#web,
 section#exhibit {
-    margin: 100px 0;
+    position: relative;
+    margin: 100px 0 0;
     display: block;
 }
 
 section#web,
 section#exhibit {
-    margin: -200px 0 0;
-}
-
-section#overview article.container {
-    max-width: 1180px;
-    margin: 0 auto 50px;
-    padding: 50px;
-    box-shadow: 
-    -200px -120px 155px -170px rgba(255, 122, 195, 0.25),
-    200px 160px 95px -160px rgba(238, 176, 255, 0.25); 
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 15px;
+    margin: 0;
 }
 
 section#web header.container,
 section#exhibit header.container {
     max-width: 1180px;
-    margin: 0 auto;
-    padding-top: 50px;
-    border-top: 5px solid rgb(255, 209, 221);
-    box-shadow: 0px -100px 150px -52px rgba(255, 94, 137, .65);
+    margin: -150px auto 0;
+    padding: 50px 0;
+    border-top: 5px solid rgb(255, 139, 170);
+    box-shadow: 0px -110px 130px -70px rgb(255, 89, 133);
 }
 
 section#exhibit header.container {
     border-top: 5px solid rgb(236, 209, 255);
-    box-shadow: 0px -100px 150px -52px rgba(210, 148, 255, 0.65);
-}
-
-section#web header.container,
-section#web .container,
-section#exhibit header.container,
-section#exhibit .container {
-    background: rgb(255,255,255);
-}
-
-section#overview article.container a,
-section#exhibit article.exhibition p a {
-    position: relative;
-    display: inline;
-    color: rgb(154, 24, 78);
-    transition: .25s all ease;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(190, 34, 99, 0);
-}
-
-section#overview article.container a:hover,
-section#exhibit article.exhibition p a:hover {
-    color: rgb(190, 34, 99);
-    border-bottom: 1px solid rgb(190, 34, 99);
-}
-
-section#overview article.container h2 {
-    font-size: 2.5em;
-    line-height: 3em;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: rgb(186, 186, 186);
-    letter-spacing: .5px;
-    position: relative;
-    margin-bottom: 25px;
-}
-
-section#overview article.container p {
-    font-size: 1.65em;
-    font-weight: 100;
-    line-height: 2.15em;
-    margin-bottom: 50px;
-    letter-spacing: .5px;
-    padding-left: 15px;
-}
-
-section#overview article.container p:last-child {
-    margin: 0;
+    box-shadow: 0px -110px 130px -70px rgb(210, 148, 255);
 }
 
 section#visual h2.title,
@@ -381,7 +317,6 @@ section#exhibit h2.title {
     letter-spacing: .5px;
     text-transform: uppercase;
     color: rgb(186, 186, 186);
-    margin-bottom: 75px;
 }
 
 section#visual h2.title::after,
@@ -395,8 +330,68 @@ section#exhibit h2.title::after {
     top: 115px;
 }
 
-article.color,
-article.element,
+section#overview main.container {
+    max-width: 1180px;
+    margin: 0 auto 50px;
+    padding: 50px;
+    box-shadow: 
+    -200px -170px 205px -190px rgba(255, 96, 183, 0.35),
+    200px 160px 95px -170px rgba(231, 152, 253, 0.35); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+section#overview main.container,
+section#web header.container,
+section#web main.container,
+section#exhibit header.container,
+section#exhibit main.container {
+    background: rgb(255,255,255);
+}
+
+section#overview main.container a,
+section#exhibit article.exhibition p a {
+    position: relative;
+    display: inline;
+    color: rgb(154, 24, 78);
+    transition: .25s all ease;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(190, 34, 99, 0);
+}
+
+section#overview main.container a:hover,
+section#exhibit article.exhibition p a:hover {
+    color: rgb(190, 34, 99);
+    border-bottom: 1px solid rgb(190, 34, 99);
+}
+
+section#overview main.container h2 {
+    font-size: 2.5em;
+    line-height: 3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(186, 186, 186);
+    letter-spacing: .5px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+section#overview main.container p {
+    font-size: 1.65em;
+    font-weight: 100;
+    line-height: 2.15em;
+    margin-bottom: 50px;
+    letter-spacing: .5px;
+    padding-left: 15px;
+}
+
+section#overview main.container p:last-child {
+    margin: 0;
+}
+
+section#visual article.color,
+section#visual article.element,
 article.website,
 article.exhibition {
     position: relative;
@@ -410,7 +405,13 @@ article.exhibition .paragraph {
     flex-direction: column;
     align-items: flex-start;
     max-width: 728px;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+article.color .paragraph,
+article.element .paragraph {
+    padding-top: 100px;
 }
 
 .paragraph h3 {
@@ -443,16 +444,16 @@ article.exhibition .paragraph span {
     padding-bottom: 5px;
 }
 
-picture.work,
-figure.work {
+picture.work {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto;
+    margin: 50px auto;
+    padding: 0 calc(50vw - 525px);
 }
 
 picture.work-element {
-    margin: 100px auto 50px;
+    margin: 100px auto;
 }
 
 picture.work-full {
@@ -462,7 +463,7 @@ picture.work-full {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: -50px auto 100px;
+    margin: 0 auto;
 }
 
 picture.parallax-visual {
@@ -470,12 +471,12 @@ picture.parallax-visual {
 }
 
 picture.parallax-web {
-    background-image: url("../../img/project4/website-1.png");
+    background-image: url("../../img/project4/website-2.png");
     background-size: contain;
 }
 
 picture.work-web,
-picture.work-exhibit {
+picture.work-exhibit, {
     margin: 0px 0 100px;
 }
 
@@ -483,7 +484,6 @@ picture.work img,
 picture.work video {
     width: 100%;
     margin: 30px 0;
-    padding: 0 calc(50vw - 550px);
     transform: scale(1);
     transition: 0.25s all ease;
 }
@@ -495,10 +495,6 @@ picture.work video:hover {
 
 picture.work-element img:last-child {
     margin-bottom: 0;
-}
-
-picture.work a {
-    width: 100%;
 }
 
 /* project-main-navigator */
@@ -593,14 +589,21 @@ li.navi-btn a.next-img {
     article.element picture.work-element,
     article.website .paragraph,
     article.exhibition .paragraph {
-        padding: 0 25px;
+        padding: 35px 0;
     }
     
     section#web header.container,
-    section#web .container,
-    section#exhibit header.container,
-    section#exhibit .container {
-        margin: 0 50px;
+    section#exhibit header.container {
+        margin: -200px 50px 0;
+        padding: 75px 0;
+    }
+
+    section#web header.container {
+        box-shadow: 0px -80px 100px -80px rgba(255, 89, 133, 0.8);
+    }
+
+    section#exhibit header.container {
+        box-shadow: 0px -80px 100px -80px rgba(210, 148, 255, 0.8);
     }
 
     section#preface .row h3 {
@@ -611,26 +614,19 @@ li.navi-btn a.next-img {
         font-size: 1.55em;
     }
 
-    section#overview article.container h2,
+    section#overview main.container h2,
     section#visual h2.title,
     section#web h2.title,
     section#exhibit h2.title,
     .paragraph h3 {
         font-size: 2.15em;
         line-height: 2.5em;
-        margin-bottom: 15px;
     }
     
-    section#overview article.container p,
+    section#overview main.container p,
     .paragraph p {
         font-size: 1.5em;
         line-height: 2em;
-    }
-
-    section#visual h2.title,
-    section#web h2.title,
-    section#exhibit h2.title {
-        margin-bottom: 75px;
     }
     
     section#visual h2.title::after,
@@ -644,43 +640,62 @@ li.navi-btn a.next-img {
     article.element .paragraph,
     article.website .paragraph,
     article.exhibition .paragraph {
-        margin: 35px auto;
+        margin: 0 auto;
+    }
+
+    picture.work-element {
+        margin: 50px auto;
     }
 
     picture.work img {
         width: 100%;
-        padding: 30px 100px;
+        padding: 0 125px 35px;
         max-width: none;
         margin: 0;
     }
 
     picture.work video {
-        padding: 0 100px;
+        padding: 0 125px 35px;
+    }
+
+    picture.work img:last-child {
+        padding: 0 125px;
     }
 
     picture.parallax-web {
-        background-size: 125%;
+        background-size: 120%;
     }
+
 
 }
 
 @media all and (max-width: 980px) {
 
-    section#web header.container {
-        box-shadow: 0px -80px 150px -40px rgba(255, 94, 137, 0.85) !important;
-    }
-
-    section#exhibit header.container {
-        box-shadow: 0px -80px 150px -40px rgba(210, 148, 255, 0.85);
-    }
-
     picture.work img,
     picture.work video {
-        padding: 15px 35px;
+        padding: 25px 100px;
+    }
+
+    picture.work img:last-child {
+        padding: 25px 100px 0;
+    }
+
+    picture.work-full {
+        height: 95vh;
     }
 
     picture.parallax-web {
-        background-size: 120%;
+        background-size: 115%;
+    }
+
+    section#preface, 
+    section#overview, 
+    article.color, 
+    article.element .paragraph, 
+    article.element picture.work-element, 
+    article.website .paragraph, 
+    article.exhibition .paragraph {
+        padding: 35px;
     }
 
 }
@@ -756,7 +771,7 @@ li.navi-btn a.next-img {
         padding: 0 25px;
     }
 
-    section#preface article.container {
+    section#preface main.container {
         flex-direction: column;
         align-items: center;
         padding: 35px 50px;
@@ -783,10 +798,14 @@ li.navi-btn a.next-img {
     }
 
     section#overview {
-        margin: 75px 0;
+        margin: 35px 25px;
     }
 
-    section#overview article.container {
+    section#visual {
+        margin: 35px 0;
+    }
+
+    section#overview main.container {
         padding: 35px 25px;
         box-shadow: 
         -200px -150px 125px -150px rgba(255, 158, 211, 0.5),
@@ -796,29 +815,35 @@ li.navi-btn a.next-img {
     }
 
     article.color .paragraph, 
-    article.element .paragraph,
+    article.element .paragraph {
+        padding: 25px 50px;
+    }
+
     article.website .paragraph,
     article.exhibition .paragraph {
-        margin: 25px auto;
+        padding: 25px;
     }
 
-    section#visual {
-        margin: 100px 0 25px;
-    }
-
-    section#web,
-    section#exhibit {
-        margin: -150px 0 0;
-    }
-    
     section#web header.container,
-    section#web .container,
-    section#exhibit header.container,
-    section#exhibit .container {
-        margin: 0 35px;
+    section#exhibit header.container {
+        margin: -165px 25px 0;
+        padding: 50px 0;
     }
 
-    section#overview article.container h2,
+    section#web header.container {
+        box-shadow: 0px -60px 100px -60px rgba(255, 89, 133, 0.8);
+    }
+
+    section#exhibit header.container {
+        box-shadow: 0px -60px 100px -60px rgba(210, 148, 255, 0.8);
+    }
+
+    section#web main.container,
+    section#exhibit main.container {
+        margin: 0 25px;
+    }
+
+    section#overview main.container h2,
     section#visual h2.title,
     section#web h2.title,
     section#exhibit h2.title,
@@ -827,7 +852,7 @@ li.navi-btn a.next-img {
         line-height: 2.5em;
     }
     
-    section#overview article.container p,
+    section#overview main.container p,
     .paragraph p {
         font-size: 1.35em;
     }
@@ -836,24 +861,20 @@ li.navi-btn a.next-img {
         margin-bottom: 25px;
     }
 
-    section#visual h2.title {
-        margin-bottom: 75px;
-    }
-
-    section#web h2.title,
-    section#exhibit h2.title {
-        margin-bottom: 50px;
-    }
-
     section#visual h2.title::after,
     section#web h2.title::after,
     section#exhibit h2.title::after {
-        top: 65px;
+        top: 75px;
         width: 25px;
     }
 
     picture.work {
-        margin: 50px 0 75px;
+        margin: 50px 0;
+    }
+
+    picture.work-web,
+    picture.work-exhibit {
+        margin: 35px 0 50px;
     }
 
     picture.work-full {
@@ -862,7 +883,18 @@ li.navi-btn a.next-img {
 
     picture.work img,
     picture.work video {
-        padding: 25px 0;
+        padding: 25px 50px;
+    }
+
+    picture.work img:last-child {
+        padding: 25px 50px;
+    }
+
+    picture.work-web img,
+    picture.work-web img:last-child,
+    picture.work-exhibit img,
+    picture.work-exhibit img:last-child {
+        padding: 25px 10px;
     }
 
 }
@@ -935,13 +967,20 @@ li.navi-btn a.next-img {
     }
     
     section#web header.container,
-    section#web .container,
-    section#exhibit header.container,
-    section#exhibit .container {
-        margin: 0 25px;
+    section#exhibit header.container {
+        margin: -150px 25px 0;
+        padding: 35px 0;
     }
 
-    section#overview article.container h2,
+    section#web header.container {
+        box-shadow: 0px -90px 130px -45px rgba(255, 89, 133, 0.8);
+    }
+
+    section#exhibit header.container {
+        box-shadow: 0px -90px 130px -45px rgba(210, 148, 255, 0.8);
+    }
+
+    section#overview main.container h2,
     section#visual h2.title,
     section#web h2.title,
     section#exhibit h2.title,
@@ -949,20 +988,16 @@ li.navi-btn a.next-img {
         font-size: 1.75em;
     }
     
-    section#overview article.container p,
+    section#overview main.container p,
     .paragraph p {
         font-size: 1.25em;
         padding-left: 0;
     }
 
     picture.work-full {
-        height: 85vh;
+        height: 80vh;
         margin: 25px auto 50px;
         background-attachment: scroll !important;
-    }
-    
-    picture.work-web {
-        margin: 0 !important;
     }
 
     picture.parallax-web {
