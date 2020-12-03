@@ -235,8 +235,10 @@ main#container {
 }
 
 section#preface {
-    margin: -35px 0 0 !important;
+    margin: -35px 0 0;
     z-index: 3;
+    display: block;
+    position: relative;
 }
 
 section#preface main.container {
@@ -276,7 +278,6 @@ section#preface .row p {
     font-size: 1.5em;
 }
 
-section#preface,
 section#overview,
 section#visual,
 section#web,
@@ -493,7 +494,7 @@ picture.work video:hover {
     transform: scale(0.975);
 }
 
-picture.work-element img:last-child {
+picture.work a:last-child img {
     margin-bottom: 0;
 }
 
@@ -582,11 +583,16 @@ li.navi-btn a.next-img {
         }
     }
 
-    section#overview {
-        margin: 0;
+    section#preface {
+        margin: -25px 0 0;
+        padding: 0 25px;
     }
 
-    section#preface,
+    section#overview,
+    section#visual {
+        margin: 50px 0 0;
+    }
+
     section#overview,
     article.color,
     article.element .paragraph,
@@ -595,11 +601,16 @@ li.navi-btn a.next-img {
     article.exhibition .paragraph {
         padding: 35px 25px;
     }
+
+    article.color .paragraph, 
+    article.element .paragraph {
+        padding-top: 50px;
+    }
     
     section#web header.container,
     section#exhibit header.container {
         margin: -200px 50px 0;
-        padding: 75px 0;
+        padding: 55px 0;
     }
 
     section#web header.container {
@@ -662,7 +673,7 @@ li.navi-btn a.next-img {
         padding: 0 125px 35px;
     }
 
-    picture.work img:last-child {
+    picture.work a:last-child img {
         padding: 0 125px;
     }
 
@@ -675,14 +686,17 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 980px) {
 
-    section#preface, 
     section#overview, 
-    article.color, 
-    article.element .paragraph, 
-    article.element picture.work-element, 
+    article.color,
+    article.element,
     article.website .paragraph, 
     article.exhibition .paragraph {
-        padding: 35px;
+        padding: 25px;
+    }
+
+    article.website .paragraph, 
+    article.exhibition .paragraph {
+        padding: 25px 75px;
     }
 
     picture.work img,
@@ -690,7 +704,7 @@ li.navi-btn a.next-img {
         padding: 25px 100px;
     }
 
-    picture.work img:last-child {
+    picture.work a:last-child img {
         padding: 25px 100px 0;
     }
 
@@ -772,7 +786,7 @@ li.navi-btn a.next-img {
     }
 
     section#preface {
-        padding: 0 25px;
+        padding: 0 50px;
     }
 
     section#preface main.container {
@@ -802,7 +816,7 @@ li.navi-btn a.next-img {
     }
 
     section#overview {
-        margin: 35px 25px;
+        margin: 35px auto;
     }
 
     section#visual {
@@ -873,7 +887,7 @@ li.navi-btn a.next-img {
     }
 
     picture.work {
-        margin: 50px 0;
+        margin: 0;
     }
 
     picture.work-web,
@@ -886,19 +900,19 @@ li.navi-btn a.next-img {
     }
 
     picture.work img,
-    picture.work video {
-        padding: 25px 50px;
-    }
-
-    picture.work img:last-child {
-        padding: 25px 50px;
-    }
-
+    picture.work video,
+    picture.work a:last-child img,
     picture.work-web img,
-    picture.work-web img:last-child,
+    picture.work-web a:last-child img,
     picture.work-exhibit img,
-    picture.work-exhibit img:last-child {
-        padding: 25px 10px;
+    picture.work-exhibit a:last-child img {
+        padding: 25px 0;
+        margin: 0;
+    }
+
+    picture.work-web a:last-child img,
+    picture.work-exhibit a:last-child img {
+        padding: 0;
     }
 
 }
@@ -954,7 +968,6 @@ li.navi-btn a.next-img {
     }
 
     section#preface {
-        padding: 0 35px;
         margin-top: -25px;
     }
 
@@ -969,11 +982,15 @@ li.navi-btn a.next-img {
     section#preface .row p {
         font-size: 1.25em;
     }
+
+    section#overview {
+        margin: 25px auto;
+    }
     
     section#web header.container,
     section#exhibit header.container {
         margin: -150px 25px 0;
-        padding: 35px 0;
+        padding: 25px 0;
     }
 
     section#web header.container {
@@ -990,6 +1007,13 @@ li.navi-btn a.next-img {
     section#exhibit h2.title,
     .paragraph h3 {
         font-size: 1.75em;
+    }
+
+    article.color .paragraph, 
+    article.element .paragraph,
+    article.website .paragraph, 
+    article.exhibition .paragraph {
+        padding: 50px 25px 0;
     }
     
     section#overview main.container p,
