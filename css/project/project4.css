@@ -398,6 +398,10 @@ article.exhibition {
     position: relative;
 }
 
+article.exhibition {
+    margin-bottom: 125px;
+}
+
 article.color .paragraph,
 article.element .paragraph,
 article.website .paragraph,
@@ -436,6 +440,10 @@ article.element .paragraph {
 
 .multi-line p {
     margin-bottom: 50px;
+}
+
+.multi-line p:last-child {
+    margin: 0;
 }
 
 article.website .paragraph span,
@@ -478,7 +486,7 @@ picture.parallax-web {
 
 picture.work-web,
 picture.work-exhibit {
-    margin: 0px 0 100px;
+    margin: 100px 0;
 }
 
 picture.work img,
@@ -662,6 +670,11 @@ li.navi-btn a.next-img {
         margin: 50px auto;
     }
 
+    picture.work-web,
+    picture.work-exhibit {
+        margin: 50px 0;
+    }
+
     picture.work img {
         width: 100%;
         padding: 0 125px 35px;
@@ -833,13 +846,10 @@ li.navi-btn a.next-img {
     }
 
     article.color .paragraph, 
-    article.element .paragraph {
-        padding: 25px 50px;
-    }
-
+    article.element .paragraph,
     article.website .paragraph,
     article.exhibition .paragraph {
-        padding: 25px;
+        padding: 25px 50px;
     }
 
     section#web header.container,
@@ -906,13 +916,13 @@ li.navi-btn a.next-img {
     picture.work-web a:last-child img,
     picture.work-exhibit img,
     picture.work-exhibit a:last-child img {
-        padding: 25px 0;
+        padding: 50px 0;
         margin: 0;
     }
 
     picture.work-web a:last-child img,
     picture.work-exhibit a:last-child img {
-        padding: 0;
+        padding: 25px 0 0;
     }
 
 }
@@ -1015,7 +1025,7 @@ li.navi-btn a.next-img {
     article.exhibition .paragraph {
         padding: 50px 25px 0;
     }
-    
+
     section#overview main.container p,
     .paragraph p {
         font-size: 1.25em;

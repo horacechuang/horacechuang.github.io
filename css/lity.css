@@ -113,21 +113,22 @@
 }
 .lity-close {
   z-index: 9994;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   -webkit-appearance: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   padding: 0;
   color: rgb(133, 133, 133);
+  background: rgb(255, 255, 255) !important;
   font-style: normal;
-  font-size: 60px;
+  font-size: 80px;
   font-family: Arial, Baskerville, monospace;
-  line-height: 60px;
+  line-height: 80px;
   /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
   border: 0;
   background: none;
@@ -149,9 +150,9 @@
   padding: 0;
   color: rgb(54, 54, 54);
   font-style: normal;
-  font-size: 60px;
+  font-size: 80px;
   font-family: Arial, Baskerville, monospace;
-  line-height: 60px;
+  line-height: 80px;
   /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
   border: 0;
   background: none;
@@ -160,7 +161,7 @@
           box-shadow: none;
 }
 .lity-close:active {
-  top: 20px;
+  top: 10px;
 }
 /* Image */
 .lity-image img {
