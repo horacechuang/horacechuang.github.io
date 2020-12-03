@@ -603,11 +603,12 @@ li.navi-btn a.next-img {
 
     section#overview,
     article.color,
+    article.color picture.work,
     article.element .paragraph,
     article.element picture.work-element,
     article.website .paragraph,
     article.exhibition .paragraph {
-        padding: 35px 25px;
+        padding: 15px 25px;
     }
 
     article.color .paragraph, 
@@ -618,7 +619,7 @@ li.navi-btn a.next-img {
     section#web header.container,
     section#exhibit header.container {
         margin: -200px 50px 0;
-        padding: 55px 0;
+        padding: 65px 0;
     }
 
     section#web header.container {
@@ -855,7 +856,7 @@ li.navi-btn a.next-img {
     section#web header.container,
     section#exhibit header.container {
         margin: -165px 25px 0;
-        padding: 50px 0;
+        padding: 55px 0;
     }
 
     section#web header.container {
@@ -1000,15 +1001,15 @@ li.navi-btn a.next-img {
     section#web header.container,
     section#exhibit header.container {
         margin: -150px 25px 0;
-        padding: 25px 0;
+        padding: 50px 0 15px;
     }
 
     section#web header.container {
-        box-shadow: 0px -90px 130px -45px rgba(255, 89, 133, 0.8);
+        box-shadow: 0px -80px 120px -30px rgba(255, 89, 133, 0.85)
     }
 
     section#exhibit header.container {
-        box-shadow: 0px -90px 130px -45px rgba(210, 148, 255, 0.8);
+        box-shadow: 0px -80px 120px -30px rgba(210, 148, 255, 0.85);
     }
 
     section#overview main.container h2,
