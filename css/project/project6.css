@@ -432,7 +432,7 @@ article.thanks {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1180px;
+    max-width: 1080px;
     margin: -100px auto 0;
     padding: 50px 75px;
     background: hsla(0, 0%, 0%, .25);

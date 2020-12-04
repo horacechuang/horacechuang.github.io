@@ -21,5 +21,8 @@ $(document).ready(function () {
         navBar = currentScrollTop;
 
     });
-    
-  });
+
+});
+
+// document.oncontextmenu = new Function("return false;");
+document.onmousedown = new Function("return false;");

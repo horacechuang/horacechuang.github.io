@@ -2,8 +2,12 @@
 
 #header-container, 
 .project-container {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
+}
+
+.project-container {
+    max-width: 1180px;
 }
 
 /* header */
@@ -19,7 +23,7 @@ header#header {
     display: block;
     position: relative;
     float: right;
-    margin: -20px 25px 0 0;
+    margin: -20px 0 0;
 }
 
 img.profile {
@@ -124,8 +128,8 @@ span.wave {
 }
 
 .paragraph p {
-    font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
-    font-weight: 500;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.75em;
     line-height: 2.1em;
@@ -562,7 +566,7 @@ main.about-main {
 }
 
 .about-main-container {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -571,7 +575,7 @@ main.about-main {
     position: relative;
     padding: 25px 0 40px;
     justify-content: center;
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -1020,7 +1024,7 @@ ul.expertise-content p {
     /* parapraph text */
 
     #header-container > .paragraph {
-        padding-top: 50px;
+        padding: 50px 25px 0;
         width: 100%;
     }
 
@@ -1247,7 +1251,7 @@ ul.expertise-content p {
     /* parapraph text */
 
     #header-container > .paragraph {
-        padding: 235px 0 25px 0;
+        padding: 250px 25px 25px;
     }
 
     /* container */

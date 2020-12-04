@@ -294,7 +294,7 @@ section#exhibit {
 
 section#web header.container,
 section#exhibit header.container {
-    max-width: 1180px;
+    max-width: 980px;
     margin: -150px auto 0;
     padding: 50px 0;
     border-top: 5px solid rgb(255, 139, 170);
@@ -692,7 +692,7 @@ li.navi-btn a.next-img {
     }
 
     picture.parallax-web {
-        background-size: 120%;
+        background-size: 110%;
     }
 
 
@@ -727,7 +727,7 @@ li.navi-btn a.next-img {
     }
 
     picture.parallax-web {
-        background-size: 115%;
+        background-size: 105%;
     }
 
 }
