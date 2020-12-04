@@ -104,12 +104,12 @@ picture.bubble-top img.bubble-2 {
 
 .header-container picture.header-main {
     display: block;
-    left: calc(50% - 265px);
-    top: 225px;
+    left: calc(50% - 240px);
+    top: 255px;
 }
 
 picture.header-main img.logo {
-    max-width: 500px;
+    max-width: 450px;
     animation: 1.5s pop ease-in-out infinite;
 }
 
@@ -525,7 +525,7 @@ li.navi-btn a.next-img {
 
     .header-container picture.header-main {
         top: 235px;
-        left: calc(50% - 205px);
+        left: calc(50% - 200px);
     }
 
     picture.header-main img.logo {
@@ -574,10 +574,10 @@ li.navi-btn a.next-img {
     }
 
     .arrow {
-        top: 500px;
-        left: calc(50% - 20px);
+        top: 505px;
+        left: calc(50% - 10px);
         min-width: 35px;
-        height: 75px;
+        height: 70px;
     }
     
     .arrow i.fa-chevron-down {
