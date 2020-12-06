@@ -380,7 +380,7 @@ footer#footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-height: 103px;
+    /* min-height: 103px; */
     background: hsla(0, 0%, 100%, .85);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -421,7 +421,7 @@ footer#footer::before {
 #footer-container {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 20px 0px;
+    padding: 15px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -438,11 +438,11 @@ footer#footer::before {
 }
 
 .footer-cta .column:first-child {
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .footer-cta .column > span {
-    font-size: 4em;
+    font-size: 3.75em;
 }
 
 .footer-cta h3 {
@@ -458,8 +458,8 @@ footer#footer::before {
 
 .footer-cta h3:first-child {
     font-weight: 400;
-    font-size: 1.35em;
-    margin-bottom: 10px;
+    font-size: 1.25em;
+    margin-bottom: 5px;
 }
 
 h3.h3-footer-eng {
@@ -476,8 +476,8 @@ h3.h3-footer-eng {
 }
 
 .footer-link > ul.footer-link-btn:hover a {
-    opacity: .5;
-    transition: 0.25s all ease;
+    opacity: .35;
+    transition: .25s all ease;
 }
 
 .footer-link > ul.footer-link-btn:hover a:hover {
@@ -485,12 +485,12 @@ h3.h3-footer-eng {
 }
 
 ul.footer-link-btn {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footer-link li {
-    display: inline;
-    margin-left: 65px;
+    display: inline-block;
+    margin-left: 55px;
 }
 
 .footer-link li:first-child {
@@ -498,9 +498,13 @@ ul.footer-link-btn {
 }
 
 .footer-link i {
-    font-size: 2.5em;
+    font-size: 2.35em;
     color: rgb(177, 177, 177);
-    transition: 0.25s all linear;
+    transition: .25s all ease;
+}
+
+.footer-link i:hover {
+    transform: scale(1.15);
 }
 
 .footer-link i.fa-paper-plane:hover {
@@ -574,11 +578,15 @@ ul.footer-link-btn {
     }
 
     .footer-link li {
-        margin-left: 70px;
+        margin-left: 60px;
     }
 
     .footer-link i {
         font-size: 2em;
+    }
+
+    .footer-link p {
+        font-size: 0.85em;
     }
 
     /* project-main-navigator */
@@ -960,7 +968,7 @@ ul.footer-link-btn {
     }
 
     ul.footer-link-btn {
-        margin: 0;
+        margin: 5px 0;
     }
 
     .footer-link i {
