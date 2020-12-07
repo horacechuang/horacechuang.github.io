@@ -76,7 +76,7 @@ nav > .nav-container {
 }
 
 .nav-container .logo img {
-    max-width: 45px;
+    max-width: 40px;
     height: auto;
     display: block;
     position: relative;
@@ -119,12 +119,12 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    margin: 22px 0;
+    margin: 17.5px 0;
     float: right;
 }
 
 .nav-menu ul {
-    font-size: 1.3em;
+    font-size: 1.25em;
     width: 100%;   
     letter-spacing: .15px;
 }
@@ -213,7 +213,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 83px;
+    padding-top: 75px;
     position: relative;
     display: block;
 }
