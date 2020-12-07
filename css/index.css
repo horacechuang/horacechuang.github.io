@@ -6,10 +6,6 @@
     margin: 0 auto;
 }
 
-.project-container {
-    max-width: 1180px;
-}
-
 /* header */
 
 header#header {
@@ -123,16 +119,16 @@ span.wave {
 #header-container > .paragraph h3 {
     font-size: 2em;
     font-weight: 400;
-    line-height: 1.95em;
+    line-height: 2em;
     color: rgb(139, 139, 139);
 }
 
 .paragraph p {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
-    font-size: 1.75em;
-    line-height: 2.1em;
+    font-size: 1.85em;
+    line-height: 2.15em;
     letter-spacing: 0.25px;
     display: block;
     margin: 40px 0;
@@ -295,7 +291,7 @@ section#project {
 }
 
 section#project .project-main-container {
-    max-width: 1440px;
+    max-width: 1280px;
     display: block;
     position: relative;
     margin: 0 auto;
@@ -326,8 +322,8 @@ section#project .project-main-container {
 }
 
 .project-grid a {
-    width: 47.5%;
-    margin-bottom: 50px;
+    width: 49.5%;
+    margin-bottom: 2em;
     transition: .5s all ease;
     padding: 35px 30px 50px;
     border-radius: 35px;
@@ -422,8 +418,8 @@ li.grid:hover > span::before {
 li.grid .tag {
     display: flex;
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
     flex-direction: row;
     align-items: center;
@@ -431,10 +427,11 @@ li.grid .tag {
     font-family: 'Roboto Slab', sans-serif;
     transition: .5s all ease;
     animation: 3.5s morphing ease-in-out infinite;
-    font-size: 1.35em;
+    font-size: 1.3em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 2;
+    transform: scale(1.15);
 }
 
 @keyframes morphing {
@@ -463,7 +460,7 @@ li.grid .t02, li.grid .t04, li.grid .t06 {
 }
 
 li.grid:hover .tag {
-    transform: scale(1.25);
+    transform: scale(1.05);
     box-shadow: 0px 15px 45px -15px rgba(0, 0, 0, 0.5);
 }
 
@@ -750,8 +747,8 @@ ul.expertise-content p {
 }
 
 @media all and (max-width: 1490px) {
-    section#project .project-main-container {
-        margin: 0 25px;
+    section#project {
+        padding: 0 25px;
     }
 }
 

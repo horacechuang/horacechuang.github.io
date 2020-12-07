@@ -64,7 +64,7 @@ nav > .nav-container {
 
 .nav-container > .logo{
     display: block;
-    padding: 17.5px 0;
+    padding: 14.5px 0;
     float: left;
 }
 
@@ -119,7 +119,7 @@ nav > .nav-container {
 }
 
 .nav-container > .nav-menu {
-    margin: 17.5px 0;
+    margin: 14.5px 0;
     float: right;
 }
 
@@ -213,7 +213,7 @@ nav > .nav-container {
 /* deco-line */
 
 #decoration-line {
-    padding-top: 75px;
+    padding-top: 70px;
     position: relative;
     display: block;
 }
@@ -460,7 +460,7 @@ footer.addShadow {
 .footer-cta h3:first-child {
     font-weight: 400;
     font-size: 1.25em;
-    margin-bottom: 5px;
+    margin-bottom: 7.5px;
 }
 
 h3.h3-footer-eng {
