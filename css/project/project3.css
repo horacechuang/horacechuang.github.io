@@ -10,11 +10,14 @@ header#header {
     display: block;
     position: relative;
     width: 100%;
-    background: rgb(255, 238, 233) url('../../img/project3/header-interface.png');
-    background-position: top right;
+    background: 
+    url('../../img/project3/header-interface.png'), 
+    url('../../img/project3/header-background-dotted.svg'), 
+    rgb(255, 238, 233);
+    background-position: top right, bottom;
     background-origin: border-box;
-    background-size: 950px;
-    background-repeat: no-repeat;
+    background-size: 1020px, auto;
+    background-repeat: no-repeat, repeat-x;
     margin-top: -75px;
 }
 
@@ -38,7 +41,6 @@ header#header .header-container {
     min-width: 500px;
 }
 
-
 .header-container aside img {
     max-width: 225px;
 }
@@ -53,10 +55,10 @@ header#header .header-container {
 .header-container span.tag {
     font-size: 1.25em;
     background: rgb(255, 247, 245);
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 7.5px;
+    padding: 12.5px;
     color: rgb(167, 27, 27);
-    box-shadow: 0px 15px 45px -15px rgba(79, 79, 79, 0.5);
+    box-shadow: 0px 25px 75px -10px rgba(50, 50, 50, .35);
 }
 
 /* project-main-navigator */
@@ -76,8 +78,8 @@ li.navi-btn a.next-img {
     }
 
     header#header {
-        background-size: contain;
-        background-position: calc(50% + 150px) center;
+        background-size: contain, auto;
+        background-position: calc(50% + 250px) center, bottom;
     }
 
 }
@@ -85,8 +87,8 @@ li.navi-btn a.next-img {
 @media all and (max-width: 980px) {
     
     header#header {
-        background-position: calc(50% + 150px) -50px;
-        background-size: 825px;
+        background-position: calc(50% + 200px) -25px, bottom;
+        background-size: 825px, auto;
     }
 
     header#header .header-container {
@@ -108,15 +110,15 @@ li.navi-btn a.next-img {
 @media all and (max-width: 768px) {
 
     header#header {
-        background-size: cover;
-        background-position: center -50px;
+        background-size: 775px, auto;
+        background-position: center -50px, bottom;
     }
 
     header#header .header-container {
         justify-content: flex-end;
         align-items: center;
-        height: 700px;
-        padding-bottom: 50px;
+        height: 725px;
+        padding: 75px 0;
     }
 
     .header-container aside {
@@ -127,11 +129,20 @@ li.navi-btn a.next-img {
     }
 
     .header-container aside img {
-        max-width: 185px;
+        max-width: 175px;
     }
 
     .header-container aside h2.title {
-        margin: 20px 0 35px;
+        margin: 25px 0 35px;
+        font-size: 1.5em;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+
+    header#header {
+        background-size: 725px, auto;
     }
 
 }
