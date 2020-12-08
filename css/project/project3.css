@@ -1,7 +1,62 @@
 /* general */
-header, main {
+main {
     max-width: 1080px;
     margin: 0 auto;
+}
+
+/* header */
+
+header#header {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: rgb(255, 238, 233) url('../../img/project3/header-interface.png');
+    background-position: top right;
+    background-origin: border-box;
+    background-size: 950px;
+    background-repeat: no-repeat;
+    margin-top: -75px;
+}
+
+header#header .header-container {
+    height: 90vh;
+    min-height: 625px;
+    max-width: 1080px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 75px 0 0;
+}
+
+.header-container aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 500px;
+}
+
+
+.header-container aside img {
+    max-width: 225px;
+}
+
+.header-container aside h2.title {
+    display: block;
+    margin: 30px 0 50px;
+    color: rgb(205, 75, 66);
+    font-size: 1.75em;
+}
+
+.header-container span.tag {
+    font-size: 1.25em;
+    background: rgb(255, 247, 245);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(167, 27, 27);
+    box-shadow: 0px 15px 45px -15px rgba(79, 79, 79, 0.5);
 }
 
 /* project-main-navigator */
@@ -15,7 +70,68 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 1229px) {
-    header, main {
+
+    header#header, main#container {
         padding: 0 25px;
     }
+
+    header#header {
+        background-size: contain;
+        background-position: calc(50% + 150px) center;
+    }
+
+}
+
+@media all and (max-width: 980px) {
+    
+    header#header {
+        background-position: calc(50% + 150px) -50px;
+        background-size: 825px;
+    }
+
+    header#header .header-container {
+        align-items: flex-start;
+        height: 600px;
+    }
+
+    .header-container aside img {
+        max-width: 200px;
+    }
+
+    .header-container aside h2.title {
+        margin: 25px 0 50px;
+        font-size: 1.65em;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    header#header {
+        background-size: cover;
+        background-position: center -50px;
+    }
+
+    header#header .header-container {
+        justify-content: flex-end;
+        align-items: center;
+        height: 700px;
+        padding-bottom: 50px;
+    }
+
+    .header-container aside {
+        min-width: 0;
+        width: 100% !important;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .header-container aside img {
+        max-width: 185px;
+    }
+
+    .header-container aside h2.title {
+        margin: 20px 0 35px;
+    }
+
 }
