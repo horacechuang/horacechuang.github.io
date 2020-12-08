@@ -48,28 +48,6 @@ header#header .header-container {
     }
 }
 
-.header-container img.circle {
-    width: 650px;
-    display: block;
-    position: absolute;
-    animation: 5s circle linear infinite;
-    z-index: -2;
-}
-
-@keyframes circle {
-    0% {
-        transform: translateX(-32.5%) rotate(0deg);
-        opacity: .25;
-    }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        transform: translateX(-32.5%) rotate(360deg);
-        opacity: .25;
-    }
-}
-
 .header-container aside {
     display: flex;
     position: relative;
@@ -156,24 +134,6 @@ li.navi-btn a.next-img {
         align-items: center;
         height: 725px;
         padding: 75px 0;
-    }
-
-    .header-container img.circle {
-        width: 500px;
-    }
-
-    @keyframes circle {
-        0% {
-            transform: translateY(30.5%) rotate(0deg);
-            opacity: .15;
-        }
-        50% {
-            opacity: .5;
-        }
-        100% {
-            transform: translateY(30.5%) rotate(360deg);
-            opacity: .15;
-        }
     }
 
     .header-container aside {
