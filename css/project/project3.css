@@ -13,12 +13,13 @@ header#header {
     background: 
     url('../../img/project3/header-interface.png'), 
     url('../../img/project3/header-background-dotted.svg'), 
-    rgb(255, 238, 233);
-    background-position: top right, bottom;
+    rgb(255, 243, 239);
+    background-position: calc(50% + 300px) 25px, bottom;
     background-origin: border-box;
     background-size: 1020px, auto;
     background-repeat: no-repeat, repeat-x;
     margin-top: -75px;
+    overflow: hidden;
 }
 
 header#header .header-container {
@@ -32,10 +33,46 @@ header#header .header-container {
     justify-content: center;
     margin: 0 auto;
     padding: 75px 0 0;
+    animation: 2s move ease infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.header-container img.circle {
+    width: 650px;
+    display: block;
+    position: absolute;
+    animation: 5s circle linear infinite;
+    z-index: -2;
+}
+
+@keyframes circle {
+    0% {
+        transform: translateX(-32.5%) rotate(0deg);
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        transform: translateX(-32.5%) rotate(360deg);
+        opacity: .25;
+    }
 }
 
 .header-container aside {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     min-width: 500px;
@@ -79,7 +116,7 @@ li.navi-btn a.next-img {
 
     header#header {
         background-size: contain, auto;
-        background-position: calc(50% + 250px) center, bottom;
+        background-position: calc(50% + 200px) center, bottom;
     }
 
 }
@@ -87,8 +124,8 @@ li.navi-btn a.next-img {
 @media all and (max-width: 980px) {
     
     header#header {
-        background-position: calc(50% + 200px) -25px, bottom;
-        background-size: 825px, auto;
+        background-position: calc(50% + 225px) -25px, bottom;
+        background-size: 785px, auto;
     }
 
     header#header .header-container {
@@ -119,6 +156,24 @@ li.navi-btn a.next-img {
         align-items: center;
         height: 725px;
         padding: 75px 0;
+    }
+
+    .header-container img.circle {
+        width: 500px;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: translateY(30.5%) rotate(0deg);
+            opacity: .15;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            transform: translateY(30.5%) rotate(360deg);
+            opacity: .15;
+        }
     }
 
     .header-container aside {
