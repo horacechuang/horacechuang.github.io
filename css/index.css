@@ -14,7 +14,7 @@
 
 header#header {
     position: relative;
-    padding: 65px 0;
+    padding-top: 65px;
 }
 
 /* img */
@@ -408,7 +408,7 @@ li.grid img {
 
 li.grid:hover img {
     transform: scale(1.02);
-    box-shadow: none;]
+    box-shadow: none;
 }
 
 /* li.grid span {
