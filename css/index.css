@@ -1,12 +1,12 @@
 /* general set */
 
 #header-container, 
-.project-container {
+.project-grid {
     max-width: 1080px;
     margin: 0 auto;
 }
 
-.project-container {
+.project-grid {
     max-width: 1180px;
 }
 
@@ -219,14 +219,14 @@ section#project {
     position: relative;
 }
 
-.project-intro {
+.project-title {
     position: relative;
     display: block;
     margin-bottom: -50px;
     z-index: 1;
 }
 
-.project-intro::before {
+.project-title::before {
     content: "";
     position: relative;
     display: block;
@@ -234,7 +234,7 @@ section#project {
     height: 65px;
 }
 
-.project-intro::after {
+.project-title::after {
     content: "\f063";
     position: relative;
     display: block;
@@ -249,7 +249,7 @@ section#project {
     -webkit-font-smoothing: antialiased;
     text-align: center;
     color: rgb(201, 201, 201);
-    margin: 40px auto -150px;
+    margin: 40px auto -170px;
     animation: 1s scroll ease infinite; 
 }
 
@@ -267,9 +267,9 @@ section#project {
     }
 } 
 
-.project-intro h2 {
+.project-title h2 {
     max-width: 300px;
-    font-size: 2.75em;
+    font-size: 2.5em;
     text-align: center;
     background: linear-gradient(90deg ,rgb(22, 230, 181), rgb(74, 206, 254) 60%, rgb(22, 230, 181));
     background-size: 200% 100%;
@@ -312,7 +312,6 @@ section#project .project-main-container {
 }
 
 .project-grid {
-    margin: 0 auto;
     position: relative;
     padding-bottom: 50px;
 }
@@ -329,8 +328,8 @@ section#project .project-main-container {
     width: 47.5%;
     margin-bottom: 2em;
     transition: .5s all ease;
-    padding: 35px 30px 50px;
-    border-radius: 35px;
+    padding: 50px 30px;
+    border-radius: 25px;
 }
 
 .project-grid a:hover{
@@ -353,13 +352,37 @@ li.grid {
     position: relative;
 }
 
-li.grid h3 {
+li.grid .title {
+    display: block;
+    position: relative;
+    margin: 50px 0;
+}
+
+li.grid .title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgb(223, 223, 223);
+    top: 25px;
+}
+
+li.grid .title h3 {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-size: 2.15em;
-    line-height: 2.5em;
     font-weight: 600;
-    margin: 30px 0 10px 0;
-    transition: 0.15s all linear;
+    transition: .15s all linear;
+}
+
+li.grid .title h3::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 2px;
+    background: rgb(179, 179, 179);
+    top: 25px;
 }
 
 li.grid p {
@@ -380,16 +403,15 @@ li.grid img {
     width: 100%;
     transition: .5s all ease;
     box-shadow: 0px 27px 65px -30px rgba(54, 54, 54, .35);
-    border-radius: 50px 0;
+    border-radius: 35px;
 }
 
 li.grid:hover img {
     transform: scale(1.02);
-    box-shadow: none;
-    border-radius: 25px;
+    box-shadow: none;]
 }
 
-li.grid span {
+/* li.grid span {
     display: inline-block;
     position: relative;
     margin-top: 25px;
@@ -407,9 +429,9 @@ li.grid span::before {
     right: 0;
     transition: .25s all ease;
     transform: scaleX(0);
-}
+} */
 
-li.grid:hover > span {
+/* li.grid:hover > span {
     color: #67c1fd;
     transform: translateY(3px);
 }
@@ -417,25 +439,27 @@ li.grid:hover > span {
 li.grid:hover > span::before {
     transform: scaleX(1);
     background-color: #67c1fd;
-}
+} */
 
 li.grid .tag {
     display: flex;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Slab', sans-serif;
     transition: .5s all ease;
-    animation: 3.5s morphing ease-in-out infinite;
-    font-size: 1.3em;
+    animation: 3s morphing linear infinite;
+    font-size: 1.25em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     z-index: 2;
-    transform: scale(1.15);
+    transform: scale(1);
+    top: -15px;
+    right: 0px;
 }
 
 @keyframes morphing {
@@ -453,18 +477,18 @@ li.grid .tag {
       }
 }
 
-li.grid .t01, li.grid .t03, li.grid .t05 {
+/* li.grid .tag-odd {
     top: -25px;
     left: -15px;
 }
 
-li.grid .t02, li.grid .t04, li.grid .t06 {
+li.grid .tag-even {
     top: -25px;
     right: -15px;
-}
+} */
 
 li.grid:hover .tag {
-    transform: scale(1.05);
+    transform: scale(1.15);
     box-shadow: 0px 15px 45px -15px rgba(0, 0, 0, 0.5);
 }
 
@@ -725,19 +749,19 @@ ul.expertise-content li {
     margin: 20px 0 25px 0;
 }
 
-ul.expertise-content li > .title {
+ul.expertise-content .title {
     min-height: 90px;
     display: block;
     position: relative;
 }
 
-.title h2 {
+ul.expertise-content .title h2 {
     font-size: 1.85em;
     line-height: 2em;
     font-weight: 400;
 }
 
-.title h3 {
+ul.expertise-content .title h3 {
     font-size: 1.6em;
     line-height: 1.85em;
 }
@@ -824,14 +848,14 @@ ul.expertise-content p {
 
     /* project */
 
-    .project-intro {
+    .project-title {
         margin-bottom: -35px;   
     }
 
-    .project-intro h2 {
-        font-size: 2.3em;
+    .project-title h2 {
+        font-size: 2.35em;
         max-width: 250px;
-        padding: 15px;
+        padding: 20px;
     }
 
     .project-grid ul {
@@ -844,10 +868,16 @@ ul.expertise-content p {
         padding: 35px 30px 50px;
     }
 
-    li.grid h3 {
+    li.grid .title {
+        margin: 35px 0 50px;
+    }
+
+    li.grid .title h3 {
         font-size: 2em;
-        line-height: 1.75em;
-        margin: 35px 0 15px 0;
+    }
+
+    li.grid .title h3::after {
+        width: 50px;
     }
 
     /* about */
@@ -889,11 +919,11 @@ ul.expertise-content p {
         min-height: 85px;
     }
     
-    .title h2 {
+    ul.expertise-content .title h2 {
         font-size: 1.65em;
     }
     
-    .title h3 {
+    ul.expertise-content .title h3 {
         font-size: 1.4em;
         line-height: 1.85em;
     }
@@ -925,12 +955,12 @@ ul.expertise-content p {
 
     /* project */
 
-    .project-intro h2 {
-        font-size: 2.15em;
-        max-width: 235px;
+    .project-title h2 {
+        font-size: 2.25em;
+        max-width: 240px;
     }
 
-    li.grid h3 {
+    li.grid .title h3 {
         font-size: 1.75em;
     }
 
@@ -943,13 +973,13 @@ ul.expertise-content p {
         font-size: 1.25em;
     }
 
-    li.grid span {
+    /* li.grid span {
         font-size: 1.5em;
     }
 
     li.grid span::before {
         top: 30px;
-    }
+    } */
 
     /* about */
 
@@ -1069,16 +1099,16 @@ ul.expertise-content p {
         padding-top: 140px;
     }
 
-    .project-intro {
+    .project-title {
         margin-bottom: -35px;   
     }
 
-    .project-intro::after {
+    .project-title::after {
         margin: 30px auto -120px;
     }
 
-    .project-intro h2 {
-        font-size: 1.85em;
+    .project-title h2 {
+        font-size: 1.75em;
         max-width: 200px;
         padding: 15px;
     }
@@ -1093,9 +1123,8 @@ ul.expertise-content p {
         margin-right: 0px !important;
     }
 
-    li.grid h3 {
+    li.grid .title h3 {
         font-size: 1.65em;
-        margin: 30px 0 10px 0;
     }
 
     li.grid p {
@@ -1107,24 +1136,24 @@ ul.expertise-content p {
         font-size: 1.2em;
     }
 
-    li.grid span {
+    /* li.grid span {
         margin: 10px 0 15px 0;
     }
 
     li.grid span::before {
         top: 30px;
-    }
+    } */
 
     li.grid .tag {
-        width: 60px;
-        height: 60px;
-        animation: 2.5s morphing linear infinite;
-        font-size: 1.2em;
-        font-weight: 400;
+        width: 55px;
+        height: 55px;
+        animation: 2s morphing linear infinite;
+        font-size: 1em;
+        font-weight: 600;
     }
     
     li.grid:hover .tag {
-        transform: scale(1.25);
+        transform: scale(1.15);
     }
 
     /* about */
@@ -1233,11 +1262,11 @@ ul.expertise-content p {
         min-height: 75px;
     }
 
-    .title h2 {
+    ul.expertise-content .title h2 {
         font-size: 1.5em;
     }
 
-    .title h3 {
+    ul.expertise-content .title h3 {
         font-size: 1.35em;
     }
 
@@ -1259,30 +1288,34 @@ ul.expertise-content p {
 
     /* project */
 
-    .project-intro::before {
+    .project-title::before {
         height: 20px;
     }
 
-    .project-intro::after {
-        margin: 20px auto -120px;
+    .project-title::after {
+        margin: 30px auto -140px;
+        font-size: 2.75em;
     }
 
     .project-grid a {
         padding: 35px 25px !important;
     }
 
-    li.grid h3 {
+    li.grid .title h3 {
         font-size: 1.45em;
-        margin: 30px 0 10px 0;
+    }
+
+    li.grid .title h3::after {
+        width: 35px;
     }
 
     li.grid p, li.grid span {
         font-size: 1.25em;
     }
 
-    li.grid span::before {
+    /* li.grid span::before {
         top: 25px;
-    }
+    } */
 
     main.about-main {
         margin: 80px 0 0px;
