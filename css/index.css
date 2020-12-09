@@ -316,7 +316,7 @@ section#project .project-main-container {
     padding-bottom: 50px;
 }
 
-.project-grid ul {
+.project-grid ul.grid-box.grid-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -324,7 +324,7 @@ section#project .project-main-container {
     align-items: flex-start;
 }
 
-.project-grid a {
+.project-grid a.grid-container {
     width: 47.5%;
     margin-bottom: 2em;
     transition: .5s all ease;
@@ -332,33 +332,33 @@ section#project .project-main-container {
     border-radius: 25px;
 }
 
-.project-grid a:hover{
+.project-grid a.grid-container:hover{
     box-shadow: -4px 9px 35px -6px rgba(0, 0, 0, .15);
     background-color: rgb(255,255,255);
     transform: translateY(10px);
 }
 
-.project-grid > ul.grid-box:hover a {
-    opacity: .35;
-    transition: 0.15s all linear;
+.project-grid ul.grid-box.grid-box:hover a {
+    opacity: .25;
+    transition: .25s all linear;
 }
 
-.project-grid > ul.grid-box:hover a:hover {
+.project-grid ul.grid-box.grid-box:hover a:hover {
     opacity: 1;
 }
 
-li.grid {
+li.grid-inner {
     display: block;
     position: relative;
 }
 
-li.grid .title {
+li.grid-inner .title {
     display: block;
     position: relative;
     margin: 50px 0;
 }
 
-li.grid .title::after {
+li.grid-inner .title::after {
     content: "";
     position: relative;
     display: block;
@@ -368,24 +368,24 @@ li.grid .title::after {
     top: 25px;
 }
 
-li.grid .title h3 {
+li.grid-inner .title h3 {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-size: 2.15em;
     font-weight: 600;
     transition: .15s all linear;
 }
 
-li.grid .title h3::after {
+li.grid-inner .title h3::after {
     content: "";
     position: relative;
     display: block;
-    width: 75px;
-    height: 2px;
-    background: rgb(179, 179, 179);
+    width: 65px;
+    height: 1px;
+    background: rgb(147, 147, 147);
     top: 25px;
 }
 
-li.grid p {
+li.grid-inner p {
     font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
     font-size: 1.5em;
     line-height: 2em;
@@ -393,25 +393,25 @@ li.grid p {
     letter-spacing: .25px;
 }
 
-li.grid > p.eng-grid-p {
+li.grid-inner > p.eng-grid-p {
     margin: 15px 0;
     font-size: 1.35em;
     color: rgb(179, 179, 179);
 }
 
-li.grid img {
+li.grid-inner img {
     width: 100%;
     transition: .5s all ease;
     box-shadow: 0px 27px 65px -30px rgba(54, 54, 54, .35);
-    border-radius: 35px;
+    border-radius: 25px;
 }
 
-li.grid:hover img {
-    transform: scale(1.02);
+li.grid-inner:hover img {
+    transform: scale(1.05);
     box-shadow: none;
 }
 
-/* li.grid span {
+/* li.grid-inner span {
     display: inline-block;
     position: relative;
     margin-top: 25px;
@@ -420,7 +420,7 @@ li.grid:hover img {
     transition: .25s all linear;
 }
 
-li.grid span::before {
+li.grid-inner span::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -431,17 +431,17 @@ li.grid span::before {
     transform: scaleX(0);
 } */
 
-/* li.grid:hover > span {
+/* li.grid-inner:hover > span {
     color: #67c1fd;
     transform: translateY(3px);
 }
 
-li.grid:hover > span::before {
+li.grid-inner:hover > span::before {
     transform: scaleX(1);
     background-color: #67c1fd;
 } */
 
-li.grid .tag {
+li.grid-inner .tag {
     display: flex;
     position: absolute;
     width: 60px;
@@ -477,30 +477,30 @@ li.grid .tag {
       }
 }
 
-/* li.grid .tag-odd {
+/* li.grid-inner .tag-odd {
     top: -25px;
     left: -15px;
 }
 
-li.grid .tag-even {
+li.grid-inner .tag-even {
     top: -25px;
     right: -15px;
 } */
 
-li.grid:hover .tag {
+li.grid-inner:hover .tag {
     transform: scale(1.15);
     box-shadow: 0px 15px 45px -15px rgba(0, 0, 0, 0.5);
 }
 
-li.grid .tag-ui-ux {
+li.grid-inner .tag-ui-ux {
     background: linear-gradient(45deg,rgb(255, 51, 102) 0,rgb(244, 113, 43));
 }
 
-li.grid .tag-web {
+li.grid-inner .tag-web {
     background: linear-gradient(45deg,rgb(51, 255, 201) 0,rgb(43, 167, 244));
 }
 
-li.grid .tag-visual {
+li.grid-inner .tag-visual {
     background: linear-gradient(45deg,rgb(158, 88, 255) 0,rgb(74, 27, 216));
 }
 
@@ -858,25 +858,25 @@ ul.expertise-content p {
         padding: 20px;
     }
 
-    .project-grid ul {
+    .project-grid ul.grid-box {
         justify-content: space-evenly;
     }
 
-    .project-grid a {
+    .project-grid a.grid-container {
         width: 45%;
         margin-bottom: 20px;
         padding: 35px 30px 50px;
     }
 
-    li.grid .title {
+    li.grid-inner .title {
         margin: 35px 0 50px;
     }
 
-    li.grid .title h3 {
+    li.grid-inner .title h3 {
         font-size: 2em;
     }
 
-    li.grid .title h3::after {
+    li.grid-inner .title h3::after {
         width: 50px;
     }
 
@@ -960,24 +960,24 @@ ul.expertise-content p {
         max-width: 240px;
     }
 
-    li.grid .title h3 {
+    li.grid-inner .title h3 {
         font-size: 1.75em;
     }
 
-    li.grid p {
+    li.grid-inner p {
         font-size: 1.35em;
         line-height: 1.9em;
     }
 
-    li.grid > p.eng-grid-p {
+    li.grid-inner > p.eng-grid-p {
         font-size: 1.25em;
     }
 
-    /* li.grid span {
+    /* li.grid-inner span {
         font-size: 1.5em;
     }
 
-    li.grid span::before {
+    li.grid-inner span::before {
         top: 30px;
     } */
 
@@ -1115,7 +1115,7 @@ ul.expertise-content p {
 
     /* project */
 
-    .project-grid a {
+    .project-grid a.grid-container {
         width: 95%;
         margin: 0 auto;
         padding: 30px 25px !important;
@@ -1123,28 +1123,28 @@ ul.expertise-content p {
         margin-right: 0px !important;
     }
 
-    li.grid .title h3 {
+    li.grid-inner .title h3 {
         font-size: 1.65em;
     }
 
-    li.grid p {
+    li.grid-inner p {
         font-size: 1.25em;
         line-height: 2em;
     }
 
-    li.grid > p.eng-grid-p {
+    li.grid-inner > p.eng-grid-p {
         font-size: 1.2em;
     }
 
-    /* li.grid span {
+    /* li.grid-inner span {
         margin: 10px 0 15px 0;
     }
 
-    li.grid span::before {
+    li.grid-inner span::before {
         top: 30px;
     } */
 
-    li.grid .tag {
+    li.grid-inner .tag {
         width: 55px;
         height: 55px;
         animation: 2s morphing linear infinite;
@@ -1152,7 +1152,7 @@ ul.expertise-content p {
         font-weight: 600;
     }
     
-    li.grid:hover .tag {
+    li.grid-inner:hover .tag {
         transform: scale(1.15);
     }
 
@@ -1297,23 +1297,23 @@ ul.expertise-content p {
         font-size: 2.75em;
     }
 
-    .project-grid a {
+    .project-grid a.grid-container {
         padding: 35px 25px !important;
     }
 
-    li.grid .title h3 {
+    li.grid-inner .title h3 {
         font-size: 1.45em;
     }
 
-    li.grid .title h3::after {
+    li.grid-inner .title h3::after {
         width: 35px;
     }
 
-    li.grid p, li.grid span {
+    li.grid-inner p, li.grid-inner span {
         font-size: 1.25em;
     }
 
-    /* li.grid span::before {
+    /* li.grid-inner span::before {
         top: 25px;
     } */
 
