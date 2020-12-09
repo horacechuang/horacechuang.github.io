@@ -1116,11 +1116,13 @@ ul.expertise-content p {
     /* project */
 
     .project-grid a.grid-container {
-        width: 95%;
-        margin: 0 auto;
+        width: 92.5%;
+        margin: 0 auto 15px !important;
         padding: 30px 25px !important;
-        margin-left: 0px !important;
-        margin-right: 0px !important;
+    }
+
+    .project-grid a.grid-container::last-child() {
+        margin: 0 auto !important;
     }
 
     li.grid-inner .title h3 {
