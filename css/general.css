@@ -22,6 +22,7 @@ html, body {
     -ms-user-select: none; 
     -moz-user-select: none;
     -webkit-user-select: none;
+    animation: 1.5s fadeIn;
 }
 
 html.scrollHidden {
