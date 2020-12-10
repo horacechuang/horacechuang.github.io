@@ -1,10 +1,10 @@
 /* general */
 
-nav,
-footer#footer {
+nav {
     z-index: 5;
 }
 
+footer#footer,
 #decoration-line {
     z-index: 4;
 }
