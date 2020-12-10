@@ -485,7 +485,7 @@ picture.parallax-web {
 
 picture.work-web,
 picture.work-exhibit {
-    margin: 100px 0;
+    margin: 75px 0;
 }
 
 picture.work img,
@@ -503,6 +503,32 @@ picture.work video:hover {
 
 picture.work a:last-child img {
     margin-bottom: 0;
+}
+
+article.website .link {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: -25px 0 100px;
+}
+
+article.website .link a {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgb(255, 177, 207), rgb(213, 36, 133));
+    padding: 15px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 15px 35px -15px rgb(213, 95, 144);
+    transition: .25s all ease;
+}
+
+article.website .link a:hover {
+    transform: translateY(2.5px);
+    background: linear-gradient(135deg, rgb(232, 100, 150), rgb(165, 16, 81));
+    box-shadow: 0px 10px 25px -15px rgb(213, 95, 144);
 }
 
 /* project-main-navigator */
@@ -906,7 +932,7 @@ li.navi-btn a.next-img {
     }
 
     picture.work-full {
-        height: 80vh;
+        height: 85vh;
     }
 
     picture.work img,
@@ -1032,8 +1058,16 @@ li.navi-btn a.next-img {
         padding-left: 0;
     }
 
+    article.website .link {
+        margin: -25px 0 50px
+    }
+
+    article.website .link a {
+        padding: 15px 20px;
+        font-size: 1.25em;
+    }
+
     picture.work-full {
-        height: 80vh;
         margin: 25px auto 50px;
         background-attachment: scroll !important;
     }
