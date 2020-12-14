@@ -243,7 +243,11 @@ section#process aside.content p {
 
 /* problem */
 
-section#problem
+section#problem {
+    position: relative;
+    display: block;
+    margin-top: 100px;
+}
 
 /* project-main-navigator */
 
@@ -504,6 +508,16 @@ li.navi-btn a.next-img {
 
     section#intro article.row-img {
         margin-left: 50px;
+    }
+
+    /* process */
+
+    section#process {
+        padding: 0 50px 0 0;
+    }
+
+    section#process main.container {
+        padding: 50px 25px;
     }
 
 }
