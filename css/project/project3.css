@@ -99,7 +99,7 @@ section#preface main.container {
     background: rgb(255, 255, 255);
     padding: 35px 55px 35px 75px;
     border-top: 3px solid rgb(194, 70, 49);
-    box-shadow: 0px 45px 95px -50px rgba(91, 91, 91, 0.5);
+    box-shadow: 0px 45px 95px -50px rgba(91, 91, 91, .5);
 }
 
 section#preface main.container .row {
@@ -138,7 +138,7 @@ section#intro main.container {
     display: flex;
     position: relative;
     height: 100vh;
-    min-height: 750px;
+    min-height: 850px;
     flex-direction: row;
     justify-content: center;
 }
@@ -189,7 +189,7 @@ section#intro article.row-img {
     display: flex;
     align-items: center;
     background: linear-gradient(180deg, rgb(233, 133, 116), rgb(171, 36, 6));
-    box-shadow: -5px 15px 95px -5px rgba(99, 99, 99, 0.5);
+    box-shadow: -30px 50px 95px -15px rgba(99, 99, 99, .35);
     overflow: hidden;
     z-index: 2;
 }
@@ -202,9 +202,48 @@ section#intro .img {
 section#intro .img img {
     position: relative;
     display: block;
-    max-width: 950px;
+    max-width: 1050px;
     right: -100px;
 }
+
+/* process */
+
+section#process {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+section#process main.container {
+    max-width: 980px;
+    display: block;
+    margin: -25px auto 0;
+    padding: 50px 75px 25px 50px;
+    background: rgb(255, 255, 255);
+    border-bottom: 2.5px solid rgb(194, 70, 49);
+}
+
+section#process h2.title {
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    background: rgb(235, 94, 78);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-left: 5px solid rgb(233, 34, 12);
+}
+
+section#process aside.content p {
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 2.1em;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* problem */
+
+section#problem
 
 /* project-main-navigator */
 
@@ -214,6 +253,14 @@ li.navi-btn a.prev-img {
 
 li.navi-btn a.next-img {
     background: url('../../img/index/index_4.png') center center;
+}
+
+@media all and (min-width: 1650px) {
+
+    section#intro .img img {
+        max-width: 115%;
+    }
+
 }
 
 @media all and (max-width: 1229px) {
@@ -238,6 +285,12 @@ li.navi-btn a.next-img {
 
     section#intro .img img {
         right: -50px;
+    }
+
+    /* process */
+
+    section#process {
+        padding: 0 50px;
     }
 
 
@@ -277,8 +330,18 @@ li.navi-btn a.next-img {
     }
 
     section#intro .img img {
-        max-width: 750px;
+        max-width: 850px;
         right: 0;
+    }
+
+    /* process */
+
+    section#process h2.title {
+        font-size: 1.75em;
+    }
+
+    section#process aside.content p {
+        font-size: 1.35em;
     }
 
 }
@@ -379,13 +442,32 @@ li.navi-btn a.next-img {
         height: 500px;
         margin-left: 100px;
         overflow: visible;
-        box-shadow: -10px 15px 95px -5px rgba(53, 53, 53, 0.5);
+        box-shadow: -25px 55px 95px -40px rgba(53, 53, 53, 0.5);
     }
 
     section#intro .img img {
         max-width: 700px;
         top: -30px;
         left: 15px;
+    }
+
+    /* process */
+
+    section#process {
+        padding: 0 75px 0 0;
+    }
+
+    section#process main.container {
+        padding: 75px 50px 75px 50px;
+    }
+
+    section#process h2.title {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    section#process aside.content p {
+        font-size: 1.25em;
     }
 
 }
