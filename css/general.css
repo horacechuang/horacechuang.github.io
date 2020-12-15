@@ -83,16 +83,16 @@ nav > .nav-container {
     position: relative;
 }
 
-.nav-container .logo span {
-    /* font-size: 1.55em;
+/* .nav-container .logo span {
+    font-size: 1.55em;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
     color: rgb(133, 133, 133);
     margin-left: 1em;
     padding-left: 1em;
-    border-left: 1px solid rgb(133, 133, 133); */
-}
+    border-left: 1px solid rgb(133, 133, 133);
+} */
 
 .logo a img {
     animation: 3s rotateLogo linear infinite;
