@@ -167,10 +167,10 @@ nav > .nav-container {
     content: "";
     position: absolute;
     height: 1px;
-    top: 30px;
+    top: 25px;
     left: 0;
     right: 0;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(54, 54, 54);
     opacity: 0.5;
     transition: .25s all ease;
     /* transform-origin: bottom left; */
