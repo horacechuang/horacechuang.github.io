@@ -143,11 +143,11 @@ section#intro main.container {
     justify-content: center;
 }
 
-section#intro article.row {
+section#intro aside.row {
     width: 50%;
 }
 
-section#intro article.row-content {
+section#intro aside.row-content {
     background: rgb(255, 255, 255);
     display: flex;
     position: relative;
@@ -185,7 +185,7 @@ section#intro .content span {
     border-bottom: 1px solid rgb(66, 66, 66);
 }
 
-section#intro article.row-img {
+section#intro aside.row-img {
     display: flex;
     align-items: center;
     background: linear-gradient(180deg, rgb(233, 133, 116), rgb(171, 36, 6));
@@ -251,7 +251,7 @@ section#process ul.process-visual-container {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 85px 50px 75px;
+    margin: 0 85px 75px 75px;
 }
 
 ul.process-visual-container li {
@@ -290,7 +290,7 @@ ul.process-visual-container li::after {
     -webkit-font-smoothing: antialiased;
     top: calc(100% / 2.25);
     left: calc(60% * 2);
-    color: rgb(171, 36, 6);
+    color: rgb(255, 196, 196);
 }
 
 ul.process-visual-container li:last-child:after {
@@ -495,7 +495,7 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
-    section#intro article.row {
+    section#intro aside.row {
         width: 100%;
     }
 
@@ -513,7 +513,7 @@ li.navi-btn a.next-img {
         padding-left: 20px;
     }
 
-    section#intro article.row-img {
+    section#intro aside.row-img {
         height: 500px;
         margin-left: 100px;
         overflow: visible;
@@ -563,7 +563,6 @@ li.navi-btn a.next-img {
         font-size: 1.75em;
         top: 165px;
         left: calc(100% / 2.2);
-        color: rgb(171, 36, 6);
     }
 
     ul.process-visual-container li:hover h3.sub-title {
@@ -602,7 +601,7 @@ li.navi-btn a.next-img {
         padding: 125px 25px 75px;
     }
 
-    section#intro article.row-img {
+    section#intro aside.row-img {
         margin-left: 50px;
     }
 
