@@ -265,12 +265,12 @@ ul.process-visual-container li {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     text-align: center;
-    z-index: 1;
     transition: .5s all ease;
+    box-shadow: 0px 25px 55px -18px rgba(192,192,192,.65);
 }
 
 ul.process-visual-container li:hover h3.sub-title {
-    transform: scale(1.15);
+    transform: scale(1.25);
     box-shadow: 
     inset 0 25px 0 rgb(251, 251, 251), 
     inset 0 -15px 0 rgb(255, 227, 126);
@@ -299,7 +299,7 @@ ul.process-visual-container li:last-child:after {
 
 ul.process-visual-container li h3.sub-title {
     font-size: 2em;
-    transition: .75s all ease;
+    transition: .5s all ease;
     color: rgb(236, 128, 103);
     font-weight: 400;
 }
@@ -566,7 +566,9 @@ li.navi-btn a.next-img {
         color: rgb(171, 36, 6);
     }
 
-
+    ul.process-visual-container li:hover h3.sub-title {
+        transform: scale(1.15);
+    }
 
 }
 
@@ -602,6 +604,10 @@ li.navi-btn a.next-img {
 
     section#intro article.row-img {
         margin-left: 50px;
+    }
+
+    section#intro .img img {
+        left: -5px;
     }
 
     /* process */
