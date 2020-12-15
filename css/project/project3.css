@@ -163,7 +163,7 @@ section#intro .content {
 
 section#intro .content h2 {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: 1.25em;
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
@@ -173,7 +173,7 @@ section#intro .content h2 {
 
 section#intro .content p {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 2.1em;
     padding-left: 25px;
     margin: 1em 0;
@@ -218,14 +218,17 @@ section#process main.container {
     max-width: 980px;
     display: block;
     margin: -25px auto 0;
-    padding: 50px 75px 25px 50px;
     background: rgb(255, 255, 255);
     border-bottom: 2.5px solid rgb(194, 70, 49);
 }
 
+section#process aside.content {
+    padding: 75px 75px 25px 50px;
+}
+
 section#process h2.title {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: 1.5em;
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
@@ -235,10 +238,70 @@ section#process h2.title {
 
 section#process aside.content p {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 2.1em;
     padding-left: 20px;
     margin-bottom: 25px;
+}
+
+section#process ul.process-visual-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 85px 50px 75px;
+}
+
+ul.process-visual-container li {
+    display: flex;
+    width: 25%;
+    height: 200px;
+    background: rgba(247, 247, 247, 0.5);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: center;
+    z-index: 1;
+    transition: .5s all ease;
+}
+
+ul.process-visual-container li:hover h3.sub-title {
+    transform: scale(1.15);
+    box-shadow: 
+    inset 0 25px 0 rgb(251, 251, 251), 
+    inset 0 -15px 0 rgb(255, 227, 126);
+    color: rgb(171, 36, 6);
+}
+
+ul.process-visual-container li::after {
+    content: "\f061";
+    position: absolute;
+    display: flex;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 2em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    top: calc(100% / 2.25);
+    left: calc(60% * 2);
+    color: rgb(171, 36, 6);
+}
+
+ul.process-visual-container li:last-child:after {
+    display: none;
+}
+
+ul.process-visual-container li h3.sub-title {
+    font-size: 2em;
+    transition: .75s all ease;
+    color: rgb(236, 128, 103);
+    font-weight: 400;
 }
 
 /* problem */
@@ -326,11 +389,11 @@ li.navi-btn a.next-img {
     /* intro */
 
     section#intro .content h2 {
-        font-size: 1.75em;
+        font-size: 1.65em;
     }
 
     section#intro .content p {
-        font-size: 1.35em;
+        font-size: 1.3em;
     }
 
     section#intro .img img {
@@ -341,11 +404,19 @@ li.navi-btn a.next-img {
     /* process */
 
     section#process h2.title {
-        font-size: 1.75em;
+        font-size: 1.65em;
     }
 
     section#process aside.content p {
-        font-size: 1.35em;
+        font-size: 1.3em;
+    }
+
+    ul.process-visual-container li {
+        height: 150px;
+    }
+
+    ul.process-visual-container li h3.sub-title {
+        font-size: 1.75em;
     }
 
 }
@@ -461,8 +532,8 @@ li.navi-btn a.next-img {
         padding: 0 75px 0 0;
     }
 
-    section#process main.container {
-        padding: 75px 50px 75px 50px;
+    section#process aside.content {
+        padding: 75px 50px 25px 50px;
     }
 
     section#process h2.title {
@@ -473,6 +544,29 @@ li.navi-btn a.next-img {
     section#process aside.content p {
         font-size: 1.25em;
     }
+
+    section#process ul.process-visual-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 60px 50px 70px;
+    }
+
+    ul.process-visual-container li {
+        min-width: 150px;
+        min-height: 150px;
+        border-radius: 100%;
+        margin-bottom: 50px;
+    }
+
+    ul.process-visual-container li::after {
+        content: "\f063";
+        font-size: 1.75em;
+        top: 165px;
+        left: calc(100% / 2.2);
+        color: rgb(171, 36, 6);
+    }
+
+
 
 }
 
@@ -516,8 +610,14 @@ li.navi-btn a.next-img {
         padding: 0 50px 0 0;
     }
 
-    section#process main.container {
-        padding: 50px 25px;
+    section#process aside.content {
+        padding: 50px 25px 0;
+    }
+
+    section#process ul.process-visual-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
     }
 
 }
