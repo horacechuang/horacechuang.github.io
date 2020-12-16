@@ -336,7 +336,8 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::before,
-.project-grid a:nth-child(2):hover::before {
+.project-grid a:nth-child(2):hover::before,
+.project-grid a:nth-child(3):hover::before {
     content: "\f502";
     position: absolute;
     display: flex;
@@ -346,9 +347,9 @@ section#project .project-main-container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .85);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     font-style: normal;
@@ -362,8 +363,9 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::after,
-.project-grid a:nth-child(2):hover::after {
-    content: "Coming Soon.";
+.project-grid a:nth-child(2):hover::after,
+.project-grid a:nth-child(3):hover::after {
+    content: "Underconstruct 製作中";
     position: absolute;
     display: flex;
     justify-content: center;
@@ -373,7 +375,13 @@ section#project .project-main-container {
     width: 100%;
     height: 100%;
     font-size: 2em;
-    color: rgb(32, 204, 216);
+    font-weight: 600;
+    background: linear-gradient(270deg,#80fad1, #64c6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     z-index: 1;
 }
 
@@ -1170,12 +1178,14 @@ ul.expertise-content p {
     }
 
     .project-grid a:first-child:hover::before,
-    .project-grid a:nth-child(2):hover::before {
+    .project-grid a:nth-child(2):hover::before,
+    .project-grid a:nth-child(3):hover::before {
         font-size: 3.5em;
     }
 
     .project-grid a:first-child:hover::after,
-    .project-grid a:nth-child(2):hover::after {
+    .project-grid a:nth-child(2):hover::after,
+    .project-grid a:nth-child(3):hover::after {
         font-size: 1.5em;
     }
 

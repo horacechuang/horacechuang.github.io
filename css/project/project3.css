@@ -312,6 +312,10 @@ section#problem {
     margin-top: 100px;
 }
 
+section#problem main.container {
+    
+}
+
 /* project-main-navigator */
 
 li.navi-btn a.prev-img {
