@@ -336,8 +336,7 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::before,
-.project-grid a:nth-child(2):hover::before,
-.project-grid a:nth-child(3):hover::before {
+.project-grid a:nth-child(2):hover::before {
     content: "\f502";
     position: absolute;
     display: flex;
@@ -363,8 +362,7 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::after,
-.project-grid a:nth-child(2):hover::after,
-.project-grid a:nth-child(3):hover::after {
+.project-grid a:nth-child(2):hover::after {
     content: "Underconstruct 製作中";
     position: absolute;
     display: flex;
@@ -1178,14 +1176,12 @@ ul.expertise-content p {
     }
 
     .project-grid a:first-child:hover::before,
-    .project-grid a:nth-child(2):hover::before,
-    .project-grid a:nth-child(3):hover::before {
+    .project-grid a:nth-child(2):hover::before {
         font-size: 3.5em;
     }
 
     .project-grid a:first-child:hover::after,
-    .project-grid a:nth-child(2):hover::after,
-    .project-grid a:nth-child(3):hover::after {
+    .project-grid a:nth-child(2):hover::after {
         font-size: 1.5em;
     }
 
