@@ -2,6 +2,10 @@ main#container {
     padding-bottom: 150px !important;
 }
 
+p:last-child {
+    margin: 0 !important;
+}
+
 /* header */
 
 header#header {
@@ -162,7 +166,7 @@ section#intro .content {
 section#intro .content h2 {
     display: inline-block;
     font-size: 1.75em;
-    margin-bottom: 1.25em;
+    margin-bottom: 2.5em;
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
     padding: 15px 20px;
@@ -174,7 +178,7 @@ section#intro .content p {
     font-size: 1.35em;
     line-height: 2.1em;
     padding-left: 25px;
-    margin: 1em 0;
+    margin-bottom: 2em;
 }
 
 section#intro .content span {
@@ -214,7 +218,7 @@ section#process {
     z-index: 1;
 }
 
-section#process aside.content {
+section#process article.content {
     max-width: 980px;
     display: block;
     position: relative;
@@ -224,7 +228,7 @@ section#process aside.content {
     padding: 75px 75px 75px 50px;
 }
 
-section#process aside.content::before {
+section#process article.content::before {
     content: "";
     position: absolute;
     width: 400px;
@@ -242,19 +246,19 @@ section#process aside.content::before {
 section#process h2.title {
     display: inline-block;
     font-size: 1.75em;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
     padding: 15px;
     border-left: 5px solid rgb(233, 34, 12);
 }
 
-section#process aside.content p {
+section#process article.content p {
     display: inline-block;
     font-size: 1.35em;
-    line-height: 2.1em;
+    line-height: 2.15em;
     padding-left: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
 }
 
 section#process ul.process-visual-container {
@@ -353,11 +357,47 @@ section#problem {
 }
 
 section#problem main.container {
+    display: block;
+    position: relative;
+}
+
+section#problem article.content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
+}
+
+section#problem article.content aside.row {
+    width: 35%;
+}
+
+section#problem article.content aside.row-content {
+    width: 65%;
+}
+
+section#problem aside.row-content h2.title {
+    display: inline-block;
+    font-size: 1.75em;
+    margin-bottom: 2.5em;
+    background: rgb(235, 94, 78);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-left: 5px solid rgb(233, 34, 12);
+}
+
+section#problem aside.row-content p {
+    display: inline-block;
+    font-size: 1.35em;
+    line-height: 2.1em;
+    padding-left: 20px;
+    margin-bottom: 2.5em;
+}
+
+section#problem article.img {
+    width: 100%;
 }
 
 
@@ -421,7 +461,7 @@ li.navi-btn a.next-img {
         padding: 0 50px;
     }
 
-    section#process aside.content::before {
+    section#process article.content::before {
         background: linear-gradient(180deg, rgb(255, 225, 160), rgb(255, 132, 132));
         top: 0px;
         left: 0px;
@@ -478,10 +518,12 @@ li.navi-btn a.next-img {
 
     section#intro .content h2 {
         font-size: 1.65em;
+        margin-bottom: 2em;
     }
 
     section#intro .content p {
         font-size: 1.3em;
+        margin-bottom: 2em;
     }
 
     section#intro picture.img img {
@@ -493,10 +535,16 @@ li.navi-btn a.next-img {
 
     section#process h2.title {
         font-size: 1.65em;
+        margin-bottom: 2em;
     }
 
-    section#process aside.content p {
+    section#process article.content p {
         font-size: 1.3em;
+        margin-bottom: 2em;
+    }
+
+    section#process ul.process-visual-container::after {
+        margin: 50px auto 0;
     }
 
     ul.process-visual-container li {
@@ -511,6 +559,22 @@ li.navi-btn a.next-img {
 
     ul.process-visual-container li h3.sub-title {
         font-size: 1.75em;
+    }
+
+    /* problem */
+
+    section#problem {
+        margin-top: 50px;
+    }
+
+    section#problem aside.row-content h2.title {
+        font-size: 1.65em;
+        margin-bottom: 2em;
+    } 
+
+    section#problem aside.row-content p {
+        font-size: 1.3em;
+        margin-bottom: 2em;
     }
 
 }
@@ -650,13 +714,13 @@ li.navi-btn a.next-img {
         z-index: -1;
     }
 
-    section#process aside.content {
+    section#process article.content {
         padding: 75px 50px 0 50px;
         border-radius: 0 25px 0 0;
         margin: -25px auto 0;
     }
 
-    section#process aside.content::before {
+    section#process article.content::before {
         display: none;
     }
 
@@ -665,7 +729,7 @@ li.navi-btn a.next-img {
         margin-bottom: 2em;
     }
 
-    section#process aside.content p {
+    section#process article.content p {
         font-size: 1.25em;
     }
 
@@ -721,6 +785,14 @@ li.navi-btn a.next-img {
         margin-top: 150px;
     }
 
+    section#problem article.content aside.row {
+        width: 20%;
+    }
+
+    section#problem article.content aside.row-content {
+        width: 80%;
+    }
+
 }
 
 @media all and (max-width: 550px) {
@@ -768,7 +840,7 @@ li.navi-btn a.next-img {
         bottom: -15px;
     }
 
-    section#process aside.content {
+    section#process article.content {
         padding: 50px 25px 0;
     }
 
@@ -777,6 +849,16 @@ li.navi-btn a.next-img {
         align-items: center;
         margin: 0 auto;
         padding: 0 25px 50px;
+    }
+
+    /* problem */
+
+    section#problem article.content aside.row {
+        width: 15%;
+    }
+
+    section#problem article.content aside.row-content {
+        width: 85%;
     }
 
 }
