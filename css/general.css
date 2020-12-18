@@ -267,7 +267,7 @@ section#project-main-navigator .container .title {
     position: relative;
     display: block;
     max-width: 1110px;
-    margin: 0 6.75% 100px;
+    margin: 0 7.5% 100px;
     text-align: left;
 }
 
@@ -308,7 +308,7 @@ section#project-main-navigator .container .title > h3::after {
 }
 
 ul.nav li.navi-btn {
-    width: calc(100%/2.5);
+    width: calc(100% / 2.55);
     cursor: pointer;
     color: rgb(54, 54, 54);
 }
@@ -875,6 +875,10 @@ ul.footer-link-btn {
         margin-bottom: 100px;
     }
 
+    section#project-main-navigator .container .title {
+        margin: 0 15% 100px;
+    }
+
     section#project-main-navigator .container .title::after {
         top: 70px;
     }
@@ -889,7 +893,7 @@ ul.footer-link-btn {
 
     .container ul.nav {
         flex-direction: column;
-        padding: 0 6.75%;
+        padding: 0 15%;
     }
 
     ul.nav li.navi-btn {

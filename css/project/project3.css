@@ -281,7 +281,7 @@ section#process ul.process-visual-container::after {
     margin: 100px auto 0;
     background: url(../../img/project3/separate-line.svg);
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 20%;
     background-position: 50%;
 }
 
@@ -363,10 +363,11 @@ section#problem main.container {
 
 section#problem article.content {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    max-width: 1080px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -377,9 +378,9 @@ section#problem article.content aside.row {
 
 section#problem article.content aside.row-content {
     width: 65%;
-    padding: 0 0 75px 50px;
+    padding: 0 75px 75px 0;
     background: rgb(255, 255, 255);
-    border-radius: 0 0 0 35px;
+    border-radius: 0 0 35px 0;
 }
 
 section#problem article.content aside.row-content::before {
@@ -391,8 +392,8 @@ section#problem article.content aside.row-content::before {
     border-radius: 35% 10% 20% 50%;
     filter: blur(90px);
     -webkit-filter: blur(90px);
-    bottom: 25px;
-    left: -5px;
+    bottom: -25px;
+    right: -5px;
     z-index: -1;
 }
 
@@ -414,8 +415,37 @@ section#problem aside.row-content p {
     margin-bottom: 2.5em;
 }
 
+section#problem aside.row-content span {
+    color: rgb(235, 63, 44);
+}
+
 section#problem picture.img {
+    display: block;
+    position: relative;
+    max-width: 1180px;
+    margin: 25px auto;
+}
+
+section#problem picture.img::after {
+    content: "";
     width: 100%;
+    height: 100px;
+    position: relative;
+    display: block;
+    background: url(../../img/project3/separate-line.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50%;
+}
+
+section#problem picture.img img.desktop {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+section#problem picture.img img.mobile {
+    display: none;
 }
 
 
@@ -598,8 +628,8 @@ li.navi-btn a.next-img {
     section#problem article.content aside.row-content::before {
         width: 300px;
         height: 425px;
-        bottom: 45px;
-        left: -25px;
+        bottom: 15px;
+        right: -25px;
     }
 
 }
@@ -807,7 +837,7 @@ li.navi-btn a.next-img {
     /* problem */
 
     section#problem {
-        margin-top: 150px;
+        margin-top: 50px;
         padding: 0 0 75px 0;
     }
 
@@ -831,8 +861,26 @@ li.navi-btn a.next-img {
     section#problem article.content aside.row-content::before {
         width: 150px;
         height: 500px;
-        bottom: 25px;
+        bottom: 0px;
         left: 25px;
+    }
+
+    section#problem picture.img {
+        margin: 25px 30px 25px 0;
+    }
+
+    section#problem picture.img::after {
+        display: none;
+    }
+
+    section#problem picture.img img.desktop {
+        display: none;
+    }
+
+    section#problem picture.img img.mobile {
+        display: block;
+        width: 90%;
+        margin: 0 0 0 auto;
     }
 
 }
