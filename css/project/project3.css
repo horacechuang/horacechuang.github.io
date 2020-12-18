@@ -841,17 +841,13 @@ li.navi-btn a.next-img {
         padding: 0 0 75px 0;
     }
 
-    section#problem article.content {
-        padding: 0 50px 0 0;
-    }
-
     section#problem article.content aside.row {
         width: 15%;
     }
 
     section#problem article.content aside.row-content {
         width: 85%;
-        padding: 0 0 50px 25px;
+        padding: 0 50px 50px 25px;
     }
 
     section#problem article.content aside.row-content {
@@ -879,7 +875,7 @@ li.navi-btn a.next-img {
 
     section#problem picture.img img.mobile {
         display: block;
-        width: 90%;
+        width: 88%;
         margin: 0 0 0 auto;
     }
 
@@ -940,8 +936,6 @@ li.navi-btn a.next-img {
         margin: 0 auto;
         padding: 0 25px 50px;
     }
-
-    /* problem */
 
     
 
