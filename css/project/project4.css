@@ -293,15 +293,16 @@ section#exhibit {
 
 section#web header.container,
 section#exhibit header.container {
-    max-width: 980px;
+    max-width: 1080px;
     margin: -150px auto 0;
     padding: 50px 0;
-    border-top: 5px solid rgb(255, 139, 170);
+    border-top: 7.5px solid rgb(255, 139, 170);
     box-shadow: 0px -110px 130px -70px rgba(255, 89, 133, .7);
+    border-radius: 25px 25px 0 0;
 }
 
 section#exhibit header.container {
-    border-top: 5px solid rgb(236, 209, 255);
+    border-top: 7.5px solid rgb(236, 209, 255);
     box-shadow: 0px -110px 130px -70px rgba(210, 148, 255, .7);
 }
 
@@ -390,6 +391,7 @@ section#overview main.container p:last-child {
     margin: 0;
 }
 
+section#visual article.ideation,
 section#visual article.color,
 section#visual article.element,
 article.website,
@@ -401,6 +403,7 @@ article.exhibition {
     margin-bottom: 125px;
 }
 
+article.ideation .paragraph,
 article.color .paragraph,
 article.element .paragraph,
 article.website .paragraph,
@@ -413,9 +416,13 @@ article.exhibition .paragraph {
     padding-top: 50px;
 }
 
-article.color .paragraph,
+article.ideation .paragraph,
 article.element .paragraph {
     padding-top: 100px;
+}
+
+article.color .paragraph {
+    padding-top: 50px;
 }
 
 .paragraph h3 {
@@ -460,8 +467,8 @@ picture.work {
     padding: 0 calc(50vw - 525px);
 }
 
-picture.work-element {
-    margin: 100px auto;
+picture.work-color {
+    margin: 50px auto 150px;
 }
 
 picture.work-full {
@@ -509,7 +516,7 @@ article.website .link {
     display: flex;
     position: relative;
     justify-content: center;
-    margin: -25px 0 100px;
+    margin: -25px 0 200px;
 }
 
 article.website .link a {
@@ -627,15 +634,18 @@ li.navi-btn a.next-img {
     }
 
     section#overview,
+    article.ideation,
+    article.ideation picture.work,
     article.color,
-    article.color picture.work,
+    article.color picture.work-color,
     article.element .paragraph,
-    article.element picture.work-element,
+    article.element picture.work,
     article.website .paragraph,
     article.exhibition .paragraph {
         padding: 15px 25px;
     }
 
+    article.ideation .paragraph,
     article.color .paragraph, 
     article.element .paragraph {
         padding-top: 50px;
@@ -643,7 +653,7 @@ li.navi-btn a.next-img {
     
     section#web header.container,
     section#exhibit header.container {
-        margin: -200px 50px 0;
+        margin: -200px 75px 0;
         padding: 65px 0;
     }
 
@@ -684,16 +694,12 @@ li.navi-btn a.next-img {
         width: 40px;
         top: 90px;
     }
-
+    article.ideation .paragraph,
     article.color .paragraph, 
     article.element .paragraph,
     article.website .paragraph,
     article.exhibition .paragraph {
         margin: 0 auto;
-    }
-
-    picture.work-element {
-        margin: 50px auto;
     }
 
     picture.work-web,
@@ -725,7 +731,8 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 980px) {
 
-    section#overview, 
+    section#overview,
+    article.ideation, 
     article.color,
     article.element,
     article.website .paragraph, 
@@ -747,12 +754,17 @@ li.navi-btn a.next-img {
         padding: 25px 100px 0;
     }
 
+    article.ideation a img,
+    article.element a:last-child img {
+        padding: 25px 65px 0 !important;
+    }
+
     picture.work-full {
         height: 95vh;
     }
 
     picture.parallax-web {
-        background-size: 105%;
+        background-size: 135%;
     }
 
 }
@@ -871,6 +883,7 @@ li.navi-btn a.next-img {
         -webkit-backdrop-filter: blur(5px);
     }
 
+    article.ideation .paragraph,
     article.color .paragraph, 
     article.element .paragraph,
     article.website .paragraph,
@@ -880,8 +893,9 @@ li.navi-btn a.next-img {
 
     section#web header.container,
     section#exhibit header.container {
-        margin: -165px 25px 0;
+        margin: -165px 50px 0;
         padding: 55px 0;
+        border-radius: 15px 15px 0 0;
     }
 
     section#web header.container {
@@ -942,14 +956,29 @@ li.navi-btn a.next-img {
     picture.work-web a:last-child img,
     picture.work-exhibit img,
     picture.work-exhibit a:last-child img {
-        padding: 50px 0;
+        padding: 50px 25px !important;
         margin: 0;
+    }
+
+    article.ideation picture.work,
+    article.color picture.work-color,
+    article.element picture.work {
+        padding: 15px 0;
     }
 
     picture.work-web a:last-child img,
     picture.work-exhibit a:last-child img {
         padding: 25px 0 0;
     }
+
+    article.website .link {
+        margin: -25px 0 100px;
+    }
+
+    picture.parallax-web {
+        background-size: 130%;
+    }
+
 
 }
 
@@ -1045,6 +1074,7 @@ li.navi-btn a.next-img {
         font-size: 1.75em;
     }
 
+    article.ideation .paragraph,
     article.color .paragraph, 
     article.element .paragraph,
     article.website .paragraph, 

@@ -25,4 +25,4 @@ $(document).ready(function () {
 });
 
 // document.oncontextmenu = new Function("return false;");
-document.onmousedown = new Function("return false;");
+// document.onmousedown = new Function("return false;");
