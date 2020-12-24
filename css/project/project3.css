@@ -139,7 +139,7 @@ section#intro {
 section#intro main.container {
     display: flex;
     position: relative;
-    height: 85vh;
+    height: 75vh;
     min-height: 850px;
     flex-direction: row;
     justify-content: center;
@@ -206,7 +206,7 @@ section#intro picture.img img {
     position: relative;
     display: block;
     max-width: 1050px;
-    right: -100px;
+    right: -60px;
 }
 
 /* process */
@@ -432,10 +432,19 @@ section#problem picture.img::after {
     height: 100px;
     position: relative;
     display: block;
-    background: url(../../img/project3/separate-line.svg);
+    background: url("../../img/project3/separate-line.svg");
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 50%;
+    margin: 100px 0;
+}
+
+section#problem picture.img figcaption {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 1.25em;
+    line-height: 2.1em;
 }
 
 section#problem picture.img img.desktop {
@@ -446,6 +455,44 @@ section#problem picture.img img.desktop {
 
 section#problem picture.img img.mobile {
     display: none;
+}
+
+/* pain-point */
+
+section#pain-point {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+section#pain-point main.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+section#pain-point main.container article.content {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#pain-point article.content h2.title {
+    font-size: 1.75em;
+    margin-bottom: 2em;
+    background: rgb(235, 94, 78);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-left: 5px solid rgb(233, 34, 12);
+}
+
+section#pain-point article.content p {
+    font-size: 1.35em;
+    line-height: 2.1em;
+    margin-bottom: 2.5em;
 }
 
 
@@ -464,7 +511,7 @@ li.navi-btn a.next-img {
 @media all and (min-width: 1650px) {
 
     section#intro {
-        width: 82.5%;
+        max-width: 1440px;
         margin: -25px auto 0;
     }
 
@@ -473,7 +520,7 @@ li.navi-btn a.next-img {
     }
 
     section#intro picture.img img {
-        max-width: 140%;
+        max-width: 155%;
     }
 
 }
@@ -630,6 +677,21 @@ li.navi-btn a.next-img {
         height: 425px;
         bottom: 15px;
         right: -25px;
+    }
+
+    section#problem picture.img figcaption {
+        font-size: 1.15em;
+        padding: 0 10px 0 40px;
+    }
+
+    /* pain-point*/
+
+    section#pain-point article.content h2.title {
+        font-size: 1.65em;
+    }
+
+    section#pain-point article.content p {
+        font-size: 1.3em;
     }
 
 }
@@ -861,8 +923,21 @@ li.navi-btn a.next-img {
         left: 25px;
     }
 
+    section#problem aside.row-content h2.title {
+        font-size: 1.5em;
+    } 
+
+    section#problem aside.row-content p {
+        font-size: 1.25em;
+        line-height: 2.15em;
+    }
+
     section#problem picture.img {
         margin: 75px 30px 25px 0;
+    }
+
+    section#problem picture.img figcaption {
+        font-size: 1.05em;
     }
 
     section#problem picture.img::after {
@@ -877,6 +952,22 @@ li.navi-btn a.next-img {
         display: block;
         width: 93.5%;
         margin: 0 0 0 auto;
+    }
+
+    /* pain-point */
+
+    section#pain-point main.container article.content {
+        padding: 0 75px;
+
+    }
+
+    section#pain-point article.content h2.title {
+        font-size: 1.5em;
+    }
+
+    section#pain-point article.content p {
+        font-size: 1.25em;
+        line-height: 2.15em;
     }
 
 }
@@ -937,6 +1028,17 @@ li.navi-btn a.next-img {
         padding: 0 25px 50px;
     }
 
+    /* problem */
 
+    section#problem {
+        margin-top: 100px;
+    }
+
+    /* pain-point */
+
+    section#pain-point main.container article.content {
+        align-items: flex-start;
+        padding: 0 50px;
+    }
 
 }
