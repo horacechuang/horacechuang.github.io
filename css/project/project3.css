@@ -492,7 +492,8 @@ section#pain-point article.intro p {
 }
 
 section#pain-point main.container article.persona {
-    padding: 0;
+    padding: 100px 0;
+    align-items: flex-start;
 }
 
 
