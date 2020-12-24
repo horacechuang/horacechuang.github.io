@@ -25,9 +25,9 @@ header#header {
 }
 
 header#header .header-container {
-    height: 90vh;
+    height: 80vh;
     min-height: 800px;
-    max-width: 1080px;
+    max-width: 1180px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -459,28 +459,24 @@ section#problem picture.img img.mobile {
 
 /* pain-point */
 
-section#pain-point {
+section#pain-point,
+section#pain-point main.container {
     position: relative;
     display: block;
     width: 100%;
 }
 
-section#pain-point main.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    max-width: 980px;
-    margin: 0 auto;
-}
-
-section#pain-point main.container article.content {
+section#pain-point main.container article.intro,
+section#pain-point main.container article.persona {
     padding: 0 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
-section#pain-point article.content h2.title {
+section#pain-point article.intro h2.title {
     font-size: 1.75em;
     margin-bottom: 2em;
     background: rgb(235, 94, 78);
@@ -489,10 +485,14 @@ section#pain-point article.content h2.title {
     border-left: 5px solid rgb(233, 34, 12);
 }
 
-section#pain-point article.content p {
+section#pain-point article.intro p {
     font-size: 1.35em;
     line-height: 2.1em;
     margin-bottom: 2.5em;
+}
+
+section#pain-point main.container article.persona {
+    padding: 0;
 }
 
 
@@ -686,11 +686,11 @@ li.navi-btn a.next-img {
 
     /* pain-point*/
 
-    section#pain-point article.content h2.title {
+    section#pain-point article.intro h2.title {
         font-size: 1.65em;
     }
 
-    section#pain-point article.content p {
+    section#pain-point article.intro p {
         font-size: 1.3em;
     }
 
@@ -956,16 +956,16 @@ li.navi-btn a.next-img {
 
     /* pain-point */
 
-    section#pain-point main.container article.content {
+    section#pain-point main.container article.intro {
         padding: 0 75px;
 
     }
 
-    section#pain-point article.content h2.title {
+    section#pain-point article.intro h2.title {
         font-size: 1.5em;
     }
 
-    section#pain-point article.content p {
+    section#pain-point article.intro p {
         font-size: 1.25em;
         line-height: 2.15em;
     }
@@ -1036,7 +1036,7 @@ li.navi-btn a.next-img {
 
     /* pain-point */
 
-    section#pain-point main.container article.content {
+    section#pain-point main.container article.intro {
         align-items: flex-start;
         padding: 0 50px;
     }
