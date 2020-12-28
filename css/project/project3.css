@@ -175,7 +175,7 @@ section#intro .content h2 {
 
 section#intro .content p {
     display: inline-block;
-    font-size: 1.35em;
+    font-size: 1.45em;
     line-height: 2.1em;
     padding-left: 25px;
     margin-bottom: 2em;
@@ -255,8 +255,8 @@ section#process h2.title {
 
 section#process article.content p {
     display: inline-block;
-    font-size: 1.35em;
-    line-height: 2.15em;
+    font-size: 1.45em;
+    line-height: 2.1em;
     padding-left: 20px;
     margin-bottom: 2.5em;
 }
@@ -409,7 +409,7 @@ section#problem aside.row-content h2.title {
 
 section#problem aside.row-content p {
     display: inline-block;
-    font-size: 1.35em;
+    font-size: 1.45em;
     line-height: 2.1em;
     padding-left: 20px;
     margin-bottom: 2.5em;
@@ -490,7 +490,7 @@ section#pain-point article.intro h2.title {
 }
 
 section#pain-point article.intro p {
-    font-size: 1.35em;
+    font-size: 1.45em;
     line-height: 2.1em;
     margin-bottom: 2.5em;
     padding-left: 20px;
