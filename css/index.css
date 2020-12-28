@@ -302,7 +302,8 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::before,
-.project-grid a:nth-child(2):hover::before {
+.project-grid a:nth-child(2):hover::before,
+.project-grid a:nth-child(3):hover::before {
     content: "\f502";
     position: absolute;
     display: flex;
@@ -328,7 +329,8 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::after,
-.project-grid a:nth-child(2):hover::after {
+.project-grid a:nth-child(2):hover::after,
+.project-grid a:nth-child(3):hover::after {
     content: "Ongoing 製作中";
     position: absolute;
     display: block;
