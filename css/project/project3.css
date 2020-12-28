@@ -468,11 +468,11 @@ section#pain-point main.container {
 
 section#pain-point main.container article.intro,
 section#pain-point main.container article.persona {
-    padding: 0 100px;
+    padding: 50px 250px 50px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 980px;
+    align-items: flex-start;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -489,13 +489,122 @@ section#pain-point article.intro p {
     font-size: 1.35em;
     line-height: 2.1em;
     margin-bottom: 2.5em;
+    padding-left: 20px;
 }
 
 section#pain-point main.container article.persona {
     padding: 100px 0;
+}
+
+article.persona h3.title {
+    display: block;
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: rgb(235, 94, 78);
+    width: 100%;
+}
+
+article.persona h3.title::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 55px;
+    left: 0;
+    height: 1px;
+    background: rgb(255, 211, 206);
+}
+
+article.persona h3.title::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 65px;
+    height: 2px;
+    margin-top: 25px;
+    background: rgb(235, 94, 78);
+}
+
+article.persona aside.persona {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+}
+
+article.persona aside.persona .row {
+    display: flex;
+    position: relative;
+}
+
+article.persona aside.persona .img {
+    width: 30%;
+}
+
+article.persona aside.persona .img img {
+    width: 100%;
+    padding: 0 75px 0 0;
+}
+
+article.persona aside.persona .container {
+    width: 70%;
+    flex-direction: column;
     align-items: flex-start;
 }
 
+aside.persona .container header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+aside.persona .container h3.name {
+    font-size: 1.95em;
+    line-height: 2.25em;
+}
+
+aside.persona .container span {
+    font-size: 1.75em;
+    line-height: 2em;
+}
+
+aside.persona .container p.introduce {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0 0 50px;
+    padding: 0 15px;
+    text-align: justify;
+    color: rgb(240, 94, 61);
+}
+
+aside.persona ol.pain-point h4.title {
+    font-size: 1.65em;
+    line-height: 2em;
+    display: inline-block;
+    position: relative;
+}
+
+aside.persona ol.pain-point h4.title::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: rgb(181, 181, 181);
+    margin: 5px 0 35px;
+
+}
+
+aside.persona ol.pain-point li {
+    list-style: decimal;
+    font-size: 1.45em;
+    line-height: 2em;
+    padding: 0 0 0 5px;
+    margin: 0 0 20px 0;
+}
 
 /* project-main-navigator */
 
@@ -512,7 +621,7 @@ li.navi-btn a.next-img {
 @media all and (min-width: 1650px) {
 
     section#intro {
-        max-width: 1440px;
+        max-width: 1680px;
         margin: -25px auto 0;
     }
 
@@ -521,7 +630,7 @@ li.navi-btn a.next-img {
     }
 
     section#intro picture.img img {
-        max-width: 155%;
+        max-width: 125%;
     }
 
 }
@@ -574,6 +683,16 @@ li.navi-btn a.next-img {
         left: calc(72.5% * 2);
     }
 
+    /* pain-point */
+
+    section#pain-point main.container article.intro {
+        padding: 25px 200px 25px 75px;
+    }
+
+    article.persona h3.title,
+    article.persona aside.persona {
+        padding: 0 75px;
+    }
 
 }
 
@@ -695,6 +814,51 @@ li.navi-btn a.next-img {
         font-size: 1.3em;
     }
 
+    section#pain-point main.container article.persona {
+        padding: 75px 0;
+    }
+    
+    article.persona h3.title {
+        font-size: 1.65em;
+        margin: 0;
+    }
+    
+    article.persona h3.title::before {
+        top: 50px;
+    }
+    
+    article.persona h3.title::after {
+        margin-top: 25px;
+    }
+    
+    article.persona aside.persona .img img {
+        padding: 0 50px 0 0;
+    }
+    
+    aside.persona .container h3.name {
+        font-size: 1.75em;
+        line-height: 2em;
+    }
+    
+    aside.persona .container span {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    
+    aside.persona .container p.introduce {
+        font-size: 1.35em;
+        margin: 0 0 40px;
+    }
+    
+    aside.persona ol.pain-point h4.title {
+        font-size: 1.5em;
+    }
+    
+    aside.persona ol.pain-point li {
+        font-size: 1.35em;
+        margin: 0 0 25px 0;
+    }
+
 }
 
 @media all and (max-width: 840px) {
@@ -706,6 +870,10 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 767px) {
+
+    main#container {
+        padding-bottom: 50px !important;
+    }
 
     /* header */
 
@@ -959,7 +1127,6 @@ li.navi-btn a.next-img {
 
     section#pain-point main.container article.intro {
         padding: 0 75px;
-
     }
 
     section#pain-point article.intro h2.title {
@@ -969,6 +1136,62 @@ li.navi-btn a.next-img {
     section#pain-point article.intro p {
         font-size: 1.25em;
         line-height: 2.15em;
+    }
+
+    article.persona h3.title,
+    article.persona aside.persona {
+        padding: 0 50px;
+    }
+
+    section#pain-point main.container article.persona {
+        padding: 50px 0;
+    }
+    
+    article.persona h3.title {
+        font-size: 1.55em;
+        margin: 0;
+    }
+    
+    article.persona h3.title::before {
+        top: 45px;
+    }
+    
+    article.persona h3.title::after {
+        margin-top: 20px;
+    }
+    
+    article.persona aside.persona .img img {
+        padding: 0 35px 0 0;
+    }
+
+    aside.persona .container header {
+        margin-bottom: 35px;
+    }
+    
+    aside.persona .container h3.name {
+        font-size: 1.55em;
+    }
+    
+    aside.persona .container span {
+        font-size: 1.35em;
+    }
+    
+    aside.persona .container p.introduce {
+        font-size: 1.25em;
+        margin: 0 0 35px;
+    }
+    
+    aside.persona ol.pain-point h4.title {
+        font-size: 1.45em;
+    }
+    
+    aside.persona ol.pain-point h4.title::after {
+        margin: 5px 0 30px;
+    }
+    
+    aside.persona ol.pain-point li {
+        font-size: 1.25em;
+        margin: 0 0 25px 0;
     }
 
 }
@@ -1040,6 +1263,35 @@ li.navi-btn a.next-img {
     section#pain-point main.container article.intro {
         align-items: flex-start;
         padding: 0 50px;
+    }
+
+    article.persona aside.persona{
+        flex-direction: column;
+        margin: 25px 0;
+    }
+
+    article.persona h3.title {
+        padding: 0 50px 25px;
+    }
+
+    article.persona aside.persona .img,
+    article.persona aside.persona .container {
+        width: 100%;
+    }
+
+    article.persona aside.persona .img img {
+        padding: 0 75px;
+    }
+
+    article.persona aside.persona .container {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    aside.persona .container header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

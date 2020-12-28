@@ -302,8 +302,7 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::before,
-.project-grid a:nth-child(2):hover::before,
-.project-grid a:nth-child(3):hover::before {
+.project-grid a:nth-child(2):hover::before {
     content: "\f502";
     position: absolute;
     display: flex;
@@ -329,8 +328,7 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::after,
-.project-grid a:nth-child(2):hover::after,
-.project-grid a:nth-child(3):hover::after {
+.project-grid a:nth-child(2):hover::after {
     content: "Ongoing 製作中";
     position: absolute;
     display: block;
@@ -416,12 +414,13 @@ li#grid-inner > p.eng-grid-p {
 li#grid-inner img {
     width: 100%;
     transition: .25s all ease;
-    box-shadow: 0px 27px 65px -30px rgba(54, 54, 54, .35);
+    box-shadow: 0px 27px 55px -21px rgba(54, 54, 54, .25);
     border-radius: 25px;
 }
 
 li#grid-inner:hover img {
     transform: scale(0.985) translateY(5px);
+    box-shadow: none;
 }
 
 li#grid-inner .tag {
