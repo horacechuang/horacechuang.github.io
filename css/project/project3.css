@@ -6,6 +6,17 @@ p:last-child {
     margin: 0 !important;
 }
 
+figcaption {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 1.25em;
+    line-height: 2.1em;
+    margin: 25px 0;
+    letter-spacing: .25px;
+    color: rgb(162, 162, 162);
+}
+
 /* header */
 
 header#header {
@@ -436,15 +447,7 @@ section#problem picture.img::after {
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 50%;
-    margin: 100px 0;
-}
-
-section#problem picture.img figcaption {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    font-size: 1.25em;
-    line-height: 2.1em;
+    margin: 50px 0;
 }
 
 section#problem picture.img img.desktop {
@@ -617,6 +620,38 @@ aside.persona ol.pain-point li {
     margin: 0 0 20px 0;
 }
 
+article.challenge h3.title {
+    margin-bottom: 3em;
+}
+
+article.challenge aside.column h4.sub-title {
+    display: inline-block;
+    font-size: 1.6em;
+    margin-bottom: 2em;
+    color: rgb(254, 116, 30);
+}
+
+article.challenge main p {
+    font-size: 1.45em;
+    line-height: 2.1em;
+    margin: 0 0 2em 0;
+}
+
+article.challenge aside.pay-flow main {
+    width: 70%;
+}
+
+article.challenge aside.column figure {
+    display: block;
+    position: relative;
+    margin: 75px 0;
+    padding: 0 50px 0 0;
+}
+
+article.challenge aside.column figure img {
+    width: 100%;
+}
+
 /* project-main-navigator */
 
 li.navi-btn a.prev-img {
@@ -710,6 +745,11 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 980px) {
+
+    figcaption {
+        font-size: 1.15em;
+        padding: 0 10px 0 40px;
+    }
 
     /* header */
     
@@ -812,11 +852,6 @@ li.navi-btn a.next-img {
         right: -25px;
     }
 
-    section#problem picture.img figcaption {
-        font-size: 1.15em;
-        padding: 0 10px 0 40px;
-    }
-
     /* pain-point*/
 
     section#pain-point article.intro h2.title {
@@ -871,6 +906,18 @@ li.navi-btn a.next-img {
         margin: 0 0 25px 0;
     }
 
+    article.challenge aside.column h4.sub-title {
+        font-size: 1.5em;
+    }
+
+    article.challenge main p {
+        font-size: 1.35em;
+    }
+
+    article.challenge aside.column figure {
+        padding: 0 25px 0 0;
+    } 
+
 }
 
 @media all and (max-width: 840px) {
@@ -885,6 +932,10 @@ li.navi-btn a.next-img {
 
     main#container {
         padding-bottom: 50px !important;
+    }
+
+    figcaption {
+        font-size: 1.05em;
     }
 
     /* header */
@@ -1117,10 +1168,6 @@ li.navi-btn a.next-img {
         margin: 75px 30px 25px 0;
     }
 
-    section#problem picture.img figcaption {
-        font-size: 1.05em;
-    }
-
     section#problem picture.img::after {
         display: none;
     }
@@ -1210,6 +1257,18 @@ li.navi-btn a.next-img {
     aside.persona ol.pain-point li {
         font-size: 1.25em;
     }
+
+    article.challenge aside.column h4.sub-title {
+        font-size: 1.45em;
+    }
+
+    article.challenge main p {
+        font-size: 1.25em;
+    }
+
+    article.challenge aside.column figure {
+        padding: 0 25px 0 0;
+    } 
 
 }
 
@@ -1309,6 +1368,14 @@ li.navi-btn a.next-img {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    article.challenge aside.pay-flow main {
+        width: 90%;
+    }
+
+    article.challenge aside.column figure {
+        padding: 0;
     }
 
 }
