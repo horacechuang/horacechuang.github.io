@@ -637,7 +637,12 @@ article.challenge main p {
     margin: 0 0 2em 0;
 }
 
-article.challenge aside.pay-flow main {
+article.challenge main p strong {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding-bottom: 5px;
+}
+
+article.challenge aside main {
     width: 70%;
 }
 
@@ -1370,8 +1375,9 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
-    article.challenge aside.pay-flow main {
-        width: 90%;
+    article.challenge aside main {
+        width: 85%;
+        padding: 0;
     }
 
     article.challenge aside.column figure {
