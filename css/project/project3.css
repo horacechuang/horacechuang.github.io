@@ -460,22 +460,22 @@ section#problem picture.img img.mobile {
     display: none;
 }
 
-/* pain-point */
+/* research */
 
-section#pain-point,
-section#pain-point main.container {
+section#research,
+section#research main.container {
     position: relative;
     display: block;
     width: 100%;
 }
 
-section#pain-point main.container article.intro {
+section#research main.container article.intro {
     padding: 50px 250px 50px 0;
 }
 
-section#pain-point main.container article.intro,
-section#pain-point main.container article.persona,
-section#pain-point main.container article.challenge {
+section#research main.container article.intro,
+section#research main.container article.persona,
+section#research main.container article.key-findings {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -483,7 +483,7 @@ section#pain-point main.container article.challenge {
     margin: 0 auto;
 }
 
-section#pain-point article.intro h2.title {
+section#research article.intro h2.title {
     font-size: 1.75em;
     margin-bottom: 2em;
     background: rgb(235, 94, 78);
@@ -492,20 +492,20 @@ section#pain-point article.intro h2.title {
     border-left: 5px solid rgb(233, 34, 12);
 }
 
-section#pain-point article.intro p {
+section#research article.intro p {
     font-size: 1.45em;
     line-height: 2.1em;
     margin-bottom: 2.5em;
     padding-left: 20px;
 }
 
-section#pain-point main.container article.persona,
-section#pain-point main.container article.challenge {
+section#research main.container article.persona,
+section#research main.container article.key-findings {
     padding: 50px 0;
 }
 
 article.persona h3.title,
-article.challenge h3.title {
+article.key-findings h3.title {
     display: block;
     position: relative;
     font-size: 2em;
@@ -515,7 +515,7 @@ article.challenge h3.title {
 }
 
 article.persona h3.title::before,
-article.challenge h3.title::before {
+article.key-findings h3.title::before {
     content: "";
     display: block;
     position: relative;
@@ -527,7 +527,7 @@ article.challenge h3.title::before {
 }
 
 article.persona h3.title::after,
-article.challenge h3.title::after {
+article.key-findings h3.title::after {
     content: "";
     display: block;
     position: relative;
@@ -620,40 +620,40 @@ aside.persona ol.pain-point li {
     margin: 0 0 20px 0;
 }
 
-article.challenge h3.title {
+article.key-findings h3.title {
     margin-bottom: 3em;
 }
 
-article.challenge aside.column h4.sub-title {
+article.key-findings aside.column h4.sub-title {
     display: inline-block;
     font-size: 1.6em;
     margin-bottom: 2em;
     color: rgb(254, 116, 30);
 }
 
-article.challenge main p {
+article.key-findings main p {
     font-size: 1.45em;
     line-height: 2.1em;
     margin: 0 0 2em 0;
 }
 
-article.challenge main p strong {
+article.key-findings main p strong {
     border-bottom: 1px solid rgb(182, 182, 182);
     padding-bottom: 5px;
 }
 
-article.challenge aside main {
+article.key-findings aside main {
     width: 70%;
 }
 
-article.challenge aside.column figure {
+article.key-findings aside.column figure {
     display: block;
     position: relative;
     margin: 75px 0;
     padding: 0 50px 0 0;
 }
 
-article.challenge aside.column figure img {
+article.key-findings aside.column figure img {
     width: 100%;
 }
 
@@ -734,16 +734,16 @@ li.navi-btn a.next-img {
         left: calc(72.5% * 2);
     }
 
-    /* pain-point */
+    /* research */
 
-    section#pain-point main.container article.intro {
+    section#research main.container article.intro {
         padding: 25px 200px 25px 75px;
     }
 
     article.persona h3.title,
     article.persona aside.persona,
-    article.challenge h3.title,
-    article.challenge aside.column {
+    article.key-findings h3.title,
+    article.key-findings aside.column {
         padding: 0 75px;
     }
 
@@ -753,7 +753,6 @@ li.navi-btn a.next-img {
 
     figcaption {
         font-size: 1.15em;
-        padding: 0 10px 0 40px;
     }
 
     /* header */
@@ -857,13 +856,13 @@ li.navi-btn a.next-img {
         right: -25px;
     }
 
-    /* pain-point*/
+    /* research */
 
-    section#pain-point article.intro h2.title {
+    section#research article.intro h2.title {
         font-size: 1.65em;
     }
 
-    section#pain-point article.intro p {
+    section#research article.intro p {
         font-size: 1.3em;
     }
     
@@ -911,15 +910,15 @@ li.navi-btn a.next-img {
         margin: 0 0 25px 0;
     }
 
-    article.challenge aside.column h4.sub-title {
+    article.key-findings aside.column h4.sub-title {
         font-size: 1.5em;
     }
 
-    article.challenge main p {
+    article.key-findings main p {
         font-size: 1.35em;
     }
 
-    article.challenge aside.column figure {
+    article.key-findings aside.column figure {
         padding: 0 25px 0 0;
     } 
 
@@ -1187,30 +1186,30 @@ li.navi-btn a.next-img {
         margin: 0 0 0 auto;
     }
 
-    /* pain-point */
+    /* research */
 
-    section#pain-point main.container article.intro {
+    section#research main.container article.intro {
         padding: 0 50px;
     }
 
-    section#pain-point article.intro h2.title {
+    section#research article.intro h2.title {
         font-size: 1.5em;
     }
 
-    section#pain-point article.intro p {
+    section#research article.intro p {
         font-size: 1.25em;
         line-height: 2.15em;
     }
 
-    section#pain-point main.container article.persona,
-    section#pain-point main.container article.challenge {
+    section#research main.container article.persona,
+    section#research main.container article.key-findings {
         padding: 50px 0 25px;
     }
 
     article.persona h3.title,
     article.persona aside.persona,
-    article.challenge h3.title,
-    article.challenge aside.column {
+    article.key-findings h3.title,
+    article.key-findings aside.column {
         padding: 0 50px;
     }
 
@@ -1263,15 +1262,15 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
-    article.challenge aside.column h4.sub-title {
+    article.key-findings aside.column h4.sub-title {
         font-size: 1.45em;
     }
 
-    article.challenge main p {
+    article.key-findings main p {
         font-size: 1.25em;
     }
 
-    article.challenge aside.column figure {
+    article.key-findings aside.column figure {
         padding: 0 25px 0 0;
     } 
 
@@ -1339,9 +1338,9 @@ li.navi-btn a.next-img {
         margin-top: 100px;
     }
 
-    /* pain-point */
+    /* research */
 
-    section#pain-point main.container article.intro {
+    section#research main.container article.intro {
         align-items: flex-start;
         padding: 0 50px;
     }
@@ -1375,12 +1374,12 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
-    article.challenge aside main {
+    article.key-findings aside main {
         width: 85%;
         padding: 0;
     }
 
-    article.challenge aside.column figure {
+    article.key-findings aside.column figure {
         padding: 0;
     }
 

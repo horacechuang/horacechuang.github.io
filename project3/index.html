@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/project/project3.css">
     <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/lity.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
@@ -22,6 +23,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M9P28SF1T"></script>
     <script src="../js/callTypekit.js"></script>
     <script src="../js/aos.js"></script>
+    <script src="../js/lity.min.js"></script>
     <script src="../js/navMenu_mobile.js"></script>
     <script src="../js/hideMenu.js"></script>
     <script src="../js/scrollPosition.js"></script>
@@ -117,14 +119,14 @@
                     <article class="content">
                         <h2 class="title" data-aos="fade-right" data-aos-delay="500">Design Process 設計流程</h2>
                         <p data-aos="fade-left" data-aos-delay="500">在設計的流程上，我們先收集目前平台上使用者平時反映給我們的意見，同時提案方也會給我們不少的回饋，這些待解決的問題累積起來之後，再行歸納整理出幾個重要的 Pain Points 痛點，接著針對不同身份的使用者定義 Persona，釐清問題所在。</p>
-                        <p data-aos="fade-left" data-aos-delay="750">發現問題後，接續進行平台上介面與流程的改善。先依待修正的功能規劃 User Flow 與 Wireframe，與內部部門討論後開始進行介面的 Mockup 設計，最後交由前、後端工程師上版。</p>
+                        <p data-aos="fade-left" data-aos-delay="750">發現問題後，接續進行平台上介面與流程的改善。先依待修正的功能規劃 User Flow 與 Wireframe，與內部討論後開始進行介面的 Mockup 設計，最後交由前、後端工程師上版。</p>
                     </article>
                     <ul class="process-visual-container">
                         <li class="process-grid" data-aos="fade-down" data-aos-delay="500">
-                            <h3 class="sub-title">發掘問題</h3>
+                            <h3 class="sub-title">發現問題</h3>
                         </li>
                         <li class="process-grid" data-aos="fade-down" data-aos-delay="1000">
-                            <h3 class="sub-title">找出痛點</h3>
+                            <h3 class="sub-title">探討問題</h3>
                         </li>
                         <li class="process-grid" data-aos="fade-down" data-aos-delay="1500">
                             <h3 class="sub-title">提出<br />設計方案</h3>
@@ -138,23 +140,27 @@
                         <aside class="row">
                         </aside>
                         <aside class="row row-content">
-                            <h2 class="title" data-aos="fade-right" data-aos-delay="500">Dig the Problem 發掘問題</h2>
+                            <h2 class="title" data-aos="fade-right" data-aos-delay="500">Problem 發現問題</h2>
                             <p data-aos="fade-left" data-aos-delay="500">flyingV 在創站初期，隨著募資案件快速的增加，募資金額也不斷地提高，因此許多功能是在不斷迭代的過程中設計出來。到了 2019 年進入平台的成熟期，團隊內成員也陸續發現平台內有些流程當初並沒有設想周到，導致後續不管是在提案者、贊助者與團隊內都有操作上面的問題與覺得可以更好的地方。</p>
                             <p data-aos="fade-left" data-aos-delay="750">我們主要利用平時每週團隊內的 Marketing 與 Project Team 都會定期蒐集與分析 flyingV 平台上的客服信箱與 Facebook 粉絲專頁上用戶們的意見，團隊們都會透過每週例行性的 meeting 上充分了解提案者與贊助者兩種不同身分的用戶們反應的心聲。</p>
                             <p data-aos="fade-left" data-aos-delay="900">另外我們也透過 <span>hotjar</span> 這個外部工具做了簡單的使用者操作分析，利用 Heatmaps 與 Recording 功能我們發現，贊助者在付款的流程上常會因為不妥的版面流程與欄位填寫而迷失方向，而專案上的付款頁面當初因為求快，許多細節在規劃建置時卻沒有注意到，到後期不但無法幫助專案的募資業績往上提升，甚至降低了贊助者的專案贊助意願。</p>
                         </aside>
                     </article>
                     <picture class="img" data-aos="fade-down" data-aos-delay="1000">  
-                        <img src="../img/project3/problem-desktop.png" alt="problem-img" class="desktop" data-aos="fade-left" data-aos-delay="500">
-                        <img src="../img/project3/problem-mobile.png" alt="problem-img" class="mobile" data-aos="fade-left" data-aos-delay="500">
+                        <a href="../img/project3/problem-desktop.png" data-lity>
+                            <img src="../img/project3/problem-desktop.png" alt="problem-img" class="desktop" data-aos="fade-left" data-aos-delay="500">
+                        </a>
+                        <a href="../img/project3/problem-mobile.png" data-lity>
+                            <img src="../img/project3/problem-mobile.png" alt="problem-img" class="mobile" data-aos="fade-left" data-aos-delay="500">
+                        </a>
                         <figcaption>▲ 團隊內會透過上述的工具，蒐集用戶們的意見。</figcaption>
                     </picture>
                 </main>
             </section>
-            <section id="pain-point">
+            <section id="research">
                 <main class="container">
                     <article class="intro">
-                        <h2 class="title">Pain Points 找到痛點</h2>
+                        <h2 class="title">Research 探討問題</h2>
                         <p>有了平時蒐集的用戶回饋後，我們就進行 Persona 的製作，為的是區別兩方不同立場的使用者 —— 提案者與贊助者，透過描繪出各自的使用習慣、人物特徵、行為模式，以便能分析他們在平台上遇到的問題與痛點。</p>
                     </article>
                     <article class="persona">
@@ -200,8 +206,8 @@
                             </div>
                         </aside>
                     </article>
-                    <article class="challenge">
-                        <h3 class="title">Challenge</h3>
+                    <article class="key-findings">
+                        <h3 class="title">Key Findings</h3>
                         <aside class="column pay-flow">
                             <main>
                                 <h4 class="sub-title">付款流程</h4>
@@ -210,8 +216,16 @@
                                 <p>平台後台也尚欠缺了可供提案者對老顧客進行促銷、優惠活動的「優惠碼」功能，這次我們也一併改善。</p>
                             </main>
                             <figure>
-                                <img src="../img/project3/challenge-1.jpg" alt="challenge-1">
+                                <a href="../img/project3/challenge-1.jpg" data-lity>
+                                    <img src="../img/project3/challenge-1.jpg" alt="challenge-1">
+                                </a>
                                 <figcaption>▲ 重新設計前的付款流程網頁</figcaption>
+                            </figure>
+                            <figure>
+                                <a href="../img/project3/old-flowchart.png" data-lity>
+                                    <img src="../img/project3/old-flowchart.png" alt="old-flowchart">
+                                </a>
+                                <figcaption>▲ 舊的付款流程</figcaption>
                             </figure>
                         </aside>
                         <aside class="column message">
@@ -222,11 +236,18 @@
                                 <p>另一方面，在平台裡針對贊助者的<strong>專案通知</strong>的下拉式區塊，其實是可以利用這次機會，將<strong>朋友圈</strong>功能和站內訊息整合。</p>
                             </main>
                             <figure>
-                                <img src="../img/project3/challenge-2.jpg" alt="challenge-2">
+                                <a href="../img/project3/challenge-2.jpg" data-lity>
+                                    <img src="../img/project3/challenge-2.jpg" alt="challenge-2">
+                                </a>
                                 <figcaption>▲ 重新設計前的站內訊息畫面</figcaption>
                             </figure>
                         </aside>
                     </article>
+                </main>
+            </section>
+            <section id="solution">
+                <main class="container">
+                    <header></header>
                 </main>
             </section>
         </main>
