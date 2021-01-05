@@ -643,7 +643,7 @@ article.key-findings main p strong {
 }
 
 article.key-findings aside main {
-    width: 70%;
+    width: 80%;
 }
 
 article.key-findings aside.column figure {
@@ -1275,7 +1275,7 @@ li.navi-btn a.next-img {
     }
 
     article.key-findings aside.column figure {
-        padding: 0 25px 0 0;
+        padding: 0;
     } 
 
     article.key-findings aside.column figure img.desktop {
@@ -1388,10 +1388,6 @@ li.navi-btn a.next-img {
 
     article.key-findings aside main {
         width: 85%;
-        padding: 0;
-    }
-
-    article.key-findings aside.column figure {
         padding: 0;
     }
 
