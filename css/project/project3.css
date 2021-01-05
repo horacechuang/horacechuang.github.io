@@ -657,6 +657,10 @@ article.key-findings aside.column figure img {
     width: 100%;
 }
 
+article.key-findings aside.column figure img.mobile {
+    display: none;
+}
+
 /* project-main-navigator */
 
 li.navi-btn a.prev-img {
@@ -1273,6 +1277,14 @@ li.navi-btn a.next-img {
     article.key-findings aside.column figure {
         padding: 0 25px 0 0;
     } 
+
+    article.key-findings aside.column figure img.desktop {
+        display: none;
+    }
+
+    article.key-findings aside.column figure img.mobile {
+        display: block;
+    }
 
 }
 
