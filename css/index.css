@@ -13,13 +13,18 @@ header#header {
     padding-top: 65px;
 }
 
+#header-container {
+    display: flex;
+    flex-direction: row;
+}
+
 /* img */
 
 .img {
-    display: block;
+    display: flex;
     position: relative;
-    float: right;
-    margin: -20px 0 0;
+    width: 35%;
+    justify-content: space-around;
 }
 
 img.profile {
@@ -779,6 +784,9 @@ ul.expertise-content p {
     #header-container > .paragraph {
         width: 75%;
         padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #header-container > .paragraph h1 {
@@ -802,13 +810,10 @@ ul.expertise-content p {
 
     img.profile {
         max-width: 200px;
-        margin-left: 65px;
-        margin-top: 100px;
     }
 
     img.pattern {
         width: 85%;
-        float: right;
         margin-top: 15px;
     }
 
@@ -999,16 +1004,15 @@ ul.expertise-content p {
         padding: 0 25px;
     }
 
+    #header-container {
+        flex-direction: column-reverse;
+    }
+
     main#container {
         padding: 0 0 25px;
     }
 
     /* img */
-
-    .img::before, .img::after {
-        content: "";
-        display: table;
-    }
 
     .img {
         width: 100%;
@@ -1017,10 +1021,8 @@ ul.expertise-content p {
 
     img.profile {
         position: relative;
-        max-width: 175px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        max-width: 185px;
+        margin: 50px auto;
         animation: move 2s infinite;
         box-shadow: 0px 20px 40px rgba(202, 202, 202, 0.2);
     }
@@ -1029,8 +1031,8 @@ ul.expertise-content p {
         position: absolute;
         width: 250px;
         transform: rotate(45deg) !important;
-        margin-top: -350px;
-        margin-left: 26.5%;
+        margin-top: -50px;
+        margin-left: 15%;
         z-index: -2;
     }
 
@@ -1056,17 +1058,6 @@ ul.expertise-content p {
         line-height: 2.25em;
         margin: 25px 0;
     }
-
-    /* line-intro list */
-
-    /* .link {
-        font-size: 1.5em;
-        margin: 30px 0 0 2px ;
-    }
-    
-    .link li {
-        margin: 0 10px;
-    } */
 
     /* work area */
 
@@ -1123,14 +1114,6 @@ ul.expertise-content p {
     li#grid-inner > p.eng-grid-p {
         font-size: 1.2em;
     }
-
-    /* li#grid-inner span {
-        margin: 10px 0 15px 0;
-    }
-
-    li#grid-inner span::before {
-        top: 30px;
-    } */
 
     li#grid-inner .tag {
         width: 55px;
@@ -1269,7 +1252,7 @@ ul.expertise-content p {
     /* parapraph text */
 
     #header-container > .paragraph {
-        padding: 250px 25px 25px;
+        padding: 25px 15px 0;
     }
 
     /* container */
