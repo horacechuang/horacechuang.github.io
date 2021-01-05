@@ -469,6 +469,19 @@ section#research main.container {
     width: 100%;
 }
 
+section#research main.container::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: block;
+    background: url(../../img/project3/separate-line.svg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: 50%;
+    margin: -50px 0 100px;
+}
+
 section#research main.container header.intro {
     padding: 50px 250px 50px 0;
 }
@@ -671,6 +684,21 @@ section#solution main.container {
     display: block;
 }
 
+section#solution header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section#solution header h2.title {
+    font-size: 1.75em;
+    margin-bottom: 2.5em;
+    background: rgb(235, 94, 78);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-left: 5px solid rgb(233, 34, 12);
+}
+
 /* project-main-navigator */
 
 li.navi-btn a.prev-img {
@@ -750,6 +778,10 @@ li.navi-btn a.next-img {
 
     section#research main.container header.intro {
         padding: 25px 200px 25px 75px;
+    }
+
+    section#research main.container::after {
+        background-size: 20%;
     }
 
     article.persona h3.title,
@@ -1202,6 +1234,10 @@ li.navi-btn a.next-img {
 
     section#research main.container header.intro {
         padding: 0 50px;
+    }
+
+    section#research main.container::after {
+        display: none;
     }
 
     section#research header.intro h2.title {
