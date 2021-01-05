@@ -1226,10 +1226,14 @@ li.navi-btn a.next-img {
 
     section#problem picture.img img.mobile {
         display: block;
+    }
+
+    section#problem picture.img img.mobile,
+    section#problem picture.img figcaption {
         width: 93.5%;
         margin: 0 0 0 auto;
     }
-
+    
     /* research */
 
     section#research main.container header.intro {

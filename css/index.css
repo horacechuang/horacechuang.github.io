@@ -999,6 +999,10 @@ ul.expertise-content p {
         padding: 0 25px;
     }
 
+    main#container {
+        padding: 0 0 25px;
+    }
+
     /* img */
 
     .img::before, .img::after {

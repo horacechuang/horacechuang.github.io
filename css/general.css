@@ -25,6 +25,7 @@ html, body {
     animation: 2.5s fadeIn;
 }
 
+html.lity-active,
 html.scrollHidden {
     overflow: hidden !important;
 }
@@ -52,7 +53,6 @@ nav.invisibleNav {
 }
 
 nav.addShadow {
-    /* box-shadow: 0px 5px 25px rgba(194, 194, 194, .25); */
     box-shadow: 0px 5px 65px rgba(158, 158, 158, .2);
     transition: 1s all ease;
 }
@@ -245,25 +245,19 @@ nav > .nav-container {
     display: none;
 }
 
-/* main */
-
-main#container {
-    padding-bottom: 100px;
-}
-
 /* project-main-navigator */
 
-section#project-main-navigator {
+section#project-nav {
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
-section#project-main-navigator .container {
+section#project-nav .container {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1080px;
 }
 
-section#project-main-navigator .container .title {
+section#project-nav .container .title {
     position: relative;
     display: block;
     max-width: 1110px;
@@ -271,7 +265,7 @@ section#project-main-navigator .container .title {
     text-align: left;
 }
 
-section#project-main-navigator .container .title::after {
+section#project-nav .container .title::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -280,7 +274,7 @@ section#project-main-navigator .container .title::after {
     top: 85px;
 }
 
-section#project-main-navigator .container .title > h3 {
+section#project-nav .container .title > h3 {
     font-size: 2.5em;
     font-weight: 400;
     letter-spacing: .5px;
@@ -289,7 +283,7 @@ section#project-main-navigator .container .title > h3 {
     display: block;
 }
 
-section#project-main-navigator .container .title > h3::after {
+section#project-nav .container .title > h3::after {
     content: "";
     position: absolute;
     min-width: 100px;
@@ -379,10 +373,9 @@ li.navi-btn a:hover .content {
 
 footer#footer {
     display: block;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-    /* min-height: 103px; */
     background: hsla(0, 0%, 100%, .85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -390,26 +383,17 @@ footer#footer {
     z-index: 1;
 }
 
-footer.invisibleFooter {
-    transform: translateY(200px);
-}
-
-footer.addShadow {
-    box-shadow: 0px -5px 65px rgba(158, 158, 158, .2);
-    transition: 1s all ease;
-}
-
-/* footer#footer::before {
+footer#footer::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background: linear-gradient(40deg,#d4ffff 0, #78ffd2 12%, #66c7ff 58%, #92efff 79%, #d4ffff);
     background-size: 200% 100%;
-    animation: light-border 3s ease infinite;
-} */
+    animation: light-border 2s ease infinite;
+}
 
 @keyframes light-border {
     0% {
@@ -473,8 +457,8 @@ h3.h3-footer-eng {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end;
+    margin: auto 0;
 }
 
 .footer-link > ul.footer-link-btn:hover a {
@@ -539,12 +523,6 @@ ul.footer-link-btn {
         margin: 0 25px;
     }
 
-    /* main */
-
-    main#container {
-        padding-bottom: 75px;
-    }
-
     /* project-main-navigator */
 
     li.navi-btn a {
@@ -557,8 +535,9 @@ ul.footer-link-btn {
         padding: 0 25px;
     }
 
-    .footer-container {
+    #footer-container {
         align-items: flex-end;
+        padding: 10px 0;
     }
     
 }
@@ -566,14 +545,6 @@ ul.footer-link-btn {
 @media all and (max-width: 980px) {
 
     /* footer */
-
-    footer#footer {
-        min-height: 89px;
-    }
-
-    .footer-container {
-        padding: 15px 0;
-    }
 
     .footer-cta .column > span {
         font-size: 3.75em;
@@ -593,19 +564,19 @@ ul.footer-link-btn {
 
     /* project-main-navigator */
 
-    section#project-main-navigator {
-        margin-bottom: 150px;
+    section#project-nav {
+        margin-bottom: 75px;
     }
 
-    section#project-main-navigator .container .title::after {
+    section#project-nav .container .title::after {
         top: 75px;
     }
 
-    section#project-main-navigator .container .title > h3 {
+    section#project-nav .container .title > h3 {
         font-size: 2.25em;
     }
 
-    section#project-main-navigator .container .title > h3::after {
+    section#project-nav .container .title > h3::after {
         top: 73px;
     }
 
@@ -863,31 +834,25 @@ ul.footer-link-btn {
         background-color: rgb(78, 78, 78);
     }
 
-    /* main */
+    /* project-navigator */
 
-    main#container {
-        padding-bottom: 50px;
-    }
-
-    /* project-main-navigator */
-
-    section#project-main-navigator {
+    section#project-nav {
         margin-bottom: 100px;
     }
 
-    section#project-main-navigator .container .title {
+    section#project-nav .container .title {
         margin: 0 15% 100px;
     }
 
-    section#project-main-navigator .container .title::after {
+    section#project-nav .container .title::after {
         top: 70px;
     }
 
-    section#project-main-navigator .container .title > h3 {
+    section#project-nav .container .title > h3 {
         font-size: 1.85em;
     }
 
-    section#project-main-navigator .container .title > h3::after {
+    section#project-nav .container .title > h3::after {
         top: 68px;
     }
 
@@ -915,21 +880,28 @@ ul.footer-link-btn {
     li.navi-btn p {
         font-size: 1.5em;
     }
-    
 
     /* footer */
 
-    footer#footer {
-        min-height: 64px;
+    footer.mobile-footer {
+        position: fixed !important;
     }
 
-    footer.invisibleFooter {
-        transform: translateY(150px);
+    footer.mobile-footer.invisibleFooter {
+        transform: translateY(75px);
+    }
+    
+    footer.mobile-footer.addShadow {
+        box-shadow: 0px -5px 65px rgba(158, 158, 158, .2);
+        transition: 1s all ease;
     }
 
-    .footer-container {
+    footer#footer::before {
+        display: none;
+    }
+
+    #footer-container {
         flex-direction: column;
-        padding: 20px 0;
     }
 
     .footer-cta, .footer-link {
@@ -939,35 +911,6 @@ ul.footer-link-btn {
     .footer-cta, .footer-link p {
         display: none;
     }
-
-    /* .footer-cta > .column:first-child {
-        margin: -5px 20px 0 0;
-    }
-
-    .footer-cta .column > span {
-        font-size: 2.75em;
-        margin-top: -10px;
-    }
-
-    .footer-cta h3 {
-        background: linear-gradient(270deg,#52f1bc, #4db9f8);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;  
-        text-align: center; 
-    }
-
-    .footer-cta h3:first-child {
-        font-size: 1.1em;
-        line-height: 1.1em;
-    }
-
-    h3.h3-footer-eng {
-        font-size: 1em;
-        line-height: 2.5em;
-    } */
 
     .footer-link {
         align-items: center;

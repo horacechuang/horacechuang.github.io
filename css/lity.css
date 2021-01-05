@@ -10,7 +10,7 @@
   left: 0;
   white-space: nowrap;
   background: #f0f0f0;
-  background: rgba(255, 255, 255, 0.875);
+  background: rgba(255, 255, 255, .75);
   outline: none !important;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease;
@@ -209,7 +209,7 @@
   .lity-close {
     width: 45px;
     height: 45px;
-    right: 12.5px;
+    right: 25px;
     top: 10px;
     font-size: 45px;
     line-height: 45px;
