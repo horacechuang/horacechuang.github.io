@@ -309,9 +309,8 @@ section#project .project-main-container {
     transform: translateY(5px);
 }
 
-/* .project-grid a:first-child:hover::before,
-.project-grid a:nth-child(2):hover::before,
-.project-grid a:nth-child(3):hover::before {
+.project-grid a:first-child:hover::before,
+.project-grid a:nth-child(2):hover::before {
     content: "\f502";
     position: absolute;
     display: flex;
@@ -337,8 +336,7 @@ section#project .project-main-container {
 }
 
 .project-grid a:first-child:hover::after,
-.project-grid a:nth-child(2):hover::after,
-.project-grid a:nth-child(3):hover::after {
+.project-grid a:nth-child(2):hover::after {
     content: "Ongoing 製作中";
     position: absolute;
     display: block;
@@ -357,7 +355,7 @@ section#project .project-main-container {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     z-index: 2;
-} */
+}
 
 .project-grid ul.grid-container:hover a {
     opacity: .15;
@@ -1094,18 +1092,16 @@ ul.expertise-content p {
         padding: 25px;
     }
 
-    /* .project-grid a:first-child:hover::before,
-    .project-grid a:nth-child(2):hover::before,
-    .project-grid a:nth-child(3):hover::before {
+    .project-grid a:first-child:hover::before,
+    .project-grid a:nth-child(2):hover::before {
         font-size: 4em;
     }
 
     .project-grid a:first-child:hover::after,
-    .project-grid a:nth-child(2):hover::after,
-    .project-grid a:nth-child(3):hover::after {
+    .project-grid a:nth-child(2):hover::after {
         top: 57.5%;
         font-size: 1.75em;
-    } */
+    }
 
     .project-grid a#grid-outer:last-child {
         margin: 0 auto !important;

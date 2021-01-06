@@ -272,7 +272,7 @@ section#process article.content p {
     margin-bottom: 2.5em;
 }
 
-section#process ul.process-visual-container {
+section#process ul.process-flow {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -283,7 +283,7 @@ section#process ul.process-visual-container {
     margin: 0 auto;
 }
 
-section#process ul.process-visual-container::after {
+section#process ul.process-flow::after {
     content: "";
     width: 100%;
     height: 100px;
@@ -296,7 +296,7 @@ section#process ul.process-visual-container::after {
     background-position: 50%;
 }
 
-ul.process-visual-container li {
+ul.process-flow a {
     display: flex;
     min-width: 250px;
     min-height: 250px;
@@ -311,7 +311,7 @@ ul.process-visual-container li {
     box-shadow: 0px 45px 75px -18px rgba(131, 131, 131, 0.15);
 }
 
-ul.process-visual-container li:hover h3.sub-title {
+ul.process-flow a:hover h3.sub-title {
     transform: scale(1.25);
     box-shadow: 
     inset 0 25px 0 rgb(255, 255, 255), 
@@ -319,7 +319,7 @@ ul.process-visual-container li:hover h3.sub-title {
     color: rgb(171, 36, 6);
 }
 
-ul.process-visual-container li::after {
+ul.process-flow a::after {
     content: "\f061";
     position: absolute;
     display: flex;
@@ -347,11 +347,11 @@ ul.process-visual-container li::after {
     }
 }
 
-ul.process-visual-container li:last-child:after {
+ul.process-flow a:last-child:after {
     display: none;
 }
 
-ul.process-visual-container li h3.sub-title {
+ul.process-flow li h3.sub-title {
     font-size: 2.25em;
     transition: .5s all ease;
     color: rgb(236, 128, 103);
@@ -634,15 +634,15 @@ aside.persona ol.pain-point li {
     margin: 0 0 20px 0;
 }
 
-article.key-findings h3.title {
-    margin-bottom: 3em;
-}
-
 article.key-findings aside.column h4.sub-title {
     display: inline-block;
     font-size: 1.6em;
     margin-bottom: 2em;
     color: rgb(254, 116, 30);
+}
+
+article.key-findings aside.column {
+    margin: 25px 0 0;
 }
 
 article.key-findings main p {
@@ -686,13 +686,12 @@ section#solution main.container {
 
 section#solution header {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 section#solution header h2.title {
     font-size: 1.75em;
-    margin-bottom: 2.5em;
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
     padding: 15px;
@@ -765,12 +764,12 @@ li.navi-btn a.next-img {
         -webkit-filter: blur(70px);
     }
 
-    ul.process-visual-container li {
+    ul.process-flow a {
         min-width: 190px;
         min-height: 190px;
     }
 
-    ul.process-visual-container li::after {
+    ul.process-flow a::after {
         left: calc(72.5% * 2);
     }
 
@@ -859,21 +858,21 @@ li.navi-btn a.next-img {
         margin-bottom: 2em;
     }
 
-    section#process ul.process-visual-container::after {
+    section#process ul.process-flow::after {
         margin: 50px auto 0;
     }
 
-    ul.process-visual-container li {
+    ul.process-flow a {
         min-width: 175px;
         min-height: 175px;
     }
 
-    ul.process-visual-container li::after {
+    ul.process-flow a::after {
         font-size: 2em;
         left: calc(100% * 1.3);
     }
 
-    ul.process-visual-container li h3.sub-title {
+    ul.process-flow li h3.sub-title {
         font-size: 1.75em;
     }
 
@@ -970,7 +969,7 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 840px) {
 
-    ul.process-visual-container li::after {
+    ul.process-flow li::after {
         left: calc(100% * 1.2);
     }
 
@@ -1130,7 +1129,7 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
-    section#process ul.process-visual-container {
+    section#process ul.process-flow {
         flex-direction: column;
         align-items: center;
         padding: 0 60px 75px 70px;
@@ -1138,21 +1137,21 @@ li.navi-btn a.next-img {
         border-radius: 0 0 25px 0;
     }
 
-    section#process ul.process-visual-container::after {
+    section#process ul.process-flow::after {
         display: none;
     }
 
-    ul.process-visual-container li {
+    ul.process-flow a {
         margin-bottom: 50px;
         background: url("../../img/project3/header-background-dotted.svg") repeat-x 0 75px;
         box-shadow: 0px 45px 75px -27px rgba(177, 177, 177, 0.35);
     }
 
-    ul.process-visual-container li:last-child {
+    ul.process-flow a:last-child {
         margin: 0;
     }
 
-    ul.process-visual-container li::after {
+    ul.process-flow a::after {
         content: "\f063";
         font-size: 1.85em;
         top: 200px;
@@ -1160,7 +1159,7 @@ li.navi-btn a.next-img {
         animation: 1.5s right-move-mobile ease infinite;
     }
 
-    ul.process-visual-container li:hover h3.sub-title {
+    ul.process-flow li:hover h3.sub-title {
         transform: scale(1.2);
     }
     
@@ -1233,7 +1232,7 @@ li.navi-btn a.next-img {
         width: 93.5%;
         margin: 0 0 0 auto;
     }
-    
+
     /* research */
 
     section#research main.container header.intro {
@@ -1265,16 +1264,19 @@ li.navi-btn a.next-img {
         padding: 0 50px;
     }
 
-    article.persona h3.title {
+    article.persona h3.title,
+    article.key-findings h3.title {
         font-size: 1.55em;
         margin: 0;
     }
     
-    article.persona h3.title::before {
+    article.persona h3.title::before,
+    article.key-findings h3.title::before {
         top: 45px;
     }
     
-    article.persona h3.title::after {
+    article.persona h3.title::after,
+    article.key-findings h3.title::after {
         margin-top: 20px;
     }
     
@@ -1314,6 +1316,10 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
+    article.key-findings aside.column {
+        margin: 50px 0 0;
+    }
+
     article.key-findings aside.column h4.sub-title {
         font-size: 1.45em;
     }
@@ -1324,7 +1330,9 @@ li.navi-btn a.next-img {
 
     article.key-findings aside.column figure {
         padding: 0;
+        margin: 50px 0;
     } 
+    
 
     article.key-findings aside.column figure img.desktop {
         display: none;
@@ -1385,7 +1393,7 @@ li.navi-btn a.next-img {
         padding: 50px 25px 0;
     }
 
-    section#process ul.process-visual-container {
+    section#process ul.process-flow {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
