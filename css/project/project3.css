@@ -735,7 +735,8 @@ section#solution aside {
     position: relative;
 }
 
-section#solution article p {
+section#solution article p,
+section#solution ol {
     max-width: 768px;
     position: relative;
     margin: 25px auto !important;
@@ -748,8 +749,7 @@ section#solution aside figure {
     max-width: 1080px;
 }
 
-section#solution aside figure.payment-btn,
-section#solution aside figure.flowchart {
+section#solution aside figure.medium-size {
     max-width: 768px;
 }
 
@@ -762,8 +762,7 @@ section#solution figure img {
     width: 100%;
 }
 
-section#solution figure.payment-btn img,
-section#solution figure.flowchart img {
+section#solution figure.medium-size img {
     margin: 50px 0;
 }
 
@@ -777,6 +776,16 @@ section#solution h4.sub-title {
     color: rgb(254, 116, 30);
     max-width: 768px;
     margin: 100px auto 35px;
+}
+
+section#solution ol {
+    padding: 0 0 0 25px;
+}
+
+section#solution ol li {
+    list-style: decimal;
+    font-size: 1.45em;
+    line-height: 2.25em;
 }
 
 
@@ -1093,6 +1102,10 @@ li.navi-btn a.next-img {
 
     section#solution h4.sub-title {
         font-size: 1.5em;
+    }
+
+    section#solution ol li {
+        font-size: 1.35em;
     }
 
 
@@ -1510,6 +1523,10 @@ li.navi-btn a.next-img {
 
     section#solution figure.mobile {
         display: block;
+    }
+
+    section#solution ol li {
+        font-size: 1.25em;
     }
 
 }

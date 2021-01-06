@@ -284,12 +284,12 @@
                             <div class="flow-2">
                                 <h4 class="sub-title">付款方式</h4>
                                 <p>「付款方式」這個區塊，原本的設計是把各個選項設計成 2 乘 2 的方格，但是這樣其實不夠直覺，觀者還需多花時間檢視。後來的設計改成不管是 3 種還是 4 種付費選項，我們都以<strong> Responsive 響應式排版 </strong>的方式設計，除了視覺上更為直覺、簡潔之外，每個選項也能隨著視窗大小做不同寬度的處理。</p>
-                                <figure class="desktop payment-btn">
+                                <figure class="desktop medium-size">
                                     <img src="../img/project3/payment-btn_desktop1.gif" alt="payment-btn-1">
                                     <img src="../img/project3/payment-btn_desktop2.gif" alt="payment-btn-2">
                                     <figcaption>▲ 響應式的付款方式區塊</figcaption>
                                 </figure>
-                                <figure class="mobile payment-btn">
+                                <figure class="mobile medium-size">
                                     <img src="../img/project3/payment-btn_mobile.gif" alt="payment-btn_mobile">
                                     <figcaption>▲ 響應式的付款方式區塊</figcaption>
                                 </figure>
@@ -297,10 +297,21 @@
                             <div class="flow-3">
                                 <h4 class="sub-title">優惠碼</h4>
                                 <p>這次主要新增的項目就是優惠碼的功能了，先前各專案的 PM 與提案團隊都有反應：希望能在募資專案前的預熱階段，能透過填寫問卷調查的方式，給予關心這個專案的潛在用戶或老客戶們一個專屬的回饋，透過優惠碼的折扣吸引這些用戶提供回饋，加強支持、贊助的動機。</p>
-                                <p>根據使用者不同的身份，優惠碼各有不同的功能區別：贊助者在付款頁面輸入提案者提供的優惠碼，折抵後確認付款。而提案者可在 flyingV 平台的管理後台生成自行設定的優惠碼組合，發送給贊助者。</p>
-                                <figure class="flowchart">
+                                <p>根據使用者不同的身份，優惠碼各有不同的功能區別：贊助者在付款頁面<strong>輸入提案者提供的優惠碼，折抵後確認付款</strong>。而提案者可在 flyingV 平台的<strong>管理後台生成自行設定的優惠碼組合，發送給贊助者</strong>。</p>
+                                <figure class="medium-size">
                                     <img src="../img/project3/flowchart_discount.png" alt="flowchart_discount">
                                     <figcaption>▲ 贊助者的優惠碼區塊 Flowchart</figcaption>
+                                </figure>
+                                <p>優惠碼驗證成功，即可以依照其設定的折扣去折抵募資金額。驗證失敗有幾種情況：</p>
+                                <ol>
+                                    <li>輸入的字元錯誤</li>
+                                    <li>優惠碼已經被用過了</li>
+                                    <li>優惠碼尚未開放時間使用</li>
+                                    <li>優惠碼過期失效</li>
+                                </ol>
+                                <figure class="medium-size">
+                                    <img src="../img/project3/discount-code.gif" alt="discount-code">
+                                    <figcaption>▲ 贊助者輸入優惠碼後，預設、驗證成功，與失敗的三種情形</figcaption>
                                 </figure>
                             </div>
                         </aside>
