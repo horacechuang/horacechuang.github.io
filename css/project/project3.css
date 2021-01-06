@@ -479,7 +479,7 @@ section#research main.container::after {
     background-repeat: no-repeat;
     background-size: 250px;
     background-position: 50%;
-    margin: -50px 0 100px;
+    margin: -15px 0 100px;
 }
 
 section#research main.container header.intro {
@@ -519,7 +519,8 @@ section#research main.container article.key-findings {
 }
 
 article.persona h3.title,
-article.key-findings h3.title {
+article.key-findings h3.title,
+section#solution h3.title {
     display: block;
     position: relative;
     font-size: 2em;
@@ -529,7 +530,8 @@ article.key-findings h3.title {
 }
 
 article.persona h3.title::before,
-article.key-findings h3.title::before {
+article.key-findings h3.title::before,
+section#solution h3.title::before  {
     content: "";
     display: block;
     position: relative;
@@ -541,7 +543,8 @@ article.key-findings h3.title::before {
 }
 
 article.persona h3.title::after,
-article.key-findings h3.title::after {
+article.key-findings h3.title::after,
+section#solution h3.title::after  {
     content: "";
     display: block;
     position: relative;
@@ -678,13 +681,16 @@ article.key-findings aside.column figure img.mobile {
 /* solution */
 
 section#solution,
-section#solution main.container {
+section#solution main.container,
+section#solution article.pay-flow,
+section#solution article.message {
     width: 100%;
     position: relative;
     display: block;
 }
 
-section#solution header {
+section#solution header,
+section#solution article.pay-flow header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -695,8 +701,82 @@ section#solution header h2.title {
     background: rgb(235, 94, 78);
     color: rgb(255, 255, 255);
     padding: 15px;
+    margin-bottom: 1em;
     border-left: 5px solid rgb(233, 34, 12);
 }
+
+section#solution header p,
+section#solution article p {
+    font-size: 1.45em;
+    line-height: 2.1em;
+}
+
+section#solution article.pay-flow header,
+section#solution article.message header {
+    align-items: flex-start;
+    max-width: 768px;
+    margin: 100px auto 0;
+}
+
+section#solution h3.title {
+    margin: 0 0 1.5em;
+}
+
+section#solution h3.title::before {
+    top: 67.5px;
+}
+
+section#solution h3.title::after {
+    margin-top: 30px;
+}
+
+section#solution aside {
+    display: block;
+    position: relative;
+}
+
+section#solution article p {
+    max-width: 768px;
+    position: relative;
+    margin: 25px auto !important;
+}
+
+section#solution aside figure {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+section#solution aside figure.payment-btn {
+    max-width: 768px;
+}
+
+section#solution figure a {
+    margin: 100px 0 50px;
+    display: block;
+}
+
+section#solution figure img {
+    width: 100%;
+}
+
+section#solution figure.payment-btn img {
+    margin: 50px 0;
+}
+
+section#solution figure.mobile {
+    display: none;
+}
+
+section#solution h4.sub-title {
+    font-size: 1.6em;
+    margin-bottom: 2em;
+    color: rgb(254, 116, 30);
+    max-width: 768px;
+    margin: 100px auto 35px;
+}
+
 
 /* project-main-navigator */
 
@@ -730,7 +810,8 @@ li.navi-btn a.next-img {
     /* header */
 
     header#header,
-    section#preface {
+    section#preface,
+    section#solution {
         padding: 0 25px;
     }
     
@@ -909,16 +990,19 @@ li.navi-btn a.next-img {
         font-size: 1.3em;
     }
     
-    article.persona h3.title {
+    article.persona h3.title,
+    article.key-findings h3.title {
         font-size: 1.65em;
         margin: 0;
     }
     
-    article.persona h3.title::before {
+    article.persona h3.title::before,
+    article.key-findings h3.title::before {
         top: 50px;
     }
     
-    article.persona h3.title::after {
+    article.persona h3.title::after,
+    article.key-findings h3.title::after {
         margin-top: 25px;
     }
     
@@ -953,6 +1037,10 @@ li.navi-btn a.next-img {
         margin: 0 0 25px 0;
     }
 
+    article.key-findings aside.column {
+        margin: 50px 0 0;
+    }
+
     article.key-findings aside.column h4.sub-title {
         font-size: 1.5em;
     }
@@ -962,8 +1050,49 @@ li.navi-btn a.next-img {
     }
 
     article.key-findings aside.column figure {
-        padding: 0 25px 0 0;
+        padding: 50px 25px 0 50px;
+        margin: 0;
     } 
+
+    /* solution */
+
+    section#solution header h2.title {
+        font-size: 1.65em;
+    }
+
+    section#solution header p {
+        font-size: 1.35em;
+    }
+
+    section#solution article p {
+        font-size: 1.3em;
+    }
+
+    section#solution article.pay-flow header, section#solution article.message header {
+        margin: 75px auto 0;
+    }
+
+    section#solution h3.title {
+        font-size: 1.6em;
+    }
+
+    section#solution h3.title::before {
+        top: 60px;
+    }
+
+    section#solution h3.title::after {
+        margin-top: 27.5px;
+    }
+
+    section#solution figure a,
+    section#solution h4.sub-title {
+        margin: 75px 0 35px;
+    }
+
+    section#solution h4.sub-title {
+        font-size: 1.5em;
+    }
+
 
 }
 
@@ -1247,16 +1376,6 @@ li.navi-btn a.next-img {
         font-size: 1.5em;
     }
 
-    section#research header.intro p {
-        font-size: 1.25em;
-        line-height: 2.15em;
-    }
-
-    section#research main.container article.persona,
-    section#research main.container article.key-findings {
-        padding: 50px 0 25px;
-    }
-
     article.persona h3.title,
     article.persona aside.persona,
     article.key-findings h3.title,
@@ -1333,12 +1452,61 @@ li.navi-btn a.next-img {
         margin: 50px 0;
     } 
     
-
     article.key-findings aside.column figure img.desktop {
         display: none;
     }
 
     article.key-findings aside.column figure img.mobile {
+        display: block;
+    }
+
+    /* solution */
+
+    section#solution header h2.title {
+        font-size: 1.5em;
+    }
+
+    section#solution header p {
+        font-size: 1.25em;
+        line-height: 2.15em;
+    }
+
+    section#solution article.pay-flow, 
+    section#solution article.message {
+        padding: 0 15px;
+    }
+
+    section#solution article.pay-flow header, section#solution article.message header {
+        margin: 50px auto 0;
+    }
+
+    section#solution h3.title {
+        font-size: 1.45em;
+        margin: 0 0 1em;
+    }
+
+    section#solution h3.title::before {
+        top: 55px;
+    }
+
+    section#solution article p {
+        font-size: 1.25em;
+    }
+
+    section#solution figure a,
+    section#solution h4.sub-title {
+        margin: 50px 0 35px;
+    }
+
+    section#solution h4.sub-title {
+        font-size: 1.45em;
+    }
+
+    section#solution figure.desktop {
+        display: none;
+    }
+
+    section#solution figure.mobile {
         display: block;
     }
 
