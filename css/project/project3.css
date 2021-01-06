@@ -748,7 +748,8 @@ section#solution aside figure {
     max-width: 1080px;
 }
 
-section#solution aside figure.payment-btn {
+section#solution aside figure.payment-btn,
+section#solution aside figure.flowchart {
     max-width: 768px;
 }
 
@@ -761,7 +762,8 @@ section#solution figure img {
     width: 100%;
 }
 
-section#solution figure.payment-btn img {
+section#solution figure.payment-btn img,
+section#solution figure.flowchart img {
     margin: 50px 0;
 }
 
