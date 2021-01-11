@@ -746,7 +746,7 @@ section#solution ol {
 section#solution aside figure {
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 75px auto;
     max-width: 1080px;
 }
 
@@ -755,16 +755,13 @@ section#solution aside figure.medium-size {
 }
 
 section#solution figure a {
-    margin: 100px 0 50px;
+    margin: 75px 0 0;
     display: block;
 }
 
 section#solution figure img {
     width: 100%;
-}
-
-section#solution figure.medium-size img {
-    margin: 50px 0;
+    margin: 25px 0 25px;
 }
 
 section#solution figure.mobile {
@@ -1522,11 +1519,15 @@ li.navi-btn a.next-img {
         display: none;
     }
 
+    section#solution figure img {
+        margin: 25px 0;
+    }
+
     section#solution figure.mobile {
         display: block;
     }
 
-    section#solution figure img.payment-btn_mobile {
+    section#solution figure.mobile img {
         padding: 0 50px;
     }
 
