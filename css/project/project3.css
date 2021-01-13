@@ -2,6 +2,10 @@ main#container {
     padding-bottom: 150px !important;
 }
 
+p, figcaption {
+    font-weight: 100;
+}
+
 p:last-child {
     margin: 0 !important;
 }
@@ -761,7 +765,7 @@ section#solution figure a {
 
 section#solution figure img {
     width: 100%;
-    margin: 25px 0 25px;
+    margin: 25px 0;
 }
 
 section#solution figure.mobile {
@@ -1484,11 +1488,6 @@ li.navi-btn a.next-img {
         line-height: 2.15em;
     }
 
-    section#solution article.pay-flow, 
-    section#solution article.message {
-        padding: 0 15px;
-    }
-
     section#solution article.pay-flow header, section#solution article.message header {
         margin: 50px auto 0;
     }
@@ -1508,7 +1507,7 @@ li.navi-btn a.next-img {
 
     section#solution figure a,
     section#solution h4.sub-title {
-        margin: 50px 0 35px;
+        margin: 50px 0 25px;
     }
 
     section#solution h4.sub-title {
@@ -1528,7 +1527,7 @@ li.navi-btn a.next-img {
     }
 
     section#solution figure.mobile img {
-        padding: 0 50px;
+        padding: 0 100px;
     }
 
     section#solution ol li {
@@ -1638,6 +1637,12 @@ li.navi-btn a.next-img {
     article.key-findings aside main {
         width: 85%;
         padding: 0;
+    }
+
+    /* solution */
+
+    section#solution figure.mobile img {
+        padding: 0 25px;
     }
 
 }
