@@ -119,7 +119,7 @@
                     <article class="content">
                         <h2 class="title" data-aos="fade-right" data-aos-delay="500">Design Process 設計流程</h2>
                         <p data-aos="fade-left" data-aos-delay="500">在設計的流程上，我們先收集目前平台上使用者平時反映給我們的意見，同時提案方也會給我們不少的回饋，這些待解決的問題累積起來之後，再行歸納整理出幾個重要的 Pain Points 痛點，接著針對不同身份的使用者定義 Persona，釐清問題所在。</p>
-                        <p data-aos="fade-left" data-aos-delay="750">發現問題後，接續進行平台上介面與流程的改善。先依待修正的功能規劃 User Flow 與 Wireframe，與內部討論後開始進行介面的 Mockup 設計，最後交由前、後端工程師上版。</p>
+                        <p data-aos="fade-left" data-aos-delay="750">發現問題後，接續進行平台上介面與流程的改善。先依待修正的功能規劃 User Flow 與 Wireframe，與內部討論後進行介面的 Mockup 設計，最後交由前、後端工程師上版。</p>
                     </article>
                     <ul class="process-flow">
                         <a href="#problem" data-aos="fade-down" data-aos-delay="500">
@@ -148,8 +148,8 @@
                         <aside class="row row-content">
                             <h2 class="title" data-aos="fade-right" data-aos-delay="500">Problem 發現問題</h2>
                             <p data-aos="fade-left" data-aos-delay="500">flyingV 在創站初期，隨著募資案件快速的增加，募資金額也不斷地提高，因此許多功能是在不斷迭代的過程中設計出來。到了 2018 年末，遂進入平台的成熟期，團隊內成員也陸續發現平台內有些流程當初並沒有設想周到，導致後續不管是在提案者、贊助者與團隊內都有操作上面的問題與覺得可以更好的地方。</p>
-                            <p data-aos="fade-left" data-aos-delay="750">我們主要利用平時每週團隊內的 Marketing 與 Project Team 都會定期蒐集與分析 flyingV 平台上的客服信箱與 Facebook 粉絲專頁上用戶們的意見，團隊們都會透過每週例行性的 meeting 上充分了解提案者與贊助者兩種不同身分的用戶們反應的心聲。</p>
-                            <p data-aos="fade-left" data-aos-delay="1000">另外我們也透過 <span>hotjar</span> 這個外部工具做了簡單的使用者操作分析，利用 Heatmaps 與 Recording 功能我們發現，贊助者在付款的流程上常會因為不妥的版面流程與欄位填寫而迷失方向，而專案上的付款頁面當初因為求快，許多細節在規劃建置時卻沒有注意到，到後期不但無法幫助專案的募資業績往上提升，甚至降低了贊助者的專案贊助意願。</p>
+                            <p data-aos="fade-left" data-aos-delay="750">我們主要利用平時每週團隊內的 Marketing 與 Project Team 都會<strong>定期蒐集與分析 flyingV 平台上的客服信箱與 Facebook 粉絲專頁上用戶們的意見</strong>，團隊們都會透過每週例行性的 meeting 上充分了解提案者與贊助者兩種不同身分的用戶們反應的心聲。</p>
+                            <p data-aos="fade-left" data-aos-delay="1000">另外我們也<strong>透過 <span>hotjar</span> 這個外部工具做了大致的使用者操作分析</strong>，利用 Heatmaps 與 Recording 功能我們發現，贊助者在付款的流程上常會因為不妥的版面流程與欄位填寫而迷失方向，而專案上的付款頁面當初因為求快，許多細節在規劃建置時卻沒有注意到，到後期不但無法幫助專案的募資業績往上提升，甚至降低了贊助者的專案贊助意願。</p>
                         </aside>
                     </article>
                     <picture class="img" data-aos="fade-down" data-aos-delay="1250">  
@@ -265,7 +265,7 @@
                             <h3 class="title">Payment Flow 付款流程</h3>
                         </header>
                         <aside class="flow">
-                            <div class="flow-1 content">
+                            <div class="flow-1 preface">
                                 <p>在付款的流程安排上，與舊版的不同之處在於：我們把「贊助總金額」名稱<strong>改成「贊助金額明細」</strong>，將這個區塊調整至<strong>頁面的下方</strong>。</p>
                                 <p>根據過往研究與熱點圖分析，觀者在瀏覽畫面上相關資訊時，會由上至下，從左至右掃射瀏覽一遍再行細部檢視，因此我們的版面維持這樣的準則去規劃。這樣的調整得以讓贊助者可以在輸入完相關資訊後，<strong>免於多花時間拉至畫面上方確認總金額</strong>，而是在最下方確認後直接送出訂單進行付款。</p>
                                 <figure class="medium-size">
@@ -345,13 +345,29 @@
                                 </figure>
                             </div>
                         </aside>
-                        
-                        
                     </article>
                     <article class="message">
                         <header>
                             <h3 class="title">Message 站內訊息</h3>
                         </header>
+                        <aside class="flow">
+                            <div class="flow-1 preface">
+                                <p>我們可以把「站內訊息」功能當作是提案者與贊助者彼此溝通的一個平台，提案者可以向贊助者發布專案的公告，也能直接回答贊助者的問題。如果是贊助者的身份，可以直接在專案頁面或是直接在訊息頁面選擇曾贊助過的專案，直接與提案者溝通。</p>
+                                <p>預設可從右上方的「鈴鐺」圖示裡的下拉面板，進入站內訊息區塊；手機版則是從會員名稱裡的下拉面板找到連結。進入站內訊息區塊後，分成兩個部分。左邊側邊欄是訊息列表，右邊是訊息內容。列表裡如果是系統發出的訊息，會置頂在最上方。未讀訊息會以粗體文字和小紅點標示。</p>
+                                <figure class="desktop">
+                                    <a href="" data-lity>
+                                        <img src="" alt="">
+                                    </a>
+                                    <figcaption>▲ 優化後的站內訊息畫面（電腦版）</figcaption>
+                                </figure>
+                                <figure class="mobile">
+                                    <a href="" data-lity>
+                                        <img src="" alt="">
+                                    </a>
+                                    <figcaption>▲ 優化後的站內訊息畫面（手機版）</figcaption>
+                                </figure>
+                            </div>
+                        </aside>
 
                     </article>
                 </main>

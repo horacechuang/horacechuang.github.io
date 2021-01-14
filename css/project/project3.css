@@ -744,7 +744,8 @@ section#solution article p,
 section#solution ol {
     max-width: 768px;
     position: relative;
-    margin: 25px auto !important;
+    margin: 0 auto !important;
+    padding: 20px 0;
 }
 
 section#solution aside figure {
@@ -1488,7 +1489,8 @@ li.navi-btn a.next-img {
         line-height: 2.15em;
     }
 
-    section#solution article.pay-flow header, section#solution article.message header {
+    section#solution article.pay-flow header, 
+    section#solution article.message header {
         margin: 50px auto 0;
     }
 
