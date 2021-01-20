@@ -740,6 +740,10 @@ section#solution aside {
     position: relative;
 }
 
+section#solution aside div {
+    margin: 0 0 100px 0;
+} 
+
 section#solution article p,
 section#solution ol {
     max-width: 768px;
@@ -751,7 +755,7 @@ section#solution ol {
 section#solution aside figure {
     display: block;
     position: relative;
-    margin: 75px auto;
+    margin: 50px auto;
     max-width: 1080px;
 }
 
@@ -775,10 +779,9 @@ section#solution figure.mobile {
 
 section#solution h4.sub-title {
     font-size: 1.6em;
-    margin-bottom: 2em;
     color: rgb(254, 116, 30);
     max-width: 768px;
-    margin: 100px auto 35px;
+    margin: 0 auto 1em;
 }
 
 section#solution ol {
@@ -1098,8 +1101,7 @@ li.navi-btn a.next-img {
         margin-top: 27.5px;
     }
 
-    section#solution figure a,
-    section#solution h4.sub-title {
+    section#solution figure a {
         margin: 75px 0 35px;
     }
 
@@ -1507,8 +1509,7 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
-    section#solution figure a,
-    section#solution h4.sub-title {
+    section#solution figure a {
         margin: 50px 0 25px;
     }
 

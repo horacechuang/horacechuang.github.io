@@ -359,7 +359,7 @@ section#project .project-main-container {
 }
 
 .project-grid ul.grid-container:hover a {
-    opacity: .15;
+    opacity: .5;
     transition: .25s all linear;
 }
 
