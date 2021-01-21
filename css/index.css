@@ -82,7 +82,7 @@ img.pattern {
 
 #header-container > .paragraph h1 {
     display: inline-block;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
     font-size: 4.5em;
     margin-bottom: 40px;
@@ -133,8 +133,8 @@ span.wave {
 }
 
 .paragraph p {
-    font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-weight: 100;
+    font-family: 'ar-udjingxiheib5', sans-serif;
+    font-weight: 200;
     font-style: normal;
     font-size: 1.85em;
     line-height: 2.15em;
@@ -408,7 +408,7 @@ li#grid-inner .title h3::after {
 }
 
 li#grid-inner p {
-    font-family: 'Roboto Slab', 'ar-udjingxiheib5', sans-serif;
+    font-family: 'ar-udjingxiheib5', sans-serif;
     font-size: 1.35em;
     line-height: 2.1em;
     font-weight: 400;
@@ -681,7 +681,7 @@ blockquote.about-main-header p {
     font-size: 1.75em;
     line-height: 2.2em;
     margin: 50px 0;
-    font-family: 'Roboto Slab', 'ar-udjingxiheib5', sans-serif;
+    font-family: 'ar-udjingxiheib5', sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
