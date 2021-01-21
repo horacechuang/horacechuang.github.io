@@ -1,7 +1,3 @@
-main#container {
-    padding-bottom: 150px !important;
-}
-
 p, figcaption {
     font-weight: 100;
 }
@@ -10,13 +6,19 @@ p:last-child {
     margin: 0 !important;
 }
 
+strong {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding-bottom: 5px;
+}
+
 figcaption {
     display: flex;
     position: relative;
     justify-content: center;
     font-size: 1.25em;
     line-height: 2.1em;
-    margin: 25px 0;
+    margin: 25px auto;
+    max-width: 768px;
     letter-spacing: .25px;
     color: rgb(162, 162, 162);
 }
@@ -407,8 +409,8 @@ section#problem article.content aside.row-content::before {
     border-radius: 35% 10% 20% 50%;
     filter: blur(65px);
     -webkit-filter: blur(65px);
-    bottom: -25px;
-    right: -5px;
+    bottom: 35px;
+    right: 15px;
     z-index: -1;
 }
 
@@ -659,11 +661,6 @@ article.key-findings main p {
     margin: 0 0 2em 0;
 }
 
-article.key-findings main p strong {
-    border-bottom: 1px solid rgb(182, 182, 182);
-    padding-bottom: 5px;
-}
-
 article.key-findings aside main {
     width: 80%;
 }
@@ -744,6 +741,10 @@ section#solution aside div {
     margin: 0 0 100px 0;
 } 
 
+section#solution aside div:last-child {
+    margin: 0;
+}
+
 section#solution article p,
 section#solution ol {
     max-width: 768px;
@@ -792,6 +793,15 @@ section#solution ol li {
     list-style: decimal;
     font-size: 1.45em;
     line-height: 2.25em;
+}
+
+section#footer-bg,
+section#footer-bg img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 50px;
 }
 
 
@@ -1127,7 +1137,7 @@ li.navi-btn a.next-img {
 @media all and (max-width: 767px) {
 
     main#container {
-        padding-bottom: 50px !important;
+        padding-bottom: 25px !important;
     }
 
     figcaption {
@@ -1347,8 +1357,10 @@ li.navi-btn a.next-img {
     section#problem article.content aside.row-content::before {
         width: 150px;
         height: 500px;
-        bottom: 0px;
-        left: 25px;
+        bottom: -10px;
+        left: -10px;
+        filter: blur(55px);
+        -webkit-filter: blur(55px);
     }
 
     section#problem aside.row-content h2.title {
@@ -1527,6 +1539,7 @@ li.navi-btn a.next-img {
 
     section#solution figure.mobile {
         display: block;
+        margin: 25px auto;
     }
 
     section#solution figure.mobile img {
