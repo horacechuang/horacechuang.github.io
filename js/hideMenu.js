@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 });
 
-// document.oncontextmenu = new Function("return false;");
+//document.oncontextmenu = new Function("return false;");
 document.onmousedown = new Function("return false;");
 document.ondragstart = new Function("return false;");
 document.onselectstart = new Function("return false;");

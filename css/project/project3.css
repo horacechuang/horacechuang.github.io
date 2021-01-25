@@ -396,7 +396,7 @@ section#problem article.content aside.row {
 section#problem article.content aside.row-content {
     width: 65%;
     padding: 0 75px 75px 0;
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     border-radius: 0 0 35px 0;
 }
 
@@ -411,7 +411,7 @@ section#problem article.content aside.row-content::before {
     -webkit-filter: blur(65px);
     bottom: 35px;
     right: 15px;
-    z-index: -2;
+    z-index: -1;
 }
 
 section#problem aside.row-content h2.title {
@@ -1342,15 +1342,12 @@ li.navi-btn a.next-img {
     }
 
     section#problem article.content aside.row {
-        width: 10%;
+        width: 5%;
     }
 
     section#problem article.content aside.row-content {
-        width: 90%;
+        width: 95%;
         padding: 0 50px 50px 25px;
-    }
-
-    section#problem article.content aside.row-content {
         border-radius: 0 0 0 25px;
     }
 
@@ -1359,8 +1356,9 @@ li.navi-btn a.next-img {
         height: 500px;
         bottom: -10px;
         left: -10px;
-        filter: blur(55px);
-        -webkit-filter: blur(55px);
+        filter: blur(60px);
+        -webkit-filter: blur(60px);
+        opacity: 0.85;
     }
 
     section#problem aside.row-content h2.title {

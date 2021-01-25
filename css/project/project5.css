@@ -351,6 +351,7 @@ section.process-color picture.row img,
 section.process-page-element picture.row1 img,
 section.process-page-element figure.row1 video {
     width: 100%;
+    height: 100%;
 }
 
 section.process-logo picture.row2,
