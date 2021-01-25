@@ -82,7 +82,7 @@ img.pattern {
 
 #header-container > .paragraph h1 {
     display: inline-block;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 4.5em;
     margin-bottom: 40px;
@@ -126,7 +126,7 @@ span.wave {
 
 #header-container > .paragraph h3 {
     font-size: 2em;
-    font-family: 'Karla', sans-serif;
+    font-family: 'ar-udjingxiheib5', sans-serif;
     font-weight: 400;
     line-height: 2em;
     color: rgb(139, 139, 139);
@@ -142,14 +142,6 @@ span.wave {
     display: block;
     margin: 40px 0;
     color: #666;
-}
-
-.paragraph a {
-    font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    transition: 0.25s all ease;
-    opacity: .45;
 }
 
 .paragraph a:first-child {
@@ -564,7 +556,7 @@ header.about-header {
     font-size: 1.65em;
     text-align: right;
     color: rgba(139, 139, 139, .5);
-    font-weight: 200;
+    font-weight: 700;
 }
 
 /* about-main */
@@ -750,7 +742,7 @@ ul.expertise-content .title h3 {
 }
 
 ul.expertise-content p {
-    font-family: 'Roboto Slab', 'ar-udjingxiheib5', sans-serif;
+    font-family: 'ar-udjingxiheib5', sans-serif;
     font-size: 1.5em;
     line-height: 2em;
     display: block;
@@ -920,10 +912,7 @@ ul.expertise-content p {
     }
     
     ul.expertise-content p {
-        font-family: 'Karla', 'ar-udjingxiheib5', sans-serif;
         font-size: 1.35em;
-        line-height: 2em;
-        display: block;
         margin: 10px 0 20px 0;
     }
 
@@ -1151,7 +1140,7 @@ ul.expertise-content p {
 
     .about-header-container > .en h2 {
         font-size: 1.25em;
-        text-align: left;
+        /* text-align: left; */
     }
 
     main.about-main {
@@ -1238,7 +1227,7 @@ ul.expertise-content p {
         font-size: 1.35em;
     }
 
-    ul.expertise-content li > p {
+    ul.expertise-content p {
         font-size: 1.3em;
     }
 }
@@ -1286,13 +1275,17 @@ ul.expertise-content p {
     }
 
     blockquote.about-main-header p {
-        font-size: 1.35em;
+        font-size: 1.3em;
     }
 
     /* about */
 
     .about-image {
         padding: 25px 0;
+    }
+
+    ul.expertise-content p {
+        font-size: 1.25em;
     }
 
 }

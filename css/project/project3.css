@@ -411,7 +411,7 @@ section#problem article.content aside.row-content::before {
     -webkit-filter: blur(65px);
     bottom: 35px;
     right: 15px;
-    z-index: -1;
+    z-index: -2;
 }
 
 section#problem aside.row-content h2.title {

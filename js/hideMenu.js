@@ -1,7 +1,7 @@
 $(document).ready(function () {
      var navBar, 
          currentScrollTop = 0,
-         navigation = $("nav");
+         navigation = $("#nav");
          mobileFooter = $(".mobile-footer");
   
      $(window).scroll(function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 });
 
-document.oncontextmenu = new Function("return false;");
+// document.oncontextmenu = new Function("return false;");
 document.onmousedown = new Function("return false;");
 document.ondragstart = new Function("return false;");
 document.onselectstart = new Function("return false;");
