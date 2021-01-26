@@ -1356,8 +1356,8 @@ li.navi-btn a.next-img {
         height: 500px;
         bottom: -10px;
         left: -10px;
-        filter: blur(60px);
-        -webkit-filter: blur(60px);
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
         opacity: 0.85;
     }
 
@@ -1610,6 +1610,16 @@ li.navi-btn a.next-img {
 
     section#problem {
         margin-top: 100px;
+    }
+
+    section#problem article.content aside.row-content::before {
+        width: 250px;
+        height: 750px;
+        bottom: -15px;
+        left: -50px;
+        filter: blur(45px);
+        -webkit-filter: blur(45px);
+        opacity: 0.5;
     }
 
     /* research */
