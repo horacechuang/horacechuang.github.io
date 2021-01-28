@@ -370,7 +370,7 @@ ul.process-flow li h3.sub-title {
 nav#longpage-sub-menu {
     display: block;
     position: relative;
-    max-width: 1330px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -385,20 +385,26 @@ nav#longpage-sub-menu ul.sub-menu {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: calc(50% + 245px);
+    top: calc(50% + 100px);
     z-index: 2;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    border-radius: 25px;
+    box-shadow: -44px -52px 75px -41px rgb(148 148 148 / 25%)
 }
 
-nav#longpage-sub-menu ul.sub-menu::after {
+/* nav#longpage-sub-menu ul.sub-menu::after {
     content: "";
     display: block;
     position: absolute;
     width: 1px;
     height: 100%;
     top: 0;
-    right: -10px;
+    right: -15px;
     background: rgba(207, 207, 207, 0.5);
-}
+} */
 
 ul.sub-menu.fixed-nav {
     position: fixed !important;
@@ -406,7 +412,7 @@ ul.sub-menu.fixed-nav {
 }
 
 ul.sub-menu.sticky-nav {
-    top: calc(50% - 700px) !important
+    top: calc(50% - 950px) !important
 }
 
 ul.sub-menu li {
@@ -415,13 +421,17 @@ ul.sub-menu li {
     align-items: flex-end;
 }
 
-ul.sub-menu li a:hover span {
-    border-bottom: 1px solid rgba(255, 135, 122, .5);
-    padding-bottom: 2.5px;
+ul.sub-menu li a span,
+ul.sub-menu li.sub-item a span {
+    display: inline-block;
+    transition: 0.15s all ease;
+    opacity: .85;
 }
 
+ul.sub-menu li a:hover span,
 ul.sub-menu li.sub-item a:hover span {
-    border-color: rgba(66, 66, 66, .5);
+    opacity: 1;
+    transform: translateX(-5px);
 }
 
 ul.sub-menu li.item {
@@ -442,19 +452,19 @@ ul.sub-menu span {
 }
 
 ul.sub-menu span.title {
-    font-size: 1.5em;
+    font-size: 1.35em;
     font-weight: 600;
     color: rgb(255, 135, 122);
 }
 
 ul.sub-menu span.sub-title {
-    font-size: 1.35em;
+    font-size: 1.25em;
     font-weight: 600;
     line-height: 2.25em;
 }
 
 ul.sub-menu span.ex-sub-title {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2.25em;
 }
 
