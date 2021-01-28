@@ -429,11 +429,7 @@ nav#longpage-sub-menu a {
 
 nav#longpage-sub-menu a:hover {
     opacity: 1;
-    transform: translateX(5px) scale(1.05);
-}
-
-nav#longpage-sub-menu a.selected {
-    transform: translateX(-5px) scale(1.05);
+    transform: scale(1.05);
 }
 
 ul.sub-menu li.item {
