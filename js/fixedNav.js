@@ -19,4 +19,3 @@ $(window).scroll(function() {
     }
 
 });
-  

@@ -8,5 +8,5 @@ $(window).scroll(function() {
         $("#nav").removeClass("addShadow");
         $("footer").removeClass("addShadow");
     }
+    
 });
-  

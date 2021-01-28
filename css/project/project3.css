@@ -388,8 +388,8 @@ nav#longpage-sub-menu ul.sub-menu {
     top: calc(50% + 100px);
     z-index: 2;
     background: rgba(255,255,255,.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     padding: 25px 20px;
     border-radius: 25px;
     box-shadow: -44px -52px 75px -41px rgb(148 148 148 / 25%)
@@ -421,17 +421,19 @@ ul.sub-menu li {
     align-items: flex-end;
 }
 
-ul.sub-menu li a span,
-ul.sub-menu li.sub-item a span {
+nav#longpage-sub-menu a {
     display: inline-block;
-    transition: 0.15s all ease;
-    opacity: .85;
+    transition: .25s all ease;
+    opacity: .8;
 }
 
-ul.sub-menu li a:hover span,
-ul.sub-menu li.sub-item a:hover span {
+nav#longpage-sub-menu a:hover {
     opacity: 1;
-    transform: translateX(-5px);
+    transform: translateX(5px) scale(1.05);
+}
+
+nav#longpage-sub-menu a.selected {
+    transform: translateX(-5px) scale(1.05);
 }
 
 ul.sub-menu li.item {
