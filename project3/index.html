@@ -27,6 +27,7 @@
     <script src="../js/navMenu_mobile.js"></script>
     <script src="../js/hideMenu.js"></script>
     <script src="../js/scrollPosition.js"></script>
+    <script src="../js/fixedNav.js"></script>
     <!-- Disable Cache -->
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
@@ -140,20 +141,85 @@
                     </ul>
                 </main>
             </section>
-            <nav id="sub-menu">
-                <ul>
-                    <li>
-                        <a href="#problem" data-number="1" class>
-                            <span class="tag">發現問題</span>
+            <nav id="longpage-sub-menu" class>
+                <ul class="sub-menu" class>
+                    <li class="item menu-1" data-aos="fade-right" data-aos-delay="250">
+                        <a href="#process">
+                            <span class="title">設計流程</span>
                         </a>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="item menu-2" data-aos="fade-right" data-aos-delay="500">
+                        <a href="#problem">
+                            <span class="title">發現問題</span>
+                        </a> 
+                    </li>
+                    <li class="item menu-3" data-aos="fade-right" data-aos-delay="750">
+                        <a href="#research">
+                            <span class="title">探討問題</span>
+                        </a>
+                        <ul class="ex-sub-menu">
+                            <li class="sub-item">
+                                <a href="#persona">
+                                    <span class="sub-title">Persona</span>
+                                </a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#key-findings">
+                                    <span class="sub-title">Key Findings</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <span class="ex-sub-title">付款流程</span>
+                                    </li>
+                                    <li>
+                                        <span class="ex-sub-title">站內訊息</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item menu-4" data-aos="fade-right" data-aos-delay="1000">
+                        <a href="#solution">
+                            <span class="title">設計方案</span>
+                        </a>
+                        <ul class="ex-sub-menu">
+                            <li class="sub-item sub">
+                                <a href="#pay-flow">
+                                    <span class="sub-title">付款流程</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <span class="ex-sub-title">付款方式</span>
+                                    </li>
+                                    <li>
+                                        <span class="ex-sub-title">優惠碼</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#message">
+                                    <span class="sub-title">站內訊息</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <span class="ex-sub-title">通知面板</span>
+                                    </li>
+                                    <li>
+                                        <span class="ex-sub-title">新增訊息</span>
+                                    </li>
+                                    <li>
+                                        <span class="ex-sub-title">查看專案明細</span>
+                                    </li>
+                                    <li>
+                                        <span class="ex-sub-title">篩選訊息</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <section id="problem">
+            <section id="problem" class="block">
                 <main class="container" data-aos="fade-up">
                     <article class="content">
                         <aside class="row">
@@ -176,13 +242,13 @@
                     </picture>
                 </main>
             </section>
-            <section id="research">
+            <section id="research" class="block">
                 <main class="container">
                     <header class="intro">
                         <h2 class="title" data-aos="fade-right" data-aos-delay="500">Research 探討問題</h2>
                         <p data-aos="fade-left" data-aos-delay="750">有了平時蒐集的用戶回饋後，我們就進行 Persona 的製作，為的是區別兩方不同立場的使用者 —— 提案者與贊助者，透過描繪出各自的使用習慣、人物特徵、行為模式，以便能分析他們在平台上遇到的問題與痛點。</p>
                     </header>
-                    <article class="persona">
+                    <article id="persona" class="persona block">
                         <h3 class="title" data-aos="fade-up" data-aos-delay="500">Persona</h3>
                         <aside class="persona">
                             <div class="row img" data-aos="fade-right">
@@ -225,9 +291,11 @@
                             </div>
                         </aside>
                     </article>
-                    <article class="key-findings">
-                        <h3 class="title" data-aos="fade-up">Key Findings</h3>
-                        <aside class="column pay-flow">
+                    <article id="key-findings" class="key-findings">
+                        <header class="block">
+                            <h3 class="title" data-aos="fade-up">Key Findings</h3>
+                        </header>
+                        <aside class="column pay-flow block">
                             <main>
                                 <h4 class="sub-title" data-aos="fade-right" data-aos-delay="500">Payment Flow 付款流程</h4>
                                 <p data-aos="fade-left" data-aos-delay="550">下方是原本的付款頁面：之前並<strong>沒有設計響應式 RWD 的設計</strong>，讓許多想贊助的用戶改到挫折與雜亂。先前「贊助總金額」的區塊是在整個版面的上方，但用戶經常回報給我們：<strong>每選一次付款的選項都會做運費或手續費的更動，但數字變動後卻在版面最上方，使用者還需滑至上方確認數目，再往下點按點按付款按鈕。</strong>我們發現一開始這樣的設計，造成平台一直以來無法有效增加用戶完成下單的比率，反而使平台的客服申訴量增加。</p>
@@ -250,7 +318,7 @@
                                 <figcaption>▲ 重新設計前的付款流程網頁</figcaption>
                             </figure>
                         </aside>
-                        <aside class="column message">
+                        <aside class="column message block">
                             <main>
                                 <h4 class="sub-title" data-aos="fade-right" data-aos-delay="500">Message 站內訊息</h4>
                                 <p data-aos="fade-left" data-aos-delay="550">成立之初，因著重在系統的穩定與行銷層面，因此許多功能遲遲未開發，其中站內訊息這個功能當初就被忽略了，因此打算在這一版優化，站內訊息的功能上根據使用者雙方的需求去做改善。</p>
@@ -269,12 +337,12 @@
             </section>
             <section id="solution">
                 <main class="container">
-                    <header data-aos="fade-up">
+                    <header class="block" data-aos="fade-up">
                         <h2 class="title">Solution 設計方案</h2>
                         <p>從以上的各項問題探討後，提出改善現有平台的設計方案。</p>
                     </header>
-                    <article class="pay-flow">
-                        <header data-aos="fade-right">
+                    <article id="pay-flow" class="pay-flow">
+                        <header class="block"data-aos="fade-right">
                             <h3 class="title">Payment Flow 付款流程</h3>
                         </header>
                         <aside class="flow">
@@ -359,7 +427,7 @@
                             </div>
                         </aside>
                     </article>
-                    <article class="message">
+                    <article id="message" class="message">
                         <header data-aos="fade-right">
                             <h3 class="title">Message 站內訊息</h3>
                         </header>
@@ -448,7 +516,7 @@
                             <div class="flow-5 filter">
                                 <h4 class="sub-title" data-aos="fade-right">篩選訊息</h4>
                                 <p data-aos="fade-left">在左方的列表上，我們做了一個可以篩選訊息的功能，主要是多數的提案人反應，希望能更有效率地處理訊息和即時回覆。雙方都可利用<strong>篩選「未讀」、「已讀」、「已標示訊息」三種選項</strong>去篩選需馬上回覆的訊息。提案者如果有一個以上的專案在平台上，還可以<strong>多加篩選條件，篩選其中一個專案的訊息</strong>，加快回覆流程。</p>
-                                <figure data-aos="fade-up">
+                                <figure id="end" data-aos="fade-up">
                                     <a href="../img/project3/filter-sponsor.png" data-lity>
                                         <img src="../img/project3/filter-sponsor.png" alt="filter-sponsor">
                                     </a>
