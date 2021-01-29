@@ -1580,6 +1580,10 @@ li.navi-btn a.next-img {
         padding: 5px !important;
     }
 
+    li.sub-item a.last-child {
+        padding: 5px 25px 5px 5px !important;
+    }
+
     /* problem */
 
     section#problem {
