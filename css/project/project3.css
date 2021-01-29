@@ -385,34 +385,23 @@ nav#longpage-sub-menu ul.sub-menu {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: calc(50% + 100px);
+    top: calc(50% + 250px);
     z-index: 2;
     background: rgba(255,255,255,.85);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     padding: 25px 20px;
     border-radius: 25px;
-    box-shadow: -44px -52px 75px -41px rgb(148 148 148 / 25%)
+    box-shadow: -52px -52px 75px -41px rgba(148, 148, 148, .25)
 }
-
-/* nav#longpage-sub-menu ul.sub-menu::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    right: -15px;
-    background: rgba(207, 207, 207, 0.5);
-} */
 
 ul.sub-menu.fixed-nav {
     position: fixed !important;
-    top: calc(50% - 325px) !important;
+    top: calc(50% - 350px) !important;
 }
 
 ul.sub-menu.sticky-nav {
-    top: calc(50% - 950px) !important
+    top: calc(50% - 750px) !important
 }
 
 ul.sub-menu li {
@@ -423,8 +412,9 @@ ul.sub-menu li {
 
 nav#longpage-sub-menu a {
     display: inline-block;
+    position: relative;
     transition: .25s all ease;
-    opacity: .8;
+    opacity: 1;
 }
 
 nav#longpage-sub-menu a:hover {
@@ -500,6 +490,7 @@ section#problem article.content aside.row-content {
     padding: 0 75px 75px 0;
     background: #ffffff;
     border-radius: 0 0 35px 0;
+    margin: 0 25px 0 0;
 }
 
 section#problem article.content aside.row-content::before {
@@ -939,6 +930,16 @@ li.navi-btn a.next-img {
 
 }
 
+@media all and (max-width: 1475px) {
+
+    nav#longpage-sub-menu ul.sub-menu {
+        padding: 15px 10px;
+        border-radius: 15px;
+        box-shadow: 52px -52px 75px -50px rgba(216, 216, 216, 0.25)
+    }
+
+}
+
 @media all and (max-width: 1229px) {
 
     /* header */
@@ -966,9 +967,12 @@ li.navi-btn a.next-img {
 
     /* process */
 
-    section#process,
+    section#process {
+        padding: 50px 0;
+    }
+
     section#problem {
-        padding: 0 50px;
+        padding: 50px 0;
     }
 
     section#process article.content::before {
@@ -1005,6 +1009,86 @@ li.navi-btn a.next-img {
         padding: 0 75px;
     }
 
+}
+
+@media all and (max-width: 1475px) {
+    nav#longpage-sub-menu ul.sub-menu {
+        padding: 15px 10px;
+        border-radius: 15px;
+        box-shadow: 52px -52px 75px -50px rgba(216, 216, 216, 0.25)
+    }
+}
+
+@media all and (max-width: 1175px) {
+
+    nav#longpage-sub-menu {
+        width: 100%;
+    }
+
+    nav#longpage-sub-menu ul.sub-menu {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 65px;
+        left: 0;
+        right: 0;
+        transition: .5s all ease;
+        margin: -25px auto 25px;
+        border-radius: 0px;
+        padding: 15px 10px;
+        box-shadow: 0px 25px 35px -15px rgba(190, 190, 190, 0.25);
+        overflow: hidden;
+        display: none;
+    }
+
+    nav#longpage-sub-menu ul.sub-menu.invisibleSubmenu {
+        transform: translateY(-100px);
+    }
+    
+    ul.sub-menu.fixed-nav {
+        position: fixed !important;
+        top: calc(0vh + 25px) !important;
+        display: flex !important;
+        animation: .5s fadeIn ease;
+    }
+    
+    ul.sub-menu.sticky-nav {
+        display: none !important;
+        animation: 1s fadeIn ease;
+    }
+    
+    ul.sub-menu li,
+    ul.ex-sub-menu,
+    ul.ex-sub-menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    ul.sub-menu li.item,
+    ul.sub-menu li.sub {
+        padding: 0;
+    }
+
+    li.sub-item ul {
+        display: none;
+    }
+
+    ul.sub-menu span,
+    ul.sub-menu span.sub-title,
+    ul.sub-menu span.ex-sub-title {
+        line-height: 2.5em;
+    }
+
+    nav#longpage-sub-menu a {
+        padding: 0 25px;
+    }
+
+    li.sub-item a {
+        padding: 0 15px !important;
+    }
 }
 
 @media all and (max-width: 980px) {
@@ -1089,6 +1173,34 @@ li.navi-btn a.next-img {
 
     ul.process-flow li h3.sub-title {
         font-size: 1.75em;
+    }
+
+    /* longpage-submenu */
+
+    ul.sub-menu span.title {
+        font-size: 1.25em;
+    }
+    
+    ul.sub-menu span.sub-title {
+        font-size: 1.15em;
+    }
+    
+    ul.sub-menu span.ex-sub-title {
+        font-size: 1em;
+    }
+
+    ul.sub-menu span, 
+    ul.sub-menu span.sub-title, 
+    ul.sub-menu span.ex-sub-title {
+        line-height: 1em;
+    }
+
+    nav#longpage-sub-menu a {
+        padding: 0 15px;
+    }
+
+    li.sub-item a {
+        padding: 0 10px !important;
     }
 
     /* problem */
@@ -1441,6 +1553,27 @@ li.navi-btn a.next-img {
         }
     }
 
+    /* longpage-submenu */
+
+    nav#longpage-sub-menu ul.sub-menu {
+        justify-content: flex-start;
+    }
+
+    nav#longpage-sub-menu ul.sub-menu,
+    ul.sub-menu li {
+        flex: 1 0 auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    nav#longpage-sub-menu a {
+        padding: 5px 10px;
+    }
+
+    li.sub-item a {
+        padding: 5px !important;
+    }
+
     /* problem */
 
     section#problem {
@@ -1455,6 +1588,7 @@ li.navi-btn a.next-img {
         width: 95%;
         padding: 0 50px 50px 25px;
         border-radius: 0 0 0 25px;
+        margin: 0;
     }
 
     section#problem article.content aside.row-content::before {

@@ -3,6 +3,7 @@ $(document).ready(function () {
          currentScrollTop = 0,
          navigation = $("#nav");
          mobileFooter = $(".mobile-footer");
+         itemNav = $("nav#longpage-sub-menu ul.sub-menu");
   
      $(window).scroll(function () {
         var topTomaxHeightDistance = $(window).scrollTop();
@@ -12,10 +13,12 @@ $(document).ready(function () {
         if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight) {
         navigation.addClass("invisibleNav");
         mobileFooter.addClass("invisibleFooter");
+        itemNav.removeClass("invisibleSubmenu");
 
         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
             navigation.removeClass("invisibleNav");
             mobileFooter.removeClass("invisibleFooter");
+            itemNav.addClass("invisibleSubmenu");
         }
 
         navBar = currentScrollTop;
