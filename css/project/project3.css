@@ -1012,11 +1012,13 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 1475px) {
+
     nav#longpage-sub-menu ul.sub-menu {
         padding: 15px 10px;
         border-radius: 15px;
-        box-shadow: 52px -52px 75px -50px rgba(216, 216, 216, 0.25)
+        box-shadow: 32px -52px 75px -20px rgba(170, 170, 170, 0.25)
     }
+
 }
 
 @media all and (max-width: 1175px) {
@@ -1564,6 +1566,10 @@ li.navi-btn a.next-img {
         flex: 1 0 auto;
         overflow-x: auto;
         overflow-y: hidden;
+    }
+
+    ul.sub-menu li {
+        overflow: hidden;
     }
 
     nav#longpage-sub-menu a {
