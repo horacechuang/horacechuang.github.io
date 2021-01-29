@@ -397,7 +397,7 @@ nav#longpage-sub-menu ul.sub-menu {
 
 ul.sub-menu.fixed-nav {
     position: fixed !important;
-    top: calc(50% - 350px) !important;
+    top: calc(50% - 305px) !important;
 }
 
 ul.sub-menu.sticky-nav {
@@ -939,7 +939,7 @@ li.navi-btn a.next-img {
     nav#longpage-sub-menu ul.sub-menu {
         padding: 15px 10px;
         border-radius: 15px;
-        box-shadow: 52px -52px 75px -50px rgba(216, 216, 216, 0.25)
+        box-shadow: 52px -52px 75px -40px rgba(139, 139, 139, 0.25)
     }
 
 }

@@ -43,9 +43,9 @@ nav#nav {
     position: fixed;
     background: hsla(0,0%,100%,.85);
     transition: 1s all ease;
-    z-index: 3;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    z-index: 5;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 nav#nav.invisibleNav {
