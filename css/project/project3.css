@@ -485,12 +485,12 @@ section#problem article.content {
 }
 
 section#problem article.content aside.row {
-    width: 35%;
+    width: 25%;
     position: relative;
 }
 
 section#problem article.content aside.row-content {
-    width: 65%;
+    width: 75%;
     padding: 0 75px 75px 0;
     background: #ffffff;
     border-radius: 0 0 35px 0;
