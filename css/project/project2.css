@@ -1,8 +1,32 @@
 /* general */
-header, main {
-    max-width: 1080px;
-    margin: 0 auto;
+
+header#header,
+main#container {
+    position: relative;
+    width: 100%;
 }
+
+header#header .container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1080px;
+    min-height: 500px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+
+/* header */
+
+header#header .title { 
+}
+
 
 /* project-main-navigator */
 
