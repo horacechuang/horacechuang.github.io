@@ -652,8 +652,8 @@ main.about-main {
 }
 
 .about-image img.about-img {
-    width: 97.5%;
-    border-radius: 0px 25px;
+    width: 90%;
+    border-radius: 25px;
     margin: 0 auto;
     display: block;
     box-shadow: 0px 25px 55px -36px rgba(0, 0, 0, .5);
