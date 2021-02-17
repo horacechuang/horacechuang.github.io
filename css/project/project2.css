@@ -6,24 +6,13 @@ main#container {
     width: 100%;
 }
 
-header#header .container {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1080px;
-    min-height: 500px;
-}
-
 h1 {
-    font-size: 3em;
+    font-size: 2.75em;
     line-height: 2.75em; 
 }
 
 h2 {
-    font-weight: 2.75em;
+    font-size: 2.5em;
     line-height: 2.5em;
 }
 
@@ -40,9 +29,33 @@ p {
 
 /* header */
 
-header#header .title { 
+header#header .container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1080px;
+    min-height: 500px;
 }
 
+
+header#header .title { 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header#header svg {
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+header#header h2 {
+    
+}
 
 /* project-main-navigator */
 
