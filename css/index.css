@@ -75,12 +75,12 @@ img.pattern {
 /* parapraph text */
 
 
-#header-container > .paragraph {
+#header-container .paragraph {
     width: 65%;
     padding-top: 25px;
 }
 
-#header-container > .paragraph h1 {
+#header-container .paragraph h1 {
     display: inline-block;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
@@ -124,7 +124,7 @@ span.wave {
     }
 }
 
-#header-container > .paragraph h3 {
+#header-container .paragraph h3 {
     font-size: 2em;
     font-family: 'ar-udjingxiheib5', sans-serif;
     font-weight: 400;
@@ -407,7 +407,7 @@ li#grid-inner p {
     letter-spacing: .25px;
 }
 
-li#grid-inner > p.eng-grid-p {
+li#grid-inner p.eng-grid-p {
     margin: 15px 0;
     font-size: 1.3em;
     color: rgb(179, 179, 179);
@@ -527,20 +527,20 @@ header.about-header {
     bottom: -50px;
 }
 
-.about-header-container > .column {
+.about-header-container .column {
     display: block;
     position: relative;
 }
 
-.about-header-container > .zh {
+.about-header-container .zh {
     width: 45%;
 }
 
-.about-header-container > .en {
+.about-header-container .en {
     width: 55%;
 }
 
-.about-header-container > .column h2 {
+.about-header-container .column h2 {
     display: block;
     position: relative;
     line-height: 2em;
@@ -548,11 +548,11 @@ header.about-header {
     letter-spacing: 0.5px;
 }
 
-.about-header-container > .zh h2 {
+.about-header-container .zh h2 {
     font-size: 2em;
 }
 
-.about-header-container > .en h2 {
+.about-header-container .en h2 {
     font-size: 1.65em;
     text-align: right;
     color: rgba(139, 139, 139, .5);
@@ -711,7 +711,7 @@ header.expertise-header h1::after {
     left: 0;
 }
 
-.about-main-expertise > ul.expertise-content {
+.about-main-expertise ul.expertise-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -772,7 +772,7 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container > .paragraph {
+    #header-container .paragraph {
         width: 75%;
         padding-top: 25px;
         display: flex;
@@ -780,16 +780,16 @@ ul.expertise-content p {
         justify-content: center;
     }
 
-    #header-container > .paragraph h1 {
+    #header-container .paragraph h1 {
         font-size: 3.5em;
     }
 
-    #header-container > .paragraph h3 {
+    #header-container .paragraph h3 {
         font-size: 1.85em;
         line-height: 2em;
     }
 
-    #header-container > .paragraph p {
+    #header-container .paragraph p {
         font-size: 1.55em;
     }
 
@@ -855,7 +855,7 @@ ul.expertise-content p {
         font-size: 1.25em;
     }
 
-    li#grid-inner > p.eng-grid-p {
+    li#grid-inner p.eng-grid-p {
         font-size: 1.25em;
     }
 
@@ -867,11 +867,11 @@ ul.expertise-content p {
 
     /* about-header */
 
-    .about-header-container > .zh h2 {
+    .about-header-container .zh h2 {
         font-size: 1.7em;
     }
 
-    .about-header-container > .en h2 {
+    .about-header-container .en h2 {
         font-size: 1.5em;
     }
 
@@ -890,7 +890,7 @@ ul.expertise-content p {
         top: 70px;
     }
 
-    header.expertise-header > h1 {
+    header.expertise-header h1 {
         font-size: 2em;
     }
 
@@ -898,7 +898,7 @@ ul.expertise-content p {
         top: 69px;
     }
 
-    ul.expertise-content li > .title {
+    ul.expertise-content li .title {
         min-height: 85px;
     }
     
@@ -920,16 +920,16 @@ ul.expertise-content p {
 
 @media all and (max-width: 980px) {
 
-    #header-container > .paragraph {
+    #header-container .paragraph {
         padding-top: 35px;
     }
 
-    #header-container > .paragraph h3 {
+    #header-container .paragraph h3 {
         font-size: 1.75em;
         line-height: 1.9em;
     }
 
-    #header-container > .paragraph p {
+    #header-container .paragraph p {
         font-size: 1.5em;
     }
 
@@ -956,19 +956,19 @@ ul.expertise-content p {
 
     /* about-header */
 
-    .about-header-container > .zh {
+    .about-header-container .zh {
         width: 40%;
     }
 
-    .about-header-container > .en {
+    .about-header-container .en {
         width: 60%;
     }
 
-    .about-header-container> .zh h2 {
+    .about-header-container.zh h2 {
         font-size: 1.65em;
     }
 
-    .about-header-container > .en h2 {
+    .about-header-container .en h2 {
         font-size: 1.35em;
     }
 
@@ -1026,17 +1026,17 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container > .paragraph {
+    #header-container .paragraph {
         padding: 50px 25px 0;
         width: 100%;
     }
 
-    #header-container > .paragraph h1 {
+    #header-container .paragraph h1 {
         font-size: 2.5em;
         margin-bottom: 25px;
     }
 
-    #header-container > .paragraph h3 {
+    #header-container .paragraph h3 {
         font-size: 1.5em;
         line-height: 2em;
     }
@@ -1097,7 +1097,7 @@ ul.expertise-content p {
         margin: 0 auto !important;
     }
 
-    li#grid-inner > p.eng-grid-p {
+    li#grid-inner p.eng-grid-p {
         font-size: 1.2em;
     }
 
@@ -1129,16 +1129,16 @@ ul.expertise-content p {
         bottom: -25px;
     }
 
-    .about-header-container > .column {
+    .about-header-container .column {
         width: 100% !important;
         padding: 15px 0;
     }
 
-    .about-header-container > .zh h2 {
+    .about-header-container .zh h2 {
         font-size: 1.5em;
     }
 
-    .about-header-container > .en h2 {
+    .about-header-container .en h2 {
         font-size: 1.25em;
         /* text-align: left; */
     }
@@ -1215,7 +1215,7 @@ ul.expertise-content p {
         margin: 10px 0 20px 0;
     }
 
-    ul.expertise-content li > .title {
+    ul.expertise-content li .title {
         min-height: 75px;
     }
 
@@ -1237,7 +1237,7 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container > .paragraph {
+    #header-container .paragraph {
         padding: 25px 15px 0;
     }
 
