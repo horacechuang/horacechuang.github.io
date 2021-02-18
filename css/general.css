@@ -524,7 +524,7 @@ ul.footer-link-btn {
 
     footer#footer {
         padding: 0 25px;
-        z-index: 5;
+        z-index: 5 !important;
     }
 
     #footer-container {

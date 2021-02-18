@@ -35,7 +35,7 @@ header > .header-container {
     align-items: center;    
 }
 
-.header-container img {
+.header-container svg {
     margin-top: 160px;
     max-width: 240px;
 }
@@ -460,7 +460,7 @@ li.navi-btn a.next-img {
         padding-top: 62px;
     }
 
-    .header-container img {
+    .header-container svg {
         margin-top: 115px;
         max-width: 175px;
     }

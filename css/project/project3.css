@@ -75,7 +75,7 @@ header#header .header-container {
     min-width: 500px;
 }
 
-.header-container aside img {
+.header-container aside svg {
     max-width: 225px;
 }
 
@@ -1121,7 +1121,7 @@ li.navi-btn a.next-img {
         height: 600px;
     }
 
-    .header-container aside img {
+    .header-container aside svg {
         max-width: 200px;
     }
 
@@ -1396,7 +1396,7 @@ li.navi-btn a.next-img {
         margin: 0 auto;
     }
 
-    .header-container aside img {
+    .header-container aside svg {
         max-width: 175px;
     }
 
