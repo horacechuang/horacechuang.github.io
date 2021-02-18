@@ -72,8 +72,8 @@ img.pattern {
     }
 } 
 
-/* parapraph text */
 
+/* parapraph text */
 
 #header-container .paragraph {
     width: 65%;
@@ -126,15 +126,15 @@ span.wave {
 
 #header-container .paragraph h3 {
     font-size: 2em;
-    font-family: 'ar-udjingxiheib5', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     line-height: 2em;
     color: rgb(139, 139, 139);
 }
 
 .paragraph p {
-    font-family: 'ar-udjingxiheib5', sans-serif;
-    font-weight: 200;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.85em;
     line-height: 2.15em;
@@ -304,7 +304,7 @@ section#project .project-main-container {
 
 .project-grid a:first-child:hover::before,
 .project-grid a:nth-child(2):hover::before {
-    /* content: "\f502";
+    content: "\f502";
     position: absolute;
     display: flex;
     justify-content: center;
@@ -325,12 +325,12 @@ section#project .project-main-container {
     color: rgb(32, 204, 216);
     -webkit-font-smoothing: antialiased;
     z-index: 2;
-    border-radius: 25px; */
+    border-radius: 25px;
 }
 
 .project-grid a:first-child:hover::after,
 .project-grid a:nth-child(2):hover::after {
-    /* content: "Ongoing 製作中";
+    content: "Ongoing 製作中";
     position: absolute;
     display: block;
     top: 60%;
@@ -347,7 +347,7 @@ section#project .project-main-container {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    z-index: 2; */
+    z-index: 2;
 }
 
 .project-grid ul.grid-container:hover a {
@@ -400,7 +400,7 @@ li#grid-inner .title h3::after {
 }
 
 li#grid-inner p {
-    font-family: 'ar-udjingxiheib5', sans-serif;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-size: 1.35em;
     line-height: 2.1em;
     font-weight: 400;
@@ -434,7 +434,7 @@ li#grid-inner .tag {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Karla', serif;
     transition: .5s all ease;
     animation: 3s morphing linear infinite;
     font-size: 1.25em;
@@ -554,6 +554,7 @@ header.about-header {
 
 .about-header-container .en h2 {
     font-size: 1.65em;
+    font-family: 'Roboto Slab', serif;
     text-align: right;
     color: rgba(139, 139, 139, .5);
     font-weight: 700;
@@ -673,7 +674,7 @@ blockquote.about-main-header p {
     font-size: 1.75em;
     line-height: 2.2em;
     margin: 50px 0;
-    font-family: 'ar-udjingxiheib5', sans-serif;
+    font-family: 'Roboto Slab', 'Noto Sans TC', sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -742,7 +743,8 @@ ul.expertise-content .title h3 {
 }
 
 ul.expertise-content p {
-    font-family: 'ar-udjingxiheib5', sans-serif;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    font-weight: 200;
     font-size: 1.5em;
     line-height: 2em;
     display: block;
@@ -1246,7 +1248,7 @@ ul.expertise-content p {
     /* project */
 
     .project-grid a#grid-outer {
-        width: 90%;
+        width: 92.5%;
     }
     
     .project-title::after {
