@@ -1,7 +1,7 @@
 $(document).ready(function () {
      var navBar, 
          currentScrollTop = 0,
-         navigation = $("#nav");
+         navigation = $("nav#nav");
          mobileFooter = $(".mobile-footer");
          itemNav = $("nav#longpage-sub-menu ul.sub-menu");
   

@@ -16,7 +16,7 @@
 html, body {
     font-size: 12px;
     scroll-behavior: smooth !important;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     user-select: none;
     -o-user-select: none;
     -ms-user-select: none; 
@@ -41,7 +41,7 @@ nav#nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,.85);
+    background: hsla(0,0%,100%,.9);
     transition: 1s all ease;
     z-index: 5;
     backdrop-filter: blur(15px);
@@ -524,6 +524,7 @@ ul.footer-link-btn {
 
     footer#footer {
         padding: 0 25px;
+        z-index: 5;
     }
 
     #footer-container {
@@ -658,7 +659,7 @@ ul.footer-link-btn {
 @media all and (max-width: 767px) {
 
     nav#nav.invisibleNav {
-        transform: translateY(-150px);
+        transform: translateY(-70px);
     }
 
     /* logo */
@@ -721,7 +722,7 @@ ul.footer-link-btn {
         position: relative;
         float: none;
         margin: 0 -25px;
-        box-shadow: 0px 100px 100px rgba(230, 230, 230, 0.5);
+        box-shadow: 0px 100px 95px -85px rgba(175, 175, 175, 0.5);
         animation: fadeIn .5s;
     }
 

@@ -313,14 +313,14 @@ section#project .project-main-container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     font-style: normal;
     font-variant: normal;
-    font-size: 5em;
+    font-size: 4em;
     text-rendering: auto;
     color: rgb(32, 204, 216);
     -webkit-font-smoothing: antialiased;
@@ -333,12 +333,12 @@ section#project .project-main-container {
     content: "Ongoing 製作中";
     position: absolute;
     display: block;
-    top: 60%;
+    top: 57.5%;
     left: 0;
     width: 100%;
     height: 100%;
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     background: linear-gradient(270deg,#24ffb6, #19abff);
@@ -734,7 +734,7 @@ ul.expertise-content .title {
 ul.expertise-content .title h2 {
     font-size: 1.85em;
     line-height: 2em;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 ul.expertise-content .title h3 {
@@ -744,8 +744,8 @@ ul.expertise-content .title h3 {
 
 ul.expertise-content p {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-weight: 200;
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.35em;
     line-height: 2em;
     display: block;
     margin: 15px 0 25px 0;
