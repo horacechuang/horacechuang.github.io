@@ -845,10 +845,6 @@ ul.footer-link-btn {
         font-size: 2em;
     }
 
-    section#project-nav .container .title h3::after {
-        top: 68px;
-    }
-
     .container ul.nav {
         flex-direction: column;
         padding: 0 15%;
