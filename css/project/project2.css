@@ -1,61 +1,5 @@
-/* general */
-
-header#header,
-main#container {
-    position: relative;
-    width: 100%;
-}
-
-h1 {
-    font-size: 2.75em;
-    line-height: 2.75em; 
-}
-
-h2 {
-    font-size: 2.5em;
-    line-height: 2.5em;
-}
-
-h3 {
-    font-size: 2.25em;
-    line-height: 2em;
-}
-
-p {
-    font-size: 2em;
-    line-height: 1.75em;
-}
 
 
-/* header */
-
-header#header .container {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1080px;
-    min-height: 500px;
-}
-
-
-header#header .title { 
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-header#header svg {
-    margin-bottom: 1.5em;
-    width: 100%;
-}
-
-header#header h2 {
-    
-}
 
 /* project-main-navigator */
 
@@ -65,10 +9,4 @@ li.navi-btn a.prev-img {
 
 li.navi-btn a.next-img {
     background: url('../../img/index/index_3.png') center center;
-}
-
-@media all and (max-width: 1229px) {
-    header, main {
-        padding: 0 25px;
-    }
 }

@@ -35,11 +35,12 @@ header#header .header-container {
 }
 
 .header-container picture.bubble img,
+.header-container picture.bubble svg,
 .header-container picture.header-main {
     position: absolute;
 }
 
-picture.bubble-top img.bubble-1 {
+picture.bubble-top svg.bubble-1 {
     top: -125px;
     right: -100px;
     transform: rotate(5deg);
@@ -69,7 +70,7 @@ picture.bubble-top img.bubble-1 {
     }
 }
 
-picture.bubble-top img.bubble-2 {
+picture.bubble-top svg.bubble-2 {
     top: -175px;
     right: 600px;
     transform: rotate(-20deg);
@@ -125,7 +126,7 @@ picture.header-main img.logo {
     }
 }
 
-picture.bubble-bottom img.bubble-3 {
+picture.bubble-bottom svg.bubble-3 {
     left: -65px;
     top: 585px;
     width: 650px;
@@ -149,7 +150,7 @@ picture.bubble-bottom img.bubble-3 {
     }
 }
 
-picture.bubble-bottom img.bubble-4 {
+picture.bubble-bottom svg.bubble-4 {
     left: 445px;
     top: 690px;
     width: 700px;
@@ -564,28 +565,28 @@ li.navi-btn a.next-img {
         max-width: 400px;
     }
 
-    picture.bubble-top img.bubble-1 {
+    picture.bubble-top svg.bubble-1 {
         top: -135px;
         right: -100px;
         width: 700px;
         transform: rotate(15deg);
     }
 
-    picture.bubble-top img.bubble-2 {
+    picture.bubble-top svg.bubble-2 {
         top: -105px;
         right: 400px;
         transform: rotate(-15deg);
         width: 450px;
     }
 
-    picture.bubble-bottom img.bubble-3 {
+    picture.bubble-bottom svg.bubble-3 {
         top: 535px;
         left: -90px;
         width: 550px;
         transform: rotate(-180deg);
     }
 
-    picture.bubble-bottom img.bubble-4 {
+    picture.bubble-bottom svg.bubble-4 {
         top: 615px;
         left: 300px;
         width: 500px;
@@ -785,27 +786,27 @@ li.navi-btn a.next-img {
         max-width: 325px;
     }
 
-    picture.bubble-top img.bubble-1 {
+    picture.bubble-top svg.bubble-1 {
         top: -105px;
         right: -250px;
         width: 600px;
         transform: rotate(5deg);
     }
 
-    picture.bubble-top img.bubble-2 {
+    picture.bubble-top svg.bubble-2 {
         top: -90px;
         right: 250px;
         width: 375px;
     }
 
-    picture.bubble-bottom img.bubble-3 {
+    picture.bubble-bottom svg.bubble-3 {
         top: 520px;
         left: -50px;
         width: 420px;
         transform: rotate(-187deg);
     }
 
-    picture.bubble-bottom img.bubble-4 {
+    picture.bubble-bottom svg.bubble-4 {
         top: 560px;
         left: 220px;
         width: 420px;
@@ -998,11 +999,11 @@ li.navi-btn a.next-img {
         max-width: 260px;
     }
 
-    picture.bubble-bottom img.bubble-3 {
+    picture.bubble-bottom svg.bubble-3 {
         top: 440px;
     }
 
-    picture.bubble-bottom img.bubble-4 {
+    picture.bubble-bottom svg.bubble-4 {
         top: 490px;
         left: 175px;
     }
