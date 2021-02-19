@@ -32,8 +32,8 @@ p {
 header#header .container {
     display: flex;
     position: relative;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     max-width: 1080px;
@@ -88,12 +88,11 @@ header#header .title {
     transition: .5s all ease;
 }
 
-
 header#header .title:hover {
     transform: scale(1.05);
 }
 
-header#header svg {
+header#header .title svg {
     margin-bottom: 1.5em;
     width: 100%;
 }
@@ -104,8 +103,29 @@ header#header h2::after {
     display: block;
     width: 100%;
     height: 1px;
-    background: rgb(66,66,66);
-    
+    background: rgb(138, 138, 138);
+}
+
+header#header .imagine {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header#header .imagine svg {
+    min-width: 200px;
+    position: relative;
+    z-index: -1;
+}
+
+header#header svg.pattern_dot-left {
+    top: -15px;
+    right: 500px;
+}
+
+header#header svg.pattern_dot-right {
+    left: 50px;
 }
 
 @media all and (max-width: 1229px) {
@@ -114,4 +134,54 @@ header#header h2::after {
         padding: 0 25px;
     }
     
+}
+
+@media all and (max-width: 767px) {
+
+    header#header .container {
+        min-height: 500px;
+    }
+
+    header#header .container::before {
+        top: -150px;
+        right: -100px;
+        min-width: 550px;
+        height: 550px;
+    }
+
+    header#header .container::after {
+        top: -100px;
+        right: -50px;
+        min-width: 400px;
+        height: 400px;
+    }
+
+    header#header .title {
+        z-index: 1;
+        padding: 25px 15px;
+    }
+
+    header#header .title svg {
+        margin-bottom: 1.25em;
+        width: 65%;
+    }
+
+    header#header .title h2 {
+        font-size: 2em;
+    }
+
+    header#header .imagine svg {
+        min-width: 150px;
+    }
+
+    header#header svg.pattern_dot-left {
+        right: 0;
+        left: -150px;
+        z-index: 0;
+    }
+
+    header#header svg.pattern_dot-right {
+        
+    }
+
 }
