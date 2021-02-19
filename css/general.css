@@ -28,6 +28,7 @@ html, body {
 html.lity-active,
 html.scrollHidden {
     overflow: hidden !important;
+    position: relative !important;
 }
 
 #landscapeContent {
@@ -41,11 +42,11 @@ nav#nav {
     padding: 0 25px;
     display: inline-block;
     position: fixed;
-    background: hsla(0,0%,100%,.9);
+    background: hsla(0,0%,100%,.85);
     transition: 1s all ease;
     z-index: 5;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 
 nav#nav.invisibleNav {
@@ -483,6 +484,10 @@ ul.footer-link-btn {
     transform: scale(1.15);
 }
 
+.footer-link i:active {
+    transform: scale(.95);
+}
+
 .footer-link i.fa-paper-plane:hover {
     color: #34b5ff;
 }
@@ -659,7 +664,7 @@ ul.footer-link-btn {
 @media all and (max-width: 767px) {
 
     nav#nav.invisibleNav {
-        transform: translateY(-70px);
+        transform: translateY(-100px);
     }
 
     /* logo */

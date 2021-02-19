@@ -34,7 +34,7 @@ header#header .container {
     position: relative;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     max-width: 1080px;
     min-height: 600px;
@@ -50,7 +50,7 @@ header#header .container::before {
     height: 750px;
     border-radius: 50%;
     background: linear-gradient(135deg, rgb(255, 255, 255) 35%, rgb(255, 190, 206), rgb(255, 51, 102) 100%);
-    animation: 5s circular linear infinite;
+    animation: 3.5s circular linear infinite;
     z-index: -2;
 }
 
@@ -80,16 +80,14 @@ header#header .title {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 25px;
     padding: 25px;
     box-shadow: 45px 35px 100px -60px rgba(112, 112, 112, .35);
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .5);
     transition: .5s all ease;
-}
-
-header#header .title:hover {
-    transform: scale(1.05);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
 }
 
 header#header .title svg {
@@ -97,13 +95,35 @@ header#header .title svg {
     width: 100%;
 }
 
-header#header h2::after {
-    content: "";
+header#header .title a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: rgb(138, 138, 138);
+    margin: 25px 0 15px 0;
+    font-size: 1.35em;
+    line-height: 1.75em;
+    border-radius: 5px;
+    border: 1px solid rgba(193, 193, 193, 0.5);
+    padding: 7.5px 15px;
+    transition: .5s all ease;
+}
+
+header#header .title a i {
+    font-size: 0.65em;
+    padding-right: 10px;
+}
+
+header#header .title a:hover {
+    background: rgba(222, 222, 222, 0.25);
+    border: 1px solid rgba(82, 82, 82, 0.5);
+    transform: scale(1.05);
+}
+
+header#header .title a:active {
+    transition: .25s all ease;
+    transform: scale(0.95);
 }
 
 header#header .imagine {
@@ -139,7 +159,8 @@ header#header svg.pattern_dot-right {
 @media all and (max-width: 767px) {
 
     header#header .container {
-        min-height: 500px;
+        min-height: 450px;
+        align-items: center;
     }
 
     header#header .container::before {
@@ -147,6 +168,8 @@ header#header svg.pattern_dot-right {
         right: -100px;
         min-width: 550px;
         height: 550px;
+        animation-duration: 2s;
+        animation-timing-function: ease;
     }
 
     header#header .container::after {
@@ -157,17 +180,25 @@ header#header svg.pattern_dot-right {
     }
 
     header#header .title {
+        align-items: center;
         z-index: 1;
         padding: 25px 15px;
+        max-width: 275px;
+        box-shadow: 0px 25px 100px -60px rgba(57, 57, 57, 0.5);
     }
 
     header#header .title svg {
-        margin-bottom: 1.25em;
-        width: 65%;
+        margin-bottom: 1.5em;
+        width: 80%;
     }
 
     header#header .title h2 {
-        font-size: 2em;
+        font-size: 1.75em;
+    }
+
+    header#header .title a {
+        font-size: 1.25em;
+        padding: 5px 10px;
     }
 
     header#header .imagine svg {
@@ -181,7 +212,7 @@ header#header svg.pattern_dot-right {
     }
 
     header#header svg.pattern_dot-right {
-        
+        left: 75px;
     }
 
 }

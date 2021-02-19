@@ -289,7 +289,7 @@ section#project .project-main-container {
 
 .project-grid a#grid-outer {
     width: 47.5%;
-    transition: .5s all ease;
+    transition: .25s all ease;
     padding: 30px;
     margin: 15px 0;
     border-radius: 25px;
@@ -302,9 +302,13 @@ section#project .project-main-container {
     transform: translateY(5px);
 }
 
+.project-grid a#grid-outer:active {
+    transform: scale(0.95);
+}
+
 .project-grid a:first-child:hover::before,
 .project-grid a:nth-child(2):hover::before {
-    content: "\f502";
+    /* content: "\f502";
     position: absolute;
     display: flex;
     justify-content: center;
@@ -325,12 +329,12 @@ section#project .project-main-container {
     color: rgb(32, 204, 216);
     -webkit-font-smoothing: antialiased;
     z-index: 2;
-    border-radius: 25px;
+    border-radius: 25px; */
 }
 
 .project-grid a:first-child:hover::after,
 .project-grid a:nth-child(2):hover::after {
-    content: "Ongoing 製作中";
+    /* content: "Ongoing 製作中";
     position: absolute;
     display: block;
     top: 57.5%;
@@ -347,7 +351,7 @@ section#project .project-main-container {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    z-index: 2;
+    z-index: 2; */
 }
 
 .project-grid ul.grid-container:hover a {

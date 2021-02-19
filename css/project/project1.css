@@ -1,4 +1,23 @@
+header#header .title a {
+    border: 1px solid rgba(255, 150, 174, 0.5);
+    color: rgb(255, 51, 102);
+    background: rgba(255, 216, 225, 0.25);
+}
 
+header#header .title a i {
+    color: rgb(255, 51, 102);
+    transition: .5s all ease;
+}
+
+header#header .title a:hover {
+    background: rgb(255, 51, 102);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 51, 102);
+}
+
+header#header .title a:hover i {
+    color: rgb(255, 255, 255);
+}
 
 
 /* project-main-navigator */
