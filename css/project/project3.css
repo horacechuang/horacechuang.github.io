@@ -397,7 +397,7 @@ nav#longpage-sub-menu ul.sub-menu {
 
 ul.sub-menu.fixed-nav {
     position: fixed !important;
-    top: calc(50% - 305px) !important;
+    top: calc(50% / 2) !important;
 }
 
 ul.sub-menu.sticky-nav {
@@ -1063,6 +1063,12 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
+    ul.sub-menu a:hover {
+        transition: .25s all ease;
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+
     ul.sub-menu li.item,
     ul.sub-menu li.sub {
         padding: 0;
@@ -1086,17 +1092,17 @@ li.navi-btn a.next-img {
         padding: 0 15px !important;
     }
 
-    nav#longpage-sub-menu ul.sub-menu a:hover span{
+    ul.sub-menu a:hover span{
         border-bottom: 5px rgb(255, 135, 122) solid;
         padding-bottom: 17px;
-        opacity: .75;
+        opacity: 1;
     }
 
     li.sub-item a:hover span {
         border-bottom: 5px rgb(66, 66 ,66) solid !important;
     }
 
-    nav#longpage-sub-menu ul.sub-menu a:active span{
+    ul.sub-menu a:active span{
         border-bottom: 5px rgb(255, 135, 122) solid;
         padding-bottom: 17px;
         opacity: 1;
@@ -1820,6 +1826,7 @@ li.navi-btn a.next-img {
     nav#longpage-sub-menu ul.sub-menu,
     ul.sub-menu li {
         flex: 1 0 auto;
+        justify-content: center;
     }
 
 }
