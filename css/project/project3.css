@@ -149,7 +149,7 @@ section#intro {
     width: 100%;
     display: block;
     position: relative;
-    margin: 25px auto 0;
+    margin-top: 25px;
     z-index: -1;
 }
 
@@ -158,6 +158,8 @@ section#intro main.container {
     position: relative;
     height: 75vh;
     min-height: 850px;
+    max-width: 1440px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: center;
 }
@@ -365,23 +367,23 @@ ul.process-flow li h3.sub-title {
     font-weight: 400;
 }
 
-/* longpage-submenu */
+/* Sub-menu */
 
-nav#longpage-sub-menu {
+nav#sub-menu {
     display: block;
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-nav#longpage-sub-menu.fixed-bottom-nav {
+nav#sub-menu.fixed-bottom-nav {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
 }
 
-nav#longpage-sub-menu ul.sub-menu {
+nav#sub-menu ul.sub-menu-container {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -395,67 +397,67 @@ nav#longpage-sub-menu ul.sub-menu {
     box-shadow: -52px -52px 75px -41px rgba(148, 148, 148, .25)
 }
 
-ul.sub-menu.fixed-nav {
+ul.sub-menu-container.fixed-nav {
     position: fixed !important;
-    top: calc(50% / 2) !important;
+    top: calc(50vh / 2 / 1.75) !important;
 }
 
-ul.sub-menu.sticky-nav {
+ul.sub-menu-container.sticky-nav {
     top: calc(50% - 750px) !important
 }
 
-ul.sub-menu li {
+ul.sub-menu-container li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-nav#longpage-sub-menu a {
+nav#sub-menu a {
     display: inline-block;
     position: relative;
     transition: .25s all ease;
     opacity: 1;
 }
 
-nav#longpage-sub-menu a:hover {
+nav#sub-menu a:hover {
     opacity: .85;
     transform: scale(1.05);
 }
 
-nav#longpage-sub-menu a:active {
+nav#sub-menu a:active {
     opacity: .5;
 }
 
-ul.sub-menu li.item {
+ul.sub-menu-container li.item {
     padding-bottom: 15px;
 }
 
-ul.sub-menu li.item:last-child {
+ul.sub-menu-container li.item:last-child {
     padding: 0;
 }
 
-ul.sub-menu li.sub {
+ul.sub-menu-container li.sub {
     padding-bottom: 10px;
 }
 
-ul.sub-menu span {
+ul.sub-menu-container span {
     line-height: 2.5em;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
 }
 
-ul.sub-menu span.title {
+ul.sub-menu-container span.title {
     font-size: 1.35em;
     font-weight: 600;
     color: rgb(255, 135, 122);
 }
 
-ul.sub-menu span.sub-title {
+ul.sub-menu-container span.sub-title {
     font-size: 1.25em;
     font-weight: 600;
     line-height: 2.25em;
 }
 
-ul.sub-menu span.ex-sub-title {
+ul.sub-menu-container span.ex-sub-title {
     font-size: 1em;
     line-height: 2.25em;
 }
@@ -903,7 +905,6 @@ section#footer-bg img {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 0 0 50px;
 }
 
 
@@ -921,7 +922,7 @@ li.navi-btn a.next-img {
 
     section#intro {
         max-width: 1680px;
-        margin: -25px auto 0;
+        margin-top: 50px;
     }
 
     section#intro aside.row-img {
@@ -936,7 +937,7 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 1475px) {
 
-    nav#longpage-sub-menu ul.sub-menu {
+    nav#sub-menu ul.sub-menu-container {
         padding: 15px 10px;
         border-radius: 15px;
         box-shadow: 52px -52px 75px -40px rgba(139, 139, 139, 0.25)
@@ -1017,11 +1018,11 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 1175px) {
 
-    nav#longpage-sub-menu {
+    nav#sub-menu {
         width: 100%;
     }
 
-    nav#longpage-sub-menu ul.sub-menu {
+    nav#sub-menu ul.sub-menu-container {
         position: relative;
         flex-direction: row;
         justify-content: space-evenly;
@@ -1039,23 +1040,23 @@ li.navi-btn a.next-img {
         display: none;
     }
 
-    nav#longpage-sub-menu ul.sub-menu.invisibleSubmenu {
+    nav#sub-menu ul.sub-menu-container.invisibleSubmenu {
         transform: translateY(-100px);
     }
     
-    ul.sub-menu.fixed-nav {
+    ul.sub-menu-container.fixed-nav {
         position: fixed !important;
         top: calc(0vh + 25px) !important;
         display: flex !important;
         animation: .5s fadeIn ease;
     }
     
-    ul.sub-menu.sticky-nav {
+    ul.sub-menu-container.sticky-nav {
         display: none !important;
         animation: 1s fadeIn ease;
     }
     
-    ul.sub-menu li,
+    ul.sub-menu-container li,
     ul.ex-sub-menu,
     ul.ex-sub-menu ul {
         display: flex;
@@ -1063,14 +1064,14 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
-    ul.sub-menu a:hover {
+    ul.sub-menu-container a:hover {
         transition: .25s all ease;
         transform: scale(1) !important;
         opacity: 1 !important;
     }
 
-    ul.sub-menu li.item,
-    ul.sub-menu li.sub {
+    ul.sub-menu-container li.item,
+    ul.sub-menu-container li.sub {
         padding: 0;
     }
 
@@ -1078,13 +1079,13 @@ li.navi-btn a.next-img {
         display: none;
     }
 
-    ul.sub-menu span,
-    ul.sub-menu span.sub-title,
-    ul.sub-menu span.ex-sub-title {
+    ul.sub-menu-container span,
+    ul.sub-menu-container span.sub-title,
+    ul.sub-menu-container span.ex-sub-title {
         line-height: 2.5em;
     }
 
-    nav#longpage-sub-menu a {
+    nav#sub-menu a {
         padding: 0 25px;
     }
 
@@ -1092,7 +1093,7 @@ li.navi-btn a.next-img {
         padding: 0 15px !important;
     }
 
-    ul.sub-menu a:hover span{
+    ul.sub-menu-container a:hover span{
         border-bottom: 5px rgb(255, 135, 122) solid;
         padding-bottom: 17px;
         opacity: 1;
@@ -1102,7 +1103,7 @@ li.navi-btn a.next-img {
         border-bottom: 5px rgb(66, 66 ,66) solid !important;
     }
 
-    ul.sub-menu a:active span{
+    ul.sub-menu-container a:active span{
         border-bottom: 5px rgb(255, 135, 122) solid;
         padding-bottom: 17px;
         opacity: 1;
@@ -1193,27 +1194,27 @@ li.navi-btn a.next-img {
         font-size: 1.75em;
     }
 
-    /* longpage-submenu */
+    /* Sub-menu */
 
-    ul.sub-menu span.title {
+    ul.sub-menu-container span.title {
         font-size: 1.25em;
     }
     
-    ul.sub-menu span.sub-title {
+    ul.sub-menu-container span.sub-title {
         font-size: 1.15em;
     }
     
-    ul.sub-menu span.ex-sub-title {
+    ul.sub-menu-container span.ex-sub-title {
         font-size: 1em;
     }
 
-    ul.sub-menu span, 
-    ul.sub-menu span.sub-title, 
-    ul.sub-menu span.ex-sub-title {
+    ul.sub-menu-container span, 
+    ul.sub-menu-container span.sub-title, 
+    ul.sub-menu-container span.ex-sub-title {
         line-height: 1em;
     }
 
-    nav#longpage-sub-menu a {
+    nav#sub-menu a {
         padding: 0 15px;
     }
 
@@ -1571,23 +1572,23 @@ li.navi-btn a.next-img {
         }
     }
 
-    /* longpage-submenu */
+    /* Sub-menu */
 
-    nav#longpage-sub-menu ul.sub-menu {
+    nav#sub-menu ul.sub-menu-container {
         justify-content: space-around;
     }
 
-    nav#longpage-sub-menu ul.sub-menu,
-    ul.sub-menu li {
+    nav#sub-menu ul.sub-menu-container,
+    ul.sub-menu-container li {
         overflow-x: auto;
         overflow-y: hidden;
     }
 
-    ul.sub-menu li {
+    ul.sub-menu-container li {
         overflow: hidden;
     }
 
-    nav#longpage-sub-menu a {
+    nav#sub-menu a {
         padding: 5px 10px;
     }
 
@@ -1817,14 +1818,14 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 665px) {
 
-    /* longpage-submenu */
+    /* Sub-menu */
 
-    nav#longpage-sub-menu ul.sub-menu {
+    nav#sub-menu ul.sub-menu-container {
         justify-content: flex-start;
     }
 
-    nav#longpage-sub-menu ul.sub-menu,
-    ul.sub-menu li {
+    nav#sub-menu ul.sub-menu-container,
+    ul.sub-menu-container li {
         flex: 1 0 auto;
         justify-content: center;
     }

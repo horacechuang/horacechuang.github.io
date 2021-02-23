@@ -3,19 +3,19 @@ $(window).scroll(function() {
 
     //fixed-nav
 
-    if (scroll >= $("section#problem").offset().top) {
-        $("ul.sub-menu").addClass("fixed-nav");
+    if (scroll >= $("section.fixnavStart").offset().top) {
+        $("ul.sub-menu-container").addClass("fixed-nav");
     } else {
-        $("ul.sub-menu").removeClass("fixed-nav");
+        $("ul.sub-menu-container").removeClass("fixed-nav");
     }
 
-    if (scroll >= $("figure#end").offset().top) {
-        $("ul.sub-menu").removeClass("fixed-nav"); 
-        $("nav#longpage-sub-menu").addClass("fixed-bottom-nav");
-        $("ul.sub-menu").addClass("sticky-nav"); 
+    if (scroll >= $("figure#fixnavEnd").offset().top) {
+        $("ul.sub-menu-container").removeClass("fixed-nav"); 
+        $("nav#sub-menu").addClass("fixed-bottom-nav");
+        $("ul.sub-menu-container").addClass("sticky-nav"); 
     } else {
-        $("nav#longpage-sub-menu").removeClass("fixed-bottom-nav");
-        $("ul.sub-menu").removeClass("sticky-nav"); 
+        $("nav#sub-menu").removeClass("fixed-bottom-nav");
+        $("ul.sub-menu-container").removeClass("sticky-nav"); 
     }
 
 });

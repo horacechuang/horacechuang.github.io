@@ -1,3 +1,5 @@
+/* header */
+
 header#header .title a {
     border: 1px solid rgba(255, 150, 174, 0.5);
     color: rgb(255, 51, 102);
@@ -19,6 +21,11 @@ header#header .title a:hover i {
     color: rgb(255, 255, 255);
 }
 
+/* main */
+
+.main-container figure.intro {
+    width: 100%;
+}
 
 /* project-main-navigator */
 

@@ -239,7 +239,7 @@ nav#nav .nav-container {
 
 section#project-nav {
     width: 100%;
-    margin-bottom: 100px;
+    padding: 100px 0;
 }
 
 section#project-nav .container {
@@ -562,7 +562,7 @@ ul.footer-link-btn {
     /* project-main-navigator */
 
     section#project-nav {
-        margin-bottom: 75px;
+        padding: 75px 0;
     }
 
     section#project-nav .container .title::after {
@@ -828,10 +828,6 @@ ul.footer-link-btn {
     }
 
     /* project-navigator */
-
-    section#project-nav {
-        margin-bottom: 100px;
-    }
 
     section#project-nav .container .title {
         margin: 0 15% 100px;

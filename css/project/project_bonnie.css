@@ -126,14 +126,14 @@ header#header .title a:active {
     transform: scale(0.95);
 }
 
-header#header .imagine {
+header#header .pattern {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-header#header .imagine svg {
+header#header .pattern svg {
     min-width: 200px;
     position: relative;
     z-index: -1;
@@ -148,11 +148,29 @@ header#header svg.pattern_dot-right {
     left: 50px;
 }
 
+/* main */
+
+main#container .main-container {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.main-container figure.intro {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
 @media all and (max-width: 1229px) {
 
-    header, main {
+    header#header {
         padding: 0 25px;
     }
+    
     
 }
 
@@ -203,7 +221,7 @@ header#header svg.pattern_dot-right {
         padding: 5px 10px;
     }
 
-    header#header .imagine svg {
+    header#header .pattern svg {
         min-width: 150px;
     }
 

@@ -3,7 +3,7 @@ $(document).ready(function () {
          currentScrollTop = 0,
          navigation = $("nav#nav");
          mobileFooter = $(".mobile-footer");
-         itemNav = $("nav#longpage-sub-menu ul.sub-menu");
+         itemNav = $("nav#sub-menu ul.sub-menu-container");
   
      $(window).scroll(function () {
         var topTomaxHeightDistance = $(window).scrollTop();
