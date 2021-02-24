@@ -23,7 +23,14 @@ header#header .title a:hover i {
 
 /* main */
 
-main .container figure.intro {
+main .container picture.intro-pic {
+    display: block;
+    position: relative;
+    max-width: 1080px;
+    margin-top: -50px;
+}
+
+main .container picture.intro-pic img {
     width: 100%;
 }
 
@@ -35,4 +42,13 @@ li.navi-btn a.prev-img {
 
 li.navi-btn a.next-img {
     background: url('../../img/index/index_2.png') center center;
+}
+
+@media all and (max-width: 767px) {
+
+    main .container picture.intro-pic {
+        margin-top: -25px;
+        padding: 0 25px;
+    }
+
 }
