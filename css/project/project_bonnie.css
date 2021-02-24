@@ -168,7 +168,7 @@ main .container blockquote.overview {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 blockquote.overview .container {
@@ -182,7 +182,6 @@ blockquote.overview .container p:first-child {
 }
 
 blockquote.overview .container p {
-    max-width: 80%;
     font-size: 1.5em;
     line-height: 2em;
     font-weight: 400;
@@ -263,6 +262,14 @@ blockquote.overview .container p {
 
     header#header svg.pattern_dot-right {
         left: 75px;
+    }
+
+    main .container blockquote.overview {
+        padding: 50px 0;
+    }
+
+    blockquote.overview .container {
+        padding: 0 25px;
     }
 
 }
