@@ -149,7 +149,7 @@ section#intro {
     width: 100%;
     display: block;
     position: relative;
-    margin-top: 25px;
+    margin: 25px auto 0;
     z-index: -1;
 }
 
