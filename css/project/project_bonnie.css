@@ -33,7 +33,7 @@ header#header .container {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     max-width: 1080px;
@@ -49,7 +49,7 @@ header#header .container::before {
     min-width: 750px;
     height: 750px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgb(255, 255, 255) 35%, rgb(255, 190, 206), rgb(255, 51, 102) 100%);
+    background: linear-gradient(135deg, rgb(255, 255, 255) 35%, rgb(255, 201, 215), rgb(255, 145, 172) 100%);
     animation: 2.5s circular linear infinite;
     z-index: -2;
 }
@@ -80,7 +80,7 @@ header#header .title {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     border-radius: 25px;
     padding: 25px;
     box-shadow: 45px 35px 100px -60px rgba(112, 112, 112, .35);
@@ -92,7 +92,7 @@ header#header .title {
 
 header#header .title svg {
     margin-bottom: 1.5em;
-    width: 100%;
+    width: 90%;
 }
 
 header#header .title a {
@@ -150,18 +150,44 @@ header#header svg.pattern_dot-right {
 
 /* main */
 
-main#container .main-container {
+main .container {
     display: block;
     position: relative;
     width: 100%;
 }
 
-.main-container figure.intro {
+main .container figure.intro {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+}
+
+main .container blockquote.overview {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+}
+
+blockquote.overview .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+blockquote.overview .container p:first-child {
+    padding: 0;
+}
+
+blockquote.overview .container p {
+    max-width: 80%;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 400;
+    letter-spacing: .25px;
+    padding: 25px 0 0;
 }
 
 
@@ -175,6 +201,10 @@ main#container .main-container {
 }
 
 @media all and (max-width: 767px) {
+
+    #decoration-line {
+        z-index: 1;
+    }
 
     header#header .container {
         min-height: 450px;

@@ -23,7 +23,7 @@ header#header .title a:hover i {
 
 /* main */
 
-.main-container figure.intro {
+main .container figure.intro {
     width: 100%;
 }
 
