@@ -182,7 +182,7 @@ blockquote.overview .container p:first-child {
 }
 
 blockquote.overview .container p {
-    font-size: 1.5em;
+    font-size: 1.65em;
     line-height: 2em;
     font-weight: 400;
     letter-spacing: .25px;
@@ -270,6 +270,15 @@ blockquote.overview .container p {
 
     blockquote.overview .container {
         padding: 0 25px;
+    }
+
+    blockquote.overview .container p:first-child {
+        padding: 0 15px;
+    }
+
+    blockquote.overview .container p {
+        font-size: 1.25em;
+        padding: 35px 15px 0;
     }
 
 }
