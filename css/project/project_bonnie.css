@@ -1,5 +1,9 @@
 /* general */
 
+#decoration-line {
+    z-index: 1;
+}
+
 header#header,
 main#container {
     position: relative;
@@ -188,6 +192,7 @@ blockquote.overview .container p {
     letter-spacing: .25px;
     padding: 25px 0 0;
 }
+
 
 
 @media all and (max-width: 1229px) {

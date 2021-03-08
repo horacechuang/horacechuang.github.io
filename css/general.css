@@ -337,13 +337,13 @@ li.navi-btn a .content {
 
 li.navi-btn a .prev-con {
     align-items: flex-start;
-    padding-left: calc(100%/10);
+    padding: 0 calc(100%/10);
     transform: translateX(-15px);
 }
 
 li.navi-btn a .next-con {
     align-items: flex-end;
-    padding-right: calc(100%/10);
+    padding: 0 calc(100%/10);
     transform: translateX(15px);
 }
 
