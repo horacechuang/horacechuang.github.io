@@ -1,11 +1,12 @@
 /* main */
+/* section.intro */
 
-main .container figure.intro {
+section.intro figure.pic {
     max-width: 1080px;
     margin-top: -50px;
 }
 
-main .container figure.intro video {
+section.intro figure.pic video {
     display: block;
     position: relative;
     width: 100%;

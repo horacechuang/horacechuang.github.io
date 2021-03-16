@@ -22,8 +22,9 @@ header#header .title a:hover i {
 }
 
 /* main */
+/* section.intro */
 
-main .container picture.intro-pic {
+section.intro picture {
     display: block;
     position: relative;
     max-width: 1080px;
@@ -31,7 +32,7 @@ main .container picture.intro-pic {
     padding: 0 50px;
 }
 
-main .container picture.intro-pic img {
+section.intro picture img {
     width: 100%;
 }
 

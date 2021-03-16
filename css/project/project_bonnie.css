@@ -160,7 +160,9 @@ main .container {
     width: 100%;
 }
 
-main .container figure.intro {
+/* section.intro */
+
+section.intro figure.pic {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -168,11 +170,11 @@ main .container figure.intro {
     margin: 0 auto;
 }
 
-main .container blockquote.overview {
+section.intro blockquote.overview {
     display: block;
     position: relative;
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 
 blockquote.overview .container {
@@ -193,15 +195,65 @@ blockquote.overview .container p {
     padding: 25px 0 0;
 }
 
+/* section */
+
+section.preface {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* section.preface */
+
+section.preface ul.container {
+    display: flex;
+    max-width: 767px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 35px 80px -30px rgba(156, 156, 156, 0.25);
+}
+
+section.preface ul.container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.preface li h4 {
+    font-size: 1.5em;
+    line-height: 2.5em;
+    color: rgb(151, 151, 151);
+}
+
+section.preface li p {
+    font-size: 1.35em;
+}
 
 
 @media all and (max-width: 1229px) {
+
+    /* header */
 
     header#header {
         padding: 0 25px;
     }
     
-    
+}
+
+@media all and (max-width: 980px) {
+
+    /* section */
+
+    section.preface {
+        padding: 25px;
+    }
+
 }
 
 @media all and (max-width: 767px) {
@@ -209,6 +261,8 @@ blockquote.overview .container p {
     #decoration-line {
         z-index: 1;
     }
+
+    /* header */
 
     header#header .container {
         min-height: 450px;
@@ -269,8 +323,10 @@ blockquote.overview .container p {
         left: 75px;
     }
 
+    /* section.intro */
+
     main .container blockquote.overview {
-        padding: 50px 0;
+        padding: 50px 0 25px;
     }
 
     blockquote.overview .container {
@@ -284,6 +340,27 @@ blockquote.overview .container p {
     blockquote.overview .container p {
         font-size: 1.25em;
         padding: 35px 15px 0;
+    }
+
+    /* section.preface */
+
+    section.preface {
+        padding: 25px 50px;
+    }
+
+    section.preface ul.container {
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    section.preface ul li:first-child,
+    section.preface ul li:nth-child(2) {
+        padding-bottom: 25px;
+    }
+
+    section.preface ul li h4,
+    section.preface ul li p {
+        font-size: 1.25em;
     }
 
 }
