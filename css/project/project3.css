@@ -438,10 +438,6 @@ ul.sub-menu-container li.item:last-child {
     padding: 0;
 }
 
-ul.sub-menu-container li.sub {
-    padding-bottom: 10px;
-}
-
 ul.sub-menu-container span {
     line-height: 2.5em;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
@@ -605,7 +601,7 @@ section#research main.container article.key-findings {
 
 section#research main.container article.persona,
 section#research main.container article.key-findings {
-    padding: 35px 0;
+    padding: 85px 0 0;
 }
 
 
@@ -785,7 +781,7 @@ article.key-findings aside.column figure img.mobile {
 /* solution */
 
 section#solution {
-    padding-top: 65px;
+    padding-top: 75px !important;
 }
 
 section#solution,
@@ -823,7 +819,8 @@ section#solution article.pay-flow header,
 section#solution article.message header {
     align-items: flex-start;
     max-width: 768px;
-    margin: 100px auto 0;
+    padding-top: 100px;
+    margin: 0 auto;
 }
 
 section#solution h3.title {
@@ -979,7 +976,7 @@ li.navi-btn a.next-img {
     }
 
     section#problem {
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 
     section#process article.content::before {
@@ -1000,6 +997,10 @@ li.navi-btn a.next-img {
     }
 
     /* research */
+
+    section#research {
+        padding: 75px 0 0;
+    }
 
     section#research main.container header.intro {
         padding: 25px 200px 25px 75px;
@@ -1072,8 +1073,7 @@ li.navi-btn a.next-img {
         opacity: 1 !important;
     }
 
-    ul.sub-menu-container li.item,
-    ul.sub-menu-container li.sub {
+    ul.sub-menu-container li.item {
         padding: 0;
     }
 
@@ -1097,18 +1097,18 @@ li.navi-btn a.next-img {
 
     ul.sub-menu-container a:hover span{
         border-bottom: 5px rgb(255, 135, 122) solid;
-        padding-bottom: 18px;
+        padding-bottom: 19px;
         opacity: .85;
     }
 
     li.sub-item a:hover span {
-        border-bottom: 5px rgb(66, 66 ,66) solid !important;
-        padding-bottom: 20px;
+        border-bottom: 5px rgb(102, 102, 102) solid !important;
+        padding-bottom: 19px;
     }
 
     ul.sub-menu-container a:active span{
         border-bottom: 5px rgb(255, 135, 122) solid;
-        padding-bottom: 18px;
+        padding-bottom: 19px;
         opacity: 1;
     }
 }
@@ -1225,6 +1225,10 @@ li.navi-btn a.next-img {
         padding: 0 10px !important;
     }
 
+    li.sub-item a:hover span {
+        padding-bottom: 20px;
+    }
+
     /* problem */
 
     section#problem {
@@ -1336,8 +1340,9 @@ li.navi-btn a.next-img {
         font-size: 1.3em;
     }
 
-    section#solution article.pay-flow header, section#solution article.message header {
-        margin: 75px auto 0;
+    section#solution article.pay-flow header, 
+    section#solution article.message header {
+        padding-top: 75px;
     }
 
     section#solution h3.title {
@@ -1765,12 +1770,7 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
         line-height: 2.15em;
     }
-
-    section#solution article.pay-flow header, 
-    section#solution article.message header {
-        margin: 50px auto 0;
-    }
-
+    
     section#solution h3.title {
         font-size: 1.45em;
         margin: 0 0 1em;
@@ -1843,11 +1843,12 @@ li.navi-btn a.next-img {
 
     ul.sub-menu-container a:hover span {
         border-bottom: 2.5px rgb(255, 135, 122) solid;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     li.sub-item a:hover span {
-        border-bottom: 2.5px rgb(66, 66 ,66) solid !important;
+        border-bottom: 2.5px rgb(102, 102, 102) solid !important;
+        padding-bottom: 11px;
     }
     
 }
