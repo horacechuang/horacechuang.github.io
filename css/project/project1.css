@@ -48,7 +48,7 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 767px) {
 
-    main .container picture.intro-pic {
+    section.intro picture {
         margin-top: -25px;
         padding: 0 25px;
     }

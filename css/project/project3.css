@@ -1051,6 +1051,7 @@ li.navi-btn a.next-img {
         top: 0;
         transform: none;
         animation: .5s fadeIn ease;
+        border-bottom: 1px solid rgb(224 224 224);
     }
     
     nav#sub-menu ul.sub-menu-container ul.sub-menu-container.sticky-nav {
@@ -1854,7 +1855,7 @@ li.navi-btn a.next-img {
 }
 
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 580px) {
 
     /* header */
 
@@ -1886,6 +1887,10 @@ li.navi-btn a.next-img {
 
     section#intro picture.img img {
         left: -5px;
+    }
+
+    nav#sub-menu ul.sub-menu-container.fixed-nav {
+        border-bottom: none;
     }
 
     /* process */

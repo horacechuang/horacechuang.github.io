@@ -604,6 +604,7 @@ ul.footer-link-btn {
         align-items: center;
         user-select: none;
         background: white;
+        z-index: 5;
     }
 
     #landscapeContent::before {
@@ -627,10 +628,10 @@ ul.footer-link-btn {
         font-family: 'Karla', 'Noto Sans TC', sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 1.4em;
-        line-height: 2.2em;
-        letter-spacing: 0.5px;
-        margin-bottom: 30px;
+        font-size: 1.25em;
+        line-height: 2.25em;
+        letter-spacing: 0.25px;
+        padding-bottom: 30px;
         text-align: left;
     }
 

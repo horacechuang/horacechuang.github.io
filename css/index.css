@@ -1146,7 +1146,7 @@ ul.expertise-content p {
 
     .about-header-container .en h2 {
         font-size: 1.25em;
-        /* text-align: left; */
+        text-align: left;
     }
 
     main.about-main {
