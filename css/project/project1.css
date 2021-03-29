@@ -40,7 +40,6 @@ section.intro picture img {
 
 section.before article.img {
     justify-content: center;
-    align-items: center;
 }
 
 section.before article.img picture.before-img {
@@ -86,7 +85,7 @@ li.navi-btn a.next-img {
 }
 
 @media all and (max-width: 550px) {
-    
+
     /* section-----before */
 
     section.before article.img picture.before-img {
