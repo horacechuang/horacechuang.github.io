@@ -44,18 +44,9 @@ section.before article.img {
 
 section.before article.img picture.before-img {
     overflow: hidden;
-    min-height: inherit;
-    max-height: inherit;
+    min-height: initial;
+    max-height: initial;
 }
-
-section.before article.img::before, 
-section.before article.img:hover::before,
-section.before article.img::after, 
-section.before article.img:hover::after {
-   height: 0;
-   width: 0;
-}
-    
 
 /* project-main-navigator */
 

@@ -301,7 +301,7 @@ section.before article.img:hover::after {
     display: block;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 50px;
     z-index: 1;
 }
 
