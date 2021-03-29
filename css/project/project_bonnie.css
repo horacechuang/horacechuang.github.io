@@ -346,6 +346,14 @@ section.before article.img picture.before-img::-webkit-scrollbar {
     display: none;
 }
 
+section.before article.img figcaption {
+    padding: 25px 0;
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: rgb(162, 162, 162);
+    letter-spacing: .25px;
+}
+
 section.before picture.before-img img {
     width: 100%;
 }
@@ -582,6 +590,10 @@ section.before article.content p:last-child {
 
     section.before article.img picture.before-img {
         min-height: 500px;
+    }
+
+    section.before article.img figcaption {
+        font-size: 1.05em;
     }
 
 }

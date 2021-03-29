@@ -38,11 +38,25 @@ section.intro picture img {
 
 /* section-----before */
 
+section.before article.img {
+    justify-content: center;
+    align-items: center;
+}
+
 section.before article.img picture.before-img {
     overflow: hidden;
-    min-height: 100%;
-    max-height: 100%;
+    min-height: inherit;
+    max-height: inherit;
 }
+
+section.before article.img::before, 
+section.before article.img:hover::before,
+section.before article.img::after, 
+section.before article.img:hover::after {
+   height: 0;
+   width: 0;
+}
+    
 
 /* project-main-navigator */
 
@@ -56,9 +70,27 @@ li.navi-btn a.next-img {
 
 @media all and (max-width: 767px) {
 
+    /* section-----intro */
+
     section.intro picture {
         margin-top: -25px;
         padding: 0 25px;
+    }
+
+    /* section-----before */
+
+    section.before article.img picture.before-img {
+        min-height: inherit;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    
+    /* section-----before */
+
+    section.before article.img picture.before-img {
+        min-height: inherit;
     }
 
 }
