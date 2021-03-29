@@ -195,10 +195,11 @@ blockquote.overview .container p {
     padding: 25px 0 0;
 }
 
-/* section */
+/* ------------------- section ------------------- */
 
 section.preface,
-section.before {
+section.before,
+section.goal {
     display: block;
     position: relative;
     width: 100%;
@@ -281,21 +282,21 @@ section.before .container {
     padding: 25px;
 }
 
-section.before article.column {
+section.before aside.column {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-section.before article.img {
+section.before aside.img {
     position: relative;
     align-items: center;
 }
 
-section.before article.img::before,
-section.before article.img::after,
-section.before article.img:hover::before,
-section.before article.img:hover::after {
+section.before aside.img::before,
+section.before aside.img::after,
+section.before aside.img:hover::before,
+section.before aside.img:hover::after {
     content: "";
     position: absolute;
     display: block;
@@ -305,26 +306,26 @@ section.before article.img:hover::after {
     z-index: 1;
 }
 
-section.before article.img::before,
-section.before article.img:hover::before {
+section.before aside.img::before,
+section.before aside.img:hover::before {
     top: 0;
     border-radius: 15px 15px 0px 0px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
-section.before article.img::after,
-section.before article.img:hover::after {
+section.before aside.img::after,
+section.before aside.img:hover::after {
     bottom: 75px;
     border-radius: 0 0 15px 15px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
 }
 
-section.before article.img:hover::before,
-section.before article.img:hover::after {
+section.before aside.img:hover::before,
+section.before aside.img:hover::after {
     background: rgba(255,255,255,0);
 }
 
-section.before article.img picture.before-img {
+section.before aside.img picture.before-img {
     display: block;
     position: relative;
     width: 100%;
@@ -338,16 +339,16 @@ section.before article.img picture.before-img {
     transition: .25s all ease;
 }
 
-section.before article.img picture.before-img:hover {
+section.before aside.img picture.before-img:hover {
     box-shadow: 0px 25px 55px -15px rgba(156, 156, 156, 0.25);
     transform: scale(0.985);
 }
 
-section.before article.img picture.before-img::-webkit-scrollbar {
+section.before aside.img picture.before-img::-webkit-scrollbar {
     display: none;
 }
 
-section.before article.img figcaption {
+section.before aside.img figcaption {
     padding: 25px 0;
     font-size: 1.25em;
     line-height: 1.75em;
@@ -359,16 +360,16 @@ section.before picture.before-img img {
     width: 100%;
 }
 
-section.before article.content {
+section.before aside.content {
     padding-left: 50px;
     justify-content: center;
 }
 
-section.before article.content header {
+section.before aside.content header {
     padding: 25px 0;
 }
 
-section.before article.content h2 {
+section.before aside.content h2 {
     font-size: 3em;
     line-height: 2em;
     background: linear-gradient(190deg, #ffd9e5, #ff4970);
@@ -379,13 +380,13 @@ section.before article.content h2 {
     -moz-text-fill-color: transparent;
 }
 
-section.before article.content p {
+section.before aside.content p {
     font-size: 1.5em;
     line-height: 2em;
     padding: 0 0 25px;
 }
 
-section.before article.content p:last-child {
+section.before aside.content p:last-child {
     padding: 0;
 }
 
@@ -411,7 +412,7 @@ section.before article.content p:last-child {
 
 @media all and (max-width: 980px) {
 
-    /* section */
+    /* section-----preface */
 
     section.preface {
         padding: 25px 50px;
@@ -554,28 +555,28 @@ section.before article.content p:last-child {
         padding: 0 25px;
     }
     
-    section.before article.column {
+    section.before aside.column {
         width: 100%;
     }
 
-    section.before article.img picture.before-img {
+    section.before aside.img picture.before-img {
         min-height: 650px;
     }
 
-    section.before article.content {
+    section.before aside.content {
         padding: 0 0 75px;
         order: 1;
     }
 
-    section.before article.content h2 {
+    section.before aside.content h2 {
         font-size: 2em;
     }
     
-    section.before article.content p {
+    section.before aside.content p {
         font-size: 1.25em;
     }
 
-    section.before article.img {
+    section.before aside.img {
         order: 2;
     }
 
@@ -583,17 +584,17 @@ section.before article.content p:last-child {
 
 @media all and (max-width: 550px) {
 
-     /* section-----preface */
+    /* section-----preface */
 
     section.preface {
         padding: 25px 50px;
     }
 
-    section.before article.img picture.before-img {
+    section.before aside.img picture.before-img {
         min-height: 500px;
     }
 
-    section.before article.img figcaption {
+    section.before aside.img figcaption {
         font-size: 1.05em;
     }
 

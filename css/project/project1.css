@@ -38,15 +38,24 @@ section.intro picture img {
 
 /* section-----before */
 
-section.before article.img {
+section.before aside.img {
     justify-content: center;
 }
 
-section.before article.img picture.before-img {
+section.before aside.img picture.before-img {
     overflow: hidden;
     min-height: initial;
     max-height: initial;
 }
+
+section.before aside.img::before, 
+section.before aside.img:hover::before,
+section.before aside.img::after, 
+section.before aside.img:hover::after {
+   height: 0;
+   width: 0;
+}
+    
 
 /* project-main-navigator */
 
@@ -69,7 +78,7 @@ li.navi-btn a.next-img {
 
     /* section-----before */
 
-    section.before article.img picture.before-img {
+    section.before aside.img picture.before-img {
         min-height: inherit;
     }
 
@@ -79,7 +88,7 @@ li.navi-btn a.next-img {
 
     /* section-----before */
 
-    section.before article.img picture.before-img {
+    section.before aside.img picture.before-img {
         min-height: inherit;
     }
 
