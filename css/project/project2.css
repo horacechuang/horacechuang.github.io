@@ -1,5 +1,5 @@
 /* main */
-/* section.intro */
+/* section----intro */
 
 section.intro figure.pic {
     max-width: 1080px;
@@ -24,6 +24,8 @@ section.intro figure.pic video {
 }
 
 @media all and (max-width: 767px) {
+
+    /* section-----intro */
 
     section.intro figure.pic {
         margin-top: -25px;
