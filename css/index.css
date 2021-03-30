@@ -1,6 +1,6 @@
 /* general set */
 
-#header-container {
+header#header .container {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -12,7 +12,7 @@ header#header {
     padding-top: 65px;
 }
 
-#header-container {
+header#header .container {
     display: flex;
     flex-direction: row;
 }
@@ -74,14 +74,13 @@ header#header aside.img img.pattern {
 
 /* parapraph text */
 
-#header-container .paragraph {
+header#header .container .paragraph {
     width: 65%;
     padding-top: 25px;
 }
 
-#header-container .paragraph h1 {
+header#header .container .paragraph h1 {
     display: inline-block;
-    font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 4.5em;
     margin-bottom: 40px;
@@ -123,16 +122,14 @@ span.wave {
     }
 }
 
-#header-container .paragraph h3 {
+header#header .container .paragraph h3 {
     font-size: 2em;
-    font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
     line-height: 2em;
     color: rgb(139, 139, 139);
 }
 
 .paragraph p {
-    font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.85em;
@@ -339,7 +336,6 @@ li#grid-inner .title::after {
 }
 
 li#grid-inner .title h3 {
-    font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-size: 2em;
     line-height: 1.5em;
     font-weight: 600;
@@ -357,17 +353,16 @@ li#grid-inner .title h3::after {
     z-index: 1;
 }
 
-li#grid-inner p {
-    font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-size: 1.35em;
-    line-height: 2.1em;
+li#grid-inner p,
+li#grid-inner p.eng-grid-p {
+    font-size: 1.25em;
+    line-height: 2.15em;
     font-weight: 400;
     letter-spacing: .25px;
 }
 
 li#grid-inner p.eng-grid-p {
     margin: 15px 0;
-    font-size: 1.3em;
     color: rgb(179, 179, 179);
 }
 
@@ -392,7 +387,6 @@ li#grid-inner .tag {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Karla', serif;
     transition: .5s all ease;
     animation: 3s morphing linear infinite;
     font-size: 1.25em;
@@ -442,7 +436,7 @@ section#about {
     padding: 50px 0 25px;
 }
 
-.about-container  {
+section#about .container  {
     display: block;
     position: relative;
     width: 100%;
@@ -450,13 +444,13 @@ section#about {
 
 /* about-header */
 
-header.about-header {
+section#about header {
     display: block;
     position: relative;
     margin: 100px 0 50px;
 }
 
-.about-header-container {
+section#about header .wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -466,8 +460,8 @@ header.about-header {
     margin: 0 auto;
 }
 
-.about-header-container::before,
-.about-header-container::after {
+section#about header .wrapper::before,
+section#about header .wrapper::after {
     content: "";
     position: relative;
     width: 100%;
@@ -475,30 +469,30 @@ header.about-header {
     background: rgba(124, 124, 124, 0.25);
 }
 
-.about-header-container::before {
+section#about header .wrapper::before {
     left: 0;
     top: -50px;
 }
 
-.about-header-container::after {
+section#about header .wrapper::after {
     right: 0;
     bottom: -50px;
 }
 
-.about-header-container .column {
+section#about header .wrapper .column {
     display: block;
     position: relative;
 }
 
-.about-header-container .zh {
+section#about header .wrapper .zh {
     width: 45%;
 }
 
-.about-header-container .en {
+section#about header .wrapper .en {
     width: 55%;
 }
 
-.about-header-container .column h2 {
+section#about header .wrapper .column h2 {
     display: block;
     position: relative;
     line-height: 2em;
@@ -506,13 +500,12 @@ header.about-header {
     letter-spacing: 0.5px;
 }
 
-.about-header-container .zh h2 {
+section#about header .wrapper .zh h2 {
     font-size: 2em;
 }
 
-.about-header-container .en h2 {
+section#about header .wrapper .en h2 {
     font-size: 1.65em;
-    font-family: 'Roboto Slab', serif;
     text-align: right;
     color: rgba(139, 139, 139, .5);
     font-weight: 700;
@@ -520,16 +513,16 @@ header.about-header {
 
 /* about-main */
 
-main.about-main {
+section#about main {
     margin: 125px 0 0;
 }
 
-.about-main-container {
+section#about main .content {
     max-width: 1080px;
     margin: 0 auto;
 }
 
-.about-image {
+section#about .pics {
     display: flex;
     position: relative;
     padding: 25px 0 40px;
@@ -538,7 +531,7 @@ main.about-main {
     margin: 0 auto;
 }
 
-.about-image::before {
+section#about .pics::before {
     content: "";
     position: absolute;
     display: block;
@@ -552,7 +545,7 @@ main.about-main {
     z-index: -1;
 }
 
-.about-image-container::before {
+section#about .pics .container::before {
     content: "";
     position: absolute;
     display: block;
@@ -574,7 +567,7 @@ main.about-main {
     }
 }
 
-.about-image::after {
+section#about .pics::after {
     content: "";
     position: absolute;
     display: block;
@@ -588,7 +581,7 @@ main.about-main {
     z-index: -1;
 }
 
-.about-image-container::after {
+section#about .pics .container::after {
     content: "";
     position: absolute;
     display: block;
@@ -610,7 +603,7 @@ main.about-main {
     }
 }
 
-.about-image img.about-img {
+section#about .pics img {
     width: 90%;
     border-radius: 25px;
     margin: 0 auto;
@@ -619,35 +612,35 @@ main.about-main {
     transition: .5s all ease;
 }
 
-.about-image img.about-img:hover {
+section#about .pics img:hover {
     transform: translateY(10px);
     box-shadow: 0px 0px 67px -15px rgba(0, 0, 0, .25);
 }
 
-blockquote.about-main-header {
-    padding-bottom: 50px;
+section.summary {
+    padding: 25px 0 75px;
 }
 
-blockquote.about-main-header p {
+section.summary p {
     font-size: 1.75em;
-    line-height: 2.2em;
-    margin: 50px 0;
-    font-family: 'Roboto Slab', 'Noto Sans TC', sans-serif;
+    line-height: 2.15em;
+    padding: 25px 0;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 
-.p-about-eng {
+section.summary p.eng {
     color: rgba(116, 116, 116, 0.5);
 }
 
-header.expertise-header {
+section.expertise header {
     display: block;
     position: relative;
     padding-bottom: 80px;
+    margin: 0 !important;
 }
 
-header.expertise-header::after {
+section.expertise header::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -656,11 +649,11 @@ header.expertise-header::after {
     top: 85px;
 }
 
-header.expertise-header h1 {
+section.expertise header h1 {
     font-size: 2.5em;
 }
 
-header.expertise-header h1::after {
+section.expertise header h1::after {
     content: "";
     position: absolute;
     width: 7.5%;
@@ -670,38 +663,37 @@ header.expertise-header h1::after {
     left: 0;
 }
 
-.about-main-expertise ul.expertise-content {
-    display: flex;
+section.expertise ul.container {
+    display: flex !important;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
 }
 
-ul.expertise-content li {
+section.expertise ul.container li {
     width: 30%;
     margin: 20px 0 25px 0;
 }
 
-ul.expertise-content .title {
+section.expertise ul.container .title {
     min-height: 90px;
     display: block;
     position: relative;
 }
 
-ul.expertise-content .title h2 {
+section.expertise ul.container .title h2 {
     font-size: 1.85em;
-    line-height: 2em;
+    line-height: 2.15em;
     font-weight: 700;
 }
 
-ul.expertise-content .title h3 {
-    font-size: 1.6em;
+section.expertise ul.container .title h3 {
+    font-size: 1.5em;
     line-height: 1.85em;
 }
 
-ul.expertise-content p {
-    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+section.expertise ul.container p {
     font-weight: 400;
     font-size: 1.35em;
     line-height: 2em;
@@ -725,7 +717,7 @@ ul.expertise-content p {
 
     /* general */
 
-    .about-container {
+    section#about > .container {
         padding: 0 25px;
     }
 
@@ -737,7 +729,7 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container .paragraph {
+    header#header .container .paragraph {
         width: 75%;
         padding-top: 25px;
         display: flex;
@@ -745,16 +737,16 @@ ul.expertise-content p {
         justify-content: center;
     }
 
-    #header-container .paragraph h1 {
+    header#header .container .paragraph h1 {
         font-size: 3.5em;
     }
 
-    #header-container .paragraph h3 {
+    header#header .container .paragraph h3 {
         font-size: 1.85em;
         line-height: 2em;
     }
 
-    #header-container .paragraph p {
+    header#header .container .paragraph p {
         font-size: 1.55em;
     }
 
@@ -803,14 +795,6 @@ ul.expertise-content p {
         font-size: 1.85em;
     }
 
-    li#grid-inner p {
-        font-size: 1.25em;
-    }
-
-    li#grid-inner p.eng-grid-p {
-        font-size: 1.25em;
-    }
-
     li#grid-inner .title h3::after {
         width: 30px;
     }
@@ -820,51 +804,51 @@ ul.expertise-content p {
 
     /* about-header */
 
-    .about-header-container .zh h2 {
+    section#about header .wrapper .zh h2 {
         font-size: 1.7em;
     }
 
-    .about-header-container .en h2 {
+    section#about header .wrapper .en h2 {
         font-size: 1.5em;
     }
 
-    blockquote.about-main-header p {
+    section.summary p {
         font-size: 1.7em;
         line-height: 2.1em;
     }
 
     /* about-main */
 
-    header.expertise-header {
+    section.expertise header {
         padding-bottom: 60px;
     }
 
-    header.expertise-header::after {
+    section.expertise header::after {
         top: 70px;
     }
 
-    header.expertise-header h1 {
+    section.expertise header h1 {
         font-size: 2em;
     }
 
-    header.expertise-header h1::after {
+    section.expertise header h1::after {
         top: 69px;
     }
 
-    ul.expertise-content li .title {
+    section.expertise ul.container li .title {
         min-height: 85px;
     }
     
-    ul.expertise-content .title h2 {
+    section.expertise ul.container .title h2 {
         font-size: 1.65em;
     }
     
-    ul.expertise-content .title h3 {
+    section.expertise ul.container .title h3 {
         font-size: 1.4em;
         line-height: 1.85em;
     }
     
-    ul.expertise-content p {
+    section.expertise ul.container p {
         font-size: 1.35em;
         margin: 10px 0 20px 0;
     }
@@ -873,16 +857,16 @@ ul.expertise-content p {
 
 @media all and (max-width: 980px) {
 
-    #header-container .paragraph {
+    header#header .container .paragraph {
         padding-top: 35px;
     }
 
-    #header-container .paragraph h3 {
+    header#header .container .paragraph h3 {
         font-size: 1.75em;
         line-height: 1.9em;
     }
 
-    #header-container .paragraph p {
+    header#header .container .paragraph p {
         font-size: 1.5em;
     }
 
@@ -909,30 +893,30 @@ ul.expertise-content p {
 
     /* about-header */
 
-    .about-header-container .zh {
+    section#about header .wrapper .zh {
         width: 40%;
     }
 
-    .about-header-container .en {
+    section#about header .wrapper .en {
         width: 60%;
     }
 
-    .about-header-container.zh h2 {
+    section#about header .wrapper.zh h2 {
         font-size: 1.65em;
     }
 
-    .about-header-container .en h2 {
+    section#about header .wrapper .en h2 {
         font-size: 1.35em;
     }
 
-    blockquote.about-main-header p {
+    section.summary p {
         font-size: 1.65em;
         line-height: 2em;
     }
 
     /* about-main */
 
-    ul.expertise-content li {
+    section.expertise ul.container li {
         width: 45%;
         margin: 15px 0 25px 0;
     }
@@ -945,7 +929,7 @@ ul.expertise-content p {
         padding: 0 25px;
     }
 
-    #header-container {
+    header#header .container {
         flex-direction: column-reverse;
     }
 
@@ -979,17 +963,17 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container .paragraph {
+    header#header .container .paragraph {
         padding: 50px 25px 0;
         width: 100%;
     }
 
-    #header-container .paragraph h1 {
+    header#header .container .paragraph h1 {
         font-size: 2.5em;
         margin-bottom: 25px;
     }
 
-    #header-container .paragraph h3 {
+    header#header .container .paragraph h3 {
         font-size: 1.5em;
         line-height: 2em;
     }
@@ -1075,113 +1059,114 @@ ul.expertise-content p {
         margin-top: 50px !important;
     }
 
-    .about-header-container::before {
+    section#about header .wrapper::before {
         top: -25px;
     }
     
-    .about-header-container::after {
+    section#about header .wrapper::after {
         bottom: -25px;
     }
 
-    .about-header-container .column {
+    section#about header .wrapper .column {
         width: 100% !important;
         padding: 15px 0;
     }
 
-    .about-header-container .zh h2 {
+    section#about header .wrapper .zh h2 {
         font-size: 1.5em;
     }
 
-    .about-header-container .en h2 {
+    section#about header .wrapper .en h2 {
         font-size: 1.25em;
         text-align: left;
     }
 
-    main.about-main {
+    section#about main {
         margin: 85px 0 0px;
     }
 
-    blockquote.about-main-header p {
+    section.summary p {
         font-size: 1.5em;
     }   
 
-    .about-image {
+    section#about .pics {
         padding: 30px 0;
     }
 
-    .about-image img.about-img {
+    section#about .pics img {
         width: 95%;
+        border-radius: 10px;
     }
 
-    .about-image::before {
+    section#about .pics::before {
         width: 200px;
         height: 200px;
         left: -75px;
         top: -45px;
     }
     
-    .about-image::after {
+    section#about .pics::after {
         width: 200px;
         height: 200px;
         right: -75px;
         bottom: -45px;
     }
 
-    .about-image-container::before {
+    section#about .pics .container::before {
         width: 150px;
         height: 150px;
         left: -50px;
         top: -45px;
     }
     
-    .about-image-container::after {
+    section#about .pics .container::after {
         width: 150px;
         height: 150px;
         right: -50px;
         bottom: -45px;
     }
 
-    .about-image img.about-img {
+    section#about .pics img{
         box-shadow: 0px 25px 55px -36px rgba(0, 0, 0, .35);
     }
 
     /* about-main */
 
-    header.expertise-header {
+    section.expertise header {
         padding-bottom: 50px;
     }
 
-    header.expertise-header::after {
+    section.expertise header::after {
         top: 60px;
     }
 
-    header.expertise-header h1 {
+    section.expertise header h1 {
         font-size: 1.85em;
     }
 
-    header.expertise-header h1::after {
+    section.expertise header h1::after {
         width: 10%;
         top: 59px;
     }
 
-    ul.expertise-content li {
+    section.expertise ul.container li {
         width: 100%;
         margin: 10px 0 20px 0;
     }
 
-    ul.expertise-content li .title {
+    section.expertise ul.container li .title {
         min-height: 75px;
     }
 
-    ul.expertise-content .title h2 {
+    section.expertise ul.container .title h2 {
         font-size: 1.5em;
     }
 
-    ul.expertise-content .title h3 {
+    section.expertise ul.container .title h3 {
         font-size: 1.35em;
     }
 
-    ul.expertise-content p {
+    section.expertise ul.container p {
         font-size: 1.3em;
     }
 }
@@ -1191,7 +1176,7 @@ ul.expertise-content p {
 
     /* parapraph text */
 
-    #header-container .paragraph {
+    header#header .container .paragraph {
         padding: 25px 15px 0;
     }
 
@@ -1220,21 +1205,21 @@ ul.expertise-content p {
         top: 25px;
     } */
 
-    main.about-main {
+    section#about main {
         margin: 80px 0 0px;
     }
 
-    blockquote.about-main-header p {
+    section.summary p {
         font-size: 1.3em;
     }
 
     /* about */
 
-    .about-image {
+    section#about .pics {
         padding: 25px 0;
     }
 
-    ul.expertise-content p {
+    section.expertise ul.container p {
         font-size: 1.25em;
     }
 

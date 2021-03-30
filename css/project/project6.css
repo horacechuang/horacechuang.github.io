@@ -1,31 +1,36 @@
 /* general */
 
-html, body {
+html, 
+body {
     background: rgb(0,0,0) !important;
 }
 
-nav, footer#footer{
+nav#nav, 
+footer#footer{
     background: hsla(0, 0%, 0%, 0) !important;
 }
 
-nav.addShadow, footer.addShadow {
+nav#nav.addShadow, 
+footer#footer.addShadow {
     box-shadow: none;
 }
 
-.logo a, .nav-menu li a {
+nav#nav .logo a, 
+nav#nav .item li a {
     color:rgb(203, 203, 203);
 }
 
-.logo a:hover, .nav-menu li a:hover {
+nav#nav .logo a:hover, 
+nav#nav .item li a:hover {
     color: white;
 }
 
-.nav-menu li a::before {
+nav#nav .item a::before {
     background-color: rgb(208, 208, 208);
     opacity: .75;
 }
 
-#decoration-line {
+#line{
     z-index: 1;
 }
 
@@ -503,7 +508,7 @@ li.navi-btn a.next-img {
 
 /* footer */
 
-.footer-link i {
+aside.link i{
     color: rgb(228, 228, 228);
     opacity: .75;
 }
@@ -702,11 +707,11 @@ li.navi-btn a.next-img {
 
     /* general */
 
-    .menuBtn li {
+    nav#nav .mobileBtn li {
         background: rgb(203, 203, 203) !important;
     }
 
-    .menuBtn.btnActive li {
+    nav#nav .mobileBtn.btnActive li {
         background:white !important;
     }
 
@@ -856,7 +861,7 @@ li.navi-btn a.next-img {
         margin: 0;
     }
 
-    .footer-link i {
+    aside.link i {
         color: rgb(255, 255, 255) !important;
     }
 
@@ -917,7 +922,7 @@ li.navi-btn a.next-img {
         font-size: 1.85em;
     }
 
-    .header-title h2:::after {
+    .header-title h2::after {
         margin-top: 25px;
     }
 

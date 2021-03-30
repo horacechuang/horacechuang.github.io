@@ -1,13 +1,13 @@
   $(function() {
-    $(".menuBtn").on('click', function() {
+    $("nav#nav .mobileBtn").on('click', function() {
       $(this).toggleClass('btnActive');
-      $(".nav-menu").toggleClass('collapse');
+      $("nav#nav .item").toggleClass('collapse');
       $('html').toggleClass('scrollHidden');
     })
 
-    $(".nav-btn a").on('click', function() {
-      $(".menuBtn").removeClass('btnActive');
-      $(".nav-menu").removeClass('collapse');
+    $("nav#nav ul.container a").on('click', function() {
+      $("nav#nav .mobileBtn").removeClass('btnActive');
+      $("nav#nav .item").removeClass('collapse');
       $('html').removeClass('scrollHidden');
     })
 
