@@ -1,4 +1,11 @@
 /* main */
+
+section.objective {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
 /* section----intro */
 
 section.intro figure.pic {
@@ -17,9 +24,12 @@ section.intro figure.pic video {
 
 @media all and (max-width: 1375px) {
 
+    /* section-----intro */
+
     section.intro figure.pic {
         padding: 0 25px;
     }
+    
 
 }
 

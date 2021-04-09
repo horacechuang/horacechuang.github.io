@@ -590,7 +590,7 @@ section#research main.container header.intro {
 
 section#research main.container header.intro,
 section#research main.container article.persona,
-section#research main.container article.key-findings {
+section#research main.container article.insights {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -600,7 +600,7 @@ section#research main.container article.key-findings {
 }
 
 section#research main.container article.persona,
-section#research main.container article.key-findings {
+section#research main.container article.insights {
     padding: 85px 0 0;
 }
 
@@ -623,7 +623,7 @@ section#research header.intro p {
 
 
 article.persona h3.title,
-article.key-findings h3.title,
+article.insights h3.title,
 section#solution h3.title {
     display: block;
     position: relative;
@@ -634,7 +634,7 @@ section#solution h3.title {
 }
 
 article.persona h3.title::before,
-article.key-findings h3.title::before,
+article.insights h3.title::before,
 section#solution h3.title::before  {
     content: "";
     display: block;
@@ -647,7 +647,7 @@ section#solution h3.title::before  {
 }
 
 article.persona h3.title::after,
-article.key-findings h3.title::after,
+article.insights h3.title::after,
 section#solution h3.title::after  {
     content: "";
     display: block;
@@ -742,39 +742,39 @@ aside.persona ol.pain-point li {
     margin: 0 0 20px 0;
 }
 
-article.key-findings aside.column h4.sub-title {
+article.insights aside.column h4.sub-title {
     display: inline-block;
     font-size: 1.6em;
     margin-bottom: 2em;
     color: rgb(254, 116, 30);
 }
 
-article.key-findings aside.column {
+article.insights aside.column {
     margin: 25px 0 0;
 }
 
-article.key-findings main p {
+article.insights main p {
     font-size: 1.45em;
     line-height: 2.1em;
     margin: 0 0 2em 0;
 }
 
-article.key-findings aside main {
+article.insights aside main {
     width: 80%;
 }
 
-article.key-findings aside.column figure {
+article.insights aside.column figure {
     display: block;
     position: relative;
     margin: 75px 0;
     padding: 0 50px 0 0;
 }
 
-article.key-findings aside.column figure img {
+article.insights aside.column figure img {
     width: 100%;
 }
 
-article.key-findings aside.column figure img.mobile {
+article.insights aside.column figure img.mobile {
     display: none;
 }
 
@@ -1012,8 +1012,8 @@ li.navi-btn a.next-img {
 
     article.persona h3.title,
     article.persona aside.persona,
-    article.key-findings h3.title,
-    article.key-findings aside.column {
+    article.insights h3.title,
+    article.insights aside.column {
         padding: 0 75px;
     }
 
@@ -1264,18 +1264,18 @@ li.navi-btn a.next-img {
     }
     
     article.persona h3.title,
-    article.key-findings h3.title {
+    article.insights h3.title {
         font-size: 1.65em;
         margin: 0;
     }
     
     article.persona h3.title::before,
-    article.key-findings h3.title::before {
+    article.insights h3.title::before {
         top: 50px;
     }
     
     article.persona h3.title::after,
-    article.key-findings h3.title::after {
+    article.insights h3.title::after {
         margin-top: 25px;
     }
     
@@ -1310,19 +1310,19 @@ li.navi-btn a.next-img {
         margin: 0 0 25px 0;
     }
 
-    article.key-findings aside.column {
+    article.insights aside.column {
         margin: 50px 0 0;
     }
 
-    article.key-findings aside.column h4.sub-title {
+    article.insights aside.column h4.sub-title {
         font-size: 1.5em;
     }
 
-    article.key-findings main p {
+    article.insights main p {
         font-size: 1.35em;
     }
 
-    article.key-findings aside.column figure {
+    article.insights aside.column figure {
         padding: 50px 25px 0 50px;
         margin: 0;
     } 
@@ -1679,24 +1679,24 @@ li.navi-btn a.next-img {
 
     article.persona h3.title,
     article.persona aside.persona,
-    article.key-findings h3.title,
-    article.key-findings aside.column {
+    article.insights h3.title,
+    article.insights aside.column {
         padding: 0 50px;
     }
 
     article.persona h3.title,
-    article.key-findings h3.title {
+    article.insights h3.title {
         font-size: 1.55em;
         margin: 0;
     }
     
     article.persona h3.title::before,
-    article.key-findings h3.title::before {
+    article.insights h3.title::before {
         top: 45px;
     }
     
     article.persona h3.title::after,
-    article.key-findings h3.title::after {
+    article.insights h3.title::after {
         margin-top: 20px;
     }
     
@@ -1736,28 +1736,28 @@ li.navi-btn a.next-img {
         font-size: 1.25em;
     }
 
-    article.key-findings aside.column {
+    article.insights aside.column {
         margin: 50px 0 0;
     }
 
-    article.key-findings aside.column h4.sub-title {
+    article.insights aside.column h4.sub-title {
         font-size: 1.45em;
     }
 
-    article.key-findings main p {
+    article.insights main p {
         font-size: 1.25em;
     }
 
-    article.key-findings aside.column figure {
+    article.insights aside.column figure {
         padding: 0;
         margin: 50px 0;
     } 
     
-    article.key-findings aside.column figure img.desktop {
+    article.insights aside.column figure img.desktop {
         display: none;
     }
 
-    article.key-findings aside.column figure img.mobile {
+    article.insights aside.column figure img.mobile {
         display: block;
     }
 
@@ -1964,7 +1964,7 @@ li.navi-btn a.next-img {
         align-items: center;
     }
 
-    article.key-findings aside main {
+    article.insights aside main {
         width: 95%;
         padding: 0;
     }
