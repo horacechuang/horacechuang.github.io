@@ -259,7 +259,8 @@ section#project main.container {
     position: relative;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
-    padding: 200px 0 50px;
+    /* padding: 200px 0 50px; */
+    padding: 200px calc(5vw * 2.5) 50px;
 }
 
 section#project main.container::before {
@@ -270,12 +271,12 @@ section#project main.container::before {
 }
 
 section#project aside.grid {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     position: relative;
     background: rgb(255, 255, 255);
     border-radius: 25px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 100px 50px;
 }
 
 section#project aside.grid ul.grid-container {
@@ -296,7 +297,7 @@ section#project aside.grid a#grid-outer {
 }
 
 section#project aside.grid a#grid-outer:hover{
-    box-shadow: -4px 9px 45px -10px rgba(0, 0, 0, .15);
+    box-shadow: -4px 9px 95px -10px rgba(0, 0, 0, .15);
     background-color: rgb(255,255,255);
     transform: translateY(5px);
 }
@@ -701,14 +702,22 @@ section.expertise ul.container p {
     margin: 15px 0 25px 0;
 }
 
+@media all and (max-width: 1440px) {
+
+    section#project main.container {
+        padding: 200px calc(5vw * 1.75) 100px;
+    }
+
+}
+
 @media all and (max-width: 1300px) {
 
     section#project main.container {
-        padding: 200px 25px 50px;
+        padding: 200px 3vw 50px;
     }
 
     section#project aside.grid {
-        border-radius: 15px;
+        border-radius: 25px;
     }
 
 }
@@ -780,7 +789,7 @@ section.expertise ul.container p {
     }
 
     section#project aside.grid {
-        padding: 25px 15px;
+        padding: 25px 0;
     }
 
     section#project aside.grid a#grid-outer {
