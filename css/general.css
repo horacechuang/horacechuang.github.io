@@ -22,7 +22,7 @@ html, body {
     -ms-user-select: none; 
     -moz-user-select: none;
     -webkit-user-select: none;
-    animation: 2.5s fadeIn;
+    /* animation: 2.5s fadeIn; */
 }
 
 html.lity-active,

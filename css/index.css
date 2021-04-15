@@ -260,7 +260,7 @@ section#project main.container {
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
     /* padding: 200px 0 50px; */
-    padding: 200px calc(5vw * 2.5) 50px;
+    padding: 200px calc(5vw * 3.5) 50px;
 }
 
 section#project main.container::before {
@@ -276,7 +276,7 @@ section#project aside.grid {
     background: rgb(255, 255, 255);
     border-radius: 25px;
     margin: 0 auto;
-    padding: 100px 50px;
+    padding: 100px 50px 25px;
 }
 
 section#project aside.grid ul.grid-container {
@@ -579,7 +579,7 @@ section#about .pics::after {
     animation: 3.5s about-image-scrolls linear infinite;
     right: -100px;
     bottom: -25px;
-    z-index: -1;
+    z-index: -2;
 }
 
 section#about .pics .container::after {
@@ -700,6 +700,14 @@ section.expertise ul.container p {
     line-height: 2em;
     display: block;
     margin: 15px 0 25px 0;
+}
+
+@media all and (min-width: 1441px) and (max-width: 2000px) {
+
+    section#project main.container {
+        padding: 200px calc(5vw * 2.5) 50px;
+    }
+    
 }
 
 @media all and (max-width: 1440px) {
