@@ -304,6 +304,8 @@ li.navi-btn h4 {
 
 li.navi-btn p {
     font-size: 2.25em;
+    line-height: 2em;
+    letter-spacing: 0;
     padding: 15px 0 0;
     font-weight: 100;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
