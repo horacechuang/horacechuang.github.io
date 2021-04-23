@@ -732,8 +732,9 @@ section.objective ul.card li {
         background: linear-gradient(352deg, #e2e2e2 28%, #696969 68%);
         background-clip: text;
         -webkit-background-clip: text;
-        font-size: 1.65em;
-        line-height: 3.3em;
+        font-size: 1.5em;
+        line-height: 2em;
+        padding-bottom: 25px;
     }
 
     section.insight li p {
