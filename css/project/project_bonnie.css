@@ -20,7 +20,7 @@ h2 {
     line-height: 2.45em;
 }
 
-h2.gradient-bg-title {
+h2.overlay-title {
     background: linear-gradient(125deg, #ffbbd0, #f8345e 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -410,7 +410,7 @@ section.insight header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 25px 100px 0 0;
+    padding: 20px 100px 0 0;
 }
 
 section.insight header h2 {
@@ -426,7 +426,13 @@ section.insight ol li {
     padding: 25px;
     margin: 0 0 50px;
     border-radius: 15px;
-    box-shadow: 0px 25px 45px -15px rgba(150, 150, 150, 0.25);
+    transition: .5s all ease;
+    box-shadow: 20px -20px 65px -35px rgba(150, 150, 150, 0.5);
+}
+
+section.insight ol li:hover {
+    transform: translateY(-5px);
+    box-shadow: -20px 20px 65px -25px rgba(150, 150, 150, 0.5);
 }
 
 section.insight ol li:last-child {
@@ -434,13 +440,33 @@ section.insight ol li:last-child {
 }
 
 section.insight li h3.sub-title {
-    font-size: 2em;
-    background: linear-gradient(300deg, #e2e2e2 51%, #696969 87%);
+    font-size: 1.85em;
+    background: linear-gradient(300deg, #e6e6e6 51%, #696969 87%);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    padding-bottom: 15px;
+}
+
+section.insight ol li:hover > h3.sub-title {
+    background: linear-gradient(300deg, #e6e6e6 51%, #fa4069 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+section.insight li h3::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    background: #ebebeb;
+    margin-top: 5px;
 }
 
 section.insight li p {
@@ -471,18 +497,23 @@ section.objective header {
     max-width: 980px;
 }
 
-section.objective .container h2 {
+section.objective header h2 {
     font-size: 2.5em;
     line-height: 3em;
 }
 
 section.objective .container p {
     position: relative;
-    font-size: 1.35em;
+    font-size: 1.75em;
+    line-height: 5em;
+}
+
+section.objective ul.card,
+section.objective ul.card li {
+    display: flex;
 }
 
 section.objective ul.card {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -491,13 +522,22 @@ section.objective ul.card {
 section.objective ul.card li {
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     background: rgb(255, 255, 255);
     padding: 25px;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 30%;
-    box-shadow: 0px 5px 15px -5px rgba(161, 161, 161, 0.25)
-    ;
+    box-shadow: 0px 5px 15px -5px rgba(161, 161, 161, 0.25);
+}
+
+section.objective ul.card h3 {
+    font-size: 1.85em;
+    line-height: 3em;
+}
+
+section.objective ul.card p {
+    font-size: 1.25em;
+    line-height: 2em;
 }
 
 
@@ -543,7 +583,7 @@ section.objective ul.card li {
     }
 
     section.insight header {
-        padding: 0 50px 0 0;
+        padding: 20px 50px 0 0;
     }
 
     section.insight main {
@@ -713,7 +753,7 @@ section.objective ul.card li {
 
     section.insight header {
         justify-content: center;
-        padding: 0 0 25px;
+        padding: 0 0 50px;
     }
 
     section.insight header h2 {
@@ -725,16 +765,30 @@ section.objective ul.card li {
     }
 
     section.insight ol li {
-        box-shadow: 0px 25px 45px -20px rgba(150, 150, 150, 0.25);
+        box-shadow: 30px -40px 65px -35px rgba(150, 150, 150, 0.2);
     }
 
+    section.insight ol li:hover {
+        box-shadow: -30px 40px 65px -35px rgba(150, 150, 150, 0.2);
+    }
+    
+
     section.insight li h3.sub-title {
-        background: linear-gradient(352deg, #e2e2e2 28%, #696969 68%);
+        background: linear-gradient(335deg, #f5f5f5 28%, #696969 68%);
         background-clip: text;
         -webkit-background-clip: text;
-        font-size: 1.5em;
+        font-size: 1.65em;
         line-height: 2em;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    section.insight ol li:hover > h3.sub-title {
+        background: linear-gradient(335deg, #f5f5f5 28%, #ff8ba4 68%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
     }
 
     section.insight li p {
@@ -763,6 +817,11 @@ section.objective ul.card li {
 
     section.before aside.img figcaption {
         font-size: 1.05em;
+    }
+
+    section.before aside.img::after,
+    section.before aside.img:hover::after {
+        bottom: 72px;
     }
 
 }
