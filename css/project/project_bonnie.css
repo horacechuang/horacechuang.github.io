@@ -368,6 +368,11 @@ section.before aside.img figcaption {
     letter-spacing: .25px;
 }
 
+section.before aside.img span {
+    font-weight: bold;
+    color: rgb(139, 139, 139);
+}
+
 section.before picture.before-img img {
     width: 100%;
 }
@@ -430,11 +435,11 @@ section.insight ol li {
 }
 
 section.insight ol li:nth-child(odd) {
-    box-shadow: 35px -35px 65px -40px rgba(150, 150, 150, 0.25);
+    box-shadow: 35px -35px 75px -40px rgba(150, 150, 150, 0.35);
 }
 
 section.insight ol li:nth-child(even) {
-    box-shadow: -30px -30px 65px -40px rgba(150, 150, 150, 0.25);
+    box-shadow: -30px -30px 75px -40px rgba(150, 150, 150, 0.35);
 }
 
 section.insight ol li:hover {
@@ -442,11 +447,11 @@ section.insight ol li:hover {
 }
 
 section.insight ol li:hover:nth-child(odd) {
-    box-shadow: -30px 30px 65px -40px rgba(255, 99, 159, 0.25);
+    box-shadow: -30px 30px 75px -40px rgba(255, 99, 159, 0.35);
 }
 
 section.insight ol li:hover:nth-child(even) {
-    box-shadow: 30px 30px 65px -40px rgba(255, 99, 159, 0.25);
+    box-shadow: 30px 30px 75px -40px rgba(255, 99, 159, 0.35);
 }
 
 section.insight ol li:last-child {
