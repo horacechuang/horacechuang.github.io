@@ -415,7 +415,7 @@ section.insight header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 45px 100px 0 0;
+    padding: 45px 50px 0 0;
 }
 
 section.insight header h2 {
@@ -424,22 +424,24 @@ section.insight header h2 {
 
 section.insight main {
     width: 70%;
-    padding: 0 150px 0 0;
+    padding: 0 100px 0 0;
 } 
 
 section.insight ol li {
     padding: 50px;
     margin: 0 0 50px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: .35s all ease;
 }
 
 section.insight ol li:nth-child(odd) {
-    box-shadow: 35px -35px 75px -40px rgba(150, 150, 150, 0.35);
+    box-shadow: 35px -35px 65px -50px rgba(150, 150, 150, 0.3);
+    margin-left: 25px !important;
 }
 
 section.insight ol li:nth-child(even) {
-    box-shadow: -30px -30px 75px -40px rgba(150, 150, 150, 0.35);
+    box-shadow: -30px -30px 65px -50px rgba(150, 150, 150, 0.3);
+    margin-right: 25px !important;
 }
 
 section.insight ol li:hover {
@@ -447,11 +449,11 @@ section.insight ol li:hover {
 }
 
 section.insight ol li:hover:nth-child(odd) {
-    box-shadow: -30px 30px 75px -40px rgba(255, 99, 159, 0.35);
+    box-shadow: -30px 30px 65px -40px rgba(255, 99, 159, 0.3);
 }
 
 section.insight ol li:hover:nth-child(even) {
-    box-shadow: 30px 30px 75px -40px rgba(255, 99, 159, 0.35);
+    box-shadow: 30px 30px 65px -40px rgba(255, 99, 159, 0.3);
 }
 
 section.insight ol li:last-child {
@@ -460,12 +462,12 @@ section.insight ol li:last-child {
 
 section.insight li h3.sub-title {
     font-size: 1.85em;
-    background: linear-gradient(300deg, #e6e6e6 51%, #696969 87%);
+    background: linear-gradient(300deg, #bdbdbd 51%, #3a3a3a 87%);
     padding-bottom: 15px;
 }
 
 section.insight ol li:hover > h3.sub-title {
-    background: linear-gradient(300deg, #e6e6e6 51%, #fa4069 87%);
+    background: linear-gradient(300deg, #ffa1bd 51%, #e4234d 87%);
 }
 
 section.insight li h3.sub-title,
@@ -783,12 +785,21 @@ section.objective ul.card p {
     }
 
     section.insight main {
-        padding: 0 25px 50px;
+        padding: 0 0 50px;
     }
 
     section.insight ol li {
-        padding: 25px;
+        padding: 35px;
+        margin-bottom: 35px;
         box-shadow: 30px -40px 65px -35px rgba(150, 150, 150, 0.2);;
+    }
+
+    section.insight ol li:nth-child(odd) {
+        margin-left: 35px !important;
+    }
+
+    section.insight ol li:nth-child(even) {
+        margin-right: 35px !important;
     }
 
     section.insight ol li:hover {
