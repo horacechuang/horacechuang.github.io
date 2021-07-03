@@ -289,7 +289,7 @@ section#project aside.grid ul.grid-container {
 
 section#project aside.grid a#grid-outer {
     width: 45%;
-    transition: .25s all ease;
+    transition: .2s all ease;
     padding: 25px;
     margin: 0 0 50px;
     border-radius: 25px;
@@ -299,11 +299,11 @@ section#project aside.grid a#grid-outer {
 section#project aside.grid a#grid-outer:hover{
     box-shadow: -4px 9px 95px -10px rgba(0, 0, 0, .15);
     background-color: rgb(255,255,255);
-    transform: translateY(5px);
+    transform: scale(1.015);
 }
 
 section#project aside.grid a#grid-outer:active {
-    transform: scale(0.975);
+    transform: scale(0.985);
 }
 
 section#project aside.grid ul.grid-container:hover a {
