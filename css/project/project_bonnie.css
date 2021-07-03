@@ -424,7 +424,7 @@ section.insight header h2 {
 
 section.insight main {
     width: 70%;
-    padding: 0 100px 0 0;
+    padding: 0 125px 0 0;
 } 
 
 section.insight ol li {
@@ -537,6 +537,7 @@ section.objective ul.card {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    margin-bottom: -65px;
 }
 
 section.objective ul.card li {
@@ -834,6 +835,18 @@ section.objective ul.card p {
 
     section.objective .container h2 {
         font-size: 2em;
+    }
+
+    section.objective ul.card {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 0 25px;
+    }
+
+    section.objective ul.card li {
+        width: 100%;
+        margin-bottom: 25px;
     }
 
 }
