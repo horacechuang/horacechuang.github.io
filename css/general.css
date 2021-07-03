@@ -297,16 +297,16 @@ ul.nav li.navi-btn {
 }
 
 li.navi-btn h4 {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 600;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
 li.navi-btn p {
-    font-size: 2.25em;
+    font-size: 2em;
     line-height: 2em;
     letter-spacing: 0;
-    padding: 15px 0 0;
+    padding: 10px 0 0;
     font-weight: 100;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     text-shadow: 0px 0px 15px rgb(189, 189, 189);
@@ -349,12 +349,14 @@ li.navi-btn a .next-con {
 }
 
 li.navi-btn a:hover {
-    transform: scale(1.01);
+    transform: scale(1.025);
     box-shadow: 0px 10px 35px -15px rgba(0, 0, 0, .1);
 }
 
 li.navi-btn a:hover .content {
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transform: translateX(0px);
     opacity: 1;
 }
@@ -865,6 +867,11 @@ aside.link p {
 
     li.navi-btn a {
         height: 350px;
+    }
+
+    li.navi-btn a .prev-con,
+    li.navi-btn a .next-con {
+        align-items: center;
     }
 
     li.navi-btn h4 {
