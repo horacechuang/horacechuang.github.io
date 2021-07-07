@@ -415,12 +415,25 @@ section.insight header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 45px 50px 0 0;
+    position: relative;
+    padding: 45px 75px 0 0;
+}
+
+section.insight header span.decorate-line {
+    position: absolute;
+    display: block;
+    top: 45px;
+    right: 25px;
+    width: 1px;
+    height: 75%;
+    background: linear-gradient(to bottom, rgb(255, 145, 172), rgb(255, 255, 255));
 }
 
 section.insight header h2 {
     line-height: 2em;
+    position: relative;
 }
+
 
 section.insight main {
     width: 70%;
@@ -436,12 +449,12 @@ section.insight ol li {
 
 section.insight ol li:nth-child(odd) {
     box-shadow: 35px -35px 65px -50px rgba(150, 150, 150, 0.3);
-    margin-left: 25px !important;
+    margin-left: 50px !important;
 }
 
 section.insight ol li:nth-child(even) {
     box-shadow: -30px -30px 65px -50px rgba(150, 150, 150, 0.3);
-    margin-right: 25px !important;
+    margin-right: 50px !important;
 }
 
 section.insight ol li:hover {
@@ -781,6 +794,10 @@ section.objective ul.card p {
         padding: 0 0 50px;
     }
 
+    section.insight header span.decorate-line {
+        display: none;
+    }
+
     section.insight header h2 {
         font-size: 2em;
     }
@@ -796,11 +813,11 @@ section.objective ul.card p {
     }
 
     section.insight ol li:nth-child(odd) {
-        margin-left: 35px !important;
+        margin-left: 25px !important;
     }
 
     section.insight ol li:nth-child(even) {
-        margin-right: 35px !important;
+        margin-right: 25px !important;
     }
 
     section.insight ol li:hover {
