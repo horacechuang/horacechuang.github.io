@@ -1585,24 +1585,22 @@ li.navi-btn a.next-img {
 
     nav#sub-menu ul.sub-menu-container {
         justify-content: space-around;
-    }
-
-    nav#sub-menu ul.sub-menu-container,
-    ul.sub-menu-container li {
         overflow-x: auto;
-        overflow-y: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
-    ul.sub-menu-container li {
-        overflow: hidden;
+    nav#sub-menu ul.sub-menu-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul.ex-sub-menu,
+    ul.ex-sub-menu li {
+        line-height: 5.5em;
     }
 
     nav#sub-menu a {
         padding: 5px 10px;
-    }
-
-    li.sub-item a {
-        padding: 0 5px !important;
     }
 
     /* problem */
@@ -1820,6 +1818,33 @@ li.navi-btn a.next-img {
 
     /* Sub-menu */
 
+    nav#sub-menu ul.sub-menu-container.fixed-nav {
+        padding: 0 20px;
+    }
+
+    nav#sub-menu ul.sub-menu-container li.menu-1,
+    nav#sub-menu ul.sub-menu-container li.menu-2 {
+        padding-right: 15px;
+    }
+
+    ul.ex-sub-menu,
+    ul.ex-sub-menu li {
+        line-height: 4.5em;
+    }
+
+    nav#sub-menu ul.sub-menu-container li.menu-1::after,
+    nav#sub-menu ul.sub-menu-container li.menu-2::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 7.5px;
+        width: 1px;
+        height: 32px;
+        background: rgba(128,125,175,.5);
+    }
+
+
     nav#sub-menu a,
     nav#sub-menu ul.ex-sub-menu a {
         padding: 5px 10px 0 !important;
@@ -1855,12 +1880,6 @@ li.navi-btn a.next-img {
 
 
 @media all and (max-width: 580px) {
-
-    /* Sub-menu */
-
-    nav#sub-menu ul.sub-menu-container.fixed-nav {
-        padding: 0 20px;
-    }
 
     /* header */
 
