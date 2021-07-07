@@ -259,8 +259,8 @@ section#project main.container {
     position: relative;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
-    padding: 200px 0 50px;
-    /* padding: 200px calc(5vw * 3.5) 50px; */
+    /* padding: 200px 0 50px; */
+    padding: 225px calc(5vw * 4.25) 100px;
 }
 
 section#project main.container::before {
@@ -271,7 +271,7 @@ section#project main.container::before {
 }
 
 section#project aside.grid {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     position: relative;
     background: rgb(255, 255, 255);
     border-radius: 25px;
