@@ -668,7 +668,7 @@ section.objective ul.card p {
 
     section.objective ul.card {
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 0 50px;
         margin-bottom: -175px;
     }
