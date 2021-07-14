@@ -512,6 +512,7 @@ section.insight li p {
 section.objective {
     background: linear-gradient(298deg, rgb(255, 233, 240), rgb(255, 255, 255));
     padding: 50px 0;
+    margin-bottom: 50px;
 }
 
 section.objective .container {
@@ -521,25 +522,42 @@ section.objective .container {
     margin: 0 auto;
 }
 
-section.objective header {
+section.objective header,
+section.objective main.slogan {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 0 0 25px;
     max-width: 980px;
 }
 
-section.objective header h2 {
-    font-size: 2.5em;
-    line-height: 3em;
+section.objective main.slogan {
+    padding: 25px 0 50px;
 }
 
-section.objective .container p {
+section.objective main.slogan h3 {
+    color: rgb(240, 35, 86);
+    text-shadow: 0px 5px 8px rgb(255, 206, 226);
+}
+
+section.objective main.slogan h3::before,
+section.objective main.slogan h3::after {
+    content: "";
     position: relative;
-    font-size: 1.75em;
-    line-height: 5em;
+    display: block;
+    width: 35%;
+    height: 1px;
+    background: rgb(228, 228, 228);
+    margin: 0 auto;
+}
+
+section.objective main.slogan h3::before {
+    margin-bottom: 20px;
+}
+
+section.objective main.slogan h3:after {
+    margin-top: 20px;
 }
 
 section.objective ul.card,
@@ -551,7 +569,7 @@ section.objective ul.card {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: -65px;
+    margin-bottom: -75px;
 }
 
 section.objective ul.card li {
@@ -804,7 +822,7 @@ section.objective ul.card p {
     }
 
     section.insight main {
-        padding: 0 0 50px;
+        padding: 0 35px 50px;
     }
 
     section.insight ol li {
@@ -855,6 +873,15 @@ section.objective ul.card p {
         font-size: 2em;
     }
 
+    section.objective main.slogan {
+        padding: 25px 10px;
+    }
+
+    section.objective main.slogan h3 {
+        font-size: 1.75em;
+        text-align: center;
+    }
+
     section.objective ul.card {
         flex-direction: column;
         align-items: center;
@@ -865,6 +892,10 @@ section.objective ul.card p {
     section.objective ul.card li {
         width: 100%;
         margin-bottom: 25px;
+    }
+
+    section.objective ul.card h3 {
+        font-size: 1.7em;
     }
 
 }
@@ -888,6 +919,12 @@ section.objective ul.card p {
     section.before aside.img::after,
     section.before aside.img:hover::after {
         bottom: 72px;
+    }
+
+    /* section-----insight */
+
+    section.insight main {
+        padding: 0 0 50px;
     }
 
 }
