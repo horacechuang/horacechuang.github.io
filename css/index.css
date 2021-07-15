@@ -261,7 +261,7 @@ section#project main.container {
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
     /* padding: 200px 0 50px; */
-    padding: 225px calc(5vw * 4.25) 100px;
+    padding: 225px calc(5vw * 3.5) 100px;
     border-radius: 50px;
 }
 
@@ -459,7 +459,7 @@ section#about header .wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 980px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -707,7 +707,7 @@ section.expertise ul.container p {
 @media all and (min-width: 1441px) and (max-width: 2000px) {
 
     section#project main.container {
-        padding: 200px calc(5vw * 2.5) 50px;
+        padding: 200px calc(5vw * 2.15) 100px;
     }
     
 }

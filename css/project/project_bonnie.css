@@ -669,7 +669,7 @@ section.objective ul.card p {
     section.objective ul.card {
         justify-content: space-between;
         align-items: flex-start;
-        padding: 0 50px;
+        padding: 0 35px;
         margin-bottom: -175px;
     }
 
@@ -915,7 +915,7 @@ section.objective ul.card p {
         text-align: center;
     }
 
-    section.objective ul.card {
+    /* section.objective ul.card {
         flex-direction: column;
         align-items: center;
         margin: auto;
@@ -933,7 +933,7 @@ section.objective ul.card p {
 
     section.objective ul.card .container {
         padding: 0 25px 25px;
-    }
+    } */
 
     section.objective ul.card h3 {
         font-size: 1.65em;
@@ -970,6 +970,26 @@ section.objective ul.card p {
 
     section.insight main {
         padding: 0 0 50px;
+    }
+
+    section.objective ul.card {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 0 50px;
+    }
+
+    section.objective ul.card li {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    section.objective ul.card li:last-child {
+        margin: 0;
+    }
+
+    section.objective ul.card .container {
+        padding: 0 25px 25px;
     }
 
 }
