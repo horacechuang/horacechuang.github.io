@@ -246,7 +246,7 @@ section.preface ul.container li {
 }
 
 section.preface li h4 {
-    color: rgb(236, 116, 156);
+    color: rgb(155, 155, 155);
 }
 
 section.preface li p,
@@ -305,7 +305,7 @@ section.before aside.img {
     align-items: center;
 }
 
-section.before aside.img::before,
+/* section.before aside.img::before,
 section.before aside.img::after,
 section.before aside.img:hover::before,
 section.before aside.img:hover::after {
@@ -335,7 +335,7 @@ section.before aside.img:hover::after {
 section.before aside.img:hover::before,
 section.before aside.img:hover::after {
     background: rgba(255,255,255,0);
-}
+} */
 
 section.before aside.img picture.before-img {
     display: block;
@@ -915,26 +915,6 @@ section.objective ul.card p {
         text-align: center;
     }
 
-    /* section.objective ul.card {
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        padding: 0 50px;
-    }
-
-    section.objective ul.card li {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-
-    section.objective ul.card li:last-child {
-        margin: 0;
-    }
-
-    section.objective ul.card .container {
-        padding: 0 25px 25px;
-    } */
-
     section.objective ul.card h3 {
         font-size: 1.65em;
     }
@@ -961,10 +941,10 @@ section.objective ul.card p {
         font-size: 1.05em;
     }
 
-    section.before aside.img::after,
+    /* section.before aside.img::after,
     section.before aside.img:hover::after {
         bottom: 72px;
-    }
+    } */
 
     /* section-----insight */
 

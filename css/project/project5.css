@@ -445,11 +445,11 @@ li.navi-btn a.next-img {
     }
 
     #line {
-        margin: 0;
+        padding: 0 !important;
     }
 
     #line .container {
-        height: 10px;
+        height: 7px;
     }
 
     header {
