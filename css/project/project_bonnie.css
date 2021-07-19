@@ -518,7 +518,7 @@ section.objective {
 section.objective .container {
     display: block;
     position: relative;
-    max-width: 1280px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -606,6 +606,8 @@ section.objective ul.card p {
     font-size: 1.35em;
     line-height: 2.15em;
 }
+
+
 
 
 @media all and (max-width: 1490px) {
@@ -901,6 +903,10 @@ section.objective ul.card p {
     }
 
     /* section-----objective */
+
+    section.objective {
+        margin-bottom: 50px;
+    }
 
     section.objective .container h2 {
         font-size: 2em;
