@@ -1,6 +1,9 @@
 /* main */
 
-section.objective {
+section.objective,
+section.design,
+article.process .container,
+article.sitemap-ia .container {
     display: block;
     position: relative;
     width: 100%;
@@ -22,22 +25,49 @@ section.intro figure.pic video {
 }
 
 
-section.design,
-section.design article.sitemap,
-article.sitemap .container,
-section.design article.content,
-article.content .container,
-section.design article.component,
-article.components .container,
-section.outcome,
-section.outcome .container
- {
+/* section-----design */
+
+article.process ,
+article.sitemap-ia {
+    padding: 100px 0;
+}
+
+article.process .container,
+article.sitemap-ia header.title {
+    position: relative;
     display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+article.process .content {
+    max-width: 767px;
     position: relative;
 }
 
+article.process .content h2 {
+    font-size: 2em;
+    padding-bottom: 25px;
+}
 
+article.process .content p {
+    font-size: 1.35em;
+    padding-bottom: 25px;
+}
 
+article.process picture img {
+    width: 100%;
+    padding: 50px 0;
+    display: block;
+}
+
+article.process picture img.mobile {
+    display: none;
+}
+
+article.sitemap-ia header.title h3 {
+    
+}
 
 @media all and (max-width: 1375px) {
 
@@ -47,8 +77,21 @@ section.outcome .container
         padding: 0 25px;
     }
     
+}
+
+@media all and (max-width: 1130px) {
+    
+    article.process .content,
+    article.sitemap-ia header.title {
+        padding: 0 25px;
+    }
+
+    article.process picture img {
+        padding: 50px 25px;
+    }
 
 }
+
 
 @media all and (max-width: 767px) {
 
@@ -61,6 +104,39 @@ section.outcome .container
     section.intro figure.pic video {
         box-shadow: 0px -5px 160px -55px rgba(114, 114, 114, 0.75);
         border-radius: 15px;
+    }
+
+    article.sitemap-ia {
+        padding: 100px 0 0;
+    }
+
+    article.process .content h2 {
+        font-size: 1.75em;
+    }
+
+    article.process .content p {
+        font-size: 1.15em;
+    }
+
+    article.process picture img {
+        padding: 25px 50px;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+
+    article.process,
+    article.sitemap-ia {
+        padding: 50px 0 0;
+    }
+
+    article.process picture img.desktop {
+        display: none;
+    }
+
+    article.process picture img.mobile {
+        display: block;
     }
     
 }
