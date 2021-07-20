@@ -571,6 +571,7 @@ section.objective ul.card {
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: -125px;
+    padding: 0 25px;
 }
 
 section.objective ul.card li {
@@ -607,7 +608,46 @@ section.objective ul.card p {
     line-height: 2.15em;
 }
 
+/* section-----design */
 
+/* article.process */
+
+article.process {
+    padding: 100px 0;
+}
+
+article.process .container {
+    position: relative;
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+article.process .content {
+    max-width: 767px;
+    position: relative;
+}
+
+article.process .content h2 {
+    font-size: 2em;
+    padding-bottom: 25px;
+}
+
+article.process .content p {
+    font-size: 1.35em;
+    padding-bottom: 25px;
+}
+
+article.process picture img {
+    width: 100%;
+    padding: 50px 0;
+    display: block;
+    border-radius: 10px;
+}
+
+article.process picture img.mobile {
+    display: none;
+}
 
 
 @media all and (max-width: 1490px) {
@@ -619,6 +659,22 @@ section.objective ul.card p {
     header#header,
     section.before {
         padding: 0 25px;
+    }
+
+}
+
+@media all and (max-width: 1130px) {
+
+    /* section-----design */
+
+    /* article.process */
+    
+    article.process .content {
+        padding: 0 25px;
+    }
+
+    article.process picture img {
+        padding: 50px 25px;
     }
 
 }
@@ -929,6 +985,22 @@ section.objective ul.card p {
         font-size: 1.15em;
     }
 
+    /* section-----design */
+
+    /* article.process */
+
+    article.process .content h2 {
+        font-size: 1.75em;
+    }
+
+    article.process .content p {
+        font-size: 1.15em;
+    }
+
+    article.process picture img {
+        padding: 25px;
+    }
+
 }
 
 @media all and (max-width: 550px) {
@@ -958,6 +1030,8 @@ section.objective ul.card p {
         padding: 0 0 50px;
     }
 
+     /* section-----objective */
+
     section.objective ul.card {
         flex-direction: column;
         align-items: center;
@@ -976,6 +1050,26 @@ section.objective ul.card p {
 
     section.objective ul.card .container {
         padding: 0 25px 25px;
+    }
+
+    /* section-----design */
+
+    /* article.process */
+
+    article.process {
+        padding: 50px 0 0;
+    }
+
+    article.process picture img {
+        padding: 25px 35px 0;
+    }
+
+    article.process picture img.desktop {
+        display: none;
+    }
+
+    article.process picture img.mobile {
+        display: block;
     }
 
 }
