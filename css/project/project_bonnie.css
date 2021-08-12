@@ -533,7 +533,7 @@ section.objective::before {
 		margin-left: 0;
 	}
 	100% {
-		margin-left: -1600px;
+		margin-left: -1575px;
 	}
 }
 
@@ -609,8 +609,8 @@ section.objective ul.card li {
 }
 
 section.objective ul.card li:hover {
-    transform: translateY(5px);
-    box-shadow: 0px 25px 30px -20px rgba(124, 124, 124, 0.15);
+    transform: scale(1.025);
+    box-shadow: 0px 25px 30px -30px rgba(124, 124, 124, 0.25);
 }
 
 section.objective ul.card picture {
