@@ -15,7 +15,7 @@
 
 html, body {
     font-size: 12px;
-    scroll-behavior: smooth !important;
+    /* scroll-behavior: smooth !important; */
     overflow-x: hidden;
     user-select: none;
     -o-user-select: none;

@@ -24,6 +24,7 @@
     <script src="js/navMenu_mobile.js"></script>
     <script src="js/hideMenu.js"></script>
     <script src="js/scrollPosition.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
     <!-- Disable Cache -->
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
@@ -50,8 +51,8 @@
                         <div class="container"></div>
                     </div>
                     <ul class="container" data-aos="fade-left" data-aos-duration="1500">
-                        <li><a href="#project">作品 | Project</a></li>
-                        <li><a href="#about">關於 | About</a></li>
+                        <li><a data-scroll href="#project">作品 | Project</a></li>
+                        <li><a data-scroll href="#about">關於 | About</a></li>
                         <li><a href="https://www.cakeresume.com/s--mk9Ej9tHg1BCPYYT2ejYNA--/horacechuang" target="_blank">履歷 | Résumé</a></li>
                         <li class="btn_nav-contact"><a href="mailto:tingfeng.chuang@gmail.com">Mail Me <i class="fas fa-paper-plane"></i></a></li>
                     </ul>
@@ -297,6 +298,11 @@
         }
         gtag('js', new Date());
         gtag('config', 'G-2M9P28SF1T');
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+	        speedAsDuration: true
+        });
     </script>
 </body>
 </html>

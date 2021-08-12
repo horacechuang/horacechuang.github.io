@@ -27,6 +27,7 @@
     <script src="../js/hideMenu.js"></script>
     <script src="../js/scrollPosition.js"></script>
     <script src="../js/fixedNav.js"></script>
+    <script src="../js/smooth-scroll.polyfills.min.js"></script>
     <!-- Disable Cache -->
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
@@ -122,17 +123,17 @@
                         <p data-aos="fade-left" data-aos-delay="600">發現問題後，接續進行平台上介面與流程的改善。先依待修正的功能規劃 User Flow 與 Wireframe，與內部討論後進行介面的 Mockup 設計，最後交由前、後端工程師上版。</p>
                     </article>
                     <ul class="process-flow">
-                        <a href="#problem" data-aos="fade-down" data-aos-delay="500">
+                        <a data-scroll href="#problem" data-aos="fade-down" data-aos-delay="500">
                             <li class="process-grid">
                                 <h3 class="sub-title">發現問題</h3>
                             </li>
                         </a>
-                        <a href="#research" data-aos="fade-down" data-aos-delay="550">
+                        <a data-scroll href="#research" data-aos="fade-down" data-aos-delay="550">
                             <li class="process-grid">
                                 <h3 class="sub-title">探討問題</h3>
                             </li>
                         </a>
-                        <a href="#solution" data-aos="fade-down" data-aos-delay="600">
+                        <a data-scroll href="#solution" data-aos="fade-down" data-aos-delay="600">
                             <li class="process-grid">
                                 <h3 class="sub-title">提出<br />設計方案</h3>
                             </li>
@@ -143,22 +144,22 @@
             <nav id="sub-menu" class>
                 <ul class="sub-menu-container" class>
                     <li class="item menu-1" data-aos="fade-right" data-aos-delay="250">
-                        <a href="#problem">
+                        <a data-scroll href="#problem">
                             <span class="title">發現問題</span>
                         </a> 
                     </li>
                     <li class="item menu-2" data-aos="fade-right" data-aos-delay="500">
-                        <a href="#research">
+                        <a data-scroll href="#research">
                             <span class="title">探討問題</span>
                         </a>
                         <ul class="ex-sub-menu">
                             <li class="sub-item">
-                                <a href="#persona">
+                                <a data-scroll href="#persona">
                                     <span class="sub-title">Persona</span>
                                 </a>
                             </li>
                             <li class="sub-item">
-                                <a href="#insights">
+                                <a data-scroll href="#insights">
                                     <span class="sub-title">Insights</span>
                                 </a>
                                 <ul>
@@ -173,12 +174,12 @@
                         </ul>
                     </li>
                     <li class="item menu-3" data-aos="fade-right" data-aos-delay="750">
-                        <a href="#solution">
+                        <a data-scroll href="#solution">
                             <span class="title">設計方案</span>
                         </a>
                         <ul class="ex-sub-menu">
                             <li class="sub-item sub">
-                                <a href="#pay-flow">
+                                <a data-scroll href="#pay-flow">
                                     <span class="sub-title">付款流程</span>
                                 </a>
                                 <ul>
@@ -191,7 +192,7 @@
                                 </ul>
                             </li>
                             <li class="sub-item">
-                                <a href="#message" class="last-child">
+                                <a data-scroll href="#message" class="last-child">
                                     <span class="sub-title">站內訊息</span>
                                 </a>
                                 <ul>
@@ -618,6 +619,11 @@
         }
         gtag('js', new Date());
         gtag('config', 'G-2M9P28SF1T');
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+	        speedAsDuration: true
+        });
     </script>
 </body>
 </html>

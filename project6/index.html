@@ -24,6 +24,7 @@
     <script src="../js/navMenu_mobile.js"></script>
     <script src="../js/hideMenu.js"></script>
     <script src="../js/scrollPosition.js"></script>
+    <script src="../js/smooth-scroll.polyfills.min.js"></script>
     <!-- Disable Cache -->
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
@@ -332,6 +333,11 @@
         }
         gtag('js', new Date());
         gtag('config', 'G-2M9P28SF1T');
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+	        speedAsDuration: true
+        });
     </script>
 </body>
 </html>

@@ -30,17 +30,28 @@ section.intro figure.pic video {
 /* article.sitemap-ia */
 
 article.sitemap-ia {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-article.sitemap-ia header.title {
+article.sitemap-ia .container {
+    width: 100%;
     position: relative;
+    display: block;
+}
+
+article.sitemap-ia main.content {
     display: block;
     max-width: 1080px;
     margin: 0 auto;
 }
 
-article.sitemap-ia header.title h3 {
+article.sitemap-ia main.content header {
+    max-width: 767px;
+}
+
+article.sitemap-ia main.content h2 {
+    font-size: 2em;
+    padding-bottom: 25px;
     
 }
 
