@@ -524,8 +524,8 @@ section.objective::before {
     width: calc(100vw * 6);
     height: 80px;
     transform: translate3d(0, 0, 0);
-    animation: wave 3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    -webkit-animation: wave 3s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 2.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    -webkit-animation: wave 2.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
 
 @keyframes wave {
@@ -536,7 +536,6 @@ section.objective::before {
 		margin-left: -1600px;
 	}
 }
-
 
 section.objective .container {
     display: block;
@@ -622,6 +621,7 @@ section.objective ul.card picture {
 
 section.objective ul.card picture img {
     width: 100%;
+    border-radius: 10px;
 }
 
 section.objective ul.card .container {
@@ -658,13 +658,8 @@ article.process main.content {
     position: relative;
 }
 
-article.process .content h2 {
-    font-size: 2em;
-    padding-bottom: 25px;
-}
-
-article.process .content p {
-    font-size: 1.35em;
+article.process .content h2,
+article.process .content p  {
     padding-bottom: 25px;
 }
 

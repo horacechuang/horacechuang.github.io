@@ -262,7 +262,7 @@ section#project main.container {
     background: linear-gradient(180deg, rgba(240, 240, 240, 0.5), rgb(255,255,255) 70%,rgba(237, 237, 237, .35));
     /* padding: 200px 0 50px; */
     padding: 225px calc(5vw * 3.5) 100px;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 section#project main.container::before {

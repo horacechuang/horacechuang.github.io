@@ -1,8 +1,8 @@
 <svg width="1600" height="80" viewBox="0 0 1600 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1600 34.0008C1289 34.0008 1190.1 -0.248634 789 0.00136196C389 0.00136196 289 34.0008 0 34.0008V80H1600C1600 80 1600 63.0003 1600 34.0008Z" fill="url(#paint0_linear)"/>
 <defs>
-<linearGradient id="paint0_linear" x1="800" y1="1.00133" x2="800" y2="80" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFF8FA"/>
+<linearGradient id="paint0_linear" x1="800" y1="0" x2="800" y2="80" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD3E1"/>
 <stop offset="1" stop-color="#FFE9F0"/>
 </linearGradient>
 </defs>
