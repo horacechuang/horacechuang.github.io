@@ -28,60 +28,135 @@ section.intro figure.pic video {
 /* section-----design */
 
 /* article.sitemap-ia */
+/* article.content */
 
-article.sitemap-ia {
+article.sitemap-ia,
+article.content {
     padding: 50px 0;
 }
 
-article.sitemap-ia .container {
+article.sitemap-ia .container,
+article.content .container {
     width: 100%;
     position: relative;
     display: block;
 }
 
+article.sitemap-ia .container header,
+article.content .container header,
 article.sitemap-ia main.content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 1080px;
     margin: 0 auto;
 }
 
-article.sitemap-ia main.content header {
-    max-width: 767px;
-}
-
-article.sitemap-ia main.content header h2 {
+article.sitemap-ia header h2 {
     font-size: 2.5em;
     padding-bottom: 25px;
 }
 
-article.sitemap-ia main.content header h3 {
-    
+article.sitemap-ia header h3,
+article.content header h3 {
+    font-size: 2em;
 }
+
+article.sitemap-ia header h3::after,
+article.content header h3::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: rgba(161, 161, 161, 0.5);
+}
+
+article.sitemap-ia main.content {
+    margin: 0px auto;
+    padding: 50px 0 75px;
+}
+
+article.sitemap-ia main.content:last-child {
+    padding: 50px 0;
+}
+
+article.sitemap-ia main.content .wrapper {
+    max-width: 767px;
+}
+
+article.sitemap-ia main.content p {
+    padding: 0 0 50px;
+}
+
+article.sitemap-ia main.content p:last-child {
+    padding: 0;
+}
+
+article.sitemap-ia main.content span {
+    font-weight: 500;
+}
+
+article.sitemap-ia figure,
+article.sitemap-ia figure picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.sitemap-ia picture img {
+    width: 85%;
+}
+
+article.sitemap-ia figure figcaption {
+    padding: 25px 0;
+}
+
+
+/* project-main-navigator */
+
+li.navi-btn a.prev-img {
+    background: url('../../img/index/index_1.png') center center;   
+}
+
+li.navi-btn a.next-img {
+    background: url('../../img/index/index_3.png') center center;
+}
+
+
 
 @media all and (max-width: 1375px) {
 
     /* section-----intro */
 
-    section.intro figure.pic {
+    /* section-----design */
+
+        /* article.sitemap-ia */
+
+    section.intro figure.pic,
+    article.sitemap-ia .container header,
+    article.content .container header,
+    article.sitemap-ia figure {
         padding: 0 25px;
+    }
+
+    article.sitemap-ia main.content {
+        padding: 75px 25px;
+    }
+
+    article.sitemap-ia main.content:last-child {
+        padding: 50px 25px 0;
+    }
+
+    article.sitemap-ia picture img {
+        width: 100%;
     }
     
 }
 
-@media all and (max-width: 1130px) {
-
-    /* section-----design */
-
-    /* article.sitemap-ia */
-
-    article.sitemap-ia header.title {
-        padding: 0 25px;
-    }
-
-}
-
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
 
     /* section-----intro */
 
@@ -96,33 +171,42 @@ article.sitemap-ia main.content header h3 {
 
     /* section-----design */
 
-    /* article.sitemap-ia */
+        /* article.sitemap-ia */
 
-    article.sitemap-ia {
-        padding: 100px 0 0;
+    article.sitemap-ia header h2 {
+        font-size: 2em;
+        padding-bottom: 15px;
     }
-
-}
-
-@media all and (max-width: 550px) {
-
-    /* section-----design */
     
-    /* article.sitemap-ia */
-
-    article.sitemap-ia {
-        padding: 50px 0 0;
+    article.sitemap-ia header h3,
+    article.content header h3 {
+        font-size: 1.75em;
     }
 
-}
+    article.sitemap-ia main.content p {
+        font-size: 1.15em;
+    }
 
+    article.sitemap-ia figure {
+        padding: 0 25px;
+    }
 
-/* project-main-navigator */
+    article.sitemap-ia figure picture {
+        width: 100%;
+        max-height: 70vh;
+        align-items: flex-start;
+        overflow: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE & Edge */
+    }
 
-li.navi-btn a.prev-img {
-    background: url('../../img/index/index_1.png') center center;   
-}
+    article.sitemap-ia figure picture::-webkit-scrollbar {
+        display: none;
+    }
 
-li.navi-btn a.next-img {
-    background: url('../../img/index/index_3.png') center center;
+    article.sitemap-ia picture img {
+        width: 250vw;
+        padding: 0;
+    }
+
 }

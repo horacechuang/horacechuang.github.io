@@ -1586,8 +1586,8 @@ li.navi-btn a.next-img {
     nav#sub-menu ul.sub-menu-container {
         justify-content: space-around;
         overflow-x: auto;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        -ms-overflow-style: none; /* IE & Edge */
+        scrollbar-width: none; /* Firefox */
     }
 
     nav#sub-menu ul.sub-menu-container::-webkit-scrollbar {

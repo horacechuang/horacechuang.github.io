@@ -48,6 +48,14 @@ p {
     letter-spacing: .25px;
 }
 
+figcaption {
+    font-size: 1.25em;
+    line-height: 2em;
+    color: rgb(162, 162, 162);
+    letter-spacing: .25px;
+    text-align: center;
+}
+
 
 /* header */
 
@@ -362,10 +370,6 @@ section.before aside.img picture.before-img::-webkit-scrollbar {
 
 section.before aside.img figcaption {
     padding: 25px 0;
-    font-size: 1.25em;
-    line-height: 1.75em;
-    color: rgb(162, 162, 162);
-    letter-spacing: .25px;
 }
 
 section.before aside.img span {
@@ -692,7 +696,7 @@ article.process picture img.mobile {
 
     /* section-----design */
 
-    /* article.process */
+        /* article.process */
     
     article.process main.content {
         padding: 0 25px;
@@ -763,7 +767,13 @@ article.process picture img.mobile {
 
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
+
+    /* general */
+
+    figcaption {
+        font-size: 1em;
+    }
 
     #decoration-line {
         z-index: 1;
@@ -1040,10 +1050,6 @@ article.process picture img.mobile {
         min-height: 500px;
     }
 
-    section.before aside.img figcaption {
-        font-size: 1.05em;
-    }
-
     /* section.before aside.img::after,
     section.before aside.img:hover::after {
         bottom: 72px;
@@ -1075,7 +1081,7 @@ article.process picture img.mobile {
 
     /* section-----design */
 
-    /* article.process */
+        /* article.process */
 
     article.process {
         padding: 50px 0 0;
