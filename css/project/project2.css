@@ -228,6 +228,8 @@ li.navi-btn a.next-img {
         overflow: scroll;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* IE & Edge */
+        border-radius: 15px;
+        box-shadow: 0px 10px 65px -10px rgba(161, 161, 161, 0.5);
     }
 
     article.sitemap-ia figure picture::-webkit-scrollbar {
