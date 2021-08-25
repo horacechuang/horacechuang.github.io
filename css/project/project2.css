@@ -44,7 +44,8 @@ article.content .container {
 
 article.sitemap-ia .container header,
 article.content .container header,
-article.sitemap-ia main.content {
+article.sitemap-ia main.content,
+article.content main.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -74,28 +75,34 @@ article.content header h3::after {
     background: rgba(161, 161, 161, 0.5);
 }
 
-article.sitemap-ia main.content {
-    margin: 0px auto;
+article.sitemap-ia main.content,
+article.content main.content {
+    margin: 0 auto;
     padding: 50px 0 75px;
 }
 
-article.sitemap-ia main.content:last-child {
+article.sitemap-ia main.content:last-child,
+article.content main.content:last-child {
     padding: 50px 0;
 }
 
-article.sitemap-ia main.content .wrapper {
+article.sitemap-ia main.content .wrapper,
+article.content main.content .wrapper {
     max-width: 767px;
 }
 
-article.sitemap-ia main.content p {
+article.sitemap-ia main.content p,
+article.content main.content p {
     padding: 0 0 50px;
 }
 
-article.sitemap-ia main.content p:last-child {
+article.sitemap-ia main.content p:last-child,
+article.content main.content p:last-child {
     padding: 0;
 }
 
-article.sitemap-ia main.content span {
+article.sitemap-ia main.content span,
+article.content main.content span {
     font-weight: 500;
 }
 
@@ -106,12 +113,16 @@ article.sitemap-ia figure picture {
     align-items: center;
 }
 
-article.sitemap-ia picture img {
-    width: 85%;
-}
-
 article.sitemap-ia figure figcaption {
     padding: 25px 0;
+}
+
+article.sitemap-ia figure figcaption span {
+    display: none;
+}
+
+article.sitemap-ia picture img {
+    width: 80%;
 }
 
 
@@ -134,6 +145,7 @@ li.navi-btn a.next-img {
     /* section-----design */
 
         /* article.sitemap-ia */
+        /* article.content */
 
     section.intro figure.pic,
     article.sitemap-ia .container header,
@@ -142,11 +154,13 @@ li.navi-btn a.next-img {
         padding: 0 25px;
     }
 
-    article.sitemap-ia main.content {
+    article.sitemap-ia main.content,
+    article.content main.content {
         padding: 75px 25px;
     }
 
-    article.sitemap-ia main.content:last-child {
+    article.sitemap-ia main.content:last-child,
+    article.content main.content:last-child {
         padding: 50px 25px 0;
     }
 
@@ -172,6 +186,7 @@ li.navi-btn a.next-img {
     /* section-----design */
 
         /* article.sitemap-ia */
+        /* article.content */
 
     article.sitemap-ia header h2 {
         font-size: 2em;
@@ -183,12 +198,17 @@ li.navi-btn a.next-img {
         font-size: 1.75em;
     }
 
-    article.sitemap-ia main.content p {
+    article.sitemap-ia main.content p,
+    article.content main.content p {
         font-size: 1.15em;
     }
 
     article.sitemap-ia figure {
         padding: 0 25px;
+    }
+
+    article.sitemap-ia figure figcaption span {
+        display: inline;
     }
 
     article.sitemap-ia figure picture {
