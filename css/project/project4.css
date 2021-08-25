@@ -276,6 +276,7 @@ section#preface .row h3 {
 
 section#preface .row p {
     font-size: 1.45em;
+    font-weight: 300;
     line-height: 1.75em;
 }
 
@@ -315,7 +316,7 @@ section#exhibit h2.title {
     position: relative;
     font-size: 2.5em;
     line-height: 3em;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: .5px;
     text-transform: uppercase;
     color: rgb(186, 186, 186);
@@ -371,7 +372,7 @@ section#exhibit article.exhibition p a:hover {
 section#overview main.container h2 {
     font-size: 2.5em;
     line-height: 3em;
-    font-weight: 100;
+    font-weight: 400;
     text-transform: uppercase;
     color: rgb(186, 186, 186);
     letter-spacing: .5px;
@@ -381,7 +382,7 @@ section#overview main.container h2 {
 
 section#overview main.container p {
     font-size: 1.65em;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2.15em;
     margin-bottom: 50px;
     letter-spacing: .5px;
@@ -440,7 +441,7 @@ article.color .paragraph {
 
 .paragraph p {
     font-size: 1.65em;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2.1em;
     letter-spacing: .5px;
 }

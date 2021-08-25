@@ -132,7 +132,7 @@ nav#nav .item li:last-child {
 
 nav#nav .item li a {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     display: inline-block;
     transition: 0.25s all ease;
@@ -265,7 +265,7 @@ section#project-nav .container .title::after {
 
 section#project-nav .container .title h3 {
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: .5px;
     color: rgb(133,133,133);
     position: relative;
@@ -297,7 +297,7 @@ ul.nav li.navi-btn {
 
 li.navi-btn h4 {
     font-size: 1.75em;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -306,7 +306,7 @@ li.navi-btn p {
     line-height: 2em;
     letter-spacing: 0;
     padding: 15px 0 0;
-    font-weight: 100;
+    font-weight: 300;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     text-shadow: 0px 0px 15px rgb(189, 189, 189);
 }
@@ -437,7 +437,7 @@ aside.cta h3 {
 }
 
 aside.cta h3:first-child {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.25em;
     margin-bottom: 7.5px;
 }

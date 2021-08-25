@@ -93,7 +93,7 @@ article.content main.content .wrapper {
 
 article.sitemap-ia main.content p,
 article.content main.content p {
-    padding: 0 0 50px;
+    padding: 0 0 35px;
 }
 
 article.sitemap-ia main.content p:last-child,
@@ -107,7 +107,8 @@ article.content main.content span {
 }
 
 article.sitemap-ia figure,
-article.sitemap-ia figure picture {
+article.sitemap-ia figure picture,
+article.sitemap-ia figure picture a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,12 +118,13 @@ article.sitemap-ia figure figcaption {
     padding: 25px 0;
 }
 
+article.sitemap-ia img.mobile,
 article.sitemap-ia figure figcaption span {
     display: none;
 }
 
 article.sitemap-ia picture img {
-    width: 80%;
+    width: 75%;
 }
 
 
@@ -206,6 +208,14 @@ li.navi-btn a.next-img {
     article.sitemap-ia figure {
         padding: 0 25px;
     }
+    
+    article.sitemap-ia a.desktop {
+        display: none;
+    }
+
+    article.sitemap-ia img.mobile {
+        display: block;
+    }
 
     article.sitemap-ia figure figcaption span {
         display: inline;
@@ -225,7 +235,7 @@ li.navi-btn a.next-img {
     }
 
     article.sitemap-ia picture img {
-        width: 250vw;
+        width: 300vw;
         padding: 0;
     }
 

@@ -1,5 +1,5 @@
-p, figcaption {
-    font-weight: 100;
+p {
+    font-weight: 300;
 }
 
 p:last-child {
@@ -18,7 +18,8 @@ figcaption {
     font-size: 1.25em;
     line-height: 2.1em;
     margin: 25px auto;
-    max-width: 768px;
+    max-width: 767px;
+    font-weight: 100;
     letter-spacing: .25px;
     color: rgb(162, 162, 162);
 }
@@ -131,7 +132,7 @@ section#preface main.container .row {
 section#preface .row h2 {
     font-size: 1.5em;
     line-height: 1em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: .85em;
     color: rgb(162, 162, 162);
     border-left: 5px solid rgb(201, 201, 201);
@@ -201,7 +202,7 @@ section#intro .content p {
 }
 
 section#intro .content span {
-    font-weight: 600;
+    font-weight: 400;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(66, 66, 66);
 }
@@ -445,19 +446,20 @@ ul.sub-menu-container span {
 
 ul.sub-menu-container span.title {
     font-size: 1.35em;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(255, 135, 122);
 }
 
 ul.sub-menu-container span.sub-title {
     font-size: 1.25em;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 2.25em;
 }
 
 ul.sub-menu-container span.ex-sub-title {
     font-size: 1em;
     line-height: 2.25em;
+    font-weight: 300;
 }
 
 /* problem */
