@@ -50,7 +50,7 @@ p {
 
 figcaption {
     font-size: 1.25em;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2em;
     color: rgb(162, 162, 162);
     letter-spacing: .25px;
@@ -313,38 +313,6 @@ section.before aside.img {
     position: relative;
     align-items: center;
 }
-
-/* section.before aside.img::before,
-section.before aside.img::after,
-section.before aside.img:hover::before,
-section.before aside.img:hover::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 1;
-}
-
-section.before aside.img::before,
-section.before aside.img:hover::before {
-    top: 0;
-    border-radius: 15px 15px 0px 0px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-}
-
-section.before aside.img::after,
-section.before aside.img:hover::after {
-    bottom: 75px;
-    border-radius: 0 0 15px 15px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75));
-}
-
-section.before aside.img:hover::before,
-section.before aside.img:hover::after {
-    background: rgba(255,255,255,0);
-} */
 
 section.before aside.img picture.before-img {
     display: block;
@@ -648,7 +616,7 @@ section.objective ul.card p {
 /* article.process */
 
 article.process {
-    padding: 150px 0 50px;
+    padding: 100px 0;
 }
 
 article.process .container {
@@ -663,16 +631,27 @@ article.process main.content {
     position: relative;
 }
 
-article.process .content h2,
-article.process .content p  {
+article.process main.content h2 {
+    padding-bottom: 50px;
+}
+
+article.process main.content p {
     padding-bottom: 25px;
+}
+
+article.process main.content p:last-child {
+    padding: 0;
+}
+
+article.process main.content .para {
+    padding-left: 25px;
+    border-left: 2px solid rgb(255, 205, 222);
 }
 
 article.process picture img {
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0 0;
     display: block;
-    border-radius: 10px;
 }
 
 article.process picture img.mobile {
@@ -1025,16 +1004,17 @@ article.process picture img.mobile {
 
     /* article.process */
 
-    article.process .content h2 {
+    article.process main.content h2 {
         font-size: 1.75em;
+        padding-bottom: 40px;
     }
 
-    article.process .content p {
+    article.process main.content p {
         font-size: 1.15em;
     }
 
     article.process picture img {
-        padding: 25px;
+        padding: 50px 25px 0;
     }
 
 }
@@ -1086,10 +1066,6 @@ article.process picture img.mobile {
 
     article.process {
         padding: 50px 0 0;
-    }
-
-    article.process picture img {
-        padding: 25px 35px 0;
     }
 
     article.process picture img.desktop {

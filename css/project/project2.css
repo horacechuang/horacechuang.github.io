@@ -3,7 +3,8 @@
 section.objective,
 section.design,
 article.process .container,
-article.sitemap-ia .container {
+article.sitemap-ia .container,
+article.content .container {
     display: block;
     position: relative;
     width: 100%;
@@ -29,14 +30,19 @@ section.intro figure.pic video {
 
 /* article.sitemap-ia */
 /* article.content */
+/* article.component */
 
 article.sitemap-ia,
-article.content {
-    padding: 50px 0;
+article.content,
+article.component,
+article.visual {
+    padding: 75px 0;
 }
 
 article.sitemap-ia .container,
-article.content .container {
+article.content .container,
+article.component .container,
+article.visual .container {
     width: 100%;
     position: relative;
     display: block;
@@ -44,12 +50,14 @@ article.content .container {
 
 article.sitemap-ia .container header,
 article.content .container header,
+article.component .container header,
 article.sitemap-ia main.content,
-article.content main.content {
+article.content main.content,
+article.component main.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1080px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -59,26 +67,15 @@ article.sitemap-ia header h2 {
 }
 
 article.sitemap-ia header h3,
-article.content header h3 {
+article.content header h3,
+article.component header h3 {
     font-size: 2em;
-}
-
-article.sitemap-ia header h3::after,
-article.content header h3::after {
-    content: "";
-    display: block;
-    position: relative;
-    margin-top: 25px;
-    left: 0;
-    width: 20px;
-    height: 2px;
-    background: rgba(161, 161, 161, 0.5);
 }
 
 article.sitemap-ia main.content,
 article.content main.content {
     margin: 0 auto;
-    padding: 50px 0 75px;
+    padding: 50px 0;
 }
 
 article.sitemap-ia main.content:last-child,
@@ -89,11 +86,13 @@ article.content main.content:last-child {
 article.sitemap-ia main.content .wrapper,
 article.content main.content .wrapper {
     max-width: 767px;
+    border-left: 2px solid rgb(255, 205, 222);
+    padding-left: 25px;
 }
 
 article.sitemap-ia main.content p,
 article.content main.content p {
-    padding: 0 0 35px;
+    padding: 0 0 25px;
 }
 
 article.sitemap-ia main.content p:last-child,
@@ -108,10 +107,25 @@ article.content main.content span {
 
 article.sitemap-ia figure,
 article.sitemap-ia figure picture,
-article.sitemap-ia figure picture a {
+article.sitemap-ia figure picture a,
+article.content picture {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+}
+
+article.sitemap-ia figure picture img {
+    box-shadow: 0px 20px 75px -30px rgba(161, 161, 161, 0.5);
+}
+
+article.sitemap-ia figure picture a,
+article.content picture {
+    max-width: 1280px;
+}
+
+article.content picture {
+    margin: 0 auto;
 }
 
 article.sitemap-ia figure figcaption {
@@ -119,12 +133,15 @@ article.sitemap-ia figure figcaption {
 }
 
 article.sitemap-ia img.mobile,
-article.sitemap-ia figure figcaption span {
+article.sitemap-ia figure figcaption span,
+article.content img.mobile {
     display: none;
 }
 
-article.sitemap-ia picture img {
-    width: 75%;
+article.sitemap-ia picture img,
+article.content picture img {
+    width: 100%;
+    border-radius: 20px;
 }
 
 
@@ -148,26 +165,25 @@ li.navi-btn a.next-img {
 
         /* article.sitemap-ia */
         /* article.content */
+        /* article.component */
 
     section.intro figure.pic,
     article.sitemap-ia .container header,
     article.content .container header,
-    article.sitemap-ia figure {
+    article.component .container header,
+    article.sitemap-ia figure,
+    article.content picture {
         padding: 0 25px;
     }
 
     article.sitemap-ia main.content,
     article.content main.content {
-        padding: 75px 25px;
+        padding: 50px 25px;
     }
 
     article.sitemap-ia main.content:last-child,
     article.content main.content:last-child {
         padding: 50px 25px 0;
-    }
-
-    article.sitemap-ia picture img {
-        width: 100%;
     }
     
 }
@@ -196,8 +212,19 @@ li.navi-btn a.next-img {
     }
     
     article.sitemap-ia header h3,
-    article.content header h3 {
+    article.content header h3,
+    article.conponent header h3 {
         font-size: 1.75em;
+    }
+
+    article.sitemap-ia main.content,
+    article.content main.content {
+        padding: 40px;
+    }
+
+    article.sitemap-ia main.content:last-child,
+    article.content main.content:last-child {
+        padding: 40px 25px 0;
     }
 
     article.sitemap-ia main.content p,
@@ -209,16 +236,19 @@ li.navi-btn a.next-img {
         padding: 0 25px;
     }
     
-    article.sitemap-ia a.desktop {
+    article.sitemap-ia a.desktop,
+    article.content img.desktop {
         display: none;
     }
 
-    article.sitemap-ia img.mobile {
+    article.sitemap-ia img.mobile,
+    article.content img.mobile {
         display: block;
     }
 
     article.sitemap-ia figure figcaption span {
         display: inline;
+        font-weight: 400;
     }
 
     article.sitemap-ia figure picture {
@@ -228,8 +258,7 @@ li.navi-btn a.next-img {
         overflow: scroll;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* IE & Edge */
-        border-radius: 15px;
-        box-shadow: 0px 10px 65px -10px rgba(161, 161, 161, 0.5);
+        border-radius: 20px;
     }
 
     article.sitemap-ia figure picture::-webkit-scrollbar {

@@ -297,7 +297,7 @@ ul.nav li.navi-btn {
 
 li.navi-btn h4 {
     font-size: 1.75em;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -306,7 +306,7 @@ li.navi-btn p {
     line-height: 2em;
     letter-spacing: 0;
     padding: 15px 0 0;
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     text-shadow: 0px 0px 15px rgb(189, 189, 189);
 }
