@@ -112,11 +112,11 @@ article.content picture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-article.sitemap-ia figure picture img {
-    box-shadow: 0px 20px 75px -30px rgba(161, 161, 161, 0.5);
+article.sitemap-ia figure picture {
+    box-shadow: 0px 25px 75px -35px rgba(107, 107, 107, 0.5);
 }
 
 article.sitemap-ia figure picture a,
@@ -253,7 +253,7 @@ li.navi-btn a.next-img {
 
     article.sitemap-ia figure picture {
         width: 100%;
-        max-height: 70vh;
+        max-height: 60vh;
         align-items: flex-start;
         overflow: scroll;
         scrollbar-width: none; /* Firefox */
@@ -266,7 +266,7 @@ li.navi-btn a.next-img {
     }
 
     article.sitemap-ia picture img {
-        width: 300vw;
+        width: 350vw;
         padding: 0;
     }
 
