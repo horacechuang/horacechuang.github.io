@@ -4,7 +4,9 @@ section.objective,
 section.design,
 article.process .container,
 article.sitemap-ia .container,
-article.content .container {
+article.content .container,
+article.component .container,
+article.visual .container {
     display: block;
     position: relative;
     width: 100%;
@@ -116,7 +118,7 @@ article.content picture {
 }
 
 article.sitemap-ia figure picture {
-    box-shadow: 0px 25px 75px -35px rgba(107, 107, 107, 0.5);
+    box-shadow: 0px 15px 75px -45px rgba(107, 107, 107, 0.5);
 }
 
 article.sitemap-ia figure picture a,
