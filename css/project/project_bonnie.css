@@ -42,8 +42,8 @@ h4 {
 }
 
 p {
-    font-size: 1.35em;
-    line-height: 2.15em;
+    font-size: 1.4em;
+    line-height: 2.25em;
     font-weight: 300;
     letter-spacing: .25px;
 }
@@ -631,7 +631,8 @@ article.process main.content {
     position: relative;
 }
 
-article.process main.content h2 {
+
+article.process main.content header h2 {
     padding-bottom: 50px;
 }
 
@@ -643,9 +644,9 @@ article.process main.content p:last-child {
     padding: 0;
 }
 
-article.process main.content .para {
+article.process main.content .wrapper {
     padding-left: 25px;
-    border-left: 2px solid rgb(255, 205, 222);
+    border-left: 1px solid rgb(255, 198, 219);
 }
 
 article.process picture img {

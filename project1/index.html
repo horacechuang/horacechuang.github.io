@@ -365,8 +365,10 @@
                     <article class="process">
                         <div class="container">
                             <main class="content">
-                                <h2 class="overlay-title" data-aos="fade-right" data-aos-delay="150">Design Process</h2>
-                                <div class="para">
+                                <header>
+                                    <h2 class="overlay-title" data-aos="fade-right" data-aos-delay="150">Design Process</h2>
+                                </header>
+                                <div class="wrapper">
                                     <p data-aos="fade-left" data-aos-delay="250">因為產品屬於工具型的 SaaS 線上軟體平台，且已有基本架構，因此在設計上採取的是在不動用到基本架構的前提下，分別進行原有套件的流程改善、新套件的各種功能設計規劃、平台介面的視覺改版，以及制訂較為完整的設計規範。</p>
                                     <p data-aos="fade-left" data-aos-delay="250">設計流程上我們分為 Plan, Ideate 與 Solve 三個階段，前期的 Feedback & MVP 階段主要是搜集用戶與內部團隊的意見之後，於 Scrum 開發過程中進行 Ideate 的 Flowchart & Wireframe 線框圖來回討論修正，而後進行原有平台的 Optimize 和新套件的 Mockup 設計，確認完畢後就交由 Engineer 進到 Development 的階段。</p>
                                 </div>
@@ -385,21 +387,21 @@
         </main>
         <section id="project-nav">
             <div class="container">
-                <div class="title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <header class="title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                     <h3 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1500">更多專案 | PROJECT</h3>
-                </div>
+                </header>
                 <ul class="nav">
-                    <li class="navi-btn prev-btn" data-aos="fade-right" data-aos-delay="500">
-                        <a href="../project6/" class="prev-img">
-                            <div class="content prev-con">
+                    <li class="prev" data-aos="fade-right" data-aos-delay="500">
+                        <a href="../project6/" class="prev">
+                            <div class="content prevContent">
                                 <h4>PREV | 前個專案</h4>
                                 <p>蔡健雅 列穆尼亞演唱會 互動視覺</p>
                             </div>
                         </a>
                     </li>
-                    <li class="navi-btn next-btn" data-aos="fade-left" data-aos-delay="600">
-                        <a href="../project2/" class="next-img">
-                            <div class="content next-con">
+                    <li class="next" data-aos="fade-left" data-aos-delay="600">
+                        <a href="../project2/" class="next">
+                            <div class="content nextContent">
                                 <h4>NEXT | 下個專案</h4>
                                 <p>BotBonnie 官方網站 Redesign</p>
                             </div>
@@ -408,10 +410,10 @@
                 </ul>
             </div>
         </section>
-        <footer id="footer" class="mobile-footer">
+        <footer class="mobile">
             <div class="container">
                 <aside class="cta">
-                    <div class="column" data-aos="f">
+                    <div class="column">
                         <span>💎</span>
                     </div>
                     <div class="column">
@@ -420,7 +422,7 @@
                     </div>
                 </aside>
                 <aside class="link">
-                    <ul class="container">
+                    <ul class="nav">
                         <li>
                             <a href="mailto:tingfeng.chuang@gmail.com">
                                 <i class="fas fa-paper-plane"></i>
@@ -460,7 +462,7 @@
         AOS.init({
             duration: 1000,
             easing: 'ease',
-            once: false,
+            once: true,
             mirror: true
         });
 

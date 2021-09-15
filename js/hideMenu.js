@@ -2,7 +2,7 @@ $(document).ready(function () {
      var navBar, 
          currentScrollTop = 0,
          navigation = $("nav#nav");
-         mobileFooter = $(".mobile-footer");
+         mobileFooter = $("footer.mobile");
          itemNav = $("nav#sub-menu ul.sub-menu-container");
   
      $(window).scroll(function () {

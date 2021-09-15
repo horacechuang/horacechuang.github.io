@@ -246,7 +246,7 @@ section#project-nav .container {
     max-width: 1080px;
 }
 
-section#project-nav .container .title {
+section#project-nav header.title {
     position: relative;
     display: block;
     max-width: 1080px;
@@ -254,7 +254,7 @@ section#project-nav .container .title {
     text-align: left;
 }
 
-section#project-nav .container .title::after {
+section#project-nav header.title::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -263,7 +263,7 @@ section#project-nav .container .title::after {
     top: 90px;
 }
 
-section#project-nav .container .title h3 {
+section#project-nav header.title h3 {
     font-size: 2.5em;
     font-weight: 500;
     letter-spacing: .5px;
@@ -272,7 +272,7 @@ section#project-nav .container .title h3 {
     display: block;
 }
 
-section#project-nav .container .title h3::after {
+section#project-nav header.title h3::after {
     content: "";
     position: absolute;
     min-width: 75px;
@@ -282,7 +282,7 @@ section#project-nav .container .title h3::after {
     background: rgb(133, 133, 133);
 }
 
-.container ul.nav {
+section#project-nav ul.nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -290,18 +290,18 @@ section#project-nav .container .title h3::after {
     align-items: center;
 }
 
-ul.nav li.navi-btn {
-    width: 46.5%;
+section#project-nav ul.nav li {
+    width: 45%;
     color: rgb(54, 54, 54);
 }
 
-li.navi-btn h4 {
+section#project-nav li h4 {
     font-size: 1.75em;
     font-weight: 500;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-li.navi-btn p {
+section#project-nav li p {
     font-size: 2em;
     line-height: 2em;
     letter-spacing: 0;
@@ -311,7 +311,7 @@ li.navi-btn p {
     text-shadow: 0px 0px 15px rgb(189, 189, 189);
 }
 
-li.navi-btn a {
+section#project-nav li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,7 +324,7 @@ li.navi-btn a {
     border-radius: 5px;
 }
 
-li.navi-btn a .content {
+section#project-nav li a .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,24 +335,24 @@ li.navi-btn a .content {
     border-radius: 5px;
 }
 
-li.navi-btn a .prev-con {
+section#project-nav li a .prevContent {
     align-items: flex-start;
     padding: 0 calc(100%/10);
     transform: translateX(-15px);
 }
 
-li.navi-btn a .next-con {
+section#project-nav li a .nextContent {
     align-items: flex-end;
     padding: 0 calc(100%/10);
     transform: translateX(15px);
 }
 
-li.navi-btn a:hover {
+section#project-nav li a:hover {
     transform: scale(1.025);
     box-shadow: 0px 10px 35px -15px rgba(0, 0, 0, .1);
 }
 
-li.navi-btn a:hover .content {
+section#project-nav li a:hover .content {
     background-color: rgba(255, 255, 255, .75);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -363,7 +363,7 @@ li.navi-btn a:hover .content {
 
 /* footer */
 
-footer#footer {
+footer {
     display: block;
     position: relative;
     bottom: 0;
@@ -375,7 +375,7 @@ footer#footer {
     z-index: 1;
 }
 
-footer#footer::before {
+footer::before {
     content: "";
     position: absolute;
     top: 0;
@@ -396,7 +396,7 @@ footer#footer::before {
     }
 } 
 
-footer#footer > .container {
+footer .container {
     margin: 0 auto;
     max-width: 1080px;
     padding: 15px 0px;
@@ -405,12 +405,12 @@ footer#footer > .container {
     align-items: center;
 }
 
-aside.cta, 
-aside.link {
+footer aside.cta, 
+footer aside.link {
     width: 50%;
 }
 
-aside.cta {
+footer aside.cta {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -447,7 +447,7 @@ aside.cta h3.eng {
     font-size: 1.25em;
 }
 
-aside.link {
+footer aside.link {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -455,17 +455,17 @@ aside.link {
     margin: auto 0;
 }
 
-aside.link ul.container:hover a {
+aside.link ul.nav {
+    margin-bottom: 5px;
+}
+
+aside.link ul.nav:hover a {
     opacity: .35;
     transition: .25s all ease;
 }
 
-aside.link ul.container:hover a:hover {
+aside.link ul.nav:hover a:hover {
     opacity: 1;
-}
-
-aside.link ul.container {
-    margin-bottom: 5px;
 }
 
 aside.link li {
@@ -477,33 +477,33 @@ aside.link li:first-child {
     margin-left: 0;
 }
 
-aside.link i {
+aside.link li i {
     font-size: 2.35em;
     color: rgb(177, 177, 177);
     transition: .25s all ease;
 }
 
-aside.link i:hover {
+aside.link li i:hover {
     transform: scale(1.15);
 }
 
-aside.link i:active {
+aside.link li i:active {
     transform: scale(.95);
 }
 
-aside.link i.fa-paper-plane:hover {
+aside.link li i.fa-paper-plane:hover {
     color: #34b5ff;
 }
 
-aside.link i.fa-linkedin-in:hover {
+aside.link li i.fa-linkedin-in:hover {
     color: #0077b5;
 }
 
-aside.link i.fa-behance:hover {
+aside.link li i.fa-behance:hover {
     color: #1769ff;
 }
 
-aside.link i.fa-dribbble:hover {
+aside.link li i.fa-dribbble:hover {
     color: #ea4c89;
 }
 
@@ -524,30 +524,30 @@ aside.link span {
 
     /* project-main-navigator */
 
-    section#project-nav .container .title {
+    section#project-nav header.title {
         margin: 0 2.5% 100px;
     }
 
-    section#project-nav .container .title::after {
+    section#project-nav header.title::after {
         padding-right: 25px;
     }
 
-    .container ul.nav {
+    section#project-nav ul.nav {
         padding: 0 2.5%;
     }
 
-    li.navi-btn a {
+    section#project-nav li a {
         height: 275px;
     }
 
     /* footer */
 
-    footer#footer {
+    footer {
         padding: 0 25px;
         z-index: 5 !important;
     }
 
-    footer#footer > .container {
+    footer .container {
         align-items: flex-end;
         padding: 10px 0;
     }
@@ -566,7 +566,7 @@ aside.link span {
         margin-left: 60px;
     }
 
-    aside.link i {
+    aside.link li i {
         font-size: 2em;
     }
 
@@ -580,15 +580,15 @@ aside.link span {
         padding: 75px 0 100px;
     }
 
-    section#project-nav .container .title::after {
+    section#project-nav header.title::after {
         top: 75px;
     }
 
-    section#project-nav .container .title h3 {
+    section#project-nav header.title h3 {
         font-size: 2.25em;
     }
 
-    section#project-nav .container .title h3::after {
+    section#project-nav header.title h3::after {
         top: 73px;
     }
 
@@ -659,10 +659,6 @@ aside.link span {
 }
 
 @media all and (max-width: 800px) {
-
-    /* .logo a {
-        font-size: 1.5em;
-    } */
 
     nav#nav .item ul {
         font-size: 1.3em;
@@ -851,96 +847,87 @@ aside.link span {
 
     /* project-navigator */
 
-    section#project-nav .container .title {
+    section#project-nav header.title {
         margin: 0 5% 100px;
     }
 
-    section#project-nav .container .title::after {
+    section#project-nav header.title::after {
         top: 75px;
     }
 
-    section#project-nav .container .title h3 {
+    section#project-nav header.title h3 {
         font-size: 2em;
     }
 
-    .container ul.nav {
+    section#project-nav ul.nav {
         flex-direction: column;
         padding: 0 5%;
     }
 
-    ul.nav li.navi-btn {
+    section#project-nav ul.nav li {
         width: 100%;
     }
 
-    ul.nav li.prev-btn {
+    section#project-nav li.prev {
         padding-bottom: 50px;
     }
 
-    li.navi-btn a {
+    section#project-nav li a {
         height: 350px;
     }
 
-    li.navi-btn a .prev-con,
-    li.navi-btn a .next-con {
+    section#project-nav li a .prevContent,
+    section#project-nav li a .nextContent {
         align-items: center;
     }
 
-    li.navi-btn h4 {
+    section#project-nav li h4 {
         font-size: 1.25em;
     }
 
-    li.navi-btn p {
+    section#project-nav li p {
         font-size: 1.5em;
     }
 
     /* footer */
 
-    footer.mobile-footer {
+    footer.mobile {
         position: fixed !important;
     }
 
-    footer.mobile-footer.invisibleFooter {
+    footer.mobile.invisibleFooter {
         transform: translateY(75px);
     }
     
-    footer.mobile-footer.addShadow {
+    footer.mobile.addShadow {
         box-shadow: 0px -5px 65px rgba(158, 158, 158, .2);
         transition: 1s all ease;
     }
 
-    footer#footer::before {
+    footer::before {
         display: none;
     }
 
-    footer#footer .container {
+    footer .container {
         flex-direction: column;
     }
 
-    aside.cta,
-    aside.link {
+    footer aside.cta,
+    footer aside.link {
         width: 100%;
     }
 
-    aside.cta, 
-    aside.link span {
+    footer aside.cta, 
+    footer aside.link span {
         display: none;
     }
 
-    aside.link {
+    footer aside.link {
         align-items: center;
     }
 
-    aside.link ul.container {
+    footer aside.link ul.nav {
         margin: 5px 0;
-    }
-
-    aside.link i {
-        font-size: 2em;
-        opacity: .5;
-    }
-
-    aside.link i:hover {
-        opacity: 1;
     }
 
     aside.link li {
@@ -950,20 +937,29 @@ aside.link span {
     aside.link li:first-child {
         margin-left: 0 !important;
     }
-    
-    aside.link i.fa-paper-plane {
+
+    aside.link li i {
+        font-size: 2em;
+        opacity: .5;
+    }
+
+    aside.link li i:hover {
+        opacity: 1;
+    }
+
+    aside.link li i.fa-paper-plane {
         color: #34b5ff;
     }
     
-    aside.link i.fa-linkedin-in {
+    aside.link li i.fa-linkedin-in {
         color: #0077b5;
     }
     
-    aside.link i.fa-behance {
+    aside.link li i.fa-behance {
         color: #1769ff;
     }
     
-    aside.link i.fa-dribbble {
+    aside.link li i.fa-dribbble {
         color: #ea4c89;
     }
 
@@ -973,15 +969,15 @@ aside.link span {
 
     /* project-main-navigator */
 
-    li.navi-btn a {
+    section#project-nav li a {
         height: 225px;
     }
 
-    section#project-nav .container .title {
+    section#project-nav header.title {
         margin: 0 10% 100px;
     }
 
-    .container ul.nav {
+    section#project-nav ul.nav {
         padding: 0 10%;
     }
 

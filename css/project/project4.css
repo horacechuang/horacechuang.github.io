@@ -542,11 +542,11 @@ article.website .link a:hover {
 
 /* project-main-navigator */
 
-li.navi-btn a.prev-img {
+section#project-nav li a.prev {
     background: url('../../img/index/index_3.png') center center;   
 }
 
-li.navi-btn a.next-img {
+section#project-nav li a.next {
     background: url('../../img/index/index_5.png') center center;
 }
 

@@ -6,13 +6,13 @@ body {
 }
 
 nav#nav, 
-footer#footer{
+footer{
     background: hsla(0, 0%, 0%, 0) !important;
 }
 
 nav#nav.addShadow, 
-footer#footer.addShadow {
-    box-shadow: none;
+footer.addShadow {
+    box-shadow: none !important;
 }
 
 nav#nav .logo a, 
@@ -91,7 +91,7 @@ header.project-header {
     position: relative;
 }
 
-header.project-header > img.lemuria-logo {
+header.project-header img.lemuria-logo {
     max-width: 390px;
     display: block;
     position: relative;
@@ -100,7 +100,7 @@ header.project-header > img.lemuria-logo {
     z-index: 1;
 }
 
-header.project-header > img.lemuria-banner {
+header.project-header img.lemuria-banner {
     width: 100vw;
     margin: 0 auto;
     display: block;
@@ -108,14 +108,14 @@ header.project-header > img.lemuria-banner {
     margin-top: -300px;
 }
 
-header.project-header > .header-title {
+header.project-header .header-title {
     display: flex;
     justify-content: center;
     position: relative;
     margin-top: -150px;
 }
 
-header.project-header > .header-title h2 {
+header.project-header .header-title h2 {
     color: rgb(255,255,255);
     text-align: center;
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
@@ -135,7 +135,7 @@ header.project-header > .header-title h2 {
     margin: 45px auto 0;
 }
 
-#project-header-container > main.project-header-main {
+#project-header-container main.project-header-main {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -486,29 +486,29 @@ article.thanks .paragraph strong {
 
 /* project-main-navigator */
 
-.container .title::after {
+section#project-nav header.title::after {
     background: rgba(177, 177, 177, .25);
 }
 
-.container .title > h3 {
+section#project-nav header.title h3 {
     color: rgba(255, 255, 255, .75);
 }
 
-.container .title > h3::after {
+section#project-nav header.title h3::after {
     background: rgba(255, 255, 255, .75)
 }
 
-li.navi-btn a.prev-img {
+section#project-nav li a.prev {
     background: url('../../img/index/index_5.png') center center;   
 }
 
-li.navi-btn a.next-img {
+section#project-nav li a.next {
     background: url('../../img/index/index_1.png') center center;
 }
 
 /* footer */
 
-aside.link i{
+aside.link li i{
     color: rgb(228, 228, 228);
     opacity: .75;
 }
@@ -523,21 +523,21 @@ aside.link i{
         padding: 0 25px;
     }
 
-    header.project-header > img.lemuria-logo {
+    header.project-header img.lemuria-logo {
        max-width: 350px;
        padding-top: 75px;
     }
 
-    header.project-header > img.lemuria-banner {
+    header.project-header img.lemuria-banner {
         width: 100%;
         margin-top: -150px;
     }
 
-    header.project-header > .header-title {
+    header.project-header .header-title {
         margin-top: -125px;
     }
 
-    header.project-header > .header-title h2 {
+    header.project-header .header-title h2 {
         font-size: 3em;
     }
 
@@ -605,19 +605,19 @@ aside.link i{
 
     /* header#header */
 
-    header.project-header > img.lemuria-logo {
+    header.project-header img.lemuria-logo {
        max-width: 300px;
     }
 
-    header.project-header > img.lemuria-banner {
+    header.project-header img.lemuria-banner {
         margin-top: -100px;
     }
 
-    header.project-header > .header-title {
+    header.project-header .header-title {
         margin-top: -125px;
     }
 
-    header.project-header > .header-title h2 {
+    header.project-header .header-title h2 {
         font-size: 2.5em;
     }
 
@@ -730,19 +730,19 @@ aside.link i{
         padding: 61px 0 !important;
     }
 
-    header.project-header > img.lemuria-logo {
+    header.project-header img.lemuria-logo {
         max-width: 250px;
     }
 
-    header.project-header > img.lemuria-banner {
+    header.project-header img.lemuria-banner {
        margin-top: -75px;
     }
 
-    header.project-header > .header-title {
+    header.project-header .header-title {
         margin-top: -75px;
     }
 
-    header.project-header > .header-title h2 {
+    header.project-header .header-title h2 {
         font-size: 2em;
         letter-spacing: 2.5px;
     }
@@ -906,19 +906,19 @@ aside.link i{
 
 @media all and (max-width: 580px) {
 
-    header.project-header > img.lemuria-logo {
+    header.project-header img.lemuria-logo {
         max-width: 200px;
     }
 
-    header.project-header > img.lemuria-banner {
+    header.project-header img.lemuria-banner {
         margin-top: -60px;
     }
 
-    header.project-header > .header-title {
+    header.project-header .header-title {
         margin-top: -55px;
     }
 
-    header.project-header > .header-title h2 {
+    header.project-header .header-title h2 {
         font-size: 1.85em;
     }
 

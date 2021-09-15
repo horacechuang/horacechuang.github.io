@@ -81,29 +81,34 @@ article.content main.content {
 }
 
 article.sitemap-ia main.content:last-child,
-article.content main.content:last-child {
+article.content main.content:last-child,
+article.component main.content:last-child {
     padding: 50px 0;
 }
 
 article.sitemap-ia main.content .wrapper,
-article.content main.content .wrapper {
+article.content main.content .wrapper,
+article.component main.content .wrapper {
     max-width: 767px;
-    border-left: 2px solid rgb(255, 205, 222);
+    border-left: 1px solid rgb(255, 198, 219);
     padding-left: 25px;
 }
 
 article.sitemap-ia main.content p,
-article.content main.content p {
+article.content main.content p,
+article.component main.content p {
     padding: 0 0 25px;
 }
 
 article.sitemap-ia main.content p:last-child,
-article.content main.content p:last-child {
+article.content main.content p:last-child,
+article.component main.content p:last-child {
     padding: 0;
 }
 
 article.sitemap-ia main.content span,
-article.content main.content span {
+article.content main.content span,
+article.component main.content span {
     font-weight: 500;
 }
 
@@ -123,7 +128,7 @@ article.sitemap-ia figure picture {
 
 article.sitemap-ia figure picture a,
 article.content picture {
-    max-width: 1280px;
+    max-width: 1180px;
 }
 
 article.content picture {
@@ -149,11 +154,11 @@ article.content picture img {
 
 /* project-main-navigator */
 
-li.navi-btn a.prev-img {
+section#project-nav li a.prev {
     background: url('../../img/index/index_1.png') center center;   
 }
 
-li.navi-btn a.next-img {
+section#project-nav li a.next {
     background: url('../../img/index/index_3.png') center center;
 }
 
@@ -179,12 +184,14 @@ li.navi-btn a.next-img {
     }
 
     article.sitemap-ia main.content,
-    article.content main.content {
+    article.content main.content,
+    article.component main.content {
         padding: 50px 25px;
     }
 
     article.sitemap-ia main.content:last-child,
-    article.content main.content:last-child {
+    article.content main.content:last-child,
+    article.component main.content:last-child {
         padding: 50px 25px 0;
     }
     
@@ -207,6 +214,7 @@ li.navi-btn a.next-img {
 
         /* article.sitemap-ia */
         /* article.content */
+        /* article.component */
 
     article.sitemap-ia header h2 {
         font-size: 2em;
@@ -215,23 +223,27 @@ li.navi-btn a.next-img {
     
     article.sitemap-ia header h3,
     article.content header h3,
-    article.conponent header h3 {
+    article.component header h3 {
         font-size: 1.75em;
     }
 
     article.sitemap-ia main.content,
-    article.content main.content {
+    article.content main.content,
+    article.component main.content {
         padding: 40px;
     }
 
     article.sitemap-ia main.content:last-child,
-    article.content main.content:last-child {
+    article.content main.content:last-child,
+    article.component main.content:last-child {
         padding: 40px 25px 0;
     }
 
     article.sitemap-ia main.content p,
-    article.content main.content p {
+    article.content main.content p,
+    article.component main.content p {
         font-size: 1.15em;
+        line-height: 2.25em;
     }
 
     article.sitemap-ia figure {

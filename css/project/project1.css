@@ -59,11 +59,11 @@ section.before aside.img:hover::after {
 
 /* project-main-navigator */
 
-li.navi-btn a.prev-img {
+section#project-nav li a.prev {
     background: url('../../img/index/index_6.png') center center;   
 }
 
-li.navi-btn a.next-img {
+section#project-nav li a.next {
     background: url('../../img/index/index_2.png') center center;
 }
 

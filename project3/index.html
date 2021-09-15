@@ -536,21 +536,21 @@
         </section>
         <section id="project-nav">
             <div class="container">
-                <div class="title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <header class="title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                     <h3 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1500">更多專案 | PROJECT</h3>
-                </div>
+                </header>
                 <ul class="nav">
-                    <li class="navi-btn prev-btn" data-aos="fade-right" data-aos-delay="500">
-                        <a href="../project2" class="prev-img">
-                            <div class="content prev-con">
+                    <li class="prev" data-aos="fade-right" data-aos-delay="500">
+                        <a href="../project2" class="prev">
+                            <div class="content prevContent">
                                 <h4>PREV | 前個專案</h4>
                                 <p>BotBonnie 官方網站 Redesign</p>
                             </div>
                         </a>
                     </li>
-                    <li class="navi-btn next-btn" data-aos="fade-left" data-aos-delay="600">
-                        <a href="../project4/" class="next-img">
-                            <div class="content next-con">
+                    <li class="next" data-aos="fade-left" data-aos-delay="600">
+                        <a href="../project4/" class="next">
+                            <div class="content nextContent">
                                 <h4>NEXT | 下個專案</h4>
                                 <p>台日特快車</p>
                             </div>
@@ -559,7 +559,7 @@
                 </ul>
             </div>
         </section>
-        <footer id="footer" class="mobile-footer">
+        <footer class="mobile">
             <div class="container">
                 <aside class="cta">
                     <div class="column" data-aos="f">
@@ -571,7 +571,7 @@
                     </div>
                 </aside>
                 <aside class="link">
-                    <ul class="container">
+                    <ul class="nav">
                         <li>
                             <a href="mailto:tingfeng.chuang@gmail.com">
                                 <i class="fas fa-paper-plane"></i>
@@ -611,7 +611,7 @@
         AOS.init({
             duration: 1000,
             easing: 'ease',
-            once: false,
+            once: true,
             mirror: true
         });
 
