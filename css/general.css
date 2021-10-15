@@ -78,19 +78,26 @@ nav#nav .logo a {
 }
 
 nav#nav .logo img {
-    max-width: 40px;
-    height: auto;
+    max-width: 45px;
     display: block;
     position: relative;
 }
 
 nav#nav .logo a img {
-    animation: 3s rotateLogo linear infinite;
+    /* animation: 3s rotateLogo linear infinite; */
+    opacity: .75;
+    transition: .25s all ease;
+    transform: scale(1);
 }
 
 nav#nav .logo a:hover img {
-    opacity: .75;
-    animation-play-state: paused;
+    opacity: 1;
+    transform: scale(1.1);
+    /* animation-play-state: paused; */
+}
+
+nav#nav .logo a:active img {
+    transform: scale(0.9);
 }
 
 @keyframes rotateLogo {
@@ -203,7 +210,7 @@ nav#nav .item li:last-child i {
 /* deco-line */
 
 #line {
-    padding-top: 70px;
+    padding-top: 74px;
     position: relative;
     display: block;
 }

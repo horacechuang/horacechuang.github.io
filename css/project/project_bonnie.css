@@ -528,7 +528,7 @@ section.objective main.slogan {
 }
 
 section.objective main.slogan {
-    padding: 25px 0 50px;
+    padding: 25px 25px 50px;
 }
 
 section.objective main.slogan h3 {
@@ -645,6 +645,7 @@ article.process main.content p:last-child {
 }
 
 article.process main.content .wrapper {
+    margin-left: 25px;
     padding-left: 25px;
     border-left: 1px solid rgb(255, 198, 219);
 }
@@ -1005,6 +1006,11 @@ article.process picture img.mobile {
 
     /* article.process */
 
+
+    article.process main.content .wrapper {
+        margin-left: 15px;
+    }
+
     article.process main.content h2 {
         font-size: 1.75em;
         padding-bottom: 40px;
@@ -1017,6 +1023,7 @@ article.process picture img.mobile {
     article.process picture img {
         padding: 50px 25px 0;
     }
+    
 
 }
 
