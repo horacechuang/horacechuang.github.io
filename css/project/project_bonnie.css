@@ -408,7 +408,6 @@ section.insight header h2 {
     position: relative;
 }
 
-
 section.insight main {
     width: 70%;
     padding: 0 125px 0 0;
@@ -576,20 +575,20 @@ section.objective ul.card li {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     width: 30%;
-    box-shadow: 0px 20px 55px 0px rgba(161, 161, 161, 0.2);
+    box-shadow: 0px 40px 85px -15px rgba(255, 60, 103, 0.25);
     overflow: hidden;
     transition: .35s all ease;
 }
 
 section.objective ul.card li:hover {
-    transform: scale(1.025);
+    transform: translateY(10px);
     box-shadow: 0px 25px 30px -30px rgba(124, 124, 124, 0.25);
 }
 
 section.objective ul.card picture {
     display: block;
     position: relative;
-    margin-bottom: 50px;
+    padding-bottom: 35px;
 }
 
 section.objective ul.card picture img {
@@ -604,6 +603,16 @@ section.objective ul.card .container {
 section.objective ul.card h3 {
     font-size: 1.85em;
     line-height: 3em;
+    background: linear-gradient(300deg, #ffa1bd 51%, #e4234d 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+section.objective ul.card li:hover > h3 {
+    background: linear-gradient(300deg, #ffa1bd 51%, #e4234d 87%);
 }
 
 section.objective ul.card p {
@@ -1059,9 +1068,13 @@ article.process picture img.mobile {
         padding: 0 50px;
     }
 
+    section.objective ul.card picture {
+        padding-bottom: 25px;
+    }
+
     section.objective ul.card li {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 50px;
     }
 
     section.objective ul.card li:last-child {
