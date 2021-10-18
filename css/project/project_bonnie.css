@@ -603,16 +603,12 @@ section.objective ul.card .container {
 section.objective ul.card h3 {
     font-size: 1.85em;
     line-height: 3em;
-    background: linear-gradient(300deg, #ffa1bd 51%, #e4234d 87%);
+    background: linear-gradient(300deg, #bdbdbd 51%, #3a3a3a 87%);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
-
-section.objective ul.card li:hover > h3 {
-    background: linear-gradient(300deg, #ffa1bd 51%, #e4234d 87%);
 }
 
 section.objective ul.card p {
