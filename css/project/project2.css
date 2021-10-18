@@ -180,7 +180,8 @@ section#project-nav li a.next {
     article.content .container header,
     article.component .container header,
     article.sitemap-ia figure,
-    article.content picture {
+    article.content picture,
+    article.component picture {
         padding: 0 25px;
     }
 
