@@ -130,7 +130,7 @@ article.component picture {
 }
 
 article.component picture.large {
-    max-width: 95vw;
+    max-width: 85vw;
 }
 
 article.content picture,

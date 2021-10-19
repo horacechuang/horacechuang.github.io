@@ -436,7 +436,7 @@ li#grid-inner .tag-visual {
 /* about */
 
 section#about {
-    padding: 50px 0 25px;
+    padding: 50px 0;
 }
 
 section#about .container  {
