@@ -575,7 +575,7 @@ section.objective ul.card li {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     width: 30%;
-    box-shadow: 0px 40px 85px -15px rgba(255, 60, 103, 0.25);
+    box-shadow: 0px 55px 90px -27px rgba(255, 60, 103, 0.25);
     overflow: hidden;
     transition: .35s all ease;
 }
