@@ -450,7 +450,7 @@ section.insight li h3.sub-title {
     font-size: 1.85em;
     background: linear-gradient(300deg, #bdbdbd 51%, #3a3a3a 87%);
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 section.insight ol li:hover > h3.sub-title {
