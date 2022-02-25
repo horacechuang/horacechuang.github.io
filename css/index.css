@@ -36,7 +36,6 @@ header#header aside.img img.profile {
     border-radius: 250px;
     z-index: 1;
     box-shadow: 0px 20px 50px rgba(124, 124, 124, 0.3);
-
 }
 
 @keyframes move {
@@ -53,10 +52,12 @@ header#header aside.img img.profile {
 } 
 
 header#header aside.img img.pattern {
-    max-width: 300px;
+    max-width: 450px;
     z-index: -1;
     overflow: hidden;
     animation: 2s opacity-pattern infinite;
+    transform: rotate(45deg) !important;
+    margin-top: -50px;
 }
 
 @keyframes opacity-pattern {
@@ -76,7 +77,10 @@ header#header aside.img img.pattern {
 
 header#header .container .paragraph {
     width: 65%;
-    padding-top: 25px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 header#header .container .paragraph h1 {
@@ -166,7 +170,7 @@ header#header .container .paragraph h3 {
 
 main#container {
     width: 100%;
-    margin: 0 auto;
+    margin: -75px auto 0;
 }
 
 /* project */
@@ -750,9 +754,7 @@ section.expertise ul.container p {
 
     header#header .container .paragraph {
         width: 75%;
-        padding-top: 25px;
-        display: flex;
-        flex-direction: column;
+        padding-top: 30px;
         justify-content: center;
     }
 
@@ -780,8 +782,8 @@ section.expertise ul.container p {
     }
 
     header#header aside.img img.pattern {
-        width: 85%;
-        margin-top: 15px;
+        width: 90%;
+        margin-top: -25px;
     }
 
     /* work area */
@@ -953,7 +955,7 @@ section.expertise ul.container p {
     }
 
     main#container {
-        padding: 0 0 25px;
+        margin: -25px auto 0;
     }
 
     /* img */
@@ -973,10 +975,9 @@ section.expertise ul.container p {
 
     header#header aside.img img.pattern {
         position: absolute;
-        width: 250px;
+        max-width: 300px;
         transform: rotate(45deg) !important;
-        margin-top: -50px;
-        margin-left: 15%;
+        top: -50px;
         z-index: -2;
     }
 
