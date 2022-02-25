@@ -52,7 +52,7 @@ header#header aside.img img.profile {
 } 
 
 header#header aside.img img.pattern {
-    max-width: 450px;
+    max-width: 500px;
     z-index: -1;
     overflow: hidden;
     animation: 2s opacity-pattern infinite;
@@ -170,7 +170,7 @@ header#header .container .paragraph h3 {
 
 main#container {
     width: 100%;
-    margin: -75px auto 0;
+    margin: -200px auto 0;
 }
 
 /* project */
@@ -743,6 +743,7 @@ section.expertise ul.container p {
     section#about > .container {
         padding: 0 25px;
     }
+    
 
     /* header */
 
@@ -789,6 +790,11 @@ section.expertise ul.container p {
     /* work area */
 
     /* project */
+
+    main#container {
+        width: 100%;
+        margin: -50px auto 0;
+    }
 
     section#project header.title {
         margin-bottom: -35px;   
