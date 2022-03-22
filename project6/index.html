@@ -35,28 +35,30 @@
 <body class>
     <div id="wrapper">
         <nav id="nav">
-            <div class="container">
-                <div class="logo" data-aos="fade-right" data-aos-duration="1500">
-                    <a href="../">
-                        <img src="../img/logo.svg" alt="logo">
-                    </a>
+            <div class="nav-container">
+                <div class="nav-column">
+                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                        <a href="../">
+                            <img src="../img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="nav-btn" data-aos="fade-left" data-aos-duration="1500">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mobileBtn" data-aos="fade-left" data-aos-duration="1500">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="item">
+                <div class="nav-item">
                     <div class="line">
                         <div class="container"></div>
                     </div>
                     <ul class="container" data-aos="fade-left" data-aos-duration="1500">
-                        <li><a href="../#project">作品 | Project</a></li>
-                        <li><a href="../#about">關於 | About</a></li>
+                        <li><a data-scroll href="../#project">作品 | Project</a></li>
+                        <li><a data-scroll href="../#about">關於 | About</a></li>
                         <li><a href="https://bit.ly/horace-resume" target="_blank">履歷 | Résumé</a></li>
-                        <li class="btn_nav-contact"><a href="mailto:horace@horace.design">Mail Me <i class="fas fa-paper-plane"></i></a></li>
+                        <li><a href="mailto:horace@horace.design">Mail Me <i class="fas fa-paper-plane"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                         <p data-aos="fade-down" data-aos-delay="650">
                             歌手表演時，透過場景的相互變換與舞台前的多個 Kinect 裝置去捕捉歌手全身的型態至虛擬場景中，營造撫慰人心的音樂使者形象。
                         </p>
-                    </article>
+                    </article>
                     <figure>
                         <img src="../img/project6/design-goal.jpg" alt="design-goal" data-aos="zoom-in" data-aos-duration="2000">
                         <figcaption data-aos="fade-up">最終完成圖</figcaption>
@@ -323,11 +325,11 @@
     </section>
     <script>
        AOS.init({
-            offset: 200,
+            offset: 100,
             duration: 1000,
             easing: 'ease',
-            once: true,
-            mirror: true
+            once: false,
+            mirror: false
         });
 
         window.dataLayer = window.dataLayer || [];

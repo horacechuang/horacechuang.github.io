@@ -58,16 +58,19 @@ nav#nav.addShadow {
     transition: 1s all ease;
 }
 
-nav#nav .container {
+nav#nav .nav-container {
     max-width: 1080px;
     width: 100%;
+    padding: 15px 0;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav#nav .logo {
-    display: block;
-    padding: 14.5px 0;
-    float: left;
+    display: flex;
 }
 
 nav#nav .logo a {
@@ -78,7 +81,7 @@ nav#nav .logo a {
 }
 
 nav#nav .logo img {
-    max-width: 45px;
+    max-width: 40px;
     display: block;
     position: relative;
 }
@@ -109,35 +112,30 @@ nav#nav .logo a:active img {
     }
 }
 
-/* nav-menu */
-
-nav#nav nav#nav .mobileBtn {
+nav#nav .nav-btn {
     display: none;
 }
 
-nav#nav .item {
-    margin: 14.5px 0;
-    float: right;
-}
-
-nav#nav .item ul {
-    font-size: 1.25em;
-    width: 100%;   
+nav#nav .nav-item ul.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25em; 
     letter-spacing: .15px;
+    width: 100%;
 }
 
-nav#nav .item li {
-    display: inline;
-    margin: 0 20px;
+nav#nav .nav-item li {
+    padding: 0 20px;
 }
 
-nav#nav .item li:last-child {
-    margin: 0 0 0 20px;
+nav#nav .nav-item li:last-child {
+    padding: 0 0 0 20px;
 }
 
 /* nav-menu li animate link */
 
-nav#nav .item li a {
+nav#nav .nav-item li a {
     font-family: 'Karla', 'Noto Sans TC', sans-serif;
     font-weight: 400;
     position: relative;
@@ -146,20 +144,20 @@ nav#nav .item li a {
     color: rgb(133, 133, 133);
 }
 
-nav#nav .item li a:hover {
+nav#nav .nav-item li a:hover {
     transform: translateY(1px);
     color: rgb(54, 54, 54);
 }
 
-nav#nav .item:hover ul.container:hover a{
+nav#nav .nav-item:hover ul.container:hover a{
     opacity: 0.5;
 }
 
-nav#nav .item:hover ul.container:hover a:hover {
+nav#nav .nav-item:hover ul.container:hover a:hover {
     opacity: 1;
 }
 
-nav#nav .item li a::before {
+nav#nav .nav-item li a::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -173,21 +171,21 @@ nav#nav .item li a::before {
     transform: scaleX(0);
 }
 
-nav#nav .item li a:hover::before {
+nav#nav .nav-item li a:hover::before {
     transition: .25s all ease;
     /* transform-origin: bottom right; */
     transform: scaleX(1);
 }
 
-nav#nav .item li:last-child a::before {
+nav#nav .nav-item li:last-child a::before {
     display: none;
 }
 
-nav#nav .item li:last-child a:hover::before {
+nav#nav .nav-item li:last-child a:hover::before {
     display: none;
 }
 
-nav#nav .item li:last-child a {
+nav#nav .nav-item li:last-child a {
     color: white;
     background: linear-gradient(270deg,#46f3b9, #2eb0fc);
     text-shadow: 0px 5px 15px rgba(53, 53, 53, 0.5);
@@ -197,12 +195,12 @@ nav#nav .item li:last-child a {
     transition: .25s all ease-in;
 }
 
-nav#nav .item li:last-child a:hover {
+nav#nav .nav-item li:last-child a:hover {
     color: white !important;
     transition: .25s all ease-out;
 }
 
-nav#nav .item li:last-child i {
+nav#nav .nav-item li:last-child i {
     color: white;
     text-shadow: 0px 5px 15px rgba(53, 53, 53, 0.5);
 }
@@ -210,7 +208,7 @@ nav#nav .item li:last-child i {
 /* deco-line */
 
 #line {
-    padding-top: 74px;
+    padding-top: 70px;
     position: relative;
     display: block;
 }
@@ -237,7 +235,7 @@ nav#nav .item li:last-child i {
 
 /* deco-line nav-inner */
 
-nav#nav .line {
+nav#nav .nav-item .line {
     display: none;
 }
 
@@ -562,6 +560,20 @@ aside.link span {
 }
 
 @media all and (max-width: 980px) {
+    
+    /* nav */
+
+    nav#nav .nav-item ul.container {
+        font-size: 1.2em;
+    }
+    
+    nav#nav .nav-item li {
+        padding: 0 15px;
+    }
+
+    nav#nav .nav-item li:last-child {
+        padding: 0 0 0 15px;
+    }
 
     /* footer */
 
@@ -598,7 +610,6 @@ aside.link span {
     section#project-nav header.title h3::after {
         top: 73px;
     }
-
 
     li.navi-btn h4 {
         font-size: 1.5em;
@@ -665,22 +676,8 @@ aside.link span {
     }
 }
 
-@media all and (max-width: 800px) {
 
-    nav#nav .item ul {
-        font-size: 1.3em;
-    }
-    
-    nav#nav .item li {
-        margin: 0 15px;
-    }
-
-    nav#nav .item li:last-child {
-        margin: 0 0 0 15px;
-    }
-}
-
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
 
     nav#nav.invisibleNav {
         transform: translateY(-100px);
@@ -689,7 +686,6 @@ aside.link span {
     /* logo */
 
     nav#nav .logo{
-        padding: 12.5px 0;
         position: relative;
         z-index: 1;
     }
@@ -701,7 +697,7 @@ aside.link span {
     /* deco-line */
 
     #line {
-        padding-top: 62px;
+        padding-top: 65px;
     }
 
     #line .container {
@@ -710,15 +706,11 @@ aside.link span {
 
     /* deco-line nav-inner */
 
-    nav#nav .line {
+    nav#nav .nav-item .line {
         display: block;
-        position: relative;
-        margin: 0 25px;
-        z-index: 1;
-        top: 1px;
     }
 
-    nav#nav .line .container {
+    nav#nav .nav-item .line .container {
         height: 1px;
         background: linear-gradient(270deg,#d4ffff 0, #61ffca 12%, #34b5ff 58%, #92efff 79%, #d4ffff);
         background-size: 200% 100%;
@@ -729,90 +721,68 @@ aside.link span {
 
     /* nav-menu disappear */
 
-    nav#nav .item {
+    nav#nav .nav-item {
         display: none;
     }
 
-    /* nav#nav .item open */
+    /* nav#nav .nav-item open */
 
-    nav#nav .item.collapse::before{
-        content: "";
-        display: table;
-        clear: both;
+    nav#nav .nav-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
-    nav#nav .item.collapse {
+    nav#nav .nav-column.collapse {
+        padding: 15px 0;
+    }
+
+    nav#nav .nav-container.collapse {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav#nav .nav-item.collapse {
         display: block;
-        position: relative;
-        float: none;
-        margin: 0 -25px;
-        box-shadow: 0px 100px 95px -85px rgba(175, 175, 175, 0.5);
         animation: fadeIn .5s;
+        width: 100%;
     }
 
-    nav#nav .item.collapse ul {
-        text-align: left;
-        padding: 0 25px;
+    nav#nav .nav-item.collapse ul.container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 30px;
         height: 100vh;
         animation: none;
         overflow: hidden;
         z-index: 1;
     }
     
-    nav#nav .item.collapse li {
-        display: block;
-        margin: 30px 0;
-        font-size: 1.05em;
+    nav#nav .nav-item.collapse li {
+        padding: 0 0 30px;
+        font-size: 1.15em;
         animation: fadeInDown .5s;
     }
 
-    /* nav-menu open animate link */
-
-    nav#nav .item li a {
-        position: relative;
-        display: inline-block;
-        transition: .3s all linear;
-    }
-
-    nav#nav .item li a:hover {
-        transform: translateX(5px);
-        transition: .3s all ease-in-out;
-    }
-
-    nav#nav .item li a::before {
-        display: none;
-    }
-
-    nav#nav .item li a:hover::before {
-        display: none;
-    }
-
-    nav#nav .item li:last-child a::before {
-        display: none;
-    }
-
-    nav#nav .item li:last-child a:hover::before {
-        display: none;
-    }
-
-    nav#nav .item li:last-child a {
-        transform: none;
-        margin-top: 15px;
+    nav#nav .nav-item.collapse li:last-child {
+        padding: 0;
     }
 
     /* nav-Btn for mobile */
 
-    nav#nav .mobileBtn {
+    nav#nav .nav-btn {
         display: block;
         position: relative;
-        width: 23px;
-        margin: 22px 0;
-        float: right;
+        min-width: 25px;
         cursor: pointer;
         z-index: 1;
     }
     
-    nav#nav .mobileBtn li {
+    nav#nav .nav-btn li {
         display: block; 
         height: 3px;
         margin-bottom: 4px;
@@ -821,29 +791,63 @@ aside.link span {
         transition: 0.25s linear;
     }
 
-    nav#nav .mobileBtn li:last-child {
+    nav#nav .nav-btn li:last-child {
         margin-bottom: 0px;
     }
 
-    nav#nav .mobileBtn.btnActive li {
+    nav#nav .nav-btn.btnActive {
         cursor: pointer;
     }
 
-    nav#nav .mobileBtn.btnActive li:first-child {
+    nav#nav .nav-btn.btnActive li:first-child {
         transform: translateY(7px) rotate(45deg);
         transition: 0.25s all ease;
         background-color: rgb(78, 78, 78);
     }
 
-    nav#nav .mobileBtn.btnActive li:nth-child(2) {
+    nav#nav .nav-btn.btnActive li:nth-child(2) {
         opacity: 0;
         transition: 0.25s all ease;
     }
 
-    nav#nav .mobileBtn.btnActive li:last-child {
+    nav#nav .nav-btn.btnActive li:last-child {
         transform: translateY(-7px) rotate(-45deg);
         transition: 0.25s all ease;
         background-color: rgb(78, 78, 78);
+    }
+
+    /* nav-menu open animate link */
+
+    nav#nav .nav-item li a {
+        position: relative;
+        display: inline-block;
+        transition: .3s all linear;
+    }
+
+    nav#nav .nav-item li a:hover {
+        transform: translateX(5px);
+        transition: .3s all ease-in-out;
+    }
+
+    nav#nav .nav-item li a::before {
+        display: none;
+    }
+
+    nav#nav .nav-item li a:hover::before {
+        display: none;
+    }
+
+    nav#nav .nav-item li:last-child a::before {
+        display: none;
+    }
+
+    nav#nav .nav-item li:last-child a:hover::before {
+        display: none;
+    }
+
+    nav#nav .nav-item li:last-child a {
+        transform: none;
+        margin-top: 15px;
     }
 
     /* project-main-navigator */

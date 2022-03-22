@@ -16,16 +16,16 @@ footer.addShadow {
 }
 
 nav#nav .logo a, 
-nav#nav .item li a {
+nav#nav .nav-item li a {
     color:rgb(203, 203, 203);
 }
 
 nav#nav .logo a:hover, 
-nav#nav .item li a:hover {
+nav#nav .nav-item li a:hover {
     color: white;
 }
 
-nav#nav .item a::before {
+nav#nav .nav-item a::before {
     background-color: rgb(208, 208, 208);
     opacity: .75;
 }
@@ -707,11 +707,11 @@ aside.link li i{
 
     /* general */
 
-    nav#nav .mobileBtn li {
+    nav#nav .nav-btn li {
         background: rgb(203, 203, 203) !important;
     }
 
-    nav#nav .mobileBtn.btnActive li {
+    nav#nav .nav-btn.btnActive li {
         background:white !important;
     }
 
