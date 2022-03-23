@@ -1,0 +1,933 @@
+/* general */
+
+html, 
+body {
+    background: rgb(0,0,0) !important;
+}
+
+nav#nav, 
+footer{
+    background: hsla(0, 0%, 0%, 0) !important;
+}
+
+nav#nav.addShadow, 
+footer.addShadow {
+    box-shadow: none !important;
+}
+
+nav#nav .logo a, 
+nav#nav .nav-item li a {
+    color:rgb(203, 203, 203);
+}
+
+nav#nav .logo a:hover, 
+nav#nav .nav-item li a:hover {
+    color: white;
+}
+
+nav#nav .nav-item a::before {
+    background-color: rgb(208, 208, 208);
+    opacity: .75;
+}
+
+#line{
+    z-index: 1;
+}
+
+figcaption {
+    font-size: 1.35em;
+    margin-top: 20px;
+    color: rgb(199, 199, 199);
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    to {
+        top: 0;
+    }
+} 
+
+@keyframes move-slow {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+/* header#header */
+
+header#header, 
+main#container {
+    width: 100%;
+    position: relative;
+    display: block;
+    background: rgb(0,0,0);
+}
+
+header#header {
+    margin: -85px 0 25px;
+}
+
+section#project-header-container {
+    margin: 0 auto;
+}
+
+header.project-header {
+    padding: 85px 0;
+    position: relative;
+}
+
+header.project-header img.lemuria-logo {
+    max-width: 390px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 82px;
+    z-index: 1;
+}
+
+header.project-header img.lemuria-banner {
+    width: 100vw;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    margin-top: -300px;
+}
+
+header.project-header .header-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -150px;
+}
+
+header.project-header .header-title h2 {
+    color: rgb(255,255,255);
+    text-align: center;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 25px rgb(255,255,255);
+}
+
+.header-title h2::after {
+    content: '';
+    width: 75px;
+    height: 1px;
+    background: rgb(113,113,113);
+    display: block;
+    position: relative;
+    margin: 45px auto 0;
+}
+
+#project-header-container main.project-header-main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+main.project-header-main h2 {
+    font-size: 2.25em;
+    font-family: 'Karla', 'Noto Sans TC', sans-serif;
+    line-height: 2em;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+}
+
+main.project-header-main h2 a {
+    font-size: 1em;
+    color: rgb(160, 160, 160);
+    transition: .25s all ease;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+main.project-header-main h2 a:hover {
+    opacity: .9;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+main.project-header-main h2:first-child {
+    margin-bottom: 50px;
+}
+
+main.project-header-main figure {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main.project-header-main i {
+    position: relative;
+    color: rgb(129, 129, 129);
+    font-size: 5em;
+    animation: move 2s infinite;
+}
+
+/* main#container */
+
+main#container {
+    padding-bottom: 0;
+}
+
+/* main-general */
+
+section#main-design-goal, 
+section#main-process-overview,
+section#main-design-process .collect-container,
+section#main-design-process .transform-container,
+section#main-design-process .particle-container{
+    padding-top: 100px;
+}
+
+/* main-article */
+
+section#main-design-goal article,
+section#main-process-overview article,
+article.collect,
+article.transform,
+article.particle-system {
+    margin: 0 auto;
+    z-index: 1;
+}
+
+section#main-design-goal article,
+section#main-process-overview article {
+    max-width: 768px;
+}
+
+article.collect,
+article.transform,
+article.particle-system {
+    max-width: 980px;
+}
+
+/* article-title */
+
+section#main-design-goal h3,
+section#main-process-overview h3,
+article.collect h3,
+article.transform h3,
+article.particle-system h3 {
+    font-size: 2.75em;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgb(255,255,255);
+    font-weight: 400;
+}
+
+section#main-design-goal h3::after,
+section#main-process-overview h3::after {
+    content: '';
+    position: relative;
+    display: block;
+    max-width: 55px;
+    height: 1px;
+    background: rgb(94, 94, 94);
+}
+
+section#main-design-goal h3::after {
+    margin: 50px auto;
+}
+
+section#main-process-overview h3::after {
+    margin: 50px 3px;
+}
+
+section#main-design-goal h3,
+article.particle-system h3 {
+    text-align: center;
+}
+
+section#main-process-overview h3,
+article.collect h3 {
+    text-align: left;
+}
+
+article.transform h3 {
+    text-align: right;
+}
+
+/* article-parapraph */
+
+section#main-design-goal p,
+section#main-process-overview p,
+article.collect p,
+article.transform p,
+article.particle-system p {
+    max-width: 768px;
+    color: rgb(212, 212, 212);
+    font-size: 1.85em;
+    line-height: 2em;
+    margin-bottom: 35px;
+    font-weight: 100;
+}
+
+section#main-design-goal p:nth-of-type(2) {
+    margin-bottom: 0 !important;
+}
+
+article.collect p {
+    margin: 50px 0;
+    padding-left: 15px;
+}
+
+article.transform p {
+    margin: 50px 0 50px auto;
+    padding-right: 30px;
+}
+
+article.particle-system p{
+    margin: 50px auto;
+}
+
+article.particle-system a{
+    color: rgb(160,160,160);
+    transition: .25s all ease;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+article.particle-system a:hover {
+    opacity: .9;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* article-figure */
+
+section#main-design-goal figure,
+section#main-process-overview figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+figure.media-collect,
+figure.media-transform,
+figure.media-particle {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+figure.media-collect {
+    max-width: 1080px;
+}
+
+/* article-img */
+
+section#main-design-goal img,
+section#main-process-overview img {
+    max-width: 1080px;
+    margin-bottom: 50px;
+}
+
+section#main-process-overview img.mobile {
+    display: none;
+}
+
+/* ----- */
+
+/* figure.media-collect */
+
+figure.media-collect picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure.media-collect img {
+    width: 47.5%;
+    height: 100%;
+    padding-bottom: 4%;
+}
+
+figure.media-collect figcaption {
+    max-width: 450px;
+    margin: auto 0;
+    line-height: 2em;
+}
+
+figure.media-collect figcaption i {
+    position: relative;
+    font-size: 1.5em;
+    animation: move-slow 1.5s infinite;
+    color: rgb(199, 199, 199);
+}
+
+figure.media-collect figcaption p {
+    padding-top: 25px;
+    color: rgb(199, 199, 199);
+}
+
+/* figure.media-particle & media-transform */
+
+figure.media-transform figure.video,
+figure.media-particle figure.video,
+figure.media-transform picture.grid,
+figure.media-particle picture.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+figure.media-transform figure.video,
+figure.media-particle figure.video {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+    width: 100%;
+}
+
+figure.media-transform figure.video video,
+figure.media-particle figure.video video {
+    width: 1080px;
+}
+
+figure.media-transform picture.grid,
+figure.media-particle picture.grid {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1080px;
+}
+
+figure.video figcaption {
+    line-height: 2em;
+    margin: 25px 0;
+}
+
+/* figure.media-transform */
+
+figure.media-transform picture.grid img {
+    width: 50%;
+    height: 100%;
+}
+
+/* project-main-footer */
+
+section#project-main-footer,
+figure.main-footer-image,
+figure.main-footer-image img {
+    width: 100%;
+}
+
+section#project-main-footer {
+    padding-bottom: 100px;
+}
+
+article.thanks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1080px;
+    margin: -100px auto 0;
+    padding: 50px 75px;
+    background: hsla(0, 0%, 0%, .25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+article.thanks .column {
+    width: 47.5%;
+}
+
+article.thanks h2 {
+    font-size: 1.75em;
+    line-height: 1.75em;
+    margin-bottom: 15px;
+    color: rgb(227, 227, 227);
+    text-shadow: 0px 0px 15px rgb(255,255,255);
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+article.thanks h2::after {
+    display: block;
+    position: relative;
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: rgb(187, 187, 187);
+    margin: 30px 0;
+}
+
+article.thanks .paragraph p,
+article.thanks .paragraph strong {
+    color: rgb(213, 213, 213);
+    font-weight: 300;
+}
+
+article.thanks .paragraph p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+article.thanks .paragraph strong {
+    font-size: 1em;
+}
+
+/* project-main-navigator */
+
+section#project-nav header.title::after {
+    background: rgba(177, 177, 177, .25);
+}
+
+section#project-nav header.title h3 {
+    color: rgba(255, 255, 255, .75);
+}
+
+section#project-nav header.title h3::after {
+    background: rgba(255, 255, 255, .75)
+}
+
+section#project-nav li a.prev {
+    background: url('../../img/index/index_5.png') center center;   
+}
+
+section#project-nav li a.next {
+    background: url('../../img/index/index_1.png') center center;
+}
+
+/* footer */
+
+aside.link li i{
+    color: rgb(228, 228, 228);
+    opacity: .75;
+}
+
+
+
+@media all and (max-width: 1229px) {
+
+    /* header#header */
+
+    header#header, main#container {
+        padding: 0 25px;
+    }
+
+    header.project-header img.lemuria-logo {
+       max-width: 350px;
+       padding-top: 75px;
+    }
+
+    header.project-header img.lemuria-banner {
+        width: 100%;
+        margin-top: -150px;
+    }
+
+    header.project-header .header-title {
+        margin-top: -125px;
+    }
+
+    header.project-header .header-title h2 {
+        font-size: 3em;
+    }
+
+    main.project-header-main h2 {
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+    /* article-figure */
+
+    section#main-design-goal figure,
+    section#main-process-overview figure,
+    figure.media-collect,
+    figure.media-transform {
+        padding: 35px 0;
+    }
+
+    /* article-img */
+
+    section#main-design-goal img,
+    section#main-process-overview img {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+
+    /* figure.media-collect */
+
+    figure.media-collect {
+        max-width: 95%;
+    }
+    
+    figure.media-collect img,
+    figure.media-collect figcaption {
+        width: 47.5%;
+        padding-bottom: 5%;
+    }
+    
+    figure.media-collect figcaption i {
+        font-size: 2em;
+        color: rgb(227, 227, 227);
+    }
+
+    /* figure.media-transform & media-particle */
+
+    figure.media-transform figure.video video,
+    figure.media-particle figure.video video {
+        width: 100%;
+    }
+
+    /* project-main-footer */
+
+    article.thanks {
+        margin: -75px auto 0;
+        padding: 35px;
+        max-width: 980px;
+    }
+
+    article.thanks .column {
+        width: 45%;
+    }
+
+}
+
+@media all and (max-width: 980px) {
+
+    /* header#header */
+
+    header.project-header img.lemuria-logo {
+       max-width: 300px;
+    }
+
+    header.project-header img.lemuria-banner {
+        margin-top: -100px;
+    }
+
+    header.project-header .header-title {
+        margin-top: -125px;
+    }
+
+    header.project-header .header-title h2 {
+        font-size: 2.5em;
+    }
+
+    .header-title h2::after {
+        margin-top: 40px;
+    }
+
+    main.project-header-main {
+        padding: 0 25px;
+    }
+
+    /* main-general */
+
+    section#main-design-goal,
+    section#process-overview,
+    section#main-design-process .collect-container,
+    section#main-design-process .transform-container,
+    section#main-design-process .particle-container {
+        padding-top: 125px;
+    }
+
+    /* main-article */
+
+    section#main-design-goal article,
+    section#main-process-overview article,
+    section#main-design-process article {
+        padding: 0 25px;
+    }
+
+    section#main-design-process figure,
+    section#main-design-process picture {
+        padding: 0;
+    }
+
+    /* main-title */
+
+    section#main-design-goal h3,
+    section#main-process-overview h3,
+    article.collect h3,
+    article.transform h3,
+    article.particle-system h3 {
+        font-size: 2.15em;
+    }
+
+    section#main-design-goal h3::after,
+    section#main-process-overview h3::after {
+        max-width: 35px;
+    }
+
+    section#main-design-goal h3::after {
+        margin: 45px auto;
+    }
+
+    section#main-process-overview h3::after {
+        margin: 45px 3px;
+    }
+
+    /* main-parapraph */
+
+    section#main-design-goal p,
+    section#main-process-overview p,
+    article.collect p,
+    article.transform p,
+    article.particle-system p {
+        font-size: 1.5em;
+    }
+
+    /* project-main-footer */
+
+    article.thanks {
+        max-width: 500px;
+        margin: -65px auto 0;
+        flex-direction: column;
+    }
+
+    article.thanks .column {
+        width: 100%;
+    }
+
+    article.thanks .column:last-child {
+        margin-top: 50px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+
+    /* general */
+
+    nav#nav .nav-btn li {
+        background: rgb(203, 203, 203) !important;
+    }
+
+    nav#nav .nav-btn.btnActive li {
+        background:white !important;
+    }
+
+    figcaption {
+        font-size: 1.15em;
+        margin-top: 20px;
+    }
+
+    /* header#header */
+
+    header#header {
+        margin-top: -61px;
+    }
+
+    header.project-header {
+        padding: 61px 0 !important;
+    }
+
+    header.project-header img.lemuria-logo {
+        max-width: 250px;
+    }
+
+    header.project-header img.lemuria-banner {
+       margin-top: -75px;
+    }
+
+    header.project-header .header-title {
+        margin-top: -75px;
+    }
+
+    header.project-header .header-title h2 {
+        font-size: 2em;
+        letter-spacing: 2.5px;
+    }
+
+    .header-title h2::after {
+        margin-top: 30px;
+    }
+
+    main.project-header-main h2 {
+        font-size: 1.5em;
+    }
+
+    /* main#container */
+
+    main.project-header-main figure {
+        margin-top: 35px;
+    }
+
+    main.project-header-main i {
+        font-size: 3em;
+    }
+
+    /* main-general */
+
+    section#main-design-goal,
+    section#main-process-overview,
+    section#main-design-process .collect-container,
+    section#main-design-process .transform-container,
+    section#main-design-process .particle-container {
+        padding: 75px 0 50px;
+    }
+
+    /* main-title */
+
+    section#main-design-goal h3,
+    section#main-process-overview h3,
+    article.collect h3,
+    article.transform h3,
+    article.particle-system h3 {
+        font-size: 2em;
+    }
+
+    section#main-design-goal h3::after,
+    section#main-process-overview h3::after {
+        max-width: 30px;
+    }
+
+    section#main-design-goal h3::after {
+        margin: 40px auto;
+    }
+
+    section#main-process-overview h3::after {
+        margin: 40px 2px;
+    }
+
+    /* main-paragraph */
+
+    section#main-design-goal p,
+    section#main-process-overview p,
+    article.collect p,
+    article.transform p,
+    article.particle-system p {
+        font-size: 1.35em;
+        padding-left: 0;
+    }
+
+    article.transform p {
+        padding: 0;
+    }
+
+    /* article-img */
+
+    section#main-design-goal img,
+    section#main-process-overview img {
+        width: 90%;
+    }
+
+    section#main-process-overview img.desktop {
+        display: none;
+    }
+
+    section#main-process-overview img.mobile {
+        display: flex;
+        max-width: 250px;
+    }
+
+    /* figure.media-collect */
+
+    figure.media-collect {
+        max-width: 90%;
+    }
+
+    figure.media-collect picture {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    figure.media-collect img {
+        width: 100%;
+    }
+
+    figure.media-collect figcaption {
+        width: 100%;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    /* figure.media-transform */
+
+    figure.media-transform picture.grid img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    figure.media-transform picture.grid img:first-child {
+        margin: 0;
+    }
+
+    aside.link i {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    /* project-main-footer */
+
+    article.thanks {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 35px 25px;
+    }
+
+    article.thanks .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    article.thanks .column:last-child {
+        margin-top: 35px;
+    }
+
+    article.thanks h2 {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    article.thanks h2::after {
+        margin: 25px auto;
+        width: 20px;
+    }
+
+    article.thanks .paragraph p, 
+    article.thanks .paragraph strong {
+        font-size: 1.25em;
+        line-height: 2em;
+    }
+
+    article.thanks .paragraph strong {
+        font-size: 1em;
+    }
+
+}
+
+@media all and (max-width: 580px) {
+
+    header.project-header img.lemuria-logo {
+        max-width: 200px;
+    }
+
+    header.project-header img.lemuria-banner {
+        margin-top: -60px;
+    }
+
+    header.project-header .header-title {
+        margin-top: -55px;
+    }
+
+    header.project-header .header-title h2 {
+        font-size: 1.85em;
+    }
+
+    .header-title h2::after {
+        margin-top: 25px;
+    }
+
+    section#main-process-overview img.mobile {
+        max-width: 65%;
+    }
+
+}

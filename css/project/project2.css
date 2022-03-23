@@ -1,0 +1,341 @@
+/* main */
+
+section.objective,
+section.design,
+article.process .container,
+article.sitemap-ia .container,
+article.content .container,
+article.component .container,
+article.visual .container {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+/* section----intro */
+
+section.intro figure.pic {
+    max-width: 1080px;
+    margin-top: -50px;
+}
+
+section.intro figure.pic video {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 55px 160px -85px rgba(161, 161, 161, 0.5);
+}
+
+
+/* section-----design */
+
+/* article.sitemap-ia */
+/* article.content */
+/* article.component */
+/* article.visual */
+
+article.sitemap-ia,
+article.content,
+article.component,
+article.visual {
+    padding: 75px 0;
+}
+
+article.sitemap-ia .container,
+article.content .container,
+article.component .container,
+article.visual .container {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+article.sitemap-ia .container header,
+article.content .container header,
+article.component .container header,
+article.visual .container header,
+article.sitemap-ia main.content,
+article.content main.content,
+article.component main.content,
+article.visual main.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+article.sitemap-ia header h2.title {
+    font-size: 2.5em;
+    padding-bottom: 15px;
+}
+
+article.sitemap-ia header h3.sub-title,
+article.content header h3.sub-title,
+article.component header h3.sub-title,
+article.visual header h3.sub-title {
+    font-size: 2em;
+}
+
+article.sitemap-ia section,
+article.content section,
+article.component section,
+article.visual section {
+    padding: 25px 0;
+}
+
+article.sitemap-ia main.content,
+article.content main.content,
+article.component main.content,
+article.visual main.content {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+article.sitemap-ia main.content .wrapper,
+article.content main.content .wrapper,
+article.component main.content .wrapper,
+article.visual main.content .wrapper {
+    max-width: 840px;
+    border-left: 1px solid rgb(255, 198, 219);
+    padding-left: 25px;
+    margin-left: 25px;
+}
+
+article.sitemap-ia main.content p,
+article.content main.content p,
+article.component main.content p,
+article.visual main.content p {
+    padding: 0 0 25px;
+}
+
+article.sitemap-ia main.content p:last-child,
+article.content main.content p:last-child,
+article.component main.content p:last-child,
+article.visual main.content p:last-child {
+    padding: 0;
+}
+
+article.sitemap-ia main.content span,
+article.content main.content span,
+article.component main.content span,
+article.visual main.content span {
+    font-weight: 500;
+}
+
+article.sitemap-ia figure,
+article.sitemap-ia figure picture,
+article.sitemap-ia figure picture a,
+article.content picture,
+article.component picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+article.sitemap-ia figure picture {
+    box-shadow: 0px 15px 75px -45px rgba(107, 107, 107, 0.5);
+}
+
+article.sitemap-ia figure picture a,
+article.content picture,
+article.component picture {
+    max-width: 1280px;
+}
+
+article.component picture.full-size {
+    max-width: 85vw;
+}
+
+article.content picture,
+article.component picture {
+    margin: 0 auto;
+}
+
+article.sitemap-ia figure figcaption {
+    padding: 25px 0;
+}
+
+article.sitemap-ia img.mobile,
+article.sitemap-ia figure figcaption span,
+article.content img.mobile,
+article.component img.mobile,
+article.visual img.mobile {
+    display: none;
+}
+
+article.sitemap-ia picture img,
+article.content picture img,
+article.component picture img,
+article.visual picture img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* project-main-navigator */
+
+section#project-nav li a.prev {
+    background: url('../../img/index/index_1.png') center center;   
+}
+
+section#project-nav li a.next {
+    background: url('../../img/index/index_3.png') center center;
+}
+
+
+
+@media all and (max-width: 1375px) {
+
+    /* section-----intro */
+
+    /* section-----design */
+
+        /* article.sitemap-ia */
+        /* article.content */
+        /* article.component */
+
+    section.intro figure.pic,
+    article.sitemap-ia .container header,
+    article.content .container header,
+    article.component .container header,
+    article.visual .container header,
+    article.sitemap-ia figure,
+    article.content picture,
+    article.component picture {
+        padding: 0 25px;
+    }
+
+    article.component picture.full-size {
+        padding: 0;
+    }
+
+    article.sitemap-ia main.content,
+    article.content main.content,
+    article.component main.content,
+    article.visual main.content {
+        padding: 50px 25px;
+    }
+
+    article.sitemap-ia main.content:last-child,
+    article.content main.content:last-child,
+    article.component main.content:last-child,
+    article.visual main.content:last-child {
+        padding: 50px 25px 0;
+    }
+    
+}
+
+@media all and (max-width: 768px) {
+
+    /* section-----intro */
+
+    section.intro figure.pic {
+        margin-top: -25px;
+    }
+
+    section.intro figure.pic video {
+        box-shadow: 0px -5px 160px -55px rgba(114, 114, 114, 0.75);
+        border-radius: 15px;
+    }
+
+    /* section-----design */
+
+        /* article.sitemap-ia */
+        /* article.content */
+        /* article.component */
+
+    article.sitemap-ia header h2.title {
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
+    
+    article.sitemap-ia header h3.sub-title,
+    article.content header h3.sub-title,
+    article.component header h3.sub-title,
+    article.visual header h3.sub-title {
+        font-size: 1.75em;
+    }
+
+    article.sitemap-ia main.content,
+    article.content main.content,
+    article.component main.content,
+    article.visual main.content {
+        padding: 30px 25px;
+    }
+
+    article.sitemap-ia main.content .wrapper,
+    article.content main.content .wrapper,
+    article.component main.content .wrapper,
+    article.visual main.content .wrapper {
+        margin-left: 15px;
+    }
+
+    article.sitemap-ia main.content:last-child,
+    article.content main.content:last-child,
+    article.component main.content:last-child,
+    article.visual main.content:last-child {
+        padding: 40px 25px 0;
+    }
+
+    article.sitemap-ia main.content p,
+    article.content main.content p,
+    article.component main.content p,
+    article.visual main.content p {
+        font-size: 1.15em;
+        line-height: 2.25em;
+    }
+
+    article.sitemap-ia figure {
+        padding: 0 25px;
+    }
+    
+    article.sitemap-ia a.desktop,
+    article.content img.desktop,
+    article.component img.desktop,
+    article.visual img.desktop {
+        display: none;
+    }
+
+    article.sitemap-ia img.mobile,
+    article.content img.mobile,
+    article.component img.mobile,
+    article.visual img.mobile {
+        display: block;
+    }
+
+    article.sitemap-ia figure figcaption span {
+        display: inline;
+        font-weight: 400;
+    }
+
+    article.sitemap-ia figure picture {
+        width: 100%;
+        max-height: 70vh;
+        align-items: flex-start;
+        overflow: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE & Edge */
+        border-radius: 20px;
+    }
+
+    article.sitemap-ia figure picture::-webkit-scrollbar {
+        display: none;
+    }
+
+    article.sitemap-ia picture img {
+        width: 350vw;
+        padding: 0;
+    }
+
+    article.component picture.full-size {
+        max-width: 100vw;
+    }
+
+    article.component picture.full-size figcaption {
+        padding: 0 25px;
+    }
+
+}
