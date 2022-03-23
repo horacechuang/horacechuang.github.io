@@ -748,7 +748,7 @@ section.expertise ul.container p {
     /* header */
 
     header#header {
-        padding: 25px 25px 0;
+        padding: 50px 25px 0;
     }
 
     /* parapraph text */
@@ -756,7 +756,6 @@ section.expertise ul.container p {
     header#header .container .paragraph {
         width: 75%;
         padding-top: 30px;
-        justify-content: center;
     }
 
     header#header .container .paragraph h1 {
@@ -774,16 +773,13 @@ section.expertise ul.container p {
 
     /* img */
 
-    header#header aside.img {
-        margin: 10px 0 0 0;
-    }
-
     header#header aside.img img.profile {
         max-width: 200px;
+        margin-top: 125px;
     }
 
     header#header aside.img img.pattern {
-        width: 90%;
+        max-width: 400px;
         margin-top: -25px;
     }
 
@@ -793,7 +789,7 @@ section.expertise ul.container p {
 
     main#container {
         width: 100%;
-        margin: -50px auto 0;
+        margin: -175px auto 0;
     }
 
     section#project header.title {
@@ -990,7 +986,7 @@ section.expertise ul.container p {
     /* parapraph text */
 
     header#header .container .paragraph {
-        padding: 50px 25px 0;
+        padding: 25px 25px 0;
         width: 100%;
     }
 
@@ -1203,7 +1199,7 @@ section.expertise ul.container p {
     /* parapraph text */
 
     header#header .container .paragraph {
-        padding: 25px 15px 0;
+        padding: 25px 0 0;
     }
 
     /* container */
