@@ -235,11 +235,21 @@ section.preface {
     padding: 50px 0;
 }
 
+section.preface::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../../img/project1-2/before_pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 750px 750px;
+    background-position: top right;
+}
+
 section.preface ul.container {
     display: flex;
     max-width: 767px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 25px 0;
