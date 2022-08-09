@@ -19,7 +19,6 @@ header#header {
     background: url('../../img/project4/bg-gradient-top.png') center top;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: -85px;
 }
 
 header#header .header-container {
@@ -46,7 +45,7 @@ picture.bubble-top svg.bubble-1 {
     transform: rotate(5deg);
     width: 760px;
     z-index: 1;
-    animation: 5s moving-1 linear infinite;
+    animation: 5s moving-1 ease infinite;
 }
 
 @keyframes moving-1 {
@@ -76,7 +75,7 @@ picture.bubble-top svg.bubble-2 {
     transform: rotate(-20deg);
     width: 600px;
     z-index: 2;
-    animation: 6.5s moving-2 linear infinite;
+    animation: 6.5s moving-2 ease infinite;
 }
 
 @keyframes moving-2 {
@@ -264,7 +263,7 @@ section#preface .row {
 }
 
 section#preface .row h3 {
-    font-size: 1.65em;
+    font-size: 1.45em;
     font-weight: 400;
     margin-bottom: .75em;
     line-height: 1em;
@@ -275,9 +274,9 @@ section#preface .row h3 {
 }
 
 section#preface .row p {
-    font-size: 1.45em;
+    font-size: 1.25em;
     font-weight: 300;
-    line-height: 1.75em;
+    line-height: 2em;
 }
 
 section#overview,
@@ -314,7 +313,7 @@ section#exhibit h2.title {
     display: flex;
     justify-content: center;
     position: relative;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 3em;
     font-weight: 400;
     letter-spacing: .5px;
@@ -370,7 +369,7 @@ section#exhibit article.exhibition p a:hover {
 }
 
 section#overview main.container h2 {
-    font-size: 2.5em;
+    font-size: 1.85em;
     line-height: 3em;
     font-weight: 400;
     text-transform: uppercase;
@@ -381,7 +380,7 @@ section#overview main.container h2 {
 }
 
 section#overview main.container p {
-    font-size: 1.65em;
+    font-size: 1.25em;
     font-weight: 300;
     line-height: 2.15em;
     margin-bottom: 50px;
@@ -428,7 +427,7 @@ article.color .paragraph {
 }
 
 .paragraph h3 {
-    font-size: 2.25em;
+    font-size: 1.85em;
     line-height: 2.35em;
     margin-bottom: 25px;
     background: linear-gradient(220deg,rgb(190, 34, 99), rgb(250, 148, 191));
@@ -440,7 +439,7 @@ article.color .paragraph {
 }
 
 .paragraph p {
-    font-size: 1.65em;
+    font-size: 1.25em;
     font-weight: 300;
     line-height: 2.1em;
     letter-spacing: .5px;
@@ -523,7 +522,7 @@ article.website .link {
 
 article.website .link a {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.45em;
     font-weight: 400;
     letter-spacing: .5px;
     color: rgb(255, 255, 255);
@@ -680,13 +679,13 @@ section#project-nav li a.next {
     section#web h2.title,
     section#exhibit h2.title,
     .paragraph h3 {
-        font-size: 2.15em;
+        font-size: 1.85em;
         line-height: 2.5em;
     }
     
     section#overview main.container p,
     .paragraph p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 2em;
     }
     
@@ -861,11 +860,11 @@ section#project-nav li a.next {
         border-left: none;
         margin-left: 0px;
         padding-left: 0px;
-        font-size: 1.45em;
+        font-size: 1.3em;
     }
 
     section#preface .row p {
-        font-size: 1.25em;
+        font-size: 1.15em;
     }
 
     section#overview {
@@ -917,13 +916,13 @@ section#project-nav li a.next {
     section#web h2.title,
     section#exhibit h2.title,
     .paragraph h3 {
-        font-size: 1.85em;
+        font-size: 1.65em;
         line-height: 2.5em;
     }
     
     section#overview main.container p,
     .paragraph p {
-        font-size: 1.35em;
+        font-size: 1.15em;
     }
 
     .multi-line p{
@@ -1045,10 +1044,6 @@ section#project-nav li a.next {
         font-size: 1.35em;
     }
 
-    section#preface .row p {
-        font-size: 1.15em;
-    }
-
     section#overview {
         margin: 25px auto;
     }
@@ -1072,7 +1067,7 @@ section#project-nav li a.next {
     section#web h2.title,
     section#exhibit h2.title,
     .paragraph h3 {
-        font-size: 1.75em;
+        font-size: 1.6em;
     }
 
     article.ideation .paragraph,

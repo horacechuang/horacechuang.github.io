@@ -1,21 +1,17 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    //fixed-nav
-
-    if (scroll >= $("section.fixnavStart").offset().top) {
-        $("ul.sub-menu-container").addClass("fixed-nav");
+    if (scroll >= $("section.stickyNavStart").offset().top) {
+        $("section#sub-navbar").addClass("appear");
     } else {
-        $("ul.sub-menu-container").removeClass("fixed-nav");
+        $("section#sub-navbar").removeClass("appear");
     }
 
-    if (scroll >= $("figure#fixnavEnd").offset().top) {
-        $("ul.sub-menu-container").removeClass("fixed-nav"); 
-        $("nav#sub-menu").addClass("fixed-bottom-nav");
-        $("ul.sub-menu-container").addClass("sticky-nav"); 
+    if (scroll >= $("figure.stickyNavEnd").offset().top) {
+        $("section#sub-navbar").addClass("disappear");
+        $("section#sub-navbar").removeClass("appear");
     } else {
-        $("nav#sub-menu").removeClass("fixed-bottom-nav");
-        $("ul.sub-menu-container").removeClass("sticky-nav"); 
+        $("section#sub-navbar").removeClass("disappear");
     }
 
 });

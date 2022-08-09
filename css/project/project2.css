@@ -35,6 +35,7 @@ section.intro figure.pic video {
 /* article.component */
 /* article.visual */
 
+
 article.sitemap-ia,
 article.content,
 article.component,
@@ -67,15 +68,12 @@ article.visual main.content {
 }
 
 article.sitemap-ia header h2.title {
-    font-size: 2.5em;
     padding-bottom: 15px;
 }
 
-article.sitemap-ia header h3.sub-title,
-article.content header h3.sub-title,
-article.component header h3.sub-title,
-article.visual header h3.sub-title {
-    font-size: 2em;
+article h3 {
+    font-family: 'roc-grotesk-wide', sans-serif;
+    font-size: 1.65em;
 }
 
 article.sitemap-ia section,
@@ -97,7 +95,7 @@ article.sitemap-ia main.content .wrapper,
 article.content main.content .wrapper,
 article.component main.content .wrapper,
 article.visual main.content .wrapper {
-    max-width: 840px;
+    max-width: 767px;
     border-left: 1px solid rgb(255, 198, 219);
     padding-left: 25px;
     margin-left: 25px;
@@ -142,11 +140,11 @@ article.sitemap-ia figure picture {
 article.sitemap-ia figure picture a,
 article.content picture,
 article.component picture {
-    max-width: 980px;
+    max-width: 1280px;
 }
 
-article.component picture.full-size {
-    max-width: 85vw;
+article picture.m-size {
+    max-width: 980px;
 }
 
 article.content picture,
@@ -203,13 +201,8 @@ section#project-nav li a.next {
     article.component .container header,
     article.visual .container header,
     article.sitemap-ia figure,
-    article.content picture,
-    article.component picture {
+    article.content picture{
         padding: 0 25px;
-    }
-
-    article.component picture.full-size {
-        padding: 0;
     }
 
     article.sitemap-ia main.content,
@@ -248,7 +241,6 @@ section#project-nav li a.next {
         /* article.component */
 
     article.sitemap-ia header h2.title {
-        font-size: 2em;
         padding-bottom: 10px;
     }
     

@@ -9,7 +9,7 @@
     <!-- Load CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Noto+Sans+TC:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/project/project_bonnie.css">
@@ -38,14 +38,14 @@
 <body class>
     <div id="wrapper">
         <nav id="nav">
-            <div class="nav-container">
+            <div class="nav-container" data-aos="fade-down" data-aos-duration="500">
                 <div class="nav-column">
-                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="logo" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <a href="../">
                             <img src="../img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="nav-btn" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="nav-btn" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <ul>
                             <li></li>
                             <li></li>
@@ -57,7 +57,7 @@
                     <div class="line">
                         <div class="container"></div>
                     </div>
-                    <ul class="container" data-aos="fade-left" data-aos-duration="1500">
+                    <ul class="container" data-aos="fade-down" data-aos-duration="1500">
                         <li><a data-scroll href="../#project">作品 | Project</a></li>
                         <li><a data-scroll href="../#about">關於 | About</a></li>
                         <li><a href="https://bit.ly/horace-resume" target="_blank">履歷 | Résumé</a></li>
@@ -66,9 +66,9 @@
                 </div>
             </div>
         </nav>
-        <div id="line">
+        <!-- <div id="line">
             <div class="container"></div>
-        </div>
+        </div> -->
         <header id="header">
             <div class="container" data-aos="fade-up" data-aos-duration="2000">
                 <div class="title">
@@ -219,7 +219,7 @@
             </div>
         </header>
         <main>
-            <div class="container">
+            <div class="main-container">
                 <section class="intro">
                     <article class="container">
                         <figure class="pic" data-aos="fade-down" data-aos-delay="250">
@@ -239,26 +239,34 @@
                     <ul class="container">
                         <li>
                             <h4>Role 角色</h4>
-                            <ul class="item">
-                                <li>UI/UX Designer</li>
-                                <li>Visual Designer</li>
-                            </ul>
+                            <div class="item">
+                                <p>UI/UX Designer</p>
+                                <p>Visual Designer</p>
+                            </div>
                         </li>
                         <li>
                             <h4>Scope 範疇</h4>
-                            <ul class="item">
-                                <li>Web Design</li>
-                                <li>Visual Design</li>
-                            </ul>
+                            <div class="item">
+                                <p>Web Design</p>
+                                <p>Visual Design</p>
+                            </div>
                         </li>
                         <li>
                             <h4>Duration 期程</h4>
-                            <p>2019/8 ~ 2021</p>
+                            <div class="item">
+                                <p>2019/8 ~ 2021/8</p>
+                            </div>
                         </li>
                     </ul>   
                 </section>
-                <section class="before">
+                <section class="challenge">
                     <div class="wrapper" data-aos="fade-up" data-aos-delay="500">
+                        <div class="overflow-area">
+                            <picture class="overflow-deco">
+                                <img src="../img/project1-2/before_dot-left.svg" alt="dot-left" class="left">
+                                <img src="../img/project1-2/before_dot-right.svg" alt="dot-right" class="right">
+                            </picture>
+                        </div>
                         <div class="container">
                             <aside class="column img" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
                                 <picture class="before-img">
@@ -268,7 +276,7 @@
                             </aside>
                             <aside class="column content">
                                 <header>
-                                    <h2 class="overlay-title" data-aos="fade-left" data-aos-delay="500">Before</h2>
+                                    <h2 class="overlay-title" data-aos="fade-left" data-aos-delay="500">Challenge</h2>
                                 </header>
                                 <main>
                                     <p data-aos="fade-left" data-aos-delay="600">
@@ -278,35 +286,43 @@
                                         但初期相對缺乏比較完整的功能與產品特色介紹，而是希望感興趣的用戶直接點選上方的 CTA 進行試用。隨著產品的第二版改版與功能上線，以及為了更符合產品的品牌調性與走向，官網必須要有更大幅度的改版行動。
                                     </p>
                                 </main>
+                                
                             </aside>
                         </div>
                     </div>
                 </section>
                 <section class="insight">
                     <div class="container">
-                        <header data-aos="fade-down" data-aos-delay="500">
+                        <aside data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                             <h2 class="overlay-title">Insight</h2>
-                        </header>
+                        </aside>
                         <main>
-                            <ol data-aos="fade-up" data-aos-delay="550">
-                                <li>
-                                    <h3 class="sub-title" data-aos="fade-left" data-aos-delay="500">資訊過於簡略，無法有效傳達</h3>
-                                    <div class="content" data-aos="fade-right" data-aos-delay="500">
-                                        <p>原先的網頁內容與資訊，因一頁式的網站設計限制之下篇幅不能太長，只介紹了關於聊天機器人的優點與過往的些許客戶案例，官網中有關於產品的敘述與功能並無太多著墨，因此就無法將產品的長處有效地向受眾傳達。</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="sub-title" data-aos="fade-right" data-aos-delay="500">產品迭代後，官網亟需更新</h3>
-                                    <div class="content" data-aos="fade-left" data-aos-delay="500">
-                                        <p>隨著產品平台第二版的即將上線，官方網站上所有關於產品的相關截圖都須全面換新。因原本的平台的介面設計與色彩配置和品牌現今的調性十分不同，因此官網的視覺呈現上也須重新設計。</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="sub-title" data-aos="fade-left" data-aos-delay="500">SEO 未優化，搜尋排名有待改進</h3>
-                                    <div class="content" data-aos="fade-right" data-aos-delay="500">
-                                        <p>早期注重團隊於線下自行開發客戶，因此在線上的推廣上較無著墨，導致在 Google 搜尋中，當使用者輸入有關聊天機器人、Chatbot的關鍵字，搜尋結果的排名往往不在前幾個或第一頁上。</p>
-                                    </div>
-                                </li>
+                            <ol>
+                                <div class="animate" data-aos="fade-left" data-aos-delay="500">
+                                    <li class="left">
+                                        <h3 class="sub-title">資訊過於簡略，無法有效傳達</h3>
+                                        <div class="content">
+                                            <p>原先的網頁內容與資訊，因一頁式的網站設計限制之下篇幅不能太長，只介紹了關於聊天機器人的優點與過往的些許客戶案例，官網中有關於產品的敘述與功能並無太多著墨，因此就無法將產品的長處有效地向受眾傳達。</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="animate" data-aos="fade-right" data-aos-delay="600">
+                                    <li class="right">
+                                        <h3 class="sub-title">產品迭代後，官網亟需更新</h3>
+                                        <div class="content">
+                                            <p>隨著產品平台第二版的即將上線，官方網站上所有關於產品的相關截圖都需全面換新。因原本的平台的介面設計與色彩配置和品牌現今的調性截然不同，因此在視覺呈現上勢必得重新設計。</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="animate" data-aos="fade-left" data-aos-delay="700">
+                                    <li class="left">
+                                        <h3 class="sub-title">SEO 未優化，搜尋排名有待改進</h3>
+                                        <div class="content">
+                                            <p>早期注重團隊於線下自行開發客戶，因此在線上的推廣上較無著墨，導致在 Google 搜尋中，當使用者輸入有關聊天機器人、Chatbot的關鍵字，搜尋結果的排名往往不在前幾個或第一頁上。</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                
                             </ol>
                         </main>
                     </div>
@@ -370,8 +386,8 @@
                                     </div>
                                 </main>
                                 <picture>
-                                    <img src="../img/project1-2/process_2_desktop.svg" class="desktop" alt="process-2" data-aos="fade-down" data-aos-delay="500">
-                                    <img src="../img/project1-2/process_2_mobile.svg" class="mobile" alt="process-2" data-aos="fade-down" data-aos-delay="500">
+                                    <img src="../img/project1-2/process_2_desktop.png" class="desktop" alt="process-2" data-aos="fade-down" data-aos-delay="500">
+                                    <img src="../img/project1-2/process_2_mobile.png" class="mobile" alt="process-2" data-aos="fade-down" data-aos-delay="500">
                                 </picture>
                             </section>
                         </div>
@@ -380,7 +396,7 @@
                         <div class="container">
                             <header>
                                 <h2 class="title overlay-title" data-aos="fade-right" data-aos-delay="500">Design</h2>
-                                <h3 class="sub-title" data-aos="fade-right" data-aos-delay="500">Plan & Sitemap</h3>
+                                <h3 class="sub-title" data-aos="fade-right" data-aos-delay="500">IA & Sitemap</h3>
                             </header>
                             <section class="content-1">
                                 <main class="content">
@@ -434,7 +450,7 @@
                                         <p data-aos="fade-left" data-aos-delay="550">我們將客戶最常詢問的幾個功能，包括「多樣化的行銷套件」、「多渠道訊息中心」與「聊天機器人的設計平台」放在官網首頁最醒目的地方，下方設計 CTA (Call to Action) 按鈕帶到功能介紹頁面，而針對平台每一個功能，「功能介紹」頁面也有詳盡的文字說明。</p>
                                     </div>
                                 </main>
-                                <picture data-aos="fade-down" data-aos-delay="500">
+                                <picture class="m-size" data-aos="fade-down" data-aos-delay="500">
                                     <img src="../img/project1-2/content-2.png" class="desktop" alt="content-2">
                                     <img src="../img/project1-2/content-2_mobile.png" class="mobile" alt="content-2">
                                     <figcaption>▲ 設計吸引潛在用戶的文案內容，試圖增加試用產品的點擊次數</figcaption>
@@ -459,7 +475,7 @@
                                         <p data-aos="fade-left" data-aos-delay="550">於是我將網站分為三個<span>大區塊 </span>，分為：Header, Main Area, CTA & Footer，將區塊裡的元件加以模組化。這樣一方面讓工程團隊在建構網站時，無需在每個頁面裡重複撰寫一次程式碼，只需套用相同的 Code 和 CSS 即可。另以使用者的角度來看，版面區塊具有統一、相似性，也能減少觀者在每個頁面切換瀏覽時的障礙，適當地引導視覺動線。</p>
                                     </div>
                                 </main>
-                                <picture data-aos="fade-down" data-aos-delay="500">
+                                <picture class="m-size" data-aos="fade-down" data-aos-delay="500">
                                     <img src="../img/project1-2/component-1.svg" class="desktop" alt="component-1">
                                     <img src="../img/project1-2/component-1_mobile.svg" class="mobile" alt="component-1">
                                     <figcaption>▲ 主要分成三大區塊，資訊依次序階層設計，最下方的 CTA 區塊引導觀者試用</figcaption>
@@ -471,7 +487,7 @@
                                         <p>將網頁切割區塊後，為了力求網站設計整體一致，並維持高辨識度的風格調性，於是依照不同的區塊但相同的元素，<span>制定簡單的 Design Guideline</span>，從基本的字級大小、按鈕配置、圖標規格的制定到色彩的運用。基本上務求在官網中各大區塊的元素能協調一致，視覺上不會有突兀的現象發生。</p>
                                     </div>
                                 </main>
-                                <picture class="full-size" data-aos="fade-down" data-aos-delay="500">
+                                <picture data-aos="fade-down" data-aos-delay="500">
                                     <img src="../img/project1-2/component-2.png" class="desktop" alt="component-2">
                                     <img src="../img/project1-2/component-2_mobile.png" class="mobile" alt="component-2">
                                     <figcaption>▲ 制定網頁的各種元件規格，力求維持一致、整齊的樣式</figcaption>
@@ -484,7 +500,7 @@
                                         <p data-aos="fade-left" data-aos-delay="550">在首頁中，不管是產品的核心功能小動畫。以及下方我們精選的客戶案例區塊。或是在價格方案頁中，提供給用戶試算的計算機小工具，以及即使在小螢幕裝置都能順暢瀏覽的，以「行動優先」為基底的互動式價格表格，與功能介紹頁裡以圖卡方式排版呈現，都是為了讓潛在用戶們有著耳目一新的印象，進而產生試用平台的動機，促進提升產品的實質訂閱率與轉換率。</p>
                                     </div>
                                 </main>
-                                <picture class="full-size" data-aos="fade-down" data-aos-delay="500">
+                                <picture data-aos="fade-down" data-aos-delay="500">
                                     <img src="../img/project1-2/component-3.png" class="desktop" alt="component-3">
                                     <img src="../img/project1-2/component-3_mobile.png" class="mobile" alt="component-3">
                                     <figcaption>▲ 針對不同的資訊呈現而設計出來的小元件，讓使用者更快地了解產品全貌</figcaption>
@@ -586,25 +602,34 @@
         </div>
     </section>
     <script>
-       AOS.init({
-            offset: 200,
-            duration: 1000,
-            easing: 'ease',
-            once: true,
-            mirror: true
-        });
+        AOS.init({
+             offset: 140,
+             duration: 800,
+             easing: 'ease',
+             once: true,
+             mirror: true
+         });
+ 
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-2M9P28SF1T');
+ 
+         var scroll = new SmoothScroll('a[href*="#"]', {
+             speed: 500,
+             speedAsDuration: true
+         });
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2M9P28SF1T');
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-	        speedAsDuration: true
-        });
-    </script>
+         (function(d) {
+            var config = {
+            kitId: 'cge0kgt',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+     </script>
 </body>
 </html>

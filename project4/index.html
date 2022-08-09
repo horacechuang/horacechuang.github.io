@@ -9,7 +9,7 @@
     <!-- Load CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Noto+Sans+TC:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/project/project4.css">
@@ -37,14 +37,14 @@
 <body class>
     <div id="wrapper">
         <nav id="nav">
-            <div class="nav-container">
+            <div class="nav-container" data-aos="fade-down" data-aos-duration="500">
                 <div class="nav-column">
-                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="logo" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <a href="../">
                             <img src="../img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="nav-btn" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="nav-btn" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <ul>
                             <li></li>
                             <li></li>
@@ -56,7 +56,7 @@
                     <div class="line">
                         <div class="container"></div>
                     </div>
-                    <ul class="container" data-aos="fade-left" data-aos-duration="1500">
+                    <ul class="container" data-aos="fade-down" data-aos-duration="1500">
                         <li><a data-scroll href="../#project">作品 | Project</a></li>
                         <li><a data-scroll href="../#about">關於 | About</a></li>
                         <li><a href="https://bit.ly/horace-resume" target="_blank">履歷 | Résumé</a></li>
@@ -65,9 +65,9 @@
                 </div>
             </div>
         </nav>
-        <div id="line">
+        <!-- <div id="line">
             <div class="container"></div>
-        </div>
+        </div> -->
         <header id="header">
             <div class="header-container">
                 <picture class="bubble bubble-top">
@@ -81,7 +81,6 @@
                             <g id="sec1_index" transform="translate(-92.000000, -280.000000)">
                                 <g transform="translate(-786.000000, -390.000000)">
                                     <g id="metaball_tr1" transform="translate(877.000000, 669.000000)">
-                                        
                                             <linearGradient id="metaball_bg_1_" gradientUnits="userSpaceOnUse" x1="-458.515" y1="786.8622" x2="-457.5562" y2="786.9274" gradientTransform="matrix(996.7726 52.2386 25.768 -491.6833 436783.9375 411082.5)">
                                             <stop  offset="0" style="stop-color:#E3A2C6"/>
                                             <stop  offset="0.14" style="stop-color:#EEC3D9;stop-opacity:0.88"/>
@@ -419,26 +418,35 @@
             </p>
         </div>
     </section>
-    <script>
-       AOS.init({
-            offset: 100,
-            duration: 1000,
-            easing: 'ease',
-            once: true,
-            mirror: false
-        });
+   <script>
+        AOS.init({
+             offset: 140,
+             duration: 800,
+             easing: 'ease',
+             once: true,
+             mirror: true
+         });
+ 
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-2M9P28SF1T');
+ 
+         var scroll = new SmoothScroll('a[href*="#"]', {
+             speed: 500,
+             speedAsDuration: true
+         });
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2M9P28SF1T');
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-	        speedAsDuration: true
-        });
-    </script>
+         (function(d) {
+            var config = {
+            kitId: 'cge0kgt',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+     </script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <!-- Load CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Noto+Sans+TC:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
@@ -35,14 +35,14 @@
 <body class>
     <div id="wrapper">
         <nav id="nav">
-            <div class="nav-container">
+            <div class="nav-container" data-aos="fade-down" data-aos-duration="500">
                 <div class="nav-column">
-                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="logo" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <a href="">
                             <img src="img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="nav-btn" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="nav-btn" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <ul>
                             <li></li>
                             <li></li>
@@ -54,7 +54,7 @@
                     <div class="line">
                         <div class="container"></div>
                     </div>
-                    <ul class="container" data-aos="fade-left" data-aos-duration="1500">
+                    <ul class="container" data-aos="fade-down" data-aos-duration="1500">
                         <li><a data-scroll href="#project">作品 | Project</a></li>
                         <li><a data-scroll href="#about">關於 | About</a></li>
                         <li><a href="https://bit.ly/horace-resume" target="_blank">履歷 | Résumé</a></li>
@@ -63,9 +63,9 @@
                 </div>
             </div>
         </nav>
-        <div id="line">
+        <!-- <div id="line">
             <div class="container"></div>
-        </div>
+        </div> -->
         <header id="header">
             <div class="container">
                 <aside class="paragraph">
@@ -76,8 +76,69 @@
                     </p>
                 </aside>
                 <aside class="img">
-                    <img src="img/index/index_profile-min.png" alt="" class="profile" data-aos="fade-down-left" data-aos-duration="2000">
-                    <img src="img/index/index_pattern.svg" alt="" class="pattern" data-aos="fade-left" data-aos-duration="5000">
+                    <picture class="window">
+                        <img src="img/index/vision/bar.png" class="bar" data-aos="fade-left">
+                        <section class="window-container" data-aos="fade-left">
+                            <div class="inner-decorate">
+                                <div class="parallax-img" data-speed="3">
+                                    <img src="img/index/vision/ball-orange.png" alt="ball-orange" class="ball ball-orange" data-aos="fade-down-right" data-aos-delay="500">
+                                </div>
+                                <div class="parallax-img" data-speed="-5">
+                                    <img src="img/index/vision/ball-grass.png" alt="ball-grass" class="ball ball-grass" data-aos="fade-up-left" data-aos-delay="750">
+                                </div>
+                                <div class="parallax-img" data-speed="-1.5">
+                                    <img src="img/index/vision/pattern-blue.svg" alt="pattern-blue" class="inner-pattern pattern-blue" data-aos="zoom-out" data-aos-delay="1300">
+                                </div>
+                                <div class="parallax-img" data-speed="2.3">
+                                    <img src="img/index/vision/pattern-green.svg" alt="pattern-green" class="inner-pattern pattern-green" data-aos="zoom-out" data-aos-delay="1500">
+                                </div>
+                                <div class="parallax-img" data-speed="1.8">
+                                    <img src="img/index/vision/ball-blue-dash.svg" alt="ball-blue-dash" class="dash dash-blue-ball" data-aos="fade-down-left" data-aos-delay="1000">
+                                </div>
+                                <div class="parallax-img" data-speed="2">
+                                    <img src="img/index/vision/ball-red-dash.svg" alt="ball-red-dash" class="dash dash-red-ball" data-aos="fade-up-right" data-aos-delay="1000">
+                                </div>
+                                <img src="img/index/vision/wording.png" alt="wording" class="wording">
+                            </div>
+                            <div class="content">
+                                <section class="input parallax-img" data-speed="0.5">
+                                    <img src="img/index/vision/icon-search.svg" alt="icon-search" class="icon-search">
+                                    <img src="img/index/vision/input-wording.png" alt="input-wording" class="input-wording">
+                                    <div class="type-line"></div>
+                                </section>
+                                <section class="dropdown parallax-img" data-speed="-2.5">
+                                    <img src="img/index/vision/dropdown-container.png" alt="dropdown-container" class="dropdown-container">
+                                </section>
+                            </div>
+                        </section>
+                        <section class="outer-decorate">
+                            <div class="parallax-img" data-speed="-8">
+                                <img src="img/index/vision/ball-green.png" alt="ball-green" class="outer-ball ball-green" data-aos="fade-down-right" data-aos-delay="1000">
+                            </div>
+                            <div class="parallax-img" data-speed="1.5">
+                                <img src="img/index/vision/ball-blue.png" alt="ball-blue" class="outer-ball ball-blue" data-aos="fade-down-left" data-aos-delay="1000">
+                            </div>
+                            <div class="parallax-img" data-speed="2">
+                                <img src="img/index/vision/ball-red.png" alt="ball-red" class="outer-ball ball-red" data-aos="fade-up-right" data-aos-delay="1000">
+                            </div>
+                            <div class="parallax-img" data-speed="-3.5">
+                                <img src="img/index/vision/pattern-purple.svg" alt="pattern-purple" class="outer-pattern pattern-purple" data-aos="zoom-out" data-aos-delay="1700">
+                            </div>
+                            <div class="parallax-img" data-speed="4">
+                                <img src="img/index/vision/pattern-yellow.svg" alt="pattern-yellow" class="outer-pattern pattern-yellow" data-aos="zoom-out" data-aos-delay="1900" data-aos-easing="ease-in-out-back">
+                            </div>
+                        </section>
+                        <section class="paper-plane">
+                            <div class="parallax-img parallax-outer-img" data-speed="-4.5">
+                                <img src="img/index/vision/paper-plane-green.png" alt="paper-plane-green" class="plane plane-green" data-aos="fade-up-right" data-aos-duration="3000" data-aos-easing="ease-in-out-back">
+                            </div>
+                            <div class="parallax-img parallax-outer-img" data-speed="3.5">
+                                <img src="img/index/vision/paper-plane-yellow.png" alt="paper-plane-yellow" class="plane plane-yellow" data-aos="fade-up-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-easing="ease-in-out-back">
+                            </div>
+                        </section>
+                    </picture>
+                    <!-- only tablet & mobile -->
+                    <img src="img/index/vision/illustrate.png" alt="illustrate" class="mobile" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
                 </aside>
             </div>
         </header>
@@ -87,10 +148,14 @@
                     <h2>Project｜作品</h2>
                 </header>
                 <main class="container">
+                    <aside class="grid-decorate">
+                        <img src="img/index/index_pattern.svg" class="pattern-bg tl">
+                        <img src="img/index/index_pattern.svg" class="pattern-bg br">
+                    </aside>
                     <aside class="grid">
                         <ul class="grid-container">
                             <a href="project1" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-right" data-aos-delay="150">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="500">
                                     <picture class="project-img">
                                         <img src="img/index/index_1.png" alt="BotBonnie">
                                     </picture>
@@ -100,11 +165,10 @@
                                     </div>
                                     <p>BotBonnie 提供一站式創建 LINE & Facebook Messenger 聊天機器人服務，透過對話式行銷讓業績與滿意度達標。</p>
                                     <p class="eng-grid-p">BotBonnie is a user-friendly online SaaS platform for designing its own Chatbot service. It helps client to reach the target on satisfaction and sales.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
                                 </li>
                             </a>
                             <a href="project2" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-left" data-aos-delay="250">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="1000">
                                     <picture class="project-img">
                                         <img src="img/index/index_2.png" alt="BotBonnie-website">
                                     </picture>
@@ -114,11 +178,10 @@
                                     </div>
                                     <p>原有的官方網站無法傳達產品內容與價值，已不敷使用，因此將新版網站的組織架構與內容完善，視覺重新設計。</p>
                                     <p class="eng-grid-p">Since the first version of landing page can't express the branding & product value. So I redesign the website and strengthen the content about the product.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
                                     </li>
                             </a>
                             <a href="project3" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-right" data-aos-delay="350">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="500">
                                     <picture class="project-img">
                                         <img src="img/index/index_3.png" alt="flyingV">
                                     </picture>
@@ -128,11 +191,10 @@
                                     </div>
                                     <p>改善原有募資平台的付款流程，提高網站轉換率。另外健全原有未開發的站內訊息功能，試圖整合現有平台的社群功能。</p>
                                     <p class="eng-grid-p">We improve our payment flow on the platform to optimize the conversion rate. Besides, we develop the feature "Message" and try to integrate the original feature of social networking.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
                                 </li>                       
                             </a>
                             <a href="project4" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-left" data-aos-delay="450">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="1000">
                                     <picture class="project-img">
                                         <img src="img/index/index_4.png" alt="台日特快車">
                                     </picture>
@@ -142,11 +204,11 @@
                                     </div>
                                     <p>針對台日特快車活動執行線上與線下的視覺設計，包括線上的活動網站以及線下的主視覺和展場設計⋯⋯等。</p>
                                     <p class="eng-grid-p">Execute the campaign project and design the super-attracting visual, including graphic design, landing page & exhibition design.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
+                                    
                                 </li>
                             </a>
                             <a href="project5" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-right" data-aos-delay="550">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="500">
                                     <picture class="project-img">
                                         <img src="img/index/index_5.png" alt="Rolla">
                                     </picture>
@@ -156,11 +218,10 @@
                                     </div>
                                     <p>Rolla 為 flyingV 另一持續贊助制募資平台，主要任務是設計官網頁面與制定簡易的設計規範。</p>
                                     <p class="eng-grid-p">Rolla is one of the crowdfunding-branding in flyingV. My ultimate goal is design landing page and define its design guideline to arrange.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
                                 </li>
                             </a>
                             <a href="project6" id="grid-outer">
-                                <li id="grid-inner" data-aos="fade-left" data-aos-delay="650">
+                                <li id="grid-inner" data-aos="fade-up" data-aos-delay="1000">
                                     <picture class="project-img">
                                         <img src="img/index/index_6.png" alt="Lemuria">
                                     </picture>
@@ -170,7 +231,6 @@
                                     </div>
                                     <p>與團隊拍攝演唱會素材，利用攝影測量技術合成虛擬場景至演唱會，讓歌手與觀眾能置身其中。</p>
                                     <p class="eng-grid-p">I assist with UltraCombo team to shoot the video and collect the multimedia footage, emerge them into the virtual scene in live concert via photogrammetry & sound visualization.</p>
-                                    <!-- <span>See More  &#8250;</span> -->
                                 </li>
                             </a>
                         </ul>
@@ -187,7 +247,7 @@
                                 <h2 data-aos="fade-right" data-aos-delay="200"data-aos-duration="1000">時時保持熱情。</h2>
                             </div>
                             <div class="column en">
-                                <h2 data-aos="fade-left" data-aos-delay="200"data-aos-duration="1000">I've passionate about any kinds of design projects,</h2>
+                                <h2 data-aos="fade-left" data-aos-delay="200"data-aos-duration="1000">I've passionate about different kinds of design projects,</h2>
                                 <h2 data-aos="fade-left" data-aos-delay="200"data-aos-duration="1000">within mass communication and design background.</h2>
                             </div>
                         </div>
@@ -203,7 +263,7 @@
                                 <p class="eng" data-aos="fade-right" data-aos-delay="500">
                                     As a UI/UX designer with 2+ years, worked at Chatbot SaaS operating platform & Crowdfunding e-Commerce platform based in Taiwan previously. I'm enthusiastic about various type of design works and focus on user experience, interaction and visual design. Hope to improve the digital product better and bring Agile development through the impact of user-centered design .
                                 </p>
-                                <p data-aos="fade-right" data-aos-delay="500">
+                                <p class="chi" data-aos="fade-right" data-aos-delay="500">
                                     先前於聊天機器人 SaSS 平台與募資電商平台擔任 UI/UX 設計師，主要以使用者經驗、網頁設計規劃和互動視覺設計領域為核心，於數位產品領域深耕已有 2 年以上的工作經驗，期望透過帶有同理心的使用者設計思維與敏捷開發經驗，讓設計的影響力深植於團隊與用戶心中。
                                 </p>
                             </section>
@@ -231,7 +291,7 @@
                                             <h2>圖像視覺設計</h2>
                                             <h3>Visual Design</h3>
                                         </div>
-                                        <p data-aos="fade-right" data-aos-delay="600">有完整的視覺圖像設計經驗，精通各項設計行銷宣傳品視覺與插畫。曾擔任大學的報社攝影，擁有活動攝影相關的經驗。</p>
+                                        <p data-aos="fade-right" data-aos-delay="600">有完整的視覺圖像設計經驗，精通各項視覺設計與宣傳行銷視覺、插畫，精通、熱愛攝影，擁有活動攝影相關的經驗。</p>
                                     </li>
                                 </ul>
                             </section>
@@ -243,7 +303,7 @@
         <footer id="footer" class="mobile">
             <div class="container">
                 <aside class="cta">
-                    <div class="column" data-aos="f">
+                    <div class="column">
                         <span>💎</span>
                     </div>
                     <div class="column">
@@ -289,25 +349,46 @@
         </div>
     </section>
     <script>
-       AOS.init({
-            offset: 100,
-            duration: 1000,
-            easing: 'ease',
-            once: true,
-            mirror: false
-        });
+        AOS.init({
+             offset: 80,
+             duration: 800,
+             easing: 'ease',
+             once: true,
+             mirror: true
+         });
+ 
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-2M9P28SF1T');
+ 
+         var scroll = new SmoothScroll('a[href*="#"]', {
+             speed: 500,
+             speedAsDuration: true
+         });
+         
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-            dataLayer.push(arguments);
+         (function(d) {
+            var config = {
+            kitId: 'cge0kgt',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+
+        document.addEventListener('mousemove',parallax);
+        document.addEventListener('touchmove',parallax);
+        function parallax(event){
+            this.querySelectorAll('.parallax-img').forEach(parallaxImg => {
+                const speed = parallaxImg.getAttribute('data-speed')
+                const x = (window.innerWidth - event.pageX*speed)/200
+                const y = (window.innerHeight - event.pageY*speed)/200
+                parallaxImg.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
         }
-        gtag('js', new Date());
-        gtag('config', 'G-2M9P28SF1T');
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-	        speedAsDuration: true
-        });
-    </script>
+     </script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <!-- Load CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Noto+Sans+TC:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/project/project6.css">
@@ -35,14 +35,14 @@
 <body class>
     <div id="wrapper">
         <nav id="nav">
-            <div class="nav-container">
+            <div class="nav-container" data-aos="fade-down" data-aos-duration="500">
                 <div class="nav-column">
-                    <div class="logo" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="logo" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <a href="../">
                             <img src="../img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="nav-btn" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="nav-btn" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
                         <ul>
                             <li></li>
                             <li></li>
@@ -54,7 +54,7 @@
                     <div class="line">
                         <div class="container"></div>
                     </div>
-                    <ul class="container" data-aos="fade-left" data-aos-duration="1500">
+                    <ul class="container" data-aos="fade-down" data-aos-duration="1500">
                         <li><a data-scroll href="../#project">作品 | Project</a></li>
                         <li><a data-scroll href="../#about">關於 | About</a></li>
                         <li><a href="https://bit.ly/horace-resume" target="_blank">履歷 | Résumé</a></li>
@@ -63,9 +63,9 @@
                 </div>
             </div>
         </nav>
-        <div id="line">
+        <!-- <div id="line">
             <div class="container"></div>
-        </div>
+        </div> -->
         <header id="header">
             <section id="project-header-container">
                 <header class="project-header">
@@ -77,7 +77,7 @@
                 </header>
                 <main class="project-header-main">
                     <h2 data-aos="fade-down" data-aos-delay="500">
-                        華語歌手蔡健雅 2016 的世界巡迴演唱會主題是「列穆尼亞 LEMURIA」。這是一個古文明神話，描述當時的地球豐盛美麗，沒有疾病和暴力。直到災難來襲，列穆尼亞人才進入地心守護地球。而在這演唱會中，歌手蔡健雅可能就是地心使者，用音樂撫慰人心，引導如何去愛。
+                        華語歌手蔡健雅 2016 的世界巡迴演唱會主題是「列穆尼亞 LEMURIA」。這是一個古文明神話，描述當時的地球豐盛美麗，沒有疾病和暴力。直到災難來襲，列穆尼亞人才進入地心守護地球。而在演唱會中，蔡健雅化身來自宇宙的地心使者，用歌聲撫慰人心，引導人們如何去愛。
                     </h2>
                     <h2 data-aos="fade-down" data-aos-delay="650">
                         而 <a href="https://ultracombos.com/3035952" target="_blank" class="test">此項專案</a> 則是我在 <a href="https://ultracombos.com/" target="_blank" class="test">叁式</a> 實習時參與製作的正式專案。
@@ -323,26 +323,35 @@
             </p>
         </div>
     </section>
-    <script>
-       AOS.init({
-            offset: 100,
-            duration: 1000,
-            easing: 'ease',
-            once: true,
-            mirror: false
-        });
+   <script>
+        AOS.init({
+             offset: 140,
+             duration: 800,
+             easing: 'ease',
+             once: true,
+             mirror: true
+         });
+ 
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){
+             dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-2M9P28SF1T');
+ 
+         var scroll = new SmoothScroll('a[href*="#"]', {
+             speed: 500,
+             speedAsDuration: true
+         });
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-2M9P28SF1T');
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-	        speedAsDuration: true
-        });
-    </script>
+         (function(d) {
+            var config = {
+            kitId: 'cge0kgt',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+     </script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="125" cy="125" r="125" fill="#FFF3F6"/>
+<rect x="77" y="61" width="109" height="103" rx="9" fill="#FFDDE5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M78.4079 68C72.6598 68 68 72.5704 68 78.2083V162.792C68 168.43 72.6598 173 78.4079 173H170.592C176.34 173 181 168.43 181 162.792V78.2083C181 72.5704 176.34 68 170.592 68H78.4079ZM70.9737 78.2083C70.9737 74.1813 74.3021 70.9167 78.4079 70.9167H170.592C174.698 70.9167 178.026 74.1813 178.026 78.2083V95H70.9737V78.2083ZM70.9737 98V162.792C70.9737 166.819 74.3021 170.083 78.4079 170.083H170.592C174.698 170.083 178.026 166.819 178.026 162.792V98H70.9737Z" fill="#EB436B"/>
+<circle cx="84.5" cy="84.5" r="2.5" fill="#DD1E4C"/>
+<circle cx="93.5" cy="84.5" r="2.5" fill="#DD1E4C"/>
+<circle cx="102.5" cy="84.5" r="2.5" fill="#DD1E4C"/>
+<rect x="54" y="109" width="42" height="32" rx="5" fill="#FFDDE5"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 78 125)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 72 125)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 84 125)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 90 125)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 78 118)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 72 118)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 67 118)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 84 118)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 90 118)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 95 125)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 81 121)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 75 121)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 87 121)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 93 121)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 98 121)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 81 128)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 75 128)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 87 128)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 93 128)" fill="white"/>
+<circle r="1" transform="matrix(1.39071e-07 1 1 -1.39071e-07 98 128)" fill="white"/>
+<circle cx="79" cy="129" r="6" fill="#EB436B"/>
+<rect x="59" y="113" width="40" height="31" rx="4" stroke="#EB436B" stroke-width="2"/>
+<rect x="104" y="113" width="39" height="31" rx="4" stroke="#EB436B" stroke-width="2"/>
+<path d="M124 123L130 134H118L124 123Z" fill="#EB436B"/>
+<rect x="150" y="116" width="42" height="32" rx="5" fill="#FFDDE5"/>
+<circle cx="176" cy="137" r="1" transform="rotate(90 176 137)" fill="white"/>
+<circle cx="182" cy="137" r="1" transform="rotate(90 182 137)" fill="white"/>
+<circle cx="170" cy="137" r="1" transform="rotate(90 170 137)" fill="white"/>
+<circle cx="164" cy="137" r="1" transform="rotate(90 164 137)" fill="white"/>
+<circle cx="176" cy="130" r="1" transform="rotate(90 176 130)" fill="white"/>
+<circle cx="182" cy="130" r="1" transform="rotate(90 182 130)" fill="white"/>
+<circle cx="187" cy="130" r="1" transform="rotate(90 187 130)" fill="white"/>
+<circle cx="170" cy="130" r="1" transform="rotate(90 170 130)" fill="white"/>
+<circle cx="164" cy="130" r="1" transform="rotate(90 164 130)" fill="white"/>
+<circle cx="159" cy="137" r="1" transform="rotate(90 159 137)" fill="white"/>
+<circle cx="173" cy="133" r="1" transform="rotate(90 173 133)" fill="white"/>
+<circle cx="179" cy="133" r="1" transform="rotate(90 179 133)" fill="white"/>
+<circle cx="167" cy="133" r="1" transform="rotate(90 167 133)" fill="white"/>
+<circle cx="161" cy="133" r="1" transform="rotate(90 161 133)" fill="white"/>
+<circle cx="156" cy="133" r="1" transform="rotate(90 156 133)" fill="white"/>
+<circle cx="173" cy="140" r="1" transform="rotate(90 173 140)" fill="white"/>
+<circle cx="179" cy="140" r="1" transform="rotate(90 179 140)" fill="white"/>
+<circle cx="167" cy="140" r="1" transform="rotate(90 167 140)" fill="white"/>
+<circle cx="161" cy="140" r="1" transform="rotate(90 161 140)" fill="white"/>
+<circle cx="156" cy="140" r="1" transform="rotate(90 156 140)" fill="white"/>
+<rect x="148" y="113" width="40" height="31" rx="4" stroke="#EB436B" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M199.757 102.635L191.168 95.1189L189.42 106.397L192.545 104.245L194.762 110.337L197.581 109.311L195.306 103.059L199.757 102.635Z" fill="#EB436B"/>
+<path d="M84 148V149C84 151.761 86.2386 154 89 154H120C122.761 154 125 151.761 125 149V148" stroke="#EB436B" stroke-linecap="round" stroke-dasharray="3 3"/>
+<path d="M125 111V110C125 107.239 127.239 105 130 105H161C163.761 105 166 107.239 166 110V111" stroke="#EB436B" stroke-linecap="round" stroke-dasharray="3 3"/>
+<path d="M198.727 95.2957C199.178 95.2957 199.426 95.0587 199.521 94.6516C199.604 94.1411 199.794 93.8798 200.64 93.4119C201.536 92.9075 202 92.2816 202 91.3639C202 89.948 200.786 89 198.981 89C197.614 89 196.597 89.5165 196.191 90.3187C196.064 90.5496 196 90.7806 196 91.0419C196 91.5037 196.311 91.8015 196.814 91.8015C197.201 91.8015 197.487 91.6313 197.646 91.2424C197.85 90.7016 198.269 90.4099 198.892 90.4099C199.591 90.4099 200.074 90.8231 200.074 91.4186C200.074 91.9777 199.826 92.2816 199.006 92.7495C198.256 93.1688 197.869 93.6428 197.869 94.3599V94.445C197.869 94.9433 198.186 95.2957 198.727 95.2957ZM198.739 98C199.318 98 199.782 97.5807 199.782 97.0459C199.782 96.5111 199.318 96.0918 198.739 96.0918C198.167 96.0918 197.703 96.5111 197.703 97.0459C197.703 97.5807 198.167 98 198.739 98Z" fill="#EB436B"/>
+<path d="M169.5 122L170.741 126.35L175.129 125.25L171.983 128.5L175.129 131.75L170.741 130.65L169.5 135L168.259 130.65L163.871 131.75L167.017 128.5L163.871 125.25L168.259 126.35L169.5 122Z" fill="#EB436B"/>
+</svg>

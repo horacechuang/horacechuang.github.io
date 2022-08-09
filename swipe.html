@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2518fecbd4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="swipe.css">
+</head>
+<body>
+    <nav id="sub-nav" class="swiper">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide item first">
+                <a href="#problem">發現問題</a>
+            </li>
+            <li class="swiper-slide item item-title">
+                <a href="#research">探討問題</a>
+            </li>
+            <li class="swiper-slide sub-item item-devide">
+                <a href="#persona">定義 Persona</a>
+            </li>
+            <li class="swiper-slide sub-item">
+                <a href="#insight">挖掘 Insight</a>
+            </li>
+            <li class="swiper-slide inner-sub-item">
+                <a href="#insight_pay-flow">付款流程</a>
+            </li>
+            <li class="swiper-slide inner-sub-item sub-item-end">
+                <a href="#insight_message">站內訊息</a>
+            </li>
+            <li class="swiper-slide item item-title">
+                <a href="#solution">設計方案</a>
+            </li>
+            <li class="swiper-slide sub-item">
+                <a href="#pay-flow">付款流程</a>
+            </li>
+            <li class="swiper-slide inner-sub-item">
+                <a href="#payment-sol-1">付款方式</a>
+            </li>
+            <li class="swiper-slide inner-sub-item item-devide"><a href="#payment-sol-2">優惠碼</a></li>
+            <li class="swiper-slide sub-item"><a href="#message">站內訊息</a></li>
+            <li class="swiper-slide inner-sub-item"><a href="#message-sol-1">通知面板</a></li>
+            <li class="swiper-slide inner-sub-item"><a href="#message-sol-2">新增訊息</a></li>
+            <li class="swiper-slide inner-sub-item"><a href="#message-sol-3">查看專案明細</a></li>
+            <li class="swiper-slide inner-sub-item end"><a href="#message-sol-4">篩選訊息</a></li>
+        </ul>
+        <ul class="swiper-button">
+            <li class="swiper-button-prev"></li>
+            <li class="swiper-button-next"></li>
+        </ul>
+        <div class="swiper-scrollbar"></div>
+    </nav>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 500,
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+            grabCursor: true,
+
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+            },
+            
+            mousewheel: {
+                invert: false,
+            },
+
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+                dragSize: 200,
+            },
+        });
+    </script>
+</body>
+</html>

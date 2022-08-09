@@ -1,9 +1,9 @@
 $(document).ready(function () {
      var navBar, 
          currentScrollTop = 0,
-         navigation = $("nav#nav");
+         navigation = $("nav#nav .nav-container");
          mobileFooter = $("footer.mobile");
-         itemNav = $("nav#sub-menu ul.sub-menu-container");
+         itemNav = $("section#sub-navbar");
   
      $(window).scroll(function () {
         var topTomaxHeightDistance = $(window).scrollTop();
@@ -13,12 +13,12 @@ $(document).ready(function () {
         if (navBar < currentScrollTop && topTomaxHeightDistance > navBarHeight) {
         navigation.addClass("invisibleNav");
         mobileFooter.addClass("invisibleFooter");
-        itemNav.removeClass("invisibleSubmenu");
+        itemNav.removeClass("invisibleSubNav");
 
         } else if (navBar > currentScrollTop && !(topTomaxHeightDistance <= navBarHeight)) {
             navigation.removeClass("invisibleNav");
             mobileFooter.removeClass("invisibleFooter");
-            itemNav.addClass("invisibleSubmenu");
+            itemNav.addClass("invisibleSubNav");
         }
 
         navBar = currentScrollTop;
