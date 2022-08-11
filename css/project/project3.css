@@ -1142,7 +1142,7 @@ section#project-nav li a.next {
     }
 
     section#problem {
-        padding: 125px 0 0;
+        padding: 0;
     }
 
     section#process article.content {
@@ -1667,11 +1667,11 @@ section#project-nav li a.next {
     }
 
     nav.swiper ul.swiper-wrapper li.item-devide {
-        margin-right: 40px !important;
+        margin-right: 25px !important;
     }
 
     nav.swiper ul.swiper-wrapper li.item-devide::before {
-        right: -20px;
+        right: -12.5px;
         height: 80%;
     }
 
@@ -1680,17 +1680,17 @@ section#project-nav li a.next {
         width: 27.5px;
         height: 27.5px;
         padding: 15px;
-        transform: translateY(5%);
+        transform: translateY(20%);
     }
 
     nav.swiper ul.swiper-button li.swiper-button-prev:hover,
     nav.swiper ul.swiper-button li.swiper-button-next:hover {
-        transform: translateY(-1px);
+        transform: translateY(10%);
     }
 
     nav.swiper ul.swiper-button li.swiper-button-prev:active,
     nav.swiper ul.swiper-button li.swiper-button-next:active {
-        transform: translateY(1px);
+        transform: translateY(30%);
     }
 
     nav.swiper ul.swiper-button li.swiper-button-prev::after,
