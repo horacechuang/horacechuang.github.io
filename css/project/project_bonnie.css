@@ -395,10 +395,10 @@ section.challenge aside.content h2::after {
     content: "";
     position: absolute;
     display: block;
-    top: 25px;
+    top: 15px;
     right: -25px;
-    width: 100px;
-    height: 20px;
+    width: 70px;
+    height: 15px;
     background: rgb(255, 179, 196);
 }
 
@@ -840,8 +840,8 @@ article.process picture img.mobile {
     }
 
     section.challenge aside.content h2::after {
-        top: 13px;
-        right: 10px;    
+        top: 7.5px;
+        right: 5px;    
     }
 
     section.challenge aside.content p,
@@ -1033,8 +1033,8 @@ article.process picture img.mobile {
     }
 
     section.challenge aside.content h2::after {
-        top: 15px;
-        height: 15px;
+        top: 10px;
+        height: 12.5px;
     }
     
     section.challenge aside.content p,
