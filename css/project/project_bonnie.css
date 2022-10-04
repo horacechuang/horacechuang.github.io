@@ -395,10 +395,10 @@ section.challenge aside.content h2::after {
     content: "";
     position: absolute;
     display: block;
-    top: 15px;
+    top: 25px;
     right: -25px;
-    width: 70px;
-    height: 15px;
+    width: 100px;
+    height: 20px;
     background: rgb(255, 179, 196);
 }
 
@@ -840,8 +840,8 @@ article.process picture img.mobile {
     }
 
     section.challenge aside.content h2::after {
-        top: 7.5px;
-        right: 5px;    
+        top: 13px;
+        right: 10px;    
     }
 
     section.challenge aside.content p,
@@ -925,9 +925,9 @@ article.process picture img.mobile {
     }
 
     header#header .title {
-        margin-top: 50px;
+        bottom: 25px;
         align-items: center;
-        z-index: 3;
+        z-index: 1;
         padding: 25px 15px;
         max-width: 275px;
         box-shadow: 0px 25px 100px -60px rgba(57, 57, 57, 0.5);
@@ -1033,8 +1033,8 @@ article.process picture img.mobile {
     }
 
     section.challenge aside.content h2::after {
-        top: 10px;
-        height: 12.5px;
+        top: 15px;
+        height: 15px;
     }
     
     section.challenge aside.content p,
