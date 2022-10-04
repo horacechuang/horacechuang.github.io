@@ -1,10 +1,9 @@
 /* General */
-
 *,
 ::before,
 ::after {
-    box-sizing: border-box !important;
-    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 * {
@@ -16,11 +15,8 @@
     color: #4a4a4a;
 }
 
-html, 
-body {
-    font-size: 11.5px;
-    overflow-x: hidden;
-    position: relative;
+html, body {
+    font-size: 12px;
     /* scroll-behavior: smooth !important; */
     /* user-select: none;
     -o-user-select: none;
@@ -30,18 +26,19 @@ body {
     /* animation: 2.5s fadeIn; */
 }
 
-
 html.lity-active,
 html.scrollHidden {
     overflow: hidden !important;
     position: relative !important;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #landscapeContent {
     display: none;
 }
-
-
 
 /* navigation */
 
@@ -785,7 +782,7 @@ aside.link span {
         align-items: center;
         justify-content: center;
         /* padding-top: 100px; */
-        height: calc(100vh - 200px);
+        height: calc(100vh - 195px);
         animation: none;
         overflow: hidden;
         z-index: 1;
