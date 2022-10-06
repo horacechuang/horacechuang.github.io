@@ -411,7 +411,7 @@ section#sub-navbar.disappear {
 nav.swiper {
     display: block;
     position: relative;
-    max-width: 980px;
+    max-width: 767px;
     background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
