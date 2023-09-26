@@ -24,6 +24,7 @@ header#header {
 header#header .container {
     position: relative;
     display: flex;
+    padding-top: 25px;
     max-width: 1280px;
     margin: 0 auto;
     flex-direction: row;
@@ -698,9 +699,21 @@ section#about header .wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1180px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+section#about header .wrapper::before {
+    left: 0;
+    top: -50px;
+    background: linear-gradient(40deg,#d4ffff 0, #78ffd2 12%, #66c7ff 58%, #92efff 79%, #d4ffff);
+}
+
+section#about header .wrapper::after {
+    right: 0;
+    bottom: -50px;
+    background: linear-gradient(60deg,#92efff 0, #66c7ff 28%, #78ffd2 69%,  #d4ffff 85%, #d4ffff);
 }
 
 section#about header .wrapper::before,
@@ -709,17 +722,8 @@ section#about header .wrapper::after {
     position: relative;
     width: 100%;
     height: 1px;
-    background: rgba(124, 124, 124, 0.25);
-}
-
-section#about header .wrapper::before {
-    left: 0;
-    top: -50px;
-}
-
-section#about header .wrapper::after {
-    right: 0;
-    bottom: -50px;
+    background-size: 200% 100%;
+    animation: light-border 3s ease infinite;
 }
 
 section#about header .wrapper .column {
@@ -869,8 +873,8 @@ section.summary {
 }
 
 section.summary p {
-    font-size: 1.75em;
-    line-height: 2.15em;
+    font-size: 2em;
+    line-height: 2.2em;
     padding: 25px 0;
     font-family: 'roc-grotesk-wide', 'Noto Sans TC', sans-serif;
     font-weight: 300;
@@ -879,11 +883,6 @@ section.summary p {
 
 section.summary p.eng {
     color: rgba(116, 116, 116, 0.5);
-    padding-right: 150px;
-}
-
-section.summary p.chi {
-    padding-left: 150px;
 }
 
 section.expertise header {
@@ -946,6 +945,7 @@ section.expertise ul.container .title {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     position: relative;
     min-height: 120px;
 }
@@ -1143,8 +1143,8 @@ section.expertise ul.container picture img {
     }
 
     section.summary p {
-        font-size: 1.7em;
-        line-height: 2.1em;
+        font-size: 1.9em;
+        line-height: 2.25em;
     }
 
     /* about-main */
@@ -1402,12 +1402,12 @@ section.expertise ul.container picture img {
     }
 
     section.summary {
-        padding: 50px 0 100px;
+        padding: 65px 0;
     }
 
     section.summary p {
-        font-size: 1.5em;
-        line-height: 2em;
+        font-size: 1.75em;
+        line-height: 2.15em;
     }
 
     /* about-main */
@@ -1619,15 +1619,7 @@ section.expertise ul.container picture img {
     }
 
     section.summary p {
-        font-size: 1.4em;
-    }
-    
-    section.summary p.eng {
-        padding-right: 50px;
-    }
-
-    section.summary p.chi {
-        padding-left: 50px;
+        font-size: 1.6em;
     }
 
     section#about .pics {
@@ -1843,15 +1835,9 @@ section.expertise ul.container picture img {
     }
 
     section.summary p {
-        font-size: 1.25em;
-    }
-
-    section.summary p.eng {
-        padding-right: 25px;
-    }
-
-    section.summary p.chi {
-        padding-left: 25px;
+        font-size: 1.3em;
+        line-height: 2.25em;
+        padding: 20px 0;
     }
 
     /* about */
