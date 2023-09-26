@@ -925,7 +925,7 @@ article.process picture img.mobile {
     }
 
     header#header .title {
-        bottom: 25px;
+        top: 20px;
         align-items: center;
         z-index: 1;
         padding: 25px 15px;
