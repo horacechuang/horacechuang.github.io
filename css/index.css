@@ -525,11 +525,6 @@ section#project aside.grid a#grid-outer {
     border-radius: 25px;
 }
 
-
-section#project aside.grid a#grid-outer:nth-child(even) {
-    /* margin-top: 0px; */
-}
-
 section#project aside.grid a#grid-outer:hover {
     box-shadow: 0px 120px 105px -55px rgba(199, 199, 199, 0.35);
     background-color: rgb(255,255,255);
@@ -1020,10 +1015,6 @@ section.expertise ul.container picture img {
 
     section#project aside.grid {
         border-radius: 25px;
-    }
-
-    section#project aside.grid a#grid-outer:nth-child(even) {
-        margin-top: 100px;
     }
 
 }
@@ -1545,11 +1536,7 @@ section.expertise ul.container picture img {
     section#project aside.grid a#grid-outer {
         width: 97.5%;
     }
-
-    section#project aside.grid a#grid-outer:nth-child(even) {
-        margin-top: 0;
-    }
-
+    
     section#project aside.grid a#grid-outer:hover {
         transform: translateY(-15px);
     }

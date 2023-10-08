@@ -17,6 +17,7 @@
 
 html, body {
     font-size: 12px;
+    overflow-x: hidden;
     /* scroll-behavior: smooth !important; */
     /* user-select: none;
     -o-user-select: none;
@@ -30,11 +31,6 @@ html.lity-active,
 html.scrollHidden {
     overflow: hidden !important;
     position: relative !important;
-}
-
-body,
-body #wrapper {
-    overflow-x: hidden;
 }
 
 #landscapeContent {
